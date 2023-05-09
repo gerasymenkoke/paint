@@ -77,6 +77,7 @@ class DrawPath @JvmOverloads constructor(
                 invalidate()
             }
         }
+        print("$x, $y")
         return true
     }
 
