@@ -20,8 +20,8 @@ class DrawPath @JvmOverloads constructor(
         var pathList = ArrayList<Path>()
     }
 
-    private var mX = 200f
-    private var mY = 200f
+    private var mX = 0f
+    private var mY = 0f
 
     private val paintBrush = Paint().apply {
         isAntiAlias = true
@@ -41,7 +41,7 @@ class DrawPath @JvmOverloads constructor(
     private fun touchStart(x: Float, y: Float) {
         pathList.add(path)
         colorList.add(currentBrush)
-        path.moveTo(x, y)
+        path.moveTo(x+200, y+200)
         mX = x
         mY = y
     }
