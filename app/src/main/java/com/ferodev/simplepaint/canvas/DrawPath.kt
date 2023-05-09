@@ -20,8 +20,8 @@ class DrawPath @JvmOverloads constructor(
         var pathList = ArrayList<Path>()
     }
 
-    private var mX = 0f
-    private var mY = 0f
+    private var mX = 20f
+    private var mY = 20f
 
     private val paintBrush = Paint().apply {
         isAntiAlias = true
