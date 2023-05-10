@@ -41,7 +41,7 @@ class DrawPath @JvmOverloads constructor(
     private fun touchStart(x: Float, y: Float) {
         pathList.add(path)
         colorList.add(currentBrush)
-        path.moveTo(x+200, y+200)
+        path.moveTo(x+0, y+0)
         mX = x
         mY = y
     }
