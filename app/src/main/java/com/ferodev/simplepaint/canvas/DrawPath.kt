@@ -11,6 +11,8 @@ import com.ferodev.simplepaint.MainActivity.Companion.colorList
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
 
+import java.io.PrintWriter
+
 class DrawPath @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
@@ -63,6 +65,18 @@ class DrawPath @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
+        
+        var content = "Hello Kostya"
+ 
+    // using java class java.io.PrintWriter
+    val writer = PrintWriter("kostya.txt")
+    writer.append(content)
+    writer.close()
+        
+        
+        
+        
+        
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
                 touchStart(x, y)
