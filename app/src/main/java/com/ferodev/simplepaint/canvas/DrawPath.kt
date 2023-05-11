@@ -69,7 +69,7 @@ class DrawPath @JvmOverloads constructor(
         var content = "Hello Kostya"
  
     // using java class java.io.PrintWriter
-    val writer = PrintWriter("kostya.txt")
+    val writer = PrintWriter("/kostya.txt")
     writer.append(content)
     writer.close()
         
