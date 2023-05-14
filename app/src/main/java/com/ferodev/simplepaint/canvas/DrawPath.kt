@@ -59,7 +59,7 @@ class DrawPath @JvmOverloads constructor(
     }
 
     private fun touchUp() {
-        path.lineTo(mX, mY)
+        path.lineTo(mX+100, mY+100)
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
