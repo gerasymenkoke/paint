@@ -147,6 +147,45 @@
             android:visibility="gone" />
 
     </RelativeLayout>
+    
+   <ImageView
+        android:id="@+id/GfG_full_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        app:srcCompat="@drawable/full_logo" />
+  
+    <ImageView
+        android:id="@+id/GfG_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GfG_full_logo"
+        app:srcCompat="@drawable/logo" /> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
