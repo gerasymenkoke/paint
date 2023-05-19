@@ -3,7 +3,7 @@ package com.ferodev.simplepaint
 
 import android.graphics.Path
 
-import androidx.appcompat.app.AppCompatActivity
+
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
      
