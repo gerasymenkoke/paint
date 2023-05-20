@@ -10,6 +10,10 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+     int count = 0;
+     TextView dynamicText;
+    
+    
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -20,6 +24,8 @@ class MainActivity : AppCompatActivity() {
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
 
+    
+    
     companion object {
         var path = Path()
         var paintBrush = Paint()
@@ -41,7 +47,14 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
-
+                    
+                    
+                    btnPencil.setImageResource(R.string.name)
+                    count++
+                    name.setText("dynamic text example kostya : " + count);
+                    dynamicText = (TextView) findViewById(R.id.name);
+                    
+                    
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
                     btnArrow.setBackgroundResource(R.drawable.background_card)
                     btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
