@@ -75,13 +75,17 @@
             android:layout_toEndOf="@+id/btn_ellipse"
             android:background="@null"
             android:src="@drawable/ic_unselected_palette" />
-         <TextView
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/listaVista"
-        android:layout_alignParentBottom="true"
-        android:text="Kostya-TextView" />
+       
+        <TextView
+                 android:id="@+id/name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginLeft="19dp"
+                 android:layout_marginTop="43dp"
+                 android:text="@string/name" />
+        
 
     </RelativeLayout>
 
