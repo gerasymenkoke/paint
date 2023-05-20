@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
                     
-                     name.text= count + 1
+                     name.text= count.toString()
                      count = count + 1
-                     btnPencil.setImageResource(R.string.name++)
+                     
                     
                     
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
