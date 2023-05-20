@@ -74,7 +74,7 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                 invalidate()
                 
-                draw.pencil = count.toString()
+                draw_pencil.count = count.toString()
                 count = count + 1
                 
                 
