@@ -10,8 +10,8 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-     int count = 0
-     TextView dynamicText
+     var count = 0
+     
     
     
     private val binding: ActivityMainBinding by lazy {
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                     
                     
                     btnPencil.setImageResource(R.string.name)
-                    count++
-                    name.setText("dynamic text example kostya : " + count);
+                    count=count + 1
+                    name.setText("dynamic text example kostya : "  count);
                     dynamicText = (TextView) findViewById(R.id.name);
                     
                     
