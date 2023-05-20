@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <RelativeLayout 
+    <RelativeLayout> 
      
     <ImageView
         android:id="@+id/image_view_1"
