@@ -16,16 +16,7 @@
         android:background="@color/red"/>
   
  
-    <TextView
-        android:id="@+id/simpleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Kostya Before Clicking"
-        android:textColor="#f00"
-        android:textSize="25sp"
-        android:textStyle="bold|italic"
-        android:layout_marginTop="50dp"/>
+   
     
     
     
@@ -84,6 +75,13 @@
             android:layout_toEndOf="@+id/btn_ellipse"
             android:background="@null"
             android:src="@drawable/ic_unselected_palette" />
+         <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaVista"
+        android:layout_alignParentBottom="true"
+        android:text="Kostya-TextView" />
 
     </RelativeLayout>
 
