@@ -10,8 +10,8 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-     int count = 0;
-     TextView dynamicText;
+     int count = 0
+     TextView dynamicText
     
     
     private val binding: ActivityMainBinding by lazy {
