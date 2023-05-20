@@ -14,8 +14,10 @@ class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
+    private count=1
+    
     private val TOUCH_TOLERANCE = 4f
-
+     
     private var mX = 0f
     private var mY = 0f
 
@@ -71,6 +73,11 @@ class DrawPencil @JvmOverloads constructor(
             MotionEvent.ACTION_MOVE -> {
                 touchMove(x, y)
                 invalidate()
+                
+                name.text= count.toString()
+                count = count + 1
+                
+                
             }
             MotionEvent.ACTION_UP -> {
                 touchUp()
