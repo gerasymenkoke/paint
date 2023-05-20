@@ -10,7 +10,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-     var count = 0
+     // var count = 0
      
     
     
@@ -49,8 +49,8 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
                     
-                     name.text= count.toString()
-                     count = count + 1
+                     // name.text= count.toString()
+                     // count = count + 1
                      
                     
                     
