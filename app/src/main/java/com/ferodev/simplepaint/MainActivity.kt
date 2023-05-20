@@ -4,7 +4,6 @@ package com.ferodev.simplepaint
 import android.graphics.Path
 
 
-import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
      
 import android.annotation.SuppressLint
