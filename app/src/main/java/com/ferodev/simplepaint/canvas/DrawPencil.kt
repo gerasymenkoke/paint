@@ -74,7 +74,7 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                 invalidate()
                 
-                canvas.draw_pencil.text = count.toString()
+               name.text = count.toString()
                 count = count + 1
                 
                 
