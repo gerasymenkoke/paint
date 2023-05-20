@@ -49,10 +49,9 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
                     
-                    btnPencil.setImageResource(R.string.name)
-                    count=count + 1
-                    name.setText("dynamic text example kostya : "  count);
-                    dynamicText = (TextView) findViewById(R.id.name);
+                     name.text= count + 1
+                     count = count + 1
+                     btnPencil.setImageResource(R.string.name++)
                     
                     
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
