@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
                     
                     
                 
-                                                      val x = event.x
-                                                      val y = event.y
+                                                      val x = MotionEvent.x
+                                                      val y = MotionEvent.y
                                                       name.text= x.toString()       
                                                      
 
