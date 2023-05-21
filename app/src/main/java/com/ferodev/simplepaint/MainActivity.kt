@@ -1,5 +1,8 @@
 package com.ferodev.simplepaint
 
+
+import android.view.MotionEvent
+
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
