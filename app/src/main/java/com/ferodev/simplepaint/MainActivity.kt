@@ -15,6 +15,16 @@ class MainActivity : AppCompatActivity() {
 
       var count = 0
      
+      
+        override   fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x
+        val y = event.y
+        name.text = x.toString()  
+                
+                         return true
+    }
+      
+      
     
     
     private val binding: ActivityMainBinding by lazy {
@@ -52,13 +62,9 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
+                                
                   
-                   fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-        name.text = x.toString()  
-        return true
-    }
+       
                   
                   
                   
