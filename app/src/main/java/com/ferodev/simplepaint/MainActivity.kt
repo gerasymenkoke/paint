@@ -49,50 +49,7 @@ class MainActivity : AppCompatActivity() {
         
         binding.apply {
            
-           
-                btnAll.setOnClickListener {
-                // Untuk mengganti dari false menjadi true
-                isPencilIconClicked = !isPencilIconClicked
-           
-              fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x + count
-        count = count + 1            
-        val y = event.y
-        name.text = x.toString()  
-                
-                         return true
-    }                                
-                  
-        count = count + 1            
-        val x = count
-        name.text = x.toString()  
-                  
-                  
-                  
-               
-            }
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
+      
            
            
            
