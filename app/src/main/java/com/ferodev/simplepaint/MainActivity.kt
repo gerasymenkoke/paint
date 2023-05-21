@@ -53,13 +53,11 @@ class MainActivity : AppCompatActivity() {
                     
                     
                     
-                    override fun onTouchEvent(event: MotionEvent): Boolean {
+                
                                                       val x = event.x
                                                       val y = event.y
                                                       name.text= x.toString()       
-                                                      return true
-                                                                           }
-
+                                                     
 
                     
                          
