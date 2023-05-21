@@ -65,7 +65,6 @@ class DrawPencil @JvmOverloads constructor(
     
       
 
-        binding.apply {
 
     
       override fun onTouchEvent(event: MotionEvent): Boolean {
