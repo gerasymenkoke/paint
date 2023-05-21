@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
            
            
-                All.setOnClickListener {
+                btn_pencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
