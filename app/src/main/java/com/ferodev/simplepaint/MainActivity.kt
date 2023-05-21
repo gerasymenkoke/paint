@@ -41,7 +41,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-
+         
+         
+        fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x
+        val y = event.y
+        name.text= x.toString()  
+        return true
+    }
+         
+        
+        
         binding.apply {
             btnPencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
@@ -53,12 +63,7 @@ class MainActivity : AppCompatActivity() {
                     
                     
                     
-     fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-        name.text= x.toString()  
-        return true
-    }
+   
         
                     
                     
