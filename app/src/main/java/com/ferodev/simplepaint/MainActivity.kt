@@ -72,7 +72,9 @@ class MainActivity : AppCompatActivity() {
                          return true
     }                                
                   
-       
+        count = count + 1            
+        val x = count
+        name.text = x.toString()  
                   
                   
                   
