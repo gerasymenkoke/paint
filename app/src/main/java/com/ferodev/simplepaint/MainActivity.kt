@@ -13,9 +13,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-      var count = 0
-     private lateinit var name: TextView
-      
+   var count = 0
            
       
     
@@ -49,15 +47,9 @@ class MainActivity : AppCompatActivity() {
          
          
          
-         name = findViewById(R.id.name)
        
-  override   fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-        name.text = x.toString()  
-                
-                         return true
-    }       
+       
+ 
        
        
        
@@ -71,7 +63,14 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
-                                
+              fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x + count
+        count = count + 1            
+        val y = event.y
+        name.text = x.toString()  
+                
+                         return true
+    }                                
                   
        
                   
