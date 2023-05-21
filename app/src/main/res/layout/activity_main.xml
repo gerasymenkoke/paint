@@ -152,8 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="visible"
-            android:x="2000"
-            android:y=2000                                       
+                                             
                                                    
                                                    />
             <!-- android:text="@string/name" -->
