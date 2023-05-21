@@ -62,9 +62,23 @@ class DrawPencil @JvmOverloads constructor(
         path.lineTo(mX, mY)
     }
 
-    override fun onTouchEvent(event: MotionEvent): Boolean {
+    
+      setContentView(binding.root)
+
+        supportActionBar?.hide()
+
+        binding.apply {
+
+    
+      override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
+        
+          
+        name.text = x.toString()  
+        
+        
+        
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
                 touchStart(x, y)
@@ -73,9 +87,7 @@ class DrawPencil @JvmOverloads constructor(
             MotionEvent.ACTION_MOVE -> {
                 touchMove(x, y)
                 invalidate()
-                
-            
-                
+                                
                 
             }
             MotionEvent.ACTION_UP -> {
@@ -86,6 +98,15 @@ class DrawPencil @JvmOverloads constructor(
         return true
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override fun onDraw(canvas: Canvas) {
         for (p in dataPencil) {
             paintBrush.color = p.color
