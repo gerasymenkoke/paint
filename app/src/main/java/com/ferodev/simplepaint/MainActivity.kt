@@ -43,12 +43,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
          
          
-        fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-        name.text= x.toString()  
-        return true
-    }
+       
          
         
         
@@ -56,7 +51,18 @@ class MainActivity : AppCompatActivity() {
             btnPencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
-
+           
+                  
+                   fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x
+        val y = event.y
+        name.text = x.toString()  
+        return true
+    }
+                  
+                  
+                  
+                  
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
