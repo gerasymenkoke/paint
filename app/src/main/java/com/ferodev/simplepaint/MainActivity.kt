@@ -45,21 +45,12 @@ class MainActivity : AppCompatActivity() {
          
          
          
-         
-         
-       
-       
- 
-       
-       
-       
-       
-       
-         
         
         
         binding.apply {
-            btnPencil.setOnClickListener {
+           
+           
+                All.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
@@ -82,23 +73,63 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
+               
                     
-                    
-                    
-   
-        
-                    
-                    
-                     
-                                                    
-                                                         
-                                                     
+                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
+                    btnArrow.setBackgroundResource(R.drawable.background_card)
+                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
+                    btnRectangle.setBackgroundResource(R.drawable.background_card)
+                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
+                    btnEllipse.setBackgroundResource(R.drawable.background_card)
+                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
+                    btnPallete.setBackgroundResource(R.drawable.background_card)
 
+                    drawPencil.visibility = View.VISIBLE
+                    drawLine.visibility = View.GONE
+                    drawEllipse.visibility = View.GONE
+                    drawRectangle.visibility = View.GONE
+
+                } else {
+                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                    btnPencil.setBackgroundResource(R.drawable.background_card)
+                }
+            }
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            btnPencil.setOnClickListener {
+                // Untuk mengganti dari false menjadi true
+                isPencilIconClicked = !isPencilIconClicked
+           
+    
+                  
+                if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+                    btnPencil.setImageResource(R.drawable.ic_selected_pencil)
+                    btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
-                         
-                     
-                     
-                    
+                                      
                     
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
                     btnArrow.setBackgroundResource(R.drawable.background_card)
