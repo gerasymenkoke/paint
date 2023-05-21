@@ -53,10 +53,18 @@ class MainActivity : AppCompatActivity() {
                     
                     
                     
-                
-                                                      val x = MotionEvent.x
-                                                      val y = MotionEvent.y
-                                                      name.text= x.toString()       
+     fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x
+        val y = event.y
+        name.text= x.toString()  
+        return true
+    }
+        
+                    
+                    
+                     
+                                                    
+                                                         
                                                      
 
                     
