@@ -66,14 +66,16 @@ class DrawPencil @JvmOverloads constructor(
 
     
     
-       object SharedData {
+       
     
           override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
         
-       
-    var myString = x.toString()
+       val intent= Intent(this,SecondActivity::class.java)
+                  intent.putExtra("key","TEST")
+                              startActivity(intent)
+    
                                 
         
         
@@ -96,8 +98,7 @@ class DrawPencil @JvmOverloads constructor(
         return true
     }
 
-       }
-    
+   
     
     
     
