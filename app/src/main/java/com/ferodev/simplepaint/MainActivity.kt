@@ -228,7 +228,7 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         }
-  //  }
+    }
 
     private fun currentColor(color: Int) {
         currentBrush = color
