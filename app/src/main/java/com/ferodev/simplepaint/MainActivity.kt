@@ -41,13 +41,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-       // supportActionBar?.hide()
+       supportActionBar?.hide()
          
          
          
         
         
-        binding.apply {
+        // binding.apply {
            
       
            
@@ -228,7 +228,7 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         }
-    }
+  //  }
 
     private fun currentColor(color: Int) {
         currentBrush = color
