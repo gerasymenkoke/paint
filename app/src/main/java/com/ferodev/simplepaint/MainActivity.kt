@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
-                x_text.text=DrawPencil.x
+               
                
                
                
@@ -67,7 +67,11 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
-                                      
+                    x_text.text="kostya"
+               
+               
+               
+               
                     
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
                     btnArrow.setBackgroundResource(R.drawable.background_card)
