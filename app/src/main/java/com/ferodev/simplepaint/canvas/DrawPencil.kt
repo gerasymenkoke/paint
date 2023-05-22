@@ -65,16 +65,16 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     
+    
+       object SharedData {
+    
           override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
         
-          object SharedData {
-    val myString = x.toString()
-                                }              
-        
        
-        
+    var myString = x.toString()
+                                
         
         
         when (event.action) {
@@ -96,7 +96,7 @@ class DrawPencil @JvmOverloads constructor(
         return true
     }
 
-    
+       }
     
     
     
