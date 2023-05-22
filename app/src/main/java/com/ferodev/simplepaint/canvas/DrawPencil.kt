@@ -15,51 +15,7 @@ class DrawPencil @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
    
-    
-    
-    
-    
-    
-     private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-        
-       companion object {
-        var path = Path()
-        var paintBrush = Paint()
-        var colorList = ArrayList<Int>()
-        var currentBrush = Color.BLACK
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-
-       supportActionBar?.hide()
-            
-        
-        
-        binding.apply {
-            
-             override fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
-        val y = event.y
-        
-          
-        name.text = x.toString()  
-                      }
-             
-        }
-            
-            
-            
-     
-     
-     
-     
-     
-     
-    
+   
     
     
     private val TOUCH_TOLERANCE = 4f
@@ -109,14 +65,9 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     
-      
-
-
-    
-     
-        
-        
-        
+          override fun onTouchEvent(event: MotionEvent): Boolean {
+        val x = event.x
+        val y = event.y
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
                 touchStart(x, y)
