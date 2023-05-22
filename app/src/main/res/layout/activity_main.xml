@@ -77,7 +77,7 @@
             android:src="@drawable/ic_unselected_palette" />
      
          <TextView
-        android:id="@+id/x_text"
+        android:id="@+id/xtext"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/x_text"
