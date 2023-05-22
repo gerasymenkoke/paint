@@ -72,7 +72,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event.y
         
           
-        name.text = x.toString()  
+        // name.text = x.toString()  
         
         
         
