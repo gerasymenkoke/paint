@@ -69,8 +69,8 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
         
-              object SharedData {
-    var myString = x.toString()
+          object SharedData {
+    val myString = x.toString()
                                 }              
         
        
