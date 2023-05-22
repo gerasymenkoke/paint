@@ -152,9 +152,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="visible"
-            android:text="@string/x"                                 
-                                                   
-                                                   />
+            android:x="@string/x"  
+                                      />
+        
             
                                                    
 
