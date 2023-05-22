@@ -68,9 +68,10 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
                     
+                   val bundle: Bundle? = intent.extras
+                   val name: MyString? = bundle?.getString("mystring")
                    
-                   
-                   xtext.text=SharedData.myString
+                   xtext.text=MyString
                
                
                
