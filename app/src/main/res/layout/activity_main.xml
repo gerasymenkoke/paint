@@ -14,10 +14,8 @@
         android:layout_height="match_parent"
         tools:ignore="ContentDescription"
         android:background="@color/blue"/>
-  
- 
-   
     
+     
     
     
     <RelativeLayout
@@ -75,7 +73,15 @@
             android:layout_toEndOf="@+id/btn_ellipse"
             android:background="@null"
             android:src="@drawable/ic_unselected_palette" />
-       
+     
+        <TextView
+        android:id="com.ferodev.simplepaint.canvas.DrawPencil"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:x ="@string/x"
+        android:textColor="#008000"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
        
        
         
@@ -144,7 +150,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone"
-            android:x="@string/x"  
+              
                                       />
         
             
