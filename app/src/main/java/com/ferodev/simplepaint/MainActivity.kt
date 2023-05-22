@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
-                    x_text.text="kostya"
+                    xtext.text="kostya"
                
                
                
