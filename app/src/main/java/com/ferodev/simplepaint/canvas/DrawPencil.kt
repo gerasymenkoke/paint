@@ -76,7 +76,7 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
        
-       var intentNext= Intent(this@DrawPencil,  DrawPencil::class.java)
+       var intentNext= Intent(Context,  DrawPencil::class.java)
        
        val bundle = Bundle()
        var mystring=x.toString()    
