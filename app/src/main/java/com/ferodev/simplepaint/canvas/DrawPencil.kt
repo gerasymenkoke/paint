@@ -76,11 +76,14 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
        
-       String value="Hello world";
-Intent i = new Intent(DrawPencil.this, MainActivity.class);    
-i.putExtra("key",value);
+      String i="hi";
+Intent i = new Intent(this, MainActivity.class);
+//Create the bundle
+Bundle b = new Bundle();
+//Add your data to bundle
+b.putString(“stuff”, i);
+i.putExtras(b);
 startActivity(i);
-   
               
               
          
