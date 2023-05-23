@@ -67,9 +67,9 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                     
-           Bundle extras = getIntent().getExtras();
+           Bundle extras = getIntent().getExtras()
 if (extras != null) {
-    String value = extras.getString("key");
+    String value = extras.getString("key")
     //The key argument here must match that used in the other activity
 }
 
