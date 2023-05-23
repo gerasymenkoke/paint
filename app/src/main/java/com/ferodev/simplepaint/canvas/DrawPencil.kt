@@ -75,7 +75,17 @@ class DrawPencil @JvmOverloads constructor(
           override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
-        var mystring=x.toString()
+       
+       var intentNext= Intent(this@MainActivity, MainActivity::class.java)
+       val bundle = Bundle()
+       var mystring=x.toString()    
+           
+            bundle.putString("mystring", mystring)     
+              
+              
+              
+              
+         
         
         
         
