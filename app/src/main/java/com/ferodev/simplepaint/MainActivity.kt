@@ -70,8 +70,8 @@ class MainActivity : AppCompatActivity() {
          
          
          
-         Bundle bundle = getIntent().getExtras();
-         String text= bundle.getString("stuff");
+         Bundle bundle = getIntent().getExtras()
+         String text= bundle.getString("stuff")
 
                  
                
