@@ -76,15 +76,15 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
        
-       var intentNext= Intent(Context,  DrawPencil::class.java)
+       val intent= Intent(this,  MainActivity::class.java)
        
        val bundle = Bundle()
        var mystring=x.toString()    
                     
             bundle.putString("mystring", mystring)     
               
-          intentNext.putExtras(bundle)
-            startActivity(intentNext)    
+         // intent.putExtras(bundle)
+            startActivity(intent)    
               
               
          
