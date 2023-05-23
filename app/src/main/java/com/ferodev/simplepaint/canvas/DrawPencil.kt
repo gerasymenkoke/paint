@@ -73,7 +73,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event.y
         val mystring=x.toString()
               
-       val intent= Intent(this,SecondActivity::class.java)
+       val intent= Intent(this, MainActivity::class.java)
                   intent.putExtra("mystring")
                               startActivity(intent)
     
