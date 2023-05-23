@@ -69,9 +69,9 @@ class MainActivity : AppCompatActivity() {
                     
                     
                    val bundle: Bundle? = intent.extras
-                   val name: String? = bundle?.getString("mystring")
+                   val name = bundle.getString("mystring")
                    
-                   xtext.text = mystring
+                   xtext.text = name
                
                
                
