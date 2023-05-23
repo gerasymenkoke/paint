@@ -75,16 +75,13 @@ class DrawPencil @JvmOverloads constructor(
           override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
-       
-      String i="hi"
-Intent i = new Intent(this, MainActivity.class);
-//Create the bundle
-Bundle b = new Bundle()
-//Add your data to bundle
-b.putString(“stuff”, i)
-i.putExtras(b)
-startActivity(i)
-              
+    
+              val i = Intent(this, MainActivity::class.java)
+            val getrec = list[position].promotion_id
+            val bundle = Bundle()
+            bundle.putString("stuff", getrec)
+            i.putExtras(bundle)
+            startActivity(i)
               
          
         
