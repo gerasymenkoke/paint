@@ -80,10 +80,11 @@ class DrawPencil @JvmOverloads constructor(
        
        val bundle = Bundle()
        var mystring=x.toString()    
-           
+                    
             bundle.putString("mystring", mystring)     
               
-              
+          intentNext.putExtras(bundle)
+            startActivity(intentNext)    
               
               
          
