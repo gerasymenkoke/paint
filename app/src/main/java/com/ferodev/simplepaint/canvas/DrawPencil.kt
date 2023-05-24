@@ -80,7 +80,7 @@ class DrawPencil @JvmOverloads constructor(
        
     
           override fun onTouchEvent(event: MotionEvent): Boolean {
-        var x = 10.5
+        var x = 10.5f
         val y = event.y
     
            
