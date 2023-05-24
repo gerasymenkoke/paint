@@ -81,12 +81,7 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
     
-              val i = Intent(this, MainActivity::class.java)
-            val getrec = list[position].promotion_id
-            val bundle = Bundle()
-            bundle.putString("stuff", getrec)
-            i.putExtras(bundle)
-            startActivity(i)
+           
               
          
         
