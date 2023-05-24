@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked
            
                count=count + 1 
-               xtext.text = count.toString()               
+               xtext.text = x.toString()               
                
                
     
