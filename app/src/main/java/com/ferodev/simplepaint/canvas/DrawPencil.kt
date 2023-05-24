@@ -19,7 +19,7 @@ import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
 import com.ferodev.simplepaint.cons.Pencil
 
-public var x = 1
+
 
 class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -80,7 +80,8 @@ class DrawPencil @JvmOverloads constructor(
        
     
           override fun onTouchEvent(event: MotionEvent): Boolean {
-         x = event.x
+        public var x = 1
+        x = event.x
         val y = event.y
     
            
