@@ -70,8 +70,7 @@ class MainActivity : AppCompatActivity() {
          
          
          
-        var bundle = getIntent().getExtras()
-        var stuff = bundle?.getString("stuff")
+        
 
                  
                
