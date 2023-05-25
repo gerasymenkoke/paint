@@ -58,7 +58,10 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked
            
                count=count + 1 
-               var xx = com.ferodev.simplepaint.canvas.DrawPencil.x
+               
+               //val drawpencil = com.ferodev.simplepaint.canvas.DrawPencil()
+                      
+               var xx = com.ferodev.simplepaint.canvas.DrawPencil().x
                xtext.text = xx.toString()               
                
                
