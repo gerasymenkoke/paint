@@ -83,7 +83,7 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
                                     
-        this.x = x
+        context.x = x
               
               
         
