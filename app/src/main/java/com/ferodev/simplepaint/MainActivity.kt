@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
            
                count=count + 1 
                
-               val x = DrawPencil(context).onTouchEvent().xx
+               val x = DrawPencil(Context).onTouchEvent().xx
            //    val xxReturn = xxx.onTouchEvent()
            //    val xMember = xxx.x 
                 
