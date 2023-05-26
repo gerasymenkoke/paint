@@ -11,6 +11,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
+import com.ferodev.simplepaint.canvas.DrawPencil
+
+
+
 class MainActivity : AppCompatActivity() {
 
    var count = 0
@@ -59,7 +63,7 @@ class MainActivity : AppCompatActivity() {
            
                count=count + 1 
                
-               val x = com.ferodev.simplepaint.canvas.DrawPencil.onTouchEvent()
+               val x = DrawPencil.onTouchEvent()
            //    val xxReturn = xxx.onTouchEvent()
            //    val xMember = xxx.x 
                 
