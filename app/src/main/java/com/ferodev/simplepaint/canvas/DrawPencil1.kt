@@ -19,7 +19,7 @@ import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
 import com.ferodev.simplepaint.cons.Pencil
 
-public var x = 9
+public var count = 9
 
 class DrawPencil1 @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -83,7 +83,16 @@ class DrawPencil1 @JvmOverloads constructor(
         val x = event.x
         val y = event.y
                                     
-        var xx = x
+       
+              
+        count = count + 1
+        xtext.text = count.toString()          
+          
+              
+              
+              
+              
+              
               
               
         
