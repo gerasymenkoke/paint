@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Simple Paint</string>
     <string name="name">Kostya</string>
-    <string name="x_text">x=</string>
+    <string name="text">x=</string>
 </resources>
