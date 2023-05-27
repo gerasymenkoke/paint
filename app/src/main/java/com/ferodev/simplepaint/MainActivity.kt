@@ -11,7 +11,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
-import com.ferodev.simplepaint.canvas.DrawPencil
+// import com.ferodev.simplepaint.canvas.DrawPencil
 
 
 
