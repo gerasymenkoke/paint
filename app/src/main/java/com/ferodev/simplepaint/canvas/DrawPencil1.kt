@@ -103,7 +103,7 @@ class DrawPencil @JvmOverloads constructor(
                 invalidate()
             }
         }
-        return xx
+        return true
     }
 
    
