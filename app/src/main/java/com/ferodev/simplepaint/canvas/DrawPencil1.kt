@@ -21,7 +21,7 @@ import com.ferodev.simplepaint.cons.Pencil
 
 public var x = 9
 
-class DrawPencil @JvmOverloads constructor(
+class DrawPencil1 @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
