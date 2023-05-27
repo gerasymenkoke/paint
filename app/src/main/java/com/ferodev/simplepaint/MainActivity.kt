@@ -63,12 +63,12 @@ class MainActivity : AppCompatActivity() {
            
                count=count + 1 
                
-               val x = DrawPencil(0, 0, 0).onTouchEvent().xx
+          //     val x = DrawPencil(0, 0, 0).onTouchEvent().xx
            //    val xxReturn = xxx.onTouchEvent()
            //    val xMember = xxx.x 
                 
                //var xx = com.ferodev.simplepaint.canvas.DrawPencil().x
-               xtext.text = xx.toString()               
+               xtext.text = count.toString()               
                
                
     
