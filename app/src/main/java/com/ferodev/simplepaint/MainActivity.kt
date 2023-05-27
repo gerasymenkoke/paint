@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                    
                    
                     count=count + 1 
-                    drawPencil1.text = count.toString()  
+                    drawPencil1.visibility = count.toString()  
             
                    
                    
