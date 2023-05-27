@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
 
        supportActionBar?.hide()
          
-         
-         
+      private lateinit var text_view_id: TextView         
+      text_view_id = findViewById(R.id.text_view_id)   
         
         
         binding.apply {
