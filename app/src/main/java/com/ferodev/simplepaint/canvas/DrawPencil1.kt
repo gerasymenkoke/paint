@@ -86,7 +86,7 @@ class DrawPencil1 @JvmOverloads constructor(
        
               
         count = count + 1
-        draw_pencil1.text = count.toString()               
+        xtext.text = count.toString()               
           
               
               
