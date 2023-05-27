@@ -159,14 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone"
-              <TextView
-        android:id="@+id/xtext1"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/x_text"
-        android:textColor="#008000"
-        android:textSize="20dp"
-        android:textStyle="bold"/>                           
+                               
                                       
               
                                       />
