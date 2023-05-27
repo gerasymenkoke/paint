@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
            //    val xMember = xxx.x 
                 
                //var xx = com.ferodev.simplepaint.canvas.DrawPencil().x
-            //   draw_pencil1.text = count.toString()               
+            xtext.text =  drawPencil1.text               
                
                
     
