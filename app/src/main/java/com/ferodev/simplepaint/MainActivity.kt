@@ -61,10 +61,6 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
-             count=count + 1 
-           
-                
-      drawPencil1.text = count.toString()  
                
                
           //     val x = DrawPencil(0, 0, 0).onTouchEvent().xx
@@ -101,6 +97,14 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
                     drawPencil1.visibility = View.VISIBLE
+                   
+                   
+                    count=count + 1 
+                    drawPencil1.text = count.toString()  
+            
+                   
+                   
+                   
                     drawLine.visibility = View.GONE
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
@@ -127,6 +131,8 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
                     drawLine.visibility = View.VISIBLE
+                   
+                   
                     drawPencil1.visibility = View.GONE
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
