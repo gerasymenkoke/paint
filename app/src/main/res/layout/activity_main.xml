@@ -154,7 +154,7 @@
         android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/color_palate">
 
-        <com.ferodev.simplepaint.canvas.DrawPencil
+        <com.ferodev.simplepaint.canvas.DrawPencil1
             android:id="@+id/draw_pencil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
