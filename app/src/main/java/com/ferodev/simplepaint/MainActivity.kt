@@ -62,6 +62,13 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked
            
                
+                 count=count + 1 
+                    //drawPencil1.visibility = count  
+                    //drawPencil1.test = "count"  
+                   text_view_id.text = count.toString()
+               
+               
+               
                
           //     val x = DrawPencil(0, 0, 0).onTouchEvent().xx
            //    val xxReturn = xxx.onTouchEvent()
@@ -99,10 +106,7 @@ class MainActivity : AppCompatActivity() {
                     drawPencil1.visibility = View.VISIBLE
                    
                    
-                    count=count + 1 
-                    //drawPencil1.visibility = count  
-                    //drawPencil1.test = "count"  
-                   text_view_id.text = count.toString()
+                  
             
                    
                    
