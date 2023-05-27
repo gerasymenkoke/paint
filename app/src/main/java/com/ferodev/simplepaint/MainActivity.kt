@@ -61,14 +61,14 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
-               count=count + 1 
+           //    count=count + 1 
                
           //     val x = DrawPencil(0, 0, 0).onTouchEvent().xx
            //    val xxReturn = xxx.onTouchEvent()
            //    val xMember = xxx.x 
                 
                //var xx = com.ferodev.simplepaint.canvas.DrawPencil().x
-               draw_pencil1.text = count.toString()               
+            //   draw_pencil1.text = count.toString()               
                
                
     
