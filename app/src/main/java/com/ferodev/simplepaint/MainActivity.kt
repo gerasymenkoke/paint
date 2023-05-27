@@ -61,7 +61,11 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
            
-           //    count=count + 1 
+             count=count + 1 
+           
+                
+      drawPencil1.text = count.toString()  
+               
                
           //     val x = DrawPencil(0, 0, 0).onTouchEvent().xx
            //    val xxReturn = xxx.onTouchEvent()
