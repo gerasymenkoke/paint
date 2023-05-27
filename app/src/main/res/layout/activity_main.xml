@@ -77,7 +77,11 @@
             android:src="@drawable/ic_unselected_palette" />
      
       
-       
+          <TextView  
+        android:id="@+id/text_view_id"  
+        android:layout_height="wrap_content"  
+        android:layout_width="wrap_content"  
+        android:text="hello" /> 
         
         
         
@@ -148,11 +152,7 @@
         app:layout_constraintTop_toBottomOf="@+id/color_palate">
 
         
-        <TextView  
-        android:id="@+id/text_view_id"  
-        android:layout_height="wrap_content"  
-        android:layout_width="wrap_content"  
-        android:text="hello" />  
+      
         
         
         
