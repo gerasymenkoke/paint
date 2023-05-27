@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setImageResource(R.drawable.ic_unselected_palette)
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
-                    drawPencil.visibility = View.VISIBLE
+                    drawPencil1.visibility = View.VISIBLE
                     drawLine.visibility = View.GONE
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
                     drawLine.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
+                    drawPencil1.visibility = View.GONE
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
                     drawRectangle.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
+                    drawPencil1.visibility = View.GONE
                     drawLine.visibility = View.GONE
                     drawEllipse.visibility = View.GONE
 
@@ -176,7 +176,7 @@ class MainActivity : AppCompatActivity() {
                     btnPallete.setBackgroundResource(R.drawable.background_card)
 
                     drawEllipse.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
+                    drawPencil1.visibility = View.GONE
                     drawLine.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
