@@ -9,6 +9,8 @@ import android.view.View
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
 import com.ferodev.simplepaint.cons.Pencil
+import com.ferodev.simplepaint.databinding.ActivityMainBinding
+
 
 class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
