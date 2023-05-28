@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                   
-                     text_view_id.text= counter.toString()                  
+                     TextView.text = counter.toString()                  
                     
                     
                     
