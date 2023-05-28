@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             
             
-            text_view_id.text= counter.toString()
+          
             
             
             
@@ -49,7 +49,17 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
-
+                  
+                  
+                     text_view_id.text= counter.toString()                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     btnArrow.setImageResource(R.drawable.ic_unselected_line)
                     btnArrow.setBackgroundResource(R.drawable.background_card)
                     btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
