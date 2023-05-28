@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private var isRectangleIconClicked = false
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
+    private var counter = 9
 
     companion object {
         var path = Path()
@@ -34,6 +35,13 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.apply {
+            
+            
+            text_view_id.text= counter.toString()
+            
+            
+            
+            
             btnPencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
