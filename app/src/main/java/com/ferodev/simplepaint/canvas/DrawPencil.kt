@@ -83,7 +83,7 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
         
-        binding = ActvityMainBinding.inflate(layoutInflater)
+       
       
         setContentView(binding.root)
          binding.apply {
