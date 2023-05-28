@@ -25,10 +25,10 @@ class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
-     val layoutInflater = LayoutInflater.from(parent.context)
-     private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
+    
+    
+    
+    
     
     
     
@@ -83,7 +83,7 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
         
-        
+        binding = ActvityMainBinding.inflate(layoutInflater)
       
         setContentView(binding.root)
          binding.apply {
