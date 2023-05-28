@@ -16,6 +16,13 @@ class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
+     private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+    
+    
+    
+    
     private val TOUCH_TOLERANCE = 4f
 
     private var mX = 0f
@@ -67,7 +74,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event.y
         
         
-        binding = ActivityMainBinding.inflate(layoutInflater)
+      
         setContentView(binding.root)
          binding.apply {
         
