@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-       val  text_view_id = findViewById<TextView>(R.id.text_view_id)
+    
         
         
         
