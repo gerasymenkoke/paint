@@ -63,6 +63,10 @@ class DrawPencil @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
+        
+        textviewid.text = x.toString()            
+        
+        
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
                 touchStart(x, y)
