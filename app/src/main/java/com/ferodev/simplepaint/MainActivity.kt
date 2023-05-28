@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
- 
+       val  text_view_id = findViewById<TextView>(R.id.text_view_id)
         
         
         
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                   
-                     textviewid.text = counter.toString()                  
+                     text_view_id.text = counter.toString()                  
                     
                     
                     
