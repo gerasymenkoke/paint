@@ -6,8 +6,21 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity">
+   
     
     
+     <TextView
+        android:id="@+id/textviewid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/text_view"
+        android:textColor="#008000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+             />
   
     
     
@@ -34,30 +47,7 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:src="@drawable/ic_unselected_pencil" />
-        
-         
-     <TextView
-        android:id="@+id/text_viewid"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/text_view"
-        android:textColor="#008000"
-        android:textSize="40dp"
-        android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-             />
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+          
 
         <ImageButton
             android:id="@+id/btn_arrow"
