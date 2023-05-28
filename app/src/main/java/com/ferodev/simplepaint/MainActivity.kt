@@ -49,13 +49,18 @@ class MainActivity : AppCompatActivity() {
             btnPencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
-
+ 
+                
+                text_view_id.text = counter.toString()            
+                
+                
+                
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                   
-                     text_view_id.text = counter.toString()                  
+                          
                     
                     
                     
