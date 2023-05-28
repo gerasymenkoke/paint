@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+       setContentView(R.layout.main) // <- main.xml
+    cosntraintLayout = findViewById<ConstraintLayout>(R.id.ConstraintLayout) // <- add this 
+        
+        
+        
         supportActionBar?.hide()
 
         binding.apply {
