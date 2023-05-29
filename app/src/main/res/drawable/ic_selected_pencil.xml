@@ -8,7 +8,7 @@
         <path
             android:name="square"
             android:fillColor="@color/background_selected_icon"
-            android:pathData="M0,0 L500,500 z"               />
+            android:pathData="M0,0 L10,10 z"               />
               <!-- "M0,0 L24,0 L24,24 L0,24 z" -->
         <path
             android:fillColor="@color/black"
