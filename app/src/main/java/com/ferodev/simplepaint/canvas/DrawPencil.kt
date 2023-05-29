@@ -83,13 +83,8 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
         
+           
        
-      
-        setContentView(binding.root)
-         binding.apply {
-        
-        textviewid.text = x.toString()   
-                      }
         
         
         when (event.action) {
