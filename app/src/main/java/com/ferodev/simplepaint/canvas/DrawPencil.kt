@@ -66,8 +66,8 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     private fun touchMove(x: Float, y: Float) {
-        val dx = Math.abs(x*2 - mX)
-        val dy = Math.abs(y*2 - mY)
+        val dx = Math.abs(x - mX)
+        val dy = Math.abs(y - mY)
         if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
             path.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2)
             mX = x
@@ -93,7 +93,7 @@ class DrawPencil @JvmOverloads constructor(
                 invalidate()
             }
             MotionEvent.ACTION_MOVE -> {
-                touchMove(x, y)
+                touchMove(x*2, y*2)
                 invalidate()
             }
             MotionEvent.ACTION_UP -> {
