@@ -5,7 +5,7 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
     <group>
-        <path
+       <!-- <path
             android:name="square"
             android:fillColor="@color/background_selected_icon"
             android:pathData="M0,0 z"
