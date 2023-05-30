@@ -60,7 +60,7 @@ class DrawPencil @JvmOverloads constructor(
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
-        path.moveTo(x*10, y*10)
+        path.moveTo(x, y)
         mX = x
         mY = y
     }
@@ -70,8 +70,8 @@ class DrawPencil @JvmOverloads constructor(
         val dy = Math.abs(y - mY)
         if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
             path.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2)
-            mX = x
-            mY = y
+            mX = x*5
+            mY = y*5
         }
     }
 
