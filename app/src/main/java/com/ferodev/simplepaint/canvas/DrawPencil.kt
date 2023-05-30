@@ -60,7 +60,7 @@ class DrawPencil @JvmOverloads constructor(
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
-        path.moveTo(x, y)
+        path.moveTo(x*10, y*10)
         mX = x
         mY = y
     }
