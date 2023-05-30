@@ -69,7 +69,7 @@ class DrawPath @JvmOverloads constructor(
                 invalidate()
             }
             MotionEvent.ACTION_MOVE -> {
-                touchMove(x*2, y*2)
+                touchMove(x, y)
                 invalidate()
             }
             MotionEvent.ACTION_UP -> {
