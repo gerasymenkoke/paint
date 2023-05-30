@@ -60,14 +60,14 @@ class DrawPencil @JvmOverloads constructor(
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
-        path.moveTo(x*5, y*5)
+        path.moveTo(x, y)
         mX = x
         mY = y
     }
 
     private fun touchMove(x: Float, y: Float) {
-        val dx = Math.abs(x - mX)
-        val dy = Math.abs(y - mY)
+        val dx = Math.abs(x*2 - mX)
+        val dy = Math.abs(y*2 - mY)
         if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
             path.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2)
             mX = x
