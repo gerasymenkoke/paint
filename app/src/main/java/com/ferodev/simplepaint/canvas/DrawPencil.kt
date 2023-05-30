@@ -89,11 +89,11 @@ class DrawPencil @JvmOverloads constructor(
         
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
-                touchStart(x, y)
+                touchStart(x*2, y*2)
                 invalidate()
             }
             MotionEvent.ACTION_MOVE -> {
-                touchMove(x*2, y*2)
+                touchMove(x, y)
                 invalidate()
             }
             MotionEvent.ACTION_UP -> {
