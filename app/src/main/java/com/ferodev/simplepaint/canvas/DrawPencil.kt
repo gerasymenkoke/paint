@@ -30,7 +30,11 @@ class DrawPencil @JvmOverloads constructor(
         ActivityMainBinding.inflate(layoutInflater)
     }
     
-      setContentView(binding.root)
+  
+       override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    
+    setContentView(binding.root)
     
        supportActionBar?.hide()
     
@@ -130,5 +134,5 @@ class DrawPencil @JvmOverloads constructor(
     }
     
     }
-
+       }
 }
