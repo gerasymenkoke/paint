@@ -162,12 +162,9 @@
             android:layout_height="match_parent"
             android:visibility="visible" />
 
-        <com.ferodev.simplepaint.canvas.DrawLine
-            android:id="@+id/draw_line"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone" />
-
+       
+        
+        
         <com.ferodev.simplepaint.canvas.DrawRectangle
             android:id="@+id/draw_rectangle"
             android:layout_width="match_parent"
