@@ -32,8 +32,9 @@ class DrawPencil @JvmOverloads constructor(
     
       setContentView(binding.root)
     
+       supportActionBar?.hide()
     
-    
+    binding.apply {
     
     private val TOUCH_TOLERANCE = 4f
 
@@ -96,15 +97,14 @@ class DrawPencil @JvmOverloads constructor(
             }
             MotionEvent.ACTION_MOVE -> {
              
-        binding.apply {
+        
                 
                 touchMove(x*2, y)
                 val xx = x.toString()
                 textviewid.text = xx 
                 //print (xx)
                 invalidate()
-                      }
-                
+                                     
             }
             MotionEvent.ACTION_UP -> {
                 touchUp()
@@ -127,6 +127,8 @@ class DrawPencil @JvmOverloads constructor(
             dataPencil.removeAt(dataPencil.size - 1)
             invalidate()
         }
+    }
+    
     }
 
 }
