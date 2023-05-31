@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
  
-                
-                textviewid.text = counter.toString()            
+               counter ++  
+               textviewid.text = counter.toString()            
                 
                 
                 
