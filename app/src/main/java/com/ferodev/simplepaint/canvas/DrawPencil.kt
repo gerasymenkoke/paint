@@ -26,9 +26,11 @@ class DrawPencil @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     
+      private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
     
-    
-    
+      setContentView(binding.root)
     
     
     
@@ -93,11 +95,16 @@ class DrawPencil @JvmOverloads constructor(
                 invalidate()
             }
             MotionEvent.ACTION_MOVE -> {
+             
+        binding.apply {
+                
                 touchMove(x*2, y)
                 val xx = x.toString()
                 textviewid.text = xx 
                 //print (xx)
                 invalidate()
+                      }
+                
             }
             MotionEvent.ACTION_UP -> {
                 touchUp()
