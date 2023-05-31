@@ -7,7 +7,16 @@
     android:background="@color/white"
     tools:context=".DrawPencil">
    
-    
+      <TextView
+        android:id="@+id/textviewid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/text_view"
+        android:textColor="#008000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+     
+             />
    
     
     
@@ -76,16 +85,7 @@
         
         
          
-     <TextView
-        android:id="@+id/textviewid"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/text_view"
-        android:textColor="#008000"
-        android:textSize="20dp"
-        android:textStyle="bold"
-     
-             />
+   
   
         
         
