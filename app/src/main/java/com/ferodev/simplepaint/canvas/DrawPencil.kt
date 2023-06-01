@@ -4,7 +4,7 @@ package com.ferodev.simplepaint.canvas
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.ferodev.simplepaint.databinding.ActivityMainBinding
+
 
 
 
@@ -21,14 +21,20 @@ import com.ferodev.simplepaint.cons.Pencil
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 
+class DrawPencil : AppCompatActivity() {
+
+    private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
+
+
 class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
     
-      private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
+   
     
   
        override fun onCreate(savedInstanceState: Bundle?) {
