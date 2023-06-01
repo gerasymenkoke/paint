@@ -21,11 +21,7 @@ import com.ferodev.simplepaint.cons.Pencil
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 
-class DrawPencil : AppCompatActivity() {
 
-    private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
 
 
 
@@ -136,6 +132,6 @@ class DrawPencil @JvmOverloads constructor(
         }
     }
     
-          }
+       
 
 }
