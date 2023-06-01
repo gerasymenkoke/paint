@@ -101,7 +101,7 @@ class DrawPencil @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
-        
+        var xx = "99"
            
        
         
@@ -116,7 +116,7 @@ class DrawPencil @JvmOverloads constructor(
         
                 
                 touchMove(x*2, y)
-               var xx = x.toString()
+               xx = x.toString()
                // textviewid.text = xx 
                 //print (xx)
                 invalidate()
