@@ -53,7 +53,7 @@ class DrawPencil @JvmOverloads constructor(
 
     
      companion object {
-        var xx
+        var xxx = xx
     }
     
     
