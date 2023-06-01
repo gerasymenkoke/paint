@@ -53,7 +53,7 @@ class DrawPencil @JvmOverloads constructor(
 
     
      companion object {
-        var xxx = xx
+        var xxx = onTouchEvent()
     }
     
     
@@ -116,7 +116,7 @@ class DrawPencil @JvmOverloads constructor(
         
                 
                 touchMove(x*2, y)
-                xx = x.toString()
+               var xx = x.toString()
                // textviewid.text = xx 
                 //print (xx)
                 invalidate()
@@ -127,7 +127,7 @@ class DrawPencil @JvmOverloads constructor(
                 invalidate()
             }
         }
-        return true
+        return xx
     }
 
     override fun onDraw(canvas: Canvas) {
