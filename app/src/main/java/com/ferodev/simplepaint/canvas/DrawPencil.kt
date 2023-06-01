@@ -41,7 +41,7 @@ class DrawPencil @JvmOverloads constructor(
     
   
     
-    binding.apply {
+ 
     
     private val TOUCH_TOLERANCE = 4f
 
@@ -137,5 +137,5 @@ class DrawPencil @JvmOverloads constructor(
     }
     
           }
-}
+
 }
