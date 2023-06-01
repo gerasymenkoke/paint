@@ -39,9 +39,7 @@ class DrawPencil @JvmOverloads constructor(
   
       
     
-    setContentView(binding.root)
-    
-       supportActionBar?.hide()
+  
     
     binding.apply {
     
