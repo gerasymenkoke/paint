@@ -7,6 +7,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xx
+
+
 
 class MainActivity : AppCompatActivity() {
 
