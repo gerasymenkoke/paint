@@ -51,6 +51,15 @@ class DrawPencil @JvmOverloads constructor(
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
 
+    
+     companion object {
+        var xx
+    }
+    
+    
+    
+    
+    
     private val paintBrush = Paint().apply {
         isAntiAlias = true
         isDither = true
@@ -107,7 +116,7 @@ class DrawPencil @JvmOverloads constructor(
         
                 
                 touchMove(x*2, y)
-                val xx = x.toString()
+                xx = x.toString()
                // textviewid.text = xx 
                 //print (xx)
                 invalidate()
