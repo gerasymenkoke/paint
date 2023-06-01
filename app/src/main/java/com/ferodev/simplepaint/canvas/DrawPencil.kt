@@ -16,6 +16,10 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 
+import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
+import com.ferodev.simplepaint.MainActivity.Companion.path
+
+
 
 import com.ferodev.simplepaint.cons.Pencil
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
