@@ -108,7 +108,7 @@ class DrawPencil @JvmOverloads constructor(
                 
                 touchMove(x*2, y)
                 val xx = x.toString()
-                textviewid.text = xx 
+               // textviewid.text = xx 
                 //print (xx)
                 invalidate()
                                      
