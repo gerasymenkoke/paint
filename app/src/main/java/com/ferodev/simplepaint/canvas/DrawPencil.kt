@@ -37,8 +37,7 @@ class DrawPencil @JvmOverloads constructor(
    
     
   
-       override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+      
     
     setContentView(binding.root)
     
@@ -139,7 +138,6 @@ class DrawPencil @JvmOverloads constructor(
         }
     }
     
-    }
-       }
+          }
 }
 }
