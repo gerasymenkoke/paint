@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xx
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 
 
 
