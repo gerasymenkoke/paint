@@ -53,7 +53,7 @@ class DrawPencil @JvmOverloads constructor(
     private var xx = "99"
     
      companion object {
-        var xxx = com.ferodev.simplepaint.canvas.DrawPencil.xx
+        var xxx = "99"
      }
     
     
