@@ -116,7 +116,7 @@ class DrawPencil @JvmOverloads constructor(
         
                 
                 touchMove(x*2, y)
-               xx = x.toString()
+               xxx = x.toString()
                // textviewid.text = xx 
                 //print (xx)
                 invalidate()
