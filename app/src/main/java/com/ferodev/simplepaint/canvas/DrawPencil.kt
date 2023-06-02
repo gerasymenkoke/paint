@@ -52,7 +52,7 @@ class DrawPencil @JvmOverloads constructor(
    
     
       companion object {
-        var xxx = onTouchEvent()
+        var xxx = "99"
                             }
     
     
@@ -101,7 +101,7 @@ class DrawPencil @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
-        xx = "99"
+        xxx = "999"
        
        
         
