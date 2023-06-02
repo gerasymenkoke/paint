@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             
             
-          
+           textviewid.text = xxx + "  " + yyy
             
             
             
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked
  
               // counter ++  
-               textviewid.text = xxx + "  " + yyy
+              
                 //counter.toString()            
                 
                 
