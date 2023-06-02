@@ -47,10 +47,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             
-            
+           if (xxx.change())  { 
            textviewid.text = xxx + "  " + yyy
-            
-            
+            }
+                                      
+                                      
+                                      
+                                      
             
             
             btnPencil.setOnClickListener {
