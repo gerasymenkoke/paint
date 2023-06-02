@@ -50,11 +50,9 @@ class DrawPencil @JvmOverloads constructor(
 
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
-    public  var xx = "99"
+   
     
-     companion object {
-        var xxx = xx
-     }
+     
     
     
     
@@ -102,7 +100,9 @@ class DrawPencil @JvmOverloads constructor(
         val x = event.x
         val y = event.y
          xx = "99"
-           
+          companion object {
+        var xxx = xx
+     }
        
         
         
