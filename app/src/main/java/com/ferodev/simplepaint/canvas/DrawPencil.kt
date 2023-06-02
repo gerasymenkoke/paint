@@ -37,8 +37,7 @@ class DrawPencil @JvmOverloads constructor(
    
     
   
-      
-    
+       
   
     
  
@@ -52,7 +51,10 @@ class DrawPencil @JvmOverloads constructor(
     private val colorList = mutableListOf<Int>()
    
     
-     
+      companion object {
+        var xxx = onTouchEvent()
+                            }
+    
     
     
     
@@ -99,10 +101,8 @@ class DrawPencil @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val x = event.x
         val y = event.y
-         xx = "99"
-          companion object {
-        var xxx = xx
-     }
+        xx = "99"
+       
        
         
         
