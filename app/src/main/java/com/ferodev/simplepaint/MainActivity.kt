@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked
  
               // counter ++  
-               textviewid.text = xx
+               textviewid.text = xxx
                 //counter.toString()            
                 
                 
