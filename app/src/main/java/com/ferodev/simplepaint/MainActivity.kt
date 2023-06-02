@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private var isRectangleIconClicked = false
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
-    private var counter = 9
+    private var xxxold = 99
 
     companion object {
         var path = Path()
@@ -47,9 +47,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             
-          xxx.onChange { 
-           textviewid.text = xxx + "  " + yyy
-            }
+         
+         
+           
                                       
                                       
                                       
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
-                  
+                      textviewid.text = xxx + "  " + yyy
                           
                     
                     
@@ -95,6 +95,8 @@ class MainActivity : AppCompatActivity() {
                     drawRectangle.visibility = View.GONE
 
                 } else {
+                   
+                      textviewid.text = xxx + "  " + yyy
                     btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_card)
                 }
