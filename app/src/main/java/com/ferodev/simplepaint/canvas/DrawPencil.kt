@@ -53,7 +53,9 @@ class DrawPencil @JvmOverloads constructor(
     
       companion object {
         var xxx = "99"
-        var yyy = "99"                    }
+        var yyy = "99"            
+        var zzz = 0
+                        }
     
     
     
@@ -103,7 +105,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event.y
         xxx = x.toString()       
         yyy = y.toString()    
-        
+        zzz = 1
         
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
