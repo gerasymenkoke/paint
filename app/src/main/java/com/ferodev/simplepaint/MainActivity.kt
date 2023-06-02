@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             
-           if (xxx.change())  { 
+          xxx.onChange { 
            textviewid.text = xxx + "  " + yyy
             }
                                       
