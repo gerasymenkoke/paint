@@ -113,11 +113,13 @@ class DrawPencil @JvmOverloads constructor(
                 invalidate()
             }
             MotionEvent.ACTION_MOVE -> {
-             
-        
+                  
                 
-                touchMove(x*2, y)
+                touchMove(x, y)
                xxx = x.toString()
+             
+                btnPencil.performClick()
+                
                // textviewid.text = xx 
                 //print (xx)
                 invalidate()
