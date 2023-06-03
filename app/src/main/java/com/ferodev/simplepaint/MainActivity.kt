@@ -50,29 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-            
-            
-            
-            editTextSample.addTextChangedListener(object : TextWatcher {
- 
-            override fun afterTextChanged(s: Editable) {}
- 
-            override fun beforeTextChanged(s: CharSequence, start: Int,
-                                           count: Int, after: Int) {
-            }
- 
-            override fun onTextChanged(s: CharSequence, start: Int,
-                                       before: Int, count: Int) {
-                tvSample.setText("Text in EditText : "+s)
-            }
-        })
-            
-            
-             textviewid.text = xxx + "  " + yyy
-            
-            
-        
-                                      
+                          
                                       
                                       
             
@@ -115,9 +93,16 @@ class MainActivity : AppCompatActivity() {
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
-                } else {
+                } 
+                val i=1
+                while(i==i) {  textviewid.text = xxx + "  " + yyy }
+                
+                
+                
+                
+                else {
                    
-                      textviewid.text = xxx + "  " + yyy
+                     
                     btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_card)
                 }
