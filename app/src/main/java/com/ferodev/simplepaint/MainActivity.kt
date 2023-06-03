@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 
                 textviewid.text = xxx + "  " + yyy
                 
-                btnPencil.performClick()
+             
                 
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
-                            
+                          btnPencil.performClick()     
                 
                 }
                 
