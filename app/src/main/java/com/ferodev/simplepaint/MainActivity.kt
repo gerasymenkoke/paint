@@ -65,6 +65,8 @@ class MainActivity : AppCompatActivity() {
                 
                 textviewid.text = xxx + "  " + yyy
                 
+                btnPencil.performClick()
+                
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
