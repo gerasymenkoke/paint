@@ -105,7 +105,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event.y
         xxx = x.toString()       
         yyy = y.toString()    
-        zzz = 1
+       
         
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
@@ -117,6 +117,8 @@ class DrawPencil @JvmOverloads constructor(
                 
                 touchMove(x, y)
                xxx = x.toString()
+               
+                zzz = 1
              
               //  btnPencil.performClick()
                 
