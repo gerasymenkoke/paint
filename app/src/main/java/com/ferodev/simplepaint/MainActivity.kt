@@ -67,9 +67,9 @@ class MainActivity : AppCompatActivity() {
              //   textviewid.text = xxx + "  " + yyy
                 
              
-                textviewid.text = xxx + "  " + yyy
+               // textviewid.text = xxx + "  " + yyy
                 if (zzz == 1)  { 
-                     textviewid.text = xxx + "  " + yyy
+                     textviewid.text = xxx + "  " + yyy + "  " +zzz
                      zzz=0
                      btnPencil.performClick() 
                               }
