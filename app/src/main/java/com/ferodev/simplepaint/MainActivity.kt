@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             
-          drawPencil.setOnCheckedChangeListener {
+          drawPencil.onCheckedChangeListener {
           textviewid.text = xxx + "  " + yyy
                                         }
                                       
