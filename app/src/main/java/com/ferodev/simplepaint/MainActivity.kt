@@ -68,13 +68,10 @@ class MainActivity : AppCompatActivity() {
         })
             
             
+             textviewid.text = xxx + "  " + yyy
             
             
-            
-          drawPencil.setOnClickListener {
-          textviewid.text = xxx + "  " + yyy
-                                        }
-                                      
+        
                                       
                                       
                                       
