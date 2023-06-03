@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
               
                 //counter.toString()            
                 
-                textviewid.text = xxx + "  " + yyy
+             //   textviewid.text = xxx + "  " + yyy
                 
              
                 
@@ -251,7 +251,7 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         
-        
+        textviewid.text = xxx + "  " + yyy
         Thread.sleep(1000L)    
         btnPencil.performClick()
         
