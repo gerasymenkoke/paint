@@ -93,11 +93,11 @@ class MainActivity : AppCompatActivity() {
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
-                } 
+               
                 val i=1
                 while(i==i) {  textviewid.text = xxx + "  " + yyy }
                 
-                
+                }
                 
                 
                 else {
