@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
+        
                       }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,8 +68,11 @@ class MainActivity : AppCompatActivity() {
                 
              
                 textviewid.text = xxx + "  " + yyy
-                Thread.sleep(2000L)    
-                btnPencil.performClick()
+                if (zzz == 1)  { 
+                     textviewid.text = xxx + "  " + yyy
+                     zzz=0
+                     btnPencil.performClick() 
+                              }
                 
                 
                 
