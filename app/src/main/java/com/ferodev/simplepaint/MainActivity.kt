@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 
+import android.text.Editable
+import android.text.TextWatcher
+
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 
@@ -46,8 +49,29 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.apply {
+           
             
-          drawPencil.onCheckedChangeListener {
+            
+            
+            editTextSample.addTextChangedListener(object : TextWatcher {
+ 
+            override fun afterTextChanged(s: Editable) {}
+ 
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
+            }
+ 
+            override fun onTextChanged(s: CharSequence, start: Int,
+                                       before: Int, count: Int) {
+                tvSample.setText("Text in EditText : "+s)
+            }
+        })
+            
+            
+            
+            
+            
+          drawPencil.setOnClickListener {
           textviewid.text = xxx + "  " + yyy
                                         }
                                       
