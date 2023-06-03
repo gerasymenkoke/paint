@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-    }
+                      }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
-                          btnPencil.performClick()     
+                      
                 
                 }
                 
@@ -251,6 +251,9 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         }
+        Thread.sleep(1000L)    
+        btnPencil.performClick()     
+        
     }
 
     private fun currentColor(color: Int) {
