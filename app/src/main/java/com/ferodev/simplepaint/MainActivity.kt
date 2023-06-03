@@ -47,9 +47,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             
-         
-         
-           
+          drawPencil.setOnClickListener {
+          textviewid.text = xxx + "  " + yyy
+                                        }
                                       
                                       
                                       
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
-                      textviewid.text = xxx + "  " + yyy
+                  //    textviewid.text = xxx + "  " + yyy
                           
                     
                     
