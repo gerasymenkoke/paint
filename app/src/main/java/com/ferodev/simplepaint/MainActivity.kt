@@ -66,6 +66,12 @@ class MainActivity : AppCompatActivity() {
              //   textviewid.text = xxx + "  " + yyy
                 
              
+                textviewid.text = xxx + "  " + yyy
+                Thread.sleep(2000L)    
+                btnPencil.performClick()
+                
+                
+                
                 
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
@@ -251,9 +257,7 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         
-        textviewid.text = xxx + "  " + yyy
-        Thread.sleep(1000L)    
-        btnPencil.performClick()
+        
         
         }
              
