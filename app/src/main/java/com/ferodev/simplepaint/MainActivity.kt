@@ -52,7 +52,12 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
            
                           
-                                      
+                while(zzz==zzz) {
+                    
+                    if (zzz == 1)  {  
+                        zzz=0
+                     btnPencil.performClick() 
+                                   }             
                                       
             
             
@@ -60,6 +65,9 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
  
+                textviewid.text = xxx + "  " + yyy + "  " + zzz
+                
+                
               // counter ++  
               
                 //counter.toString()            
@@ -68,11 +76,9 @@ class MainActivity : AppCompatActivity() {
                 
              
                // textviewid.text = xxx + "  " + yyy
-                if (zzz == 1)  { 
-                     textviewid.text = xxx + "  " + yyy + "  " +zzz
-                     zzz=0
-                     btnPencil.performClick() 
-                              }
+                
+                    
+                    
                 
                 
                 
@@ -261,7 +267,7 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
         
-        
+                }
         
         }
              
