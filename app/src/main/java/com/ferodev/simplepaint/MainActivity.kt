@@ -250,15 +250,19 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setImageResource(R.drawable.ic_unselected_palette)
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
-        }
+        
+        
         Thread.sleep(1000L)    
-        btnPencil.performClick()     
+        btnPencil.performClick()
+        
+        }
+             
         
     }
 
     private fun currentColor(color: Int) {
         currentBrush = color
         path = Path()
-    }
+                                          }
 
 }
