@@ -52,12 +52,9 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
            
                           
-                while(zzz==zzz) {
+              
                     
-                    if (zzz == 1)  {  
-                        zzz=0
-                     btnPencil.performClick() 
-                                   }             
+                            
                                       
             
             
@@ -65,7 +62,11 @@ class MainActivity : AppCompatActivity() {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
  
-                textviewid.text = xxx + "  " + yyy + "  " + zzz
+               
+                
+                
+                
+                
                 
                 
               // counter ++  
@@ -111,7 +112,16 @@ class MainActivity : AppCompatActivity() {
                     drawEllipse.visibility = View.GONE
                     drawRectangle.visibility = View.GONE
 
-                      
+                     
+                     textviewid.text = xxx + "  " + yyy + "  " + zzz
+                    
+                      if (zzz == 1)  {  
+                        zzz=0
+                     btnPencil.performClick() 
+                                   }   
+                    
+                    
+                    
                 
                 }
                 
@@ -269,7 +279,7 @@ class MainActivity : AppCompatActivity() {
         
                 }
         
-        }
+       
              
         
     }
