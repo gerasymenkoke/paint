@@ -115,10 +115,7 @@ class MainActivity : AppCompatActivity() {
                      
                      textviewid.text = xxx + "  " + yyy + "  " + zzz
                     
-                      if (zzz == 1)  {  
-                        zzz=0
-                     btnPencil.performClick() 
-                                   }   
+                     
                     
                     
                     
@@ -276,12 +273,19 @@ class MainActivity : AppCompatActivity() {
                 btnPallete.setImageResource(R.drawable.ic_unselected_palette)
                 btnPallete.setBackgroundResource(R.drawable.background_card)
             }
-        
-                }
-        
        
-             
         
+             
+                     Thread.sleep(2000L)
+                     btnPencil.performClick() 
+                                      
+                      
+                      
+       
+       
+       
+                }
+          
     }
 
     private fun currentColor(color: Int) {
