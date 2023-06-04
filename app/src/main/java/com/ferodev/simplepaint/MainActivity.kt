@@ -276,7 +276,10 @@ class MainActivity : AppCompatActivity() {
        
         
              
-                     Thread.sleep(2000L)
+                     Thread.sleep(1000L)
+                     btnPencil.performClick() 
+                     
+                       Thread.sleep(1000L)
                      btnPencil.performClick() 
                                       
                       
