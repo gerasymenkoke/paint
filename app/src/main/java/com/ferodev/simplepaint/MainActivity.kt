@@ -5,6 +5,10 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.os.Bundle
 import android.view.View
+
+
+import android.widget.ImageButton
+
 import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
@@ -49,6 +53,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
     
+        
+        
+        
+        
+        
+        
         
         
         
