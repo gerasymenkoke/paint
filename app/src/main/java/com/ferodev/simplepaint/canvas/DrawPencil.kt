@@ -124,10 +124,7 @@ class DrawPencil @JvmOverloads constructor(
                 zzz = 1
                 
                 
-                   btn
-
-                
-                //.performClick()
+                   btn.performClick()
                 
                 
                 
