@@ -18,7 +18,7 @@ import android.view.View
 
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
-
+import com.ferodev.simplepaint.MainActivity.Companion.btnPencil
 
 
 import com.ferodev.simplepaint.cons.Pencil
@@ -123,6 +123,9 @@ class DrawPencil @JvmOverloads constructor(
                 
                  Thread.sleep(1000L)
                      btnPencil.performClick() 
+                
+                
+                
                 
                 
                 
