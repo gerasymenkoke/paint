@@ -125,7 +125,8 @@ class DrawPencil @JvmOverloads constructor(
                 
                 
                  Thread.sleep(1000L)
-                     btnPencil.performClick()
+                     btnPencil
+                    //.performClick()
                 
                 
                 
