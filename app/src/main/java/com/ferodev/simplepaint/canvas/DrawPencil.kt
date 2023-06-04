@@ -121,7 +121,7 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                xxx = x.toString()
                
-                zzz = 1
+                zzz = zzz +1
                 
                 
                    btn.performClick()
