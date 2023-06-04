@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-        var btn = true
+        var btn = ""
         
                       }
     
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
            
                         
                             
-                     btn = btnPencil.performClick()                   
+                     btn = btnPencil                   
             
             
             btnPencil.setOnClickListener {
