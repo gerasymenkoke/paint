@@ -37,6 +37,14 @@ class MainActivity : AppCompatActivity() {
   //  private var image =  findViewById(R.id.btnPencil)
     
   
+         companion object {
+        var path = Path()
+        var paintBrush = Paint()
+        var colorList = ArrayList<Int>()
+        var currentBrush = Color.BLACK
+        var btn =  1  
+        
+                      }
     
     
     
@@ -47,14 +55,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        
-         companion object {
-        var path = Path()
-        var paintBrush = Paint()
-        var colorList = ArrayList<Int>()
-        var currentBrush = Color.BLACK
-        //var btn =  
-        
-                      }
+    
         
         
         
@@ -78,7 +79,7 @@ class MainActivity : AppCompatActivity() {
            
                         
                             
-                     btn = btnPencil                   
+                     btn = zzz                  
             
             
             btnPencil.setOnClickListener {
