@@ -65,19 +65,10 @@ class MainActivity : AppCompatActivity() {
                
                 
                 
+                  textviewid.text = xxx + "  " + yyy + "  " + zzz
                 
                 
-                
-                
-              // counter ++  
-              
-                //counter.toString()            
-                
-             //   textviewid.text = xxx + "  " + yyy
-                
-             
-               // textviewid.text = xxx + "  " + yyy
-                
+          
                     
                     
                 
@@ -113,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                     drawRectangle.visibility = View.GONE
 
                      
-                     textviewid.text = xxx + "  " + yyy + "  " + zzz
+                   
                     
                      
                     
@@ -276,11 +267,9 @@ class MainActivity : AppCompatActivity() {
        
         
              
-                     Thread.sleep(1000L)
-                     btnPencil.performClick() 
+                    
                      
-                       Thread.sleep(1000L)
-                     btnPencil.performClick() 
+                    
                                       
                       
                       
