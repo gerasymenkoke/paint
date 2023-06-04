@@ -36,14 +36,7 @@ class MainActivity : AppCompatActivity() {
     private var xxxold = 99
   //  private var image =  findViewById(R.id.btnPencil)
     
-       companion object {
-        var path = Path()
-        var paintBrush = Paint()
-        var colorList = ArrayList<Int>()
-        var currentBrush = Color.BLACK
-        var btn = findViewById(R.id.btnPencil)
-        
-                      }
+      
     
        
     
@@ -53,6 +46,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
     
+        
+         companion object {
+        var path = Path()
+        var paintBrush = Paint()
+        var colorList = ArrayList<Int>()
+        var currentBrush = Color.BLACK
+        var btn = findViewById(R.id.btnPencil)
+        
+                      }
+        
+        
+        
+        
+        
         
         
         
