@@ -31,6 +31,16 @@ class MainActivity : AppCompatActivity() {
     private var isPaletteIconClicked = false
     private var xxxold = 99
 
+       companion object {
+        var path = Path()
+        var paintBrush = Paint()
+        var colorList = ArrayList<Int>()
+        var currentBrush = Color.BLACK
+        var btn = btnPencil.performClick() 
+        
+                      }
+    
+       
     
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,19 +55,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-                   
-            companion object {
-        var path = Path()
-        var paintBrush = Paint()
-        var colorList = ArrayList<Int>()
-        var currentBrush = Color.BLACK
-        var btn = btnPencil.performClick() 
-        
-                      }
-            
-            
-              
-                    
+                        
                             
                                       
             
