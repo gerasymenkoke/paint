@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
     private var xxxold = 99
+    private var btn = 1
   //  private var image =  findViewById(R.id.btnPencil)
     
   
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-        var btn =  1  
+       // var btn =  1  
         
                       }
     
