@@ -37,6 +37,10 @@ class DrawPencil @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     
+    private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+    
    
     
   
