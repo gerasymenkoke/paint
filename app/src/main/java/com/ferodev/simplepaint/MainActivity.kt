@@ -69,6 +69,9 @@ class MainActivity : AppCompatActivity() {
                             
                  //    btn = zzz                  
             
+            
+            textviewid.text = xxx + "  " + yyy + "  " + btn
+            
           fun   onVisibilityChanged(btnPencil: View, btn: Int)
                  {  textviewid.text = xxx + "  " + yyy + "  " + btn }
                  
