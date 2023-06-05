@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
        
     
 
-     fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
              
         setContentView(binding.root)
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                             
                  //    btn = zzz                  
             
-          public fun   onVisibilityChanged(btnPencil: View, btn: int)
+          fun   onVisibilityChanged(btnPencil: View, btn: int)
                  {  textviewid.text = xxx + "  " + yyy + "  " + zzz }
                  
                  
