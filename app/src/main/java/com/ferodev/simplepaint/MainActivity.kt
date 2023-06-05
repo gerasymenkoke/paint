@@ -68,8 +68,10 @@ class MainActivity : AppCompatActivity() {
                             
                  //    btn = zzz                  
             
-            btnPencil.onVisibilityChanged 
-            {  textviewid.text = xxx + "  " + yyy + "  " + zzz }
+          protected void  onVisibilityChanged (btnPencil, btn)
+                 {  textviewid.text = xxx + "  " + yyy + "  " + zzz }
+                 
+                 
             
             btnPencil.setOnClickListener {
                 // Untuk mengganti dari false menjadi true
