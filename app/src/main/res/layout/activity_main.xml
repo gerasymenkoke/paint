@@ -168,6 +168,18 @@
 
        
         
+         <ImageButton
+            android:id="@+id/btn_draw"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@null"
+           // android:src="@drawable/ic_unselected_pencil" />
+        
+        
+        
+        
+        
         
         <com.ferodev.simplepaint.canvas.DrawRectangle
             android:id="@+id/draw_rectangle"
