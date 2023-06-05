@@ -124,7 +124,7 @@ class DrawPencil @JvmOverloads constructor(
                
                
               // btnPencil.setImageResource(R.drawable.ic_selected_pencil)
-               com.ferodev.simplepaint.canvas.DrawPencil.drawPencil.visibility = View.INVISIBLE
+               com.ferodev.simplepaint.canvas.DrawPencil.draw_pencil.visibility = View.INVISIBLE
                
                 
                 //zzz = zzz +1
