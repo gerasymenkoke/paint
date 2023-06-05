@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                
                 
                 
-                  textviewid.text = xxx + "  " + yyy + "  " + zzz
+               //   textviewid.text = xxx + "  " + yyy + "  " + zzz
                 
                 
           
