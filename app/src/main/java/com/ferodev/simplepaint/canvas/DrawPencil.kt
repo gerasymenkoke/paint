@@ -121,7 +121,10 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                xxx = x.toString()
                
-                zzz = zzz +1
+               drawPencil.visibility = View.INVISIBLE
+               
+                
+                //zzz = zzz +1
                 
                 
                  //  btn.performClick()
