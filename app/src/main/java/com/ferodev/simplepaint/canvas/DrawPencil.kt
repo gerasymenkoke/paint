@@ -37,10 +37,7 @@ class DrawPencil @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     
-    private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-    
+  
    
     
   
@@ -125,7 +122,9 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                xxx = x.toString()
                
-               drawPencil.visibility = View.INVISIBLE
+               
+              // btnPencil.setImageResource(R.drawable.ic_selected_pencil)
+               com.ferodev.simplepaint.canvas.DrawPencil.drawPencil.visibility = View.INVISIBLE
                
                 
                 //zzz = zzz +1
