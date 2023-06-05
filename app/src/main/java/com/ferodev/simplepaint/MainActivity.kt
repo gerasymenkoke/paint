@@ -19,6 +19,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 import android.text.Editable
 import android.text.TextWatcher
+import android.database.ContentObserver 
 
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
@@ -80,8 +81,8 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
             
-            fun onContextClick(@drawPencil MotionEvent e)
-            {  textviewid.text = xxx + "  " + yyy + "  " + event }
+          onChange (btn: Boolean, zzz: Uri)
+            {  textviewid.text = xxx + "  " + yyy + "  " + zzz}
                  
                  
             
