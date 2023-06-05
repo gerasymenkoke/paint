@@ -21,7 +21,7 @@ import android.graphics.Path
 
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
-import com.ferodev.simplepaint.MainActivity.Companion.btn
+// import com.ferodev.simplepaint.MainActivity.Companion.btn
 
 
 import com.ferodev.simplepaint.cons.Pencil
