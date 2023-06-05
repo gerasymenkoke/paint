@@ -81,8 +81,8 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
             
-          onChange (btn: Boolean, zzz: Uri)
-            {  textviewid.text = xxx + "  " + yyy + "  " + zzz}
+         btnPencil.setOnClickListener {
+            {  textviewid.text = xxx + "  " + yyy + " drawPencil " }
                  
                  
             
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
                
                 
                 
-               //   textviewid.text = xxx + "  " + yyy + "  " + zzz
+                 textviewid.text = xxx + "  " + yyy + "btnPencil" 
                 
                 
           
