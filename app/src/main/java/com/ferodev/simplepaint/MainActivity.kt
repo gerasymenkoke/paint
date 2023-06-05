@@ -81,8 +81,9 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
             
-         btnPencil.setOnClickListener {
-            {  textviewid.text = xxx + "  " + yyy + " drawPencil " }
+         drawPencil.setOnClickListener {
+                  textviewid.text = xxx + "  " + yyy + " drawPencil "
+                                       }
                  
                  
             
