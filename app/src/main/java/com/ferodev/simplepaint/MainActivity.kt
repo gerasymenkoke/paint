@@ -93,6 +93,9 @@ class MainActivity : AppCompatActivity() {
                    //   imageView.setImageResource(R.drawable.imagename)
                  
             
+            btnPencil.setOnClickListener { }
+            
+            
             fun setOnClickListener (btnPencil: View) {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
