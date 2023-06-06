@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
                                        }
                  
                  
-                 val imageView: btnPencil = findViewById(R.id.btnPencil)
+                // val imageView: btnPencil = findViewById(R.id.btnPencil)
                    //   imageView.setImageResource(R.drawable.imagename)
                  
             
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                   //  val imageView: ImageView = findViewById(R.id.imageView)
                   //     imageView.setImageResource(R.drawable.imagename)
                     
-                    btnPencil.setImageResource(R.drawable.ic_selected_pencil)
+                    setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                   //    textviewid.text = xxx + "  " + yyy
