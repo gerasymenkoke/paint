@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
          
-            drawPencil.onActionProviderVisibilityChanged(isVisible: Boolean)
+            drawPencil.setOnScrollChangeListener
              {
                                      textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
