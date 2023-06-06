@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 
-
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
