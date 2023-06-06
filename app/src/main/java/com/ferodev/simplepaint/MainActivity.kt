@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                  
                  
             
-            btnPencil.setOnClickListener {
+            fun setOnClickListener (btnPencil: View) {
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
  
