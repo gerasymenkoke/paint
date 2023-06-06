@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
          
             
             
-            setOnScrollChangeListener (drawPencil.OnScrollChangeListener l)
+           public void  setOnScrollChangeListener (drawPencil.OnScrollChangeListener l)
              {
                                      textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
