@@ -80,9 +80,11 @@ class MainActivity : AppCompatActivity() {
          // fun   onVisibilityChanged(btnPencil: View, btn: Int)
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
+         
             
-         drawPencil.setOnClickListener {
-                  textviewid.text = xxx + "  " + yyy + " drawPencil "
+            drawPencil.OnTouchListener {
+            
+                         textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
                  
                  
