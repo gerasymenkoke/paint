@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             
             fun  setOnScrollChangeListener (drawPencil: View)
              {
-                                     textviewid.text = xxx + "  " + yyy + " drawPencil "
+                                  //   textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
                  
                  
@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
          
             
             
-            fun setOnClickListener (btnPencil: View) { }
+            fun setOnClickListener (btnPencil: View) {   textviewid.text = xxx + "  " + yyy + " drawPencil "}
             
                btnPencil.setOnClickListener {
             
