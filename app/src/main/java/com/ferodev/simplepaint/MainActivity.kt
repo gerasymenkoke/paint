@@ -89,7 +89,8 @@ class MainActivity : AppCompatActivity() {
                                        }
                  
                  
-                 
+                 val imageView: btnPencil = findViewById(R.id.btnPencil)
+                   //   imageView.setImageResource(R.drawable.imagename)
                  
             
             fun setOnClickListener (btnPencil: View) {
@@ -110,6 +111,10 @@ class MainActivity : AppCompatActivity() {
                 
                 
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+                    
+                  //  val imageView: ImageView = findViewById(R.id.imageView)
+                  //     imageView.setImageResource(R.drawable.imagename)
+                    
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
