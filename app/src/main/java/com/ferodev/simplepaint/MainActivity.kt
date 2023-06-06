@@ -10,7 +10,7 @@ import android.view.View
 import android.view.MotionEvent
 
 
-import androidx.core.view
+// import androidx.core.view
 
 
 import android.widget.ImageButton
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
          
             
             
-            drawPencil.setOnScrollChangeListener
+            setOnScrollChangeListener (drawPencil.OnScrollChangeListener l)
              {
                                      textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
