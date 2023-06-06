@@ -10,6 +10,8 @@ import android.view.View
 import android.view.MotionEvent
 
 
+import androidx.core.view
+
 
 import android.widget.ImageButton
 
@@ -81,10 +83,9 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
          
-            
-            drawPencil.OnTouchListener {
-            
-                         textviewid.text = xxx + "  " + yyy + " drawPencil "
+            onActionProviderVisibilityChanged(isVisible: Boolean)
+             {
+                                     textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
                  
                  
