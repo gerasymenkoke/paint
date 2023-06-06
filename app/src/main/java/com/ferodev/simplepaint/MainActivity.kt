@@ -74,18 +74,21 @@ class MainActivity : AppCompatActivity() {
                         
                             
                  //    btn = zzz                  
-            
-            
+                       
             textviewid.text = xxx + "  " + yyy + "  " + btn
             
          // fun   onVisibilityChanged(btnPencil: View, btn: Int)
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
          
+            
+            
             drawPencil.setOnScrollChangeListener
              {
                                      textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
+                 
+                 
                  
                  
             
