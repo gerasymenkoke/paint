@@ -81,9 +81,16 @@ class MainActivity : AppCompatActivity() {
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
          
+            var x1 = 1
+            var x2 = 1
+            var x3 = 1
+            var x4 = 1
             
             
-             btnPencil.setOnScrollChangeListener ()
+            
+            
+            
+             btnPencil.setOnScrollChangeListener (btnPencil, x1, x2, x3, x4 )
              {
                                     textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
