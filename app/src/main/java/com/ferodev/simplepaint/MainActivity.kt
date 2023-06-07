@@ -29,6 +29,9 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
 
 
+
+
+
 class MainActivity : AppCompatActivity() {
 
     private val binding: ActivityMainBinding by lazy {
