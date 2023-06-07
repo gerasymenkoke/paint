@@ -83,9 +83,9 @@ class MainActivity : AppCompatActivity() {
          
             
             
-            fun  setOnScrollChangeListener (drawPencil: View)
+             btnPencil.setOnScrollChangeListener 
              {
-                                  //   textviewid.text = xxx + "  " + yyy + " drawPencil "
+                                    textviewid.text = xxx + "  " + yyy + " drawPencil "
                                        }
                  
                  
