@@ -57,6 +57,43 @@ class MainActivity : AppCompatActivity() {
     
        
        
+       class Controller {
+    var onAction1: () -> Unit = {} // listener with default implementation without params and returns Unit
+
+    var onAction2: (() -> Unit)? = null // nullable listener without params and returns Unit
+
+    var onAction3: ((Int) -> String)? = null // listener with param of type Int and returns String object
+}
+
+       
+       
+       val controller = Controller()
+controller.onAction1 = {
+    // your action
+}
+
+controller.onAction2 = {
+    // your action
+}
+
+controller.onAction3 = { intParam ->
+    // your action
+    "result" // return some String result
+}
+       
+       
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       
+       
+       
+       
     
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,7 +108,24 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-                        
+             
+            
+            
+            val controller = Controller()
+controller.onAction1()
+controller.onAction2?.invoke()
+val result: String? = controller.onAction3?.invoke(20)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                             
                  //    btn = zzz                  
                        
