@@ -135,19 +135,15 @@ val result: String? = controller.onAction3?.invoke(20)
            
            // fun onTouch(drawPencil: View, event: MotionEvent)
          
-            var x1 = 1
-            var x2 = 1
-            var x3 = 1
-            var x4 = 1
             
             
             
             
             
-             drawPencil.setOnScrollChangeListener
-             {
-                                    textviewid.text = xxx + "  " + yyy + " drawPencil "
-                                       }
+           //  drawPencil.setOnScrollChangeListener
+             //{
+                                 //   textviewid.text = xxx + "  " + yyy + " drawPencil "
+               //                        }
                  
                  
                 // val imageView: btnPencil = findViewById(R.id.btnPencil)
