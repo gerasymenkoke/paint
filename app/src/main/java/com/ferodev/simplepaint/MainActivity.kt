@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
              //{
                                  
             
-            btnPencil.setOnTouchListener  {
+            drawPencil.setOnTouchListener  {
             textviewid.text = xxx + "  " + yyy + " drawPencil "
                                      }
                  
