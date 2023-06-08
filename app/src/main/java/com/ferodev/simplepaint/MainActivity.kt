@@ -119,7 +119,15 @@ class MainActivity : AppCompatActivity() {
               
 
 
-                MotionEvent.ACTION_MOVE -> {    textviewid.text = xxx + "  " + yyy + " drawPencil "  }
+                MotionEvent.ACTION_MOVE -> {  
+                    
+                     val x = event.x
+        val y = event.y
+        xxx = x.toString()       
+        yyy = y.toString()    
+                    
+                    
+                    textviewid.text = xxx + "  " + yyy + " drawPencil "  }
 
                
 
