@@ -112,17 +112,49 @@ class MainActivity : AppCompatActivity() {
             
             
             
+          imageView.setOnTouchListener { v, event ->
+            val action = event.action
+            when(action){
+
+              
+
+
+                MotionEvent.ACTION_MOVE -> {    textviewid.text = xxx + "  " + yyy + " drawPencil "  }
+
+               
+
+                MotionEvent.ACTION_CANCEL -> {
+
+                }
+
+                else ->{
+
+                }
+            }
+            true
+        }  
+            
+          
             
             
-           //  drawPencil.setOnScrollChangeListener
-             //{
-                                 
             
-            drawPencil.setOnTouchListener  {
-            textviewid.text = xxx + "  " + yyy + " drawPencil "
-                                     }
+            
+            
+            
+            
+          
+  //          textviewid.text = xxx + "  " + yyy + " drawPencil "
+                                    
                  
-                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 // val imageView: btnPencil = findViewById(R.id.btnPencil)
                    //   imageView.setImageResource(R.drawable.imagename)
                  
