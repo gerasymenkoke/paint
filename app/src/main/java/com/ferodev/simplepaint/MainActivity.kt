@@ -112,7 +112,7 @@ class MainActivity : AppCompatActivity() {
             
             
             
-          imageView.setOnTouchListener { v, event ->
+          drawPencil.setOnTouchListener { v, event ->
             val action = event.action
             when(action){
 
