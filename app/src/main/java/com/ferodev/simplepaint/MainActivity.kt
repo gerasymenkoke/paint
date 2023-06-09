@@ -112,8 +112,8 @@ class MainActivity : AppCompatActivity() {
             
             
             
-          drawPencil.setOnTouchListener { v, event ->
-            val action = event1.action
+          btnPencil.setOnTouchListener { v, event ->
+            val action = event.action
             when(action){
 
               
