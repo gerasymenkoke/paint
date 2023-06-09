@@ -112,8 +112,8 @@ class MainActivity : AppCompatActivity() {
             
             
             
-          drawPencil.setOnTouchListener { v, event ->
-            val action = event.action
+          drawPencil.setOnTouchListener { v, event1 ->
+            val action = event1.action
             when(action){
 
               
@@ -121,8 +121,8 @@ class MainActivity : AppCompatActivity() {
 
                 MotionEvent.ACTION_MOVE -> {  
                     
-                     val x = event.x
-        val y = event.y
+                     val x = event1.x
+        val y = event1.y
         xxx = x.toString()       
         yyy = y.toString()    
                     
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
 
                
 
-                MotionEvent.ACTION_CANCEL -> {
+                MotionEvent1.ACTION_CANCEL -> {
 
                 }
 
