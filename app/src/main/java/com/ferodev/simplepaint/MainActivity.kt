@@ -197,7 +197,7 @@ class MainActivity : AppCompatActivity() {
                      
                      drawPencil.setOnTouchListener { v, event ->
    //       val action = event.action
-          //  when(action){
+           when(action){
           //  MotionEvent.ACTION_MOVE -> {  
                     
             //         val x = event.x
@@ -214,8 +214,8 @@ class MainActivity : AppCompatActivity() {
 
                 //}
            // }
-           // true
-      //  }  
+           true
+       }  
                     
                     
                     
