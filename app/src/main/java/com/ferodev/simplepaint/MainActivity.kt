@@ -196,14 +196,14 @@ class MainActivity : AppCompatActivity() {
                     
                      
                      drawPencil.setOnTouchListener { v, event ->
-          val action = event.action
+   //       val action = event.action
           //  when(action){
           //  MotionEvent.ACTION_MOVE -> {  
                     
             //         val x = event.x
-        val y = event.y
-        xxx = x.toString()       
-        yyy = y.toString()    
+       // val y = event.y
+       // xxx = x.toString()       
+       // yyy = y.toString()    
                         
                     textviewid.text = xxx + "  " + yyy + " drawPencil "  }
               //MotionEvent.ACTION_CANCEL -> {
