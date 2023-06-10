@@ -126,7 +126,7 @@ class DrawPencil @JvmOverloads constructor(
           //     com.ferodev.simplepaint.canvas.DrawPencil.draw_pencil.visibility = View.INVISIBLE
                
                 
-                zzz = zzz +1
+              //  zzz = zzz +1
                 
                 
                  //  btn.performClick()
@@ -139,7 +139,7 @@ class DrawPencil @JvmOverloads constructor(
              
               //  btnPencil.performClick()
                 
-               // textviewid.text = xx 
+               textviewid.text = xxx
                 //print (xx)
                 invalidate()
                                      
