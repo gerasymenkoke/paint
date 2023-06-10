@@ -195,17 +195,17 @@ class MainActivity : AppCompatActivity() {
                     
                     
                      
-                     btnPencil.setOnTouchListener { v, event ->
-     val action = event.action
-           when(action){
-           MotionEvent.ACTION_MOVE -> {  
+    //                 btnPencil.setOnTouchListener { v, event ->
+    // val action = event.action
+   //        when(action){
+      //     MotionEvent.ACTION_MOVE -> {  
                     
             //         val x = event.x
        // val y = event.y
        // xxx = x.toString()       
        // yyy = y.toString()    
                         
-                   textviewid.text = xxx + "  " + yyy + " drawPencil "  }
+           //        textviewid.text = xxx + "  " + yyy + " drawPencil "  }
               //MotionEvent.ACTION_CANCEL -> {
 
                 //}
@@ -213,9 +213,9 @@ class MainActivity : AppCompatActivity() {
               //  else ->{
 
                 //}
-            }
-           true
-       }  
+         //   }
+       //   true
+   //    }  
                     
                     
                     
