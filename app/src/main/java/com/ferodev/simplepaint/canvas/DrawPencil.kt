@@ -59,11 +59,11 @@ class DrawPencil @JvmOverloads constructor(
     private val colorList = mutableListOf<Int>()
    
     
-  //    companion object {
-  //      var xxx = "99"
-   //     var yyy = "99"            
-   //     var zzz = 0
-    //                    }
+     companion object {
+        var xxx = "99"
+        var yyy = "99"            
+        var zzz = 0
+                        }
     
     
     
