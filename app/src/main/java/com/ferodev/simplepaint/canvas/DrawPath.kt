@@ -10,7 +10,7 @@ import android.view.View
 import com.ferodev.simplepaint.MainActivity.Companion.colorList
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
-import com.ferodev.simplepaint.MainActivity.Companion.textviewid.text
+import com.ferodev.simplepaint.MainActivity.Companion.textviewid
 
 class DrawPath @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
