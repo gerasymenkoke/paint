@@ -37,19 +37,7 @@ class DrawPencil @JvmOverloads constructor(
 
     
   
-      private val binding: ActivityMainBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-    
-    
-    
    
-     init {
-        LayoutInflater.from(context).inflate(R.layout.view_custom, this, true)
-           textviewid.text = xxx
-         // itemTitle.text = "Hello Kotlin!"
-    }
-
   
        
   
