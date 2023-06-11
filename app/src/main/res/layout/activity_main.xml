@@ -17,7 +17,7 @@
                 
      
                 
-        android:text="@{com.ferodev.simplepaint.MainActivity.xxx}"
+        android:text="@{com.com.ferodev.simplepaint.canvas.DrawPencil.xxx}"
                 
                 
         android:textColor="#008000"
