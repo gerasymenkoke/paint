@@ -38,7 +38,12 @@ class DrawPencil @JvmOverloads constructor(
     
   
    
-    
+     init {
+        LayoutInflater.from(context).inflate(R.layout.view_custom, this, true)
+           textviewid.text = xxx
+         // itemTitle.text = "Hello Kotlin!"
+    }
+}
   
        
   
