@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity() {
             
          //   fun setOnClickListener (btnPencil: View) {   textviewid.text = xxx + "  " + yyy + " drawPencil "}
             
-               btnPencil.setOnClickListener { v ->
+               btnPencil.setOnClickListener { 
             
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
