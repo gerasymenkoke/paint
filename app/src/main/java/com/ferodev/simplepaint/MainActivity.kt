@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-        var  textviewid.text = "vvv"    
+        var  textviewid = "vvv"    
        // var btn =  1  
         
                       }
