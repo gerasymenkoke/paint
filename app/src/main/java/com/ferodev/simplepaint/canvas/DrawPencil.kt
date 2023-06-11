@@ -43,7 +43,7 @@ class DrawPencil @JvmOverloads constructor(
            textviewid.text = xxx
          // itemTitle.text = "Hello Kotlin!"
     }
-}
+
   
        
   
