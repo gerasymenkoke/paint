@@ -33,9 +33,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-)  : LinearLayout(context, attrs, defStyleAttr) {
-
- //: View(context, attrs, defStyleAttr) {
+)  :  View(context, attrs, defStyleAttr) {
 
     
   
