@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     private var isRectangleIconClicked = false
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
-    private var xxxold = 99
+    private var xxx = "vvv"
     private var btn = 1
   //  private var image =  findViewById(R.id.btnPencil)
     
@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
+        var  textviewid.text = "vvv"    
        // var btn =  1  
         
                       }
@@ -102,7 +103,7 @@ class MainActivity : AppCompatActivity() {
                
                             
                  //    btn = zzz                  
-                       
+                     
             textviewid.text = xxx + "  " + yyy + "  " + btn
             
          // fun   onVisibilityChanged(btnPencil: View, btn: Int)
