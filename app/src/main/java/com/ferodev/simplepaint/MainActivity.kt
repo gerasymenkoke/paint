@@ -152,7 +152,7 @@ class MainActivity : AppCompatActivity() {
                
                 
                 
-                 textviewid.text = xxx + "  " + yyy + "btnPencil" 
+              //   textviewid.text = xxx + "  " + yyy + "btnPencil" 
                                  
                 
                 
