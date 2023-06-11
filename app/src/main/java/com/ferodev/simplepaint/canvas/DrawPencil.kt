@@ -138,7 +138,7 @@ class DrawPencil @JvmOverloads constructor(
              
               //  btnPencil.performClick()
                 
-               textviewid.text = xxx
+             //  textviewid.text = xxx
                 //print (xx)
                 invalidate()
                                      
