@@ -72,7 +72,7 @@ class DrawPath @JvmOverloads constructor(
             MotionEvent.ACTION_MOVE -> {
                 touchMove(x, y)
                 
-                textviewid.text = x.toString()
+      //          textviewid.text = x.toString()
                 
                 invalidate()
             }
