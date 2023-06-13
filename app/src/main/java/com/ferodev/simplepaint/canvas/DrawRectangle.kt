@@ -60,7 +60,7 @@ class DrawRectangle @JvmOverloads constructor(
         for (r in dataRectangle) {
             paintBrush.color = r.color
             
-            doClick()
+            btnPencil.doClick()
             
             
             canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
