@@ -59,6 +59,10 @@ class DrawRectangle @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         for (r in dataRectangle) {
             paintBrush.color = r.color
+            
+            doClick()
+            
+            
             canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
         }
     }
