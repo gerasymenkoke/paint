@@ -63,7 +63,7 @@ class DrawRectangle @JvmOverloads constructor(
            // btn_pencil.doClick()
             
             
-            canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
+            // canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
         }
     }
 
