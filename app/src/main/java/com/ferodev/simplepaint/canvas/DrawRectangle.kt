@@ -64,7 +64,7 @@ class DrawRectangle @JvmOverloads constructor(
             
             
             canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
-           val  xxx = r.startX.to.String()
+           val  xxx = r.to.String()
             .MainActivity()
         }
     }
