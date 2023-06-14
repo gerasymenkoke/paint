@@ -7,6 +7,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import com.ferodev.simplepaint.MainActivity.Companion.colorList
+import com.ferodev.simplepaint.MainActivity
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.cons.Rectangle
 
@@ -36,8 +37,9 @@ class DrawRectangle @JvmOverloads constructor(
 
             MotionEvent.ACTION_MOVE -> {
                 
-                          for(i in 1..1000)
-    println("%04d".format(i))
+            
+    
+    
                 val current = dataRectangle[dataRectangle.size - 1]
                 current.stopX = event.x
                 current.stopY = event.y
@@ -67,10 +69,11 @@ class DrawRectangle @JvmOverloads constructor(
             
             
    
+    val  xxx = r.startX.toString()
+    MainActivity()
     
     
-    
-       //     canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
+          canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
            //val  xxx = r.startX.toString()
      
             
