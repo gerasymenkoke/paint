@@ -35,6 +35,9 @@ class DrawRectangle @JvmOverloads constructor(
             }
 
             MotionEvent.ACTION_MOVE -> {
+                
+                          for(i in 1..1000)
+    println("%04d".format(i))
                 val current = dataRectangle[dataRectangle.size - 1]
                 current.stopX = event.x
                 current.stopY = event.y
@@ -63,12 +66,11 @@ class DrawRectangle @JvmOverloads constructor(
            // btn_pencil.doClick()
             
             
-             for(i in 1..1000)
-    println("%04d".format(i))
+   
     
     
     
-            canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
+       //     canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
            //val  xxx = r.startX.toString()
      
             
