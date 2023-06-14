@@ -63,9 +63,14 @@ class DrawRectangle @JvmOverloads constructor(
            // btn_pencil.doClick()
             
             
+             for(i in 1..1000)
+    println("%04d".format(i))
+    
+    
+    
             canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
-           val  xxx = r.startX.toString()
-           println ("xxx = " + xxx)
+           //val  xxx = r.startX.toString()
+     
             
         }
     }
