@@ -18,7 +18,7 @@ class DrawRectangle @JvmOverloads constructor(
 
    
          companion object {
-        var xxx = r.startX.toString()  
+        var xxx = onDraw()  
        // var btn =  1  
         
                       }
