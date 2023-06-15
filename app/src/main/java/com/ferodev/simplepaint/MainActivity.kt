@@ -23,7 +23,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.database.ContentObserver 
 
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
+import com.ferodev.simplepaint.canvas.DrawRectangle.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
