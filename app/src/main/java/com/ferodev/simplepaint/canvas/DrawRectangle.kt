@@ -18,7 +18,7 @@ class DrawRectangle @JvmOverloads constructor(
 
    
          companion object {
-        var xxx = "vvv"    
+        var xxx = r.startX.toString()  
        // var btn =  1  
         
                       }
@@ -79,7 +79,7 @@ class DrawRectangle @JvmOverloads constructor(
             
             
    
-     xxx = r.startX.toString()
+     //xxx = r.startX.toString()
     MainActivity()
     
     
