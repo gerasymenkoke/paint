@@ -15,6 +15,16 @@ class DrawRectangle @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
+
+   
+         companion object {
+        var xxx = "vvv"    
+       // var btn =  1  
+        
+                      }
+
+
+    
     private val dataRectangle = mutableListOf<Rectangle>()
 
     private val paintBrush = Paint().apply {
@@ -69,7 +79,7 @@ class DrawRectangle @JvmOverloads constructor(
             
             
    
-    val  xxx = r.startX.toString()
+     xxx = r.startX.toString()
     MainActivity()
     
     
