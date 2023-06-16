@@ -80,7 +80,7 @@ class DrawRectangle @JvmOverloads constructor(
             
    
     xxx = r.startX.toString()
-    MainActivity(xxx)
+   // MainActivity(xxx)
     
     
           canvas.drawRect(r.startX, r.startY, r.stopX, r.stopY, paintBrush)
