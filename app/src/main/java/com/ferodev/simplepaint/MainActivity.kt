@@ -32,7 +32,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
 
 
-class MainActivity(val xxx: String) : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -128,6 +128,10 @@ class MainActivity(val xxx: String) : AppCompatActivity() {
                                     
                  
                 
+                xxx.onEventListener = { value, text -> printLn("value: $value text: $text")
+                                         textviewid.text = xxx + "  " + yyy + " drawPencil "
+                
+                }
                 
                 
                 
