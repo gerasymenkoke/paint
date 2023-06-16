@@ -32,7 +32,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
 
 
-class MainActivity (xxx: String): AppCompatActivity() {
+class MainActivity: AppCompatActivity(xxx: String) {
 
     private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
