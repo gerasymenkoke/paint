@@ -128,10 +128,10 @@ class MainActivity : AppCompatActivity() {
                                     
                  
                 
-                xxx.onEventListener = { value, text -> printLn("value: $value text: $text")
-                                         textviewid.text = xxx + "  " + yyy + " drawPencil "
+                xxx.EventListener = { 
+                           textviewid.text = xxx + "  " + yyy + " drawPencil "
                 
-                }
+                                    }
                 
                 
                 
