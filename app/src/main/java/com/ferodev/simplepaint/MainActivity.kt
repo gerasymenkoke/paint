@@ -210,9 +210,13 @@ class MainActivity : AppCompatActivity() {
         yyy = y.toString()    
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
-            drawPencil.visibility = View.VISIBLE
+
+                 canvas.DrawPencil()
+
+               
+      
            }
-              MotionEvent.ACTION_CANCEL -> { 
+              MotionEvent.ACTION_CANCEL -> {       
 
                 }
 
