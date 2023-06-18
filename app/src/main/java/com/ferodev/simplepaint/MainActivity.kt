@@ -108,20 +108,42 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-             
-            
-            
-               
-                            
-                 //    btn = zzz                  
+                                    
+                          
                      
          textviewid.text = xxx + "  " + yyy + "  " + btn
             
-         // fun   onVisibilityChanged(btnPencil: View, btn: Int)
+
+
+                       
+            drawPencil.setOnTouchListener { v, event ->
+     val action = event.action
+       when(action){
+          MotionEvent.ACTION_MOVE -> {  
+                              val x = event.x
+        val y = event.y
+        xxx = x.toString()       
+        yyy = y.toString()    
+                        
+              textviewid.text = xxx + "  " + yyy + " drawPencil " 
+                         
+                                
+          }
+
+
            
-           // fun onTouch(drawPencil: View, event: MotionEvent)
-         
-            
+              MotionEvent.ACTION_CANCEL -> {   
+          
+
+                }
+
+                else ->{
+
+                }
+            }
+          true
+      }  
+  
             
             
          
@@ -135,7 +157,7 @@ class MainActivity : AppCompatActivity() {
             
             
           
-  //          textviewid.text = xxx + "  " + yyy + " drawPencil "
+ 
                                     
                  
                 
@@ -150,9 +172,7 @@ class MainActivity : AppCompatActivity() {
                 
                 
                 
-                // val imageView: btnPencil = findViewById(R.id.btnPencil)
-                   //   imageView.setImageResource(R.drawable.imagename)
-                 
+               
             
          
             
@@ -212,52 +232,7 @@ class MainActivity : AppCompatActivity() {
 
                     
                     
-                    
-                    
-            drawPencil.setOnTouchListener { v, event ->
-     val action = event.action
-       when(action){
-          MotionEvent.ACTION_MOVE -> {  
-                              val x = event.x
-        val y = event.y
-        xxx = x.toString()       
-        yyy = y.toString()    
-                        
-              textviewid.text = xxx + "  " + yyy + " drawPencil " 
-                         
-                                
-          }
-
-
-           
-              MotionEvent.ACTION_CANCEL -> {   
-          
-
-                }
-
-                else ->{
-
-                }
-            }
-          true
-      }  
-  
-                    
-
-
-
-
-
-
-                    
-                    
-                    
-                   
-                    
-                     
-                    
-                    
-                    
+                      
                 
                 }
                 
