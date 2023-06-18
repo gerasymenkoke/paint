@@ -27,8 +27,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
-import java.awt.* // ktlint-disable no-wildcard-imports
-import javax.swing.* // ktlint-disable no-wildcard-imports
+//import java.awt.* // ktlint-disable no-wildcard-imports
+//import javax.swing.* // ktlint-disable no-wildcard-imports
 
 
 
@@ -217,25 +217,20 @@ class MainActivity : AppCompatActivity() {
             drawPencil.setOnTouchListener { v, event ->
      val action = event.action
        when(action){
-           MotionEvent.ACTION_MOVE -> {  
+          // MotionEvent.ACTION_MOVE -> {  
                     
-                     val x = event.x
+                                
+         //  }
+
+
+           
+              MotionEvent.ACTION_CANCEL -> {   
+                             val x = event.x
         val y = event.y
         xxx = x.toString()       
         yyy = y.toString()    
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
-
-               btnPencil.doClick()
-
-               
-
-         //       com.ferodev.simplepaint.canvas.DrawPencil(context, attrs, defStyleAttr)
-
-               
-      
-           }
-              MotionEvent.ACTION_CANCEL -> {       
                 
 
                 }
