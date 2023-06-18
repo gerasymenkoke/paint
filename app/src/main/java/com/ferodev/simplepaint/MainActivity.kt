@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
         yyy = y.toString()    
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
-                         
+                 drawPencil.visibility = View.VISIBLE         
                                 
           }
 
