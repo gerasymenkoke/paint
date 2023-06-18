@@ -102,14 +102,14 @@ class DrawPencil @JvmOverloads constructor(
         path.lineTo(mX, mY)
     }
 
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        val x = event.x
+    override fun onTouchEvent(event1: MotionEvent): Boolean {
+        val x = event1.x
         val y = event.y
         xxx = x.toString()       
         yyy = y.toString()    
        
         
-        when (event.action) {
+        when (event1.action) {
             MotionEvent.ACTION_DOWN -> {
                 touchStart(x, y)
                 invalidate()
