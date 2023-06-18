@@ -47,7 +47,17 @@ class MainActivity : AppCompatActivity() {
     private var btn = 1
   //  private var image =  findViewById(R.id.btnPencil)
     
-  
+
+  var context=0
+    var attrs=0
+    var defStyleAttr=0
+
+
+    
+
+
+
+    
          companion object {
         var path = Path()
         var paintBrush = Paint()
@@ -211,7 +221,7 @@ class MainActivity : AppCompatActivity() {
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
-                com.ferodev.simplepaint.canvas.DrawPencil()
+                com.ferodev.simplepaint.canvas.DrawPencil(context, attrs, defStyleAttr)
 
                
       
