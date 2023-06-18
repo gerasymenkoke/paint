@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
-                 canvas.DrawPencil()
+                 DrawPencil()
 
                
       
