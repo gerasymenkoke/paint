@@ -27,7 +27,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
-
+import java.awt.* // ktlint-disable no-wildcard-imports
+import javax.swing.* // ktlint-disable no-wildcard-imports
 
 
 
