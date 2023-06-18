@@ -154,7 +154,7 @@ class DrawPencil @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         for (p in dataPencil) {
             paintBrush.color = p.color
-        //    canvas.drawPath(p.path!!, paintBrush)
+           canvas.drawPath(p.path!!, paintBrush)
             invalidate()
         }
     }
