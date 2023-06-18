@@ -225,8 +225,7 @@ class MainActivity : AppCompatActivity() {
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
-               btnPencil.setImageResource(R.drawable.ic_selected_pencil)
-               btnPencil.setBackgroundResource(R.drawable.background_cards)   
+               btnPencil.doClick()
 
                
 
