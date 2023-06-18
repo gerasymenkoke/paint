@@ -114,7 +114,12 @@ class MainActivity : AppCompatActivity() {
          textviewid.text = xxx + "  " + yyy + "  " + btn
             
 
-
+            while (xxx==xxx) {  
+                               
+                drawPencil.visibility = View.VISIBLE  
+                delay(1000L)
+                              } 
+            
                        
             drawPencil.setOnTouchListener { v, event ->
      val action = event.action
@@ -126,7 +131,7 @@ class MainActivity : AppCompatActivity() {
         yyy = y.toString()    
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
-                 drawPencil.visibility = View.VISIBLE         
+              //   drawPencil.visibility = View.VISIBLE         
                                 
           }
 
