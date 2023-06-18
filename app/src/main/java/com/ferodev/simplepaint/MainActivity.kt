@@ -156,7 +156,12 @@ class MainActivity : AppCompatActivity() {
          
             
             
-         //   fun setOnClickListener (btnPencil: View) {   textviewid.text = xxx + "  " + yyy + " drawPencil "}
+
+
+
+
+
+
             
                btnPencil.setOnClickListener { 
             
@@ -208,8 +213,7 @@ class MainActivity : AppCompatActivity() {
                     
                     
                     
-                     
-                drawPencil.setOnTouchListener { v, event ->
+            drawPencil.setOnTouchListener { v, event ->
      val action = event.action
        when(action){
            MotionEvent.ACTION_MOVE -> {  
@@ -221,12 +225,18 @@ class MainActivity : AppCompatActivity() {
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
-                com.ferodev.simplepaint.canvas.DrawPencil(context, attrs, defStyleAttr)
+               btnPencil.setImageResource(R.drawable.ic_selected_pencil)
+               btnPencil.setBackgroundResource(R.drawable.background_cards)   
+
+               
+
+         //       com.ferodev.simplepaint.canvas.DrawPencil(context, attrs, defStyleAttr)
 
                
       
            }
               MotionEvent.ACTION_CANCEL -> {       
+                
 
                 }
 
@@ -236,7 +246,14 @@ class MainActivity : AppCompatActivity() {
             }
           true
       }  
+  
                     
+
+
+
+
+
+
                     
                     
                     
