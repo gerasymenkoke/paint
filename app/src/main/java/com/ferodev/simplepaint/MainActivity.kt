@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
                         
               textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
-                 DrawPencil()
+                com.ferodev.simplepaint.canvas.DrawPencil()
 
                
       
