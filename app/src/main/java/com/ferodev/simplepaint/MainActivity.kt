@@ -23,7 +23,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.database.ContentObserver 
 
-import com.ferodev.simplepaint.canvas.DrawRectangle.Companion.xxx
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
@@ -200,27 +200,27 @@ class MainActivity : AppCompatActivity() {
                     
                     
                      
-    //                 btnPencil.setOnTouchListener { v, event ->
-    // val action = event.action
-   //        when(action){
-      //     MotionEvent.ACTION_MOVE -> {  
+                btnPencil.setOnTouchListener { v, event ->
+     val action = event.action
+       when(action){
+           MotionEvent.ACTION_MOVE -> {  
                     
-            //         val x = event.x
-       // val y = event.y
-       // xxx = x.toString()       
-       // yyy = y.toString()    
+                     val x = event.x
+        val y = event.y
+        xxx = x.toString()       
+        yyy = y.toString()    
                         
-           //        textviewid.text = xxx + "  " + yyy + " drawPencil "  }
-              //MotionEvent.ACTION_CANCEL -> {
+              textviewid.text = xxx + "  " + yyy + " drawPencil "  }
+              MotionEvent.ACTION_CANCEL -> {
 
-                //}
+                }
 
-              //  else ->{
+                else ->{
 
-                //}
-         //   }
-       //   true
-   //    }  
+                }
+            }
+          true
+      }  
                     
                     
                     
