@@ -117,11 +117,30 @@ class MainActivity : AppCompatActivity() {
          textviewid.text = xxx + "  " + yyy + "  " + btn
             
 
-            while (xxx==xxx) {  
-                               
-                drawPencil.visibility = View.VISIBLE  
-                delay(1000L)
-                              } 
+            
+            fun main() = runBlocking {
+    repeat(50_000) { // launch a lot of coroutines
+        launch {
+              drawPencil.visibility = View.VISIBLE  
+            delay(1000L)
+
+            
+            //print(".")
+        }
+    }
+}
+            
+            
+            
+            
+            
+         
+
+
+            
+
+
+
             
                        
             drawPencil.setOnTouchListener { v, event ->
