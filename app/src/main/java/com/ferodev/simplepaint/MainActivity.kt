@@ -117,14 +117,14 @@ class MainActivity : AppCompatActivity() {
          textviewid.text = xxx + "  " + yyy + "  " + btn
             
 
+
+             drawPencil.setOnTouchListener { v, event ->
+     val action = event.action
             
-            fun main() = runBlocking {
-    repeat(50_000) { // launch a lot of coroutines
-        launch {
+          
               
                
-            drawPencil.setOnTouchListener { v, event ->
-     val action = event.action
+           
        when(action){
           MotionEvent.ACTION_MOVE -> {  
                               val x = event.x
@@ -132,7 +132,30 @@ class MainActivity : AppCompatActivity() {
         xxx = x.toString()       
         yyy = y.toString()    
                         
-              textviewid.text = xxx + "  " + yyy + " drawPencil " 
+             
+
+
+
+  fun main() = runBlocking {
+    repeat(50_000) { // launch a lot of coroutines
+        launch {
+
+ textviewid.text = xxx + "  " + yyy + " drawPencil " 
+      
+            delay(1000L)
+
+            
+            //print(".")
+        }
+    }
+}
+
+
+
+              
+
+
+              
               //   drawPencil.visibility = View.VISIBLE         
                                 
           }
@@ -157,14 +180,7 @@ class MainActivity : AppCompatActivity() {
             
           
             
-            
-            delay(1000L)
-
-            
-            //print(".")
-        }
-    }
-}
+      
             
             
             
