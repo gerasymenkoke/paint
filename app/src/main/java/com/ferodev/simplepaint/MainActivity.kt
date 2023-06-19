@@ -111,7 +111,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-                                    
+
+
+fun main() = runBlocking {
+    repeat(50_000) { // launch a lot of coroutines
+        launch {
+
+
+
+
+
+            
                           
                      
          textviewid.text = xxx + "  " + yyy + "  " + btn
@@ -120,10 +130,7 @@ class MainActivity : AppCompatActivity() {
 
              drawPencil.setOnTouchListener { v, event ->
      val action = event.action
-            
-          
-              
-               
+                                      
            
        when(action){
           MotionEvent.ACTION_MOVE -> {  
@@ -136,19 +143,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-  fun main() = runBlocking {
-    repeat(50_000) { // launch a lot of coroutines
-        launch {
-
+  
  textviewid.text = xxx + "  " + yyy + " drawPencil " 
       
-            delay(1000L)
 
-            
-            //print(".")
-        }
-    }
-}
 
 
 
@@ -428,7 +426,13 @@ class MainActivity : AppCompatActivity() {
              
                     
                      
-                    
+                       delay(1000L)
+
+            
+            //print(".")
+        }
+    }
+}         
                                       
                       
                       
