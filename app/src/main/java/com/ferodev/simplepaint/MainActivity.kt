@@ -121,28 +121,8 @@ class MainActivity : AppCompatActivity() {
             fun main() = runBlocking {
     repeat(50_000) { // launch a lot of coroutines
         launch {
-              drawPencil.visibility = View.VISIBLE  
-            delay(1000L)
-
-            
-            //print(".")
-        }
-    }
-}
-            
-            
-            
-            
-            
-         
-
-
-            
-
-
-
-            
-                       
+              
+               
             drawPencil.setOnTouchListener { v, event ->
      val action = event.action
        when(action){
@@ -170,6 +150,36 @@ class MainActivity : AppCompatActivity() {
             }
           true
       }  
+
+
+         
+            
+            
+            drawPencil.visibility = View.VISIBLE  
+  
+            
+            
+            delay(1000L)
+
+            
+            //print(".")
+        }
+    }
+}
+            
+            
+            
+            
+            
+         
+
+
+            
+
+
+
+            
+        
   
             
             
