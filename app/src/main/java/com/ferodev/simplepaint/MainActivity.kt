@@ -155,8 +155,7 @@ class MainActivity : AppCompatActivity() {
          
             
             
-            drawPencil.visibility = View.VISIBLE  
-  
+          
             
             
             delay(1000L)
