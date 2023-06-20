@@ -59,7 +59,7 @@ class DrawPencil @JvmOverloads constructor(
      companion object {
         var xxx = "99"
         var yyy = "99"
-        var a = Array<Int>(10){0} 
+        var aaa = Array<String>(10){0} 
         var zzz = 0
                         }
     
@@ -126,7 +126,7 @@ class DrawPencil @JvmOverloads constructor(
                
                 
                 arr = IntArray(10) { i -> i }
-                a = arr.toString() 
+                aaa = arr.toString() 
                i = i+1
 
 
