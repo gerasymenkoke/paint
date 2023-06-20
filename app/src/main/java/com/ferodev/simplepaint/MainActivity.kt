@@ -113,9 +113,9 @@ class MainActivity : AppCompatActivity() {
            
 
 
-fun main() = runBlocking {
-    repeat(50_000) { // launch a lot of coroutines
-        launch {
+// fun main() = runBlocking {
+//    repeat(50_000) { // launch a lot of coroutines
+//        launch {
 
 
 
@@ -124,27 +124,24 @@ fun main() = runBlocking {
             
                           
                      
-         textviewid.text = xxx + "  " + yyy + "  " + btn
+       //  textviewid.text = xxx + "  " + yyy + "  " + btn
             
 
 
-             drawPencil.setOnTouchListener { v, event ->
-     val action = event.action
+//             drawPencil.setOnTouchListener { v, event ->
+//     val action = event.action
                                       
-           
-       when(action){
-          MotionEvent.ACTION_MOVE -> {  
-                              val x = event.x
-        val y = event.y
-        xxx = x.toString()       
-        yyy = y.toString()    
+        
+ //      when(action){
+ //         MotionEvent.ACTION_MOVE -> {  
+ //                             val x = event.x
+//        val y = event.y
+ //       xxx = x.toString()       
+ //       yyy = y.toString()    
                         
              
-
-
-
-  
- textviewid.text = xxx + "  " + yyy + " drawPencil " 
+ 
+// textviewid.text = xxx + "  " + yyy + " drawPencil " 
       
 
 
@@ -156,21 +153,21 @@ fun main() = runBlocking {
               
               //   drawPencil.visibility = View.VISIBLE         
                                 
-          }
+  //        }
 
 
            
-              MotionEvent.ACTION_CANCEL -> {   
+    //          MotionEvent.ACTION_CANCEL -> {   
           
 
-                }
+      //          }
 
-                else ->{
+        //        else ->{
 
-                }
-            }
-          true
-      }  
+          //      }
+        //    }
+       //   true
+    //  }  
 
 
          
@@ -276,6 +273,13 @@ fun main() = runBlocking {
                      
                     btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_card)
+
+                    textviewid.text = xxx + "  " + yyy + " drawPencil " 
+
+
+
+
+                    
                 }
             }
 
@@ -426,13 +430,13 @@ fun main() = runBlocking {
              
                     
                      
-                       delay(1000L)
+      //                 delay(1000L)
 
             
             //print(".")
-        }
-    }
-}         
+        // }
+    // }
+// }         
                                       
                       
                       
