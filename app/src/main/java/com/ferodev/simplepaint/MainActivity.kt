@@ -26,6 +26,11 @@ import android.database.ContentObserver
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.aaa
+
+
+
+
 
 import kotlinx.coroutines.*
 
@@ -235,7 +240,7 @@ class MainActivity : AppCompatActivity() {
                   //     imageView.setImageResource(R.drawable.imagename)
 
 
-                    textviewid.text = xxx + "  " + yyy + " drawPencil " 
+                    textviewid.text = xxx + "  " + yyy + "   " + aaa 
 
                     
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
@@ -278,7 +283,11 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_card)
 
-                    textviewid.text = xxx + "  " + yyy + " drawPencil " 
+                    
+                    textviewid.text = xxx + "  " + yyy + "   " + aaa 
+
+                    
+                    //textviewid.text = xxx + "  " + yyy + " drawPencil " 
 
 
 
