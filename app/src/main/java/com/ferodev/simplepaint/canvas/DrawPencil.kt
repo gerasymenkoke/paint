@@ -52,6 +52,7 @@ class DrawPencil @JvmOverloads constructor(
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
     private val i = 1
+    private val arr = Array<Float>(10){0}  
   
     //val arrayname = arrayOf(1, 2, 3, 4, 5)
    
@@ -59,7 +60,7 @@ class DrawPencil @JvmOverloads constructor(
      companion object {
         var xxx = "99"
         var yyy = "99"
-        var aaa = Array<String>(10){0} 
+        var aaa = Array<String>(10){"0"} 
         var zzz = 0
                         }
     
