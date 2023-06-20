@@ -51,11 +51,15 @@ class DrawPencil @JvmOverloads constructor(
 
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
+    private i = 1
+  
+    //val arrayname = arrayOf(1, 2, 3, 4, 5)
    
     
      companion object {
         var xxx = "99"
-        var yyy = "99"            
+        var yyy = "99"
+        var a = Array<Int>(10){0} 
         var zzz = 0
                         }
     
@@ -120,7 +124,13 @@ class DrawPencil @JvmOverloads constructor(
                 touchMove(x, y)
                xxx = x.toString()
                
-               
+                
+                arr = IntArray(10) { i -> i }
+                a = arr.toString() 
+               i = i+1
+
+
+                
               // btnPencil.setImageResource(R.drawable.ic_selected_pencil)
           //     com.ferodev.simplepaint.canvas.DrawPencil.draw_pencil.visibility = View.INVISIBLE
                
