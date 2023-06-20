@@ -52,7 +52,7 @@ class DrawPencil @JvmOverloads constructor(
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
     private var i = 1
-    private var arr = Array<Float>(10){0.0}  
+    private var arr = Array<Float>(10){0.0F}  
   
     //val arrayname = arrayOf(1, 2, 3, 4, 5)
    
