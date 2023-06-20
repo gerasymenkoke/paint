@@ -233,6 +233,10 @@ class MainActivity : AppCompatActivity() {
                     
                   //  val imageView: ImageView = findViewById(R.id.imageView)
                   //     imageView.setImageResource(R.drawable.imagename)
+
+
+                    textviewid.text = xxx + "  " + yyy + " drawPencil " 
+
                     
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
