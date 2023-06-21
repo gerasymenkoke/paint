@@ -240,7 +240,7 @@ class MainActivity : AppCompatActivity() {
                   //     imageView.setImageResource(R.drawable.imagename)
 
 
-                    textviewid.text = xxx + "  " + yyy + "   " + aaa 
+                    textviewid.text = aaa 
 
                     
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
@@ -284,7 +284,7 @@ class MainActivity : AppCompatActivity() {
                     btnPencil.setBackgroundResource(R.drawable.background_card)
 
                     
-                    textviewid.text = xxx + "  " + yyy + "   " + aaa 
+                    textviewid.text = aaa 
 
                     
                     //textviewid.text = xxx + "  " + yyy + " drawPencil " 
