@@ -240,9 +240,10 @@ class MainActivity : AppCompatActivity() {
                   //     imageView.setImageResource(R.drawable.imagename)
 
 
-
-    for(int j=0 ; j<aaa.length;j++) {
-         textviewid.text = a[j]
+var j = 0
+    while (j<aaa.length)  {
+        j=j+1 
+        textviewid.text = a[j]
 
             }
 
@@ -295,10 +296,14 @@ class MainActivity : AppCompatActivity() {
                     
 
 
- for(int j=0 ; j<aaa.length;j++) {
-         textviewid.text = a[j]
+var j = 0
+    while (j<aaa.length)  {
+        j=j+1 
+        textviewid.text = a[j]
 
             }
+
+
                  
 
                     
