@@ -127,7 +127,7 @@ class DrawPencil @JvmOverloads constructor(
                
                 
                 arr = Array(10) { i -> i.toFloat() }
-                aaa = arr.toString() 
+                aaa = arr.toArray<String>() 
                i = i+1
 
 
