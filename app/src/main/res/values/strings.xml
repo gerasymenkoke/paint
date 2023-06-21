@@ -1,5 +1,25 @@
 <resources>
     <string name="app_name">Simple Paint</string>
      <string name="text_view">Kostya</string>
+
+    
+    <string-array name="Person">
+    <item>Harshit</item>
+    <item>Abhishek</item>
+    <item>Ram</item>
+    <item>Shayam</item>
+</string-array>
+
+
+
+
+
+
+
+
+
+
+
+    
      <string name="zzztext">zzz</string>
 </resources>
