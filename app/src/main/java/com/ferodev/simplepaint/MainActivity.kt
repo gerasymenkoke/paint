@@ -240,7 +240,8 @@ class MainActivity : AppCompatActivity() {
                   //     imageView.setImageResource(R.drawable.imagename)
 
 
-                    textviewid.text = aaa 
+                    val rarity = resources.getStringArray(aaa)
+                    textviewid.text = rarity 
 
                     
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
