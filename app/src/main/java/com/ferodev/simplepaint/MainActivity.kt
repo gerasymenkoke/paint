@@ -241,7 +241,7 @@ class MainActivity : AppCompatActivity() {
 
 
 var j = 0
-    while (j<aaa.length)  {
+    while (j<=10)  {
         j=j+1 
         textviewid.text = aaa[j]
 
@@ -297,7 +297,7 @@ var j = 0
 
 
 var j = 0
-    while (j<aaa.length)  {
+    while (j<=10)  {
         j=j+1 
         textviewid.text = aaa[j]
 
