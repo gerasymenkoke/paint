@@ -126,7 +126,7 @@ class DrawPencil @JvmOverloads constructor(
                xxx = x.toString()
                
                 
-                arr = IntArray(10) { i -> i }
+                arr = Array(10) { i -> i }
                 aaa = arr.toString() 
                i = i+1
 
