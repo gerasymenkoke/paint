@@ -123,10 +123,10 @@ class DrawPencil @JvmOverloads constructor(
                   
                 
                 touchMove(x, y)
-               xxx = x.toString()
+              // xxx = x.toString()
                
                 
-                arr = Array(10) { i -> i.toFloat() }
+                arr = Array(10) { i -> x.toFloat() }
                 aaa = Array(10) { i -> arr[i].toString() }  
                i = i+1
 
