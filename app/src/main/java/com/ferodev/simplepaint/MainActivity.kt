@@ -80,30 +80,7 @@ class MainActivity : AppCompatActivity() {
         
                       }
     
-      
-      
-      
-      
-       
-       
-       
-    
-
-       
-  
-       
-       
-       
- 
- 
- 
- 
- 
- 
- 
-       
-       
-       
+           
        
     
 
@@ -120,174 +97,30 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
            
 
-
-// fun main() = runBlocking {
-//    repeat(50_000) { // launch a lot of coroutines
-//        launch {
-
-
-
-
-
-            
-                          
-                     
-       //  textviewid.text = xxx + "  " + yyy + "  " + btn
-            
-
-
-//             drawPencil.setOnTouchListener { v, event ->
-//     val action = event.action
-                                      
-        
- //      when(action){
- //         MotionEvent.ACTION_MOVE -> {  
- //                             val x = event.x
-//        val y = event.y
- //       xxx = x.toString()       
- //       yyy = y.toString()    
-                        
-             
- 
-// textviewid.text = xxx + "  " + yyy + " drawPencil " 
-      
-
-
-
-
-              
-
-
-              
-              //   drawPencil.visibility = View.VISIBLE         
-                                
-  //        }
-
-
-           
-    //          MotionEvent.ACTION_CANCEL -> {   
-          
-
-      //          }
-
-        //        else ->{
-
-          //      }
-        //    }
-       //   true
-    //  }  
-
-
-         
-            
-            
-          
-            
-      
-            
-            
-            
-            
-            
-         
-
-
-            
-
-
-
-            
-        
-  
-            
-            
-         
-               
-                
-                
-                
-                
-                
-                
-                
-                
-               
-            
-         
-            
-            
-
-
-
-
-
-
-            
+       
                btnPencil.setOnClickListener { 
             
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
  
-               
-                
-                
-              //   textviewid.text = xxx + "  " + yyy + "btnPencil" 
-                                 
-                
-                
+            
                 
                 
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     
-                  //  val imageView: ImageView = findViewById(R.id.imageView)
-                  //     imageView.setImageResource(R.drawable.imagename)
-
-
-//var j = 1
- //   while (j<=3)  {
-   //     j=j+1 
+                 
 aaa[j] = xxx
 
 j = j+1 
                     
 textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
-     //   }
-
-
-
-                    
-                  ///  textviewid.text = aaa 
-
-                    
+   
+                   
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
-                  //    textviewid.text = xxx + "  " + yyy
-                          
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_card)
-                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_card)
-                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_card)
-                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_card)
-
-                    drawPencil.visibility = View.VISIBLE
-                   // drawLine.visibility = View.GONE
-                    drawEllipse.visibility = View.GONE
-                    drawRectangle.visibility = View.GONE
-
-                    
-                    
+                     drawPencil.visibility = View.VISIBLE
+                             
                       
                 
                 }
@@ -309,185 +142,12 @@ j = j+1
 textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9] 
 
 
-                 
-
-                    
-                    //textviewid.text = xxx + "  " + yyy + " drawPencil " 
-
-
-
-
-                    
+                                   
                 }
             }
 
-            btnArrow.setOnClickListener {
-                isArrowIconClicked = !isArrowIconClicked
-                if (isArrowIconClicked) {
-                    btnArrow.setImageResource(R.drawable.ic_selected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_cards)
-
-                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_card)
-                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_card)
-                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_card)
-                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_card)
-
-                  //  drawLine.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
-                    drawEllipse.visibility = View.GONE
-                    drawRectangle.visibility = View.GONE
-
-                } else {
-                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_card)
-                }
-            }
-
-            btnRectangle.setOnClickListener {
-                isRectangleIconClicked = !isRectangleIconClicked
-                if (isRectangleIconClicked) {
-                    btnRectangle.setImageResource(R.drawable.ic_selected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_cards)
-
-                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_card)
-                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_card)
-                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_card)
-                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_card)
-
-                    drawRectangle.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
-                   // drawLine.visibility = View.GONE
-                    drawEllipse.visibility = View.GONE
-
-                } else {
-                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_card)
-                }
-            }
-
-            btnEllipse.setOnClickListener {
-                isCircleIconClicked = !isCircleIconClicked
-
-                if (isCircleIconClicked) {
-                    btnEllipse.setImageResource(R.drawable.ic_selected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_cards)
-
-                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_card)
-                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_card)
-                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_card)
-                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_card)
-
-                    drawEllipse.visibility = View.VISIBLE
-                    drawPencil.visibility = View.GONE
-                 //   drawLine.visibility = View.GONE
-                    drawRectangle.visibility = View.GONE
-
-                } else {
-                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_card)
-                }
-            }
-
-            btnPallete.setOnClickListener {
-                isPaletteIconClicked = !isPaletteIconClicked
-
-                if (isPaletteIconClicked) {
-                    colorPalate.visibility = View.VISIBLE
-
-                    btnPallete.setImageResource(R.drawable.ic_selected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_cards)
-
-                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_card)
-                    btnArrow.setImageResource(R.drawable.ic_unselected_line)
-                    btnArrow.setBackgroundResource(R.drawable.background_card)
-                    btnRectangle.setImageResource(R.drawable.ic_unselected_rectangle)
-                    btnRectangle.setBackgroundResource(R.drawable.background_card)
-                    btnEllipse.setImageResource(R.drawable.ic_unselected_circle)
-                    btnEllipse.setBackgroundResource(R.drawable.background_card)
-                } else {
-                    btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                    btnPallete.setBackgroundResource(R.drawable.background_card)
-                    colorPalate.visibility = View.INVISIBLE
-                }
-            }
-
-            btnBlue.setOnClickListener {
-                paintBrush.color = resources.getColor(R.color.google_blue)
-                currentColor(paintBrush.color)
-                colorPalate.visibility = View.INVISIBLE
-                btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                btnPallete.setBackgroundResource(R.drawable.background_card)
-            }
-
-            btnRed.setOnClickListener {
-                paintBrush.color = resources.getColor(R.color.google_red)
-                currentColor(paintBrush.color)
-                colorPalate.visibility = View.INVISIBLE
-                btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                btnPallete.setBackgroundResource(R.drawable.background_card)
-            }
-
-            btnYellow.setOnClickListener {
-                paintBrush.color = resources.getColor(R.color.google_yellow)
-                currentColor(paintBrush.color)
-                colorPalate.visibility = View.INVISIBLE
-                btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                btnPallete.setBackgroundResource(R.drawable.background_card)
-            }
-
-            btnGreen.setOnClickListener {
-                paintBrush.color = resources.getColor(R.color.google_green)
-                currentColor(paintBrush.color)
-                colorPalate.visibility = View.INVISIBLE
-                btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                btnPallete.setBackgroundResource(R.drawable.background_card)
-            }
-
-            btnBlack.setOnClickListener {
-                paintBrush.color = Color.BLACK
-                currentColor(paintBrush.color)
-                colorPalate.visibility = View.INVISIBLE
-                btnPallete.setImageResource(R.drawable.ic_unselected_palette)
-                btnPallete.setBackgroundResource(R.drawable.background_card)
-            }
-       
-        
-             
-                    
-                     
-      //                 delay(1000L)
-
-            
-            //print(".")
-        // }
-    // }
-// }         
-                                      
-                      
-                      
+              
        
        
-       
-                }
-          
-    }
-
-    private fun currentColor(color: Int) {
-        currentBrush = color
-        path = Path()
-                                          }
-
+   
 }
