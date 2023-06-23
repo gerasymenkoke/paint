@@ -145,7 +145,7 @@ textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa
             }
 
               
-       
+        }
         }    
    
 }
