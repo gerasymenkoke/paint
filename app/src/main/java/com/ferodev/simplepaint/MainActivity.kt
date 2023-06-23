@@ -35,8 +35,6 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 import kotlinx.coroutines.*
 
 
-//import java.awt.* // ktlint-disable no-wildcard-imports
-//import javax.swing.* // ktlint-disable no-wildcard-imports
 
 
 
@@ -148,6 +146,6 @@ textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa
 
               
        
-       
+        }    
    
 }
