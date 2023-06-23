@@ -52,7 +52,7 @@
             android:background="@null"
             android:src="@drawable/ic_unselected_pencil" />
           
-
+  </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -66,9 +66,7 @@
             android:layout_height="match_parent"
             android:visibility="visible" />
 
-       
-                
-        
+            
         
 
     </RelativeLayout>
