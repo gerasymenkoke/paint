@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
- app:layout_constraintTop_toBottomOf="@+id/action">
+ app:layout_constraintTop_toBottomOf="@drawable/color_palette_black">
      
         <com.ferodev.simplepaint.canvas.DrawPencil
             android:id="@+id/draw_pencil"
