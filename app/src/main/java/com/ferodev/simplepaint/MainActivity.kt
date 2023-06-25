@@ -109,10 +109,10 @@ class MainActivity : AppCompatActivity() {
                  
 aaa[j] = "(" + xxx + "," + yyy + ")"
 
-j = j+1 
+
                     
-textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
-   
+textviewid.text = aaa[j+0] + " " +aaa[j+1] + " " + aaa[j+2] + " " + aaa[j+3] + " " + aaa[j+4] + " " + aaa[j+5] + " " + aaa[j+6] + " " + aaa[j+7] + " "  + aaa[j+8] + " "  + aaa[j+9]  
+ j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
