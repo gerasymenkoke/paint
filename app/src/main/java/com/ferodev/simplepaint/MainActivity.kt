@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     
                  
-aaa[j] = xxx
+aaa[j] = "(" + xxx + "," + yyy + ")"
 
 j = j+1 
                     
