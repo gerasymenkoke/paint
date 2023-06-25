@@ -42,7 +42,7 @@
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textviewid">
+        app:layout_constraintTop_toTopOf="@+id/color_palate">
 
         <ImageButton
             android:id="@+id/btn_pencil"
