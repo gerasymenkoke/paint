@@ -14,12 +14,9 @@
         android:id="@+id/textviewid"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-                
-     
-                
+                 
         android:text="@string-array/text_view"
-                
-                
+             
         android:textColor="#008000"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -32,6 +29,9 @@
    
     
        
+   
+
+
     <RelativeLayout
         android:id="@+id/action"
         android:layout_width="wrap_content"
@@ -51,12 +51,46 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:src="@drawable/ic_unselected_pencil" />
-          
-  </RelativeLayout>
 
+        <ImageButton
+            android:id="@+id/btn_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_pencil"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_line" />
 
+        <ImageButton
+            android:id="@+id/btn_rectangle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_arrow"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_rectangle" />
 
- <RelativeLayout
+        <ImageButton
+            android:id="@+id/btn_ellipse"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_rectangle"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_circle" />
+
+        <ImageButton
+            android:id="@+id/btn_pallete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_ellipse"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_palette" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/color_palate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,39 +101,75 @@
         app:layout_constraintEnd_toEndOf="@+id/action"
         app:layout_constraintTop_toBottomOf="@+id/action">
 
- 
- <ImageButton
+        <ImageButton
             android:id="@+id/btn_blue"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
             android:background="@drawable/color_palette_google_blue" />
 
-</RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn_red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_blue"
+            android:background="@drawable/color_palette_google_red" />
 
+        <ImageButton
+            android:id="@+id/btn_yellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_red"
+            android:background="@drawable/color_palette_google_yellow" />
 
+        <ImageButton
+            android:id="@+id/btn_green"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_yellow"
+            android:background="@drawable/color_palette_google_green" />
 
+        <ImageButton
+            android:id="@+id/btn_black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_green"
+            android:background="@drawable/color_palette_black" />
+    </RelativeLayout>
 
-
-
-
-
-    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
- app:layout_constraintTop_toBottomOf="@+id/color_palate">
-     
+        app:layout_constraintTop_toBottomOf="@+id/color_palate">
+
         <com.ferodev.simplepaint.canvas.DrawPencil
             android:id="@+id/draw_pencil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="visible" />
 
-            
-        
+        <com.ferodev.simplepaint.canvas.DrawLine
+            android:id="@+id/draw_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.ferodev.simplepaint.canvas.DrawRectangle
+            android:id="@+id/draw_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.ferodev.simplepaint.canvas.DrawEllipse
+            android:id="@+id/draw_ellipse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
