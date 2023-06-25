@@ -26,7 +26,7 @@ import android.database.ContentObserver
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
-//import com.ferodev.simplepaint.canvas.DrawPencil.Companion.aaa
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.j
 
 
 
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
   // private var xxx = "vvv"
     private var btn = 1
   //  private var image =  findViewById(R.id.btnPencil)
-    private var j = 0
+  //  private var j = 0
     private var aaa = Array<String>(100){"0"} 
 
 
