@@ -40,9 +40,9 @@
         android:background="@drawable/background_card"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="@+id/textviewid"
+        app:layout_constraintStart_toStartOf="@+id/textviewid"
+        app:layout_constraintTop_toTopOf="@+id/textviewid">
 
         <ImageButton
             android:id="@+id/btn_pencil"
