@@ -62,6 +62,7 @@ class DrawPencil @JvmOverloads constructor(
         var yyy = "99"
         var aaa = Array<String>(10){"0"} 
         var zzz = 0
+        var j = 0 - 1
                         }
     
     
@@ -112,7 +113,7 @@ class DrawPencil @JvmOverloads constructor(
         val y = event1.y
         xxx = x.toString()       
         yyy = y.toString()    
-       
+       j = j + 1 
         
         when (event1.action) {
             MotionEvent.ACTION_DOWN -> {
