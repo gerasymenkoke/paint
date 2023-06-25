@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/background_card"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
         app:layout_constraintEnd_toEndOf="@+id/textviewid"
         app:layout_constraintStart_toStartOf="@+id/textviewid"
         app:layout_constraintTop_toTopOf="@+id/textviewid">
