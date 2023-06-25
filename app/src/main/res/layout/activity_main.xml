@@ -50,7 +50,7 @@
             android:layout_height="40dp"
             android:layout_margin="10dp"
             android:background="@null"
-            android:src="@drawable/ic_selected_pencil" />
+            android:src="@drawable/ic_unselected_pencil" />
           
   </RelativeLayout>
 
