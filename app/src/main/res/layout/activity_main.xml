@@ -54,12 +54,44 @@
           
   </RelativeLayout>
 
+
+
+ <RelativeLayout
+        android:id="@+id/color_palate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_card"
+        android:padding="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/action"
+        app:layout_constraintTop_toBottomOf="@+id/action">
+
+  <ImageButton
+            android:id="@+id/btn_black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_green"
+            android:background="@drawable/color_palette_black" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
- app:layout_constraintTop_toBottomOf="@drawable/color_palette_black">
+ app:layout_constraintTop_toBottomOf="@+id/color_palate">
      
         <com.ferodev.simplepaint.canvas.DrawPencil
             android:id="@+id/draw_pencil"
