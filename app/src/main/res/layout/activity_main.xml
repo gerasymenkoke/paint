@@ -36,7 +36,7 @@
         android:id="@+id/action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="240dp"
         android:background="@drawable/background_card"
         android:paddingStart="160dp"
         android:paddingEnd="160dp"
