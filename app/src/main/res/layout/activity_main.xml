@@ -36,10 +36,10 @@
         android:id="@+id/action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/background_card"
-        android:paddingStart="160dp"
-        android:paddingEnd="160dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="@+id/textviewid"
         app:layout_constraintStart_toStartOf="@+id/textviewid"
         app:layout_constraintTop_toTopOf="@+id/textviewid">
