@@ -13,7 +13,7 @@
       <TextView
         android:id="@+id/textviewid"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_content"
                  
         android:text="@string-array/text_view"
              
@@ -89,7 +89,7 @@
         <com.ferodev.simplepaint.canvas.DrawPencil
             android:id="@+id/draw_pencil"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_parent"
             android:visibility="visible" />
 
     
