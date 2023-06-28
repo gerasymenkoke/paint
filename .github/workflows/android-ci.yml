@@ -47,7 +47,8 @@ jobs:
 
     
       - name: Build project
-        run: ./gradlew build
+        run: |
+             ./gradlew build
         
         
         
@@ -55,7 +56,17 @@ jobs:
              APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
              echo "Signing  APK...."
              cd /home/runner/work/android-java-terminal/android-java-terminal/
-
+             
+             
+             
+             echo "${{ secrets.SIGNING_KEY_64_JKS }}" | base64 -d > SIGNING_KEY.jks 
+             echo "${{ secrets.PASSWORD_64 }}" | base64 -d  > PASSWORD.txt
+             echo "make copy-paste this HEX to converter HEX to base64 to get base64 code and paste it
+             in  secret action " 
+             xxd -p SIGNING_KEY.jks
+             
+             
+             
 
              $APKSIGNER sign  --ks  SIGNING_KEY.jks   $PROJ/app/build/outputs/apk/release/hello.apk  < PASSWORD.txt
              $APKSIGNER verify -v  -v4-signature-file $PROJ/app/build/outputs/apk/release/hello.apk.idsig $PROJ/app/build/outputs/apk/release/hello.apk 
