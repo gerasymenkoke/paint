@@ -52,10 +52,10 @@ jobs:
         
         
         
-        
+             PROJ="/home/runner/work/paint/paint"
              APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
              echo "Signing  APK...."
-             cd /home/runner/work/android-java-terminal/android-java-terminal/
+             cd /home/runner/work/paint/paint/
              
              
              
