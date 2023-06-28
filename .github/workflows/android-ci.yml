@@ -45,7 +45,7 @@ jobs:
    #     run: ./gradlew test
 
 
-      # Run Build Project
+    
       - name: Build project
         run: ./gradlew build
         
