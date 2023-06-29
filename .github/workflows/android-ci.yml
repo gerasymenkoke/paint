@@ -91,8 +91,8 @@ jobs:
              
              
 
-             $APKSIGNER sign  --ks  SIGNING_KEY.jks   $PROJ/app/build/outputs/apk/release/hello.apk  < PASSWORD.txt
-             $APKSIGNER verify -v  -v4-signature-file $PROJ/app/build/outputs/apk/release/hello.apk.idsig $PROJ/app/build/outputs/apk/release/hello.apk 
+             $APKSIGNER sign  --ks  SIGNING_KEY.jks   $PROJ/app/build/outputs/apk/debug/app-debug.apk   < PASSWORD.txt
+             $APKSIGNER verify -v  -v4-signature-file $PROJ/app/build/outputs/apk/debug/app-debug.apk.idsig $PROJ/app/build/outputs/apk/debug/app-debug.apk  
         
         
         
