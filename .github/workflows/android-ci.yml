@@ -74,6 +74,7 @@ jobs:
         
         
              PROJ="/home/runner/work/paint/paint"
+             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/31.0.0/zipalign"
              APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
              echo "Signing  APK...."
              cd /home/runner/work/paint/paint/
@@ -87,6 +88,17 @@ jobs:
              echo "make copy-paste this HEX to converter HEX to base64 to get base64 code and paste it
              in  secret action " 
              xxd -p SIGNING_KEY.jks
+             
+             
+             
+             
+             echo "ZIPALIGNing APK..."
+             cd $PROJ/bin
+             $ZIPALIGN -p -f -v 4 $PROJ/bin/hello.unaligned.apk $PROJ/bin/hello.apk 
+             cp hello.apk  $PROJ/app/build/outputs/apk/release/
+             cd $PROJ/app/build/outputs/apk/release/
+             pwd
+             ls -
              
              
              
