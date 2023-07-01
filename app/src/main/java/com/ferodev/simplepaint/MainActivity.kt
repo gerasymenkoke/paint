@@ -140,8 +140,7 @@ textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa
 
 
 
-                    
-aaa[j] = "(" + xxx + "," + yyy + ")"
+  aaa[j] = "(" + rxx + "," + ryy + ")"                  
 
 calc.text = j.toString()
                     
