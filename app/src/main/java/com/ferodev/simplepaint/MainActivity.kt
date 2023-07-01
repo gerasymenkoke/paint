@@ -26,6 +26,12 @@ import android.database.ContentObserver
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
+
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
+
+
+
 //import com.ferodev.simplepaint.canvas.DrawPencil.Companion.j
 
 
@@ -107,7 +113,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     
                  
-aaa[j] = "(" + xxx + "," + yyy + ")"
+aaa[j] = "(" + rx + "," + ry + ")"
 
 
 calc.text = j.toString()
