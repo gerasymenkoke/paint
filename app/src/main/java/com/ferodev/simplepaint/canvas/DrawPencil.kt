@@ -26,7 +26,7 @@ import com.ferodev.simplepaint.MainActivity.Companion.path
 import com.ferodev.simplepaint.cons.Pencil
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
-
+import kotlin.math.roundToInt
 
 
 
@@ -114,9 +114,9 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
-        val x = event1.x
-        val y = event1.y
-    
+        val x = (event1.x * 10.0).roundToInt() / 10.0
+        val y = (event1.y * 10.0).roundToInt() / 10.0
+        
         xxx = x.toString()       
         yyy = y.toString()    
 
