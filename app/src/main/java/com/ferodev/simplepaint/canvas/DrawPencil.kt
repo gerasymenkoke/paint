@@ -114,8 +114,8 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
-        val x = ((event1.x * 10.0).roundToInt() / 10.0).toFloat() 
-        val y = ((event1.y * 10.0).roundToInt() / 10.0).toFloat()
+        val x = event1.x 
+        val y = event1.y 
         
         xxx = x.toString()       
         yyy = y.toString()    
@@ -123,8 +123,8 @@ class DrawPencil @JvmOverloads constructor(
         
         
         j = j + 1 
-        if (j>0) {  val rx=x/x1
-                    val ry=y/y1
+        if (j>0) {  val rx=((x/x1 * 10.0).roundToInt() / 10.0).toFloat()
+                    val ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
                     rxx = rx.toString()       
                     ryy = ry.toString()
             
