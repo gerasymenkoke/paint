@@ -27,8 +27,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rxx
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ryy
 
 
 
@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     
                  
-aaa[j] = "(" + rx + "," + ry + ")"
+aaa[j] = "(" + rxx + "," + ryy + ")"
 
 
 calc.text = j.toString()
