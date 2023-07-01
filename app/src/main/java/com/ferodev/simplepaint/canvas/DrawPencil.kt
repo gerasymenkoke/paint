@@ -62,6 +62,8 @@ class DrawPencil @JvmOverloads constructor(
         var yyy = "99"
         var aaa = Array<String>(10){"0"} 
         var zzz = 0
+        var rxx = "1"
+        var ryy = "1"
         var j = 0 - 1
                         }
     
@@ -114,10 +116,14 @@ class DrawPencil @JvmOverloads constructor(
     
         xxx = x.toString()       
         yyy = y.toString()    
-        j = j + 1 
-        if (j>0) { val rx=x/x1
-                   val ry=y/y1
 
+        
+        
+        j = j + 1 
+        if (j>0) {  val rx=x/x1
+                    val ry=y/y1
+                    rxx = rx.toString()       
+                    ryy = ry.toString()
             
                   val x1=x
                   val y1=y  }              
