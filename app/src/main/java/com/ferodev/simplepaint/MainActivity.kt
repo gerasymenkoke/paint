@@ -110,6 +110,8 @@ class MainActivity : AppCompatActivity() {
 aaa[j] = "(" + xxx + "," + yyy + ")"
 
 
+calc.text = j.toString()
+                    
                     
 textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
  j = j+1   
