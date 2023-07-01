@@ -53,6 +53,9 @@ class DrawPencil @JvmOverloads constructor(
     private val colorList = mutableListOf<Int>()
     private var i = 1
     private var arr = Array<Float>(10){0.0F}  
+    private var x1 = 1
+    private var y1 = 1
+    
   
     //val arrayname = arrayOf(1, 2, 3, 4, 5)
    
@@ -128,8 +131,8 @@ class DrawPencil @JvmOverloads constructor(
                   val x1=x
                   val y1=y  }              
 
-            else { val x1=x
-                  val y1=y }
+            else {  x1=x
+                    y1=y }
 
         
         when (event1.action) {
