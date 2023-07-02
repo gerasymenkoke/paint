@@ -70,8 +70,8 @@ class MainActivity : AppCompatActivity() {
      private var rry_ = Array<Float>(10){0.0f} 
 
      
-     private var rrx = arrayOf(n_rxy, rrx_)
-     private var rry = arrayOf(n_rxy, rry_)
+     private var rrx = arrayOf(rrx_)
+     private var rry = arrayOf(rry_)
       
      
  //   private var aa = Array<Float>(100){"0"} 
