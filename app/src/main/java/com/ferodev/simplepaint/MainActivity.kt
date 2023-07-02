@@ -62,6 +62,8 @@ class MainActivity : AppCompatActivity() {
   //  private var image =  findViewById(R.id.btnPencil)
   private var j = 0
     private var aaa = Array<String>(100){"0"} 
+    private var aa = Array<Float>(100){"0"} 
+
 
 
     
@@ -101,7 +103,19 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
+// Filling sample array raa
+// 0
+                        
+val rx0: FloatArray = floatArrayOf(2, 4, 6)
+val ry0: FloatArray = floatArrayOf(1, 3, 5)
+val raa: Array<FloatArray> = arrayOf(0, rx0, ry0)
 
+// 1
+            
+      
+
+
+            
        
                btnPencil.setOnClickListener { 
             
