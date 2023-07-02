@@ -119,14 +119,14 @@ class MainActivity : AppCompatActivity() {
 // 0
       jj = 0                  
 
-             rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f, 8.0f, 10.0f, 12.0f, 14.0f, 16.0f, 18.0f, 20.f)
+             rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f, 8.0f, 10.0f, 12.0f, 14.0f, 16.0f, 18.0f, 20.0f)
              rrx[jj] = rrx_
             
              rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f, 7.0f, 9.0f, 11.0f, 13.0f, 15.0f, 17.0f, 19.0f)
              rry[jj] = rry_
              calc.text = jj.toString()       
              while (jj<=9) {
-                           calc.text = calc.text +  rrx_[jj].toString() + "  " + rry_[jj].toString()  
+                           calc.text = calc.text + "  "  +  rrx_[jj].toString() + "  " + rry_[jj].toString()  
                            jj=jj+1
                           }
 
