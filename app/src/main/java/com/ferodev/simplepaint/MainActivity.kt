@@ -63,13 +63,16 @@ class MainActivity : AppCompatActivity() {
   private var j = 0
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
-   //  private var n_rxy = Array<Int>(10){0} 
-     private var rrx = Array<Float>(10){0.0f} 
-     private var rry = Array<Float>(10){0.0f} 
+    private var n_rxy = Array<Int>(10){0} 
+    
+    
+     private var rrx_ = Array<Float>(10){0.0f} 
+     private var rry_ = Array<Float>(10){0.0f} 
 
      
-     private var raa = arrayOf(rrx, rry)
-
+     private var rrx = arrayOf(n_rxy, rrx_)
+     private var rry = arrayOf(n_rxy, rry_)
+      
      
  //   private var aa = Array<Float>(100){"0"} 
 
@@ -114,10 +117,10 @@ class MainActivity : AppCompatActivity() {
            
 // Filling sample array raa
 // 0
-                        
-val rx0 = floatArrayOf(2.0f, 4.0f, 6.0f)
-val ry0 = floatArrayOf(1.0f, 3.0f, 5.0f)
-raa[jj] = floatArrayOf(rx0, ry0)
+      jj = 0                  
+val rrx[jj] = floatArrayOf(2.0f, 4.0f, 6.0f)
+val rry[jj] = floatArrayOf(1.0f, 3.0f, 5.0f)
+//raa[jj] 
 
 // 1
             
