@@ -118,14 +118,17 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
       jj = 0                  
-//rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
-//rrx[jj] = rrx_
-            
-//rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
-//rry[jj] = rry_
-            
- //   calc.text = rrx[j].toString() + "  " + rry[j].toString()  
 
+rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
+rrx[jj] = rrx_
+            
+rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
+rry[jj] = rry_
+            
+    calc.text = rrx_[jj].toString() + "  " + rry_[jj].toString()  
+
+
+            
 
             
        
@@ -143,22 +146,7 @@ class MainActivity : AppCompatActivity() {
 aaa[j] = "(" + rxx + "," + ryy + ")"
 
 
-
-
-
-rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
-rrx[j] = rrx_
-            
-rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
-rry[j] = rry_
-            
-    calc.text = rrx_[j].toString() + "  " + rry_[j].toString()  
-
-
-
-
-
-                    
+                   
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
@@ -186,21 +174,6 @@ textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa
   aaa[j] = "(" + rxx + "," + ryy + ")"                  
 
 //calc.text = j.toString()
-
-
-
-rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
-rrx[j] = rrx_
-            
-rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
-rry[j] = rry_
-            
-    calc.text = rrx_[j].toString() + "  " + rry_[j].toString()  
-
-
-
-
-
 
 
 
