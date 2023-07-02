@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
     private var rraaa = Array<String>(100){"0"}
-    private 
+    
     private var n_rxy = Array<Int>(10){0} 
     
     
