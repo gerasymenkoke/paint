@@ -127,17 +127,20 @@ class DrawPencil @JvmOverloads constructor(
         
         
         j = j + 1 
-        
-                     
+
+        if (j >0)
+        {                     
          rx=((x/x1 * 10.0).roundToInt() / 10.0).toFloat()
          ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
          rxx = rx.toString()       
          ryy = ry.toString()
         val x1=x
         val y1=y              
-
-           
-
+        }
+        else { 
+         val x1=x
+         val y1=y       
+             }
         
         when (event1.action) {
             MotionEvent.ACTION_DOWN -> {
