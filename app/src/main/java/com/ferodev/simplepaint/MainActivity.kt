@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
   private var j = 0
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
-    private var raa = Array<Float>(100){1.0f,1.0f}
+    private var raa = Array<Float>(10,10){1.0f}
 
     
  //   private var aa = Array<Float>(100){"0"} 
