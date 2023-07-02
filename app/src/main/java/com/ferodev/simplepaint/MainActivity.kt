@@ -119,6 +119,8 @@ class MainActivity : AppCompatActivity() {
 // 0
       jj = 0                  
 rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
+rrx[jj] = rrx_
+            
 val rry[jj] = floatArrayOf(1.0f, 3.0f, 5.0f)
 //raa[jj] 
 
