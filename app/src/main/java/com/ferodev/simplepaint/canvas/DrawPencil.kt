@@ -127,8 +127,8 @@ class DrawPencil @JvmOverloads constructor(
         
         
         j = j + 1 
-        if (j>0) {  val rx=((x/x1 * 10.0).roundToInt() / 10.0).toFloat()
-                    val ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
+        if (j>0) {  rx=((x/x1 * 10.0).roundToInt() / 10.0).toFloat()
+                    ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
                     rxx = rx.toString()       
                     ryy = ry.toString()
             
