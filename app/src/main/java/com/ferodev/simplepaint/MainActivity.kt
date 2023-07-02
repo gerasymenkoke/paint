@@ -63,8 +63,10 @@ class MainActivity : AppCompatActivity() {
   private var j = 0
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
-    private var raa = Array<Float>(10,10){1.0f}
-
+     private var n_rxy = Array<Int>(10){0} 
+     private var rx = Array<Float>(10){0.0f} 
+     private var ry = Array<Float>(10){0.0f}
+//      private var raa = arrayOf(n_rxy, even, odd)Array<Float>(10){0.0f}
     
  //   private var aa = Array<Float>(100){"0"} 
 
