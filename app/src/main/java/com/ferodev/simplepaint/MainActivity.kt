@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
                         
-val rx0 = floatArrayOf(2, 4, 6)
+val rx0 = floatArrayOf(2.0f, 4.0f, 6.0f)
 val ry0: FloatArray = floatArrayOf(1, 3, 5)
 val raa: Array<FloatArray> = arrayOf(0, rx0, ry0)
 
