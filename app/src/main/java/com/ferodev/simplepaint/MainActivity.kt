@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
    //  private var n_rxy = Array<Int>(10){0} 
      private var rrx = Array<Float>(10){0.0f} 
      private var rry = Array<Float>(10){0.0f} 
-     private var raa = Array<Float>(rrx, rry)
+     private var raa = Array<Float>(10){rrx, rry}
 
      
  //   private var aa = Array<Float>(100){"0"} 
