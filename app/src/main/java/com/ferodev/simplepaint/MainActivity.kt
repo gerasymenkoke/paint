@@ -152,7 +152,7 @@ rrx[j] = rrx_
 rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
 rry[j] = rry_
             
-    calc.text = rrx_.toString() + "  " + rry_.toString()  
+    calc.text = rrx_[j].toString() + "  " + rry_[j].toString()  
 
 
 
@@ -195,7 +195,7 @@ rrx[j] = rrx_
 rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
 rry[j] = rry_
             
-    calc.text = rrx[j].toString() + "  " + rry[j].toString()  
+    calc.text = rrx_[j].toString() + "  " + rry_[j].toString()  
 
 
 
