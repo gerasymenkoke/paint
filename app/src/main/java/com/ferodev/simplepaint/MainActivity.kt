@@ -30,7 +30,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ryy
 
-
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 
 //import com.ferodev.simplepaint.canvas.DrawPencil.Companion.j
 
