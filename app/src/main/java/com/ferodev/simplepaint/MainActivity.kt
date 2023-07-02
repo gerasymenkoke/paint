@@ -107,8 +107,8 @@ class MainActivity : AppCompatActivity() {
 // 0
                         
 val rx0 = floatArrayOf(2.0f, 4.0f, 6.0f)
-val ry0: FloatArray = floatArrayOf(1, 3, 5)
-val raa: Array<FloatArray> = arrayOf(0, rx0, ry0)
+val ry0 = floatArrayOf(1.0f, 3.0f, 5.0f)
+val raa = floatArrayOf(0, rx0, ry0)
 
 // 1
             
