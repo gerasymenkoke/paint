@@ -133,8 +133,8 @@ class DrawPencil @JvmOverloads constructor(
          ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
          rxx = rx.toString()       
          ryy = ry.toString()
-         x1=x
-         y1=y              
+        val x1=x
+        val y1=y              
 
            
 
