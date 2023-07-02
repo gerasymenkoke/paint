@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
     private var rraaa_ = Array<String>(100){"0"}
-    private var rraaa_ = arrayOf(rraaa_)
+    private var rraaa = arrayOf(rraaa_)
     
     private var n_rxy = Array<Int>(10){0} 
     
@@ -129,11 +129,11 @@ class MainActivity : AppCompatActivity() {
              rry[jj] = rry_
                     
              while (jj<=9) {
-                           rraa[0,jj]= "(" +   rrx_[jj].toString() + "," + rry_[jj].toString() + ")"  
+                           rraaa_[jj]= "(" +   rrx_[jj].toString() + "," + rry_[jj].toString() + ")"  
                            jj=jj+1
                           }
-
-            
+           //  rraaa[0] = rraaa_
+             calc.text = "0: " + rraaa_
 
             
        
