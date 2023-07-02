@@ -62,7 +62,10 @@ class MainActivity : AppCompatActivity() {
   //  private var image =  findViewById(R.id.btnPencil)
   private var j = 0
    private var jj = 0  
-    private var aaa = Array<String>(100){"0"} 
+    private var aaa = Array<String>(100){"0"}
+    private var raa = Array<Float>(100){1.0f,1.0f}
+
+    
  //   private var aa = Array<Float>(100){"0"} 
 
 
@@ -109,7 +112,7 @@ class MainActivity : AppCompatActivity() {
                         
 val rx0 = floatArrayOf(2.0f, 4.0f, 6.0f)
 val ry0 = floatArrayOf(1.0f, 3.0f, 5.0f)
-val raa[jj] = floatArrayOf(rx0, ry0)
+raa[jj] = floatArrayOf(rx0, ry0)
 
 // 1
             
