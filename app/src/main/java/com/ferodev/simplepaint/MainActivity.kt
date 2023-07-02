@@ -64,9 +64,9 @@ class MainActivity : AppCompatActivity() {
    private var jj = 0  
     private var aaa = Array<String>(100){"0"}
    //  private var n_rxy = Array<Int>(10){0} 
-     private var rx = Array<Float>(10){0.0f} 
-     private var ry = Array<Float>(10){0.0f} 
-     private var raa = Array<Float>(rx, ry)
+     private var rrx = Array<Float>(10){0.0f} 
+     private var rry = Array<Float>(10){0.0f} 
+     private var raa = Array<Float>(rrx, rry)
 
      
  //   private var aa = Array<Float>(100){"0"} 
