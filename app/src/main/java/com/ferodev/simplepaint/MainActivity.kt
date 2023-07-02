@@ -121,10 +121,8 @@ class MainActivity : AppCompatActivity() {
 rrx_ = arrayOf<Float>(2.0f, 4.0f, 6.0f)
 rrx[jj] = rrx_
             
-val rry[jj] = floatArrayOf(1.0f, 3.0f, 5.0f)
-//raa[jj] 
-
-// 1
+rry_ = arrayOf<Float>(1.0f, 3.0f, 5.0f)
+rry[jj] = rry_
             
       
 
