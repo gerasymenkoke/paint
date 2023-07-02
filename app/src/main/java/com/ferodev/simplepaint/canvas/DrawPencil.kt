@@ -67,6 +67,10 @@ class DrawPencil @JvmOverloads constructor(
         var zzz = 0
         var rxx = "1"
         var ryy = "1"
+
+        var rx = 1.0f
+        var ry = 1.0f
+         
         var j = 0 - 1
                         }
     
