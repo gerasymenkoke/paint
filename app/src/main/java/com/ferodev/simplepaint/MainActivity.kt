@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
   //  private var image =  findViewById(R.id.btnPencil)
   private var j = 0
    private var jj = 0  
+       private var jjj = 0  
     private var aaa = Array<String>(100){"0"}
     private var rraaa = Array<String>(100){"0"}
     
@@ -126,7 +127,7 @@ class MainActivity : AppCompatActivity() {
             
              rry_ = arrayOf<Float>(0.8f, 0.6f, 0.5f, 0.6f, 0.8f, 1.2f, 1.2f, 1.2f, 1.2f, 1.0f)
              rry[jj] = rry_
-             var jjj=0       
+             jjj=0       
              while (jjj<=9) {
                            rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
                            jjj=jjj+1
@@ -141,7 +142,7 @@ class MainActivity : AppCompatActivity() {
             
              rry_ = arrayOf<Float>(0.9f, 0.7f, 0.5f, 0.5f, 0.9f, 1.4f, 1.7f, 1.8f, 1.8f, 1.8f)
            //  rry[jj] = rry_
-             var jjj=0        
+             jjj=0        
              while (jjj<=9) {
                            rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
                            j=j+1
