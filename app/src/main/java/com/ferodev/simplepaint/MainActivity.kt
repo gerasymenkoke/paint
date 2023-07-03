@@ -126,10 +126,10 @@ class MainActivity : AppCompatActivity() {
             
              rry_ = arrayOf<Float>(0.8f, 0.6f, 0.5f, 0.6f, 0.8f, 1.2f, 1.2f, 1.2f, 1.2f, 1.0f)
              rry[jj] = rry_
-             j=0       
-             while (j<=9) {
-                           rraaa[jj]= "(" +   rrx_[j].toString() + "," + rry_[j].toString() + ")"  
-                           j=j+1
+             val jjj=0       
+             while (jjj<=9) {
+                           rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
+                           jjj=jjj+1
                           }
              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
  // Filling sample array raa
@@ -141,9 +141,9 @@ class MainActivity : AppCompatActivity() {
             
              rry_ = arrayOf<Float>(0.9f, 0.7f, 0.5f, 0.5f, 0.9f, 1.4f, 1.7f, 1.8f, 1.8f, 1.8f)
            //  rry[jj] = rry_
-             j=0        
-             while (j<=9) {
-                           rraaa[j]= "(" +   rrx_[j].toString() + "," + rry_[j].toString() + ")"  
+             val jjj=0        
+             while (jjj<=9) {
+                           rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
                            j=j+1
                           }
               calc.text = "1: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
