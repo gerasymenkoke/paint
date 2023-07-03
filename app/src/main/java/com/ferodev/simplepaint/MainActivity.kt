@@ -131,11 +131,35 @@ class MainActivity : AppCompatActivity() {
                            rraaa[jj]= "(" +   rrx_[jj].toString() + "," + rry_[jj].toString() + ")"  
                            jj=jj+1
                           }
-           //  rraaa[0] = rraaa_
-             calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
+              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
+
+ // Filling sample array raa
+// 1
+      jj = 0                  
+
+             rrx_ = arrayOf<Float>(1.0f, 1.2f, 1.3f, 1.4f, 1.4f, 1.4f, 1.4f, 1.0f, 1.5f, 1.7f)
+             rrx[jj] = rrx_
+            
+             rry_ = arrayOf<Float>(0.9f, 0.7f, 0.5f, 0.5f, 0.9f, 1.4f, 1.7f, 1.8f, 1.8f, 1.8f)
+             rry[jj] = rry_
+                    
+             while (jj<=9) {
+                           rraaa[jj]= "(" +   rrx_[jj].toString() + "," + rry_[jj].toString() + ")"  
+                           jj=jj+1
+                          }
+              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
+
+
+
+
+
+
+
+
+
+
 
             
-       
                btnPencil.setOnClickListener { 
             
                 // Untuk mengganti dari false menjadi true
