@@ -119,10 +119,10 @@ class MainActivity : AppCompatActivity() {
            
 // Filling sample array raa
 // 0
-      jj = 0                  
+     jj = 0                  
 
-             rrx_ = arrayOf<Float>(1.0f, 1.2f, 1.5f, 1.7f, 1.8f, 1.6f, 1.4f, 1.3f, 1.2f, 1.1f)
-             rrx[jj] = rrx_
+            rrx_ = arrayOf<Float>(1.0f, 1.2f, 1.5f, 1.7f, 1.8f, 1.6f, 1.4f, 1.3f, 1.2f, 1.1f)
+            rrx[jj] = rrx_
             
              rry_ = arrayOf<Float>(0.8f, 0.6f, 0.5f, 0.6f, 0.8f, 1.2f, 1.2f, 1.2f, 1.2f, 1.0f)
              rry[jj] = rry_
@@ -131,8 +131,7 @@ class MainActivity : AppCompatActivity() {
                            rraaa[jj]= "(" +   rrx_[j].toString() + "," + rry_[j].toString() + ")"  
                            j=j+1
                           }
-              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
-
+  //            calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
  // Filling sample array raa
 // 1
       jj = 1                  
@@ -147,7 +146,7 @@ class MainActivity : AppCompatActivity() {
                            rraaa[j]= "(" +   rrx_[j].toString() + "," + rry_[j].toString() + ")"  
                            j=j+1
                           }
-              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
+              calc.text = "1: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
 
 
 
