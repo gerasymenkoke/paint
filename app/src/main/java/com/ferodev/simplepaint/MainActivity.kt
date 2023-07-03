@@ -138,10 +138,10 @@ class MainActivity : AppCompatActivity() {
       jj = 1                  
 
              rrx_ = arrayOf<Float>(1.0f, 1.2f, 1.3f, 1.4f, 1.4f, 1.4f, 1.4f, 1.0f, 1.5f, 1.7f)
-           //  rrx[jj] = rrx_
+             rrx[jj] = rrx_
             
              rry_ = arrayOf<Float>(0.9f, 0.7f, 0.5f, 0.5f, 0.9f, 1.4f, 1.7f, 1.8f, 1.8f, 1.8f)
-           //  rry[jj] = rry_
+             rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
                            rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
