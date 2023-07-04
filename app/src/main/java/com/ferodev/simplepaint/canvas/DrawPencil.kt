@@ -55,7 +55,7 @@ class DrawPencil @JvmOverloads constructor(
     private var arr = Array<Float>(10){0.0F}  
     private var x1 = 1f
     private var y1 = 1f
-    
+      
   
     //val arrayname = arrayOf(1, 2, 3, 4, 5)
    
@@ -68,8 +68,15 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
+        var crx_ = Array<Float>(10){0.0f}
+        var cry_ = Array<Float>(10){0.0f} 
+
+        
         var rx = 1.0f
         var ry = 1.0f
+
+
+
          
         var j = 0 - 1
                         }
