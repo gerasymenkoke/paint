@@ -179,7 +179,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                     
                  
-aaa[j] = "(" + rxx + "," + ryy + ")"
+aaa[j] = "(" + crx_[j] + "," + cry_[j] + ")"
 
 
                    
