@@ -33,6 +33,14 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ryy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
+
+
+
+
+
+
 //import com.ferodev.simplepaint.canvas.DrawPencil.Companion.j
 
 
