@@ -144,7 +144,7 @@ class DrawPencil @JvmOverloads constructor(
          rxx = rx.toString()       
          ryy = ry.toString()
          
-         if (abs(rx-rx1)<0.1 && abs(ry-ry1)<0.1)  { j=j-1 }
+         if (abs(rx-rx1)<0.2 && abs(ry-ry1)<0.2)  { j=j-1 }
          
               else {  crx_[j] = rx
                       cry_[j] = ry
