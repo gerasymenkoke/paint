@@ -141,17 +141,22 @@ class DrawPencil @JvmOverloads constructor(
          ry=((y/y1 * 10.0).roundToInt() / 10.0).toFloat()
          rxx = rx.toString()       
          ryy = ry.toString()
-        
-         if ((rx<1.2 && rx>0.8) && (ry<1.2 && ry>0.8))  { j=j-1 }
+         
+         if (abs(rx-rx1)<0.1 && abs(ry-ry1)<0.1)  { j=j-1 }
          
               else {  crx_[j] = rx
                       cry_[j] = ry
+                      
+                  
                    }
          
              }
-       else { x1=x
-             y1=y
-            }
+        x1=x
+        y1=y
+        rx1=rx
+        ry1=ry
+           
+       
            
         j = j + 1 
    
