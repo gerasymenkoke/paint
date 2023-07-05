@@ -142,7 +142,7 @@ class DrawPencil @JvmOverloads constructor(
          rxx = rx.toString()       
          ryy = ry.toString()
         
-         if ((rx<1.1 && rx>0.9) && (ry<1.1 && ry>0.9) ) { j=j-1 }
+         if ((rx<1.2 && rx>0.8) && (ry<1.2 && ry>0.8)  { j=j-1 }
          
               else {  crx_[j] = rx
                       cry_[j] = ry
@@ -168,34 +168,8 @@ class DrawPencil @JvmOverloads constructor(
                   
                 
                 touchMove(x, y)
-              // xxx = x.toString()
-               
-                
-             //   arr = Array(10) { i -> x.toFloat() }
-              //  aaa = Array(10) { i -> arr[i].toString() }  
-             //  i = i+1
-
-
-                
-              // btnPencil.setImageResource(R.drawable.ic_selected_pencil)
-          //     com.ferodev.simplepaint.canvas.DrawPencil.draw_pencil.visibility = View.INVISIBLE
-               
-                
-              //  zzz = zzz +1
-                
-                
-                 //  btn.performClick()
-                
-                
-                
-                
-                
-                
-             
-              //  btnPencil.performClick()
-                
-             //  textviewid.text = xxx
-                //print (xx)
+         
+            
                 invalidate()
                                      
             }
