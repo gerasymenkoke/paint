@@ -27,6 +27,7 @@ import com.ferodev.simplepaint.cons.Pencil
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 import kotlin.math.roundToInt
+import kotlin.math.abs
 
 
 
