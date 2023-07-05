@@ -177,11 +177,12 @@ class MainActivity : AppCompatActivity() {
                 
                 
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
-                    
+             j=0       
 
- if (j >=0 && j<=9) {
+ while (j >=0 && j<=9) {
                     
 aaa[j] = "(" + crx_[j].toString() + "," + cry_[j].toString() + ")"
+     j=j+1
                      }
 
                    
