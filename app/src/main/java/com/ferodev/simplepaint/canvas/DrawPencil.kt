@@ -139,12 +139,12 @@ class DrawPencil @JvmOverloads constructor(
               
       
         if (j >=0 && j<=9)
-             {   rx=(((x-x1)/x1 * 10.0).roundToInt() / 10.0).toFloat()
-         ry=(((y-y1)/y1 * 10.0).roundToInt() / 10.0).toFloat()
+             {   rx=(((x-x1)/x1 * 100.0).roundToInt() / 100.0).toFloat()
+         ry=(((y-y1)/y1 * 100.0).roundToInt() / 100.0).toFloat()
          rxx = rx.toString()       
          ryy = ry.toString()
          
-         if (abs(rx)<0.1 && abs(ry)<0.1)  { j=j-1 }
+         if (abs(rx)<0.01 && abs(ry)<0.01)  { j=j-1 }
          
               else {  crx_[j] = rx
                       cry_[j] = ry
