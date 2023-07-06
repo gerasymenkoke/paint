@@ -210,7 +210,18 @@ textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa
 
 
 
-  aaa[j] = "(" + rxx + "," + ryy + ")"                  
+
+ j=0       
+
+ while (j >=0 && j<=9) {
+                    
+aaa[j] = "(" + crx_[j].toString() + "," + cry_[j].toString() + ")"
+     j=j+1
+                     }
+
+
+
+             
 
 //calc.text = j.toString()
 
