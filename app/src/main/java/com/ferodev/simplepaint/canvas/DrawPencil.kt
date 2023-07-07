@@ -144,13 +144,14 @@ class DrawPencil @JvmOverloads constructor(
          rxx = rx.toString()       
          ryy = ry.toString()
          
-       if ( ((rx<=0 && rx1<=0) && (ry<=0 && ry1<=0)) ||  ((rx>=0 && rx1>=0) && (ry>=0 && ry1>=0)) || ((rx>=0 && rx1>=0) && (ry<=0 && ry1<=0)) ||
-                  ((rx<=0 && rx1<=0) && (ry>=0 && ry1>=0)) )  { j=j-1 }
+      // if ( ((rx<=0 && rx1<=0) && (ry<=0 && ry1<=0)) ||  ((rx>=0 && rx1>=0) && (ry>=0 && ry1>=0)) || ((rx>=0 && rx1>=0) && (ry<=0 && ry1<=0)) ||
+        //          ((rx<=0 && rx1<=0) && (ry>=0 && ry1>=0)) )  { j=j-1 }
          
-              else {  crx_[j] = rx
+          //    else {  
+                      crx_[j] = rx
                       cry_[j] = ry
                             
-                   }
+            //       }
                            
          
              }
