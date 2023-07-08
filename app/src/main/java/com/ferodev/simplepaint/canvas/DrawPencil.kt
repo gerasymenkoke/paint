@@ -165,7 +165,7 @@ class DrawPencil @JvmOverloads constructor(
          
              }
 
-        if (j=0)     
+        if (j==0)     
         {  
        
      rx=(((x-0)* 100.0).roundToInt() / 100.0).toFloat()
