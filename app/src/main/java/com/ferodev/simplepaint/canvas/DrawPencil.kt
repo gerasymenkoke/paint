@@ -138,35 +138,40 @@ class DrawPencil @JvmOverloads constructor(
               
       
         if (j >=0 && j<=9)
-             {   // rx=(((x-x1)* 100.0).roundToInt() / 100.0).toFloat()
-                 // ry=(((y-y1)* 100.0).roundToInt() / 100.0).toFloat()
+             {   rx=(((x-x1)* 100.0).roundToInt() / 100.0).toFloat()
+                 ry=(((y-y1)* 100.0).roundToInt() / 100.0).toFloat()
                  
-                 rx=(x-x1)
-                 ry=(y-y1)
+                // rx=(x-x1)
+                // ry=(y-y1)
 
                  
                  //ry=(((y-y1)/y1 * 100.0).roundToInt() / 100.0).toFloat()
          rxx = rx.toString()       
          ryy = ry.toString()
          
-      // if ( ((rx<=0 && rx1<=0) && (ry<=0 && ry1<=0)) ||  ((rx>=0 && rx1>=0) && (ry>=0 && ry1>=0)) || ((rx>=0 && rx1>=0) && (ry<=0 && ry1<=0)) ||
-        //          ((rx<=0 && rx1<=0) && (ry>=0 && ry1>=0)) )  { j=j-1 }
+       if ( ((rx<=0 && rx1<=0) && (ry<=0 && ry1<=0)) ||  ((rx>=0 && rx1>=0) && (ry>=0 && ry1>=0)) || ((rx>=0 && rx1>=0) && (ry<=0 && ry1<=0)) ||
+                ((rx<=0 && rx1<=0) && (ry>=0 && ry1>=0)) )  { j=j-1 }
          
-          //    else {  
+          else    {  
                       crx_[j] = rx
                       cry_[j] = ry
-                            
-            //       }
+                      x1=x
+                      y1=y   
+                      rx1=rx
+                      ry1=ry
+                
+                   }
                            
          
              }
 
-             
+        if (j<0)     
+        {  
         x1=x
         y1=y
         rx1=rx
         ry1=ry
-           
+        }   
        
            
         j = j + 1 
