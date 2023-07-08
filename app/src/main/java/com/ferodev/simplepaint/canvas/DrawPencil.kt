@@ -141,8 +141,8 @@ class DrawPencil @JvmOverloads constructor(
              {   // rx=(((x-x1)* 100.0).roundToInt() / 100.0).toFloat()
                  // ry=(((y-y1)* 100.0).roundToInt() / 100.0).toFloat()
                  
-                 rx=(((x-x1)
-                 ry=(((y-y1)
+                 rx=(x-x1)
+                 ry=(y-y1)
 
                  
                  //ry=(((y-y1)/y1 * 100.0).roundToInt() / 100.0).toFloat()
