@@ -58,7 +58,7 @@ class DrawPencil @JvmOverloads constructor(
     private var y1 = 1f
      private var rx1 = 1f
      private var ry1 = 1f 
-  
+     private var N = 1
     
     
      companion object {
@@ -137,10 +137,10 @@ class DrawPencil @JvmOverloads constructor(
 
               
       
-        if (j >=1 && j<=9)
+        if (N==10 && j >=1 && j<=9)
              {   rx=(((x-x1)/x* 100.0).roundToInt() / 100.0).toFloat() 
                  ry=(((y-y1)/y* 100.0).roundToInt() / 100.0).toFloat() 
-                 
+                 N=1
                 // rx=(x-x1)
                 // ry=(y-y1)
 
@@ -159,6 +159,7 @@ class DrawPencil @JvmOverloads constructor(
                       rx1=rx
                       ry1=ry
                       j = j + 1 
+                      N=N+1   
                 
                   }
                            
@@ -177,7 +178,7 @@ class DrawPencil @JvmOverloads constructor(
         rx1=rx
         ry1=ry
        j = j + 1 
-               
+       N=N+1        
         }   
        
            
