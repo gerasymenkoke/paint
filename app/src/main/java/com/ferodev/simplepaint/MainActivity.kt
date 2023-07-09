@@ -130,10 +130,10 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx_ = arrayOf<Float>(1.0f, 1.2f, 1.5f, 1.7f, 1.8f, 1.6f, 1.4f, 1.3f, 1.2f, 1.1f)
+            rrx_ = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
             rrx[jj] = rrx_
             
-            rry_ = arrayOf<Float>(0.8f, 0.6f, 0.5f, 0.6f, 0.8f, 1.2f, 1.2f, 1.2f, 1.2f, 1.0f)
+            rry_ = arrayOf<Float>(1.0f, -0.6f, -0.14f, 0.45f, 0.41f, 0.13f, -0.19f, -0.34f, -0.4f, 0.0f)
             rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
