@@ -135,12 +135,12 @@ class DrawPencil @JvmOverloads constructor(
         xxx = x.toString()       
         yyy = y.toString()    
 
-              
+            N=N+1  
       
         if (N==10 && j >=1 && j<=9)
              {   rx=(((x-x1)/x* 100.0).roundToInt() / 100.0).toFloat() 
                  ry=(((y-y1)/y* 100.0).roundToInt() / 100.0).toFloat() 
-                 N=1
+                
                 // rx=(x-x1)
                 // ry=(y-y1)
 
@@ -159,7 +159,7 @@ class DrawPencil @JvmOverloads constructor(
                       rx1=rx
                       ry1=ry
                       j = j + 1 
-                      N=N+1   
+                        
                 
                   }
                            
@@ -178,7 +178,7 @@ class DrawPencil @JvmOverloads constructor(
         rx1=rx
         ry1=ry
        j = j + 1 
-       N=N+1        
+              
         }   
        
            
