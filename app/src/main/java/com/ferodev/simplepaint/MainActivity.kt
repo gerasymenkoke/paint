@@ -148,14 +148,14 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             rrx_ = arrayOf<Float>(1.0f, 0.32f, 0.01f, -0.04f, 1.4f, -0.37f, 0.42f, 0.0f, 0.0f, 0.0f)
-             rrx[jj] = rrx_
+             rrx[jj] = arrayOf<Float>(1.0f, 0.32f, 0.01f, -0.04f, 1.4f, -0.37f, 0.42f, 0.0f, 0.0f, 0.0f)
+            // rrx[jj] = rrx_
             
-             rry_ = arrayOf<Float>(1.0f, -1.24f, 0.34f, 0.56f, 0.05f, 0.02f, 0.0f, 0.0f, 0.0f, 0.0f)
-             rry[jj] = rry_
+             rry[jj] = arrayOf<Float>(1.0f, -1.24f, 0.34f, 0.56f, 0.05f, 0.02f, 0.0f, 0.0f, 0.0f, 0.0f)
+           //  rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
-                           rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
+                           rraaa[jjj]= "(" +   rrx[jj][jjj].toString() + "," + rry[jj][jjj].toString() + ")"  
                            jjj=jjj+1
                           }
               calc.text = "1: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
