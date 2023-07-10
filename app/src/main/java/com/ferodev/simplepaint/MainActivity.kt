@@ -130,14 +130,14 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx_ = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
-            rrx[jj] = rrx_
+            rrx[jj] = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
+           // rrx[jj] = rrx_
             
             rry_ = arrayOf<Float>(1.0f, -0.6f, -0.14f, 0.45f, 0.41f, 0.13f, -0.19f, -0.34f, -0.4f, 0.0f)
             rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
-                           rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
+                           rraaa[jjj]= "(" +   rrx[jj,jjj].toString() + "," + rry_[jjj].toString() + ")"  
                            jjj=jjj+1
                           }
              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
@@ -146,10 +146,10 @@ class MainActivity : AppCompatActivity() {
       jj = 1                  
 
              rrx_ = arrayOf<Float>(1.0f, 0.32f, 0.01f, -0.04f, 1.4f, -0.37f, 0.42f, 0.0f, 0.0f, 0.0f)
-             rrx[0] = rrx_
+             rrx[jj] = rrx_
             
              rry_ = arrayOf<Float>(1.0f, -1.24f, 0.34f, 0.56f, 0.05f, 0.02f, 0.0f, 0.0f, 0.0f, 0.0f)
-             rry[0] = rry_
+             rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
                            rraaa[jjj]= "(" +   rrx_[jjj].toString() + "," + rry_[jjj].toString() + ")"  
@@ -185,6 +185,7 @@ aaa[j] = "(" + crx_[j].toString() + "," + cry_[j].toString() + ")"
      j=j+1
                      }
 
+ 
                    
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
