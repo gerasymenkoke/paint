@@ -36,7 +36,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 
-
+import kotlin.math.abs
 
 
 
@@ -86,7 +86,9 @@ class MainActivity : AppCompatActivity() {
      
      private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry  = Array(10){ Array<Float>(10){0.0f} }
-     
+
+     private var res = Array<Float>(10){0.0f} 
+     private var result = 0
      
  //   private var aa = Array<Float>(100){"0"} 
 
@@ -188,12 +190,34 @@ aaa[j] = "(" + crx_[j].toString() + "," + cry_[j].toString() + ")"
      j=j+1
                      }
 
+
+
+// result of test on 0
+res[0]=0
+res[1]=0
+
+jj=0
+while (jj >=0 && jj<=1) 
+{
+    while (j >=0 && j<=9) {
+  
+    res[jj] = res[jj] + math.abs( math.abs(crx_[j]) - math.abs(rrx[jj][j]) )
+    res[jj] = res[jj] + math.abs( math.abs(cry_[j]) - math.abs(rry[jj][j]) )
+     j=j+1
+                          }
+     jj=jj+1
+}    
+
+if (res[0] < res[1]) { result=0 }
+      else { result = 1 }
+
+
  
                    
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
+textviewid.text = "res="+ result + ":   " aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
