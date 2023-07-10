@@ -80,6 +80,9 @@ class MainActivity : AppCompatActivity() {
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
 
+
+
+arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))
      
      private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry = arrayOf(rry_)
@@ -130,14 +133,14 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx_ = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
-            rrx[jj] = rrx_
+            rrx[jj] = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
+           // rrx[jj] = rrx_
             
-            rry_ = arrayOf<Float>(1.0f, -0.6f, -0.14f, 0.45f, 0.41f, 0.13f, -0.19f, -0.34f, -0.4f, 0.0f)
-            rry[jj] = rry_
+            rry[jj] = arrayOf<Float>(1.0f, -0.6f, -0.14f, 0.45f, 0.41f, 0.13f, -0.19f, -0.34f, -0.4f, 0.0f)
+           // rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
-                           rraaa[jjj]= "(" +   rrx(jj,jjj).toString() + "," + rry(jj,jjj).toString() + ")"  
+                           rraaa[jjj]= "(" +   rrx[jj][jjj].toString() + "," + rry[jj][jjj].toString() + ")"  
                            jjj=jjj+1
                           }
              calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
