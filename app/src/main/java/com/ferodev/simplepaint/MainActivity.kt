@@ -193,18 +193,19 @@ aaa[j] = "(" + crx_[j].toString() + "," + cry_[j].toString() + ")"
 
 
 // result of test on 0
-res[0]=0
-res[1]=0
+res[0]=0.0f
+res[1]=0.0f
 
 jj=0
 while (jj >=0 && jj<=1) 
 {
     while (j >=0 && j<=9) {
   
-    res[jj] = res[jj] + math.abs( math.abs(crx_[j]) - math.abs(rrx[jj][j]) )
-    res[jj] = res[jj] + math.abs( math.abs(cry_[j]) - math.abs(rry[jj][j]) )
+    res[jj] = res[jj] + Math.abs( Math.abs(crx_[j]) - Math.abs(rrx[jj][j]) )
+    res[jj] = res[jj] + Math.abs( Math.abs(cry_[j]) - Math.abs(rry[jj][j]) )
      j=j+1
                           }
+     
      jj=jj+1
 }    
 
@@ -217,7 +218,7 @@ if (res[0] < res[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + ":   " aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
+textviewid.text = "res="+ result + ":   " + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
