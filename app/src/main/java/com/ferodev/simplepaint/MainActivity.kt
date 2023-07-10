@@ -130,8 +130,8 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx[jj] = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
-           // rrx[jj] = rrx_
+            rrx_ = arrayOf<Float>(1.0f, 0.19f, 0.25f, 0.15f, -0.07f, -0.29f, -0.4f, -0.08f, 0.12f, 0.0f)
+            rrx[jj] = rrx_
             
             rry_ = arrayOf<Float>(1.0f, -0.6f, -0.14f, 0.45f, 0.41f, 0.13f, -0.19f, -0.34f, -0.4f, 0.0f)
             rry[jj] = rry_
