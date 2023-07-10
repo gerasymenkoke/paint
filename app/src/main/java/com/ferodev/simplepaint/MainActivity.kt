@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-arrayOf(intArrayOf(1, 2, 3), intArrayOf(4, 5, 6), intArrayOf(7, 8, 9))
+
      
      private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry = arrayOf(rry_)
