@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
      private var rry_ = Array<Float>(10){0.0f} 
 
      
-     private var rrx = = Array<Float>(10){0.0f, 0.0f} 
+     private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry = arrayOf(rry_)
       
      
