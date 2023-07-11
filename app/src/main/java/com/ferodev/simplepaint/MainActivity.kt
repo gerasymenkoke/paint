@@ -199,6 +199,8 @@ res[1]=0.0f
 jj=0
 while (jj >=0 && jj<=1) 
 {
+    
+    j=0
     while (j >=0 && j<=9) {
   
     res[jj] = res[jj] + Math.abs( crx_[j] - rrx[jj][j] ) 
