@@ -204,8 +204,8 @@ while (jj >=0 && jj<=1)
     while (j >=0 && j<=9) {
     
     
-    res[jj] = res[jj] + Math.abs( (crx_[j] - rrx[jj][j]) / (crx_[j] +  rrx[jj][j]) ) 
-    res[jj] = res[jj] + Math.abs( (cry_[j] - rry[jj][j]) / (cry_[j] +  rry[jj][j]) )
+    res[jj] = res[jj] + Math.abs (crx_[j] - rrx[jj][j])  
+    res[jj] = res[jj] + Math.abs (cry_[j] - rry[jj][j]) 
      j=j+1
                           }
      
