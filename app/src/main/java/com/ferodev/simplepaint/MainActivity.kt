@@ -204,9 +204,11 @@ while (jj >=0 && jj<=1)
     while (j >=0 && j<=9) {
     
     if ( (crx_[j] > 0 && rrx[jj][j] > 0) ||  (crx_[j] < 0 && rrx[jj][j] < 0)  )   { j=j } 
-                                    else  { res[jj] = res[jj] + Math.abs (crx_[j] - rrx[jj][j])  }
+                                    else  { res[jj] = res[jj] + 1 }
+                                        // Math.abs (crx_[j] - rrx[jj][j])  }
    if (( cry_[j]  > 0 && rry[jj][j] > 0) ||  (cry_[j] < 0  && rry[jj][j] < 0) )   { j=j } 
-                                    else  {res[jj] = res[jj] + Math.abs (cry_[j] - rry[jj][j])   }
+                                    else  {res[jj] = res[jj] + 1 } 
+                                        // Math.abs (cry_[j] - rry[jj][j])   }
      j=j+1
                           }
      
