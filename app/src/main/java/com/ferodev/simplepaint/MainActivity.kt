@@ -135,10 +135,10 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx[jj] = arrayOf<Float>(1.0f, 0.27f, 0.01f, -0.37f, -0.3f, 0.23f, 0.0f, 0.0f, 0.0f, 0.0f)
+            rrx[jj] = arrayOf<Float>(1.0f, 0.17f, 0.08f, -0.02f, -0.7f, -0.15f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
-            rry[jj] = arrayOf<Float>(1.0f, 0.25f, 0.45f, 0.12f, -0.45f, -0.84f, 0.0f, 0.0f, 0.0f, 0.0f)
+            rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
@@ -150,10 +150,10 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             rrx[jj] = arrayOf<Float>(1.0f, 0.32f, 0.01f, -0.04f, 1.4f, -0.37f, 0.42f, 0.0f, 0.0f, 0.0f)
+             rrx[jj] = arrayOf<Float>(1.0f, 0.18f, 0.01f, -0.03f, -0.02f, -0.17f, 0.24f, 0.06f, 0.0f, 0.0f)
             // rrx[jj] = rrx_
             
-             rry[jj] = arrayOf<Float>(1.0f, -1.24f, 0.34f, 0.56f, 0.05f, 0.02f, 0.0f, 0.0f, 0.0f, 0.0f)
+             rry[jj] = arrayOf<Float>(1.0f, -0.47f,0.34f, 0.49f, 0.26f,    0.00f, 0.0f,  0.01f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
