@@ -193,7 +193,7 @@ while (jj >=0 && jj<=9)
 {
     
     j=jj
-    var max = 0.0f
+    var max = -10.0f
     var jmax = 0
     
     while (j >=0 && j<=9) {
