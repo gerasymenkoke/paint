@@ -184,11 +184,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
              j=0       
 
- while (j >=0 && j<=9) {
-                    
-aaa[j] = "(" + crx_[j].toString()  + ")"
-     j=j+1
-                     }
+ 
 
 // sort of crx_[j] 
 
@@ -215,6 +211,13 @@ while (jj >=0 && jj<=9)
 
 
 
+j=0
+// output as text after sort
+while (j >=0 && j<=9) {
+                    
+aaa[j] = "(" + crx_[j].toString()  + ")"
+     j=j+1
+                     }
 
 
 
