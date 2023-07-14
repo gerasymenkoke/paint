@@ -202,7 +202,7 @@ while (jj >=0 && jj<=9)
     
         if (crx_[j] > max) { jmax = j; max=crx_[j] }
          
-                          }
+                         
      crx_[jj] = max
      crx_[jmax] = 0
      j=j+1 
