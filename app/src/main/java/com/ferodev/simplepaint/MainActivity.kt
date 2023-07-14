@@ -206,7 +206,7 @@ while (jj >=0 && jj<=9)
          
                          
      crx_[jj] = max
-     crx_[jmax] = 0.0f
+     crx_[jmax] = -10.0f
      j=j+1 
                           }
      
