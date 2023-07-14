@@ -190,7 +190,37 @@ aaa[j] = "(" + crx_[j].toString()  + ")"
      j=j+1
                      }
 
+// sort of crx_[j] 
 
+jj=0
+while (jj >=0 && jj<=9) 
+{
+    
+    j=jj
+    var max = 0.0f
+    while (j >=0 && j<=9) {
+    
+        if (crx_[j] > max) { jmax = j; max=crx_[j] }
+         
+                          }
+     crx_[jj] = max
+     crx_[jmax] = 0
+     j=j+1 
+                          }
+     
+     jj=jj+1
+}    
+
+
+
+
+
+
+
+
+
+
+ 
 
 // result of test on 0
 res[0]=0.0f
