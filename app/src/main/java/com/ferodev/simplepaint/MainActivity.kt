@@ -191,14 +191,16 @@ class MainActivity : AppCompatActivity() {
 // sort of crx_[j] to sortcrx_[j]
 
 jj=0
+                    
 while (jj >=0 && jj<=9) 
 {
     
     j=jj
-    var max = 0.0f
-    var jmax = 0
     
-    while (j >=0 && j<=9) {
+    var jmax = 0
+    var max=crx_[0] 
+    j=1    
+    while (j >=1 && j<=9) {
     
         if (crx_[j] > max) { jmax = j; max=crx_[j] }
         
