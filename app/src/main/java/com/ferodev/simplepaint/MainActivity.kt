@@ -214,7 +214,7 @@ j=0
 // output as text after sort
 while (j >=0 && j<=9) {
                     
-aaa[j] = "(" + crx_[j].toString()  + ")"
+aaa[j] = "(" + sortcrx_[j].toString()  + ")"
      j=j+1
                      }
 
@@ -238,7 +238,7 @@ while (jj >=0 && jj<=1)
     while (j >=0 && j<=9) {
     
      
-                                  res[jj] = res[jj] +  Math.abs (crx_[j] - rrx[jj][j]) 
+                                  res[jj] = res[jj] +  Math.abs (sortcrx_[j] - rrx[jj][j]) 
                                           //  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
