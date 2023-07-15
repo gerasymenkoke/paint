@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
 
-     private var sortcrx_ = Array<Float>(10){-10.0f} 
+     private var sortcrx_ = Array<Float>(10){0.0f} 
 
 
 
@@ -195,7 +195,7 @@ while (jj >=0 && jj<=9)
 {
     
     j=jj
-    var max = -10.0f
+    var max = 0.0f
     var jmax = 0
     
     while (j >=0 && j<=9) {
