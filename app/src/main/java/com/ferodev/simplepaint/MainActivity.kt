@@ -74,12 +74,13 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa = Array<String>(100){"0"}
     
-    private var n_rxy = Array<Int>(10){0} 
+   // private var n_rxy = Array<Int>(10){0} 
     
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
 
+     private var sortcrx_ = Array<Float>(10){-10.0f} 
 
 
 
@@ -186,7 +187,7 @@ class MainActivity : AppCompatActivity() {
 
  
 
-// sort of crx_[j] 
+// sort of crx_[j] to sortcrx_[j]
 
 jj=0
 while (jj >=0 && jj<=9) 
@@ -199,13 +200,11 @@ while (jj >=0 && jj<=9)
     while (j >=0 && j<=9) {
     
         if (crx_[j] > max) { jmax = j; max=crx_[j] }
-         
-                         
-     crx_[jj] = max
-     crx_[jmax] = -10.0f
-     j=j+1 
+        
+                           j=j+1 
                           }
-     
+     crx_[jmax] =  -10.0f 
+     sortcrx_[jj] = max
      jj=jj+1
 }    
 
