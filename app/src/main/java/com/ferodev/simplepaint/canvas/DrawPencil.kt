@@ -151,7 +151,7 @@ class DrawPencil @JvmOverloads constructor(
          
       if ( ((rx==rx1) && (ry==ry1)) || ((x==x1) && (y==y1)) ) { j=j }
          
-          else    {   if (N==7)
+          else    {   if (N==5)
                      { crx_[j] = rx
                       cry_[j] = ry
                       crx_[j] = crx_[j] + cry_[j]  
