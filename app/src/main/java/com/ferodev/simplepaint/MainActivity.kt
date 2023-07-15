@@ -72,8 +72,8 @@ class MainActivity : AppCompatActivity() {
    private var jj = 0  
        private var jjj = 0  
     private var aaa = Array<String>(100){"0"}
-    private var rraaa = Array<String>(100){"0"}
-    
+    private var rraaa0 = Array<String>(100){"0"}
+    private var rraaa1 = Array<String>(100){"0"}
    // private var n_rxy = Array<Int>(10){0} 
     
     
@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity() {
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
-                           rraaa[jjj]= "(" +  rrx[jj][jjj].toString() + ")"  
+                           rraaa0[jjj]= "(" +  rrx[jj][jjj].toString() + ")"  
                            jjj=jjj+1
                           }
              // calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
@@ -158,11 +158,11 @@ class MainActivity : AppCompatActivity() {
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
-                           rraaa[jjj]= "(" +   rrx[jj][jjj].toString()  + ")"  
+                           rraaa1[jjj]= "(" +   rrx[jj][jjj].toString()  + ")"  
                            jjj=jjj+1
                           }
-              calc.text =  "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9] +
-            "\n" + "1: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]             
+              calc.text =  "0: " + rraaa0[0] + " " + rraaa0[1] + " " + rraaa0[2] + " " + rraaa0[3] + " " + rraaa0[4] + " " + rraaa0[5] + " " + rraaa0[6] + " " + rraaa0[7] + " "  + rraaa0[8] + " "  + rraaa0[9] +
+            "\n" + "1: " + rraaa1[0] + " " + rraaa1[1] + " " + rraaa1[2] + " " + rraaa1[3] + " " + rraaa1[4] + " " + rraaa1[5] + " " + rraaa1[6] + " " + rraaa1[7] + " "  + rraaa1[8] + " "  + rraaa1[9]             
 
 
 
