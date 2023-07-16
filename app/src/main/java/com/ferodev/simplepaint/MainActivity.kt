@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
-   private var dir_crxy = Array<Int>(10){0} 
+   private var dir_crxy = Array<Int>(4){0} 
     
     
      private var rrx_ = Array<Float>(10){0.0f} 
@@ -215,52 +215,32 @@ class MainActivity : AppCompatActivity() {
 
 
 
-// sign  direction quantity  (crx_[j] cry_[j]) to dir_crx_[j]
+// sign of 4 directions quantity  (crx_[j] cry_[j]) to dir_crxy[0-3] = quantity0-3 directions
 
-//jj=0
-                    
-// while (jj >=0 && jj<=9) 
-// {
+
+      j=0    
+      while (j >=0 && j<=9) {
     
-  //  j=jj
-    
-  //  var jmax = 0
-  //  var max=crx_[0] 
-  //  j=1    
-  //  while (j >=1 && j<=9) {
-    
-  //      if (crx_[j] > max) { jmax = j; max=crx_[j] }
-        
-  //                         j=j+1 
-  //                        }
-  //   crx_[jmax] = 0.0f 
-  //  max=((max * 100.0).roundToInt() / 100.0).toFloat()  
-  //  sortcrx_[jj] = max
-  //   jj=jj+1
-// }  
+   if (crx_[j] > 0 &&  cry_[j] > 0) { dir_crxy[0] = dir_crxy[0] + 1 }
+   if (crx_[j] < 0 &&  cry_[j] > 0) { dir_crxy[1] = dir_crxy[1] + 1 }
+   if (crx_[j] < 0 &&  cry_[j] < 0) { dir_crxy[2] = dir_crxy[2] + 1 }
+   if (crx_[j] > 0 &&  cry_[j] < 0) { dir_crxy[3] = dir_crxy[3] + 1 }
+ 
+                          j=j+1 
+ 
+                            }
+ 
 
-
-
-
-
-
-                    
-
-
-
-
-
-
-
-                    
+                  
 
 
 j=0
 // output as text 
-while (j >=0 && j<=9) {
-                    
-aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
-     j=j+1
+while (j >=0 && j<=3) {
+
+aaa[j] = "(" + j.toString() + "-d=" + dir_crxy[j].toString() + ")"
+// aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
+                    j=j+1
                      }
 
 
