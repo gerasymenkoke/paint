@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
-   // private var n_rxy = Array<Int>(10){0} 
+   private var dir_crxy = Array<Int>(10){0} 
     
     
      private var rrx_ = Array<Float>(10){0.0f} 
@@ -213,6 +213,46 @@ class MainActivity : AppCompatActivity() {
   //   jj=jj+1
 // }    
 
+
+
+// sign  direction quantity  (crx_[j] cry_[j]) to dir_crx_[j]
+
+//jj=0
+                    
+// while (jj >=0 && jj<=9) 
+// {
+    
+  //  j=jj
+    
+  //  var jmax = 0
+  //  var max=crx_[0] 
+  //  j=1    
+  //  while (j >=1 && j<=9) {
+    
+  //      if (crx_[j] > max) { jmax = j; max=crx_[j] }
+        
+  //                         j=j+1 
+  //                        }
+  //   crx_[jmax] = 0.0f 
+  //  max=((max * 100.0).roundToInt() / 100.0).toFloat()  
+  //  sortcrx_[jj] = max
+  //   jj=jj+1
+// }  
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+                    
 
 
 j=0
