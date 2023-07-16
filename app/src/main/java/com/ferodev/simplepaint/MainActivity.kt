@@ -76,13 +76,13 @@ class MainActivity : AppCompatActivity() {
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
    private var dir_crxy = Array<Int>(4){0} 
-    
+    private var dir = 0
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
 
      private var sortcrx_ = Array<Float>(10){0.0f} 
-
+     
 
 
      
