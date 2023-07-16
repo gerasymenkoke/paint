@@ -208,7 +208,8 @@ while (jj >=0 && jj<=9)
                            j=j+1 
                           }
      crx_[jmax] = 0.0f 
-     sortcrx_[jj] = max
+    max=((max * 100.0).roundToInt() / 100.0).toFloat()  
+    sortcrx_[jj] = max
      jj=jj+1
 }    
 
@@ -243,7 +244,7 @@ while (jj >=0 && jj<=1)
     
      
                                   res[jj] = res[jj] +  Math.abs (sortcrx_[j] - rrx[jj][j]) 
-                                   res[jj]=((res[jj] * 100.0).roundToInt() / 100.0).toFloat() 
+                                 
                                           //  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
@@ -263,7 +264,7 @@ if (res[0] < res[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0]=" + res[0] +"  /res[1]=" + res[1] + "  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
+textviewid.text = "res="+ result + "  /res[0]=" + res[0] +"  /res[1]=" + res[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
