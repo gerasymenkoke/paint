@@ -156,7 +156,7 @@ class DrawPencil @JvmOverloads constructor(
                  if (N==10)
                      { crx_[j] = rx
                       cry_[j] = ry
-                      crx_[j] = crx_[j] + cry_[j]  
+                     // crx_[j] = crx_[j] + cry_[j]  
                       x1=x
                       y1=y   
                       rx1=rx
