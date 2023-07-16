@@ -206,7 +206,7 @@ while (jj >=0 && jj<=9)
         
                            j=j+1 
                           }
-     crx_[jmax] =  -10.0f 
+     crx_[jmax] = 0.0f 
      sortcrx_[jj] = max
      jj=jj+1
 }    
