@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity() {
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=3) {
-                           rraaa0[jjj]= "(" +  dir_rrxy[jj][jjj].toString()  + ")"  
+                           rraaa0[jjj]=   dir_rrxy[jj][jjj].toString()   
                            jjj=jjj+1
                            }
              // calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
