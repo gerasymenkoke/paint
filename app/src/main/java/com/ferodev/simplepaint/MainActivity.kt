@@ -191,35 +191,35 @@ class MainActivity : AppCompatActivity() {
 
 // sort of crx_[j] to sortcrx_[j]
 
-jj=0
+//jj=0
                     
-while (jj >=0 && jj<=9) 
-{
+// while (jj >=0 && jj<=9) 
+// {
     
-    j=jj
+  //  j=jj
     
-    var jmax = 0
-    var max=crx_[0] 
-    j=1    
-    while (j >=1 && j<=9) {
+  //  var jmax = 0
+  //  var max=crx_[0] 
+  //  j=1    
+  //  while (j >=1 && j<=9) {
     
-        if (crx_[j] > max) { jmax = j; max=crx_[j] }
+  //      if (crx_[j] > max) { jmax = j; max=crx_[j] }
         
-                           j=j+1 
-                          }
-     crx_[jmax] = 0.0f 
-    max=((max * 100.0).roundToInt() / 100.0).toFloat()  
-    sortcrx_[jj] = max
-     jj=jj+1
-}    
+  //                         j=j+1 
+  //                        }
+  //   crx_[jmax] = 0.0f 
+  //  max=((max * 100.0).roundToInt() / 100.0).toFloat()  
+  //  sortcrx_[jj] = max
+  //   jj=jj+1
+// }    
 
 
 
 j=0
-// output as text after sort
+// output as text 
 while (j >=0 && j<=9) {
                     
-aaa[j] = "(" + sortcrx_[j].toString()  + ")"
+aaa[j] = "(" + crx_[j].toString()  + ")"
      j=j+1
                      }
 
@@ -242,8 +242,8 @@ while (jj >=0 && jj<=1)
     j=0
     while (j >=0 && j<=9) {
     
-                               if ( sortcrx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
-                                  res[jj] = res[jj] +  Math.abs (sortcrx_[j] - rrx[jj][j]) 
+                               if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
+                                  res[jj] = res[jj] +  Math.abs (crx_[j] - rrx[jj][j]) 
                                  
                                           //  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
