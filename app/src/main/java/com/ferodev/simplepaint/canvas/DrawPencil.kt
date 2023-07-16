@@ -178,7 +178,7 @@ class DrawPencil @JvmOverloads constructor(
      ry=(((y-0)/y* 100.0).roundToInt() / 100.0).toFloat() 
         crx_[j] = rx
         cry_[j] = ry
-        crx_[j] = crx_[j] + cry_[j]  
+      //  crx_[j] = crx_[j] + cry_[j]  
 
             
         x1=x
