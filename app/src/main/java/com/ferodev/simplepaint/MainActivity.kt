@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
    private var dir_crxy = Array<Int>(4){0} 
-   private var dir_rrxy = Array(10){ Array<Int>(4){0.0f} } 
+   private var dir_rrxy = Array(10){ Array<Int>(4){0} } 
   
     private var dir = 0
     
@@ -140,7 +140,7 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            dir_rrxy[jj] = arrayOf<Float>( 1,  1, 1, 1)
+            dir_rrxy[jj] = arrayOf<Int>( 1,  1, 1, 1)
            // rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             dir_rrxy[jj] = arrayOf<Float>(0,  1, 0, 1)
+             dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
             // rrx[jj] = rrx_
             
             // rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
