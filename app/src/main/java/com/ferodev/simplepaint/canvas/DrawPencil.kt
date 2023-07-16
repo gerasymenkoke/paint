@@ -149,10 +149,10 @@ class DrawPencil @JvmOverloads constructor(
          rxx = rx.toString()       
          ryy = ry.toString()
          
-   //   if ( ((rx==rx1) && (ry==ry1)) || ((x==x1) && (y==y1)) ) { j=j }
+  if ( ((rx==rx1) && (ry==ry1)) || ((x==x1) && (y==y1)) ) { j=j }
 
          
-   //       else    { 
+          else    { 
                  if (N==10)
                      { crx_[j] = rx
                       cry_[j] = ry
@@ -166,7 +166,7 @@ class DrawPencil @JvmOverloads constructor(
                      }    
                    else{ N=N+1 }  
                                    
-                  //}
+                  }
                            
          
              }
