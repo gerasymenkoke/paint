@@ -146,10 +146,10 @@ class MainActivity : AppCompatActivity() {
         //    rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rry[jj] = rry_
             jjj=0       
-             while (jjj<=9) {
+             while (jjj<=3) {
                            rraaa0[jjj]= "(" +  dir_rrxy[jj][jjj].toString()  + ")"  
                            jjj=jjj+1
-                          }
+                           }
              // calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
  // Filling sample array raa
 // 1
@@ -161,10 +161,10 @@ class MainActivity : AppCompatActivity() {
             // rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
-             while (jjj<=9) {
+             while (jjj<=3) {
                            rraaa1[jjj]= "(" +   dir_rrxy[jj][jjj].toString()   + ")"  
                            jjj=jjj+1
-                          }c
+                           }
               calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
             "\n" + "1: " + "  0-d=" + rraaa1[0] + "  1-d=" + rraaa1[1] + "  2-d=" + rraaa1[2] + "  3-d=" + rraaa1[3]              
 
@@ -265,7 +265,7 @@ while (jj >=0 && jj<=1)
 {
     
     j=0
-    while (j >=0 && j<=9) {
+    while (j >=0 && j<=3) {
     
                           //     if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
                                   res[jj] = res[jj] +  Math.abs (dir_crxy[j] - dir_rrxy[jj][j]) 
