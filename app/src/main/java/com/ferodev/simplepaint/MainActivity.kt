@@ -165,8 +165,8 @@ class MainActivity : AppCompatActivity() {
                            rraaa1[jjj]= "(" +   dir_rrxy[jj][jjj].toString()   + ")"  
                            jjj=jjj+1
                           }c
-              calc.text =  "0: " + "rraaa0[0] + " " + rraaa0[1] + " " + rraaa0[2] + " " + rraaa0[3] + " " + rraaa0[4] + " " + rraaa0[5] + " " + rraaa0[6] + " " + rraaa0[7] + " "  + rraaa0[8] + " "  + rraaa0[9] +
-            "\n" + "1: " + rraaa1[0] + " " + rraaa1[1] + " " + rraaa1[2] + " " + rraaa1[3] + " " + rraaa1[4] + " " + rraaa1[5] + " " + rraaa1[6] + " " + rraaa1[7] + " "  + rraaa1[8] + " "  + rraaa1[9]             
+              calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
+            "\n" + "1: " + "  0-d=" + rraaa1[0] + "  1-d=" + rraaa1[1] + "  2-d=" + rraaa1[2] + "  3-d=" + rraaa1[3]              
 
 
 
