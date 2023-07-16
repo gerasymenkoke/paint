@@ -37,6 +37,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 
 import kotlin.math.abs
+import kotlin.math.roundToInt
 
 
 
