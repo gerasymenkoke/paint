@@ -76,6 +76,8 @@ class MainActivity : AppCompatActivity() {
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
    private var dir_crxy = Array<Int>(4){0} 
+   private var dir_rrxy = Array(10){ Array<Float>(4){0.0f} } 
+  
     private var dir = 0
     
      private var rrx_ = Array<Float>(10){0.0f} 
@@ -137,14 +139,15 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+            dir_rrxy[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+           // rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
-            rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
+        //    rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=9) {
-                           rraaa0[jjj]= "(" +  rrx[jj][jjj].toString() +  ", " + rry[jj][jjj].toString() + ")"  
+                           rraaa0[jjj]= "(" +  dir_rrxy[jj][jjj].toString()  + ")"  
                            jjj=jjj+1
                           }
              // calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
@@ -152,17 +155,17 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             rrx[jj] = arrayOf<Float>(2.0f, 0.58f, 0.27f,  0.16f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+             dir_rrxy[jj] = arrayOf<Float>(2.0f, 0.58f, 0.27f,  0.16f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
             // rrx[jj] = rrx_
             
-             rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            // rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=9) {
-                           rraaa1[jjj]= "(" +   rrx[jj][jjj].toString()  + ", " + rry[jj][jjj].toString() + ")"  
+                           rraaa1[jjj]= "(" +   dir_rrxy[jj][jjj].toString()   + ")"  
                            jjj=jjj+1
-                          }
-              calc.text =  "0: " + rraaa0[0] + " " + rraaa0[1] + " " + rraaa0[2] + " " + rraaa0[3] + " " + rraaa0[4] + " " + rraaa0[5] + " " + rraaa0[6] + " " + rraaa0[7] + " "  + rraaa0[8] + " "  + rraaa0[9] +
+                          }c
+              calc.text =  "0: " + "rraaa0[0] + " " + rraaa0[1] + " " + rraaa0[2] + " " + rraaa0[3] + " " + rraaa0[4] + " " + rraaa0[5] + " " + rraaa0[6] + " " + rraaa0[7] + " "  + rraaa0[8] + " "  + rraaa0[9] +
             "\n" + "1: " + rraaa1[0] + " " + rraaa1[1] + " " + rraaa1[2] + " " + rraaa1[3] + " " + rraaa1[4] + " " + rraaa1[5] + " " + rraaa1[6] + " " + rraaa1[7] + " "  + rraaa1[8] + " "  + rraaa1[9]             
 
 
@@ -264,10 +267,10 @@ while (jj >=0 && jj<=1)
     j=0
     while (j >=0 && j<=9) {
     
-                               if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
-                                  res[jj] = res[jj] +  Math.abs (crx_[j] - rrx[jj][j]) 
+                          //     if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
+                                  res[jj] = res[jj] +  Math.abs (dir_crxy[j] - dir_rrxy[jj][j]) 
                                  
-                                  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
+                               //   res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
   
