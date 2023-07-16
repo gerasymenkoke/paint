@@ -242,7 +242,7 @@ while (jj >=0 && jj<=1)
     j=0
     while (j >=0 && j<=9) {
     
-     
+                               if ( sortcrx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
                                   res[jj] = res[jj] +  Math.abs (sortcrx_[j] - rrx[jj][j]) 
                                  
                                           //  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
