@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
    private var dir_crxy = Array<Int>(4){0} 
-   private var dir_rrxy = Array(10){ Array<Float>(4){0.0f} } 
+   private var dir_rrxy = Array(10){ Array<Int>(4){0.0f} } 
   
     private var dir = 0
     
@@ -289,7 +289,7 @@ if (res[0] < res[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0]=" + res[0] +"  /res[1]=" + res[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " "  + aaa[8] + " "  + aaa[9]  
+textviewid.text = "res="+ result + "  /res[0]=" + res[0] +"  /res[1]=" + res[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
