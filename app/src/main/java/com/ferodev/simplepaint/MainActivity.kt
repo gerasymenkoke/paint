@@ -242,6 +242,7 @@ while (jj >=0 && jj<=1)
     
      
                                   res[jj] = res[jj] +  Math.abs (sortcrx_[j] - rrx[jj][j]) 
+                                   res[jj]=((res[jj] * 100.0).roundToInt() / 100.0).toFloat() 
                                           //  res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
