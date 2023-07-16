@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            dir_rrxy[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+            dir_rrxy[jj] = arrayOf<Float>( 1,  1, 1, 1)
            // rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
@@ -155,14 +155,14 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             dir_rrxy[jj] = arrayOf<Float>(2.0f, 0.58f, 0.27f,  0.16f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+             dir_rrxy[jj] = arrayOf<Float>(0,  1, 0, 1)
             // rrx[jj] = rrx_
             
             // rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=3) {
-                           rraaa1[jjj]= "(" +   dir_rrxy[jj][jjj].toString()   + ")"  
+                           rraaa1[jjj]=  dir_rrxy[jj][jjj].toString()   
                            jjj=jjj+1
                            }
               calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
@@ -243,7 +243,7 @@ j=0
 // output as text 
 while (j >=0 && j<=3) {
 
-aaa[j] = "(" + j.toString() + "-d=" + dir_crxy[j].toString() + ")"
+aaa[j] =  "  " + j.toString() + "-d=" + dir_crxy[j].toString() 
 // aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
