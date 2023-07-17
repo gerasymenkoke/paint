@@ -93,7 +93,8 @@ class MainActivity : AppCompatActivity() {
      private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry  = Array(10){ Array<Float>(10){0.0f} }
 
-     private var res = Array<Float>(10){0.0f} 
+     private var resx = Array<Float>(10){0.0f} 
+     private var resy = Array<Float>(10){0.0f} 
      private var result = 0
      
  //   private var aa = Array<Float>(100){"0"} 
