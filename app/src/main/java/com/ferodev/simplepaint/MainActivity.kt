@@ -76,10 +76,10 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
-   private var dir_crx = Array<Float>(4){0} 
-   private var dir_cry = Array<Float>(4){0} 
-   private var dir_rrx = Array(10){ Array<Float>(4){0} } 
-  private var dir_rry = Array(10){ Array<Float>(4){0} } 
+   private var dir_crx = Array<Float>(4){0.0f} 
+   private var dir_cry = Array<Float>(4){0.0f} 
+   private var dir_rrx = Array(10){ Array<Float>(4){0.0f} } 
+  private var dir_rry =  Array(10){ Array<Float>(4){0.0f} } 
     private var dir = 0.0f
     
      private var rrx_ = Array<Float>(10){0.0f} 
@@ -225,7 +225,8 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
       dir=10.0f 
-     dir_crxy[0]=-1.0f             
+     dir_crx[0]=-1.0f
+     dir_crx[0]=-1.0f               
       while (j >=0 && j<=9) {
     
    if (crx_[j] > 0 &&  cry_[j] > 0 && dir!=0 ) { dir_crx[0] = crx_[0] + dir_crx[0]; dir_cry[0] = cry_[0] + dir_cry[0]; dir=0 }
