@@ -76,10 +76,11 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
-   private var dir_crxy = Array<Int>(4){0} 
-   private var dir_rrxy = Array(10){ Array<Int>(4){0} } 
-  
-    private var dir = 0
+   private var dir_crx = Array<Float>(4){0} 
+   private var dir_cry = Array<Float>(4){0} 
+   private var dir_rrx = Array(10){ Array<Float>(4){0} } 
+  private var dir_rry = Array(10){ Array<Float>(4){0} } 
+    private var dir = 0.0f
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
@@ -140,11 +141,11 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
 
-            dir_rrxy[jj] = arrayOf<Int>( 1,  1, 1, 1)
-           // rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+           // dir_rrxy[jj] = arrayOf<Int>( 1,  1, 1, 1)
+        dir_rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
-        //    rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
+        dir_rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=3) {
@@ -156,10 +157,10 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-             dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
+            // dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
             // rrx[jj] = rrx_
-            
-            // rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            dir_rrx[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            dir_rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=3) {
@@ -219,18 +220,18 @@ class MainActivity : AppCompatActivity() {
 
 
 
-// sign of 4 directions quantity  (crx_[j] cry_[j]) to dir_crxy[0-3] = quantity0-3 directions
+// sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Float
 
 
       j=0    
-      dir=10 
-     dir_crxy[0]=-1             
+      dir=10.0f 
+     dir_crxy[0]=-1.0f             
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0 &&  cry_[j] > 0 && dir!=0 ) { dir_crxy[0] = dir_crxy[0] + 1; dir=0 }
-   if (crx_[j] < 0 &&  cry_[j] > 0 && dir!=1 ) { dir_crxy[1] = dir_crxy[1] + 1; dir=1 }
-   if (crx_[j] < 0 &&  cry_[j] < 0 && dir!=2 ) { dir_crxy[2] = dir_crxy[2] + 1; dir=2 }
-   if (crx_[j] > 0 &&  cry_[j] < 0 && dir!=3 ) { dir_crxy[3] = dir_crxy[3] + 1; dir=3 }
+   if (crx_[j] > 0 &&  cry_[j] > 0 && dir!=0 ) { dir_crx[0] = crx_[0] + dir_crx[0]; dir_cry[0] = cry_[0] + dir_cry[0]; dir=0 }
+   if (crx_[j] < 0 &&  cry_[j] > 0 && dir!=1 ) { dir_crx[1] = crx_[1] + dir_crx[1]; dir_cry[1] = cry_[1] + dir_cry[1]; dir=1 }
+   if (crx_[j] < 0 &&  cry_[j] < 0 && dir!=2 ) { dir_crx[2] = crx_[2] + dir_crx[2]; dir_cry[2] = cry_[2] + dir_cry[2]; dir=2 }
+   if (crx_[j] > 0 &&  cry_[j] < 0 && dir!=3 ) { dir_crx[3] = crx_[3] + dir_crx[3]; dir_cry[3] = cry_[3] + dir_cry[3]; dir=3 }
  
                           j=j+1 
  
@@ -244,7 +245,7 @@ j=0
 // output as text 
 while (j >=0 && j<=3) {
 
-aaa[j] =  "  " + j.toString() + "-d=" + dir_crxy[j].toString() 
+aaa[j] =  "  " + j.toString() + "-d=" + dir_crx[j].toString() + "," + dir_cry[j].toString()
 // aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
@@ -269,8 +270,8 @@ while (jj >=0 && jj<=1)
     while (j >=0 && j<=3) {
     
                           //     if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
-                                  res[jj] = res[jj] +  Math.abs (dir_crxy[j] - dir_rrxy[jj][j]) 
-                                 
+                                  resx[jj] = resx[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j]) 
+                                  resy[jj] = resy[jj] +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
                                //   res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
                                           
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
