@@ -261,8 +261,8 @@ aaa[j] =  "  " + j.toString() + "-d=" + dir_crx[j].toString() + "," + dir_cry[j]
  
 
 // result of test on 0
-res[0]=0.0f
-res[1]=0.0f
+resx[0]=0.0f
+resy[1]=0.0f
 
 jj=0
 while (jj >=0 && jj<=1) 
@@ -284,7 +284,7 @@ while (jj >=0 && jj<=1)
      jj=jj+1
 }    
 
-if (res[0] < res[1]) { result=0 }
+if (resx[0] < resx[1]) { result=0 }
       else { result = 1 }
 
 
@@ -293,7 +293,7 @@ if (res[0] < res[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0]=" + res[0] +"  /res[1]=" + res[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /res[0]=" + resx[0] +"  /res[1]=" + resx[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
