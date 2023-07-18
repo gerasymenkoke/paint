@@ -144,10 +144,10 @@ class MainActivity : AppCompatActivity() {
      jj = 0                  
 
            // dir_rrxy[jj] = arrayOf<Int>( 1,  1, 1, 1)
-        dir_rrx[jj] = arrayOf<Float>(2.0f,  0.64f, 0.19f, 0.05f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        dir_rrx[jj] = arrayOf<Float>(1.0f,  0.2f, 0.17f, 0.06f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rrx[jj] = rrx_
             
-        dir_rry[jj] = arrayOf<Float>(1.0f, -0.42f, 0.28f, 0.36f, 0.03f, -0.17f, 0.0f, 0.0f, 0.0f, 0.0f)
+        dir_rry[jj] = arrayOf<Float>(2.0f, -0.68f, 0.03f, 0.47f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
            // rry[jj] = rry_
             jjj=0       
              while (jjj<=3) {
@@ -161,8 +161,8 @@ class MainActivity : AppCompatActivity() {
 
             // dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
             // rrx[jj] = rrx_
-            dir_rrx[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-            dir_rry[jj] = arrayOf<Float>(1.0f,-0.81f, 0.23f, 0.58f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            dir_rrx[jj] = arrayOf<Float>(0.0f,-0.81f, 0.24f, 0.0f, -0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            dir_rry[jj] = arrayOf<Float>(1.0f,-1.19f, 0.0f, 0.63f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=3) {
