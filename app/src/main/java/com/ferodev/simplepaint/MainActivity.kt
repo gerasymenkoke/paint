@@ -95,6 +95,7 @@ class MainActivity : AppCompatActivity() {
 
      private var resx = Array<Float>(10){0.0f} 
      private var resy = Array<Float>(10){0.0f} 
+     private var resxy = Array<Float>(10){0.0f} 
      private var result = 0
      
  //   private var aa = Array<Float>(100){"0"} 
@@ -275,16 +276,16 @@ while (jj >=0 && jj<=1)
                                   resx[jj] = resx[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j]) 
                                   resy[jj] = resy[jj] +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
                                //   res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
-                                          
+                                       
                                         // Math.abs (crx_[j] - rrx[jj][j])  }
   
      j=j+1
                           }
-     
+       resxy[j] =  resx[jj] +  resy[jj]  
      jj=jj+1
 }    
 
-if (resx[0] < resx[1]) { result=0 }
+if (resxy[0] < resxy[1]) { result=0 }
       else { result = 1 }
 
 
@@ -293,7 +294,7 @@ if (resx[0] < resx[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0]=" + resx[0] +"  /res[1]=" + resx[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
