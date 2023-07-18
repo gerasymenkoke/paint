@@ -231,10 +231,10 @@ class MainActivity : AppCompatActivity() {
      dir_crx[0]=-1.0f               
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_crx[0] = crx_[0] + dir_crx[0]; dir_cry[0] = cry_[0] + dir_cry[0]; dir=0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_crx[1] = crx_[1] + dir_crx[1]; dir_cry[1] = cry_[1] + dir_cry[1]; dir=1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_crx[2] = crx_[2] + dir_crx[2]; dir_cry[2] = cry_[2] + dir_cry[2]; dir=2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_crx[3] = crx_[3] + dir_crx[3]; dir_cry[3] = cry_[3] + dir_cry[3]; dir=3 }
+   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_crx[0] = 1 + dir_crx[0]; dir_cry[0] = 1 + dir_cry[0]; dir=0 }
+   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_crx[1] = 1 + dir_crx[1]; dir_cry[1] = 1 + dir_cry[1]; dir=1 }
+   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_crx[2] = 1 + dir_crx[2]; dir_cry[2] = 1 + dir_cry[2]; dir=2 }
+   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_crx[3] = 1 + dir_crx[3]; dir_cry[3] = 1 + dir_cry[3]; dir=3 }
  
                           j=j+1 
  
