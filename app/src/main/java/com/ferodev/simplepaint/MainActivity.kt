@@ -281,7 +281,7 @@ while (jj >=0 && jj<=1)
   
      j=j+1
                           }
-       resxy[j] =  resx[jj] +  resy[jj]  
+       resxy[jj] =  resx[jj] +  resy[jj]  
      jj=jj+1
 }    
 
