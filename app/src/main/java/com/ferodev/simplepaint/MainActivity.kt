@@ -108,11 +108,7 @@ class MainActivity : AppCompatActivity() {
     var defStyleAttr=0
 
 
-    
-
-
-
-    
+        
          companion object {
         var path = Path()
         var paintBrush = Paint()
