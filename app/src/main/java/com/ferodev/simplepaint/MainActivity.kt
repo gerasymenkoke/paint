@@ -142,38 +142,39 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
      jj = 0                  
-
-           // dir_rrxy[jj] = arrayOf<Int>( 1,  1, 1, 1)
+         
         dir_rrx[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-           // rrx[jj] = rrx_
-            
         dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-           // rry[jj] = rry_
-            jjj=0       
+             jjj=0       
              while (jjj<=3) {
                            rraaa0[jjj]=   dir_rrx[jj][jjj].toString()   + "," + dir_rry[jj][jjj].toString()
                            jjj=jjj+1
                            }
-             // calc.text = "0: " + rraaa[0] + " " + rraaa[1] + " " + rraaa[2] + " " + rraaa[3] + " " + rraaa[4] + " " + rraaa[5] + " " + rraaa[6] + " " + rraaa[7] + " "  + rraaa[8] + " "  + rraaa[9]  
+              
  // Filling sample array raa
 // 1
       jj = 1                  
-
-            // dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
-            // rrx[jj] = rrx_
-            dir_rrx[jj] = arrayOf<Float>(1.0f,1.0f, 0.0f, 1.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-            dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 1.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-           //  rry[jj] = rry_
+         dir_rrx[jj] = arrayOf<Float>(1.0f,1.0f, 0.0f, 1.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 1.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
              jjj=0        
              while (jjj<=3) {
                            rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
                            jjj=jjj+1
                            }
-              calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
-            "\n" + "1: " + "  0-d=" + rraaa1[0] + "  1-d=" + rraaa1[1] + "  2-d=" + rraaa1[2] + "  3-d=" + rraaa1[3]              
+          //    calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
+          //  "\n" + "1: " + "  0-d=" + rraaa1[0] + "  1-d=" + rraaa1[1] + "  2-d=" + rraaa1[2] + "  3-d=" + rraaa1[3]              
 
 
-
+// Filling sample array raa
+// 2
+      jj = 2                  
+         dir_rrx[jj] = arrayOf<Float>(2.0f,1.0f, 0.0f,  2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rry[jj] = arrayOf<Float>(2.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+             jjj=0        
+             while (jjj<=3) {
+                           rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
+                           jjj=jjj+1
+                           }
 
 
 
@@ -285,8 +286,9 @@ while (jj >=0 && jj<=1)
      jj=jj+1
 }    
 
-if (resxy[0] < resxy[1]) { result=0 }
-      else { result = 1 }
+if (resxy[0] < resxy[1] && resxy[0] < resxy[2] ) { result=0 }
+if (resxy[1] < resxy[0] && resxy[1] < resxy[2] ) { result=1 }     
+if (resxy[2] < resxy[0] && resxy[2] < resxy[1] ) { result=2 }     
 
 
  
@@ -294,7 +296,7 @@ if (resxy[0] < resxy[1]) { result=0 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "/  " +aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "  /resxy[2]=" + resxy[2]+ "/  " + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
  j = j+1   
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
