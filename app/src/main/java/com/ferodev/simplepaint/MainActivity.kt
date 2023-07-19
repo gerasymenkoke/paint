@@ -256,9 +256,9 @@ while (jj >=0 && jj<=2)
  jj=jj+1
 }    
 
-if (resxy[0] < resxy[1] && resxy[0] < resxy[2] ) { result=0 }
-if (resxy[1] < resxy[0] && resxy[1] < resxy[2] ) { result=1 }     
-if (resxy[2] < resxy[0] && resxy[2] < resxy[1] ) { result=2 }     
+if (resxy[0] <= resxy[1] && resxy[0] <= resxy[2] ) { result=0 }
+if (resxy[1] <= resxy[0] && resxy[1] <= resxy[2] ) { result=1 }     
+if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
 
 
  
