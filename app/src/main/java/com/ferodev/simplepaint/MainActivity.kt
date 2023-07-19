@@ -168,8 +168,8 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 2
       jj = 2                  
-         dir_rrx[jj] = arrayOf<Float>(2.0f,1.0f, 0.0f,  2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-         dir_rry[jj] = arrayOf<Float>(2.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rrx[jj] = arrayOf<Float>(2.0f,1.0f, 1.0f,  1.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rry[jj] = arrayOf<Float>(2.0f, 1.0f, 1.0f, 1.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
              jjj=0        
              while (jjj<=3) {
                            rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
