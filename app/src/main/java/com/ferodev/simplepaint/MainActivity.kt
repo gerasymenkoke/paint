@@ -228,7 +228,7 @@ class MainActivity : AppCompatActivity() {
       j=0    
       dir=10
      dir_crx[0]=-1.0f
-     dir_crx[0]=-1.0f               
+     dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
    if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_crx[0] = 1 + dir_crx[0]; dir_cry[0] = 1 + dir_cry[0]; dir=0 }
