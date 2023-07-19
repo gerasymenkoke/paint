@@ -197,34 +197,7 @@ class MainActivity : AppCompatActivity() {
 
  
 
-// sort of crx_[j] to sortcrx_[j]
-
-//jj=0
-                    
-// while (jj >=0 && jj<=9) 
-// {
-    
-  //  j=jj
-    
-  //  var jmax = 0
-  //  var max=crx_[0] 
-  //  j=1    
-  //  while (j >=1 && j<=9) {
-    
-  //      if (crx_[j] > max) { jmax = j; max=crx_[j] }
-        
-  //                         j=j+1 
-  //                        }
-  //   crx_[jmax] = 0.0f 
-  //  max=((max * 100.0).roundToInt() / 100.0).toFloat()  
-  //  sortcrx_[jj] = max
-  //   jj=jj+1
-// }    
-
-
-
-// sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Float
-
+// sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
 
       j=0    
       dir=10
@@ -267,7 +240,7 @@ resx[0]=0.0f
 resy[1]=0.0f
 
 jj=0
-while (jj >=0 && jj<=1) 
+while (jj >=0 && jj<=10) 
 {
     
     j=0
