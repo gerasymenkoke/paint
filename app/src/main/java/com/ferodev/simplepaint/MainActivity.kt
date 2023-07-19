@@ -240,23 +240,20 @@ resx[0]=0.0f
 resy[1]=0.0f
 
 jj=0
-while (jj >=0 && jj<=10) 
+while (jj >=0 && jj<=2) 
 {
     
     j=0
     while (j >=0 && j<=3) {
     
-                          //     if ( crx_[j] > 0.0f && rrx[jj][j] > 0.0f )  
                                   resx[jj] = resx[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j]) 
                                   resy[jj] = resy[jj] +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
-                               //   res[jj] = res[jj] +  Math.abs (cry_[j] - rry[jj][j]) 
-                                       
-                                        // Math.abs (crx_[j] - rrx[jj][j])  }
+                          
   
      j=j+1
                           }
        resxy[jj] =  resx[jj] +  resy[jj]  
-     jj=jj+1
+ jj=jj+1
 }    
 
 if (resxy[0] < resxy[1] && resxy[0] < resxy[2] ) { result=0 }
@@ -270,7 +267,9 @@ if (resxy[2] < resxy[0] && resxy[2] < resxy[1] ) { result=2 }
                     
                     
 textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "  /resxy[2]=" + resxy[2]+ "/  " + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
- j = j+1   
+
+
+                    
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
