@@ -162,7 +162,7 @@ class MainActivity : AppCompatActivity() {
             // dir_rrxy[jj] = arrayOf<Int>(0,  1, 0, 1)
             // rrx[jj] = rrx_
             dir_rrx[jj] = arrayOf<Float>(0.0f,1.0f, 0.0f, 1.0f, -0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-            dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 1.0f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+            dir_rry[jj] = arrayOf<Float>(0.0f, 1.0f, 0.0f, 1.0f, 0.08f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
            //  rry[jj] = rry_
              jjj=0        
              while (jjj<=3) {
