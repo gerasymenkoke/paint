@@ -209,8 +209,6 @@ class MainActivity : AppCompatActivity() {
                           j=j+1 
  
                             }
- 
-
                   
 
 
@@ -225,18 +223,10 @@ aaa[j] =  "  " + j.toString() + "-d=" + dir_crx[j].toString() + "," + dir_cry[j]
 
 
 
-
-
-
-
  
 
 // result of test on 0
-resx[0]=0.0f
-resy[1]=0.0f
-resxy[0]=0.0f
-resxy[1]=0.0f
-resxy[2]=0.0f
+
                     
 jj=0
 while (jj >=0 && jj<=2) 
