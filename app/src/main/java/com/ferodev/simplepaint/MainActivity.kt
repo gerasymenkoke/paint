@@ -234,7 +234,10 @@ aaa[j] =  "  " + j.toString() + "-d=" + dir_crx[j].toString() + "," + dir_cry[j]
 // result of test on 0
 resx[0]=0.0f
 resy[1]=0.0f
-
+resxy[0]=0.0f
+resxy[1]=0.0f
+resxy[2]=0.0f
+                    
 jj=0
 while (jj >=0 && jj<=2) 
 {
@@ -242,13 +245,12 @@ while (jj >=0 && jj<=2)
     j=0
     while (j >=0 && j<=3) {
     
-                                  resx[jj] = resx[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j]) 
-                                  resy[jj] = resy[jj] +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
+                                 resxy[jj]=  resxy[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j])  +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
                           
   
      j=j+1
                           }
-       resxy[jj] =  resx[jj] +  resy[jj]  
+      // resxy[jj] =  resx[jj] +  resy[jj]  
  jj=jj+1
 }    
 resxy[2] = 20.0f
