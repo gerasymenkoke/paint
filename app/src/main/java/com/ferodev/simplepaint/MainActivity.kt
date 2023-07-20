@@ -76,8 +76,11 @@ class MainActivity : AppCompatActivity() {
     private var rraaa1 = Array<String>(100){"0"}
    private var dir_crx = Array<Float>(4){0.0f} 
    private var dir_cry = Array<Float>(4){0.0f} 
-   private var dir_rrx = Array(10){ Array<Float>(4){0.0f} } 
-  private var dir_rry =  Array(10){ Array<Float>(4){0.0f} } 
+   
+   private var dir_rr = Array(10) { Array(10){ Array<Float>(4){0.0f} } }
+   private var dir_cr =  Array(10){ Array<Float>(4){0.0f} } 
+   private var    res =  Array(10){ Array<Float>(4){0.0f} } 
+  
     private var dir = 0
     
      private var rrx_ = Array<Float>(10){0.0f} 
@@ -91,6 +94,8 @@ class MainActivity : AppCompatActivity() {
      private var rrx  = Array(10){ Array<Float>(10){0.0f} }
      private var rry  = Array(10){ Array<Float>(10){0.0f} }
 
+
+     
      private var resx = Array<Float>(10){0.0f} 
      private var resy = Array<Float>(10){0.0f} 
      private var resxy = Array<Float>(10){0.0f} 
@@ -143,7 +148,7 @@ class MainActivity : AppCompatActivity() {
      //   dir_rry[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
              jjj=0       
              while (jjj<=3) {
-                           rraaa0[jjj]=   dir_rrx[jj][jjj].toString()   + "," + dir_rry[jj][jjj].toString()
+                           rraaa0[jjj]=   dir_rr[jj][jjj].toString()  
                            jjj=jjj+1
                            }
               
@@ -156,7 +161,7 @@ class MainActivity : AppCompatActivity() {
             
              jjj=0        
              while (jjj<=3) {
-                           rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
+                           rraaa1[jjj]=  dir_rr[jj][jjj].toString()  
                            jjj=jjj+1
                            }
           //    calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
@@ -165,14 +170,14 @@ class MainActivity : AppCompatActivity() {
 
 // Filling sample array raa
 // 2
-      jj = 2                  
-         dir_rrx[jj] = arrayOf<Float>(1.0f,1.0f, 0.0f,  2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-         dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-             jjj=0        
-             while (jjj<=3) {
-                           rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
-                           jjj=jjj+1
-                           }
+      //jj = 2                  
+        // dir_rrx[jj] = arrayOf<Float>(1.0f,1.0f, 0.0f,  2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+        // dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+          //   jjj=0        
+            // while (jjj<=3) {
+              //             rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
+                //           jjj=jjj+1
+                  //         }
 
 
 
@@ -230,24 +235,28 @@ aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString()
 // result of test on 0
 
                     
-jj=0
-while (jj >=0 && jj<=2) 
+      jj=0
+while (jj >=0 && jj<=1) 
 {
+          jjj=0
+    while (jjj >=0 && jjj<=1) 
+            {
     
-    j=0
+                j=0
     while (j >=0 && j<=3) {
     
-                                 res[jj]=  res[jj] +  Math.abs (dir_cr[j] - dir_rr[jj][j])  
-                          
-  
-     j=j+1
-                          }
-      // resxy[jj] =  resx[jj] +  resy[jj]  
+                                 res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_cr[j] - dir_rr[jj] [jjj] [j])  
+                         j=j+1
+   
+                           }
+              jjj=jjj+1
+             }    
  jj=jj+1
 }    
-resxy[2] = 20.0f
-if (resxy[0] <= resxy[1] && resxy[0] <= resxy[2] ) { result=0 }
-if (resxy[1] <= resxy[0] && resxy[1] <= resxy[2] ) { result=1 }     
+
+// resxy[2] = 20.0f
+if ( res[0][0] <= resxy[1][0] && res[0][0] <= resxy[1][1] ) { result=0 }
+if ( res[0][0] >= resxy[1][0] || res[0][0] >= resxy[1][1]) { result=1 }     
 // if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
 
 
@@ -258,7 +267,7 @@ if (resxy[1] <= resxy[0] && resxy[1] <= resxy[2] ) { result=1 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "  /resxy[2]=" +   resxy[2]+ "/  " +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /res[0][0]=" + res[0][0] + "  /res[1][0]=" + res[1][0] +  + "  /res[1][1]=" + res[1][1] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
 
 
                     
