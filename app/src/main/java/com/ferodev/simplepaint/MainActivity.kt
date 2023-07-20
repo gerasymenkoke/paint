@@ -251,7 +251,7 @@ while (jj >=0 && jj<=2)
        resxy[jj] =  resx[jj] +  resy[jj]  
  jj=jj+1
 }    
-resxy[2] = 20
+resxy[2] = 20.0f
 if (resxy[0] <= resxy[1] && resxy[0] <= resxy[2] ) { result=0 }
 if (resxy[1] <= resxy[0] && resxy[1] <= resxy[2] ) { result=1 }     
 // if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
