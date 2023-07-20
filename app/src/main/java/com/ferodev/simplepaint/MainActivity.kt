@@ -137,8 +137,10 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
          
-        dir_rrx[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-        dir_rry[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        dir_rr[0][0] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f)
+       // dir_rr[0][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
+        
+     //   dir_rry[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
              jjj=0       
              while (jjj<=3) {
                            rraaa0[jjj]=   dir_rrx[jj][jjj].toString()   + "," + dir_rry[jj][jjj].toString()
@@ -148,8 +150,10 @@ class MainActivity : AppCompatActivity() {
  // Filling sample array raa
 // 1
       jj = 1                  
-         dir_rrx[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 0.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-         dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 0.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+        dir_rr[1][0] = arrayOf<Float>(1.0f,  0.0f, 0.0f, 1.0f)
+        dir_rr[1][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
+
+            
              jjj=0        
              while (jjj<=3) {
                            rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
@@ -195,14 +199,14 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
       dir=10
-     dir_crx[0]=-1.0f
-     dir_cry[0]=-1.0f               
+     dir_cr[0]=-1.0f
+     //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_crx[0] = 1 + dir_crx[0]; dir_cry[0] = 1 + dir_cry[0]; dir=0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_crx[1] = 1 + dir_crx[1]; dir_cry[1] = 1 + dir_cry[1]; dir=1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_crx[2] = 1 + dir_crx[2]; dir_cry[2] = 1 + dir_cry[2]; dir=2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_crx[3] = 1 + dir_crx[3]; dir_cry[3] = 1 + dir_cry[3]; dir=3 }
+   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[0] = 1 + dir_cr[0];  dir=0 }
+   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[1] = 1 + dir_cr[1];  dir=1 }
+   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[2] = 1 + dir_cr[2];  dir=2 }
+   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[3] = 1 + dir_cr[3];  dir=3 }
  
                           j=j+1 
  
@@ -214,7 +218,7 @@ j=0
 // output as text 
 while (j >=0 && j<=3) {
 
-aaa[j] =  "  " + j.toString() + "-d=" + dir_crx[j].toString() + "," + dir_cry[j].toString()
+aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
 // aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
@@ -233,7 +237,7 @@ while (jj >=0 && jj<=2)
     j=0
     while (j >=0 && j<=3) {
     
-                                 resxy[jj]=  resxy[jj] +  Math.abs (dir_crx[j] - dir_rrx[jj][j])  +  Math.abs (dir_cry[j] - dir_rry[jj][j]) 
+                                 res[jj]=  res[jj] +  Math.abs (dir_cr[j] - dir_rr[jj][j])  
                           
   
      j=j+1
