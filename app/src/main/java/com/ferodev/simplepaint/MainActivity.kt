@@ -254,7 +254,7 @@ while (jj >=0 && jj<=2)
 
 if (resxy[0] <= resxy[1] && resxy[0] <= resxy[2] ) { result=0 }
 if (resxy[1] <= resxy[0] && resxy[1] <= resxy[2] ) { result=1 }     
-if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
+// if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
 
 
  
@@ -262,7 +262,7 @@ if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "  /resxy[2]=" + resxy[2]+ "/  " + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /resxy[0]=" + resxy[0] +"  /resxy[1]=" + resxy[1] + "  /resxy[2]=" +   resxy[2]+ "/  " +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
 
 
                     
