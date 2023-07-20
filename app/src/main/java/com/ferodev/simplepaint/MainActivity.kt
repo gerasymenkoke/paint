@@ -140,7 +140,7 @@ class MainActivity : AppCompatActivity() {
      jj = 0                  
          
         dir_rrx[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-        dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        dir_rry[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
              jjj=0       
              while (jjj<=3) {
                            rraaa0[jjj]=   dir_rrx[jj][jjj].toString()   + "," + dir_rry[jj][jjj].toString()
@@ -150,8 +150,8 @@ class MainActivity : AppCompatActivity() {
  // Filling sample array raa
 // 1
       jj = 1                  
-         dir_rrx[jj] = arrayOf<Float>(0.0f,1.0f, 0.0f, 2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-         dir_rry[jj] = arrayOf<Float>(0.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rrx[jj] = arrayOf<Float>(0.0f, 1.0f, 0.0f, 1.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
+         dir_rry[jj] = arrayOf<Float>(0.0f, 1.0f, 0.0f, 1.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
              jjj=0        
              while (jjj<=3) {
                            rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
