@@ -157,7 +157,7 @@ class MainActivity : AppCompatActivity() {
       jj = 1                  
         dir_rr[1][0] = arrayOf<Float>(1.0f,  0.0f, 0.0f, 1.0f)
         dir_rr[1][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
-
+        dir_rr[1][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
             
              jjj=0        
              while (jjj<=3) {
@@ -256,7 +256,7 @@ while (jj >=0 && jj<=1)
 
 // resxy[2] = 20.0f
 if ( res[0][0] <= res[1][0] && res[0][0] <= res[1][1] ) { result=0 }
-if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1]) { result=1 }     
+if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1] || res[0][0] >= res[1][2] ) { result=1 }     
 // if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
 
 
@@ -267,7 +267,7 @@ if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1]) { result=1 }
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0][0]=" + res[0][0] + "  /res[1][0]=" + res[1][0]   + "  /res[1][1]=" + res[1][1] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result + "  /res[0][0]=" + res[0][0] + "  /res[1][0]=" + res[1][0]   + "  /res[1][1]=" + res[1][1] +  "  /res[1][2]=" + res[1][2]   "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
 
 
                     
