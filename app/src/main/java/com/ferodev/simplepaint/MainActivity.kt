@@ -255,8 +255,8 @@ while (jj >=0 && jj<=1)
 }    
 
 // resxy[2] = 20.0f
-if ( res[0][0] <= resxy[1][0] && res[0][0] <= resxy[1][1] ) { result=0 }
-if ( res[0][0] >= resxy[1][0] || res[0][0] >= resxy[1][1]) { result=1 }     
+if ( res[0][0] <= res[1][0] && res[0][0] <= res[1][1] ) { result=0 }
+if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1]) { result=1 }     
 // if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
 
 
