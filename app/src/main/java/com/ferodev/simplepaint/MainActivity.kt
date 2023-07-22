@@ -186,10 +186,10 @@ class MainActivity : AppCompatActivity() {
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[j] = 0.0f;  dir=0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[j] = 1.0f;  dir=1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[j] = 2.0f;  dir=2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[j] = 3.0f;  dir=3 }
+   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[j] = 0;  dir=0 }
+   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[j] = 1;  dir=1 }
+   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[j] = 2;  dir=2 }
+   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[j] = 3;  dir=3 }
  
                           j=j+1 
  
@@ -233,24 +233,20 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 // finding min res value is max resemble differ (res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
 
     jj=0
-while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
+while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
     while (jjj >=0 && jjj<=9) // quantity of variants for each/all numbers
             {
-    
+               if ( res[jj][jjj] < min )  { result=jj; min = result }
+           jjj = jjj +1
+            }
+       jj = jj +1
+}   
 
-if ( res[0][0] <= res[1][0] && res[0][0] <= res[1][1] ) { result=0 }
-if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1] || res[0][0] >= res[1][2] ) { result=1 }     
+                  
 
-
-
-
-
- 
-                   
-
-textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
+textviewid.text = "res="+ result +  "\n"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
 
                     
                    
