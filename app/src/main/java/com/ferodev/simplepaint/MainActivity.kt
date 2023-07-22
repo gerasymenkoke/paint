@@ -236,14 +236,14 @@ aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString()
 
                     
       jj=0
-while (jj >=0 && jj<=1) 
+while (jj >=0 && jj<=1)  // index of numbers 0, 1 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=1) 
+    while (jjj >=0 && jjj<=2) // quantity of variants for each/all numbers
             {
     
                 j=0
-    while (j >=0 && j<=3) {
+    while (j >=0 && j<=3) {   //  quantity of directions 0,1,2,3
     
                                  res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_cr[j] - dir_rr[jj] [jjj] [j])  
                          j=j+1
