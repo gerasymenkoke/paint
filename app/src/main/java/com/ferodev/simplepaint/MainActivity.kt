@@ -267,7 +267,7 @@ if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1] || res[0][0] >= res[1][2] 
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result + "  /res[0][0]=" + res[0][0] + "  /res[1][0]=" + res[1][0]   + "  /res[1][1]=" + res[1][1] +  "  /res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3]   
+textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3]   
 
 
                     
