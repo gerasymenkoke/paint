@@ -141,44 +141,23 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
      jj = 0                  
-         
-        dir_rr[0][0] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f)
-       // dir_rr[0][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
-        
-     //   dir_rry[jj] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-             jjj=0       
-             while (jjj<=3) {
-                           rraaa0[jjj]=   dir_rr[jj][jjj].toString()  
-                           jjj=jjj+1
-                           }
+     dir_rr[0][0] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f)
+     
               
  // Filling sample array raa
 // 1
       jj = 1                  
-        dir_rr[1][0] = arrayOf<Float>(1.0f,  0.0f, 0.0f, 1.0f)
-        dir_rr[1][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
-        dir_rr[1][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
-            
-             jjj=0        
-             while (jjj<=3) {
-                           rraaa1[jjj]=  dir_rr[jj][jjj].toString()  
-                           jjj=jjj+1
-                           }
-          //    calc.text =  "0: " +  "  0-d=" + rraaa0[0] + "  1-d=" + rraaa0[1] + "  2-d=" + rraaa0[2] + "  3-d=" + rraaa0[3]  +
-          //  "\n" + "1: " + "  0-d=" + rraaa1[0] + "  1-d=" + rraaa1[1] + "  2-d=" + rraaa1[2] + "  3-d=" + rraaa1[3]              
-
-
+      dir_rr[1][0] = arrayOf<Float>(1.0f,  0.0f, 0.0f, 1.0f)
+      dir_rr[1][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
+      dir_rr[1][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
+                        
 // Filling sample array raa
 // 2
-      //jj = 2                  
-        // dir_rrx[jj] = arrayOf<Float>(1.0f,1.0f, 0.0f,  2.0f,  0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-        // dir_rry[jj] = arrayOf<Float>(1.0f, 1.0f, 0.0f, 2.0f, 0.0f,  0.00f, 0.0f,  0.00f, 0.0f, 0.0f)
-          //   jjj=0        
-            // while (jjj<=3) {
-              //             rraaa1[jjj]=  dir_rrx[jj][jjj].toString()    + "," + dir_rry[jj][jjj].toString()
-                //           jjj=jjj+1
-                  //         }
-
+      jj = 2                  
+      dir_rr[2][0] = arrayOf<Float>(2.0f,  1.0f, 0.0f, 2.0f)
+      dir_rr[2][1] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
+     //dir_rr[2][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
+        
 
 
 
