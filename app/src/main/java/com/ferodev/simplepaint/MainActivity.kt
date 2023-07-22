@@ -77,9 +77,9 @@ class MainActivity : AppCompatActivity() {
    private var dir_crx = Array<Float>(4){0.0f} 
    private var dir_cry = Array<Float>(4){0.0f} 
    
-   private var dir_rr = Array(10) { Array(10){ Array<Float>(4){0.0f} } }
-   private var dir_cr =  Array<Float>(10){0.0f}  
-   private var    res =  Array(10){ Array<Float>(4){0.0f} } 
+   private var dir_rr = Array(10) { Array(10){ Array<Int>(10){0} } }
+   private var dir_cr =  Array<Int>(10){0}  
+   private var    res =  Array(10){ Array<Int>(10){0} } 
   
     private var dir = 0
     
@@ -117,8 +117,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-     //   var  textviewid = "vvv"    
-       // var btn =  1  
+     
         
                       }
     
@@ -141,22 +140,22 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
      jj = 0                  
-     dir_rr[0][0] = arrayOf<Float>(1.0f,  1.0f, 1.0f, 1.0f)
-     
+     dir_rr[0][0] = arrayOf<Int>(0,  3, 0, 1, 0, 0, 0, 0, 0, 0)
+     dir_rr[0][1] = arrayOf<Int>(0,  3, 0, 2, 0, 0, 0, 0, 0, 0)
               
  // Filling sample array raa
 // 1
       jj = 1                  
-      dir_rr[1][0] = arrayOf<Float>(1.0f,  0.0f, 0.0f, 1.0f)
-      dir_rr[1][1] = arrayOf<Float>(0.0f,  1.0f, 0.0f, 1.0f)
-      dir_rr[1][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
+      dir_rr[1][0] = arrayOf<Int>(0,  3, 1, 0, 0, 0, 0, 0, 0, 0)
+      dir_rr[1][1] = arrayOf<Int>(0,  3, 1, 0, 2, 3, 0, 0, 0, 0)
+      dir_rr[1][2] = arrayOf<Int>(0,  3, 0, 0, 0, 1, 0, 0, 0, 0)
                         
 // Filling sample array raa
 // 2
       jj = 2                  
-      dir_rr[2][0] = arrayOf<Float>(2.0f,  1.0f, 0.0f, 2.0f)
-      dir_rr[2][1] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
-     //dir_rr[2][2] = arrayOf<Float>(1.0f,  1.0f, 0.0f, 1.0f)
+      dir_rr[2][0] = arrayOf<Int>(0,  3, 0, 1, 3, 0, 0, 0, 0, 0)
+      dir_rr[2][1] = arrayOf<Int>(0,  3, 1, 0, 0, 0, 0, 0, 0, 0)
+      dir_rr[2][2] = arrayOf<Int>(0,  3, 0, 0, 0, 1, 0, 0, 0, 0)
         
 
 
@@ -183,7 +182,7 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
       dir=10
-     dir_cr[0]=-1.0f
+     // dir_cr[0]=-1
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
@@ -198,31 +197,27 @@ class MainActivity : AppCompatActivity() {
                   
 
 
-j=0
-// output as text 
-while (j >=0 && j<=9) {
 
+// output as text current painted number in direction sequence
+j=0                    
+while (j >=0 && j<=9) {
 aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
-// aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
 
 
 
- 
-
-// result of test on 0
-
-                    
+// result of test on comparing of numbers  direction sequences
+                   
       jj=0
-while (jj >=0 && jj<=1)  // index of numbers 0, 1 ..
+while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=2) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=9) // quantity of variants for each/all numbers
             {
     
                 j=0
-    while (j >=0 && j<=3) {   //  quantity of directions 0,1,2,3
+    while (j >=0 && j<=3) {   //  quantity of directions 0,1,2,3: South-East Sorth-West North-West North-East 
     
                                  res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_cr[j] - dir_rr[jj] [jjj] [j])  
                          j=j+1
@@ -233,20 +228,27 @@ while (jj >=0 && jj<=1)  // index of numbers 0, 1 ..
  jj=jj+1
 }    
 
-// resxy[2] = 20.0f
+
+
+// finding min res value is max resemble differ (res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
+
+    jj=0
+while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
+{
+          jjj=0
+    while (jjj >=0 && jjj<=9) // quantity of variants for each/all numbers
+            {
+    
+
 if ( res[0][0] <= res[1][0] && res[0][0] <= res[1][1] ) { result=0 }
 if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1] || res[0][0] >= res[1][2] ) { result=1 }     
-// if (resxy[2] <= resxy[0] && resxy[2]  <= resxy[1] ) { result=2 }     
+
 
 
 
 
  
                    
-//calc.text = rrx[j].toString() + "  " + rry[j].toString()
-                    
-                    
-//textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3]   
 
 textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
 
