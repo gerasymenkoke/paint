@@ -154,9 +154,10 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 2
       jj = 2                  
-      dir_rr[2][0] = arrayOf<Int>(0,  3, 0, 1, 3, 0, 0, 0, 0, 0)
-      dir_rr[2][1] = arrayOf<Int>(0,  3, 1, 0, 0, 0, 0, 0, 0, 0)
-      dir_rr[2][2] = arrayOf<Int>(0,  3, 0, 0, 0, 1, 0, 0, 0, 0)
+      dir_rr[2][0] = arrayOf<Int>(0,  3, 0, 1, 0, 3, 0, 0, 0, 0)
+      dir_rr[2][1] = arrayOf<Int>(0,  3, 0, 1, 3, 0, 0, 0, 0, 0)
+      dir_rr[2][2] = arrayOf<Int>(0,  3, 1, 0, 0, 0, 0, 0, 0, 0)
+      dir_rr[2][3] = arrayOf<Int>(0,  3, 0, 0, 0, 1, 0, 0, 0, 0)
         
 
 
