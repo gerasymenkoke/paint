@@ -77,8 +77,8 @@ class MainActivity : AppCompatActivity() {
    private var dir_crx = Array<Float>(4){0.0f} 
    private var dir_cry = Array<Float>(4){0.0f} 
    
-   private var dir_rr = Array(10) { Array(10){ Array<Int>(10){0} } }
-   private var dir_cr =  Array<Int>(10){0}  
+   private var dir_rr = Array(10) { Array(10){ Array<Int>(10){10} } }
+   private var dir_cr =  Array<Int>(10){10}  
    private var    res =  Array(10){ Array<Int>(10){0} } 
   
     private var dir = 0
