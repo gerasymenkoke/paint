@@ -28,34 +28,6 @@
 
 
 
- <TextView
-        android:id="@+id/calc"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_marginTop="160dp"         
-        android:text="@string-array/calc"
-             
-        android:textColor="#008000"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">        
-                
-      </TextView>
-
-
-
-
-
-
-
-
-    
-    
-       
-   
-
 
     <RelativeLayout
         android:id="@+id/action"
