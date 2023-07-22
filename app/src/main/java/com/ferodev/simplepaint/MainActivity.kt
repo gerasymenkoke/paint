@@ -247,7 +247,8 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 
                   
 
-textviewid.text = "res="+ result +  "\n"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
+textviewid.text = "result=" + result +  "\n"  + "  res[0][0]=" + res[0][0] + "  res[0][1]=" + res[0][1] + "  res[1][0]=" + res[1][0] + "  res[1][1]=" + res[1][1] + "  res[1][2]=" + res[1][2]  + "  res[2][0]=" + res[2][0] + "  res[2][1]=" + res[2][1] + "  res[2][2]=" + res[2][2] 
+                    "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
 
                     
                    
