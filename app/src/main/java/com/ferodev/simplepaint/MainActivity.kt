@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
    private var    res =  Array(10){ Array<Int>(10){0} } 
   
     private var dir = 0
+    private var min = 10
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
