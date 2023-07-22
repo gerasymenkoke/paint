@@ -183,7 +183,7 @@ class MainActivity : AppCompatActivity() {
 // sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
 
       j=0    
-      dir=10
+      dir=11
      // dir_cr[0]=-1
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
@@ -248,7 +248,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 
                   
 
-textviewid.text = "result=" + result +  "\n"  + "  res[0][0]=" + res[0][0] + "  res[0][1]=" + res[0][1] + "  res[1][0]=" + res[1][0] + "  res[1][1]=" + res[1][1] + "  res[1][2]=" + res[1][2]  + "  res[2][0]=" + res[2][0] + "  res[2][1]=" + res[2][1] + "  res[2][2]=" + res[2][2] +
+textviewid.text = "result=" + result +  "\n"  + "  res[0][0]=" + res[0][0] + "  res[0][1]=" + res[0][1] + "  res[0][2]=" + res[0][2] + "  res[1][0]=" + res[1][0] + "  res[1][1]=" + res[1][1] + "  res[1][2]=" + res[1][2]  + "  res[2][0]=" + res[2][0] + "  res[2][1]=" + res[2][1] + "  res[2][2]=" + res[2][2] +
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
 
                     
