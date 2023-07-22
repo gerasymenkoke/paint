@@ -187,10 +187,10 @@ class MainActivity : AppCompatActivity() {
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[0] = 1 + dir_cr[0];  dir=0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[1] = 1 + dir_cr[1];  dir=1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[2] = 1 + dir_cr[2];  dir=2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[3] = 1 + dir_cr[3];  dir=3 }
+   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[j] = 0;  dir=0 }
+   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[j] = 1;  dir=1 }
+   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[j] = 2;  dir=2 }
+   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[j] = 3;  dir=3 }
  
                           j=j+1 
  
@@ -202,8 +202,8 @@ j=0
 // output as text 
 while (j >=0 && j<=9) {
 
-//aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
- aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
+aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
+// aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
 
