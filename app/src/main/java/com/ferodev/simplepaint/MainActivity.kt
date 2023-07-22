@@ -200,10 +200,10 @@ class MainActivity : AppCompatActivity() {
 
 j=0
 // output as text 
-while (j >=0 && j<=3) {
+while (j >=0 && j<=9) {
 
-aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
-// aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
+//aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
+ aaa[j] = "(" + crx_[j].toString()  + ", " +  cry_[j].toString() + ")"
                     j=j+1
                      }
 
@@ -246,8 +246,9 @@ if ( res[0][0] >= res[1][0] || res[0][0] >= res[1][1] || res[0][0] >= res[1][2] 
 //calc.text = rrx[j].toString() + "  " + rry[j].toString()
                     
                     
-textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3]   
+//textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3]   
 
+textviewid.text = "res="+ result +  "\n" + "res[0][0]=" + res[0][0] + "\n" + "res[1][0]=" + res[1][0]   + "\n" + "res[1][1]=" + res[1][1] + "\n" + "res[1][2]=" + res[1][2] +  "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + "  " + aaa[3] + "  " + aaa[4] + "  " + aaa[5] + "  " + aaa[6] + "  " + aaa[7] + "  " + aaa[8] + "  " + aaa[9]  
 
                     
                    
