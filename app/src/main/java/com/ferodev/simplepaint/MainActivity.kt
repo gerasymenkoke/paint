@@ -184,10 +184,7 @@ class MainActivity : AppCompatActivity() {
 // sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
 
       j=0    
-      dir=11
-                   
-     // dir_cr[0]=-1
-     //dir_cry[0]=-1.0f               
+                     
       while (j >=0 && j<=9) {
     
    if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 }
@@ -198,8 +195,28 @@ class MainActivity : AppCompatActivity() {
                           j=j+1 
                           
                             }
-                  
 
+      
+    // normalize cr[j] - erase repeats and  ??? 10 inside
+j=0                    
+while (j >=0 && j<=9) {
+if (j=0) { old = dir_cr[j] }
+if (j>0 && dir_cr[j]==old) { dir_cr[j]= -10 }
+                           else { old=dir_cr[j] }
+    j = j+1
+                      }
+              
+j=0; k=0
+while (j >=0 && j<=9) {
+if ( dir_cr[j] == -10) { k=k+1; dir_crn[j]= dir_cr[j+k] }
+                           else { dir_crn[j]= dir_cr[j+k] }
+    j = j+1
+                      }
+
+
+
+
+                  
 
 
 // output as text current painted number in direction sequence
