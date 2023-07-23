@@ -69,6 +69,8 @@ class MainActivity : AppCompatActivity() {
     private var btn = 1
   //  private var image =  findViewById(R.id.btnPencil)
   private var j = 0
+  private var i = 0
+    
    private var jj = 0  
        private var jjj = 0  
     private var k=0
