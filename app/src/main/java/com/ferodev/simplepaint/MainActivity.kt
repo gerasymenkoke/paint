@@ -191,10 +191,10 @@ class MainActivity : AppCompatActivity() {
                      
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 3 }
+   if (crx_[j] >= 0.0f &&  cry_[j] >= 0.0f ) { dir_cr[j] = 0 }
+   if (crx_[j] <= 0.0f &&  cry_[j] >= 0.0f ) { dir_cr[j] = 1 }
+   if (crx_[j] <= 0.0f &&  cry_[j] <= 0.0f ) { dir_cr[j] = 2 }
+   if (crx_[j] >= 0.0f &&  cry_[j] <= 0.0f ) { dir_cr[j] = 3 }
                           
                           j=j+1 
                           
