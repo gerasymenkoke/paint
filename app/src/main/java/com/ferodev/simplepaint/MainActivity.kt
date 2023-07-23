@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
       jj = 1                  
      dir_rr[1][0] = arrayOf<Int>(  0,  3,  1,  3, 10, 10, 10, 10, 10, 10)
      dir_rr[1][1] = arrayOf<Int>(  0,  3,  0,  3, 10, 10, 10, 10, 10, 10)
-     dir_rr[1][2] = arrayOf<Int>(  0,  3,  1,  0,  3, 10, 10, 10, 10, 10)
+     //dir_rr[1][2] = arrayOf<Int>(  0,  3,  1,  2,  0,  3, 10, 10, 10, 10)
                         
 // Filling sample array 
 // 2
