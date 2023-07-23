@@ -71,6 +71,7 @@ class MainActivity : AppCompatActivity() {
   private var j = 0
    private var jj = 0  
        private var jjj = 0  
+    private var k=0
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
@@ -79,6 +80,7 @@ class MainActivity : AppCompatActivity() {
    
    private var dir_rr = Array(10) { Array(10){ Array<Int>(10){10} } }
    private var dir_cr =  Array<Int>(10){10}  
+   private var dir_crn =  Array<Int>(10){10}  
    private var    res =  Array(10){ Array<Int>(10){0} } 
   
     private var dir = 0
@@ -222,7 +224,7 @@ if ( dir_cr[j] == -10) { k=k+1; dir_crn[j]= dir_cr[j+k] }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-aaa[j] =  "  " + j.toString() + "-d=" + dir_cr[j].toString() 
+aaa[j] =  "  " + j.toString() + "-d=" + dir_crn[j].toString() 
                     j=j+1
                      }
 
@@ -240,7 +242,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
                 j=0
     while (j >=0 && j<=9) {   //  comparing sequence all current directions dir_cr 0..9 and array of etalins dir_rr; values are directions 0,1,2,3: South-East Sorth-West North-West North-East 
     
-                                 res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_cr[j] - dir_rr[jj] [jjj] [j])  
+                                 res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_crn[j] - dir_rr[jj] [jjj] [j])  
                          j=j+1
    
                            }
