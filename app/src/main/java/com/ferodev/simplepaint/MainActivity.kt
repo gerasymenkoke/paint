@@ -202,25 +202,16 @@ class MainActivity : AppCompatActivity() {
 
       
     // normalize cr[j] - erase repeats and  ??? 10 inside
-j=0                    
+j=0 
+i=0                    
 while (j >=0 && j<=9) {
 if (j==0) { old = dir_cr[j] }
-if (j>0 && dir_cr[j]==old && dir_cr[j] != 10 ) { dir_cr[j]= -10 }
-                           else { old=dir_cr[j] }
+if (j>0 && dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
+                           else { old=dir_cr[j]; dir_crn[i]=old; i=i+1 }
     j = j+1
                       }
               
-j=0; k=0
-while (j >=0 && (j+k)<=9) {
-if ( dir_cr[j+k] == -10 && (j+k)<=8 ) {  k=k+1; dir_crn[j]= dir_cr[j+k]  }
-                           else { dir_crn[j]= dir_cr[j+k] }
-    j = j+1
-                      }
-
-
-
-
-                  
+                
 
 
 // output as text current painted number in direction sequence
@@ -243,8 +234,10 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
     
                 j=0
     while (j >=0 && j<=9) {   //  comparing sequence all current directions dir_cr 0..9 and array of etalins dir_rr; values are directions 0,1,2,3: South-East Sorth-West North-West North-East 
-    
-                                 res[jj] [jjj] =  res[jj] [jjj] +  Math.abs (dir_crn[j] - dir_rr[jj] [jjj] [j])  
+                                  
+                                 if ( Math.abs (dir_crn[j] - dir_rr[jj] [jjj] [j]) >0)  {
+                                                                               res[jj] [jjj] =  res[jj] [jjj] +  1
+                                                                                        }
                          j=j+1
    
                            }
