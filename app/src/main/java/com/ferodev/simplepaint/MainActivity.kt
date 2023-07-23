@@ -142,21 +142,21 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
            
-// Filling sample array raa
+// Filling sample array
 // 0
      jj = 0                  
      dir_rr[0][0] = arrayOf<Int>(  0,  3,  0,  1,  3, 10, 10, 10, 10, 10)
      dir_rr[0][1] = arrayOf<Int>(  0,  3,  0,  2, 10, 10, 10, 10, 10, 10)
      dir_rr[0][2] = arrayOf<Int>(  0,  2,  1,  0,  3,  2, 10, 10, 10, 10)   
      
- // Filling sample array raa
+ // Filling sample array
 // 1
       jj = 1                  
      dir_rr[1][0] = arrayOf<Int>(  0,  3,  1, 10, 10, 10, 10, 10, 10, 10)
      dir_rr[1][1] = arrayOf<Int>(  0,  3,  1,  1,  3, 10, 10, 10, 10, 10)
      dir_rr[1][2] = arrayOf<Int>(  0,  3,  0,  1, 10, 10, 10, 10, 10, 10)
                         
-// Filling sample array raa
+// Filling sample array 
 // 2
       jj = 2                  
       dir_rr[2][0] = arrayOf<Int>(0,  3,   0,  1,  1,  3,  0, 10, 10, 10)
@@ -212,7 +212,7 @@ if (j>0 && dir_cr[j]==old && dir_cr[j] != 10 ) { dir_cr[j]= -10 }
               
 j=0; k=0
 while (j >=0 && (j+k)<=9) {
-if ( dir_cr[j+k] == -10) {  k=k+1; dir_crn[j]= dir_cr[j+k]  }
+if ( dir_cr[j+k] == -10 && (j+k)<=8 ) {  k=k+1; dir_crn[j]= dir_cr[j+k]  }
                            else { dir_crn[j]= dir_cr[j+k] }
     j = j+1
                       }
