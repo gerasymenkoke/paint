@@ -72,6 +72,8 @@ class MainActivity : AppCompatActivity() {
    private var jj = 0  
        private var jjj = 0  
     private var k=0
+     private var old=0
+    
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
@@ -202,7 +204,7 @@ class MainActivity : AppCompatActivity() {
     // normalize cr[j] - erase repeats and  ??? 10 inside
 j=0                    
 while (j >=0 && j<=9) {
-if (j=0) { old = dir_cr[j] }
+if (j==0) { old = dir_cr[j] }
 if (j>0 && dir_cr[j]==old) { dir_cr[j]= -10 }
                            else { old=dir_cr[j] }
     j = j+1
