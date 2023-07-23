@@ -141,9 +141,10 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array raa
 // 0
      jj = 0                  
-     dir_rr[0][0] = arrayOf<Int>(  0,  3, 10, 10,  0,  1, 10,  2, 10, 10)
+     dir_rr[0][0] = arrayOf<Int>(  0,  3,  0,  1,  2,  3, 10, 10, 10, 10)
      dir_rr[0][1] = arrayOf<Int>(  0, 10,  3, 10,  2,  1, 10, 10, 10, 10)
-     dir_rr[0][2] = arrayOf<Int>(  0,  3,  0,  1, 10,  2, 10, 10, 10, 10)         
+     dir_rr[0][2] = arrayOf<Int>(  0,  3,  0,  1, 10,  2, 10, 10, 10, 10)   
+     
  // Filling sample array raa
 // 1
       jj = 1                  
@@ -184,17 +185,18 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
       dir=11
+      ch = 0              
      // dir_cr[0]=-1
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f && dir!=0 ) { dir_cr[j] = 0;  dir=0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f && dir!=1 ) { dir_cr[j] = 1;  dir=1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f && dir!=2 ) { dir_cr[j] = 2;  dir=2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f && dir!=3 ) { dir_cr[j] = 3;  dir=3 }
- 
+   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0;  dir=0 }
+   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1;  dir=1 }
+   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 2;  dir=2 }
+   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 3;  dir=3 }
+                          
                           j=j+1 
- 
+                          
                             }
                   
 
