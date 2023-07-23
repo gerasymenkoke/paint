@@ -212,7 +212,7 @@ if (j>0 && dir_cr[j]==old && dir_cr[j] != 10 ) { dir_cr[j]= -10 }
               
 j=0; k=0
 while (j >=0 && (j+k)<=9) {
-if ( dir_cr[j] == -10) {  k=k+1; dir_crn[j]= dir_cr[j+k]  }
+if ( dir_cr[j+k] == -10) {  k=k+1; dir_crn[j]= dir_cr[j+k]  }
                            else { dir_crn[j]= dir_cr[j+k] }
     j = j+1
                       }
