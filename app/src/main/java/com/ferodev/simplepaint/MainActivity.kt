@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
 j=0                    
 while (j >=0 && j<=9) {
 if (j==0) { old = dir_cr[j] }
-if (j>0 && dir_cr[j]==old) { dir_cr[j]= -10 }
+if (j>0 && dir_cr[j]==old && dir_cr[j] != 10 ) { dir_cr[j]= -10 }
                            else { old=dir_cr[j] }
     j = j+1
                       }
