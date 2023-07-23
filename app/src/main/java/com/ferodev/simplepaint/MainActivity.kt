@@ -185,7 +185,7 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
       dir=11
-      ch = 0              
+                   
      // dir_cr[0]=-1
      //dir_cry[0]=-1.0f               
       while (j >=0 && j<=9) {
