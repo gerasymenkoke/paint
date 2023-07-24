@@ -70,8 +70,8 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
-        var crx_ = Array<Float>(10){0.0f}
-        var cry_ = Array<Float>(10){0.0f} 
+        var crx_ = Array<Float>(20){0.0f}
+        var cry_ = Array<Float>(20){0.0f} 
 
         
         var rx = 0.0f
@@ -153,7 +153,7 @@ class DrawPencil @JvmOverloads constructor(
 //  
          
           else    { 
-                 if (N==10)
+                 if (N==5)
                      { crx_[j] = rx
                       cry_[j] = ry
                      // crx_[j] = crx_[j] + cry_[j]  
