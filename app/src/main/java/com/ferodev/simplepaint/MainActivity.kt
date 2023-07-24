@@ -207,8 +207,7 @@ j=0
 i=0 
 old = 10                    
 while (j >=0 && j<=19) {
-if (j==0) { j = j }
-if (j>0 && dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
+if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; i=i+1 }
     j = j+1
                       }
