@@ -79,11 +79,11 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"}
     private var rraaa0 = Array<String>(100){"0"}
     private var rraaa1 = Array<String>(100){"0"}
-   private var dir_crx = Array<Float>(4){0.0f} 
-   private var dir_cry = Array<Float>(4){0.0f} 
+//   private var dir_crx = Array<Float>(4){0.0f} 
+//   private var dir_cry = Array<Float>(4){0.0f} 
    
    private var dir_rr = Array(10) { Array(10){ Array<Int>(10){10} } }
-   private var dir_cr =  Array<Int>(10){10}  
+   private var dir_cr =  Array<Int>(20){10}  
    private var dir_crn =  Array<Int>(10){10}  
    private var    res =  Array(10){ Array<Int>(10){0} } 
   
@@ -190,7 +190,7 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
                      
-      while (j >=0 && j<=9) {
+      while (j >=0 && j<=19) {
     
    if (crx_[j] >= 0.0f &&  cry_[j] >= 0.0f ) { dir_cr[j] = 0 }
    if (crx_[j] <= 0.0f &&  cry_[j] >= 0.0f ) { dir_cr[j] = 1 }
@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
     // normalize cr[j] - erase repeats and  ??? 10 inside
 j=0 
 i=0                    
-while (j >=0 && j<=9) {
+while (j >=0 && j<=19) {
 if (j==0) { old = dir_cr[j] }
 if (j>0 && dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=old; i=i+1 }
