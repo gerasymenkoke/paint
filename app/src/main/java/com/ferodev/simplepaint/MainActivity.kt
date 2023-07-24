@@ -218,7 +218,7 @@ if (j>0 && dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-aaa[j] =  "  " + j.toString() + "-d=" + dir_crn[j].toString() 
+aaa[j] =  "[" + j.toString() + "]=" + dir_crn[j].toString() 
                     j=j+1
                      }
 
