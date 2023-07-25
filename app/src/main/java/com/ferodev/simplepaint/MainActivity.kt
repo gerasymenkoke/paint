@@ -276,7 +276,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 textviewid.text = "result=" + result +  "\n"  + "  res[0][0]=" + res[0][0] + "  res[0][1]=" + res[0][1] + "  res[0][2]=" + res[0][2] + "  res[1][0]=" + res[1][0] + "  res[1][1]=" + res[1][1] + "  res[1][2]=" + res[1][2]  + "  res[2][0]=" + res[2][0] + "  res[2][1]=" + res[2][1] + "  res[2][2]=" + res[2][2] +
                     "\n" + "\n" + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                     "\n" + "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
-                    aaacr[0] + " " +aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
+                     " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
                     
                    
                      btnPencil.setImageResource(R.drawable.ic_selected_pencil)
