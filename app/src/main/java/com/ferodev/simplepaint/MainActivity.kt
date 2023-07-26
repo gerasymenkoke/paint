@@ -228,7 +228,7 @@ if (j<=9) {aaa[j] =  "[" + j.toString() + "]=" + dir_crn[j].toString() + "  "}
 
     aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
-    //aaacr[j] =  "[" + j.toString() + "]=" + dir_cr[j].toString() + "  "
+    //  aaacr[j] =  "[" + j.toString() + "]=" + dir_cr[j].toString() + "  "
     
                     j=j+1
                      }
