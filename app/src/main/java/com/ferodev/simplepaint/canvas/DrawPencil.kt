@@ -136,7 +136,7 @@ class DrawPencil @JvmOverloads constructor(
         xxx = x.toString()       
         yyy = y.toString()    
 
-      if ( (x-x1)/x < 0.05f && (y-y1)/x < 0.05f)
+      if ( (x-x1)/x > 0.05f || (y-y1)/y > 0.05f)
         {  
         
             if (j >=1 && j<=19)
