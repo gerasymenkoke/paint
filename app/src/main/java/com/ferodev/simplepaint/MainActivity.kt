@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
    private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }
    private var dir_cr =  Array<Int>(20){10}  
    private var dir_crn =  Array<Int>(10){10}  
-   private var    res =  Array(10){ Array<Int>(10){0} } 
+   private var    res =  Array(10){ Array<Int>(20){0} } 
   
     private var dir = 0
     private var min = 1000
