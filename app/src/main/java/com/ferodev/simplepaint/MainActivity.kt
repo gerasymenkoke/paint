@@ -284,7 +284,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( res[jj][jjj] < min )  { resmin[0][0]=jj;resmin[0][1]=jjj 
+               if ( res[jj][jjj] < min )  { resmin[0][0]=jj;resmin[0][1]=jjj; resmin[1][0]=10;resmin[1][1]=10; resmin[2][0]=10;resmin[2][1]=10;
                                              i=1; min = res[jj][jjj] 
                                            }
               else { if ( res[jj][jjj] == min )  { resmin[i][0]=jj;resmin[i][1]=jjj 
