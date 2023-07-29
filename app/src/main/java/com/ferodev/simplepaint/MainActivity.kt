@@ -286,7 +286,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
                if ( res[jj][jjj] < min )  { resmin[0][0]=jj;resmin[0][1]=jjj 
                                              i=1; min = res[jj][jjj] 
                                            }
-               if ( res[jj][jjj] = min )  { resmin[i][0]=jj;resmin[i][1]=jjj 
+               if ( res[jj][jjj] == min )  { resmin[i][0]=jj;resmin[i][1]=jjj 
                                              i=i+1  
                                            } 
            jjj = jjj +1
