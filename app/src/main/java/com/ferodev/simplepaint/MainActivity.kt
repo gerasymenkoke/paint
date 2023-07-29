@@ -284,10 +284,10 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( res[jj][jjj] < min )  { resmin[0][0]=jj;resmin[0][1]=jjj; resmin[1][0]=10;resmin[1][1]=10; resmin[2][0]=10;resmin[2][1]=10;
+               if ( res[jj][jjj] < min )  { resmin[0][0]=jj; resmin[0][1]=jjj; resmin[1][0]=10;resmin[1][1]=10; resmin[2][0]=10; resmin[2][1]=10;
                                              i=1; min = res[jj][jjj] 
                                            }
-              else { if ( res[jj][jjj] == min )  { resmin[i][0]=jj;resmin[i][1]=jjj 
+              else { if ( res[jj][jjj] == min )  { resmin[i][0]=jj; resmin[i][1]=jjj 
                                              i=i+1  
                                                  } 
                    }
@@ -303,6 +303,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
                   
 
 textviewid.text =    "min=" + min +  "\n"  + " resmin=" + "  [" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "  [" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "  [" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
+                     " res=" + "  [" + res[0][0] + "]" + "  [" + res[0][1] + "]"  + "  [" + res[0][2] + "]"   +
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
                //      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
