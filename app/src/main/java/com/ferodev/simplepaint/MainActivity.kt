@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
    private var dir_crn =  Array<Int>(10){10}  
    
    private var crn_ = Array<Float>(10){0.0f} 
-   private var    res =  Array(10){ Array<Int>(20){0} } 
+   private var    res =  Array(10){ Array<Int>(20){10} } 
    private var resmin =  Array(10){ Array<Int>(2){10} } 
   
     private var dir = 0
@@ -239,7 +239,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=19) {
-if (j<=9) {aaa[j] =  "[" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crn_[j].toString() }
+if (j<=9) {aaa[j] =  "[" + j.toString() + "]=" + dir_crn[j].toString() + "  /" + crn_[j].toString() }
 
   //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -300,7 +300,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 
                   
 
-textviewid.text =    "min=" + min +  "\n"  + " resmin=" + "[" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "[" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "[" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
+textviewid.text =    "min=" + min +  "\n"  + " resmin=" + "  [" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "  [" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "  [" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
                //      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
