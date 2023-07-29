@@ -224,8 +224,9 @@ class MainActivity : AppCompatActivity() {
 
       
     // normalize cr[j] - erase repeats and  ??? 10 inside
-j=0 
+
 i=0 
+j=0 
 old = 10                    
 while (j >=0 && j<=19) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
@@ -276,7 +277,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 
 
 // finding min res value is max resemble differ (res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
-
+    i=0  
     jj=0
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
