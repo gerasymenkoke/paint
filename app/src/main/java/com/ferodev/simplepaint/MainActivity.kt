@@ -230,7 +230,10 @@ j=0
 old = 10                    
 while (j >=0 && j<=19) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
-                           else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; crn_[i]=crx_[j] + cry_[j]; i=i+1 }
+                           else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; crn_[i]=crx_[j] + cry_[j]; 
+                                  crn_[i]=( ( crn_[i] * 100.0).roundToInt() / 100.0).toFloat() 
+                                  i=i+1 
+                                }
     j = j+1
                       }
               
@@ -302,7 +305,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 
                   
 
-textviewid.text =    "min=" + min +  "\n"  + " resmin=" + "  [" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "  [" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "  [" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
+textviewid.text =    "min=" + min +  "\n"  + " resmin=" + "  [" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "/[" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "/[" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
                      " res=" + "  [" + res[0][0] + "]" + "  [" + res[0][1] + "]"  + "  [" + res[0][2] + "]"   +
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
