@@ -91,6 +91,8 @@ class MainActivity : AppCompatActivity() {
    
    private var crn_ = Array<Float>(20){0.0f} 
    private var    res =  Array(20){ Array<Int>(20){0} } 
+   private var res_rr =  Array(10) { Array(20){ Array<Floatt>(10){10} } }
+   
    private var resmin =  Array(20){ Array<Int>(2){10} } 
   
     private var dir = 0
@@ -161,6 +163,12 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][5] = arrayOf<Int>(  2,  1,  0,  3, 10, 10, 10, 10, 10, 10) 
      dir_rr[0][6] = arrayOf<Int>(  3,  2,  1,  0, 10, 10, 10, 10, 10, 10) 
      dir_rr[0][7] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
+
+     res_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
+
+
+
+
      
      
  // Filling sample array
@@ -297,6 +305,13 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
             }
        jj = jj +1
 }   
+
+jj=0
+while (jj >=0 && jj<=i)  // index of min ...
+{
+        res_rr
+resmin[i][0]=jj; resmin[i][1]=jjj 
+
 
 
 
