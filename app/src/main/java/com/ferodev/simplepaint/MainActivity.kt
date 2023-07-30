@@ -90,11 +90,11 @@ class MainActivity : AppCompatActivity() {
    private var dir_crn =  Array<Int>(10){10}  
    
    private var crn_ = Array<Float>(10){0.0f} 
-   private var    res =  Array(10){ Array<Int>(20){10} } 
+   private var    res =  Array(10){ Array<Int>(20){0} } 
    private var resmin =  Array(10){ Array<Int>(2){10} } 
   
     private var dir = 0
-    private var min = 1000
+    private var min = 10
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
