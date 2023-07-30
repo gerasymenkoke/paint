@@ -90,11 +90,14 @@ class MainActivity : AppCompatActivity() {
    private var dir_crn =  Array<Int>(20){10}  
    
    private var crn_ = Array<Float>(20){0.0f} 
-   private var    res =  Array(20){ Array<Int>(20){0} } 
-   private var res_rr =  Array(10) { Array(20){ Array<Floatt>(10){10} } }
+   private var dir_res =  Array(20){ Array<Int>(20){0} } 
+   private var res =      Array(20){ Array<Float>(20){0} } 
+   private var rr =  Array(10) { Array(20){ Array<Float>(10){10} } }
    
-   private var resmin =  Array(20){ Array<Int>(2){10} } 
-  
+   private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
+   private var dir_resmin =  Array(20){ Array<Float>(2){10} } 
+
+   
     private var dir = 0
     private var min = 10
     
@@ -165,7 +168,7 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][6] = arrayOf<Int>(  3,  2,  1,  0, 10, 10, 10, 10, 10, 10) 
      dir_rr[0][7] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
 
-     crn_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
+     rr[0][0] = arrayOf<Float>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
 
 
 
@@ -275,7 +278,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
     while (j >=0 && j<=9) {   //  comparing sequence all current directions dir_cr 0..9 and array of etalins dir_rr; values are directions 0,1,2,3: South-East Sorth-West North-West North-East 
                                   
                                  if ( Math.abs (dir_crn[j] - dir_rr[jj] [jjj] [j] ) > 0)  {
-                                                                               res[jj] [jjj] =  res[jj] [jjj] +  1
+                                                                               dir_res[jj] [jjj] =  dir_res[jj] [jjj] +  1
                                                                                         }
                          j=j+1
    
@@ -287,7 +290,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 
 
 
-// finding min res value is max resemble differ (res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
+// finding min res value is max resemble differ (dir_res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
     i=0  
     jj=0
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
@@ -295,10 +298,10 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( res[jj][jjj] < min )  { resmin[0][0]=jj; resmin[0][1]=jjj; resmin[1][0]=10;resmin[1][1]=10; resmin[2][0]=10; resmin[2][1]=10;
-                                             i=1; min = res[jj][jjj] 
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10;resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;
+                                             i=1; min = dir_res[jj][jjj] 
                                            }
-              else { if ( res[jj][jjj] == min )  { resmin[i][0]=jj; resmin[i][1]=jjj 
+              else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                              i=i+1  
                                                  } 
                    }
@@ -307,20 +310,69 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
        jj = jj +1
 }   
 
+
 jj=0
-while (jj >=0 && jj<=i)  // index of min ...
-{
-        crn_rr
-resmin[i][0]=jj; resmin[i][1]=jjj 
+while (jj >=0 && jj<=i-1)  // index of min rr_ ...
+ {
+ 
+      
+           j=0
+    while (j >=0 && j<=9)        //   
+                           {
+                               var ii = dir_resmin[jj][0] ; var iii = dir_resmin[jj][1]   
+                               resmin[jj] [j] = Math.abs  ( crn_[ii][iii][j] - rr[ii] [iii] [j] )                                                                                      }
+                         j=j+1
+   
+                           }
+          
+            jj = jj + 1
+ }
+
+                 j=0
+                 min = 100  
+                 while (j >=0 && j<=9)        //   
+                           {
+                              jj=0
+                                                     
+                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
+                                {
+                                  if  (resmin[jj] [j] < min) {     iresmin [j] = jj;   min = resmin[jj] [j]   }  
+                                  jj = jj + 1 
+                                }
+                         j=j+1
+   
+                           }
+
+                 j=0
+                 min = 100  
+                 while (j >=0 && j<=9)        //   
+                           {
+                              jj=0
+                                                     
+                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
+                                {
+                                  if  (resmin[jj] [j] < min) {     iresmin [j] = jj;   min = resmin[jj] [j]   }  
+                                  jj = jj + 1 
+                                }
+                         j=j+1
+   
+                           }
 
 
 
 
 
 
+ 
+
+
+
+
+ 
+ 
                   
 
-textviewid.text =    "min_res=" + min +  "\n"  + " resmin=" + "  [" + resmin[0][0] + "]" + "[" + resmin[0][1] + "]" + "/[" + resmin[1][0] + "]" + "[" + resmin[1][1] + "]" + "/[" + resmin[2][0] + "]" + "[" + resmin[2][1] + "]"    +  
+textviewid.text =    "min_res=" + min +  "\n"  + " dir_resmin=" + "  [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
                //      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
