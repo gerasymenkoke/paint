@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][6] = arrayOf<Int>(  3,  2,  1,  0, 10, 10, 10, 10, 10, 10) 
      dir_rr[0][7] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
 
-     res_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
+     crn_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
 
 
 
@@ -309,7 +309,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 jj=0
 while (jj >=0 && jj<=i)  // index of min ...
 {
-        res_rr
+        crn_rr
 resmin[i][0]=jj; resmin[i][1]=jjj 
 
 
