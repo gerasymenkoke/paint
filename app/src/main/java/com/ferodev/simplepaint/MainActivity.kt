@@ -99,7 +99,8 @@ class MainActivity : AppCompatActivity() {
    private var iresmin =  Array<Int>(20){10}  
    
     private var dir = 0
-    private var min = 10.0f
+    private var min = 10
+    private var minres = 100.0f
     
      private var rrx_ = Array<Float>(10){0.0f} 
      private var rry_ = Array<Float>(10){0.0f} 
@@ -332,14 +333,14 @@ while (jj >=0 && jj<=i-1)
                      }
 
                  j=0
-                 min = 100  
+                 minres = 100.0f  
                  while (j >=0 && j<=9)        //   
                            {
                               jj=0
                                                      
                                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
                                 {
-                                  if  (resmin[jj] [j] < min) {     iresmin [j] = jj;   min = resmin[jj] [j]   }  
+                                  if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
                                   jj = jj + 1 
                                 }
                          j=j+1
