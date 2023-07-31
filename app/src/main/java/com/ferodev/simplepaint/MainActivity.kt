@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
    private var rr =  Array(10) { Array(20){ Array<Float>(10){10} } }
    
    private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
-   private var dir_resmin =  Array(20){ Array<Float>(2){10} } 
+   private var resmin =  Array(20){ Array<Float>(2){10} } 
 
    
     private var dir = 0
@@ -314,21 +314,22 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 
 
 jj=0
-while (jj >=0 && jj<=i-1)  // index of min rr_ ...
- {
+while (jj >=0 && jj<=i-1)  
+                    {
  
       
            j=0
-    while (j >=0 && j<=9)        //   
+    while (j >=0 && j<=9)         
                            {
-                               var ii = dir_resmin[jj][0] ; var iii = dir_resmin[jj][1]   
-                               resmin[jj] [j] = Math.abs  ( crn_[ii][iii][j] - rr[ii] [iii] [j] )                                                                                      }
-                         j=j+1
-   
+                               var ii = dir_resmin[jj][0] 
+                               var iii = dir_resmin[jj][1]   
+                               resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
+                               j=j+1
                            }
-          
+                                             
             jj = jj + 1
- }
+                        
+                     }
 
                  j=0
                  min = 100  
