@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity() {
    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }
    
    private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
-   private var resmin =  Array(20){ Array<Float>(2){10.0f} } 
-
+   private var  resmin =  Array(20){ Array<Float>(2){10.0f} } 
+   private var iresmin =  Array<Int>(20){10}  
    
     private var dir = 0
     private var min = 10
@@ -300,7 +300,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10;resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10;resmin[1][1]=10.0f; dir_resmin[2][0]=10.0f; dir_resmin[2][1]=10.0f;
                                              i=1; min = dir_res[jj][jjj] 
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
