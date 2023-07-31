@@ -343,23 +343,39 @@ while (jj >=0 && jj<=i-1)  // index of min rr_ ...
    
                            }
 
-                 j=0
-                 min = 100  
-                 while (j >=0 && j<=9)        //   
+                jj=0
+                while (jj >=0 && jj<=i-1)  
+                   {                  
+                         while (j >=0 && j<=9)        //   
                            {
-                              jj=0
-                                                     
-                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
-                                {
-                                  if  (resmin[jj] [j] < min) {     iresmin [j] = jj;   min = resmin[jj] [j]   }  
-                                  jj = jj + 1 
-                                }
-                         j=j+1
-   
+                              jj=0                                                     
+                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
+                                  j = j + 1 
                            }
+                           
+                         jj=jj+1
+   
+                   }
+
+// choice max from res[]
+  jj=0
+                while (jj >=0 && jj<=i-1)  
+                   {                  
+                         while (j >=0 && j<=9)        //   
+                           {
+                              jj=0                                                     
+                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
+                                  j = j + 1 
+                           }
+                           
+                         jj=jj+1
+   
+                   }
 
 
 
+
+                   
 
 
 
