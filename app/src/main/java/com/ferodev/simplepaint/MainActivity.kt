@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
    
    private var crn_ = Array<Float>(20){0.0f} 
    private var dir_res =  Array(20){ Array<Int>(20){0} } 
-   private var res =   Array(20){ Array<Float>(20){0.0f} } 
+   private var res =    Array<Float>(20){0.0f}  
    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }
    
    private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
