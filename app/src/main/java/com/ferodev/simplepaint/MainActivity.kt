@@ -350,9 +350,10 @@ while (jj >=0 && jj<=i-1)
                 jj=0
                 while (jj >=0 && jj<=i-1)  
                    {                  
-                         while (j >=0 && j<=9)        //   
+                        j=0        
+                       while (j >=0 && j<=9)        //   
                            {
-                              jj=0                                                     
+                                                                           
                                                    if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1    }  
                                   j = j + 1 
                            }
@@ -366,9 +367,10 @@ while (jj >=0 && jj<=i-1)
                    jj=0
                 while (jj >=0 && jj<=i-1)  
                    {                  
-                         while (j >=0 && j<=9)        //   
+                       j=0     
+                          while (j >=0 && j<=9)        //   
                            {
-                              j=0                                                     
+                                                                              
                                 if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
                                   j = j + 1 
                            }
