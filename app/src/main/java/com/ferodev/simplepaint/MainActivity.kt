@@ -354,7 +354,7 @@ while (jj >=0 && jj<=i-1)
                        while (j >=0 && j<=9)        //   
                            {
                                                                            
-                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1    }  
+                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
                                   j = j + 1 
                            }
                            
@@ -363,7 +363,7 @@ while (jj >=0 && jj<=i-1)
                    }
 
 // choice max near by  from res[]
- var max=0
+ var max=0.0f
                    jj=0
                 while (jj >=0 && jj<=i-1)  
                    {                  
@@ -371,7 +371,7 @@ while (jj >=0 && jj<=i-1)
                           while (j >=0 && j<=9)        //   
                            {
                                                                               
-                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
+                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
                                   j = j + 1 
                            }
 
