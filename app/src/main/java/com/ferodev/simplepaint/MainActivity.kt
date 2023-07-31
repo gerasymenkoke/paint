@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
    
    private var crn_ = Array<Float>(20){0.0f} 
    private var dir_res =  Array(20){ Array<Int>(20){0} } 
-   private var res =      Array(20){ Array<Float>(20){0} } 
+   private var res =   Array(20){ Array<Float>(20){0} } 
    private var rr =  Array(10) { Array(20){ Array<Float>(10){10} } }
    
    private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
@@ -161,7 +161,7 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
      
-     dir_crn_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
+     dir_rr[0][0] = arrayOf<Int>(  0,  1,  2,  3, 10, 10, 10, 10, 10, 10)
      dir_rr[0][1] = arrayOf<Int>(  0,  3,  2,  1, 10, 10, 10, 10, 10, 10)
      dir_rr[0][2] = arrayOf<Int>(  1,  2,  3,  0, 10, 10, 10, 10, 10, 10) 
      dir_rr[0][3] = arrayOf<Int>(  1,  0,  3,  2, 10, 10, 10, 10, 10, 10)   
