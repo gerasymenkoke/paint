@@ -118,6 +118,8 @@ class MainActivity : AppCompatActivity() {
      private var resy = Array<Float>(10){0.0f} 
      private var resxy = Array<Float>(10){0.0f} 
      private var result = 0
+     private var res0 = 0
+     private var res1 = 0
      
  //   private var aa = Array<Float>(100){"0"} 
 
@@ -357,18 +359,22 @@ while (jj >=0 && jj<=i-1)  // index of min rr_ ...
    
                    }
 
-// choice max from res[]
-  jj=0
+// choice max near by  from res[]
+ var max=0
+                   jj=0
                 while (jj >=0 && jj<=i-1)  
                    {                  
                          while (j >=0 && j<=9)        //   
                            {
-                              jj=0                                                     
-                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
+                              j=0                                                     
+                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] +1;    }  
                                   j = j + 1 
                            }
-                           
-                         jj=jj+1
+
+                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
+                                                   max = res [jj]  
+                                                 }
+                          jj=jj+1
    
                    }
 
@@ -388,7 +394,7 @@ while (jj >=0 && jj<=i-1)  // index of min rr_ ...
  
                   
 
-textviewid.text =    "min_res=" + min +  "\n"  + " dir_resmin=" + "  [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  
+textviewid.text =    "res=" + res0 + "," res1 +  "\n"  + " dir_resmin=" + "  [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
                //      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
