@@ -78,19 +78,19 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"} // text Array for result monitoring
   
     private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
-    private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }  // array of etalons(20) for every sample(10pcs: 0,1,...9,+..=)
-    private var dir_res =  Array(20){ Array<Int>(20){0} }  // array difference between 
+    private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
+    private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_res =  Array(20){ Array<Int>(20){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
-    private var crn_ = Array<Float>(20){0.0f} 
+    private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
+    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }  //  array of value for n_etalons(20) for every sample(10pcs)
    
-    private var res =    Array<Float>(20){0.0f}  
-    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }
-   
-   private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
-   private var  resmin =  Array(20){ Array<Float>(2){10.0f} } 
-   private var iresmin =  Array<Int>(20){10}  
-   
+    private var dir_resmin =  Array(20){ Array<Int>(2){10} }  // dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var  resmin =  Array(20){ Array<Float>(2){10.0f} } 
+    private var iresmin =  Array<Int>(20){10}  
+
+    private var res =    Array<Int>(20){0}  // array of  counters of max value each etalon from array  with min directions iresmin
+
     private var dir = 0
     private var min = 10
     private var minres = 100.0f
@@ -241,7 +241,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                                   crn_[i]=( ( crn_[i] * 100.0).roundToInt() / 100.0).toFloat() 
                                   i=i+1 
                                 }
-    j = j+1
+    j = j+1ccc
                       }
               
                 
@@ -298,7 +298,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
                                              i=1; min = dir_res[jj][jjj] 
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
-                                             i=i+1  
+                                             i=i+1  c
                                                  } 
                    }
            jjj = jjj +1
