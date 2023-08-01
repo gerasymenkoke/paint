@@ -65,34 +65,27 @@ class MainActivity : AppCompatActivity() {
     private var isRectangleIconClicked = false
     private var isCircleIconClicked = false
     private var isPaletteIconClicked = false
-  // private var xxx = "vvv"
-    private var btn = 1
-  //  private var image =  findViewById(R.id.btnPencil)
-  private var j = 0
-  private var i = 0
-    
-   private var jj = 0  
-       private var jjj = 0  
+ 
+    private var btn = 1  // button ft
+    // counters and temporaries
+    private var j = 0
+    private var i = 0
+    private var jj = 0  
+    private var jjj = 0  
     private var k=0
-     private var old=0
-    
-    private var aaa = Array<String>(100){"0"}
-
-    private var aaacr = Array<String>(100){"0"}
-    
-    private var rraaa0 = Array<String>(100){"0"}
-    private var rraaa1 = Array<String>(100){"0"}
-//   private var dir_crx = Array<Float>(4){0.0f} 
-//   private var dir_cry = Array<Float>(4){0.0f} 
+    private var old=0
    
-   private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }
-   private var dir_cr =  Array<Int>(20){10}  
-   private var dir_crn =  Array<Int>(20){10}  
+    private var aaa = Array<String>(100){"0"} // text Array for result monitoring
+  
+    private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
+    private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after compressing -delete repeated 0,1,2,3 and 10 inside
+    private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }  // array of etalons(20) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_res =  Array(20){ Array<Int>(20){0} }  // array difference between 
+    // crx_ , cry_ - import from drawpencil.kt as companion object
+    private var crn_ = Array<Float>(20){0.0f} 
    
-   private var crn_ = Array<Float>(20){0.0f} 
-   private var dir_res =  Array(20){ Array<Int>(20){0} } 
-   private var res =    Array<Float>(20){0.0f}  
-   private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }
+    private var res =    Array<Float>(20){0.0f}  
+    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }
    
    private var dir_resmin =  Array(20){ Array<Int>(2){10} } 
    private var  resmin =  Array(20){ Array<Float>(2){10.0f} } 
