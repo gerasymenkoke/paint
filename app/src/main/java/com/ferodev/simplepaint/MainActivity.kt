@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
     private var minres = 100.0f // temporary variable  resmin[jj] [j] < minres
    
-    private var max=0.0f     // res [jj] > max res temporary for max coincedence finding
+    private var max=0   // res [jj] > max res temporary for max coincedence finding
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
                          // in array with min difference(coincedence), res1 - number  
     private var res1 = 0 // look up
@@ -287,7 +287,7 @@ while (jj >=0 && jj<=i-1)
                        while (j >=0 && j<=9)        //   
                            {
                                                                            
-                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
+                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
                                   j = j + 1 
                            }
                            
@@ -296,7 +296,7 @@ while (jj >=0 && jj<=i-1)
                    }
 
 // choice max near by  from res[]
- var max=0.0f
+ var max=0
                    jj=0
                 while (jj >=0 && jj<=i-1)  
                    {                  
@@ -304,7 +304,7 @@ while (jj >=0 && jj<=i-1)
                           while (j >=0 && j<=9)        //   
                            {
                                                                               
-                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
+                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
                                   j = j + 1 
                            }
 
