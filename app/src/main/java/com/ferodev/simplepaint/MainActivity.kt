@@ -5,53 +5,24 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.os.Bundle
 import android.view.View
-
-
 import android.view.MotionEvent
-
-
-
-
 import android.widget.ImageButton
-
 import androidx.appcompat.app.AppCompatActivity
 import com.ferodev.simplepaint.databinding.ActivityMainBinding
-
-
 import android.text.Editable
 import android.text.TextWatcher
 import android.database.ContentObserver 
-
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.yyy
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.zzz
-
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rxx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ryy
-
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
-
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
-
 import kotlin.math.abs
 import kotlin.math.roundToInt
-
-
-
-
-//import com.ferodev.simplepaint.canvas.DrawPencil.Companion.j
-
-
-
-
-
-// import kotlinx.coroutines.*
-
-
-
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -60,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
+     // from poperednikiv
+    var context=0
+    var attrs=0
+    var defStyleAttr=0
     private var isPencilIconClicked = false
     private var isArrowIconClicked = false
     private var isRectangleIconClicked = false
@@ -85,68 +60,33 @@ class MainActivity : AppCompatActivity() {
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }  //  array of value for n_etalons(20) for every sample(10pcs)
    
-    private var dir_resmin =  Array(20){ Array<Int>(2){10} }  // dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(20){ Array<Float>(2){10.0f} } 
-    private var iresmin =  Array<Int>(20){10}  
-
-    private var res =    Array<Int>(20){0}  // array of  counters of max value each etalon from array  with min directions iresmin
-
-    private var dir = 0
-    private var min = 10
-    private var minres = 100.0f
+    private var dir_resmin =  Array(20){ Array<Int>(2){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var  resmin =  Array(20){ Array<Float>(2){10.0f} } // array of values for each etalon(2 pcs)  with min difference(coincedence)
+    private var iresmin =  Array<Int>(20){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var res =    Array<Int>(20){0}  // array of  counters for  each etalon from iresmin array
+   
+    private var min = 10 // temporary variable min = dir_res[jj][jjj] 
+    private var minres = 100.0f // temporary variable  resmin[jj] [j] < minres
+   
+    private var max=0.0f     // res [jj] > max res temporary for max coincedence finding
+    private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
+                         // in array with min difference(coincedence), res1 - number  
+    private var res1 = 0 // look up
     
-     private var rrx_ = Array<Float>(10){0.0f} 
-     private var rry_ = Array<Float>(10){0.0f} 
-
-     private var sortcrx_ = Array<Float>(10){0.0f} 
-     
-
-
-     
-     private var rrx  = Array(10){ Array<Float>(10){0.0f} }
-     private var rry  = Array(10){ Array<Float>(10){0.0f} }
-
-
-     
-     private var resx = Array<Float>(10){0.0f} 
-     private var resy = Array<Float>(10){0.0f} 
-     private var resxy = Array<Float>(10){0.0f} 
-     private var result = 0
-     private var res0 = 0
-     private var res1 = 0
-     
- //   private var aa = Array<Float>(100){"0"} 
-
-
-
-    
-  var context=0
-    var attrs=0
-    var defStyleAttr=0
-
-
-        
+       
          companion object {
         var path = Path()
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-     
-        
-                      }
+                          }
     
-           
-       
-    
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
              
         setContentView(binding.root)
      
-              
-        
-        
+         
         supportActionBar?.hide()
 
         binding.apply {
@@ -347,7 +287,7 @@ while (jj >=0 && jj<=i-1)
                        while (j >=0 && j<=9)        //   
                            {
                                                                            
-                                                   if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
+                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1.0f    }  
                                   j = j + 1 
                            }
                            
