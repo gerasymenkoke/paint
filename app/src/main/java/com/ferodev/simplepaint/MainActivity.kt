@@ -181,7 +181,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                                   crn_[i]=( ( crn_[i] * 100.0).roundToInt() / 100.0).toFloat() 
                                   i=i+1 
                                 }
-    j = j+1ccc
+    j = j+1
                       }
               
                 
@@ -238,8 +238,8 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
                                              i=1; min = dir_res[jj][jjj] 
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
-                                             i=i+1  c
-                                                 } 
+                                                       i=i+1  
+                                                     } 
                    }
            jjj = jjj +1
             }
