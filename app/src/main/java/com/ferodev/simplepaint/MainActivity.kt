@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(10) { Array(20){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_rr = Array(20) { Array(20){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(20){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var rr =  Array(10) { Array(20){ Array<Float>(10){10.0f} } }  //  array of value for n_etalons(20) for every sample(10pcs)
+    private var rr =  Array(20) { Array(20){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(20) for every sample(10pcs)
    
-    private var dir_resmin =  Array(20){ Array<Int>(2){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(20){ Array<Float>(2){10.0f} } // array of values for each etalon(2 pcs)  with min difference(coincedence)
+    private var dir_resmin =  Array(20){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var  resmin =  Array(20){ Array<Float>(10){10.0f} } // array of values for each etalon(2 pcs)  with min difference(coincedence)
     private var iresmin =  Array<Int>(20){10}  // array of index for of values resmin array with min difference(coincedence) 
     private var res =    Array<Int>(20){0}  // array of  counters for  each etalon from iresmin array
    
