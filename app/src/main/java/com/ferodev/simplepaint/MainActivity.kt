@@ -148,11 +148,14 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][2] = arrayOf<Int>( 3,  0,  1,  2,  3,  0, 10, 10, 10, 10) 
       dir_rr[2][3] = arrayOf<Int>( 3,  0,  1,  0,  3,  0, 10, 10, 10, 10) 
       dir_rr[2][4] = arrayOf<Int>( 3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+      dir_rr[2][5] = arrayOf<Int>( 3,  1,  2,  0, 10, 10, 10, 10, 10, 10)
+      dir_rr[2][6] = arrayOf<Int>( 3,  0,  1,  2,  0, 10, 10, 10, 10, 10) 
       
       rr[2][2] = arrayOf<Float>(  -0.04f,  0.24f,  0.19f,  -0.08f, 0.06f, 0.23f,  0.0f,  0.0f,  0.0f,  0.0f)
       rr[2][3] = arrayOf<Float>(  -0.79f,  0.58f,  0.30f,   0.19f, 0.00f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-      rr[2][4] = arrayOf<Float>(  -0.35f,  0.23f,  0.47f,   0.21f, 0.00f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-
+      rr[2][4] = arrayOf<Float>(  -0.46f,  0.31f,  0.02f,   0.14f, 0.00f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      rr[2][5] = arrayOf<Float>(  -0.32f,  0.51f, -0.34f,   0.45f, 0.00f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      rr[2][6] = arrayOf<Float>(  -0.75f,  0.71f,  0.01f,  -0.20f, 0.33f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
