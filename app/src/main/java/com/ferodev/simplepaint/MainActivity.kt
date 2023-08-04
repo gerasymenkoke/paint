@@ -102,15 +102,19 @@ class MainActivity : AppCompatActivity() {
      rr[0][1] = arrayOf<Float>(  0.33f,  -0.31f,  -0.4f,  -0.11f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
      dir_rr[0][2] = arrayOf<Int>(  1,  2,  3,  0, 10, 10, 10, 10, 10, 10) 
+     rr[0][2] = arrayOf<Float>(  0.18f,  -0.27f,  -0.31f,  0.2f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
      dir_rr[0][3] = arrayOf<Int>(  1,  0,  3,  2, 10, 10, 10, 10, 10, 10)   
      rr[0][3] = arrayOf<Float>(  0.05f,  0.31f,  0.16f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
-     dir_rr[0][4] = arrayOf<Int>(  2,  3,  1,  0, 10, 10, 10, 10, 10, 10) 
+    // dir_rr[0][4] = arrayOf<Int>(  2,  3,  1,  0, 10, 10, 10, 10, 10, 10) 
+     
      
      dir_rr[0][5] = arrayOf<Int>(  2,  1,  0,  3, 10, 10, 10, 10, 10, 10) 
+     rr[0][5] = arrayOf<Float>(  -0.2f,  -0.09f,  0.27f,  0.08f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
      dir_rr[0][6] = arrayOf<Int>(  3,  2,  1,  0, 10, 10, 10, 10, 10, 10) 
+     rr[0][6] = arrayOf<Float>(  0.07f,  -0.28f,  0.0f,  0.42f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
      dir_rr[0][7] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
      rr[0][7] = arrayOf<Float>(  -0.2f,  0.4f,  0.16f,  -0.37f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
@@ -124,25 +128,31 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
      dir_rr[1][0] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][0] = arrayOf<Float>(  -0.54f,  0.41f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
      dir_rr[1][1] = arrayOf<Int>(  3,  0, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][1] = arrayOf<Float>(  -0.42f,  0.53f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
      dir_rr[1][2] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
-     
+     rr[1][2] = arrayOf<Float>(  -0.38f,  0.33f,  0.13f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
           
      dir_rr[1][3] = arrayOf<Int>(  3,  1,  3, 10, 10, 10, 10, 10, 10, 10)
      rr[1][3] = arrayOf<Float>(  -0.55f,  0.56f,  0.22f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
-     dir_rr[1][4] = arrayOf<Int>(  3,  1,  1,  3, 10, 10, 10, 10, 10, 10)                   
+     // dir_rr[1][4] = arrayOf<Int>(  3,  1,  1,  3, 10, 10, 10, 10, 10, 10)                   
+     
      
      dir_rr[1][5] = arrayOf<Int>(  3,  0,  1, 10, 10, 10, 10, 10, 10, 10)      
+     rr[1][5] = arrayOf<Float>(  -0.39f,  0.02f,  -0.04f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
      dir_rr[1][6] = arrayOf<Int>(  3,  1,  2,  0, 10, 10, 10, 10, 10, 10)  
      rr[1][6] = arrayOf<Float>(  -0.77f,  0.35f,  -0.12f,  0.26f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
      dir_rr[1][7] = arrayOf<Int>(  0, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][7] = arrayOf<Float>(  0.56f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
        
      dir_rr[1][8] = arrayOf<Int>(  1, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][8] = arrayOf<Float>(  0.51f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
      
      dir_rr[1][9] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
      rr[1][9] = arrayOf<Float>(  -0.42f,  0.16f,  -0.08f,   0.05f, 0.00f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
@@ -172,7 +182,7 @@ class MainActivity : AppCompatActivity() {
       jj = 2                  
   
       dir_rr[2][0] = arrayOf<Int>( 3,  0,  1,  3,  0, 10, 10, 10, 10, 10) 
-
+      rr[2][0] = arrayOf<Float>(  -0.66f,  0.53f,  0.35f,  -0.04f, 0.24f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
       dir_rr[2][1] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)
       rr[2][1] = arrayOf<Float>(  -0.24f,  -0.1f,  0.09f,  0.24f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
@@ -317,7 +327,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10; dir_resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10; dir_resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;dir_resmin[3][0]=10; dir_resmin[3][1]=10;
                                              i=1; min = dir_res[jj][jjj] 
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
