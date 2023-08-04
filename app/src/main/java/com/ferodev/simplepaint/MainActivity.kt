@@ -161,6 +161,10 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][14] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)   
      rr[1][11] = arrayOf<Float>(  -1.82f,  0.39f,  0.22f,  0.16f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+     dir_rr[1][15] = arrayOf<Int>( 3,  1,  0,  1,  2,  3,  0, 10, 10, 10)   
+     rr[1][15] = arrayOf<Float>(  -0.38f,  0.32f,  0.17f,  0.08f, -0.13f, 0.04f,  0.07f,  0.0f,  0.0f,  0.0f)
+
+
      
      
 // Filling sample array 
@@ -212,7 +216,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][14] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)
       rr[2][14] = arrayOf<Float>(  -0.36f,  0.56f,  0.04f,  0.46f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-
+      dir_rr[2][15] = arrayOf<Int>( 1,  2,  3,  0,  1,  3,  0, 10, 10, 10)
+      rr[2][15] = arrayOf<Float>(  -0.07f, -0.21f,  -0.46f,  0.43f, 0.24f, 0.05f,  0.25f,  0.0f,  0.0f,  0.0f)
 
 
 
@@ -409,7 +414,7 @@ while (jj >=0 && jj<=i-1)
  
                   
 
-textviewid.text =    "res=[" + res0 + "][" + res1 +  "]\n"    +    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  
+textviewid.text =    "res=[" + res0 + "][" + res1 +  "]\n"    +    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                //      "\n" + aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
                //      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
