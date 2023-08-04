@@ -171,7 +171,7 @@ class MainActivity : AppCompatActivity() {
 
       
       dir_rr[2][1] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)
-
+      rr[2][1] = arrayOf<Float>(  -0.24f,  -0.1f,  0.09f,  0.24f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
       dir_rr[2][2] = arrayOf<Int>( 3,  0,  1,  2,  3,  0, 10, 10, 10, 10) 
       rr[2][2] = arrayOf<Float>(  -0.04f,  0.24f,  0.19f,  -0.08f, 0.06f, 0.23f,  0.0f,  0.0f,  0.0f,  0.0f)
@@ -196,11 +196,27 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[2][9] = arrayOf<Int>( 2,  3,  0,  1,  3,  0, 10, 10, 10, 10)
       rr[2][9] = arrayOf<Float>(  -0.2f,  -0.36f,  0.33f,   0.16f, 0.06f, 0.15f,  0.0f,  0.0f,  0.0f,  0.0f)
-     
-     
-    
+      
+      dir_rr[2][10] = arrayOf<Int>( 2,  3,  0,  1,  3,  0, 10, 10, 10, 10)
+      rr[2][10] = arrayOf<Float>(  -0.48f,  -0.28f,  0.34f,   0.16f, 0.02f, 0.21f,  0.0f,  0.0f,  0.0f,  0.0f)
+      
+      dir_rr[2][11] = arrayOf<Int>( 2,  3,  0,  1,  2,  3, 0, 10, 10, 10)
+      rr[2][11] = arrayOf<Float>(  -0.48f,  -1.24f,  0.54f,   0.43f, -0.07f, 0.15f,  0.28f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[2][12] = arrayOf<Int>( 1,  3,  0,  1,  2,  3, 0, 10, 10, 10)
+      rr[2][12] = arrayOf<Float>(  -0.2f,  -0.19f,  0.61f,   0.16f, -0.04f, 0.1f,  0.26f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[2][13] = arrayOf<Int>( 2,  3,  0,  1,  3,  0, 10, 10, 10, 10)
+      rr[2][13] = arrayOf<Float>(  -0.2f,  -0.27f,  0.27f,   0.2f, -0.04f, 0.18f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[2][14] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)
+      rr[2][14] = arrayOf<Float>(  -0.36f,  0.56f,  0.04f,  0.46f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
+
+
+
+      
 
             
                btnPencil.setOnClickListener { 
