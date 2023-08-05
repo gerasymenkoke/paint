@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(20){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_rr = Array(20) { Array(30){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(20){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
@@ -247,6 +247,10 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][19] = arrayOf<Int>( 3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
       rr[2][19] = arrayOf<Float>(  -0.16f,  0.35f,  0.25f,   0.23f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[2][20] = arrayOf<Int>( 3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+      rr[2][20] = arrayOf<Float>(  -0.07f,  0.14f,  0.14f,   0.2f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+
 
       
 
@@ -317,7 +321,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
             {
     
                 j=0
@@ -342,7 +346,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
             {
                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10; dir_resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;dir_resmin[3][0]=10; dir_resmin[3][1]=10;
                                              i=1; min = dir_res[jj][jjj] 
