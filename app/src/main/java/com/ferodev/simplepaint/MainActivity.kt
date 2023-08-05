@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(30){ Array<Int>(10){10} } }  // array of directions for n_etalons(20) for every sample(10pcs: 0,1,...9,+..=)
-    private var dir_res =  Array(20){ Array<Int>(20){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+    private var dir_rr = Array(20) { Array(30){ Array<Int>(10){10} } }  // array of directions for n_etalons(30) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_res =  Array(20){ Array<Int>(30){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var rr =  Array(20) { Array(30){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
@@ -346,7 +346,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10; dir_resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;dir_resmin[3][0]=10; dir_resmin[3][1]=10;
                                              i=1; min = dir_res[jj][jjj] 
