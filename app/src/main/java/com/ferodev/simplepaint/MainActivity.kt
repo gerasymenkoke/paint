@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     private var i = 0
     private var jj = 0  
     private var jjj = 0  
-    private iii = 0
+    private var iii = 0
     private var k=0
     private var old=0
    
