@@ -61,10 +61,10 @@ class MainActivity : AppCompatActivity() {
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var rr =  Array(20) { Array(30){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
    
-    private var dir_resmin =  Array(20){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(20){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var iresmin =  Array<Int>(20){10}  // array of index for of values resmin array with min difference(coincedence) 
-    private var res =    Array<Int>(20){0}  // array of  counters for  each etalon from iresmin array
+    private var dir_resmin =  Array(30){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var  resmin =  Array(30){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var iresmin =  Array<Int>(30){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var res =    Array<Int>(30){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
     private var minres = 100.0f // temporary variable  resmin[jj] [j] < minres
@@ -391,7 +391,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
             {
                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; 
                                                iii=1; 
-                                               while ( iii<=19) { 
+                                               while ( iii<=29) { 
                                                dir_resmin[iii][0]=10; dir_resmin[iii][1]=10
                                                        iii=iii+1
                                                                 }
