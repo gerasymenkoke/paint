@@ -387,7 +387,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
             {
                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; 
                                                iii=1; 
