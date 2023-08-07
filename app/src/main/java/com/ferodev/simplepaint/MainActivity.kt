@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     private var i = 0
     private var jj = 0  
     private var jjj = 0  
+    private iii = 0
     private var k=0
     private var old=0
    
@@ -388,8 +389,13 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=19) // quantity of variants for each/all numbers
             {
-               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; dir_resmin[1][0]=10; dir_resmin[1][1]=10; dir_resmin[2][0]=10; dir_resmin[2][1]=10;dir_resmin[3][0]=10; dir_resmin[3][1]=10;
-                                             i=1; min = dir_res[jj][jjj] 
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; 
+                                               iii=1; 
+                                               while ( iii<=19) { 
+                                               dir_resmin[iii][0]=10; dir_resmin[iii][1]=10
+                                                       iii=iii+1
+                                                                }
+                                                    i=1; min = dir_res[jj][jjj] 
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                                        i=i+1  
