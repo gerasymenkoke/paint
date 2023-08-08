@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
     private var old=0
    
     private var aaa = Array<String>(100){"0"} // text Array for result monitoring
+    private var aaacr = Array<String>(100){"0"} // text Array for result monitoring
   
     private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
