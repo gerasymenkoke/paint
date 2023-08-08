@@ -231,7 +231,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][28] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)   
      rr[1][28] = arrayOf<Float>(  -0.49f,  0.53f,  0.22f,  0.09f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-
+     dir_rr[1][29] = arrayOf<Int>( 3,  0,  1,  3, 10, 10, 10, 10, 10, 10)
+     rr[1][29] = arrayOf<Float>(  -0.22f, 0.65f,  -0.16f,  0.15f,  0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
      
      
 // Filling sample array 
