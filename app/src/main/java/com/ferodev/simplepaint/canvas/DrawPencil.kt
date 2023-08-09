@@ -153,7 +153,7 @@ class DrawPencil @JvmOverloads constructor(
          
       
  
-                 if (N==2)
+                 if (N==1)
                        { crx_[j] = rx
                          cry_[j] = ry
                      // crx_[j] = crx_[j] + cry_[j]  
@@ -164,7 +164,7 @@ class DrawPencil @JvmOverloads constructor(
                       j = j + 1
                       N=1   
                        }    
-                   else   { N=N+1 }  
+                   else   { N=1 }  
                                    
                    // }
                            
