@@ -70,8 +70,8 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
-        var crx_ = Array<Float>(80){0.0f}
-        var cry_ = Array<Float>(80){0.0f} 
+        var crx_ = Array<Float>(800){0.0f}
+        var cry_ = Array<Float>(800){0.0f} 
 
         
         var rx = 0.0f
@@ -139,7 +139,7 @@ class DrawPencil @JvmOverloads constructor(
       if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
         {  
         
-            if (j >=1 && j<=79)
+            if (j >=1 && j<=790)
              {   rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
                  ry=(((y-y1)/y * 100.0).roundToInt() / 100.0).toFloat() 
                 
