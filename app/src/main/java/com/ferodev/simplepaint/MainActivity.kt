@@ -526,8 +526,8 @@ while (jj >=0 && jj<=i-1)
                   
 
 textviewid.text =    "res=[" + res0 + "][" + res1 +  "]\n"  +
-                      aaacr[0] + " " +aaacr[1] + " " + aaacr[2] + " " + aaacr[3] + " " + aaacr[4] + " " + aaacr[5] + " " + aaacr[6] + " " + aaacr[7] + " " + aaacr[8] + " " + aaacr[9]  +
-                      " " + aaacr[10] + " " + aaacr[11] + " " + aaacr[12] + " " + aaacr[13] + " " + aaacr[14] + " " + aaacr[15] + " " + aaacr[16] + " " + aaacr[17] + " " + aaacr[18] + " " + aaacr[19]
+                      aaacr[0] + " " +aaacr[4] + " " + aaacr[8] + " " + aaacr[12] + " " + aaacr[16] + " " + aaacr[20] + " " + aaacr[24] + " " + aaacr[28] + " " + aaacr[32] + " " + aaacr[36]  +
+                      " " + aaacr[40] + " " + aaacr[44] + " " + aaacr[46] + " " + aaacr[50] + " " + aaacr[54] + " " + aaacr[58] + " " + aaacr[64] + " " + aaacr[68] + " " + aaacr[72] + " " + aaacr[76]
 //    " res=" + "  [" + res[0][0] + "]" + "  [" + res[0][1] + "]"  + "  [" + res[0][2] + "]"   +
       //  +    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
      //                 "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +             
