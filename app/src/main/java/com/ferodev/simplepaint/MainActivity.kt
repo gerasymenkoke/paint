@@ -139,6 +139,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][13] = arrayOf<Int>(  2,  1,  0,  3,  2, 10, 10, 10, 10, 10)   
      rr[0][13] = arrayOf<Float>(  -0.3f,  0.08f,  0.27f,  0.14f, -0.27f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
+     dir_rr[0][14] = arrayOf<Int>(  2,  3,  0,  1,  2,  3,  1, 10, 10, 10)   
+     rr[0][14] = arrayOf<Float>(  -0.1f,  -0.12f,  0.08f,  0.07f, -0.06f, -0.03f, 0.0f, 0.0f, 0.0f, 0.0f)
 
 
      
@@ -345,6 +347,37 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][28] = arrayOf<Int>( 3,  0,  1,  10, 10, 10, 10, 10, 10, 10)
       rr[2][28] = arrayOf<Float>(  -0.26f,  0.32f,  0.39f,   0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+// Filling sample array 
+// 3
+      jj = 3                  
+  
+      dir_rr[3][0] = arrayOf<Int>( 3,  0,  1,  3,  0,  1,  2, 10, 10, 10) 
+      rr[3][0] = arrayOf<Float>(  -0.04f,  0.03f,  0.12f,  0.04f, 0.04f, 0.03f,  -0.02f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[3][1] = arrayOf<Int>( 3,  0,  1,  0,  3,  0,  1, 10, 10, 10) 
+      rr[3][1] = arrayOf<Float>(  0.07f,  0.02f,  0.07f,  0.04f, 0.03f, 0.03f,  0.02f,  0.0f,  0.0f,  0.0f)
+
+      
+// Filling sample array 
+// 4
+      jj = 4                  
+  
+      dir_rr[4][0] = arrayOf<Int>( 1,  0,  3,  1,  10,  10,  10, 10, 10, 10) 
+      rr[4][0] = arrayOf<Float>(  0.27f,  0.03f,  -0.35f,  0.02f, 0.04f, 0.03f,  -0.02f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[4][1] = arrayOf<Int>( 1,  0,  3,  2,  1,  10,  10, 10, 10, 10) 
+      rr[4][1] = arrayOf<Float>(  0.07f,  0.05f,  0.06f,  -0.32f,  0.03f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[4][2] = arrayOf<Int>( 1,  0,  3,  0,  2,  1,  0, 10, 10, 10) 
+      rr[4][2] = arrayOf<Float>(  0.03f,  0.03f,  0.07f,  0.02f, -0.38f,  0.04f,  0.05f,  0.0f,  0.0f,  0.0f)
+
+
+
+
+
+
+
+
       
 
             
@@ -411,7 +444,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 // result of test on comparing of numbers  direction sequences
                    
       jj=0
-while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
+while (jj >=0 && jj<=19)  // index of numbers 0, 1 ..
 {
           jjj=0
     while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
@@ -436,7 +469,7 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 // finding min res value is max resemble differ (dir_res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
     i=0  
     jj=0
-while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
+while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
     while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
