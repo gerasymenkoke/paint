@@ -56,16 +56,16 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(30){ Array<Int>(10){10} } }  // array of directions for n_etalons(30) for every sample(10pcs: 0,1,...9,+..=)
-    private var dir_res =  Array(20){ Array<Int>(30){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+    private var dir_rr = Array(20) { Array(40){ Array<Int>(10){10} } }  // array of directions for n_etalons(30) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var rr =  Array(20) { Array(30){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
+    private var rr =  Array(20) { Array(40){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
    
-    private var dir_resmin =  Array(30){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(30){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var iresmin =  Array<Int>(30){10}  // array of index for of values resmin array with min difference(coincedence) 
-    private var res =    Array<Int>(30){0}  // array of  counters for  each etalon from iresmin array
+    private var dir_resmin =  Array(40){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var  resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
     private var minres = 100.0f // temporary variable  resmin[jj] [j] < minres
@@ -234,7 +234,25 @@ class MainActivity : AppCompatActivity() {
 
      dir_rr[1][29] = arrayOf<Int>( 3,  0,  1,  3, 10, 10, 10, 10, 10, 10)
      rr[1][29] = arrayOf<Float>(  -0.22f, 0.65f,  -0.16f,  0.15f,  0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][30] = arrayOf<Int>( 3,  0,  1,  3, 10, 10, 10, 10, 10, 10)
+     rr[1][30] = arrayOf<Float>(  -0.01f, 0.07f,  0.07f,  0.03f,  0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][31] = arrayOf<Int>( 3,  1,  3,  0, 10, 10, 10, 10, 10, 10)   
+     rr[1][31] = arrayOf<Float>(  -0.01f,  0.24f,  0.08f,  0.05f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][32] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+     rr[1][32] = arrayOf<Float>(  0.0f,  0.14f,  0.07f,   0.11f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][33] = arrayOf<Int>(  3,  0,  2,  0,  3, 10, 10, 10, 10, 10)
+     rr[1][33] = arrayOf<Float>(  -0.03f,  0.17f,  -0.05f,   0.06f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][34] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+     rr[1][34] = arrayOf<Float>(  -0.03f,  0.05f,  0.1f,   0.09f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
      
+
+
      
 // Filling sample array 
 // 2
@@ -396,7 +414,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
             {
     
                 j=0
@@ -421,11 +439,11 @@ while (jj >=0 && jj<=2)  // index of numbers 0, 1 ..
 while (jj >=0 && jj<=2)  // index of numbers 0, 1, 2 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=29) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
             {
                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; 
                                                iii=1; 
-                                               while ( iii<=29) { 
+                                               while ( iii<=39) { 
                                                dir_resmin[iii][0]=10; dir_resmin[iii][1]=10
                                                        iii=iii+1
                                                                 }
