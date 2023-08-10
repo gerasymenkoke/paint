@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(100){"0"} // text Array for result monitoring
     private var aaacr = Array<String>(800){"0"} // text Array for result monitoring
   
-    private var dir_cr =  Array<Int>(20){10}  // array of directions current drawpencil (0,1,2,3)
+    private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
     private var dir_rr = Array(20) { Array(30){ Array<Int>(10){10} } }  // array of directions for n_etalons(30) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(30){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
@@ -347,7 +347,7 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
                      
-      while (j >=0 && j<=19) {
+      while (j >=0 && j<=799) {
     
    if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 }
    if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1 }
@@ -364,7 +364,7 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=19) {
+while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; crn_[i]=crx_[j] + cry_[j]; 
                                   crn_[i]=( ( crn_[i] * 100.0).roundToInt() / 100.0).toFloat() 
@@ -378,14 +378,14 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 
 // output as text current painted number in direction sequence
 j=0                    
-while (j >=0 && j<=790) {
-// if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crn_[j].toString() }
+while (j >=0 && j<=19) {
+if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crn_[j].toString() }
 
-   aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
+  // aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
     //  aaacr[j] =  "[" + j.toString() + "]=" + dir_cr[j].toString() + "  "
     
-                    j=j+40
+                    j=j+1
                      }
 
 
@@ -525,13 +525,12 @@ while (jj >=0 && jj<=i-1)
  
                   
 
-textviewid.text =    "res=[" + res0 + "][" + res1 +  "]\n"  +
-                      aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
-                      " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]
-//    " res=" + "  [" + res[0][0] + "]" + "  [" + res[0][1] + "]"  + "  [" + res[0][2] + "]"   +
-      //  +    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
-     //                 "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +             
-              
+textviewid.text =    "res=[" + res0 + "][" + res1 +  "]\n"  + " res=" + "  [" + res[0][0] + "]" + "  [" + res[0][1] + "]"  + "  [" + res[0][2] + "]"   +
+                      " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
+                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  + 
+                   
+        //  aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
+        //              " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
                     
                     
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
