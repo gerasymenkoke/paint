@@ -371,12 +371,77 @@ class MainActivity : AppCompatActivity() {
       dir_rr[4][2] = arrayOf<Int>( 1,  0,  3,  0,  2,  1,  0, 10, 10, 10) 
       rr[4][2] = arrayOf<Float>(  0.03f,  0.03f,  0.07f,  0.02f, -0.38f,  0.04f,  0.05f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[4][3] = arrayOf<Int>( 3,  1,  0,  2,  1,  10,  10, 10, 10, 10) 
+      rr[4][3] = arrayOf<Float>(  -0.04f,  0.07f,  0.03f,  -0.35f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+
+
+      
+// Filling sample array 
+// 5
+      jj = 5                  
+  
+      dir_rr[5][0] = arrayOf<Int>( 1,  3,  0,  1,  2,  3,  0,  3, 10, 10) 
+      rr[5][0] = arrayOf<Float>(  0.13f,  -0.02f,  0.03f,  0.02f,  -0.04f,  -2.39f,  0.06f,  0.04f,  0.0f,  0.0f)
+
+      dir_rr[5][1] = arrayOf<Int>( 1,  0,  3,  0,  1,  2,  3,  0, 10, 10) 
+      rr[5][1] = arrayOf<Float>(  0.11f,  0.03f,  0.02f,  0.06f,  0.06f,  -0.04f,  -2.71f,  0.02f,  0.0f,  0.0f)
+
+      dir_rr[5][2] = arrayOf<Int>( 1,  3,  0,  1,  2,  3,  2,  3,  0, 10) 
+      rr[5][2] = arrayOf<Float>(  0.09f,  0.01f,  0.04f,  0.02f,  -0.06f,  -2.16f,  -0.02f,  0.01f,  0.04f,  0.0f)
+      
+
+
+// Filling sample array 
+// 6
+      jj = 6                  
+  
+      dir_rr[6][0] = arrayOf<Int>( 1,  0,  3,  2,  1,  10,  10,  10, 10, 10) 
+      rr[6][0] = arrayOf<Float>(  0.0f,  0.08f,  0.03f,  -0.05f,  -0.02f,  0f,  0f,  0f,  0.0f,  0.0f)
+
+      dir_rr[6][1] = arrayOf<Int>( 2,  1,  0,  3,  2,  1,  10,  10, 10, 10) 
+      rr[6][1] = arrayOf<Float>(  -0.04f,  -0.04f,  0.08f,  0.01f,  -0.04f,  -0.03f,  0f,  0f,  0.0f,  0.0f)
+
+
+// Filling sample array 
+// 7
+      jj = 7                  
+  
+      dir_rr[7][0] = arrayOf<Int>( 3,  0,  3,  1,  2,  3,  0,  10, 10, 10) 
+      rr[7][0] = arrayOf<Float>(  -0.07f,  0.09f,  0.01f,  0.06f,  -0.46f,  0.04f,  0.02f,  0f,  0.0f,  0.0f)
+
+      dir_rr[7][1] = arrayOf<Int>( 3,  0,  3,  1,  10,  10,  10,  10, 10, 10) 
+      rr[7][1] = arrayOf<Float>(  -0.11f,  0.04f,  0.01f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+    
+
+// Filling sample array 
+// 8
+      jj = 8                 
+  
+      dir_rr[8][0] = arrayOf<Int>( 2,  3,  0,  1,  0,  3,  2,  10, 10, 10) 
+      rr[8][0] = arrayOf<Float>(  -0.05f,  -0.04f,  0.04f,  0.04f,  0.03f,  0.01f,  -0.04f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[8][1] = arrayOf<Int>( 3,  2,  1,  0,  1,  2,  3,  1, 10, 10) 
+      rr[8][1] = arrayOf<Float>(  0.03f,  -0.05f,  -0.02f,  0.09f,  0.03f,  -0.04f,  -0.02f,  0.0f,  0.0f,  0.0f)
+
+// Filling sample array 
+// 9
+      jj = 9                 
+  
+      dir_rr[9][0] = arrayOf<Int>( 3,  2,  1,  0,  3,  10,  10,  10, 10, 10) 
+      rr[9][0] = arrayOf<Float>(  0.03f,  -0.09f,  -0.02f,  0.06f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[9][1] = arrayOf<Int>( 0,  3,  2,  1,  0,  3,  10,  10, 10, 10) 
+      rr[9][1] = arrayOf<Float>(  0.05f,  0.04f,  -0.11f,  -0.03f,  0.08f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
 
+      
 
+      
 
+      
 
       
 
