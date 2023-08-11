@@ -92,7 +92,9 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.apply {
-           
+
+ /*
+            
 // Filling sample array
 // 0
      jj = 0                  
@@ -346,6 +348,8 @@ class MainActivity : AppCompatActivity() {
   
       dir_rr[2][28] = arrayOf<Int>( 3,  0,  1,  10, 10, 10, 10, 10, 10, 10)
       rr[2][28] = arrayOf<Float>(  -0.26f,  0.32f,  0.39f,   0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+*/
 
 // Filling sample array 
 // 3
