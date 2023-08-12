@@ -606,7 +606,7 @@ class MainActivity : AppCompatActivity() {
                 
                 
                 if (isPencilIconClicked || shift==1) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
-            shift=0      
+                
 
  
 
