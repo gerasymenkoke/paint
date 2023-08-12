@@ -395,6 +395,14 @@ class MainActivity : AppCompatActivity() {
       dir_rr[3][1] = arrayOf<Int>( 3,  0,  1,  0,  3,  0,  1, 10, 10, 10) 
       rr[3][1] = arrayOf<Float>(  0.07f,  0.02f,  0.07f,  0.04f, 0.03f, 0.03f,  0.02f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[3][2] = arrayOf<Int>( 2,  3,  0,  1,  3,  0,  1, 10, 10, 10) 
+      rr[3][2] = arrayOf<Float>(  -0.03f,  -0.09f,  0.08f,  0.16f, 0.00f, 0.08f,  0.05f,  0.0f,  0.0f,  0.0f)
+
+
+
+
+
+
       
 // Filling sample array 
 // 4
@@ -450,7 +458,16 @@ class MainActivity : AppCompatActivity() {
       dir_rr[6][1] = arrayOf<Int>( 2,  1,  0,  3,  2,  1,  10,  10, 10, 10) 
       rr[6][1] = arrayOf<Float>(  -0.04f,  -0.04f,  0.08f,  0.01f,  -0.04f,  -0.03f,  0f,  0f,  0.0f,  0.0f)
 
+      dir_rr[6][2] = arrayOf<Int>( 1,  0,  3,  2,  1,  10,  10, 10, 10, 10) 
+      rr[6][2] = arrayOf<Float>(  -0.04f,  0.05f,  0.03f,  -0.04f,  -0.04f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[6][3] = arrayOf<Int>( 3,  0,  1,  2,  3,  0,  10, 10, 10, 10) 
+      rr[6][3] = arrayOf<Float>(  -0.03f,  0.05f,  0.03f,  -0.03f,  -0.04f, 0.03f,  0.0f,  0.0f,  0.0f,  0.0f)
+      
+
+
+
+      
 // Filling sample array 
 // 7
       jj = 7                  
@@ -462,8 +479,13 @@ class MainActivity : AppCompatActivity() {
       rr[7][1] = arrayOf<Float>(  -0.11f,  0.04f,  0.01f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       dir_rr[7][2] = arrayOf<Int>( 2,  3,  0,  3,  1,  2,  3,  0, 10, 10) 
-      rr[7][3] = arrayOf<Float>(  -0.06f,  -0.1f,  0.06f,  0.02f,  0.1f,  -0.44f,  0.01f,  0.04f,  0.0f,  0.0f)
+      rr[7][2] = arrayOf<Float>(  -0.06f,  -0.1f,  0.06f,  0.02f,  0.1f,  -0.44f,  0.01f,  0.04f,  0.0f,  0.0f)
 
+      dir_rr[7][3] = arrayOf<Int>( 2,  3,  0,  3,  1,  10,  10,  10, 10, 10) 
+      rr[7][3] = arrayOf<Float>(  -0.09f,  -0.14f,  0.06f,  0.02f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[7][4] = arrayOf<Int>( 3,  0,  1,  10,  10,  10,  10,  10, 10, 10) 
+      rr[7][4] = arrayOf<Float>(  0.06f,  0.09f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
