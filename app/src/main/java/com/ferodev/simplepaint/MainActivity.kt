@@ -21,6 +21,10 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.shift
+
+
+
 import kotlin.math.abs
 import kotlin.math.roundToInt
 
@@ -601,8 +605,8 @@ class MainActivity : AppCompatActivity() {
             
                 
                 
-                if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
-             j=0       
+                if (isPencilIconClicked || shift==1) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+            shift=0      
 
  
 
