@@ -77,7 +77,7 @@ class DrawPencil @JvmOverloads constructor(
         var rx = 0.0f
         var ry = 0.0f
 
-        shift = 0 // new symbol feature
+        var shift = 0 // new symbol feature
 
          
         var j = 0
