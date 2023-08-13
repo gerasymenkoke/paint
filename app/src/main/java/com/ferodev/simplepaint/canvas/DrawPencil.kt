@@ -77,9 +77,8 @@ class DrawPencil @JvmOverloads constructor(
         var rx = 0.0f
         var ry = 0.0f
 
-    //    var shift = 0 // user's a new symbol is beging draw on the screen
-        public MutableLiveData<Integer> shift = new MutableLiveData<>() // user's a new symbol is beging draw on the screen
-
+        var shift = 0 // user's a new symbol is beging draw on the screen
+        
          
         var j = 0
                         }
@@ -140,13 +139,13 @@ class DrawPencil @JvmOverloads constructor(
         
     if ( Math.abs ( (x-x1)/x) > 0.1f || Math.abs ( (y-y1)/y) > 0.1f)
                              { 
-                                 shift.setValue(1)
+                                 shift=1
                                  }
 
         
       if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
         {  
-             shift.setValue(0)
+             shift=0
              
             if (j >=1 && j<=790)
              {   rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
