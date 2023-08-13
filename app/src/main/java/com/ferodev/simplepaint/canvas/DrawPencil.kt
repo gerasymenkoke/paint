@@ -144,14 +144,9 @@ class DrawPencil @JvmOverloads constructor(
                          
           textviewid.text =   "shift=" + shift + "  " + iii
               iii=iii+1
-                        }
+                            }
                   
-                   }
-
-       
-
-                                 
-                                 }
+                 
 
         
       if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
