@@ -617,7 +617,7 @@ class MainActivity : AppCompatActivity() {
 
       i=0
       
-      While (i==i) {
+      while (i==i) {
           if (shift==1) {
           textviewid.text =   "shift=" + shift + "  i"
               i=i+1
