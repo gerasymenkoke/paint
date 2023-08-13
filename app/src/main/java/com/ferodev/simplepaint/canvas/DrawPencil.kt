@@ -78,7 +78,7 @@ class DrawPencil @JvmOverloads constructor(
         var ry = 0.0f
 
         var shift = 0 // user's a new symbol is beging draw on the screen
-        
+        var iii = 0 
          
         var j = 0
                         }
@@ -140,6 +140,17 @@ class DrawPencil @JvmOverloads constructor(
     if ( Math.abs ( (x-x1)/x) > 0.1f || Math.abs ( (y-y1)/y) > 0.1f)
                              { 
                                  shift=1
+
+                         
+          textviewid.text =   "shift=" + shift + "  " + iii
+              iii=iii+1
+                        }
+                  
+                   }
+
+        i=0
+
+                                 
                                  }
 
         
