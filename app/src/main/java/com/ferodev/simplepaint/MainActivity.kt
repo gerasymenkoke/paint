@@ -95,6 +95,23 @@ class MainActivity : AppCompatActivity() {
          
         supportActionBar?.hide()
 
+
+        i=0
+      
+      while (i==i) {
+          if (shift==1) {
+          textviewid.text =   "shift=" + shift + "  i"
+              i=i+1
+                        }
+                  
+                   }
+
+        i=0
+
+
+
+
+        
         binding.apply {
 
  
@@ -615,17 +632,7 @@ class MainActivity : AppCompatActivity() {
       dir_rr[9][6] = arrayOf<Int>( 0,  3,  2,  1,  0,  10,  10,  10, 10, 10) 
       rr[9][6] = arrayOf<Float>(  0.06f,  0.02f,  -0.08f,  -0.04f,  0.11f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-      i=0
       
-      while (i==i) {
-          if (shift==1) {
-          textviewid.text =   "shift=" + shift + "  i"
-              i=i+1
-                        }
-                  
-                   }
-
-      i=0
             
              btnPencil.setOnClickListener
                       
