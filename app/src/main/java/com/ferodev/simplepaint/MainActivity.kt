@@ -95,7 +95,13 @@ class MainActivity : AppCompatActivity() {
          
         supportActionBar?.hide()
 
-        i=0
+      
+
+        
+        binding.apply {
+
+
+  i=0
       
       while (i==i) {
           if (shift==1) {
@@ -110,9 +116,17 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        
-        binding.apply {
 
+
+
+
+
+
+
+
+
+
+            
  
             
 // Filling sample array
