@@ -141,10 +141,7 @@ class DrawPencil @JvmOverloads constructor(
                              { 
                                  shift=1
 
-                         
-          textviewid.text =   "shift=" + shift + "  " + iii
-              iii=iii+1
-                            }
+                             }
                   
                  
 
