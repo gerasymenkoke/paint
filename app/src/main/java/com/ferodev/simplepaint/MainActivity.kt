@@ -646,7 +646,7 @@ class MainActivity : AppCompatActivity() {
           // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
      
-                if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+                if (isPencilIconClicked || shift==1) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
  
 
@@ -848,15 +848,7 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                       
             i=0
       
-      while (i==i) {
-          if (shift==1) {
-          textviewid.text =   "shift=" + shift + "  i"
-              i=i+1
-                        }
-                  
-                   }
-
-        i=0
+     
                 
                 }
                 
