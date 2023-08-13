@@ -617,17 +617,14 @@ class MainActivity : AppCompatActivity() {
 
 
 
-   public MutableLiveData<Integer> shift = new MutableLiveData<>() // user's a new symbol is beging draw on the screen
-     
-   shift.observe(this, new Observer<Integer>() {
-        @Override
-        public void onChanged(@Nullable final Integer shift1 {
-            // Update the UI, in this case, a TextView.
-         mNameTextView.setText("My new current index is: " + newIntValue);
-        }
-    };);
+ public int getIndex(){
+  return this.shift
 }
-      
+
+public void setIndex(int value){
+  this.shift = value
+  this.onCurrentIndexValueChange()
+}      
 
             
              btnPencil.setOnClickListener
