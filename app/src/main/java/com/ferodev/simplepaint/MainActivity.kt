@@ -855,7 +855,7 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                 
                 else {
                    
-                     
+                     textviewid.text =   "shift=" + shift 
                     btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_card)
 
