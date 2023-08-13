@@ -646,7 +646,7 @@ class MainActivity : AppCompatActivity() {
           // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
      
-                if (isPencilIconClicked || shift==1) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+                if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
  
 
