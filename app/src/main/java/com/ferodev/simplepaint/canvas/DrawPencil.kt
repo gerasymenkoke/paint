@@ -148,7 +148,7 @@ class DrawPencil @JvmOverloads constructor(
                   
                    }
 
-        i=0
+       
 
                                  
                                  }
