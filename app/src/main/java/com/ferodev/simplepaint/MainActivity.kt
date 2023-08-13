@@ -95,7 +95,6 @@ class MainActivity : AppCompatActivity() {
          
         supportActionBar?.hide()
 
-/*
         i=0
       
       while (i==i) {
@@ -107,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                    }
 
         i=0
-*/
+
 
 
 
