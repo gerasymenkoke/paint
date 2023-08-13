@@ -620,7 +620,10 @@ class MainActivity : AppCompatActivity() {
       
 
             
-               btnPencil.setOnClickListener { 
+            //   btnPencil.setOnClickListener
+           while (shift==1)
+            
+            { 
             
                 // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked
