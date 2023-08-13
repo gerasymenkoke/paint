@@ -615,17 +615,17 @@ class MainActivity : AppCompatActivity() {
       dir_rr[9][6] = arrayOf<Int>( 0,  3,  2,  1,  0,  10,  10,  10, 10, 10) 
       rr[9][6] = arrayOf<Float>(  0.06f,  0.02f,  -0.08f,  -0.04f,  0.11f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      i=0
+      
+      While (i==i) {
+          if (shift==1) {
+          textviewid.text =   "shift=" + shift + "  i"
+              i=i+1
+                        }
+                  
+                   }
 
-
- public int getIndex(){
-  return this.shift
-}
-
-public void setIndex(int value){
-  this.shift = value
-  this.onCurrentIndexValueChange()
-}      
-
+      i=0
             
              btnPencil.setOnClickListener
                       
@@ -824,7 +824,7 @@ while (jj >=0 && jj<=i-1)
  
                   
 
-textviewid.text =    "shift=" + shift +   "res=[" + res0 + "][" + res1 +  "]\n"    +
+textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                       " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                    
