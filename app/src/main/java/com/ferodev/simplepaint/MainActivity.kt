@@ -806,7 +806,7 @@ while (jj >=0 && jj<=i-1)
                                                                               
                                 if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
                                   j = j + 1 
-                           }
+                           }Array<Float>(20){0.0f}
 
                            if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
                                                    max = res [jj]  
@@ -848,10 +848,8 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
             
       // initial value initialization needed for all arrays to begin new symbol on next step
 
-       crn_.values.fill(0.0f)
-    //   crx_.values.fill(0.0f)
-    //   cry_.values.fill(0.0f)
- 
+                                 crx_ = Array<Float>(800){0.0f}
+                                 cry_ = Array<Float>(800){0.0f} 
         
                     
      
