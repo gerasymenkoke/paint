@@ -648,8 +648,7 @@ class MainActivity : AppCompatActivity() {
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
- 
-
+                    
 // sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
 
       j=0    
@@ -845,9 +844,15 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                   
                      drawPencil.visibility = View.VISIBLE
                              
-                      
-            i=0
-      
+                    
+            
+      // initial value initialization needed for all arrays to begin new symbol on next step
+
+
+
+
+
+                    
      
                 
                 }
