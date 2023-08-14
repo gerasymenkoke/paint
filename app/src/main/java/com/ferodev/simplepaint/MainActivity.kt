@@ -848,9 +848,9 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
             
       // initial value initialization needed for all arrays to begin new symbol on next step
 
-     
-       crx_.values.fill(0.0f)
-       cry_.values.fill(0.0f)
+       crn_.values.fill(0.0f)
+    //   crx_.values.fill(0.0f)
+    //   cry_.values.fill(0.0f)
  
         
                     
