@@ -135,14 +135,14 @@ class DrawPencil @JvmOverloads constructor(
         
         xxx = x.toString()       
         yyy = y.toString()    
-
+    
         
    if ( Math.abs ( (x-x1)/x) > 0.1f || Math.abs ( (y-y1)/y) > 0.1f)
                              { 
                                  shift=1
-                                 j=0
-                                 crx_ = Array<Float>(800){0.0f}
-                                 cry_ = Array<Float>(800){0.0f} 
+                                // j=0
+                                // crx_ = Array<Float>(800){0.0f}
+                                // cry_ = Array<Float>(800){0.0f} 
                              }
                   
                  
