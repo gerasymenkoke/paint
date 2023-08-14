@@ -141,6 +141,8 @@ class DrawPencil @JvmOverloads constructor(
                              { 
                                  shift=1
                                  j=0
+                                 crx_.values.fill(0.0f)
+                                 cry_.values.fill(0.0f)
                              }
                   
                  
