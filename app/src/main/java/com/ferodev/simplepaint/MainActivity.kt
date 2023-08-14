@@ -806,7 +806,7 @@ while (jj >=0 && jj<=i-1)
                                                                               
                                 if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
                                   j = j + 1 
-                           }Array<Float>(20){0.0f}
+                           }
 
                            if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
                                                    max = res [jj]  
