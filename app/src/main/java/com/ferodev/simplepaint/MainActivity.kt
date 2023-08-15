@@ -857,7 +857,7 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                       
 
 
-
+         isPencilIconClicked = !isPencilIconClicked
 
 
      
