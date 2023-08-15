@@ -138,12 +138,12 @@ class DrawPencil @JvmOverloads constructor(
     
    
                   
-                 if(shift==1) { j=0 }
+                 if(shift==1) { j=0; shift=0 }
 
         
       if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
         {  
-           //  shift=0
+            
              
             if (j >=1 && j<=790)
              {   rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
