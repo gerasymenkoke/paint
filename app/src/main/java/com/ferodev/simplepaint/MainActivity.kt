@@ -846,6 +846,18 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
             
       // initial value initialization needed for all arrays to begin new symbol on next step
 
+
+   j = 0
+   i = 0
+    jj = 0  
+    jjj = 0  
+    iii = 0
+    k=0
+    old=0
+
+
+
+                    
                                  crx_ = Array<Float>(800){0.0f}
                                  cry_ = Array<Float>(800){0.0f} 
                                  dir_cr =  Array<Int>(800){10} 
