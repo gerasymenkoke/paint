@@ -21,7 +21,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.shift
+// import com.ferodev.simplepaint.canvas.DrawPencil.Companion.shift
 
 
 
@@ -85,6 +85,7 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
+        var shift = 0      
                           }
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -833,14 +834,15 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                      
                     //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
                       //  " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
-                    
+
+                    shift=1
                     
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                      drawPencil.visibility = View.VISIBLE
                              
-                    
+                     
             
       // initial value initialization needed for all arrays to begin new symbol on next step
 
@@ -865,7 +867,7 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
     res1 = 0 // look up
 
 
-
+                    shift = 0
 
                       
 
