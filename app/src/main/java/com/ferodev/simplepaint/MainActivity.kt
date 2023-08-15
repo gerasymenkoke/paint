@@ -867,7 +867,7 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
     res1 = 0 // look up
 
 
-                    shift = 0
+                 
 
                       
 
