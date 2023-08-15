@@ -850,6 +850,23 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
         dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
         dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
         crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
+
+        dir_resmin =  Array(40){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+            resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+          iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
+              res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
+
+              min = 10 // temporary variable min = dir_res[jj][jjj] 
+           minres = 100.0f // temporary variable  resmin[jj] [j] < minres
+   
+    max=0   // res [jj] > max res temporary for max coincedence finding
+    res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
+                         // in array with min difference(coincedence), res1 - number  
+    res1 = 0 // look up
+
+
+
+
                       
 
 
