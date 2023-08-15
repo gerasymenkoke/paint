@@ -147,9 +147,7 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][7] = arrayOf<Int>(  1,  0,  3,  2, 10,  10, 10, 10, 10, 10)
      rr[0][7] = arrayOf<Float>(   0.01f,  0.06f,  0.03f,  -0.05f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
     
-     
-
-     
+         
      dir_rr[0][8] = arrayOf<Int>(  1,  0,  3,  2, 10, 10, 10, 10, 10, 10)   
      rr[0][8] = arrayOf<Float>(  0.05f,  0.31f,  0.16f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
@@ -164,9 +162,6 @@ class MainActivity : AppCompatActivity() {
      
      dir_rr[0][11] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
      rr[0][11] = arrayOf<Float>(  -0.2f,  0.4f,  0.16f,  -0.37f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][8] = arrayOf<Int>(  3,  0,  1,  3, 10, 10, 10, 10, 10, 10) 
-     rr[0][8] = arrayOf<Float>(  -0.21f,  0.33f,  -0.06f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
      dir_rr[0][12] = arrayOf<Int>(  3,  0,  1,  2,  3, 10, 10, 10, 10, 10) 
      rr[0][12] = arrayOf<Float>(  -0.1f,  0.28f,  0.01f,  -0.47f, -0.38f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
@@ -204,7 +199,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][23] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
      rr[0][23] = arrayOf<Float>(  -0.01f,  0.08f,  0.07f,  -0.11f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-
+     dir_rr[0][24] = arrayOf<Int>(  3,  0,  1,  3, 10, 10, 10, 10, 10, 10) 
+     rr[0][24] = arrayOf<Float>(  -0.21f,  0.33f,  -0.06f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
 
 
@@ -867,9 +863,9 @@ textviewid.text =   "res=[" + res0 + "][" + res1 +  "]\n"    +
                 
                 else {
                    
-                     textviewid.text =   "shift=" + shift 
-                    btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_card)
+                    // textviewid.text =   "shift=" + shift 
+                    //btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                    //btnPencil.setBackgroundResource(R.drawable.background_card)
 
 
 
