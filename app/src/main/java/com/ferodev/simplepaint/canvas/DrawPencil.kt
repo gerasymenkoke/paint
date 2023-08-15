@@ -21,7 +21,7 @@ import android.graphics.Path
 
 import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
 import com.ferodev.simplepaint.MainActivity.Companion.path
-// import com.ferodev.simplepaint.MainActivity.Companion.btn
+import com.ferodev.simplepaint.MainActivity.Companion.shift
 
 
 import com.ferodev.simplepaint.cons.Pencil
@@ -138,7 +138,7 @@ class DrawPencil @JvmOverloads constructor(
     
    
                   
-                 
+                 if(shift==1) { j=0 }
 
         
       if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
