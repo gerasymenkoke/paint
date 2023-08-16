@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
                          // in array with min difference(coincedence), res1 - number  
     private var res1 = 0 // look up
-    private var l = 0 // counter for different res0
+    private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(40){10} 
 
 
@@ -821,7 +821,7 @@ while (jj >=0 && jj<=i-1)
       l=l+1
                   
 
-textviewid.text =   resnum[0] + "  " + resnum[1] + "  " + resnum[2] + "  " + resnum[3] + "  " + resnum[3] + "  " + resnum[4] + "  " + resnum[5] + "  " + resnum[6] + "  " + resnum[7] + "  " + resnum[8] + "  " + resnum[9]  +  "\n" 
+textviewid.text =   "resnum=" + resnum[0] + "  " + resnum[1] + "  " + resnum[2] + "  " + resnum[3] + "  " + resnum[3] + "  " + resnum[4] + "  " + resnum[5] + "  " + resnum[6] + "  " + resnum[7] + "  " + resnum[8] + "  " + resnum[9]  +  "\n" +
                     "res=[" + res0 + "][" + res1 +  "]\n"    +  
                       " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
