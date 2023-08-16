@@ -77,7 +77,7 @@ class DrawPencil @JvmOverloads constructor(
         var rx = 0.0f
         var ry = 0.0f
 
-        var shift = 0 // user's a new symbol is beging draw on the screen
+      //  var shift = 0 // user's a new symbol is beging draw on the screen
         var iii = 0 
          
         var j = 0
