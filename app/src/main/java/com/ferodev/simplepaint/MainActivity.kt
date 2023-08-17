@@ -643,6 +643,15 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][0] = arrayOf<Int>( 3,  0,  2,  0,  1,  10,  10,  10, 10, 10) 
       rr[10][0] = arrayOf<Float>(  0.05f,  0.03f,  -0.96f,  0.07f,  0.08f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[10][1] = arrayOf<Int>( 3,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
+      rr[10][1] = arrayOf<Float>(  0.02f,  -0.79f,  0.09f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[10][2] = arrayOf<Int>( 0,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
+      rr[10][2] = arrayOf<Float>(  0.04f,  -1.11f,  0.06f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+
+      
+      
 // Filling sample array 
 // -
       jj = 11               
@@ -653,7 +662,15 @@ class MainActivity : AppCompatActivity() {
       dir_rr[11][1] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
       rr[11][1] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+// Filling sample array 
+// =
+      jj = 12             
+  
+      dir_rr[12][0] = arrayOf<Int>( 1,  3,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[12][0] = arrayOf<Float>(  -1.18f,  0.08f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[12][1] = arrayOf<Int>( 3,  1,  3,  10,  10,  10,  10,  10, 10, 10) 
+      rr[12][1] = arrayOf<Float>(  0.05f,  -0.47f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       
 
@@ -840,7 +857,7 @@ while (jj >=0 && jj<=i-1)
       l=l+1
                   
 
-textviewid.text =   "resnum=" + resnum[0] + "  " + resnum[1] + "  " + resnum[2] + "  " + resnum[3] + "  " + resnum[3] + "  " + resnum[4] + "  " + resnum[5] + "  " + resnum[6] + "  " + resnum[7] + "  " + resnum[8] + "  " + resnum[9]  +  "\n" +
+textviewid.text =   resnum[0] + "  " + resnum[1] + "  " + resnum[2] + "  " + resnum[3] + "  " + resnum[3] + "  " + resnum[4] + "  " + resnum[5] + "  " + resnum[6] + "  " + resnum[7] + "  " + resnum[8] + "  " + resnum[9]  +  "\n" +
                     "res=[" + res0 + "][" + res1 +  "]\n"    +  
                       " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
