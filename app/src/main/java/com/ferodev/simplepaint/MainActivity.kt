@@ -689,8 +689,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][0] = arrayOf<Int>( 1,  3,  10,  10,  10,  10,  10,  10, 10, 10) 
       rr[14][0] = arrayOf<Float>(  -1.18f,  0.08f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-      dir_rr[14][1] = arrayOf<Int>( 3,  1,  3,  10,  10,  10,  10,  10, 10, 10) 
-      rr[14][1] = arrayOf<Float>(  0.05f,  -0.47f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      dir_rr[14][1] = arrayOf<Int>( 0,  1,  0,  10,  10,  10,  10,  10, 10, 10) 
+      rr[14][1] = arrayOf<Float>(  0.06f,  -0.89f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       
 
@@ -878,11 +878,11 @@ while (jj >=0 && jj<=i-1)
       if(res0<=9) { resnum[l]=res0 
        aresnum =  aresnum + " " + resnum[l].toString()  } 
                     
-      if(res0==10) { aresnum =  aresnum + "+"} 
-      if(res0==11) { aresnum =  aresnum + "-"}
-      if(res0==12) { aresnum =  aresnum + "x"}
-      if(res0==13) { aresnum =  aresnum + "/"}
-      if(res0==14) { aresnum =  aresnum + "="}
+      if(res0==10) { aresnum =  aresnum + " +"} 
+      if(res0==11) { aresnum =  aresnum + " -"}
+      if(res0==12) { aresnum =  aresnum + " x"}
+      if(res0==13) { aresnum =  aresnum + " /"}
+      if(res0==14) { aresnum =  aresnum + " ="}
              
      
       l=l+1
