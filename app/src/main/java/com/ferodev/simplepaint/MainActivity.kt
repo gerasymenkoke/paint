@@ -662,7 +662,22 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[10][6] = arrayOf<Int>(  0,  2,  0,  1,  10, 10, 10, 10, 10, 10)
       rr[10][6] = arrayOf<Float>(   0.06f,  -0.71f,  0.08f,  0.06f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
-  
+      
+      dir_rr[10][7] = arrayOf<Int>(  2,  1,  0,  1,  10, 10, 10, 10, 10, 10)
+      rr[10][7] = arrayOf<Float>(   -0.52f,  0.01f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+      dir_rr[10][8] = arrayOf<Int>(  2,  0,  1,  0,  1, 10, 10, 10, 10, 10)
+      rr[10][8] = arrayOf<Float>(   -0.62f,  0.08f,  0.06f,  0.07f,  0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     
+      dir_rr[10][9] = arrayOf<Int>(  0,  3,  0,  2,  1,  0, 10, 10, 10, 10)
+      rr[10][9] = arrayOf<Float>(   0.18f,  0.14f,  0.05f,  -0.86f,  0.06f, 0.04f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+      dir_rr[10][10] = arrayOf<Int>(  0,  3,  2,  1,  10, 10, 10, 10, 10, 10)
+      rr[10][10] = arrayOf<Float>(   0.04f,  0.04f,  -0.29f,  0.02f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
+
+      dir_rr[10][11] = arrayOf<Int>(  2,  0,  10,  10,  10, 10, 10, 10, 10, 10)
+      rr[10][11] = arrayOf<Float>(   -0.66f,  0.07f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
+
 
 
      
@@ -743,6 +758,15 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[14][7] = arrayOf<Int>( 0,  1,  3,  0,  10,  10,  10,  10, 10, 10) 
       rr[14][7] = arrayOf<Float>(  0.06f,  -0.34f,  0.03f,  0.07f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][8] = arrayOf<Int>( 3,  1,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[14][8] = arrayOf<Float>(  0.06f,  -0.35f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][9] = arrayOf<Int>( 0,  1,  0,  3,  10,  10,  10,  10, 10, 10) 
+      rr[14][9] = arrayOf<Float>(  0.03f,  0.03f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][10] = arrayOf<Int>( 0,  3,  1,  0,  10,  10,  10,  10, 10, 10) 
+      rr[14][10] = arrayOf<Float>(  0.16f,  0.02f,  -1.03f,  0.07f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
       
