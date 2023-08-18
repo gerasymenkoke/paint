@@ -79,8 +79,8 @@ class MainActivity : AppCompatActivity() {
                          // in array with min difference(coincedence), res1 - number  
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
-    private var resnum =  Array<Int>(40){10} 
-
+    private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
+    private var aresnum = "0"                 // result each cycle adding as String
 
     
        
@@ -853,7 +853,11 @@ while (jj >=0 && jj<=i-1)
                    }
 
 
+// output  result as string with diferent length adding new symbols each cycle
+                    
+
       resnum[l]=res0 
+       aresnum =  aresnum + resnum[l].toString()              
       l=l+1
                   
 
