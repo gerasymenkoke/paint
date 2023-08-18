@@ -726,8 +726,13 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][1] = arrayOf<Int>( 0,  1,  0,  10,  10,  10,  10,  10, 10, 10) 
       rr[14][1] = arrayOf<Float>(  0.06f,  -0.89f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-      
+      dir_rr[14][2] = arrayOf<Int>( 0,  3,  1,  0,  3,  0,  10,  10, 10, 10) 
+      rr[14][2] = arrayOf<Float>(  0.06f,  0.04f,  -0.6f,  0.03f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+
+
+
+      
 
       
       btnPencil.setOnClickListener {
