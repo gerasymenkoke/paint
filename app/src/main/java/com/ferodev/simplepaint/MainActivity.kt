@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(40){ Array<Int>(10){10} } }  // array of directions for n_etalons(30) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_rr = Array(20) { Array(40){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
@@ -708,6 +708,9 @@ class MainActivity : AppCompatActivity() {
 
         dir_rr[11][1] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
         rr[11][1] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+        dir_rr[11][2] = arrayOf<Int>(  0, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+        rr[11][2] = arrayOf<Float>(  0.56f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
   //    dir_rr[11][2] = arrayOf<Int>( 0,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
   //    rr[11][2] = arrayOf<Float>(  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
