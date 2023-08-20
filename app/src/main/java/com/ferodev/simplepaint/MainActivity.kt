@@ -912,7 +912,34 @@ while (jj >=0 && jj<=i-1)
                            {
                                var ii = dir_resmin[jj][0] 
                                var iii = dir_resmin[jj][1]   
-                               resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+            
+ 
+            
+// Filling sample array
+// 0
+     jj = 0                  
+     
+     dir_rr[0][0] = arrayOf<Int>(  3,  0,  1,  2,  10,  10, 10, 10, 10, 10)
+     rr[0][0] = arrayOf<Float>(  -0.03f,  0.03f,  0.03f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     
+     dir_rr[0][1] = arrayOf<Int>(  0,  1,  2,  3,  10, 10, 10, 10, 10, 10)
+     rr[0][1] = arrayOf<Float>(  0.06f,  0.08f,  -0.05f,  -0.05f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+                                                     } 
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                j=j+1
                            }
                                              
@@ -986,10 +1013,10 @@ while (jj >=0 && jj<=i-1)
       l=l+1
                   
 //
-textviewid.text =     "  " + aresnum +  "\n" +
+textviewid.text =     "  " // + aresnum +  "\n" +
                    // "res=[" + res0 + "][" + res1 +  "]\n"   // +  
                   //    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
-                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
+                 //     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                      
                     //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
                       //  " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
