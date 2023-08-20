@@ -958,22 +958,22 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 // choice max near by  from res[]
  var max=0
                    jj=0
-                while (jj >=0 && jj<=i-1)  
-                   {                  
-                       j=0     
-                          while (j >=0 && j<=9)        //   
-                           {
+               // while (jj >=0 && jj<=i-1)  
+          //         {                  
+                  //     j=0     
+                //          while (j >=0 && j<=9)        //   
+                //           {
                                                                               
-                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
-                                  j = j + 1 
-                           }
+                      //          if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
+                     //             j = j + 1 
+                     //      }
 
-                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
-                                                   max = res [jj]  
-                                                 }
-                          jj=jj+1
+                      //     if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
+                                          //         max = res [jj]  
+                                            //     }
+                     //     jj=jj+1
    
-                   }
+             //      }
 
 
 // output  result as string with diferent length adding new symbols each cycle
