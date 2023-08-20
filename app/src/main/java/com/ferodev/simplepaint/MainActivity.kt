@@ -824,7 +824,7 @@ class MainActivity : AppCompatActivity() {
 
 i=0 
 j=0 
-old = 5                    
+old = 10                    
 while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; crn_[i]=crx_[j] + cry_[j]; 
@@ -854,7 +854,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 // result of test on comparing of numbers  direction sequences
                    
       jj=0
-while (jj >=0 && jj<=19)  // index of numbers 0, 1 ..
+while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
     while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
@@ -884,13 +884,13 @@ while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..
           jjj=0
     while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
             {
-               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj; 
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                iii=1; 
                                                while ( iii<=39) { 
-                                               dir_resmin[iii][0]=20; dir_resmin[iii][1]=10  // 20 (blank index like 10 at directions) - max quantity with spare  of numbers 0, 1, 2 ..
+                                               dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
                                                        iii=iii+1
                                                                 }
-                                                    i=1; min = dir_res[jj][jjj] 
+                                                   
                                            }
               else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                                        i=i+1  
