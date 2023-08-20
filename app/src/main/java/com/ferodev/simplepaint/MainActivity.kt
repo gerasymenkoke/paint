@@ -925,35 +925,35 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                         
                      }
 
-                 j=0
-                 minres = 100.0f  
-                 while (j >=0 && j<=9)        //   
-                           {
-                              jj=0
+            //     j=0
+           //      minres = 100.0f  
+             //    while (j >=0 && j<=9)        //   
+               //            {
+                //              jj=0
                                                      
-                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
-                                {
-                                  if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
-                                  jj = jj + 1 
-                                }
-                         j=j+1
+               //                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
+              //                  {
+              //                    if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
+             //                     jj = jj + 1 
+              //                  }
+            //            j=j+1
    
-                           }
+           //                }
 
-                jj=0
-                while (jj >=0 && jj<=i-1)  
-                   {                  
-                        j=0        
-                       while (j >=0 && j<=9)        //   
-                           {
+            //    jj=0
+           //     while (jj >=0 && jj<=i-1)  
+               //    {                  
+              //          j=0        
+                //       while (j >=0 && j<=9)        //   
+               //            {
                                                                            
-                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
-                                  j = j + 1 
-                           }
+               //                                    if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
+              //                    j = j + 1 
+          //                 }
                            
-                         jj=jj+1
+       //                 jj=jj+1
    
-                   }
+    //               }
 
 // choice max near by  from res[]
  var max=0
