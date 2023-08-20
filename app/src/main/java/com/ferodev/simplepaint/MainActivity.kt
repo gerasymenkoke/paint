@@ -977,7 +977,7 @@ while (jj >=0 && jj<=i-1)
        aresnum =  aresnum + " " + resnum[l].toString()  } 
                     
       if(res0==10) { aresnum =  aresnum + " +"} 
-      if(res0==11) { aresnum =  aresnum + " -"}
+   //   if(res0==11) { aresnum =  aresnum + " -"}
       if(res0==12) { aresnum =  aresnum + " x"}
       if(res0==13) { aresnum =  aresnum + " /"}
       if(res0==14) { aresnum =  aresnum + " ="}
@@ -987,8 +987,8 @@ while (jj >=0 && jj<=i-1)
                   
 //
 textviewid.text =     "  " + aresnum +  "\n" +
-                    "res=[" + res0 + "][" + res1 +  "]\n"    +  
-                      " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
+                    "res=[" + res0 + "][" + res1 +  "]\n"   // +  
+                  //    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                       "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                      
                     //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
