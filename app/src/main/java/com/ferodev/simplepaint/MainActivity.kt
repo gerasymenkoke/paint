@@ -879,28 +879,28 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 // finding min res value is max resemble differ (dir_res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
     i=0  
     jj=0
-//  while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..//
+    while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..//
 
-// {
-   //       jjj=0
-   // while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
-       //     {
-         //      if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
-           //                                    iii=1; 
-             //                                  while ( iii<=39) { 
-               //                                dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
-                 //                                      iii=iii+1
-                   //                                             }
+ {
+          jjj=0
+    while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
+            {
+               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
+                                               iii=1; 
+                                               while ( iii<=39) { 
+                                              dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
+                                                       iii=iii+1
+                                                             }
                                                    
-                     //                      }
-          //    else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
-            //                                           i=i+1  
-              //                                       } 
-                //   }
-           // jjj = jjj +1
-           //  }
-       // jj = jj +1
-// }   
+                                           }
+              else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
+                                                   i=i+1  
+                                                     } 
+                   }
+         jjj = jjj +1
+             }
+       jj = jj +1
+ }   
 
 
 // jj=0
