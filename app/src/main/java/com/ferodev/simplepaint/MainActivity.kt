@@ -879,7 +879,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 // finding min res value is max resemble differ (dir_res[jj] [jjj] ): current paint number directions dir_cr[jj] to  dir_rr (etalons)  
     i=0  
     jj=0
-/* while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..//
+//  while (jj >=0 && jj<=19)  // index of numbers 0, 1, 2 ..//
 
 // {
    //       jjj=0
