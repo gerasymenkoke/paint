@@ -1030,7 +1030,7 @@ textviewid.text =     "  " // + aresnum +  "\n" +
         dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
         crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
 
-        dir_resmin =  Array(40){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+        dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
             resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
           iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
               res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
