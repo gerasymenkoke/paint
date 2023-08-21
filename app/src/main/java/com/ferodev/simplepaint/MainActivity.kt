@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     private var crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var rr =  Array(20) { Array(40){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
    
-    private var dir_resmin =  Array(40){ Array<Int>(10){10} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+    private var dir_resmin =  Array(100){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     private var iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
     private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
@@ -855,7 +855,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
                    
       jj=0
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
-{
+{AppCompatActivity
           jjj=0
     while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
             {
@@ -893,9 +893,9 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                                                 //       iii=iii+1
                                                                // }
                                               }
-         else { if ( dir_res[jj][jjj] == min )  { // dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
-                                              i=i+1  
-                                                    } 
+         else { if ( dir_res[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
+                                                    i=i+1  
+                                                } 
               }
          jjj = jjj +1
                }
