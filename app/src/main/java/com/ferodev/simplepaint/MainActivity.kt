@@ -743,7 +743,8 @@ class MainActivity : AppCompatActivity() {
 // /
       jj = 13              
   
-      
+       dir_rr[12][0] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+        rr[12][0] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
@@ -993,7 +994,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                   
 //
 textviewid.text =     "  " + aresnum +  "\n" +
-                     "res=[" + res0 + "][" + res1 +  "]\n"   // +  
+                     "res=[" + res0 + "][" + res1 +  "]\n"   +  
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                      
