@@ -888,11 +888,11 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                {
                 if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
-                                             //  while ( iii<=39) { 
-                                           //   dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
-                                                //       iii=iii+1
-                                                               // }
-                                              }
+                                                  while ( iii<=39) { 
+                                                  dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
+                                                       iii=iii+1
+                                                                   }
+                                               }
          else { if ( dir_res[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                                     i=i+1  
                                                 } 
@@ -903,78 +903,78 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
  
  }
 
-// jj=0
-// while (jj >=0 && jj<=i-1)  
- //                   {
+   jj=0
+   while (jj >=0 && jj<=i-1)  
+                    {
  
       
-   //        j=0
-  //  while (j >=0 && j<=9)         
-         //                  {
-         //                      var ii = dir_resmin[jj][0] 
-         //                      var iii = dir_resmin[jj][1]   
+           j=0
+       while (j >=0 && j<=9)         
+                           {
+                               var ii = dir_resmin[jj][0] 
+                               var iii = dir_resmin[jj][1]   
                    
    
  
             
 
-// resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
-       //                        j=j+1
-       //                    }
+resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
+                               j=j+1
+                           }
                                              
-     //       jj = jj + 1
+           jj = jj + 1
                         
-      //               }
+                     }
 
-            //     j=0
-           //      minres = 100.0f  
-             //    while (j >=0 && j<=9)        //   
-               //            {
-                //              jj=0
+                 j=0
+                minres = 100.0f  
+                 while (j >=0 && j<=9)        //   
+                           {
+                              jj=0
                                                      
-               //                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
-              //                  {
-              //                    if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
-             //                     jj = jj + 1 
-              //                  }
-            //            j=j+1
+                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
+                                {
+                                  if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
+                                  jj = jj + 1 
+                                }
+                        j=j+1
    
-           //                }
+                           }
 
-            //    jj=0
-           //     while (jj >=0 && jj<=i-1)  
-               //    {                  
-              //          j=0        
-                //       while (j >=0 && j<=9)        //   
-               //            {
+                jj=0
+                while (jj >=0 && jj<=i-1)  
+                   {                  
+                        j=0        
+                       while (j >=0 && j<=9)        //   
+                           {
                                                                            
-               //                                    if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
-              //                    j = j + 1 
-          //                 }
+                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
+                                  j = j + 1 
+                           }
                            
-       //                 jj=jj+1
+                       jj=jj+1
    
-    //               }
+                  }
 
 // choice max near by  from res[]
  var max=0
                    jj=0
-               // while (jj >=0 && jj<=i-1)  
-          //         {                  
-                  //     j=0     
-                //          while (j >=0 && j<=9)        //   
-                //           {
+                while (jj >=0 && jj<=i-1)  
+                  {                  
+                       j=0     
+                         while (j >=0 && j<=9)        //   
+                           {
                                                                               
-                      //          if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
-                     //             j = j + 1 
-                     //      }
+                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
+                                  j = j + 1 
+                           }
 
-                      //     if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
-                                          //         max = res [jj]  
-                                            //     }
-                     //     jj=jj+1
+                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
+                                                   max = res [jj]  
+                                                 }
+                          jj=jj+1
    
-             //      }
+                   }
 
 
 // output  result as string with diferent length adding new symbols each cycle
@@ -983,7 +983,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
        aresnum =  aresnum + " " + resnum[l].toString()  } 
                     
       if(res0==10) { aresnum =  aresnum + " +"} 
-   //   if(res0==11) { aresnum =  aresnum + " -"}
+      if(res0==11) { aresnum =  aresnum + " -"}
       if(res0==12) { aresnum =  aresnum + " x"}
       if(res0==13) { aresnum =  aresnum + " /"}
       if(res0==14) { aresnum =  aresnum + " ="}
@@ -992,10 +992,10 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
       l=l+1
                   
 //
-textviewid.text =     "  " // + aresnum +  "\n" +
-                   // "res=[" + res0 + "][" + res1 +  "]\n"   // +  
-                  //    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
-                 //     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
+textviewid.text =     "  " + aresnum +  "\n" +
+                     "res=[" + res0 + "][" + res1 +  "]\n"   // +  
+                    " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
+                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  
                      
                     //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
                       //  " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
