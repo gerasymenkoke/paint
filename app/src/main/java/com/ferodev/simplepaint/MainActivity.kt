@@ -893,10 +893,10 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                                                 //       iii=iii+1
                                                                // }
                                               }
-      //       else { if ( dir_res[jj][jjj] == min )  { dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
-        //                                          i=i+1  
-          //                                          } 
-               //     }
+         else { if ( dir_res[jj][jjj] == min )  { // dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
+                                              i=i+1  
+                                                    } 
+              }
          jjj = jjj +1
                }
        jj = jj +1
