@@ -540,8 +540,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[6][2] = arrayOf<Int>( 1,  0,  3,  2,  1,  10,  10, 10, 10, 10) 
       rr[6][2] = arrayOf<Float>(  -0.04f,  0.05f,  0.03f,  -0.04f,  -0.04f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-     //  dir_rr[6][3] = arrayOf<Int>( 3,  0,  1,  2,  3,  0,  10, 10, 10, 10) 
-     // rr[6][3] = arrayOf<Float>(  -0.03f,  0.05f,  0.03f,  -0.03f,  -0.04f, 0.03f,  0.0f,  0.0f,  0.0f,  0.0f)
+      dir_rr[6][3] = arrayOf<Int>( 2,  1,  0,  3,  2,  1,  10, 10, 10, 10) 
+      rr[6][3] = arrayOf<Float>(  -0.05f,  -0.02f,  0.06f,  0.02f,  -0.03f, -0.01f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       dir_rr[6][4] = arrayOf<Int>( 1,  0,  3,  2,  1,  10,  10,  10, 10, 10) 
       rr[6][4] = arrayOf<Float>(  0.04f,  0.09f,  0.02f,  -0.04f,  -0.06f,  0f,  0f,  0f,  0.0f,  0.0f)
@@ -854,7 +854,7 @@ old = 10
 while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; crn_[i]=crx_[j] + cry_[j]; 
-                                  crn_[i]=( ( crn_[i] * 100.0).roundToInt() / 100.0).toFloat() 
+                                  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   i=i+1 
                                 }
     j = j+1
@@ -1022,7 +1022,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
                      "res=[" + res0 + "][" + res1 +  "]\n"   +  
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
-                     "\n" +  res[0] + " " + res[1] + " " + res[2] + " " + res[3] 
+                     "\n" +  "iresmin" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] 
 
 
 
