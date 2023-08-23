@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
-    private var minres = 100.0f // temporary variable  resmin[jj] [j] < minres
+    private var minres = 100.00f // temporary variable  resmin[jj] [j] < minres
    
     private var max=0   // res [jj] > max res temporary for max coincedence finding
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
