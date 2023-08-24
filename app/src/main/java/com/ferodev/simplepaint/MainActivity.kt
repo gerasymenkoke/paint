@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(40){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  aresmin = Array<String>(100){"10"}
     private var iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
     private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
    
@@ -960,7 +961,10 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                      
                                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
                                 {
-                                  if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j]   }  
+                                  if  (resmin[jj] [j] < minres) {     iresmin [j] = jj;   minres = resmin[jj] [j] ;
+                                    aresmin = aresmin + "resmin" + "[" + jj + "]"  "[" + j +"]=" + resmin[jj] [j].toString()
+                                     
+                                  }  
                                   jj = jj + 1 
                                 }
                         j=j+1
@@ -1023,7 +1027,9 @@ textviewid.text =     "  " + aresnum +  "\n" +
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
                      "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                      "\n" +  "iresmin=" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] +
-                     "\n" +  "minres=" + minres
+                     "\n" +  "aresmin=" + aresmin +
+                     "\n" +  "minres=" + minres 
+                    
                     
 
 
@@ -1066,6 +1072,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
 
         dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
             resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+            aresmin = Array<String>(100){"10"}
           iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
               res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
 
