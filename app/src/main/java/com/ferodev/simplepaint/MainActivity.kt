@@ -966,7 +966,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                       
                                     aresmin = aresmin + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resmin[jj] [j].toString()
                                      
-                                   //                }              
+                                                     }              
                                   jj = jj + 1 
                                 }
                         j=j+1
