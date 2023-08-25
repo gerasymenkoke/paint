@@ -961,11 +961,12 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                      
                                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
                                 {
-                                 if  (resmin[jj] [j] < minres) {    minres = resmin[jj] [j]; iresmin [j] = jj } 
+                        if ( dir_res[jj][jjj] ==min) {                                       
+                                    if  (resmin[jj] [j] < minres) {    minres = resmin[jj] [j]; iresmin [j] = jj } 
                                       
                                     aresmin = aresmin + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resmin[jj] [j].toString()
                                      
-                                   //                             
+                                   //                }              
                                   jj = jj + 1 
                                 }
                         j=j+1
