@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(40){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  aresmin = Array<String>(100){"10"}
+    private var  aresmin = " "
     private var iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
     private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
    
