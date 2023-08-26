@@ -956,7 +956,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                     
                  j=0
                 minres = 10.00f  
-                 while (j >=0 && j<=9)        //   
+                 while (j >=0 && j<=9 && dir_crn[j] != 10 )        //   
                            {
                               jj=0
                                                      
