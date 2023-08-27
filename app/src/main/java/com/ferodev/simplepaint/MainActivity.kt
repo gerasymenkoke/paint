@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
-//    private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
 
 
      
