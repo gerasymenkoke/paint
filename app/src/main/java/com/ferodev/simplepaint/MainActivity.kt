@@ -1056,9 +1056,9 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
       resnum[l]=res0 
       aresnum =  aresnum + " " + resnum[l].toString()  
                     
-      if(resnum[l-1]==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
+      if(l>0 && resnum[l-1]==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
       
-      if(resnum[l]==14) { aresnum =  aresnum + " = " + iresnum.toString() }
+      if(l>0 && resnum[l]==14) { aresnum =  aresnum + " = " + iresnum.toString() }
              
       l=l+1
      
