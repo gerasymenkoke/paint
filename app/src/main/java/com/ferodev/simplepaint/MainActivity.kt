@@ -338,9 +338,18 @@ class MainActivity : AppCompatActivity() {
 
      dir_rr[1][37] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
      rr[1][37] = arrayOf<Float>(  0.00f,  0.02f,  0.07f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+      
+     dir_rr[1][38] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][38] = arrayOf<Float>(  0.03f,  0.09f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+
+     dir_rr[1][39] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][39] = arrayOf<Float>(  0.02f,  0.08f,  0.06f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+
+
+
+
+
      
-
-
      
 // Filling sample array 
 // 2
@@ -708,6 +717,9 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][18] = arrayOf<Int>(  3,  2,  0,  10,  10, 10, 10, 10, 10, 10)
       rr[10][18] = arrayOf<Float>(   0.04f,  -0.96f,  0.07f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
 
+      dir_rr[10][19] = arrayOf<Int>( 0,  3,  2,   1,  0,  10,  10,  10, 10, 10) 
+      rr[10][19] = arrayOf<Float>(  0.06f,  0.03f,  -0.71f,  0.03f,  0.1f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
 
 
       
@@ -841,7 +853,11 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][18] = arrayOf<Int>( 3,  1,  0,  3,  10,  10,  10,  10, 10, 10) 
       rr[14][18] = arrayOf<Float>(  0.04f,  -0.27f,  0.04f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[14][19] = arrayOf<Int>( 0,  3,  0,  1,  0,  3,   0,  10, 10, 10) 
+      rr[14][19] = arrayOf<Float>(  0.08f,  0.04f,  0.02f,  -0.02f,  0.04f,  0.04f,  0.05f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[14][20] = arrayOf<Int>( 3,  0,  1,  0,  10,  10,   10,  10, 10, 10) 
+      rr[14][20] = arrayOf<Float>(  0.08f,  0.05f,  -0.5f,  0.03f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
     
       
@@ -1037,16 +1053,14 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 
 // output  result as string with diferent length adding new symbols each cycle
 
-      if(res0<=9) { resnum[l]=res0 
-       aresnum =  aresnum + " " + resnum[l].toString() ;  l=l+1  } 
+      resnum[l]=res0 
+      aresnum =  aresnum + " " + resnum[l].toString()  
                     
-      if(res0==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
-      if(res0==11) { aresnum =  aresnum + " -"; iresnum=iresnum - resnum[l] }
-      if(res0==12) { aresnum =  aresnum + " x"; iresnum=iresnum * resnum[l] }
-      if(res0==13) { aresnum =  aresnum + " /"; iresnum=iresnum / resnum[l] }
-      if(res0==14) { aresnum =  aresnum + " = " + iresnum.toString() }
+      if(resnum[l-1]==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
+      
+      if(resnum[l]==14) { aresnum =  aresnum + " = " + iresnum.toString() }
              
-     
+      l=l+1
      
                   
 //
