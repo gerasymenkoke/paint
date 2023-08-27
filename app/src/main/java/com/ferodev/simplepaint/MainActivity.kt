@@ -1075,10 +1075,10 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-      if(resnum[l]<=9) {  jdec[l]=jdec[l]+1 }
+      if(resnum[l]<=9) {  jdec[l-jj_]=jdec[l-jj_]+1; jj_=jj_+1 }
                                                                
                 else { 
-                       if ( jdec[l-1] >0) {                  
+                       if (l>=1 && jdec[l-1] >0) {                  
                        j=1
                        i=0
                        
@@ -1088,6 +1088,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                           }   
                     
                     dec10=1
+                           
                                         }
                           
                      }
