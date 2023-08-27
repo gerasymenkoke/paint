@@ -1044,7 +1044,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
       if(res0==11) { aresnum =  aresnum + " -"; iresnum=iresnum - resnum[l] }
       if(res0==12) { aresnum =  aresnum + " x"; iresnum=iresnum * resnum[l] }
       if(res0==13) { aresnum =  aresnum + " /"; iresnum=iresnum / resnum[l] }
-      if(res0==14) { aresnum =  aresnum + " ="; iresnum}
+      if(res0==14) { aresnum =  aresnum + " =" + iresnum.toString}
              
      
       l=l+1
