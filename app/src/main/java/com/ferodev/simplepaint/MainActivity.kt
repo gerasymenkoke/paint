@@ -1038,16 +1038,16 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 // output  result as string with diferent length adding new symbols each cycle
 
       if(res0<=9) { resnum[l]=res0 
-       aresnum =  aresnum + " " + resnum[l].toString()  } 
+       aresnum =  aresnum + " " + resnum[l].toString() ;  l=l+1  } 
                     
       if(res0==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
       if(res0==11) { aresnum =  aresnum + " -"; iresnum=iresnum - resnum[l] }
       if(res0==12) { aresnum =  aresnum + " x"; iresnum=iresnum * resnum[l] }
       if(res0==13) { aresnum =  aresnum + " /"; iresnum=iresnum / resnum[l] }
-      if(res0==14) { aresnum =  aresnum + " =" + iresnum.toString() }
+      if(res0==14) { aresnum =  aresnum + " = " + iresnum.toString() }
              
      
-      l=l+1
+     
                   
 //
 textviewid.text =     "  " + aresnum +  "\n" +
