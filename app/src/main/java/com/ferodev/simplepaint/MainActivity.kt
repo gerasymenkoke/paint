@@ -81,11 +81,15 @@ class MainActivity : AppCompatActivity() {
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
+    private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
+
+
+     
     private var iresnum = 0.00f  // result last operation
     private var aresnum = " "                 // result each cycle adding as String
 
     private var dec10=1
-    private var jdec = 0 
+    private var jdec = Array<Int>(40){0}
     
        
          companion object {
@@ -1071,26 +1075,28 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-      if(resnum[l]<=9) {  jdec=jdec+1 }
+      if(resnum[l]<=9) {  jdec[l]=jdec[l]+1 }
                                                                
                 else { 
+                       if ( jdec[l-1] >0) {                  
                        j=1
+                       i=0
                        
-                    while ( j <= jdec-1 )        //   dec * 100 + *10+ ..
+                    while ( j <= jdec[l-1]-1)        //   dec * 100 + *10+ ..
                            {                            
-                            resnum[l-1] =  resnum[l-j]*dec10 + resnum[l-1] ; dec10= dec10*10; j=j+1; 
+                            sresnum[l-1-jdec[l-1]] =  resnum[l-j]*dec10 + sresnum[l-1-jdec[l-1]] ; dec10= dec10*10; j=j+1; 
                           }   
                     
                     dec10=1
-                    jdec = 0 
+                                        }
                           
-                }
+                     }
 
                 
-      if(l>=2 && resnum[l-1]==10) { iresnum=(resnum[l-2] + resnum[l]).toFloat() } 
-      if(l>=2 && resnum[l-1]==11) { iresnum=(resnum[l-2] - resnum[l]).toFloat() } 
-      if(l>=2 && resnum[l-1]==12) { iresnum=(resnum[l-2] * resnum[l]).toFloat() } 
-      if(l>=2 && resnum[l-1]==13) { iresnum=(resnum[l-2] / resnum[l]).toFloat() } 
+      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2-jdec[l-2]] + sresnum[l-jdec[l]]).toFloat() } 
+      if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2-jdec[l-2]] - sresnum[l-jdec[l]]).toFloat() } 
+      if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2-jdec[l-2]] * sresnum[l-jdec[l]]).toFloat() } 
+      if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2-jdec[l-2]] / sresnum[l-jdec[l]]).toFloat() } 
      
       if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() }
              
