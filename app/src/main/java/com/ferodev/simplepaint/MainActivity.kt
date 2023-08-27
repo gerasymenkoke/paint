@@ -84,6 +84,8 @@ class MainActivity : AppCompatActivity() {
     private var iresnum = 0.00f  // result last operation
     private var aresnum = " "                 // result each cycle adding as String
 
+    private var dec10=1
+    private var jdec = 0 
     
        
          companion object {
@@ -863,6 +865,9 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[14][21] = arrayOf<Int>( 3,  0,  1,  0,  10,  10,   10,  10, 10, 10) 
       rr[14][21] = arrayOf<Float>(  0.08f,  0.1f,  -0.53f,  0.09f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][22] = arrayOf<Int>( 3,  1,  3,  0,  10,  10,   10,  10, 10, 10) 
+      rr[14][22] = arrayOf<Float>(  0.03f,  -0.08f,  0.02f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
     
       
@@ -1066,7 +1071,22 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
+      if(resnum[l]<=9) {  jdec=jdec+1 }
+                                                               
+                else { 
+                       j=1
+                       
+                    while ( j <= jdec-1 )        //   dec * 100 + *10+ ..
+                           {                            
+                            resnum[l-1] =  resnum[l-j]*dec10 + resnum[l-1] ; dec10= dec10*10; j=j+1; 
+                          }   
                     
+                    dec10=1
+                    jdec = 0 
+                          
+                }
+
+                
       if(l>=2 && resnum[l-1]==10) { iresnum=(resnum[l-2] + resnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==11) { iresnum=(resnum[l-2] - resnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==12) { iresnum=(resnum[l-2] * resnum[l]).toFloat() } 
