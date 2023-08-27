@@ -1054,9 +1054,9 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res0 
-      aresnum =  aresnum + " " + resnum[l].toString()  
+     if ( resnum<=9) { aresnum =  aresnum + " " + resnum[l].toString() } 
                     
-      if(l>0 && resnum[l-1]==10) { aresnum =  aresnum + " +"; iresnum=iresnum + resnum[l] } 
+      if(l>1 && resnum[l-1]==10) { aresnum =  aresnum + " +"; iresnum=resnum[l-2] + resnum[l] } 
       
       if(l>0 && resnum[l]==14) { aresnum =  aresnum + " = " + iresnum.toString() }
              
