@@ -1098,7 +1098,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(resnum[l]<=9) {  sresnum[l] = resnum[l] 
                            j=0
-                          while ( sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
+                          while ( (l-j) > 0 && sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
                            {                            
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                           }   
