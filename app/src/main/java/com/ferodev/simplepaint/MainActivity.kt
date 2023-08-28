@@ -357,7 +357,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][40] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
      rr[1][40] = arrayOf<Float>(  0.06f,  0.13f,  0.02f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
-
+     dir_rr[1][41] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][41] = arrayOf<Float>(  0.07f,  0.12f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
 
      
@@ -740,10 +741,13 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][22] = arrayOf<Int>(  0,  3,  2,  1,  10, 10, 10, 10, 10, 10)
       rr[10][22] = arrayOf<Float>(   0.07f,  0.02f,  -1.38f,  0.02f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-
-
-      
+      dir_rr[10][23] = arrayOf<Int>(  0,  1,  10,  10,  10, 10, 10, 10, 10, 10)
+      rr[10][23] = arrayOf<Float>(   0.08f,  -0.55f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
+     
+
+
+
       
 // Filling sample array 
 // -
@@ -885,6 +889,10 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[14][22] = arrayOf<Int>( 3,  1,  3,  0,  10,  10,   10,  10, 10, 10) 
       rr[14][22] = arrayOf<Float>(  0.03f,  -0.08f,  0.02f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][23] = arrayOf<Int>( 3,  0,  1,  0,  10,  10,  10,  10, 10, 10) 
+      rr[14][23] = arrayOf<Float>(  0.05f,  0.06f,  -0.46f,  0.03f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      
       
     
       
@@ -1090,7 +1098,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(resnum[l]<=9) {  sresnum[l] = resnum[l] 
                            j=0
-                          while ( sresnum[j] != 100)        //   dec * 100 + *10+ ..
+                          while ( sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
                            {                            
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                           }   
