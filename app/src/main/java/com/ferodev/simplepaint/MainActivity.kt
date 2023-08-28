@@ -1092,7 +1092,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                            j=0
                           while ( sresnum[j] != 100)        //   dec * 100 + *10+ ..
                            {                            
-                            sresnum[l] = scresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
+                            sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                           }   
                     
                     dec10=10
