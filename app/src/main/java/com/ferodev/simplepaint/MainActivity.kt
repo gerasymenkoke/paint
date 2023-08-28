@@ -64,13 +64,13 @@ class MainActivity : AppCompatActivity() {
     private var dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var rr =  Array(20) { Array(40){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
+    private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(40){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     private var  aresmin = " "
-    private var iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
-    private var res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
+    private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
     private var minres = 100.00f // temporary variable  resmin[jj] [j] < minres
@@ -80,8 +80,8 @@ class MainActivity : AppCompatActivity() {
                          // in array with min difference(coincedence), res1 - number  
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
-    private var resnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Int>(40){10}  // result each cycle adding  as Int Array
+    private var resnum =  Array<Int>(60){10}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Int>(60){10}  // result each cycle adding  as Int Array
 
 
      
@@ -222,7 +222,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][27] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
      rr[0][27] = arrayOf<Float>(  -0.02f,  0.09f,  0.04f,  -0.1f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-
+     dir_rr[0][28] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
+     rr[0][28] = arrayOf<Float>(  0.01f,  0.08f,  0.03f,  -0.07f,  0.00f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
      
   
@@ -353,6 +354,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][39] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
      rr[1][39] = arrayOf<Float>(  0.02f,  0.08f,  0.06f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+     dir_rr[1][40] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][40] = arrayOf<Float>(  0.06f,  0.13f,  0.02f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
 
 
@@ -728,6 +731,15 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][19] = arrayOf<Int>( 0,  3,  2,   1,  0,  10,  10,  10, 10, 10) 
       rr[10][19] = arrayOf<Float>(  0.06f,  0.03f,  -0.71f,  0.03f,  0.1f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[10][20] = arrayOf<Int>(  0,  3,  2,  1,  10, 10, 10, 10, 10, 10)
+      rr[10][20] = arrayOf<Float>(   0.08f,  0.02f,  -1.42f,  0.16f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)  
+
+      dir_rr[10][21] = arrayOf<Int>(  3,  2,  10,  10,  10, 10, 10, 10, 10, 10)
+      rr[10][21] = arrayOf<Float>(   0.01f,  -0.97f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)  
+
+      dir_rr[10][22] = arrayOf<Int>(  0,  3,  2,  1,  10, 10, 10, 10, 10, 10)
+      rr[10][22] = arrayOf<Float>(   0.07f,  0.02f,  -1.38f,  0.02f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
 
 
       
@@ -753,7 +765,8 @@ class MainActivity : AppCompatActivity() {
         dir_rr[11][4] = arrayOf<Int>( 3,  0,  10,  10,  10,  10,  10,  10, 10, 10) 
         rr[11][4] = arrayOf<Float>(  0.08f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-
+        dir_rr[11][5] = arrayOf<Int>(  0,  3, 10, 10, 10, 10, 10, 10, 10, 10)
+        rr[11][5] = arrayOf<Float>(  0.07f,  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
 
       
@@ -939,7 +952,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
-    while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
             {
     
                 j=0
@@ -971,7 +984,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                 if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
                                                   while ( iii<=39) { 
-                                                  dir_resmin[iii][0]=20; dir_resmin[iii][1]=40  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
+                                                  dir_resmin[iii][0]=20; dir_resmin[iii][1]=60  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
                                                        iii=iii+1
                                                                    }
                                                }
@@ -1091,8 +1104,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                     
                      }
                           
-                     }
-
+                    
                 
       if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2] - sresnum[l]).toFloat() } 
@@ -1150,14 +1162,14 @@ textviewid.text =     "  " + aresnum +  "\n" +
                                  cry_ = Array<Float>(800){0.0f} 
                                  dir_cr =  Array<Int>(800){10} 
         dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-        dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+        dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
         crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
 
         dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-            resmin =  Array(40){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+            resmin =  Array(60){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
             aresmin = " "
-          iresmin =  Array<Int>(40){10}  // array of index for of values resmin array with min difference(coincedence) 
-              res =    Array<Int>(40){0}  // array of  counters for  each etalon from iresmin array
+          iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+              res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
 
               min = 10 // temporary variable min = dir_res[jj][jjj] 
            minres = 100.0f // temporary variable  resmin[jj] [j] < minres
