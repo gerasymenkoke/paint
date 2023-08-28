@@ -1075,29 +1075,29 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-      if(resnum[l]<=9) {  jdec[l-jj_]=jdec[l-jj_]+1; jj_=jj_+1 }
-                                                               
-                else { 
-                       if (l>=1 && jdec[l-1] >0) {                  
-                       j=1
-                       i=0
-                       
-                    while ( j <= jdec[l-1]-1)        //   dec * 100 + *10+ ..
+      if(resnum[l]<=9) {  sresnum[l] = resnum[l] 
+                           j=0
+                          while ( sresnum[j] != 100)        //   dec * 100 + *10+ ..
                            {                            
-                            sresnum[l-1-jdec[l-1]] =  resnum[l-j]*dec10 + sresnum[l-1-jdec[l-1]] ; dec10= dec10*10; j=j+1; 
+                            sresnum[l] = scresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                           }   
                     
-                    dec10=1
-                           
-                                        }
+                    dec10=10
+         
+                        }
+                                                               
+                else { 
+                        sresnum[l]=100   
+                    
+                     }
                           
                      }
 
                 
-      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2-jdec[l-2]] + sresnum[l-jdec[l]]).toFloat() } 
-      if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2-jdec[l-2]] - sresnum[l-jdec[l]]).toFloat() } 
-      if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2-jdec[l-2]] * sresnum[l-jdec[l]]).toFloat() } 
-      if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2-jdec[l-2]] / sresnum[l-jdec[l]]).toFloat() } 
+      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l]).toFloat() } 
+      if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2] - sresnum[l]).toFloat() } 
+      if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
+      if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
      
       if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() }
              
