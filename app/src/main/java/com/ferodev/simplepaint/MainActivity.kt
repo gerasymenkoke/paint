@@ -60,8 +60,8 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(40){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
-    private var dir_res =  Array(20){ Array<Int>(40){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+    private var dir_rr = Array(20) { Array(60){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
     private var aresnum = " "                 // result each cycle adding as String
 
     private var dec10=1
-    private var jdec = Array<Int>(40){0}
+    private var jdec = Array<Int>(60){0}
     
        
          companion object {
@@ -979,11 +979,11 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
  {
           jjj=0
-      while (jjj >=0 && jjj<=39) // quantity of variants for each/all numbers
+      while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
                {
                 if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
-                                                  while ( iii<=39) { 
+                                                  while ( iii<=59) { 
                                                   dir_resmin[iii][0]=20; dir_resmin[iii][1]=60  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
                                                        iii=iii+1
                                                                    }
