@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(60){10}  // result each cycle adding  as Int Array
     private var sresnum =  Array<Int>(60){100}  // result each cycle adding  as Int Array
-
+    private var asresnum = " "  
 
      
     private var iresnum = 0.00f  // result last operation
@@ -1130,7 +1130,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                      
                     
                 
-      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l]).toFloat() } 
+      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l]).toFloat(); asresnum= sresnum[l-2].toString() + sresnum[l].toString() } 
       if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2] - sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
