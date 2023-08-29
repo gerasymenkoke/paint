@@ -89,6 +89,7 @@ class MainActivity : AppCompatActivity() {
     private var aresnum = " "                 // result each cycle adding as String
 
     private var dec10=1
+    private var vauedec=0
     private var jdec = Array<Int>(60){0}
     
        
@@ -1102,6 +1103,14 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                            {                            
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                           }   
+                           valuedec = sresnum[l]
+                           j=l-j-1 
+                           while ( j <= l-1)        //   
+                           {                            
+                            sresnum[j] = valuedec; j=j+1; 
+                          }   
+
+
                     
                     dec10=10
          
@@ -1128,7 +1137,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 textviewid.text =     "  " + aresnum +  "\n" +
                      "res=[" + res0 + "][" + res1 +  "]\n"   +  
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]"    + 
-                    "\n" + "sresnum[l-2]=" + sresnum[l-3] +  "  sresnum[l]=" + sresnum[l-1]
+                //    "\n" + "sresnum[l-2]=" + sresnum[l-3] +  "  sresnum[l]=" + sresnum[l-1]
                     
                 //    "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                 //     "\n" +  "iresmin=" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] +
