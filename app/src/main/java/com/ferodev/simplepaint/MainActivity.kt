@@ -361,6 +361,15 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][41] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
      rr[1][41] = arrayOf<Float>(  0.07f,  0.12f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+     dir_rr[1][42] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+     rr[1][42] = arrayOf<Float>(  0.01f,  0.05f,  0.15f,   0.03f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][43] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+     rr[1][43] = arrayOf<Float>(  0.03f,  0.17f,  0.17f,   0.06f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+     dir_rr[1][44] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][44] = arrayOf<Float>(  0.04f,  0.18f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+
 
      
      
@@ -745,7 +754,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][23] = arrayOf<Int>(  0,  1,  10,  10,  10, 10, 10, 10, 10, 10)
       rr[10][23] = arrayOf<Float>(   0.08f,  -0.55f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
-     
+      dir_rr[10][24] = arrayOf<Int>( 0,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
+      rr[10][24] = arrayOf<Float>(  0.06f,  -0.93f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
