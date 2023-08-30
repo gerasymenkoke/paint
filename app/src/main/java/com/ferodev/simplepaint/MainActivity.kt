@@ -372,6 +372,9 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][44] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
      rr[1][44] = arrayOf<Float>(  0.04f,  0.18f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+     dir_rr[1][42] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][42] = arrayOf<Float>(  0.06f,  0.13f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+
 
      
      
@@ -882,8 +885,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][14] = arrayOf<Int>( 3,  0,  1,  3,  10,  10,  10,  10, 10, 10) 
       rr[14][14] = arrayOf<Float>(  0.04f,  0.04f,  -0.21f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-      dir_rr[14][15] = arrayOf<Int>( 3,  1,  10,  10,  10,  10,  10,  10, 10, 10) 
-      rr[14][15] = arrayOf<Float>(  0.04f,  -0.21f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+ //     dir_rr[14][15] = arrayOf<Int>( 3,  1,  10,  10,  10,  10,  10,  10, 10, 10) 
+ //     rr[14][15] = arrayOf<Float>(  0.04f,  -0.21f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       dir_rr[14][16] = arrayOf<Int>( 3,  1,  0,  10,  10,  10,  10,  10, 10, 10) 
       rr[14][16] = arrayOf<Float>(  0.04f,  -0.53f,  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
@@ -1133,7 +1136,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                               }   
                            valuedec = sresnum[l]
                            j = l - j + 1
-                           while ( j <= l-1 && j>=0)        //   
+                           while ( j <= l && j>=0)        //   
                                {                            
                             sresnum[j] = valuedec; j=j+1; 
                                }   
