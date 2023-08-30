@@ -226,6 +226,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][28] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
      rr[0][28] = arrayOf<Float>(  0.01f,  0.08f,  0.03f,  -0.07f,  0.00f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
+     dir_rr[0][29] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
+     rr[0][29] = arrayOf<Float>(  0.01f,  0.07f,  0.04f,  -0.07f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      
   
      
@@ -536,11 +538,14 @@ class MainActivity : AppCompatActivity() {
       rr[4][9] = arrayOf<Float>(  0.18f,  0.06f,  -0.33f,   0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
       dir_rr[4][10] = arrayOf<Int>(  1, 0,  2,   1,  10,  10, 10, 10, 10, 10)   
-      rr[4][11] = arrayOf<Float>(  0.08f,  0.07f,  -0.5f,   0.03f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      rr[4][10] = arrayOf<Float>(  0.08f,  0.07f,  -0.5f,   0.03f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+      dir_rr[4][11] = arrayOf<Int>(  1,  0,  3,  2,  1,  10,  10, 10, 10, 10)   
+      rr[4][11] = arrayOf<Float>(  0.3f,  0.05f,  0.03f,   -0.3f,  0.08f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+
 
       
-
-
       
 // Filling sample array 
 // 5
@@ -1122,7 +1127,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(resnum[l]<=9) {  sresnum[l] = resnum[l] 
                            j=0
-                          while ( (l-j) > 0 && sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
+                          while ( (l-j) >= 0 && sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
                               {                            
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                               }   
@@ -1155,6 +1160,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                     "\n" + "asresnum=" + asresnum 
+                    
                     
                 //     "\n" +  "iresmin=" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] +
                 //     "\n" +  "aresmin=" + aresmin +
