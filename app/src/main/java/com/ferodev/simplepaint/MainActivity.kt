@@ -500,6 +500,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[3][2] = arrayOf<Int>( 2,  3,  0,  1,  3,  0,  1, 10, 10, 10) 
      rr[3][2] = arrayOf<Float>(  -0.03f,  -0.09f,  0.08f,  0.16f, 0.00f, 0.08f,  0.05f,  0.0f,  0.0f,  0.0f)
 
+     dir_rr[3][3] = arrayOf<Int>( 3,  0,  1,  2,  3,  0,  1,  2, 10, 10) 
+     rr[3][3] = arrayOf<Float>(  -0.11f,  0.11f,  0.05f,  -0.03f, 0.00f, 0.07f,  0.02f,  -0.11f,  0.0f,  0.0f)
 
 
 
@@ -765,7 +767,10 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][24] = arrayOf<Int>( 0,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
       rr[10][24] = arrayOf<Float>(  0.06f,  -0.93f,  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[10][25] = arrayOf<Int>( 0,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
+      rr[10][25] = arrayOf<Float>(  0.05f,  -0.84f,  0.09f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      
 
       
 // Filling sample array 
@@ -1135,7 +1140,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                               }   
                            valuedec = sresnum[l]
-                           j = l - j + 1
+                           j = l - j 
                            while ( j <= l && j>=0)        //   
                                {                            
                             sresnum[j] = valuedec; j=j+1; 
