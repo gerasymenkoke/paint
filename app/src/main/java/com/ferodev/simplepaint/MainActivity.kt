@@ -228,8 +228,15 @@ class MainActivity : AppCompatActivity() {
 
      dir_rr[0][29] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
      rr[0][29] = arrayOf<Float>(  0.01f,  0.07f,  0.04f,  -0.07f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
+
+     dir_rr[0][30] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
+     rr[0][30] = arrayOf<Float>(  0.03f,  0.06f,  0.05f,  -0.07f,  -0.04f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
   
+
+
+
+
      
  // Filling sample array
 // 1
@@ -929,7 +936,17 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][27] = arrayOf<Int>( 0,  3,  1,  3,  10,  10,  10,  10, 10, 10) 
       rr[14][27] = arrayOf<Float>(  0.08f,  0.09f,  -1.31f,  0.11f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[14][28] = arrayOf<Int>( 3,  1,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[14][28] = arrayOf<Float>(  0.05f,  -0.31f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[14][29] = arrayOf<Int>( 3,  0,  1,  3,  0,  10,  10,  10, 10, 10) 
+      rr[14][29] = arrayOf<Float>(  0.05f,  0.06f,  -0.1f,  0.00f,  0.08f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[14][30] = arrayOf<Int>( 3,  1,  0,  10,  10,  10,  10,  10, 10, 10) 
+      rr[14][30] = arrayOf<Float>(  0.02f,  -0.09f,  0.06f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+
+      
       
 
 
@@ -1168,7 +1185,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                     "\n" + "asresnum=" + asresnum +
-                     "\n" +  "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7]
+                     "\n" +  "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] +
                      "\n" +  "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] + " " + sresnum[6] + " " + sresnum[7]
                     
                 //     "\n" +  "iresmin=" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] +
