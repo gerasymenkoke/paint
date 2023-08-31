@@ -382,7 +382,10 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][42] = arrayOf<Int>(  3,  1, 10, 10, 10, 10, 10, 10, 10, 10)
      rr[1][42] = arrayOf<Float>(  0.06f,  0.13f,  0.0f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+    dir_rr[1][43] = arrayOf<Int>(  3,  0,  1,  0, 10, 10, 10, 10, 10, 10)
+    rr[1][43] = arrayOf<Float>(  0.03f,  0.06f,  0.14f,   0.05f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+     
      
      
 // Filling sample array 
@@ -490,7 +493,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][32] = arrayOf<Int>( 2,  3,  0,  1,  3,  10, 10, 10, 10, 10)
       rr[2][32] = arrayOf<Float>(  -0.02f,  -0.05f,  0.04f,   0.08f,  0.01f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
-
+      dir_rr[2][33] = arrayOf<Int>( 3,  0,  1,  3,  0,  3, 10, 10, 10, 10) 
+      rr[2][33] = arrayOf<Float>(  -0.03f,  0.07f,  0.01f,  0.01f,  0.07f, 0.02f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       
 
@@ -1152,18 +1156,18 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(resnum[l]<=9) {  sresnum[l] = resnum[l] 
                            j=0
-                          while ( (l-j) >= 0 && sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
+                          while ( (l-j) >= 1 && sresnum[l-j] != 100)        //   dec * 100 + *10+ ..
                               {                            
                             sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
                               }   
                            valuedec = sresnum[l]
                            j = l - j 
-                           while ( j <= l && j>=0)        //   
+                           while ( j>=0 && j <= l)        //   
                                {                            
                             sresnum[j] = valuedec; j=j+1; 
                                }   
                      
-                    dec10=10
+                    // dec10=10
          
                        }
                                                                
