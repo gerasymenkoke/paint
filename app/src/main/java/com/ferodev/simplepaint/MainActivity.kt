@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
     private var iresnum = 0.00f  // result last operation
     private var aresnum = " "                 // result each cycle adding as String
 
-    private var dec10=1
+    private var dec10=10
     private var valuedec=0
     private var jdec = Array<Int>(60){0}
     
