@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(60){10}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Int>(60){100}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Int>(60){1}  // result each cycle adding  as Int Array
     private var asresnum = " "  
 
      
@@ -232,7 +232,8 @@ class MainActivity : AppCompatActivity() {
      dir_rr[0][30] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
      rr[0][30] = arrayOf<Float>(  0.03f,  0.06f,  0.05f,  -0.07f,  -0.04f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-  
+     dir_rr[0][31] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
+     rr[0][31] = arrayOf<Float>(  0.06f,  0.07f,  0.03f,  -0.06f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
 
 
@@ -497,6 +498,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[2][33] = arrayOf<Int>( 3,  0,  1,  3,  0,  3, 10, 10, 10, 10) 
       rr[2][33] = arrayOf<Float>(  -0.03f,  0.07f,  0.01f,  0.01f,  0.07f, 0.02f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[2][34] = arrayOf<Int>( 3,  0,  1,  3,  0, 10, 10, 10, 10, 10) 
+      rr[2][34] = arrayOf<Float>(  -0.02f,  0.04f,  0.09f,  0.02f, 0.07f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
 
 // Filling sample array 
