@@ -1177,10 +1177,11 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                            j=1
                           while ( (l-j) >= 1 && sresnum[l-j] <= 9)        //   dec * 100 + *10+ ..
                               {                            
-                            sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1; 
+                            sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] ; dec10= dec10*10; j=j+1;
+                            valuedec = sresnum[l]   
                               }   
-                           valuedec = sresnum[l]
-                           resnum[l] = valuedec
+                         
+                           if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
                            j = l - j 
                            dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
