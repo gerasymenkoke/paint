@@ -1183,7 +1183,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                             valuedec = sresnum[l]   
                               }   
                          
-                           if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
+                          /// if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
                            j = l - j 
                            dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
@@ -1201,7 +1201,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
       if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
      
-      if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() }
+      if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() ; resnum[l+1]=iresnum }
              
       l=l+1
      
