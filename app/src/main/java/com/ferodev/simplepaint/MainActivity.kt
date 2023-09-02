@@ -1181,6 +1181,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
      if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] }
+       else {
                            j=0
                           while ( (l-j) >= 0 && resnum[l-j] <= 9)        //   dec * 100 + *10+ ..
                               {                            
@@ -1188,9 +1189,11 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                             else { sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] } 
                            dec10= dec10*10; j=j+1 
                             valuedec = sresnum[l]   
-                              }   
+                              } 
+
+             }                
                          
-                          /// if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
+                          // if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
                          //  j = l - j 
                            dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
