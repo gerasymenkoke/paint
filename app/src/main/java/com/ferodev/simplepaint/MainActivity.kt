@@ -399,6 +399,11 @@ class MainActivity : AppCompatActivity() {
     rr[1][47] = arrayOf<Float>(  0.05f,  0.11f,  0.13f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
     
 
+
+
+
+
+
      
      
 // Filling sample array 
@@ -1186,7 +1191,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                               }   
                          
                           /// if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
-                           j = l - j 
+                         //  j = l - j 
                            dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
                        //        {                            
