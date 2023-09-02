@@ -397,6 +397,9 @@ class MainActivity : AppCompatActivity() {
 
     dir_rr[1][47] = arrayOf<Int>(  3,  0,  1, 10, 10, 10, 10, 10, 10, 10)     
     rr[1][47] = arrayOf<Float>(  0.05f,  0.11f,  0.13f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+
+    dir_rr[1][48] = arrayOf<Int>( 3,  0,  1,  3,  1, 10, 10, 10, 10, 10)
+    rr[1][48] = arrayOf<Float>(  0.02f,  0.09f,   0.14f,   0.06f,  0.01f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
     
 
 
@@ -803,7 +806,9 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[10][26] = arrayOf<Int>(  3,  2,  1,  0,  10, 10, 10, 10, 10, 10)
       rr[10][26] = arrayOf<Float>(   0.05f,  -0.79f,  0.1f,  0.08f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
-      
+
+      dir_rr[10][27] = arrayOf<Int>(  3,  0,  2,  1,   3, 10, 10, 10, 10, 10)
+      rr[10][27] = arrayOf<Float>(   0.00f,  0.05f,  -0.81f,  0.04f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)      
 
 
 
@@ -1211,7 +1216,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
       if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
      
-      if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() ; resnum[l+1]=iresnum.toInt(); l=l+1 }
+      if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() ; resnum[l+1]=iresnum.toInt(); sresnum[l+1]=resnum[l+1]; l=l+1 }
              
       l=l+1
      
