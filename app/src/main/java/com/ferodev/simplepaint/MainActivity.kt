@@ -1173,7 +1173,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-      sresnum[l] = resnum[l] 
+     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] }
                            j=0
                           while ( (l-j) >= 1 && resnum[l-j] <= 9)        //   dec * 100 + *10+ ..
                               {                            
