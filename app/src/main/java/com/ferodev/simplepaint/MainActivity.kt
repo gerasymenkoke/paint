@@ -90,6 +90,9 @@ class MainActivity : AppCompatActivity() {
 
     private var dec10=10
     private var valuedec=0
+    private var shift=0
+
+    
     private var jdec = Array<Int>(60){0}
     
        
@@ -1192,7 +1195,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
                             else { sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] } 
-                           dec10= dec10*10; j=j+1 
+                           dec10= dec10*10; j=j+1 ; shift=shift+1
                             valuedec = sresnum[l]   
                               } 
 
@@ -1211,7 +1214,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                      
                     
                 
-      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l]).toFloat(); asresnum= sresnum[l-2].toString() + ";" + sresnum[l].toString() } 
+      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l+shift]).toFloat(); asresnum= sresnum[l-2].toString() + ";" + sresnum[l+shift].toString() } 
       if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2] - sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
@@ -1225,7 +1228,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
                      "res=[" + res0 + "][" + res1 +  "]\n"   +  
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
-                    "\n" + "asresnum=" + asresnum +
+                    "\n" + "asresnum=" + asresnum + "shift=" + shift
                      "\n" +  "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] +
                      "\n" +  "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] + " " + sresnum[6] + " " + sresnum[7]
                     
