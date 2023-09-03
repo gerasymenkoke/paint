@@ -1203,7 +1203,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] ; shift=0}
+     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l]  }
        else {
                            j=0
                           while ( j <= 1)        //    ..
@@ -1216,20 +1216,11 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 
              }                
                          
-                          // if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
-                         //  j = l - j 
-                        //   dec10=1
-                       //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
-                       //        {                            
-                       //     sresnum[j] = valuedec; j=j+1; 
-                       //        }   
-                     
-                  
-                                                               
+                                                                  
                                      
                     
                 
-      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l+shift]).toFloat(); asresnum= sresnum[l-2].toString() + ";" + sresnum[l+shift].toString() } 
+      if(l>=2 && resnum[l-1]==10) { iresnum=(sresnum[l-2] + sresnum[l+shift]).toFloat(); asresnum= sresnum[l-2].toString() + ";" + sresnum[l+shift].toString() ; shift=0 } 
       if(l>=2 && resnum[l-1]==11) { iresnum=(sresnum[l-2] - sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==12) { iresnum=(sresnum[l-2] * sresnum[l]).toFloat() } 
       if(l>=2 && resnum[l-1]==13) { iresnum=(sresnum[l-2] / sresnum[l]).toFloat() } 
