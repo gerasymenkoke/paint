@@ -1202,12 +1202,12 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
      if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] }
        else {
-                           j=0
+                           j=0; shift=0;
                           while ( (l-j) >= 0 && resnum[l-j] <= 9)        //   dec * 100 + *10+ ..
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
-                            else { sresnum[l] = sresnum[l-j]*dec10 + sresnum[l] } 
-                           dec10= dec10*10; j=j+1 ; shift=shift+1
+                            else { sresnum[l] = sresnum[l-j]*dec10 + sresnum[l];  shift=shift+1 } 
+                           dec10= dec10*10; j=j+1 ;
                             valuedec = sresnum[l]   
                               } 
 
