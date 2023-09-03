@@ -404,7 +404,10 @@ class MainActivity : AppCompatActivity() {
     dir_rr[1][48] = arrayOf<Int>( 3,  0,  1,  3,  1, 10, 10, 10, 10, 10)
     rr[1][48] = arrayOf<Float>(  0.02f,  0.09f,   0.14f,   0.06f,  0.01f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
     
+   dir_rr[1][49] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
+     rr[1][49] = arrayOf<Float>(  0.04f,  0.11f,  0.04f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+   
 
 
 
@@ -1228,7 +1231,7 @@ textviewid.text =     "  " + aresnum +  "\n" +
                      "res=[" + res0 + "][" + res1 +  "]\n"   +  
                     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
-                    "\n" + "asresnum=" + asresnum + "shift=" + shift
+                    "\n" + "asresnum=" + asresnum + "    shift=" + shift +
                      "\n" +  "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] +
                      "\n" +  "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] + " " + sresnum[6] + " " + sresnum[7]
                     
