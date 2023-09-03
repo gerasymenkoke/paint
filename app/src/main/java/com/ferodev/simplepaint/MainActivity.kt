@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
     private var iresnum = 0.00f  // result last operation
     private var aresnum = " "                 // result each cycle adding as String
 
-    private var dec10=10
+    private var dec10=1
     private var valuedec=0
     private var shift=0
 
@@ -525,8 +525,15 @@ class MainActivity : AppCompatActivity() {
 
       dir_rr[2][34] = arrayOf<Int>( 3,  0,  1,  3,  0, 10, 10, 10, 10, 10) 
       rr[2][34] = arrayOf<Float>(  -0.02f,  0.04f,  0.09f,  0.02f, 0.07f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-      
 
+      dir_rr[2][35] = arrayOf<Int>( 3,  2,  3,  0,  1,  2,  3,  0, 10, 10) 
+      rr[2][35] = arrayOf<Float>(  -0.97f,  -0.06f,  -0.06f,  0.06f,  0.12f, -0.05f, 0.00f,  0.05f,  0.0f,  0.0f)
+
+
+
+
+
+      
 // Filling sample array 
 // 3
       jj = 3                  
@@ -816,6 +823,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][27] = arrayOf<Int>(  3,  0,  2,  1,   3, 10, 10, 10, 10, 10)
       rr[10][27] = arrayOf<Float>(   0.00f,  0.05f,  -0.81f,  0.04f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)      
 
+      dir_rr[10][28] = arrayOf<Int>(  3,  2,  1,  0,  10, 10, 10, 10, 10, 10)
+      rr[10][28] = arrayOf<Float>(   -0.04f,  -0.91f,  0.02f,  0.11f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
 
 
 
@@ -1206,7 +1215,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                          
                           // if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
                          //  j = l - j 
-                           dec10=10
+                           dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
                        //        {                            
                        //     sresnum[j] = valuedec; j=j+1; 
