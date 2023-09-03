@@ -404,11 +404,14 @@ class MainActivity : AppCompatActivity() {
     dir_rr[1][48] = arrayOf<Int>( 3,  0,  1,  3,  1, 10, 10, 10, 10, 10)
     rr[1][48] = arrayOf<Float>(  0.02f,  0.09f,   0.14f,   0.06f,  0.01f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
     
-   dir_rr[1][49] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
-     rr[1][49] = arrayOf<Float>(  0.04f,  0.11f,  0.04f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+    dir_rr[1][49] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
+    rr[1][49] = arrayOf<Float>(  0.04f,  0.11f,  0.04f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
-   
+    dir_rr[1][50] = arrayOf<Int>(  3,  1,  0,  1, 10, 10, 10, 10, 10, 10)
+    rr[1][50] = arrayOf<Float>(  0.05f,  0.06f,  0.06f,  0.00f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+    dir_rr[1][51] = arrayOf<Int>( 3,  1,  3,  1, 10, 10, 10, 10, 10, 10)   
+    rr[1][51] = arrayOf<Float>(  0.07f,  0.09f,  0.06f,  -0.01f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
@@ -1200,15 +1203,15 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] }
+     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] ; shift=0}
        else {
-                           j=0; shift=0;
-                          while ( (l-j) >= 0 && resnum[l-j] <= 9)        //   dec * 100 + *10+ ..
+                           j=0; 
+                          while ( j <= 1)        //    ..
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
-                            else { sresnum[l] = sresnum[l-j]*dec10 + sresnum[l];  shift=shift+1 } 
-                           dec10= dec10*10; j=j+1 ;
-                            valuedec = sresnum[l]   
+                            if(j==1) { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift=shift+1 } 
+                            j=j+1 
+                              
                               } 
 
              }                
