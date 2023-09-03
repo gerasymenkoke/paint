@@ -1205,11 +1205,11 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
      if( resnum[l] >= 10 ) { sresnum[l] = resnum[l] ; shift=0}
        else {
-                           j=0; 
+                           j=0
                           while ( j <= 1)        //    ..
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
-                            if(j==1) { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift=shift+1 } 
+                            if( (j==1) && (l-1) >= 1 )  { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift=shift+1 } 
                             j=j+1 
                               
                               } 
@@ -1218,7 +1218,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                          
                           // if (resnum[l] ==14 ) { resnum[l+1] = valuedec }
                          //  j = l - j 
-                           dec10=1
+                        //   dec10=1
                        //    while ( j>=0 && j <= l && sresnum[j] <= 9)        //   
                        //        {                            
                        //     sresnum[j] = valuedec; j=j+1; 
