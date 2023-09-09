@@ -1222,7 +1222,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
          
        
                 
-      if(sign == 1  && resnum[l-1-shift1]==10) { iresnum= iresnum +  sresnum[l].toFloat(); asresnum= iresnum + ";" + sresnum[l].toString()  } 
+      if(sign == 1  && resnum[l-1-shift1]==10) { iresnum= iresnum +  sresnum[l].toFloat(); asresnum = iresnum.toString() + ";" + sresnum[l].toString()  } 
       if(sign == 1  && resnum[l-1-shift1]==11) { iresnum=(sresnum[l-2-shift1] - sresnum[l]).toFloat(); asresnum= sresnum[l-2-shift1].toString() + ";" + sresnum[l].toString()  } 
       if(sign == 1  && resnum[l-1-shift1]==12) { iresnum=(sresnum[l-2-shift1] * sresnum[l]).toFloat(); asresnum= sresnum[l-2-shift1].toString() + ";" + sresnum[l].toString()  } 
       if(sign == 1  && resnum[l-1-shift1]==13) { iresnum=(sresnum[l-2-shift1] / sresnum[l]).toFloat(); asresnum= sresnum[l-2-shift1].toString() + ";" + sresnum[l].toString()  } 
