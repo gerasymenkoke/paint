@@ -1246,7 +1246,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(l>=1 && resnum[l]==14) { aresnum =  aresnum  + iresnum.toString() ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0;  l=l+1 }
              
-      l=l+1
+      
      
                 
 textviewid.text =     "  " + aresnum +  "\n" +
@@ -1264,13 +1264,15 @@ textviewid.text =     "  " + aresnum +  "\n" +
                     
 
 
-
+       
 
 
                     
                     //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
                       //  " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
 
+                    l=l+1
+                    
                     shift=1
                     
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
