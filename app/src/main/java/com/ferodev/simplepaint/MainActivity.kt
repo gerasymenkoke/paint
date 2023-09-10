@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     private var sign=0
     private var f=0
     private var ff=0
-    private var rr=0
+    private var ffr=0
     
     private var jdec = Array<Int>(60){0}
     
@@ -1229,28 +1229,28 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                 
       if(sign == 1  && resnum[l-1-shift1]==10 ) { if (shift1==0) { iresnum= iresnum +  sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum +  ( sresnum[l].toFloat() - sresnum[l-1].toFloat() )  } 
-                                                  rr=0
+                                                  ffr=0
                                                 }
       
       if(sign == 1  && resnum[l-1-shift1]==11) { if (shift1==0) { iresnum= iresnum - sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l].toFloat() - sresnum[l-1].toFloat() ) } 
-                                                  rr=0
+                                                  ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && rr==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat() ; rr=1} 
-                                                 else { if (shift1==0 && rr==1) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat() } }
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat() ; rr=1} 
+                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l].toFloat() } }
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
                                                 }
       
       if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0) { iresnum= iresnum /  sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum / (  sresnum[l].toFloat() - sresnum[l-1].toFloat() )  } 
-                                                  rr=0
+                                                  
                                                 } 
      
 
 
      
-      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f; l=l+1 }
+      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f;  ffr=0; l=l+1 }
              
       
      
