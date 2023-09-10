@@ -1219,7 +1219,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                                   
                                      
       if(resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; }
-      if( l==0 || (l>=1 && resnum[l-1] == 14) )  { iresnum=resnum[l].toFloat() }              
+      if( f==0 || (f==1 && resnum[l-1] == 14) )  { iresnum=resnum[l].toFloat() }              
          
        
                 
