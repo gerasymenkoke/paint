@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
 
      
     private var iresnum = 0.00f  // result last operation
+    private var xiresnum = 1.00f  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
 
     private var dec10=1
@@ -1233,8 +1234,8 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l].toFloat() - sresnum[l-1].toFloat() ) } 
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0) { iresnum= iresnum * sresnum[l].toFloat() } 
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat() } 
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
                                                 }
       
       if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0) { iresnum= iresnum /  sresnum[l].toFloat() } 
