@@ -1227,12 +1227,14 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
          
        
                 
-      if(sign == 1  && resnum[l-1-shift1]==10 ) { if (shift1==0) { iresnum= iresnum +  sresnum[l].toFloat() } 
+      if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0.00f
+                                                  if (shift1==0) { iresnum= iresnum +   sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum +  ( sresnum[l].toFloat() - sresnum[l-1].toFloat() )  } 
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==11) { if (shift1==0) { iresnum= iresnum - sresnum[l].toFloat() } 
+      if(sign == 1  && resnum[l-1-shift1]==11) {  iresnum= iresnum + xiresnum; xiresnum=0.00f
+                                                  if (shift1==0) { iresnum= iresnum - sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l].toFloat() - sresnum[l-1].toFloat() ) } 
                                                   ffr=0
                                                 }
