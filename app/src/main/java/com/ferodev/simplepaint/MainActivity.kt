@@ -96,6 +96,8 @@ class MainActivity : AppCompatActivity() {
     private var f=0
     private var ff=0
     private var ffr=0
+    private var xsign=1
+    
     
     private var jdec = Array<Int>(60){0}
     
@@ -1232,20 +1234,20 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
          
        
                 
-      if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0.00f
+      if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0.00f; xsign=1
                                                   if (shift1==0) { iresnum= iresnum +   sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum +  ( sresnum[l].toFloat() - sresnum[l-1].toFloat() )  } 
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==11) {  iresnum= iresnum - xiresnum; xiresnum=0.00f
+      if(sign == 1  && resnum[l-1-shift1]==11) {  iresnum= iresnum - xiresnum; xiresnum=0.00f; xsign=-1
                                                   if (shift1==0) { iresnum= iresnum - sresnum[l].toFloat() } 
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l].toFloat() - sresnum[l-1].toFloat() ) } 
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat();ffr=1 
-                                                     if ( iresnum <0) {iresnum= iresnum + sresnum[l-2].toFloat();  } 
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() * sresnum[l].toFloat();ffr=1 
+                                                     if ( iresnum <0) {iresnum= iresnum + sresnum[l-2].toFloat()  } 
                                                      if ( iresnum >0) {iresnum= iresnum - sresnum[l-2].toFloat() }                    
                                                                           } 
       
