@@ -1244,7 +1244,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat(); iresnum= iresnum - sresnum[l-2].toFloat() ;  ffr=1} 
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= sresnum[l-2].toFloat() * sresnum[l].toFloat(); iresnum= iresnum - sresnum[l-2].toFloat() ;   ffr=1} 
                                                  else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l].toFloat() } }
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
                                                 }
