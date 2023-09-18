@@ -1221,6 +1221,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==12) { aresnum =  aresnum + " x " } 
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
+     if ( resnum[l]==15) { aresnum =  aresnum + "," } 
      
      if( resnum[l] >= 10 && resnum[l] <= 14) { sresnum[l] = resnum[l] ; dot=0 }
        else {      if (resnum[l] <= 9) {
