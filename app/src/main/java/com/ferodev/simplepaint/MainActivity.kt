@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
     private var ff=0
     private var ffr=0
     private var xsign=1
-    
+    private var dot=0
     
     private var jdec = Array<Int>(60){0}
     
@@ -1010,6 +1010,14 @@ class MainActivity : AppCompatActivity() {
       rr[14][30] = arrayOf<Float>(  0.02f,  -0.09f,  0.06f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
+
+      
+// Filling sample array 
+// ,
+      jj = 15            
+  
+      dir_rr[15][0] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[15][0] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
       
 
@@ -1214,17 +1222,22 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==13) { aresnum =  aresnum + " / " } 
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      
-     if( resnum[l] >= 10 ) { sresnum[l] = resnum[l]  }
-       else {
+     if( resnum[l] >= 10 && resnum[l] <= 14) { sresnum[l] = resnum[l] ; dot=0 }
+       else {      if (resnum[l] <= 9) {
                            j=0
                           while ( j <= 1)        //    ..
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
-                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) )  { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift1=shift1+1 } 
+                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==0)  { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift1=shift1+1 } 
+                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { sresnum[l] = sresnum[l-1] + sresnum[l]/10; shift1=shift1+1 } 
                             j=j+1 
                               
                               } 
+                                        }
+                   if (resnum[l] == 15) {  dot=1 }
 
+
+       
              }                
                          
                                                                   
