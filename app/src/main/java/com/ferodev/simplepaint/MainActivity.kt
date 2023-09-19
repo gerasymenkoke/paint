@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity() {
     private var ffr=0
     private var xsign=1
     private var dot=0
+    private var repeat=0
     
     private var jdec = Array<Int>(60){0}
     
@@ -1223,9 +1224,12 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      if ( resnum[l]==14) { aresnum =  aresnum + " = " } 
      if ( resnum[l]==15) { aresnum =  aresnum + "," } 
      
-     if( resnum[l] >= 10 && resnum[l] <= 14) { sresnum[l] = resnum[l] ; dot=0 }
+     if( resnum[l] >= 10 && resnum[l] <= 14) { if (repeat==1) { l=l-1; sresnum[l] = resnum[l] ; dot=0 }
+                                               if (repeat==0) { sresnum[l] = resnum[l] ; dot=0; repeat=1 }
+                                               
+                                             }
        else {      if (resnum[l] <= 9) {
-                           j=0
+                           j=0; repeat=0
                           while ( j <= 1)        //    ..
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
