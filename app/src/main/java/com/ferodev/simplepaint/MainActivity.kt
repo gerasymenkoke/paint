@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
     private var resnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
     private var sresnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
     private var asresnum = " "  
-
+    private var asresnum1 = " "  
      
     private var iresnum = 0.00f  // result last operation
     private var xiresnum = 0.00f  // result last operation x or /
