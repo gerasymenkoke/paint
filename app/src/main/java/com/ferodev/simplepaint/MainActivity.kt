@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
     private var iresnum = 0.00f  // result last operation
     private var xiresnum = 0.00f  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
-    private var aresnum1 = " "  
+    private var aresnum1 = ""  
 
     
     private var dec10=1
@@ -1218,7 +1218,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res0 
-     if ( resnum[l]<=9) { aresnum =  aresnum + " " + resnum[l].toString(); aresnum1=""  } 
+     if ( resnum[l]<=9) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1=""  } 
    
      
      if( resnum[l] >= 10 && resnum[l] <= 15) { if (repeat==1) { sresnum[l] = resnum[l] ; dot=0 }
