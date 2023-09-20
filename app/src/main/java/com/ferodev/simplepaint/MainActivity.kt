@@ -1218,7 +1218,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res0 
-     if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1=""  } 
+     if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
      
      if( resnum[l] >= 10 && resnum[l] <= 15) {  if (repeat ==0) {sresnum[l] = resnum[l] ; dot=0; repeat=1 }
@@ -1227,7 +1227,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                 if ( resnum[l]==11) { aresnum1 =  " - " } 
                                                 if ( resnum[l]==12) { aresnum1 =   " x " } 
                                                 if ( resnum[l]==13) { aresnum1 =   " / " } 
-                                           //    if ( resnum[l]==14) { aresnum1 =  " = " } 
+                                                if ( resnum[l]==14) { repeat=0 } 
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
                                                 
                                                 if (repeat ==1) { l=l-1 }     
