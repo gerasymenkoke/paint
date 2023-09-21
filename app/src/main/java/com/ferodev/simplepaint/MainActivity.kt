@@ -1230,7 +1230,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
 
                                                 
-                                                if (repeat ==1) { l=l-1 }     
+                                                if (repeat ==1) { resnum[l-1] = resnum[l]; sresnum[l-1] = resnum[l-1];resnum[l]=30; sresnum[l] = 30   }     
                                                 if (repeat ==0) {sresnum[l] = resnum[l] ; dot=0; repeat=1 }
 
                                                 
