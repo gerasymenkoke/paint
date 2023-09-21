@@ -1291,7 +1291,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
 
 
      
-      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f;  ffr=0; xsign=1;  l=l+1 }
+      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
              
       
      
