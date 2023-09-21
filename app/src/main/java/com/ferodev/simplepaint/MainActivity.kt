@@ -1226,7 +1226,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                 if ( resnum[l]==11) { aresnum1 =  " - " } 
                                                 if ( resnum[l]==12) { aresnum1 =   " x " } 
                                                 if ( resnum[l]==13) { aresnum1 =   " / " } 
-                                               // if ( resnum[l]==14) { repeat=0 } 
+                                                if ( resnum[l]==14) { aresnum1 =   "" } 
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
 
                                                 
