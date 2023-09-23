@@ -1214,7 +1214,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
    
                    }
 
-
+/*   -----------------
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res0 
@@ -1293,10 +1293,10 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
              
-      
+  ------------ */   
      
                 
-textviewid.text =     "  " + aresnum +  "  " + aresnum1 + "\n" 
+// textviewid.text =     "  " + aresnum +  "  " + aresnum1 + "\n" 
                    //  "res=[" + res0 + "][" + res1 +  "]"   +  
                  //   " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                //     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
