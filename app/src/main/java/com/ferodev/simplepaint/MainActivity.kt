@@ -1253,11 +1253,11 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                          
                                                                
                                      
-      if(resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 }
+      if(l>0) { if (resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
       if( resnum[l] <= 9 && ff==0 )  { iresnum=sresnum[l].toFloat() }              
          
 
-        /*   ----------------
+   
        
                 
       if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0.00f; xsign=1
@@ -1295,7 +1295,7 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
      
       if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.00f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
              
-  ------------ */   
+
      
                 
     textviewid.text =     "  " + aresnum +  "  " + aresnum1 + "\n" 
