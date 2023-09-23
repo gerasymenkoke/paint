@@ -85,8 +85,8 @@ class MainActivity : AppCompatActivity() {
     private var asresnum = " "  
  
      
-    private var iresnum = 0.00f  // result last operation
-    private var xiresnum = 0.00f  // result last operation x or /
+    private var iresnum = 0.0  // result last operation
+    private var xiresnum = 0.0  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
     private var aresnum1 = ""  
 
@@ -1273,21 +1273,21 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() * sresnum[l].toFloat();ffr=1 
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toDouble() * sresnum[l].toDouble();ffr=1 
                                                      iresnum= iresnum - xsign * sresnum[l-2].toFloat()  
                                                                           } 
       
-                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l].toFloat() } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
+                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l].toDouble() } }
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toDouble() / sresnum[l-1].toDouble() ) } 
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() / sresnum[l].toFloat() ; ffr=1 
+      if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toDouble() / sresnum[l].toDouble() ; ffr=1 
                                                       iresnum= iresnum - xsign * sresnum[l-2].toFloat()                 
                                                                           } 
 
           
-                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum / sresnum[l].toFloat() } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum /  (sresnum[l].toFloat() * sresnum[l-1].toFloat() ) }  
+                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum / sresnum[l].toDouble()() } }
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum /  (sresnum[l].toDouble()() * sresnum[l-1].toDouble()() ) }  
                                                   
                                                 } 
      
