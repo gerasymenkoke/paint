@@ -1253,9 +1253,9 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                  }                
                          
                                                                
-      if (l==0 &&  resnum[0] == 11)  {  sresnum[l]=0-sresnum[l]; iresnum=sresnum[l].toFloat() }                              
+      if (l==0 &&  resnum[0] == 11)  {  xxsign=-1 }                              
       if(l>0) { if (resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
-      if( resnum[l] <= 9 && ff==0 )  { iresnum=sresnum[l].toFloat() }              
+      if( resnum[l] <= 9 && ff==0 )  { iresnum=xxsign*sresnum[l].toFloat(); xxsign=1 }              
          
 
    
