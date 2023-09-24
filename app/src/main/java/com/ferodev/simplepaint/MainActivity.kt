@@ -858,8 +858,8 @@ class MainActivity : AppCompatActivity() {
       dir_rr[10][12] = arrayOf<Int>(  1,  2,  0,  10,  10, 10, 10, 10, 10, 10)
       rr[10][12] = arrayOf<Float>(   0.05f,  -0.44f,  0.03f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
 
-      dir_rr[10][13] = arrayOf<Int>(  2,  1,  10,  10,  10, 10, 10, 10, 10, 10)
-      rr[10][13] = arrayOf<Float>(   -0.57f,  0.05f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+ //     dir_rr[10][13] = arrayOf<Int>(  2,  1,  10,  10,  10, 10, 10, 10, 10, 10)
+ //     rr[10][13] = arrayOf<Float>(   -0.57f,  0.05f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
       dir_rr[10][14] = arrayOf<Int>(  3,  0,   3,  2,  10, 10, 10, 10, 10, 10)
       rr[10][14] = arrayOf<Float>(   0.01f,  0.04f,  0.01f,  -1.27f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
@@ -925,8 +925,8 @@ class MainActivity : AppCompatActivity() {
       jj = 11               
   
 
-//        dir_rr[11][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-//        rr[11][0] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+        dir_rr[11][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) //
+        rr[11][0] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) //
 
         dir_rr[11][1] = arrayOf<Int>(  0, 10, 10, 10, 10, 10, 10, 10, 10, 10)
         rr[11][1] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
@@ -934,7 +934,7 @@ class MainActivity : AppCompatActivity() {
         dir_rr[11][2] = arrayOf<Int>(  1, 10, 10, 10, 10, 10, 10, 10, 10, 10)
         rr[11][2] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
-        dir_rr[11][3] = arrayOf<Int>(  1, 10, 10, 10, 10, 10, 10, 10, 10, 10)
+        dir_rr[11][3] = arrayOf<Int>(  2, 10, 10, 10, 10, 10, 10, 10, 10, 10)
         rr[11][3] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
   //     dir_rr[11][4] = arrayOf<Int>( 3,  0,  10,  10,  10,  10,  10,  10, 10, 10) 
@@ -976,19 +976,13 @@ class MainActivity : AppCompatActivity() {
 // /
       jj = 13              
   
-       dir_rr[13][0] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+       dir_rr[13][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
         rr[13][0] = arrayOf<Float>(  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-   //    dir_rr[13][1] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-   //    rr[13][1] = arrayOf<Float>(  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-
-  //     dir_rr[13][2] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-  //     rr[13][2] = arrayOf<Float>(  -0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-
-  //     dir_rr[13][3] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-  //     rr[13][3] = arrayOf<Float>(  -0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-
-
+       dir_rr[13][2] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+       rr[13][2] = arrayOf<Float>(  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+    
+    
 
 
       
@@ -1101,12 +1095,21 @@ class MainActivity : AppCompatActivity() {
 // ,
       jj = 15            
   
-      dir_rr[15][0] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+      dir_rr[15][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
       rr[15][0] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-      
-      
+
+      dir_rr[15][1] = arrayOf<Int>( 0,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[15][1] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[15][2] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[15][2] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+      dir_rr[15][3] = arrayOf<Int>( 2,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+      rr[15][3] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
+      
+      
       
       btnPencil.setOnClickListener {
        
