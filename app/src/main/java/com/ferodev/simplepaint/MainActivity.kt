@@ -64,6 +64,10 @@ class MainActivity : AppCompatActivity() {
     private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
+    private var crxn_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
+    private var cryn_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
+
+    
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
@@ -1152,8 +1156,8 @@ while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j];  crn_[i]=crx_[j] + cry_[j]; 
                                   crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crx_[i]=( ( crx_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  cry_[i]=( ( cry_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crxn_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  cryn_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   i=i+1 
                                 }
     j = j+1
@@ -1165,7 +1169,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crx_[j].toString() + ";" + cry_[j].toString() }
+if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crxn_[j].toString() + ";" + cryn_[j].toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
