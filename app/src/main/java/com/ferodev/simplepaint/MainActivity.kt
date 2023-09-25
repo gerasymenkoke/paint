@@ -1090,19 +1090,25 @@ class MainActivity : AppCompatActivity() {
       dir_rr[14][32] = arrayOf<Int>(  3,  1,  0, 10, 10, 10, 10, 10, 10, 10)
       rr[14][32] = arrayOf<Float>(  0.05f,  -0.18f,  0.06f,  0.0f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
+      dir_rr[14][33] = arrayOf<Int>(  0,  3,  0,  1,  10, 10, 10, 10, 10, 10)
+      rr[14][33] = arrayOf<Float>(  0.05f,  0.04f,  0.03f,  -0.28f, 0.0f, 0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+
+
+      
       
 // Filling sample array 
 // ,
       jj = 15            
   
-      dir_rr[15][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-      rr[15][0] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+//      dir_rr[15][0] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+//      rr[15][0] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       dir_rr[15][1] = arrayOf<Int>( 0,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
       rr[15][1] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
-      dir_rr[15][2] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
-      rr[15][2] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+//      dir_rr[15][2] = arrayOf<Int>( 1,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+//      rr[15][2] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
       dir_rr[15][3] = arrayOf<Int>( 2,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
       rr[15][3] = arrayOf<Float>(  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
