@@ -68,7 +68,9 @@ class MainActivity : AppCompatActivity() {
     private var cryn_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
 
     
-    private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)
+    private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
+    private var rrx =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
+    private var rry =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
@@ -154,103 +156,10 @@ class MainActivity : AppCompatActivity() {
 // 0
      jj = 0                  
      
-     dir_rr[0][0] = arrayOf<Int>(  3,  0,  1,  2,  10,  10, 10, 10, 10, 10)
-     rr[0][0] = arrayOf<Float>(  -0.03f,  0.03f,  0.03f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-     dir_rr[0][1] = arrayOf<Int>(  0,  1,  2,  3,  10, 10, 10, 10, 10, 10)
-     rr[0][1] = arrayOf<Float>(  0.06f,  0.08f,  -0.05f,  -0.05f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][2] = arrayOf<Int>(  1,  2,  3,  0,  10, 10, 10, 10, 10, 10)
-     rr[0][2] = arrayOf<Float>(  0.04f,  -0.04f,  -0.08f,  0.03f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][3] = arrayOf<Int>(  2,  3,  0,  1,  10, 10, 10, 10, 10, 10)
-     rr[0][3] = arrayOf<Float>(  -0.05f,  -0.06f,  0.03f,  0.02f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-  //   dir_rr[0][4] = arrayOf<Int>(  0,  3,  2,  1,  10, 10, 10, 10, 10, 10)
-  //   rr[0][4] = arrayOf<Float>(   0.09f,  0.01f,  -0.07f,  -0.02f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f) 
-
-     dir_rr[0][5] = arrayOf<Int>(  3,  2,  1,  0,  10, 10, 10, 10, 10, 10)
-     rr[0][5] = arrayOf<Float>(   0.01f,  -0.07f,  -0.02f,  0.07f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][6] = arrayOf<Int>(  2,  1,  0,  3,  10, 10, 10, 10, 10, 10)
-     rr[0][6] = arrayOf<Float>(   -0.05f,  -0.01f,  0.05f,  0.01f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][7] = arrayOf<Int>(  1,  0,  3,  2, 10,  10, 10, 10, 10, 10)
-     rr[0][7] = arrayOf<Float>(   0.01f,  0.06f,  0.03f,  -0.05f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     dir_rr[0][0] = arrayOf<Int>(  1,  0,  3,  2,   1,  10, 10, 10, 10, 10)
+     rrx[0][0] = arrayOf<Float>(  -0.04f,  0.01f,  0.04f,  -0.01f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     rry[0][0] = arrayOf<Float>(   0.1f,   0.08f,  -0.01f,  -0.04f,  0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
     
-         
-     dir_rr[0][8] = arrayOf<Int>(  1,  0,  3,  2, 10, 10, 10, 10, 10, 10)   
-     rr[0][8] = arrayOf<Float>(  0.05f,  0.31f,  0.16f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-         
-     dir_rr[0][9] = arrayOf<Int>(  2,  1,  0,  3, 10, 10, 10, 10, 10, 10) 
-     rr[0][9] = arrayOf<Float>(  -0.2f,  -0.09f,  0.27f,  0.08f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-     dir_rr[0][10] = arrayOf<Int>(  3,  2,  1,  0, 10, 10, 10, 10, 10, 10) 
-     rr[0][10] = arrayOf<Float>(  0.07f,  -0.28f,  0.0f,  0.42f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-     dir_rr[0][11] = arrayOf<Int>(  3,  0,  1,  2, 10, 10, 10, 10, 10, 10) 
-     rr[0][11] = arrayOf<Float>(  -0.2f,  0.4f,  0.16f,  -0.37f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][12] = arrayOf<Int>(  3,  0,  1,  2,  3, 10, 10, 10, 10, 10) 
-     rr[0][12] = arrayOf<Float>(  -0.1f,  0.28f,  0.01f,  -0.47f, -0.38f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][13] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][13] = arrayOf<Float>(  0.35f,  0.3f,  0.03f,  -0.46f, -0.12f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
-     dir_rr[0][14] = arrayOf<Int>(  2,  3,  0,  1,  10, 10, 10, 10, 10, 10)   
-     rr[0][14] = arrayOf<Float>(  -0.27f,  -0.46f,  0.48f,  0.25f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][15] = arrayOf<Int>(  2,  3,  0,  1,  2, 10, 10, 10, 10, 10)   
-     rr[0][15] = arrayOf<Float>(  -0.36f,  -0.46f,  0.37f,  0.22f, -0.3f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-    
-     dir_rr[0][16] = arrayOf<Int>(  2,  1,  0,  3,  2, 10, 10, 10, 10, 10)   
-     rr[0][16] = arrayOf<Float>(  -0.3f,  0.08f,  0.27f,  0.14f, -0.27f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][17] = arrayOf<Int>(  2,  3,  0,  1,  2,  3,  1, 10, 10, 10)   
-     rr[0][17] = arrayOf<Float>(  -0.1f,  -0.12f,  0.08f,  0.07f, -0.06f, -0.03f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][18] = arrayOf<Int>(  1,  0,  3,  2,  1,  3, 10, 10, 10, 10)   
-     rr[0][18] = arrayOf<Float>(  -0.02f,  0.08f,  0.03f,  -0.13f, -0.01f, -0.01f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-//     dir_rr[0][19] = arrayOf<Int>( 3,  2,  1,  0,  3,  10,  10,  10, 10, 10) 
-//     rr[0][19] = arrayOf<Float>(  -0.07f,  -0.08f,  -0.04f,  0.11f,  0.03f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
-
- //    dir_rr[0][20] = arrayOf<Int>( 2,  1,  0,  3,  2,  1, 10, 10, 10, 10) 
- //    rr[0][20] = arrayOf<Float>(  -0.03f,  -0.02f,  0.05f,  0.03f, -0.09f, -0.02f,  0.0f,  0.0f,  0.0f,  0.0f)
-
- //    dir_rr[0][21] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
- //    rr[0][21] = arrayOf<Float>(  0.07f,  0.11f,  0.02f,  -0.09f,  0.00f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
- //    dir_rr[0][22] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
- //    rr[0][22] = arrayOf<Float>(  -0.03f,  0.11f,  0.02f,  -0.06f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
- //    dir_rr[0][23] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
- //    rr[0][23] = arrayOf<Float>(  -0.01f,  0.08f,  0.07f,  -0.11f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-//     dir_rr[0][24] = arrayOf<Int>(  3,  0,  1,  3, 10, 10, 10, 10, 10, 10) 
-//     rr[0][24] = arrayOf<Float>(  -0.21f,  0.33f,  -0.06f,  -0.24f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][25] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][25] = arrayOf<Float>(  0.00f,  0.08f,  0.05f,  -0.08f, -0.04f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][26] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][26] = arrayOf<Float>(  0.09f,  0.05f,  0.03f,  -0.05f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][27] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][27] = arrayOf<Float>(  -0.02f,  0.09f,  0.04f,  -0.1f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][28] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][28] = arrayOf<Float>(  0.01f,  0.08f,  0.03f,  -0.07f,  0.00f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][29] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][29] = arrayOf<Float>(  0.01f,  0.07f,  0.04f,  -0.07f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-     dir_rr[0][30] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-     rr[0][30] = arrayOf<Float>(  0.03f,  0.06f,  0.05f,  -0.07f,  -0.04f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-  //   dir_rr[0][31] = arrayOf<Int>(  1,  0,  3,  2,  1, 10, 10, 10, 10, 10)   
-  //   rr[0][31] = arrayOf<Float>(  0.06f,  0.07f,  0.03f,  -0.06f,  -0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
 
 
@@ -1194,7 +1103,8 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                                   
                                  if ( Math.abs (dir_crn[j] - dir_rr[jj] [jjj] [j] ) > 0)  {
                                                                                dir_res[jj] [jjj] =  dir_res[jj] [jjj] +  1
-                                                                                        }
+                                                                                            }
+                                                                
                          j=j+1
    
                            }
@@ -1215,17 +1125,26 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
       while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
                {
-                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
+                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  minx = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
                                                   while ( iii<=59) { 
                                                   dir_resmin[iii][0]=20; dir_resmin[iii][1]=60  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
                                                        iii=iii+1
                                                                    }
                                                }
-         else { if ( dir_res[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
+         else { if ( dir_resx[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                                     i=i+1  
                                                 } 
               }
+
+
+
+
+
+
+
+
+         
          jjj = jjj +1
                }
        jj = jj +1
@@ -1247,7 +1166,9 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
  
             
 
-resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
+resminx[jj] [j] = Math.abs ( crnx_[j]  - rrx[ii] [iii] [j] )
+resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
+
                                j=j+1
                            }
                                              
@@ -1258,17 +1179,18 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                     
                  j=0
           //      minres = 10.00f  
-                 while (j >=0 && j<=9 && dir_crn[j] != 10 )        //   
+                 while (j >=0 && j<=9 && dir_crnx[j] != 10 )        //   
                            {
                               jj=0
                                                      
                                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
                                 {
                                                            
-                                    if  (resmin[jj] [j] < minres) {    minres = resmin[jj] [j]; iresmin [j] = jj } 
-                                      
-                                    aresmin = aresmin + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resmin[jj] [j].toString()
-                                     
+                                    if  (resminx[jj] [j] < minresx) {    minresx = resminx[jj] [j]; iresminx [j] = jj } 
+                                   aresminx = aresminx + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resminx[jj] [j].toString()
+
+                                    if  (resminy[jj] [j] < minresy) {    minresy = resminy[jj] [j]; iresminy [j] = jj } 
+                                   aresminy = aresminy + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resminy[jj] [j].toString() 
                                                                    
                                   jj = jj + 1 
                                 }
@@ -1283,7 +1205,9 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                        while (j >=0 && j<=9)        //   
                            {
                                                                            
-                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    }  
+                                                   if  ( iresminx[j] == jj  ) {     resx [jj] = resx [jj] + 1    } 
+                                                   if  ( iresminy[j] == jj  ) {     resy [jj] = resy [jj] + 1    }  
+                                                   
                                   j = j + 1 
                            }
                            
@@ -1300,13 +1224,19 @@ resmin[jj] [j] = Math.abs ( crn_[j]  - rr[ii] [iii] [j] )
                          while (j >=0 && j<=9)        //   
                            {
                                                                               
-                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1     }  
+                                if  (iresminx[j] == jj  ) {     resx [jj] = resx [jj] + 1     } 
+                                if  (iresminy[j] == jj  ) {     resy [jj] = resy [jj] + 1     } 
+                                
                                   j = j + 1 
                            }
 
-                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
-                                                   max = res [jj]  
+                           if  ( resx [jj] > maxx) { res0x = dir_resmin[jj][0] ; res1x = dir_resmin[jj][1]   
+                                                   maxx = resx [jj]  
                                                  }
+                           if  ( resy [jj] > maxy) { res0y = dir_resminy[jj][0] ; res1y = dir_resmin[jj][1]   
+                                                   maxy = resy [jj]  
+                                                 }
+                           
                           jj=jj+1
    
                    }
