@@ -1071,8 +1071,8 @@ while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                            else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crxn_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  cryn_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   i=i+1 
                                 }
     j = j+1
@@ -1084,7 +1084,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crxn_[j].toString() + ";" + cryn_[j].toString() }
+if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crnx_[j].toString() + ";" + crny_[j].toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
