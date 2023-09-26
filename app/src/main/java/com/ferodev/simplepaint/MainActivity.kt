@@ -64,8 +64,8 @@ class MainActivity : AppCompatActivity() {
     private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var crxn_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
-    private var cryn_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
+    private var crnx_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
+    private var crny_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
 
     
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
@@ -74,10 +74,11 @@ class MainActivity : AppCompatActivity() {
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminx =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminy =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    
     private var  aresmin = " "
     private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
-    private var iresminx =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
-    private var iresminy =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
     
     private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
@@ -1130,7 +1131,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
       while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
                {
-                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  minx = dir_res[jj][jjj];  i=1 
+                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
                                                   while ( iii<=59) { 
                                                   dir_resmin[iii][0]=20; dir_resmin[iii][1]=60  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
@@ -1228,7 +1229,7 @@ resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and
                          while (j >=0 && j<=9)        //   
                            {
                                                                               
-                                if  (iresmin[j] == jj  ) {     res [jj] = resx [jj] + 1     } 
+                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1     } 
                             
                                 
                                   j = j + 1 
