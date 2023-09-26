@@ -76,6 +76,9 @@ class MainActivity : AppCompatActivity() {
     private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     private var  aresmin = " "
     private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var iresminx =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var iresminy =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+    
     private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
@@ -92,6 +95,8 @@ class MainActivity : AppCompatActivity() {
  
      
     private var iresnum = 0.0f  // result last operation
+
+    
     private var xiresnum = 0.0f  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
     private var aresnum1 = ""  
@@ -1063,8 +1068,8 @@ j=0
 old = 10                    
 while (j >=0 && j<=799) {
 if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
-                           else { old=dir_cr[j]; dir_crn[i]=dir_cr[j];  crn_[i]=crx_[j] + cry_[j]; 
-                                  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                           else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
+                                //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crxn_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   cryn_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   i=i+1 
@@ -1132,7 +1137,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                                                        iii=iii+1
                                                                    }
                                                }
-         else { if ( dir_resx[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
+         else { if ( dir_res[jj][jjj] == min )  {   dir_resmin[i][0]=jj; dir_resmin[i][1]=jjj 
                                                     i=i+1  
                                                 } 
               }
@@ -1168,7 +1173,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
 resminx[jj] [j] = Math.abs ( crnx_[j]  - rrx[ii] [iii] [j] )
 resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
-
+resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and y deviations
                                j=j+1
                            }
                                              
@@ -1179,18 +1184,17 @@ resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
                     
                  j=0
           //      minres = 10.00f  
-                 while (j >=0 && j<=9 && dir_crnx[j] != 10 )        //   
+                 while (j >=0 && j<=9 && dir_crn[j] != 10 )        //   
                            {
                               jj=0
                                                      
                                while (jj >=0 && jj<=i-1)  // index of min rr_ ...
                                 {
                                                            
-                                    if  (resminx[jj] [j] < minresx) {    minresx = resminx[jj] [j]; iresminx [j] = jj } 
-                                   aresminx = aresminx + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resminx[jj] [j].toString()
+                                    if  (resmin[jj] [j] < minres) {    minres = resmin[jj] [j]; iresmin [j] = jj } 
+                                   aresmin = aresmin + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resmin[jj] [j].toString()
 
-                                    if  (resminy[jj] [j] < minresy) {    minresy = resminy[jj] [j]; iresminy [j] = jj } 
-                                   aresminy = aresminy + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resminy[jj] [j].toString() 
+                                 
                                                                    
                                   jj = jj + 1 
                                 }
@@ -1205,8 +1209,8 @@ resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
                        while (j >=0 && j<=9)        //   
                            {
                                                                            
-                                                   if  ( iresminx[j] == jj  ) {     resx [jj] = resx [jj] + 1    } 
-                                                   if  ( iresminy[j] == jj  ) {     resy [jj] = resy [jj] + 1    }  
+                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    } 
+                                              
                                                    
                                   j = j + 1 
                            }
@@ -1224,18 +1228,16 @@ resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
                          while (j >=0 && j<=9)        //   
                            {
                                                                               
-                                if  (iresminx[j] == jj  ) {     resx [jj] = resx [jj] + 1     } 
-                                if  (iresminy[j] == jj  ) {     resy [jj] = resy [jj] + 1     } 
+                                if  (iresmin[j] == jj  ) {     res [jj] = resx [jj] + 1     } 
+                            
                                 
                                   j = j + 1 
                            }
 
-                           if  ( resx [jj] > maxx) { res0x = dir_resmin[jj][0] ; res1x = dir_resmin[jj][1]   
-                                                   maxx = resx [jj]  
+                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
+                                                   max = res [jj]  
                                                  }
-                           if  ( resy [jj] > maxy) { res0y = dir_resminy[jj][0] ; res1y = dir_resmin[jj][1]   
-                                                   maxy = resy [jj]  
-                                                 }
+                          
                            
                           jj=jj+1
    
