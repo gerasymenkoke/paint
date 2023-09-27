@@ -142,7 +142,6 @@ class MainActivity : AppCompatActivity() {
 
            
  
-            
 // Filling sample array
 // 0
      jj = 0                  
@@ -194,8 +193,19 @@ class MainActivity : AppCompatActivity() {
      dir_rr[1][3] = arrayOf<Int>(  3,  1,   0,   10,   10,  10, 10, 10, 10, 10)
      rrx[1][3] = arrayOf<Float>(   0.05f,  -0.01f,   0.01f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      rry[1][3] = arrayOf<Float>(  -0.08f,   0.2f,    0.06f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
 
+     dir_rr[1][4] = arrayOf<Int>(  3,  1,   0,   10,   10,  10, 10, 10, 10, 10)
+     rrx[1][4] = arrayOf<Float>(   0.02f,  -0.04f,   0.04f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     rry[1][4] = arrayOf<Float>(  -0.02f,   0.13f,   0.01f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+     dir_rr[1][5] = arrayOf<Int>(  3,  1,   3,   0,   10,  10, 10, 10, 10, 10)
+     rrx[1][5] = arrayOf<Float>(   0.03f,  -0.03f,   0.04f,  0.08f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     rry[1][5] = arrayOf<Float>(  -0.04f,   0.19f,  -0.01f,  0.01f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+
+
+
+     
      
      
 // Filling sample array 
@@ -214,9 +224,20 @@ class MainActivity : AppCompatActivity() {
      rrx[2][2] = arrayOf<Float>(  -0.01f,   0.01f,   0.02f,   -0.02f,   0.04f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f)
      rry[2][2] = arrayOf<Float>(  -0.02f,  -0.04f,   0.01f,    0.09f,   0.01f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f)       
 
+     dir_rr[2][3] = arrayOf<Int>(  2,   3,   0,   1,  2,   3,   0,  10, 10, 10)
+     rrx[2][3] = arrayOf<Float>(  -0.01f,   0.04f,   0.05f,   -0.04f,  -0.03f,   0.04f,  0.09f, 0.0f, 0.0f, 0.0f)
+     rry[2][3] = arrayOf<Float>(  -0.02f,  -0.18f,   0.04f,    0.24f,  -0.01f,  -0.02f,  0.01f, 0.0f, 0.0f, 0.0f)   
 
+     dir_rr[2][4] = arrayOf<Int>(  3,  0,   1,   3,   0,  10, 10, 10, 10, 10)
+     rrx[2][4] = arrayOf<Float>(   0.01f,   0.04f,  -0.02f,   0.01f,   0.07f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+     rry[2][4] = arrayOf<Float>(  -0.01f,   0.01f,   0.13f,  -0.01f,   0.02f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
             
 
+
+
+
+
+            
       
 // Filling sample array 
 // 3
@@ -331,8 +352,14 @@ class MainActivity : AppCompatActivity() {
       rrx[10][6] = arrayOf<Float>(  0.05f,  0.07f,  -0.3f,  -0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       rry[10][6] = arrayOf<Float>(  0.01f,  -0.01f, -0.27f,  0.07f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
+      dir_rr[10][7] = arrayOf<Int>( 2,  1,   0,  10,  10,  10,  10,  10, 10, 10) 
+      rrx[10][7] = arrayOf<Float>(  -0.43f,  -0.01f,  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      rry[10][7] = arrayOf<Float>(  -0.05f,   0.08f,  0.1f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
       
-
+      dir_rr[10][8] = arrayOf<Int>( 0,  2,  0,  10,  10,  10,  10,  10, 10, 10) 
+      rrx[10][8] = arrayOf<Float>(  0.07f,  -0.43f,  0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      rry[10][8] = arrayOf<Float>(  0.01f,  -0.66f,  0.07f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+      
       
       
       
@@ -349,7 +376,9 @@ class MainActivity : AppCompatActivity() {
         rrx[11][1] = arrayOf<Float>(  0.04f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
         rry[11][1] = arrayOf<Float>( -0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
-
+        dir_rr[11][2] = arrayOf<Int>( 3,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
+        rrx[11][2] = arrayOf<Float>(  0.02f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
+        rry[11][2] = arrayOf<Float>( -0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
 
         
 
@@ -382,6 +411,10 @@ class MainActivity : AppCompatActivity() {
         dir_rr[12][5] = arrayOf<Int>( 3,  1,  0,  10,  10,  10,  10,  10, 10, 10) 
         rrx[12][5] = arrayOf<Float>(  0.01f,  -0.48f,   0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
         rry[12][5] = arrayOf<Float>( -0.02f,   0.02f,   0.01f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+
+        dir_rr[12][6] = arrayOf<Int>( 0,  1,  10,  10,  10,  10,  10,  10, 10, 10) 
+        rrx[12][6] = arrayOf<Float>(  0.02f,  -0.01f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
+        rry[12][6] = arrayOf<Float>(  0.06f,   0.03f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
 
 
 
