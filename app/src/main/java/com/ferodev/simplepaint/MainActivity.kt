@@ -223,7 +223,11 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array 
 // 2
       jj = 2                  
-  
+
+     xdyrr[2][0]=arrayOf<Float>(  -0.593f,  20.649f, -0.202f, 0.612f, -0.314f,  4.387f, 0.0f, 0.0f, 0.0f, 0.0f)
+     
+
+            
      dir_rr[2][0] = arrayOf<Int>(  3,  0,   1,   2,   3,  0, 10, 10, 10, 10)
      rrx[2][0] = arrayOf<Float>(   0.01f,   0.03f,  -0.02f,  -0.01f,   0.01f, 0.07f, 0.0f, 0.0f, 0.0f, 0.0f)
      rry[2][0] = arrayOf<Float>(  -0.03f,   0.02f,   0.14f,  -0.01f,  -0.03f, 0.01f, 0.0f, 0.0f, 0.0f, 0.0f)
@@ -254,7 +258,10 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array 
 // 3
       jj = 3                  
-  
+
+    xdyrr[3][0]=arrayOf<Float>(  -1.172f,  3.521f, -0.215f, 3.998f, -0.412f,  4.628f, 0.0f, 0.0f, 0.0f, 0.0f)
+
+            
      dir_rr[3][0] = arrayOf<Int>(  3,  0,   1,   3,   0,  1,  2, 10, 10, 10)
      rrx[3][0] = arrayOf<Float>(   0.04f,   0.03f,  -0.02f,   0.06f,   0.06f, -0.01f, -0.05f, 0.0f, 0.0f, 0.0f)
      rry[3][0] = arrayOf<Float>(  -0.11f,   0.03f,   0.11f,  -0.01f,   0.01f,  0.04f, -0.01f, 0.0f, 0.0f, 0.0f)
@@ -383,9 +390,11 @@ class MainActivity : AppCompatActivity() {
       jj = 11               
   
         xdyrr[11][0]=arrayOf<Float>(  3.558f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-        xdyrr[11][0]=arrayOf<Float>( -3.558f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        xdyrr[11][1]=arrayOf<Float>( -3.558f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        xdyrr[11][2]=arrayOf<Float>(  5.404f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+        xdyrr[11][3]=arrayOf<Float>( -5.404f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-        
+
             
         dir_rr[11][0] = arrayOf<Int>( 0,  10,  10,  10,  10,  10,  10,  10, 10, 10) 
         rrx[11][0] = arrayOf<Float>(  0.05f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f) 
@@ -847,7 +856,7 @@ resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and
                 
     textviewid.text =     "  " + aresnum +  "  " + aresnum1 + "\n" +
                      "res=[" + res0 + "][" + res1 +  "]"   +  
-                 " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
+            //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
                  "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9]  +
                 " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + " ff=" + ff + " ffr=" + ffr + " dot=" + dot +  " repeat=" + repeat +
                 "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] + " " + sresnum[8] + " " + sresnum[9] +
