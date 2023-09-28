@@ -280,7 +280,7 @@ class MainActivity : AppCompatActivity() {
 // 4
       jj = 4                  
   
-
+ xdyrr[4][0]=arrayOf<Float>(  -0.452f,  2.78f, -2.276f, 0.796f, -0.581f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
 
 
@@ -288,8 +288,9 @@ class MainActivity : AppCompatActivity() {
       
 // Filling sample array 
 // 5
-      jj = 5                  
-  
+      jj = 5    
+            
+   xdyrr[5][0]=arrayOf<Float>(  -0.311f,  -1.656f,  3.339f,  -0.576f,  3.518f,  -0.276f,  3.781f, -9.297f, 4.674f, 0.0f)
      
       
 
@@ -489,9 +490,13 @@ class MainActivity : AppCompatActivity() {
 // =
       jj = 14            
 
-      xdyrr[14][0]=arrayOf<Float>(  -8.153f,  6.229f, -2.17f, 2.869f, -6.353f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[14][0]=arrayOf<Float>(  -8.153f,  6.229f, -2.17f,   2.869f, -6.353f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[14][1]=arrayOf<Float>(  -9.307f,  3.091f, -2.251f, -6.968f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[14][2]=arrayOf<Float>(   2.748f, -5.078f, -2.904f,  4.506f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[14][3]=arrayOf<Float>( -10.148f, -1.546f,  4.577f, -6.626f, 2.58f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[14][0]=arrayOf<Float>(  -2.203f,  4.465f,  0.0f,    0.0f,   0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-
+      
             
       dir_rr[14][0] = arrayOf<Int>( 3,  1,  3,  10,  10,  10,  10,  10, 10, 10) 
       rrx[14][0] = arrayOf<Float>(  0.07f,  -0.76f,  0.06f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f)
