@@ -677,8 +677,8 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
            j=0
        while (j >=0 && j<=9)         
                            {
-                           //    var ii = dir_resmin[jj][0] 
-                           //    var iii = dir_resmin[jj][1]   
+                                 var ii = dir_resmin[jj][0] 
+                                 var iii = dir_resmin[jj][1]   
                    
    
  
