@@ -21,6 +21,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
+
 // import com.ferodev.simplepaint.canvas.DrawPencil.Companion.shift
 
 
@@ -66,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var crnx_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
     private var crny_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
-
+    private var crnxdy_ = Array<Float>(20){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
@@ -552,6 +554,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crnxdy_[i]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   i=i+1 
                                 }
     j = j+1
@@ -563,7 +566,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crnx_[j].toString() + ";" + crny_[j].toString() }
+if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
