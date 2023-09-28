@@ -73,6 +73,8 @@ class MainActivity : AppCompatActivity() {
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
     private var rry =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
+    private var xdyrr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  // 
+
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
     private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
@@ -147,7 +149,11 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array
 // 0
      jj = 0                  
-     
+
+     xdyrr[0][0]=arrayOf<Int>(  1,  0,  3,  2,   1,  10, 10, 10, 10, 10)
+
+
+            
      dir_rr[0][0] = arrayOf<Int>(  1,  0,  3,  2,   1,  10, 10, 10, 10, 10)
      rrx[0][0] = arrayOf<Float>(  -0.04f,  0.01f,  0.04f,  -0.01f,  -0.03f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
      rry[0][0] = arrayOf<Float>(   0.1f,   0.08f,  -0.01f,  -0.04f,  0.01f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
@@ -613,7 +619,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
       while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
                {
-                if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
+ /*               if ( dir_res[jj][jjj] < min )  { dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj;  min = dir_res[jj][jjj];  i=1 
                                                   iii=1; 
                                                   while ( iii<=59) { 
                                                   dir_resmin[iii][0]=20; dir_resmin[iii][1]=60  // max index coincedence etalons 20(0..19) and their variants 40(0..39) (blank index like 10 at directions)  ..
@@ -624,15 +630,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                                                     i=i+1  
                                                 } 
               }
-
-
-
-
-
-
-
-
-         
+*/
          jjj = jjj +1
                }
        jj = jj +1
@@ -647,16 +645,20 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
            j=0
        while (j >=0 && j<=9)         
                            {
-                               var ii = dir_resmin[jj][0] 
-                               var iii = dir_resmin[jj][1]   
+                           //    var ii = dir_resmin[jj][0] 
+                           //    var iii = dir_resmin[jj][1]   
                    
    
  
             
 
-resminx[jj] [j] = Math.abs ( crnx_[j]  - rrx[ii] [iii] [j] )
+/* resminx[jj] [j] = Math.abs ( crnx_[j]  - rrx[ii] [iii] [j] )
 resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
 resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and y deviations
+*/
+
+      resmin[jj] [j] = Math.abs ( crnxdy_[j]  - xdyrr[ii] [iii] [j] )
+                               
                                j=j+1
                            }
                                              
@@ -666,7 +668,7 @@ resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and
 
                     
                  j=0
-          //      minres = 10.00f  
+              minres = 1000.00f  
                  while (j >=0 && j<=9 && dir_crn[j] != 10 )        //   
                            {
                               jj=0
