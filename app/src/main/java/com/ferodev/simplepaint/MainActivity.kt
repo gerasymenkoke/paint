@@ -281,8 +281,9 @@ class MainActivity : AppCompatActivity() {
       jj = 4                  
   
  xdyrr[4][0]=arrayOf<Float>(  -0.452f,  2.78f, -2.276f, 0.796f, -0.581f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-
+ xdyrr[4][1]=arrayOf<Float>(  -0.452f,  0.846f, -2.686f, 0.628f, -0.796f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+ xdyrr[4][2]=arrayOf<Float>(  -0.325f,  0.855f, 1.304f,  0.0f,   0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+ xdyrr[4][3]=arrayOf<Float>(  -0.418f,  2.121f, 0.841f,  0.0f,   0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
       
       
@@ -291,6 +292,8 @@ class MainActivity : AppCompatActivity() {
       jj = 5    
             
    xdyrr[5][0]=arrayOf<Float>(  -0.311f,  -1.656f,  3.339f,  -0.576f,  3.518f,  -0.276f,  3.781f, -9.297f, 4.674f, 0.0f)
+   xdyrr[5][1]=arrayOf<Float>(  -0.159f,  -2.521f,  3.59f,   -0.238f,  2.08f,   -0.251f,  7.656f,  0.0f,   0.0f, 0.0f)
+   xdyrr[5][2]=arrayOf<Float>(  -0.266f,  -0.78f,  2.677f,  -0.354f,  3.389f,   -0.248f,  0.0f,   0.0f,    0.0f, 0.0f)
      
       
 
@@ -344,7 +347,10 @@ class MainActivity : AppCompatActivity() {
 // +
       jj = 10                
 
-      xdyrr[10][0]=arrayOf<Float>(   5.181f,  1.044f,  0.158f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[10][0]=arrayOf<Float>(   5.181f,  1.044f,  0.158f,    0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[10][1]=arrayOf<Float>(   11.337f,  -12.752f,  4.907f,  0.919f,  -0.208f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+      xdyrr[10][2]=arrayOf<Float>(   1.34f,    -0.259f,  0.0f,  0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
 
             
       dir_rr[10][0] = arrayOf<Int>( 0,  2,  1,  10,  10,  10,  10,  10, 10, 10) 
