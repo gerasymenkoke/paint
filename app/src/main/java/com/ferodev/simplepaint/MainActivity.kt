@@ -590,7 +590,7 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
                      
-       while (j >=0 && j<=799) {
+ /*      while (j >=0 && j<=799) {
     
      if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 } 
      if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1 }
@@ -600,24 +600,24 @@ class MainActivity : AppCompatActivity() {
                          j=j+1 
                           
                             }
-
+*/
       
     // normalize cr[j] - erase repeats and  ??? 10 inside
 
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=799) {
-if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
-                           else { old=dir_cr[j]; dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
+while (j >=0 && j<=799 && (crx_[j]!=0.0f || crx_[j]!=0.0f) ) {
+ 
+                               // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crnxdy_[i]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  i=i+1 
+                                  crnx_[j]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crny_[j]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crnxdy_[j]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  j=j+1 ; i=j
                                 }
-    j = j+1
-                      }
+  
+                     
               
                 
 
@@ -625,7 +625,7 @@ if ( j==0  || dir_cr[j]==old || dir_cr[j] == 10 ) { j = j }
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=9) {
-if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
+if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -639,6 +639,8 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" + dir_crn[j].toString() + " /" 
 // result of test on comparing of numbers  direction sequences
                    
       jj=0
+
+                    /*
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
@@ -659,6 +661,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
              }    
  jj=jj+1
 }    
+
 
 
 
@@ -690,96 +693,35 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
  
  }
 
-   jj=0
-   while (jj >=0 && jj<=i-1)  
-                    {
- 
-      
-           j=0
-       while (j >=0 && j<=9)         
-                           {
-                                 var ii = dir_resmin[jj][0] 
-                                 var iii = dir_resmin[jj][1]   
-                   
-   
- 
-            
-
-/* resminx[jj] [j] = Math.abs ( crnx_[j]  - rrx[ii] [iii] [j] )
-resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
-resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and y deviations
 */
 
-      resmin[jj] [j] = Math.abs ( crnxdy_[j]  - xdyrr[ii] [iii] [j] ) / Math.abs ( crnxdy_[j] )
-                               
+   jj=0
+   minres = 1000.00f  
+while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
+{
+          jjj=0
+    while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
+            {
+    
+                j=0
+              resmin[jj] [jjj]=0   
+   
+                while (j >=0 && j<=9) {  
+       resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnxdy_[j]  - xdyrr[jj] [jjj] [j] ) / Math.abs ( crnxdy_[j] )
+                                      
                                j=j+1
                            }
-                                             
-           jj = jj + 1
-                        
-                     }
 
-                    
-                 j=0
-              minres = 1000.00f  
-                 while (j >=0 && j<=9  )        //   
-                           {
-                              jj=0
-                                                     
-                               while (jj >=0 && jj<=i-1)  // index of min rr_ ...
-                                {
-                                                           
-                                    if  (resmin[jj] [j] < minres) {    minres = resmin[jj] [j]; iresmin [j] = jj } 
-                                   aresmin = aresmin + "    [" + jj.toString() + "]" + "[" + j.toString() + "]=" + resmin[jj] [j].toString()
+    if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   
+       aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
+                                     }
+           jjj=jjj+1
+             }    
+ jj=jj+1
+}    
+       
+             
 
-                                 
-                                                                   
-                                  jj = jj + 1 
-                                }
-                        j=j+1
-   
-                           }
-
-                jj=0
-                while (jj >=0 && jj<=i-1)  
-                   {                  
-                        j=0        
-                       while (j >=0 && j<=9)        //   
-                           {
-                                                                           
-                                                   if  ( iresmin[j] == jj  ) {     res [jj] = res [jj] + 1    } 
-                                              
-                                                   
-                                  j = j + 1 
-                           }
-                           
-                       jj=jj+1
-   
-                  }
-
-// choice max near by  from res[]
- var max=0
-                   jj=0
-                while (jj >=0 && jj<=i-1)  
-                  {                  
-                       j=0     
-                         while (j >=0 && j<=9)        //   
-                           {
-                                                                              
-                                if  (iresmin[j] == jj  ) {     res [jj] = res [jj] + 1     } 
-                            
-                                
-                                  j = j + 1 
-                           }
-
-                           if  ( res [jj] > max) { res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]   
-                                                   max = res [jj]  
-                                                 }
-                          
-                           
-                          jj=jj+1
-   
-                   }
 
 
 // output  result as string with diferent length adding new symbols each cycle
