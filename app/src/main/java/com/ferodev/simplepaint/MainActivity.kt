@@ -589,16 +589,16 @@ class MainActivity : AppCompatActivity() {
 
       j=0    
                      
-      while (j >=0 && j<=799) {
+//      while (j >=0 && j<=799) {
     
-   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 }
-   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1 }
-   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 2 }
-   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 3 }
+//   if (crx_[j] > 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 0 } 
+//   if (crx_[j] < 0.0f &&  cry_[j] > 0.0f ) { dir_cr[j] = 1 }
+//   if (crx_[j] < 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 2 }
+//   if (crx_[j] > 0.0f &&  cry_[j] < 0.0f ) { dir_cr[j] = 3 }
                           
-                          j=j+1 
+//                          j=j+1 
                           
-                            }
+  //                          }
 
       
     // normalize cr[j] - erase repeats and  ??? 10 inside
@@ -709,7 +709,7 @@ resminy[jj] [j] = Math.abs ( crny_[j]  - rry[ii] [iii] [j] )
 resmin[jj] [j] = resminx[jj] [j] + resminy[jj] [j]  // integral estimation x and y deviations
 */
 
-      resmin[jj] [j] = Math.abs ( crnxdy_[j]  - xdyrr[ii] [iii] [j] )
+      resmin[jj] [j] = Math.abs ( crnxdy_[j]  - xdyrr[ii] [iii] [j] ) / Math.abs ( crnxdy_[j] )
                                
                                j=j+1
                            }
