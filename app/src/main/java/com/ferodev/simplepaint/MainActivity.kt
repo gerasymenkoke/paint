@@ -397,7 +397,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() +
                      }
 
 
-
+/*
 
 
    jj=0
@@ -527,7 +527,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                    //    "\n" + "sresnum[l-2]=" + sresnum[l-3] +  "  sresnum[l]=" + sresnum[l-1]    
                     
 
-
+*/
        
 
 
