@@ -366,6 +366,8 @@ class MainActivity : AppCompatActivity() {
       
     // normalize cr[j] - erase repeats and  ??? 10 inside
 
+/*
+                    
 i=0 
 j=0 
 old = 10                    
@@ -395,7 +397,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() +
     
                     j=j+1
                      }
-
+*/
 
 /*
 
