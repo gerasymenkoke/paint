@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
     private var shift1=0
     private var sign=0
     private var f=0
-    private var ff=0
+    private var ff=0 Array<Float>(800){0.0f}
     private var ffr=0
     private var xsign=1
     private var xxsign=1
@@ -387,7 +387,7 @@ while (j >=0 && j<=799 && (crx_[j]!=oldx || cry_[j]!=oldy) ) {
                      
               
                 
-
+/*
 
 // output as text current painted number in direction sequence
 j=0                    
@@ -400,6 +400,8 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() +
     
                     j=j+1
                      }
+
+*/
 
 /*
 
