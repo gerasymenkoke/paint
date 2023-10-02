@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
     private var dir_rr = Array(20) { Array(60){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
+    private var oldx, oldy = 0.00f 
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var crnx_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
     private var crny_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
@@ -371,10 +372,11 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=799 && (crx_[j]!=0.0f || cry_[j]!=0.0f) ) {
+while (j >=0 && j<=799 && (crx_[j]!=oldx || cry_[j]!=oldy) ) {
  
                                // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  oldx=crx_[j]; oldy=cry_[j]
                                   crnx_[j]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crny_[j]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crnxdy_[j]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
