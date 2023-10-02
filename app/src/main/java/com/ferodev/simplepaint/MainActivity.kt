@@ -65,7 +65,8 @@ class MainActivity : AppCompatActivity() {
     private var dir_rr = Array(20) { Array(60){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
-    private var oldx, oldy = 0.00f 
+    private var oldx = 0.00f 
+    private var oldy = 0.00f 
     private var crn_ = Array<Float>(20){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var crnx_ = Array<Float>(20){0.00f}  // array of of crx_[j]  after n_normalization
     private var crny_ = Array<Float>(20){0.00f}  // array of of cry_[j] after n_normalization
