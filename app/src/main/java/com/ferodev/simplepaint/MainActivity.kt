@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
     private var shift1=0
     private var sign=0
     private var f=0
-    private var ff=0 Array<Float>(800){0.0f}
+    private var ff= Array<Float>(800){0.0f}
     private var ffr=0
     private var xsign=1
     private var xxsign=1
