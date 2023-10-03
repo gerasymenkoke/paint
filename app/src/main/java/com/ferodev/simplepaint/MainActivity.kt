@@ -373,7 +373,7 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=799 && (crx_[j]!=oldx || cry_[j]!=oldy) ) {
+while (j >=0 && j<=799) ) {
  
                                // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
@@ -387,7 +387,7 @@ while (j >=0 && j<=799 && (crx_[j]!=oldx || cry_[j]!=oldy) ) {
                      
               
                 
-/*
+
 
 // output as text current painted number in direction sequence
 j=0                    
@@ -401,7 +401,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() +
                     j=j+1
                      }
 
-*/
+
 
 /*
 
