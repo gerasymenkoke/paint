@@ -373,7 +373,7 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=799)  {
+while (j >=0 && j<=9)  {
  
                                // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
                                 //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
@@ -407,7 +407,7 @@ if (j<=9) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() +
 
 
    jj=0
-   minres = 1000.00f  
+//   minres = 1000.00f  
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
