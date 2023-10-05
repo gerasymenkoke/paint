@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     private var k=0
     private var old=0
    
-    private var aaa = Array<String>(100){"0"} // text Array for result monitoring
+    private var aaa = Array<String>(800){"0"} // text Array for result monitoring
     private var aaacr = Array<String>(800){"0"} // text Array for result monitoring
   
     private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
@@ -393,7 +393,7 @@ while (j >=0 && j<=799)  {
 // output as text current painted number in direction sequence
 j=0                    
 while (j >=0 && j<=799) {
-if (j<=799) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
+if (j<=799) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
