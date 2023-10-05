@@ -67,10 +67,10 @@ class MainActivity : AppCompatActivity() {
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var oldx = 0.00f 
     private var oldy = 0.00f 
-    private var crn_ = Array<Float>(30){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var crnx_ = Array<Float>(30){0.00f}  // array of of crx_[j]  after n_normalization
-    private var crny_ = Array<Float>(30){0.00f}  // array of of cry_[j] after n_normalization
-    private var crnxdy_ = Array<Float>(30){0.00f}  // array of of crxdy_[j] after n_normalizatio
+    private var crn_ = Array<Float>(800){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
+    private var crnx_ = Array<Float>(800){0.00f}  // array of of crx_[j]  after n_normalization
+    private var crny_ = Array<Float>(800){0.00f}  // array of of cry_[j] after n_normalization
+    private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
@@ -373,7 +373,7 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=29)  {
+while (j >=0 && j<=799)  {
 
     
                                // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
@@ -392,8 +392,8 @@ while (j >=0 && j<=29)  {
 
 // output as text current painted number in direction sequence
 j=0                    
-while (j >=0 && j<=29) {
-if (j<=29) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
+while (j >=0 && j<=799) {
+if (j<=799) {aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString()}
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -524,7 +524,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
        // "  " + aresnum +  "  " + aresnum1 + "\n" +
                 //     "res=[" + res0 + "][" + res1 +  "]"   +  
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
-         textviewid.text =     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[29]  
+         textviewid.text =     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[799]  
   /*               " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + " ff=" + ff + " ffr=" + ffr + " dot=" + dot +  " repeat=" + repeat +
                 "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] + " " + sresnum[8] + " " + sresnum[9] +
                 "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] + " " + sresnum[6] + " " + sresnum[7] +  " " + sresnum[8] + " " + sresnum[9] 
