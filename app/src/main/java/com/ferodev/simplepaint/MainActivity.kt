@@ -373,7 +373,7 @@ class MainActivity : AppCompatActivity() {
 i=0 
 j=0 
 old = 10                    
-while (j >=0 && j<=799 && crxdy_[j]!=1000.00f)  {
+while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
 
     
                                // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
