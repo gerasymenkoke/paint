@@ -373,23 +373,22 @@ class MainActivity : AppCompatActivity() {
                     
 i=-1
 j=0 
-old = 10  
+oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
 
-                                  if (  Math.abs(crxdy_[j] - oldxdy) >= Math.abs( oldxdy/10 )  )                              
+                                   if (  sign(crx_) != sign(oldx) || sign(cry_) != sign(oldy)  )                              
                                       { i=i+1 
-                                  //oldx=crx_[j]; oldy=cry_[j]; 
-                                      oldxdy=crxdy_[j] 
                                   
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crnxdy_[i]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                    
+                                  crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                      
+                                      oldx=crx_[j]; oldy=cry_[j]; 
+                                      oldxdy=crxdy_[j] 
                                       }
-                                  
                                   j=j+1 
-                                }
+                                                }
   
                      
               
