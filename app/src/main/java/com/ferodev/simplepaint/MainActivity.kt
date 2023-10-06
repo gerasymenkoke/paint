@@ -29,6 +29,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
 
 import kotlin.math.abs
 import kotlin.math.roundToInt
+import kotlin.math.sign
 
 
 class MainActivity : AppCompatActivity() {
