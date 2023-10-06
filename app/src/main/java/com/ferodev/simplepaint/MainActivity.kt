@@ -378,7 +378,7 @@ oldx = 0.0f; oldy = 0.0f;
 oldxdy=1000.0f
 while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
 
-                                   if (  sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy)  )                              
+                                   if (  j>0 && ( sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) ) )                              
                                       { i=i+1 
                                   
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
@@ -386,7 +386,7 @@ while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
                                   crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                       
                                       oldx=crx_[j]; oldy=cry_[j]; 
-                                      oldxdy=crxdy_[j] 
+                                 //     oldxdy=crxdy_[j] 
                                       }
                                   j=j+1 
                                                 }
