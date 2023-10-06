@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity() {
 
    
    
-
+package kotlin.math
 
      
      
@@ -373,10 +373,10 @@ class MainActivity : AppCompatActivity() {
 
                     
 i=-1
-j=0 
+j=1
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
+while (j >=1 && j<=799 && crxdy_[j]!=1000.0f)  {
 
                                    if  ( sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) )                              
                                       { i=i+1 
