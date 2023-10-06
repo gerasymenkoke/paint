@@ -374,10 +374,10 @@ class MainActivity : AppCompatActivity() {
 i=-1
 j=0 
 old = 10  
-oldxdy=1000
+oldxdy=1000.0f
 while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
 
-                                  if (Math.abs(crxdy - oldxdy) >= Math.abs( oldxdy/10 )                               
+                                  if (  Math.abs(crxdy - oldxdy) >= Math.abs( oldxdy/10 )  )                              
                                       { i=i+1 
                                   //oldx=crx_[j]; oldy=cry_[j]; 
                                       oldxdy=crxdy_[j] 
