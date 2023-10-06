@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var oldx = 0.00f 
     private var oldy = 0.00f 
+    private var oldxdy = 0.00f
     private var crn_ = Array<Float>(800){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var crnx_ = Array<Float>(800){0.00f}  // array of of crx_[j]  after n_normalization
     private var crny_ = Array<Float>(800){0.00f}  // array of of cry_[j] after n_normalization
@@ -370,19 +371,24 @@ class MainActivity : AppCompatActivity() {
 
 
                     
-i=0 
+i=-1
 j=0 
-old = 10                    
+old = 10  
+oldxdy=1000
 while (j >=0 && j<=799 && crxdy_[j]!=1000.0f)  {
 
-    
-                               // dir_crn[i]=dir_cr[j]; // crn_[i]=crx_[j] + cry_[j]; - bad idea + and - annigilate
-                                //  crn_[i]=( ( crn_[i] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  oldx=crx_[j]; oldy=cry_[j]
-                                  crnx_[j]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crny_[j]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crnxdy_[j]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  i=j; j=j+1 ; 
+                                  if (Math.abs(crxdy - oldxdy) >= Math.abs( oldxdy/10 )                               
+                                      { i=i+1 
+                                  //oldx=crx_[j]; oldy=cry_[j]; 
+                                      oldxdy=crxdy_[j] 
+                                  
+                                  crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  crnxdy_[i]=( ( crxdy_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                    
+                                      }
+                                  
+                                  j=j+1 
                                 }
   
                      
