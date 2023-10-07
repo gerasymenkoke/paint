@@ -382,7 +382,7 @@ while (j >=1 && j<=799  )  {
                                   
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  if(cry_[j] == 0.00f) { cry_[j] =1/100.0f }
+                                  if(cry_[j] == 0.00f) { cry_[j] =1/1000.0f }
                                          crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                       
                                       oldx=crx_[j]; oldy=cry_[j];
@@ -414,7 +414,7 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
 
 
 
-/*
+
 
 
    jj=0
@@ -442,12 +442,12 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
  jj=jj+1
 }    
        
-   */          
+           
 
 
 
 // output  result as string with diferent length adding new symbols each cycle
-/*
+
       resnum[l]=res0 
      if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
@@ -527,7 +527,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
      
       if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
   
-  */           
+           
 
      
                 
