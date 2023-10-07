@@ -81,9 +81,9 @@ class MainActivity : AppCompatActivity() {
 
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminx =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminy =  Array(60){ Array<Float>(10){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resmin =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminx =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminy =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     
     private var  aresmin = " "
     private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
@@ -419,7 +419,7 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
 
 
    jj=0
-//   minres = 1000.00f  
+   minres = 1000.00f  
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
