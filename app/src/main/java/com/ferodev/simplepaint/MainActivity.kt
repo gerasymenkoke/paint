@@ -430,7 +430,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
               resmin[jj] [jjj]=0.0f   
    
                 while (j >=0 && j<=9) {  
-                    if (crnxdy_[j] == 0) { crnxdy_[j]=1/1000.0f }
+                    if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnxdy_[j]  - xdyrr[jj] [jjj] [j] ) / Math.abs ( crnxdy_[j] )
                                       
                                j=j+1
