@@ -448,7 +448,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
 
 // output  result as string with diferent length adding new symbols each cycle
-
+/*
       resnum[l]=res0 
      if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
@@ -485,7 +485,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
                  }                
                          
-  /*                                                             
+                                                             
       if (l==0 &&  resnum[0] == 11)  {  xxsign=-1 }                              
       if(l>0) { if (resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
       if( resnum[l] <= 9 && ff==0 )  { iresnum=xxsign*sresnum[l].toFloat(); xxsign=1 }              
