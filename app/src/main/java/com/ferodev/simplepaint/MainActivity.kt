@@ -364,7 +364,6 @@ class MainActivity : AppCompatActivity() {
                     
 // sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
 
-      j=0    
                      
 
       
@@ -376,7 +375,7 @@ i=-1
 j=1
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-while (j >=1 && j<=799 && crxdy_[j]!=1000.0f)  {
+while (j >=1 && j<=799  )  {
 
                                    if  ( j==1 || (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) ) )                             
                                       { i=i+1 
@@ -386,10 +385,13 @@ while (j >=1 && j<=799 && crxdy_[j]!=1000.0f)  {
                                   if(cry_[j] == 0.00f) { cry_[j] =1/100.0f }
                                     //      crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                       
-                                      oldx=crx_[j]; oldy=cry_[j]; 
+                                      oldx=crx_[j]; oldy=cry_[j];
+                                     if (crxdy_[j]==1000.0f) { j=799 }
+                                          
                                  //     oldxdy=crxdy_[j] 
                                       }
-                                  j=j+1 
+                                         
+                                            j=j+1 
                                                 }
   
                      
