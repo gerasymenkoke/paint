@@ -414,7 +414,7 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
                      }
 
 
-
+/*
 
 
 
@@ -448,7 +448,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
 
 // output  result as string with diferent length adding new symbols each cycle
-/*
+
       resnum[l]=res0 
      if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
