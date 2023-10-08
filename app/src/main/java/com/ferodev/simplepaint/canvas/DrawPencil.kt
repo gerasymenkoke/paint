@@ -53,14 +53,14 @@ class DrawPencil @JvmOverloads constructor(
 
     private val dataPencil = mutableListOf<Pencil>()
     private val colorList = mutableListOf<Int>()
-    private var i = 1
+    private var i = -1
     private var arr = Array<Float>(10){0.0F}  
     private var x1 = 1f
     private var y1 = 1f
      private var rx1 = 1f
      private var ry1 = 1f 
      private var N = 1
-    
+     
     
      companion object {
         var xxx = "99"
@@ -70,8 +70,8 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
-        var crx_ = Array<Float>(800){0.0f}
-        var cry_ = Array<Float>(800){0.0f} 
+        var crx_ = Array<Float>(800){-1.0f}
+        var cry_ = Array<Float>(800){-1.0f} 
         var crxdy_ = Array<Float>(800){1000.0f} 
         
         var rx = 0.0f
@@ -144,17 +144,18 @@ class DrawPencil @JvmOverloads constructor(
       
             
              
-            if (j >=1 && j<=799 )  {
+            if (j >=0 && j<=799 )  {
          if ( Math.abs ( (x-x1)/x) > 0.10f || Math.abs ( (y-y1)/y) > 0.10f)
         {  
-            
+                 
                  rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
                  ry=(((y-y1)/y * 100.0).roundToInt() / 100.0).toFloat() 
-                             
-                 crx_[j] = rx
-                 cry_[j] = ry
+                 
+                 i=i+1            
+                 crx_[i] = rx
+                 cry_[i] = ry
                 if( ry==0.0f) {   ry=1/1000.0f }
-                    crxdy_[j]= (rx)/(ry)  
+                    crxdy_[i]= (rx)/(ry)  
 
                  x1=x
                  y1=y   
@@ -166,7 +167,7 @@ class DrawPencil @JvmOverloads constructor(
                 
                                         }
 
-        if (j==0)     
+  /*      if (j==0)     
         {  
        
      rx=(((x-0) * 100.0).roundToInt() / 100.0).toFloat() 
@@ -182,7 +183,7 @@ class DrawPencil @JvmOverloads constructor(
        j = j + 1 
               
         }   
-       
+   */    
       
         
         when (event1.action) {
