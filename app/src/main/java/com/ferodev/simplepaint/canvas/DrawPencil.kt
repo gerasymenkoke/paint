@@ -156,13 +156,14 @@ class DrawPencil @JvmOverloads constructor(
                 if( ry==0.0f) {   ry=1/1000.0f }
                     crxdy_[j]= (rx)/(ry)  
 
+                 x1=x
+                 y1=y   
                    
         }             
-                      x1=x
-                      y1=y   
+                      
                     j = j + 1
                                                             
-         
+                
                                         }
 
         if (j==0)     
