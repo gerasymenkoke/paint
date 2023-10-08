@@ -374,9 +374,9 @@ i=-1
 j=1
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-while (j >=0 && j<=799  )  {
+while (j >=1 && j<=799  )  {
 
-                                   if  ( j==0 || (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) ) )                             
+                                   if  ( j==1 || (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) ) )                             
                                       { i=i+1 
                                   
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
