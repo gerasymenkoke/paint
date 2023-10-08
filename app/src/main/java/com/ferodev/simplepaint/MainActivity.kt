@@ -371,29 +371,30 @@ class MainActivity : AppCompatActivity() {
 
                     
 i=-1
-j=1
+j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-while (j >=0 && j<=799  )  {
+while ( crx_[j]!=-1 && cry_[j] !=-1  )  {
 
                                  //  if  ( j==1 || (  (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) )  &&  (sign(oldx)!=0.0f) &&  (sign(oldy)!=0.0f) ) )                             
                                      // { 
-                                          i=i+1 
+                                     //     i=i+1 
                                   
-                                  crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                  oldx=crx_[j]; oldy=cry_[j];
+                              //    crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                              //    crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                             //     oldx=crx_[j]; oldy=cry_[j];
                                   
-                                  if(cry_[j] == 0.00f) { cry_[j] =1/1000.0f }
+                         //         if(cry_[j] == 0.00f) { cry_[j] =1/1000.0f }
                                          crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                       
                                     
-                                     if (crxdy_[j]==1000.0f) { j=799 }
+                            //         if (crxdy_[j]==1000.0f) { j=799 }
                                          
                                 
                                     //  }
-                                         
-                                            j=j+1 
+                                          
+                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]
+                                            i=j; j=j+1 
                                                 }
   
                      
