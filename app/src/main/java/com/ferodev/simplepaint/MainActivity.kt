@@ -374,7 +374,7 @@ i=-1
 j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-                    
+/*                    
 while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
 
                                  //  if  ( j==1 || (  (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) )  &&  (sign(oldx)!=0.0f) &&  (sign(oldy)!=0.0f) ) )                             
@@ -400,14 +400,14 @@ while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
   
                      
               
-                
+         */       
 
 
 // output as text current painted number in direction sequence
 j=0;
                     
-while (j >=0 && j<=i) {
-if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString() }
+while (j >=0 && j<=9) {
+if (j<=9) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + crxdy_[j].toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
