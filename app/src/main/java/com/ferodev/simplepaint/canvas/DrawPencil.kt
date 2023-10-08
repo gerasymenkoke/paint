@@ -182,12 +182,7 @@ class DrawPencil @JvmOverloads constructor(
               
         }   
        
-        }   
       
-   
-
-
-        
         
         when (event1.action) {
             MotionEvent.ACTION_DOWN -> {
