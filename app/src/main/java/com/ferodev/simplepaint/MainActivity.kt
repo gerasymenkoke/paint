@@ -374,6 +374,7 @@ i=-1
 j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
+                    
 while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
 
                                  //  if  ( j==1 || (  (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) )  &&  (sign(oldx)!=0.0f) &&  (sign(oldy)!=0.0f) ) )                             
