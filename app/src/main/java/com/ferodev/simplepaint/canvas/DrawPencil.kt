@@ -166,8 +166,8 @@ class DrawPencil @JvmOverloads constructor(
                     crxdy_[j]= (rx)/(ry)   
                       x1=x
                       y1=y   
-                      rx1=rx
-                      ry1=ry
+                  //    rx1=rx
+                 //     ry1=ry
                       j = j + 1
                       N=1   
                        }    
@@ -190,8 +190,8 @@ class DrawPencil @JvmOverloads constructor(
             
         x1=x
         y1=y
-        rx1=rx
-        ry1=ry
+   //     rx1=rx
+   //     ry1=ry
        j = j + 1 
               
         }   
