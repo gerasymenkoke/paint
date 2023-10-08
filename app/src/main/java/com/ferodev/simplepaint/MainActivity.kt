@@ -381,13 +381,15 @@ while (j >=1 && j<=799  )  {
                                   
                                   crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                   crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
+                                  oldx=crx_[j]; oldy=cry_[j];
+                                  
                                   if(cry_[j] == 0.00f) { cry_[j] =1/1000.0f }
                                          crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
                                       
-                                      oldx=crx_[j]; oldy=cry_[j];
+                                    
                                      if (crxdy_[j]==1000.0f) { j=799 }
-                                          
-                                 //     oldxdy=crxdy_[j] 
+                                         
+                                
                                       }
                                          
                                             j=j+1 
