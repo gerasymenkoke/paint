@@ -374,40 +374,23 @@ i=-1
 j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-/*                    
+                  
 while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
-
-                                 //  if  ( j==1 || (  (sign(crx_[j]) != sign(oldx) || sign(cry_[j]) != sign(oldy) )  &&  (sign(oldx)!=0.0f) &&  (sign(oldy)!=0.0f) ) )                             
-                                     // { 
-                                     //     i=i+1 
-                                  
-                              //    crnx_[i]=( ( crx_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                              //    crny_[i]=( ( cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                             //     oldx=crx_[j]; oldy=cry_[j];
-                                  
-                         //         if(cry_[j] == 0.00f) { cry_[j] =1/1000.0f }
-                                         crnxdy_[i]=( ( crx_[j] / cry_[j] * 1000.0).roundToInt() / 1000.0).toFloat() 
-                                      
-                                    
-                            //         if (crxdy_[j]==1000.0f) { j=799 }
-                                         
-                                
-                                    //  }
-                                          
-                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]
+                                                               
+                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]; crnxdy_[j]= crxdy_[j];
                                             i=j; j=j+1 
-                                                }
+                                              }
   
                      
               
-         */       
+             
 
 
 // output as text current painted number in direction sequence
 j=0;
                     
-while (j >=0 && j<=9) {
-if (j<=9) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + crxdy_[j].toString() }
+while (j >=0 && j<=i) {
+if (j<=9) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -418,7 +401,7 @@ if (j<=9) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() +
 
 
 
-/*
+
 
 
    jj=0
@@ -543,7 +526,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[i]  +
                     "\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" 
  
-*/
+
 
                     
   /*               " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + " ff=" + ff + " ffr=" + ffr + " dot=" + dot +  " repeat=" + repeat +
