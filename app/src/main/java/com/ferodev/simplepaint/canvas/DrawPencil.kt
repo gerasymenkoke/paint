@@ -162,7 +162,8 @@ class DrawPencil @JvmOverloads constructor(
                  if (N==1)
                        { crx_[j] = rx
                          cry_[j] = ry
-                if( ry!=0.0f) {      crxdy_[j]= (rx)/(ry)   }
+                if( ry==0.0f) {   ry=1/1000.0f }
+                    crxdy_[j]= (rx)/(ry)   
                       x1=x
                       y1=y   
                       rx1=rx
@@ -180,11 +181,12 @@ class DrawPencil @JvmOverloads constructor(
         if (j==0)     
         {  
        
-     rx=(((x-0)/x* 100.0).roundToInt() / 100.0).toFloat() 
-     ry=(((y-0)/y* 100.0).roundToInt() / 100.0).toFloat() 
+     rx=(((x-0) * 100.0).roundToInt() / 100.0).toFloat() 
+     ry=(((y-0) * 100.0).roundToInt() / 100.0).toFloat() 
         crx_[j] = rx
         cry_[j] = ry
-        if( ry!=0.0f) {    crxdy_[j]= (rx)/(ry)   }
+         if( ry==0.0f) {   ry=1/1000.0f } 
+            crxdy_[j]= (rx)/(ry)   
             
         x1=x
         y1=y
