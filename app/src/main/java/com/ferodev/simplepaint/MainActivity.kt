@@ -411,23 +411,26 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
-    
+
+           minres = 1000.00f 
     while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
             {
     
                 j=0
-                minres = 1000.00f 
+               
                 while (j >=0 && j<=9) {  
                     if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
-                      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
+                    
                     j=j+1
                            }
-                
-       aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
+      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
+      
                                      
            jjj=jjj+1
-             }    
+             }  
+ aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
+            
  jj=jj+1
 }    
        
