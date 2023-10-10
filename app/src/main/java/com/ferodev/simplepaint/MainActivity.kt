@@ -390,7 +390,7 @@ while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
 j=0;
                     
 while (j >=0 && j<=i) {
-if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + crnxdy_[j].toString() }
+if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -417,8 +417,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
    
                 while (j >=0 && j<=9) {  
                     if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
-                    resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnxdy_[j]  - xdyrr[jj] [jjj] [j] ) / Math.abs ( crnxdy_[j] )
-                                      
+                    resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
                                j=j+1
                            }
 
