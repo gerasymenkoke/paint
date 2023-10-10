@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
 
 
-           
+    /*       
  
 // Filling sample array
 // 0
@@ -270,7 +270,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+*/
       
 
 // Filling sample array 
@@ -293,7 +293,7 @@ class MainActivity : AppCompatActivity() {
         xdyrr[11][1]=arrayOf<Float>(  1.0f, -6.0f, -3.66f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
 
-
+/*
 
       
 // Filling sample array 
@@ -340,7 +340,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    
+    */
 
       
       
@@ -524,8 +524,8 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[i]  +
-                    "\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" 
- 
+                    "\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
+                     "\n" +  "aresmin=" + aresmin  
 
 
                     
