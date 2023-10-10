@@ -425,7 +425,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                            }
                 
        aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
-                                     }
+                                     
            jjj=jjj+1
              }    
  jj=jj+1
