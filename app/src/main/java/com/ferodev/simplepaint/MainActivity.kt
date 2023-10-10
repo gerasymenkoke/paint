@@ -279,7 +279,9 @@ class MainActivity : AppCompatActivity() {
 
       rrx[10][0]=arrayOf<Float>(   1.0f,  0.3f,  -0.3f,  -0.3f,  -0.04f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
       rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.58f,  0.39f,  0.31f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
-  
+
+      rrx[10][1]=arrayOf<Float>(   1.0f,  0.31f,  0.0f,   0.0f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
+      rry[10][1]=arrayOf<Float>(   1.0f,  0.01f,  0.0f,   0.0f,   0.0f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
 
 
   
@@ -375,7 +377,7 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
                   
-while ( crx_[j]!=-1.0f && cry_[j] !=-1.0f  )  {
+while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
                                                                
                                          crnx_[j]= crx_[j]; crny_[j]= cry_[j]; crnxdy_[j]= crxdy_[j];
                                             i=j; j=j+1 
@@ -409,19 +411,19 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
 while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
+    
     while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
             {
     
                 j=0
-              resmin[jj] [jjj]=0.0f   
-   
+                minres = 1000.00f 
                 while (j >=0 && j<=9) {  
                     if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
-                               j=j+1
+                      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   )    
+                    j=j+1
                            }
-
-    if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   
+                
        aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
                                      }
            jjj=jjj+1
