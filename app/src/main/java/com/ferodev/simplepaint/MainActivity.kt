@@ -283,6 +283,8 @@ class MainActivity : AppCompatActivity() {
       rrx[10][1]=arrayOf<Float>(   1.0f,  0.31f,  0.0f,   0.0f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
       rry[10][1]=arrayOf<Float>(   1.0f,  0.01f,  0.0f,   0.0f,   0.0f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
 
+      rrx[10][2]=arrayOf<Float>(   1.0f,   0.3f,  0.0f,   0.0f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
+      rry[10][2]=arrayOf<Float>(   1.0f,  -0.02f,  0.0f,   0.0f,   0.0f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
 
   
       
