@@ -377,7 +377,7 @@ oldxdy=1000.0f
                   
 while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
                                                                
-                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]; crnxdy_[j]= crxdy_[j];
+                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]; 
                                             i=j; j=j+1 
                                               }
   
@@ -417,7 +417,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                 j=0
                
                 while (j >=0 && j<=9) {  
-                    if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
+                  
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
                      resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
@@ -433,7 +433,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 }    
        
            
-
+/*
 
 
 // output  result as string with diferent length adding new symbols each cycle
@@ -529,7 +529,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                     "\n" +  "aresmin=" + aresmin  
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
                    
-
+*/
 
                     
   /*               " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + " ff=" + ff + " ffr=" + ffr + " dot=" + dot +  " repeat=" + repeat +
