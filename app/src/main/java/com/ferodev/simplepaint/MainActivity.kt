@@ -81,9 +81,9 @@ class MainActivity : AppCompatActivity() {
 
    
     private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-    private var  resmin =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminx =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminy =  Array(20){ Array<Float>(60){10.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resmin =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminx =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminy =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     
     private var  aresmin = " "
     private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
@@ -277,28 +277,19 @@ class MainActivity : AppCompatActivity() {
 // +
       jj = 10                
 
-      rrx[10][0]=arrayOf<Float>(   1.0f,  0.3f,  -0.3f,  -0.3f,  -0.04f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-      rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.58f,  0.39f,  0.31f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
+      rrx[10][0]=arrayOf<Float>(   1.0f,  0.23f,  0.21f,  -0.23f)
+      rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f)
 
-      rrx[10][1]=arrayOf<Float>(   1.0f,  0.31f,  0.0f,   0.0f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-      rry[10][1]=arrayOf<Float>(   1.0f,  0.01f,  0.0f,   0.0f,   0.0f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
 
-      rrx[10][2]=arrayOf<Float>(   1.0f,   0.3f,  0.0f,   0.0f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-      rry[10][2]=arrayOf<Float>(   1.0f,  -0.02f,  0.0f,   0.0f,   0.0f,  0.0f, 0.00f, 0.00f, 0.08f, 0.0f)
-
-  
-      
       
 // Filling sample array 
 // -
       jj = 11               
   
-       rrx[11][0]=arrayOf<Float>(   1.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-       rry[11][0]=arrayOf<Float>(   1.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
+       rrx[11][0]=arrayOf<Float>(   1.0f,  0.2f)
+       rry[11][0]=arrayOf<Float>(   1.0f,  0.04f)
 
-       rrx[11][1]=arrayOf<Float>(   1.0f,  0.3f,   0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-       rry[11][1]=arrayOf<Float>(   1.0f,  0.03f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f,  0.0f, 0.0f)
-
+      
 
 
        
@@ -428,7 +419,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                 while (j >=0 && j<=9) {  
                     if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
-                    
+                     resmin[jj] [jjj] = (resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
                            }
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
