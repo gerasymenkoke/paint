@@ -419,7 +419,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                 while (j >=0 && j<=9) {  
                     if (crnxdy_[j] == 0.0f) { crnxdy_[j]=1/1000.0f }
                     resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
-                     resmin[jj] [jjj] = (resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
+                     resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
                            }
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
