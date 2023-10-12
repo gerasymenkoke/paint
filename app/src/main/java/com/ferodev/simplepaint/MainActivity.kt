@@ -370,7 +370,7 @@ class MainActivity : AppCompatActivity() {
 
 
                     
-i=-1
+i=0
 j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
