@@ -383,8 +383,7 @@ while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
   
                      
               
-             
-/*
+
 
 // output as text current painted number in direction sequence
 j=0;
@@ -399,7 +398,6 @@ if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() 
                     j=j+1
                      }
 
-*/
 
 
 /*
