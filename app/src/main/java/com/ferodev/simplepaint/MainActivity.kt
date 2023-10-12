@@ -277,8 +277,8 @@ class MainActivity : AppCompatActivity() {
 // +
       jj = 10                
 
-      rrx[10][0]=arrayOf<Float>(   1.0f,  0.23f,  0.21f,  -0.23f)
-      rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f)
+      rrx[10][0]=arrayOf<Float>(   1.0f,  0.23f,  0.21f,  -0.23f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
+      rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
 
 
       
@@ -286,8 +286,8 @@ class MainActivity : AppCompatActivity() {
 // -
       jj = 11               
   
-       rrx[11][0]=arrayOf<Float>(   1.0f,  0.2f)
-       rry[11][0]=arrayOf<Float>(   1.0f,  0.04f)
+       rrx[11][0]=arrayOf<Float>(   1.0f,  0.2f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f, 0.0f,0.0f)
+       rry[11][0]=arrayOf<Float>(   1.0f,  0.04f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f, 0.0f,0.0f)
 
       
 
