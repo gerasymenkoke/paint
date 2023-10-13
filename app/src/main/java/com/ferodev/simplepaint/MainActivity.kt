@@ -279,8 +279,12 @@ class MainActivity : AppCompatActivity() {
 
       rrx[10][0]=arrayOf<Float>(   1.0f,  0.23f,  0.21f,  -0.23f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
       rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
+      
+      rrx[10][1]=arrayOf<Float>(   1.0f,  0.21f,  0.23f,  -0.14f, -0.02f, -0.04f, -0.04f, -0.04f,0.0f,0.0f)
+      rry[10][1]=arrayOf<Float>(   1.0f,  0.03f,  0.02f,  -0.89f,  0.26f,  0.29f,  0.22f,  0.21f,0.0f,0.0f)
 
 
+      
       
 // Filling sample array 
 // -
