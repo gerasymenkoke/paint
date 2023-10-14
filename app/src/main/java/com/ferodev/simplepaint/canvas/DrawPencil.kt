@@ -29,6 +29,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 import kotlin.math.roundToInt
 import kotlin.math.abs
+package kotlin.math.atan
 
 
 
@@ -73,6 +74,7 @@ class DrawPencil @JvmOverloads constructor(
         var crx_ = Array<Float>(800){0.0f}
         var cry_ = Array<Float>(800){0.0f} 
         var crxdy_ = Array<Float>(800){1000.0f} 
+        var angle_ =Array<Float>(800){0.0f} 
         
         var rx = 0.0f
         var ry = 0.0f
@@ -145,7 +147,7 @@ class DrawPencil @JvmOverloads constructor(
             
              
             if (j >=0 && j<=799 )  {
-         if ( Math.abs ( (x-x1)/x) > 0.20f || Math.abs ( (y-y1)/y) > 0.20f)
+         if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
         {  
                  
                  rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
@@ -154,8 +156,9 @@ class DrawPencil @JvmOverloads constructor(
                  i=i+1            
                  crx_[i] = rx
                  cry_[i] = ry
-                if( ry==0.0f) {   ry=1/1000.0f }
-                    crxdy_[i]= (rx)/(ry)  
+                 angle_[i] = 90 - arctan(rx/ry)
+          //      if( ry==0.0f) {   ry=1/1000.0f }
+            //        crxdy_[i]= (rx)/(ry)  
 
                  x1=x
                  y1=y   
@@ -167,23 +170,7 @@ class DrawPencil @JvmOverloads constructor(
                 
                                         }
 
-  /*      if (j==0)     
-        {  
-       
-     rx=(((x-0) * 100.0).roundToInt() / 100.0).toFloat() 
-     ry=(((y-0) * 100.0).roundToInt() / 100.0).toFloat() 
-        crx_[j] = rx
-        cry_[j] = ry
-         if( ry==0.0f) {   ry=1/1000.0f } 
-            crxdy_[j]= (rx)/(ry)   
-            
-        x1=x
-        y1=y
-   
-       j = j + 1 
-              
-        }   
-   */    
+ 
       
         
         when (event1.action) {
