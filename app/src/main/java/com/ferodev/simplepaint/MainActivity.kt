@@ -22,8 +22,9 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.angle_
 
-// import com.ferodev.simplepaint.canvas.DrawPencil.Companion.shift
+
 
 
 
@@ -393,7 +394,7 @@ while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
 j=0;
                     
 while (j >=0 && j<=i) {
-if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString()  }
+if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + angle_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
