@@ -153,14 +153,12 @@ class DrawPencil @JvmOverloads constructor(
                  
                  rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
                  ry=(((y-y1)/y * 100.0).roundToInt() / 100.0).toFloat() 
-                 
+                if (j >= 1) { 
                  i=i+1            
                  crx_[i] = rx
                  cry_[i] = ry
                  angle_[i] =  atan(rx/ry)*(180/PI).toFloat() 
-          //      if( ry==0.0f) {   ry=1/1000.0f }
-            //        crxdy_[i]= (rx)/(ry)  
-
+                            }
                  x1=x
                  y1=y   
                    
