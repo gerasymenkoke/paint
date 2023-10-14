@@ -157,7 +157,7 @@ class DrawPencil @JvmOverloads constructor(
                  i=i+1            
                  crx_[i] = rx
                  cry_[i] = ry
-                 angle_[i] = 90  - atan(rx/ry)*180/PI
+                 angle_[i] =  atan(rx/ry)*(180/PI).toFloat() 
           //      if( ry==0.0f) {   ry=1/1000.0f }
             //        crxdy_[i]= (rx)/(ry)  
 
