@@ -30,6 +30,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 import kotlin.math.roundToInt
 import kotlin.math.abs
 import kotlin.math.atan
+import kotlin.math.PI
 
 
 
@@ -156,7 +157,7 @@ class DrawPencil @JvmOverloads constructor(
                  i=i+1            
                  crx_[i] = rx
                  cry_[i] = ry
-                 angle_[i] = 90 - arctan(rx/ry)
+                 angle_[i] = 90  - atan(rx/ry)*180/PI
           //      if( ry==0.0f) {   ry=1/1000.0f }
             //        crxdy_[i]= (rx)/(ry)  
 
