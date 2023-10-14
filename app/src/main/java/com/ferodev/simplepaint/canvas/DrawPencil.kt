@@ -157,10 +157,10 @@ class DrawPencil @JvmOverloads constructor(
                  i=i+1            
                  crx_[i] = rx
                  cry_[i] = ry
-                 if ( rx >=0 && ry>=0) angle_[i] =  270 + atan(rx/ry)*(180/PI).toFloat() 
-                 if ( rx < 0 && ry>=0) angle_[i] =   180 + (-atan(rx/ry)*(180/PI).toFloat() )
-                 if ( rx >= 0 && ry<0) angle_[i] = 0 + (- atan(rx/ry)*(180/PI).toFloat() )
-                 if ( rx < 0 && ry<0) angle_[i] =  90 + atan(rx/ry)*(180/PI).toFloat()   
+                 if ( rx >=0 && ry>=0) angle_[i] = ( ( 270 +   atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
+                 if ( rx < 0 && ry>=0) angle_[i] = ( ( 180 + (-atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat()   
+                 if ( rx >= 0 && ry<0) angle_[i] = ( ( 0 +  (- atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
+                 if ( rx < 0 && ry<0) angle_[i] =  ( (  90 +    atn(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat()   
                             }
                  x1=x
                  y1=y   
