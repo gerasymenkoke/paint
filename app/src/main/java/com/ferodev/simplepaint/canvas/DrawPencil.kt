@@ -29,7 +29,7 @@ import com.ferodev.simplepaint.databinding.ActivityMainBinding
 
 import kotlin.math.roundToInt
 import kotlin.math.abs
-package kotlin.math.atan
+import kotlin.math.atan
 
 
 
