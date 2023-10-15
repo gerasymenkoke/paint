@@ -151,8 +151,8 @@ class DrawPencil @JvmOverloads constructor(
          if ( Math.abs ( (x-x1)/x) > 0.01f || Math.abs ( (y-y1)/y) > 0.01f)
         {  
                  
-                 rx=(((x-x1)/x * 100.0).roundToInt() / 100.0).toFloat() 
-                 ry=(((y-y1)/y * 100.0).roundToInt() / 100.0).toFloat() 
+                 rx=(((x-x1)/x * 1000.0).roundToInt() / 1000.0).toFloat() 
+                 ry=(((y-y1)/y * 1000.0).roundToInt() / 1000.0).toFloat() 
                 if (j >= 1) { 
                  i=i+1            
                  crx_[i] = rx
