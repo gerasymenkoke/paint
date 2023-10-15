@@ -76,6 +76,7 @@ class DrawPencil @JvmOverloads constructor(
         var cry_ = Array<Float>(800){0.0f} 
         var crxdy_ = Array<Float>(800){1000.0f} 
         var cangle_ =Array<Float>(800){0.0f} 
+        var ci = -1
         
         var rx = 0.0f
         var ry = 0.0f
@@ -148,17 +149,18 @@ class DrawPencil @JvmOverloads constructor(
             
              
             if (j >=0 && j<=799 )  {
-         if ( Math.abs ( (x-x1)/x) > 0.1f || Math.abs ( (y-y1)/y) > 0.1f)
+         
         {  
                  
                  rx=(((x-x1)/x * 1000.0).roundToInt() / 1000.0).toFloat() 
                  ry=(((y-y1)/y * 1000.0).roundToInt() / 1000.0).toFloat() 
-                if (j >= 1) { 
-                 i=i+1            
-                 crx_[i] = rx
-                 cry_[i] = ry
-                 cangle_[i] = ( (  atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
-                    
+                 cangle=( (  atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
+                if (j >= 1 && Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 10 { 
+                 ci=ci+1            
+                 crx_[ci] = rx
+                 cry_[ci] = ry
+                 cangle_[ci] = cangle 
+                 cangle1 = cangle   
               /*
                  if ( rx >=0 && ry>=0) angle_[i] = ( ( 270 +    atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
                  if ( rx < 0 && ry>=0) angle_[i] = ( ( 180 + (-atan(rx/ry)*(180/PI).toFloat()) ).roundToInt() ).toFloat()   
