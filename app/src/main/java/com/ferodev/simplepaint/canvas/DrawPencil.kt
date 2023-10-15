@@ -76,6 +76,8 @@ class DrawPencil @JvmOverloads constructor(
         var cry_ = Array<Float>(800){0.0f} 
         var crxdy_ = Array<Float>(800){1000.0f} 
         var cangle_ =Array<Float>(800){0.0f} 
+        var canle = 0.0f 
+        var cangle1 = 0.0f
         var ci = -1
         
         var rx = 0.0f
