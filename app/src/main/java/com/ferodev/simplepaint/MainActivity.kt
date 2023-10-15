@@ -23,7 +23,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cangle_
-
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ci
 
 
 
@@ -381,13 +381,14 @@ i=0
 j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
-                  
+
+                    /*
 while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
                                                                
                                          crnx_[j]= crx_[j]; crny_[j]= cry_[j]; 
                                             i=j; j=j+1 
                                               }
-  
+                    */
                      
               
 
@@ -395,8 +396,8 @@ while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
 // output as text current painted number in direction sequence
 j=0;
                     
-while (j >=0 && j<=i) {
-if (j<=i) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString()  }
+while (j >=0 && j<=ci) {
+if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
