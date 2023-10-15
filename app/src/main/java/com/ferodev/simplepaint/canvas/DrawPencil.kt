@@ -171,11 +171,10 @@ class DrawPencil @JvmOverloads constructor(
                  x1=x
                  y1=y   
                    
-        }             
-                      
+                            
                     j = j + 1
                                                             
-                
+              
                                         }
 
  
