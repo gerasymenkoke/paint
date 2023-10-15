@@ -22,7 +22,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
-import com.ferodev.simplepaint.canvas.DrawPencil.Companion.angle_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cangle_
 
 
 
@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
     private var rry =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
+    private var rangle =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
+    
     private var xdyrr =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
 
    
@@ -278,11 +280,11 @@ class MainActivity : AppCompatActivity() {
 // +
       jj = 10                
 
-      rrx[10][0]=arrayOf<Float>(   1.0f,  0.23f,  0.21f,  -0.23f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
-      rry[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
+      rrx[10][0]=arrayOf<Float>(      1.0f,  0.23f,  0.21f,  -0.23f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
+      rry[10][0]=arrayOf<Float>(      1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
+      rangle[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)  
       
-      rrx[10][1]=arrayOf<Float>(   1.0f,  0.21f,  0.23f,  -0.14f, -0.02f, -0.04f, -0.04f, -0.04f,0.0f,0.0f)
-      rry[10][1]=arrayOf<Float>(   1.0f,  0.03f,  0.02f,  -0.89f,  0.26f,  0.29f,  0.22f,  0.21f,0.0f,0.0f)
+    
 
 
       
