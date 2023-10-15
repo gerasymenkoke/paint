@@ -150,7 +150,7 @@ class DrawPencil @JvmOverloads constructor(
       
             
              
-            if (j >=0 && j<=799 )  {
+            if ( j<=10000  )  {
          
         
                  
@@ -163,12 +163,7 @@ class DrawPencil @JvmOverloads constructor(
                  cry_[ci] = ry
                  cangle_[ci] = cangle 
                  cangle1 = cangle   
-              /*
-                 if ( rx >=0 && ry>=0) angle_[i] = ( ( 270 +    atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat() 
-                 if ( rx < 0 && ry>=0) angle_[i] = ( ( 180 + (-atan(rx/ry)*(180/PI).toFloat()) ).roundToInt() ).toFloat()   
-                 if ( rx >= 0 && ry<0) angle_[i] = ( (  0 +  (-atan(rx/ry)*(180/PI).toFloat()) ).roundToInt() ).toFloat() 
-                 if ( rx < 0 && ry<0) angle_[i] =  ( (  90 +    atan(rx/ry)*(180/PI).toFloat() ).roundToInt() ).toFloat()  
-              */   
+           
                             }
                  x1=x
                  y1=y   
