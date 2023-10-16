@@ -150,7 +150,7 @@ class DrawPencil @JvmOverloads constructor(
         
             
              
-            if ( j<=10000 && (j==0 ||  Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 0.0f ) ) {
+            if ( j<=10000 || (j==0 ||  Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 0.0f ) ) {
          
                  cangle1 = cangle          
                  rx=(((x-x1)/x * 1000.0).roundToInt() / 1000.0).toFloat() 
