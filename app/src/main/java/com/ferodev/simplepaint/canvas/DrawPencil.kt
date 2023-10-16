@@ -148,7 +148,7 @@ class DrawPencil @JvmOverloads constructor(
 
         
         
-            
+      /*      
              
             if ( j<=1000 && (j==0 ||  Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 10 ) ) {
          
@@ -170,7 +170,7 @@ class DrawPencil @JvmOverloads constructor(
               
                                         }
 
- 
+ */
       
         
         when (event1.action) {
