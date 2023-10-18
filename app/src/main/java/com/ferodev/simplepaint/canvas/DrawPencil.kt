@@ -59,6 +59,8 @@ class DrawPencil @JvmOverloads constructor(
     private var arr = Array<Float>(10){0.0F}  
     private var x1 = 1f
     private var y1 = 1f
+    private var x = 0f
+    private var y = 0f
      private var rx1 = 1f
      private var ry1 = 1f 
      private var N = 1
@@ -136,8 +138,8 @@ class DrawPencil @JvmOverloads constructor(
         
        
         
-        val x = event1.x 
-        val y = event1.y 
+         x = event1.x 
+         y = event1.y 
         
         xxx = x.toString()       
         yyy = y.toString()    
