@@ -383,7 +383,7 @@ oldx = 0.0f; oldy = 0.0f;
 oldxdy=1000.0f
 
                     /*
-while ( crx_[j]!=0.0f && cry_[j] !=0.0f  )  {
+while ( crx_[j]!=0.0f || cry_[j] !=0.0f  )  {
                                                                
                                          crnx_[j]= crx_[j]; crny_[j]= cry_[j]; 
                                             i=j; j=j+1 
