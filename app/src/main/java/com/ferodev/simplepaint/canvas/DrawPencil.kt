@@ -152,7 +152,7 @@ class DrawPencil @JvmOverloads constructor(
         
           
              
-            if ( j<=799 && (j==0 ||  Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 10 ) ) 
+            if ( j<=799 && (j==0 ||  Math.abs(Math.abs(cangle) - Math.abs(cangle1)) > 1 ) ) 
         {
          
                  cangle1 = cangle 
