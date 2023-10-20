@@ -80,7 +80,7 @@ class DrawPencil @JvmOverloads constructor(
         var cangle_ =Array<Float>(800){0.0f} 
         var cangle = 0.0f 
         var cangle1 = 0.0f
-        var ci = -1
+        var ci = 0
         
         var rx = 0.0f
         var ry = 0.0f
@@ -146,7 +146,7 @@ class DrawPencil @JvmOverloads constructor(
     
    
                   
-                 if(shift==1) { j=0; ci=-1;shift=0 }
+                 if(shift==1) { j=0; ci=0; shift=0 }
 
         
         
@@ -162,12 +162,12 @@ class DrawPencil @JvmOverloads constructor(
                    ry=(((y-y1)/y * 1000.0).roundToInt() / 1000.0).toFloat() 
                    if (rx==0.0f) rx=0.001f; if (ry==0.001f) ry=0.001f 
                    cangle=  (atan(rx/ry)*(180/PI)).toFloat() 
-                 
-                 ci=ci+1           
+                 if ( j>=1 ) {
                  cangle_[ci] = cangle 
                  crx_[ci] = rx
                  cry_[ci] = ry
-                                                               
+                 ci=ci+1            
+                            }
                  x1=x
                  y1=y     
                                    
