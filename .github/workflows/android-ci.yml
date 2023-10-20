@@ -33,7 +33,7 @@ jobs:
       - name: Gradle Wrapper Validation
         uses: gradle/wrapper-validation-action@v1
       
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: |
                  ~/.gradle/caches
@@ -121,7 +121,7 @@ jobs:
         
         
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
          name: app-debug
          path: app/build/outputs/apk/debug/app-debug1.apk  
