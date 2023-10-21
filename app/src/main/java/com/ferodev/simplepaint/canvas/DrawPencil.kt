@@ -157,8 +157,8 @@ class DrawPencil @JvmOverloads constructor(
           
            //      if (x==0.0f) x=0.001f; if (y==0.0f) y=0.001f
                
-                   rx=(((x-x1) * 1000.0).roundToInt() / 1000.0).toFloat() 
-                   ry=(((y-y1) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   rx=(((x) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   ry=(((y) * 1000.0).roundToInt() / 1000.0).toFloat() 
             //       if (rx==0.0f) rx=0.001f; if (ry==0.0f) ry=0.001f 
        
                   if ( ry==0.0f)  { ry=0.00001f }
