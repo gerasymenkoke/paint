@@ -177,8 +177,10 @@ class DrawPencil @JvmOverloads constructor(
                  y1=y     
                  }
             }
-                 
-                    j = j + 1
+
+                 x1=x
+                 y1=y     
+              j = j + 1
                     
                      
          }
