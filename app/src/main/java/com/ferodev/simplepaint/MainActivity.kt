@@ -397,7 +397,7 @@ while ( crx_[j]!=0.0f || cry_[j] !=0.0f  )  {
 j=0;
                     
 while (j >=0 && j<=ci) {
-if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString()  }
+if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString() + ";;ci=" + ci.toString() }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
