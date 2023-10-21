@@ -168,7 +168,7 @@ class DrawPencil @JvmOverloads constructor(
                  {
                                 
                  cangle=  (atan(rx/ry)*(180/PI)).toFloat() 
-                 if ( Math.abs ( (Math.abs(cangle) - (Math.abs(cangle1)  ) > 10) 
+                 if ( Math.abs ( Math.abs(cangle) - Math.abs(cangle1)  )  > 10) 
                                 {
                      
                  cangle1 = cangle 
