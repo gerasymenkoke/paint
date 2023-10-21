@@ -174,7 +174,7 @@ class DrawPencil @JvmOverloads constructor(
                  crx_[ci] = rx
                  cry_[ci] = ry
                  ci=ci+1            
-                                ]
+                                }
                  
                  }
             }
