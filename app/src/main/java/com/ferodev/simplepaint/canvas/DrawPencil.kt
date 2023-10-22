@@ -159,8 +159,8 @@ class DrawPencil @JvmOverloads constructor(
           
          
                
-                   rx=((((x)/w) * 1000.0).roundToInt() / 1000.0).toFloat() 
-                   ry=((((y)/h) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   rx=((((x)/1) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   ry=((((y)/1) * 1000.0).roundToInt() / 1000.0).toFloat() 
                   
              //     if ( ry==0.0f)  { ry=0.00001f }
                   cangle=  (atan(rx/ry)*(180/PI)).toFloat() 
