@@ -81,7 +81,7 @@ class DrawPencil @JvmOverloads constructor(
         var crxdy_ = Array<Float>(800){1000.0f} 
         var cangle_ =Array<Float>(800){0.0f} 
         var cangle = 0.0f 
-        var cangle1 = 0.0f
+        var cangle1 = -1.0f
         var ci = 0
         
         var rx = 0.0f
@@ -167,7 +167,7 @@ class DrawPencil @JvmOverloads constructor(
 
               
       
-               if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) || ( Math.abs(cangle - cangle1) > 5.0f ) ) { j=j }
+      if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) || ( cangle1 != -1.0f && Math.abs(cangle - cangle1) > 5.0f ) ) { j=j }
                else   {
                  cangle_[ci] = cangle 
                  crx_[ci] = rx
