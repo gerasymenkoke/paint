@@ -163,7 +163,8 @@ class DrawPencil @JvmOverloads constructor(
                    ry=((((y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                   
                   
-                  if  (cangle1==-1.0f) cangle1=cangle
+              
+                         
                   if ( ry==0.0f)  { ry=0.00001f }
                   cangle=( ( (atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
 
@@ -171,6 +172,8 @@ class DrawPencil @JvmOverloads constructor(
       
       if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) ||  (Math.abs(cangle - cangle1) < 5.0f ) ) { j=j }
                else   {
+                     if  (cangle1==-1.0f) { cangle1=cangle } 
+                else {     
                  cangle_[ci] = cangle 
                  crx_[ci] = rx
                  cry_[ci] = ry
@@ -179,7 +182,7 @@ class DrawPencil @JvmOverloads constructor(
                  x1=x
                  y1=y  
                 cangle1 = cangle   
-                
+                      } 
                       }
                 
             
