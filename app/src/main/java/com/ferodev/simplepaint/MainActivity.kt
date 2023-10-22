@@ -135,7 +135,9 @@ class MainActivity : AppCompatActivity() {
         var paintBrush = Paint()
         var colorList = ArrayList<Int>()
         var currentBrush = Color.BLACK
-        var shift = 0      
+        var shift = 0   
+        var w=0
+        var h=0     
                           }
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -352,7 +354,11 @@ class MainActivity : AppCompatActivity() {
       
       
 
-
+Display display = getWindowManager().getDefaultDisplay();
+Point size = new Point();
+display.getSize(size);
+w = size.x;
+h = size.y;
     
 
       
