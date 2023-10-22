@@ -31,6 +31,8 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ci
 import kotlin.math.abs
 import kotlin.math.roundToInt
 import kotlin.math.sign
+import android.util.DisplayMetrics
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -144,11 +146,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
              
         setContentView(binding.root)
-     
-         
+
         supportActionBar?.hide()
 
-      
+
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+ 
+        w = displayMetrics.widthPixels
+        h = displayMetrics.heightPixels
+          
 
         
         binding.apply {
@@ -354,12 +361,7 @@ class MainActivity : AppCompatActivity() {
       
       
 
-Display display = getWindowManager().getDefaultDisplay();
-Point size = new Point();
-display.getSize(size);
-w = size.x;
-h = size.y;
-    
+
 
       
       
