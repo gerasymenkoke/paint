@@ -159,17 +159,17 @@ class DrawPencil @JvmOverloads constructor(
           
          
                
-                   rx=((((x-x1)/w) * 1000.0).roundToInt() / 1000.0).toFloat() 
-                   ry=((((y-y1)/h) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   rx=((((x)/w) * 1000.0).roundToInt() / 1000.0).toFloat() 
+                   ry=((((y)/h) * 1000.0).roundToInt() / 1000.0).toFloat() 
                   
              //     if ( ry==0.0f)  { ry=0.00001f }
                   cangle=  (atan(rx/ry)*(180/PI)).toFloat() 
          //      if ( (x1!=0.0f || y1!=0.0f) && ( x!=x1 || y!=y1) &&  Math.abs ( cangle - cangle1) > 10 ) 
            //       {                 
-           //       cangle_[ci] = cangle 
+                 cangle_[ci] = cangle 
                  crx_[ci] = rx
                  cry_[ci] = ry
-                 ci=ci+1 
+                 ci=ci+5
 
                  x1=x
                  y1=y    
@@ -179,7 +179,7 @@ class DrawPencil @JvmOverloads constructor(
                 cangle1 = cangle   
                
               
-              j = j + 1
+              j = j + 5
 
         }
                      
