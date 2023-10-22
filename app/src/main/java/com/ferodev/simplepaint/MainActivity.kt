@@ -403,7 +403,7 @@ while ( crx_[j]!=0.0f || cry_[j] !=0.0f  )  {
 
 // output as text current painted number in direction sequence
 j=0;
-                    
+ci=ci-1                    
 while (j >=0 && j<=ci) {
 if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString()  }
 
