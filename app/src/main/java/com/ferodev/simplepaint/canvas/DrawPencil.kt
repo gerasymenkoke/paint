@@ -88,6 +88,7 @@ class DrawPencil @JvmOverloads constructor(
         var jci = 0
         var rx = 0.0f
         var ry = 0.0f
+        var cjj=0
 
       //  var shift = 0 // user's a new symbol is beging draw on the screen
         var iii = 0 
@@ -165,14 +166,14 @@ class DrawPencil @JvmOverloads constructor(
                    rx=((((x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                    ry=((((y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                                  
-                
+                  if (cjj ==1) { cangle1=cangle }
                          
                   if ( ry==0.0f)  { ry=0.00001f }
                   cangle=( ( (atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-              
+                  if (cangle!=0.0f && cjj==0) { cjj=1 }
               
       
-    if   (Math.abs(cangle - cangle1) < 2.0f )
+    if   (Math.abs(cangle - cangle1) < 20.0f )
             { j=j;  }
                                    
                 else {     
