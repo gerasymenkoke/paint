@@ -392,11 +392,11 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 
-    j=1                
+    j=2                
 while ( j <= ci )  {
                                                                
-                                         crnx_[j-1]= crx_[j]; crny_[j-1]= cry_[j]; 
-                                         canglen_[j-1]= cangle_[j]
+                                         crnx_[j-2]= crx_[j]; crny_[j-2]= cry_[j]; 
+                                         canglen_[j-2]= cangle_[j]
                                             j=j+1 
                                               }
                 
@@ -406,7 +406,7 @@ while ( j <= ci )  {
 
 // output as text current painted number in direction sequence
 j=0;
-ci=ci-2                 
+ci=ci                 
 while (j >=0 && j<=ci) {
 if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
 
