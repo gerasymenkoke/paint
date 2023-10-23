@@ -1,4 +1,4 @@
-wepackage com.ferodev.simplepaint
+package com.ferodev.simplepaint
 
 import android.graphics.Color
 import android.graphics.Paint
@@ -394,7 +394,7 @@ oldx = 0.0f; oldy = 0.0f;
 oldxdy=1000.0f
 
     j=2                
-while ( j <= ci && (crx_[j] !=0 || cry_[j] !=0 ){
+while ( j <= ci && (crx_[j] !=0 || cry_[j] !=0 ) )  {
                                                                
                                          crnx_[j-2]= crx_[j]; crny_[j-2]= cry_[j]; 
                                          canglen_[j-2]= cangle_[j]
