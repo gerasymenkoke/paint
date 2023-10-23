@@ -158,9 +158,9 @@ class DrawPencil @JvmOverloads constructor(
              
             if ( j<=799  ) 
         {
-                if (jj==1) { 
+                
                     
-               //    if (x1==-1.0f && y1==-1.0f)  { x1=x; y1=y }  
+           if (x1==-1.0f && y1==-1.0f)  { x1=x; y1=y }  
                
                    rx=((((x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                    ry=((((y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
@@ -191,8 +191,8 @@ class DrawPencil @JvmOverloads constructor(
                  if (ci==0) {jci=1}
                       } 
                       
-                                   }
-                if (j==0) { jj=1}
+                                   
+                
             
               j = j + 1
 
