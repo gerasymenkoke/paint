@@ -172,7 +172,7 @@ class DrawPencil @JvmOverloads constructor(
               
               
       
-    if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) ||  (Math.abs(cangle - cangle1) < 5.0f )  ) 
+    if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) ||  (Math.abs(cangle - cangle1) < 10.0f )  ) 
             { j=j;  }
                                    
                 else {     
