@@ -78,6 +78,7 @@ class MainActivity : AppCompatActivity() {
     private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
     private var canglen_ = Array<Float>(800){0.00f} 
+    private var cin = 0
     
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
@@ -393,11 +394,12 @@ oldx = 0.0f; oldy = 0.0f;
 oldxdy=1000.0f
 
     j=2                
-while ( j <= ci )  {
+while ( j <= ci && ( )  {
                                                                
                                          crnx_[j-2]= crx_[j]; crny_[j-2]= cry_[j]; 
                                          canglen_[j-2]= cangle_[j]
-                                            j=j+1 
+                                         cin=j-2
+                                           j=j + 1 
                                               }
                 
                      
@@ -405,10 +407,11 @@ while ( j <= ci )  {
 
 
 // output as text current painted number in direction sequence
-j=0;
-ci=ci-3                
-while (j >=0 && j<=ci) {
-if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
+        
+       j=0;
+         
+while (j >=0 && j<=cin) {
+if (j<=cin) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
@@ -545,7 +548,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + 
-                     "\n" + "  ci=" + ci.toString() + "  w=" + w.toString() + "  h=" + h.toString()
+                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() + "  w=" + w.toString() + "  h=" + h.toString()
                 //    "\n" +  "aresmin=" + aresmin  
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
                    
