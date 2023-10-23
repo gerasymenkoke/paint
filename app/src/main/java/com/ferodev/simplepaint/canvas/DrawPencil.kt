@@ -85,7 +85,7 @@ class DrawPencil @JvmOverloads constructor(
         var cangle = 0.0f 
         var cangle1 = -1.0f
         var ci = 0
-        
+        var jci = 0
         var rx = 0.0f
         var ry = 0.0f
 
