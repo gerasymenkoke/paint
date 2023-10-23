@@ -1,6 +1,6 @@
 
 
-.epackage com.ferodev.simplepaint.canvas
+package com.ferodev.simplepaint.canvas
 
 
 import android.graphics.Color
