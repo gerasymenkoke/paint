@@ -176,8 +176,9 @@ class DrawPencil @JvmOverloads constructor(
                                    
                 else {     
                     
-                 if (ci==0) {ci=ci}
-                 else { cangle_[ci] = cangle 
+                 
+                 if (jci==1) { 
+                  cangle_[ci] = cangle 
                  crx_[ci] = rx
                  cry_[ci] = ry
                  ci=ci+1
@@ -186,6 +187,7 @@ class DrawPencil @JvmOverloads constructor(
                  y1=y  
                 cangle1 = cangle
                       }
+                 if (ci==0) {jci=1}
                       } 
                       
                 
