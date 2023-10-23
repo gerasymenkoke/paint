@@ -406,7 +406,7 @@ while ( j <= ci )  {
 
 // output as text current painted number in direction sequence
 j=0;
-//ci=ci-1                    
+ci=ci-2                 
 while (j >=0 && j<=ci) {
 if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
 
