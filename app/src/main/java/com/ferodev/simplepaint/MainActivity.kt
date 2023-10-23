@@ -77,6 +77,8 @@ class MainActivity : AppCompatActivity() {
     private var crny_ = Array<Float>(800){0.00f}  // array of of cry_[j] after n_normalization
     private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
+    private var canglen_ = Array<Float>(800){0.00f} 
+    
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
     private var rry =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
@@ -390,22 +392,23 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 
-                    /*
-while ( crx_[j]!=0.0f || cry_[j] !=0.0f  )  {
+    j=1                
+while ( j <= ci )  {
                                                                
-                                         crnx_[j]= crx_[j]; crny_[j]= cry_[j]; 
-                                            i=j; j=j+1 
+                                         crnx_[j-1]= crx_[j]; crny_[j-1]= cry_[j]; 
+                                         canglen_[j-1]= cangle_[j]
+                                            j=j+1 
                                               }
-                    */
+                
                      
               
 
 
 // output as text current painted number in direction sequence
 j=0;
-ci=ci-1                    
+//ci=ci-1                    
 while (j >=0 && j<=ci) {
-if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crx_[j].toString() + ";" + cry_[j].toString() + ";;" + cangle_[j].toString()  }
+if (j<=ci) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
