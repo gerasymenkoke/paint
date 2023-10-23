@@ -1,4 +1,6 @@
-package com.ferodev.simplepaint.canvas
+
+
+.epackage com.ferodev.simplepaint.canvas
 
 
 import android.graphics.Color
@@ -169,12 +171,11 @@ class DrawPencil @JvmOverloads constructor(
               
               
       
-    if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) ||  (Math.abs(cangle - cangle1) < 5.0f )  || (cangle1==-1.0f)) 
-            { j=j;      
-            if    (cangle1==-1.0f)  { cangle1=cangle }
-            }
+    if ( (rx==0.0f && ry==0.0f) || (rx==0.0f && ry==0.00001f) ||  (Math.abs(cangle - cangle1) < 5.0f )  ) 
+            { j=j;  }
                                    
                 else {     
+                    
                  if (ci==0) {ci=ci}
                  else { cangle_[ci] = cangle 
                  crx_[ci] = rx
