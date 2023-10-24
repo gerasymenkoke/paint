@@ -414,9 +414,9 @@ while ( j <= ci  )  {
                                            j=j + 1 
                     }
                 
-        j=0      
-while ( j <= cin )  {
-                      if    ( j>0 && Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[j-1]) ) > 10)
+        j=1    
+while ( j <= cin-1 )  {
+                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[j-1]) ) > 10)
                              
                                          {             
                                          crnnx_[cinn]= crnx_[j]; crnny_[cinn]= crny_[j]; 
