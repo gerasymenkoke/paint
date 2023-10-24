@@ -1,4 +1,4 @@
-package com.ferodev.simplepaint
+sopackage com.ferodev.simplepaint
 
 import android.graphics.Color
 import android.graphics.Paint
@@ -75,10 +75,20 @@ class MainActivity : AppCompatActivity() {
     private var crn_ = Array<Float>(800){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
     private var crnx_ = Array<Float>(800){0.00f}  // array of of crx_[j]  after n_normalization
     private var crny_ = Array<Float>(800){0.00f}  // array of of cry_[j] after n_normalization
+
+    private var crnnx_ = Array<Float>(800){0.00f}
+    private var crnny_ = Array<Float>(800){0.00f}
+    
+    
     private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
     private var canglen_ = Array<Float>(800){0.00f} 
+    private var canglenn_ = Array<Float>(800){0.00f} 
+
+    
     private var cin = 0
+    private var cinn = 0
+    
     
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
@@ -404,16 +414,35 @@ while ( j <= ci  )  {
                                            j=j + 1 
                     }
                 
-                     
-              
+        j=0      
+while ( j <= cin )  {
+                      if    ( j>0 && Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[j-1]) ) > 10)
+                             
+                                         {             
+                                         crnnx_[cinn]= crnx_[j]; crnny_[cinn]= crny_[j]; 
+                                         canglenn_[cinn]= canglen_[j]
+                                             cinn=cinn+1
+                                         }
+                                 j=j+1
+                      } 
 
+
+
+
+
+
+
+
+
+
+              
 
 // output as text current painted number in direction sequence
         
        j=0;
          
-while (j >=0 && j<=cin) {
-if (j<=cin) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnx_[j].toString() + ";" + crny_[j].toString() + ";;" + canglen_[j].toString()  }
+while (j >=0 && j<=cinn) {
+if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnnx_[j].toString() + ";" + crnny_[j].toString() + ";;" + canglenn_[j].toString()  }
 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
