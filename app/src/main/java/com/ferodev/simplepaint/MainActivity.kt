@@ -1,4 +1,4 @@
-sopackage com.ferodev.simplepaint
+package com.ferodev.simplepaint
 
 import android.graphics.Color
 import android.graphics.Paint
