@@ -1,4 +1,4 @@
-
+as
 
 package com.ferodev.simplepaint.canvas
 
@@ -170,10 +170,10 @@ class DrawPencil @JvmOverloads constructor(
                          
                   if ( ry==0.0f)  { ry=0.00001f }
                   cangle=( ( (atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-                  if (cangle==0.0f ) { cjj=1; cangle1=cangle-21 }
+                 // if (cangle==0.0f ) { cjj=1; cangle1=cangle-21 }
               
       
-    if   (Math.abs(cangle - cangle1) < 20.0f )
+    if   (Math.abs(cangle - cangle1) < 0.0f )
             { j=j;  }
                                    
                 else {     
