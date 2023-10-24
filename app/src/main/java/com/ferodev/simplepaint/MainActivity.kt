@@ -393,9 +393,9 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 
-    j=0            
+    j=1        
 while ( j <= ci  )  {
-                                        if    (crx_[j] !=0.0f || cry_[j] !=0.0f ) 
+                                        if    (crx_[j] !=0.0f || cry_[j] !=0.00001f ) 
                                          {             
                                          crnx_[cin]= crx_[j]; crny_[cin]= cry_[j]; 
                                          canglen_[cin]= cangle_[j]
