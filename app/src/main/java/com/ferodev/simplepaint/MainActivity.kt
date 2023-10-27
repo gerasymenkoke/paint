@@ -419,7 +419,7 @@ while ( j <= ci  )  {
         cin=cin - 1
         kk=0            
 while ( j <= cin )  {
-                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 10)
+                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 0)
                              
                                          {             
                                          kk=j
@@ -444,7 +444,7 @@ while ( j <= cin )  {
 // output as text current painted number in direction sequence
         
        j=0;
-         
+       cinn=cinn - 1  
 while (j >=0 && j<=cinn) {
 if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" +  " /" + crnnx_[j].toString() + ";" + crnny_[j].toString() + ";;" + canglenn_[j].toString()  }
 
@@ -583,7 +583,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + 
-                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() + "  w=" + w.toString() + "  h=" + h.toString()
+                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString()
                 //    "\n" +  "aresmin=" + aresmin  
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
                    
