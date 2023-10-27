@@ -420,7 +420,7 @@ while ( j <= ci  )  {
         kk=0    
         cinn=0            
 while ( j <= cin )  {
-                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 5)
+                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 0)
                              
                                          {             
                                          kk=j
@@ -583,7 +583,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                 //     "res=[" + res0 + "][" + res1 +  "]"   +  
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +
-                    "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + 
+                    "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + " " + aaa[10] + " " + aaa[11] + " " + aaa[12] + " " + aaa[13] + " " + aaa[14] + " " + aaa[15] + " " + aaa[16] + " " + aaa[17] + " " + aaa[18] + " " + aaa[19] + " " + aaa[20] + " " + aaa[21] + " " + aaa[22] + " " + aaa[23] + 
                      "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString()
                 //    "\n" +  "aresmin=" + aresmin  
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
