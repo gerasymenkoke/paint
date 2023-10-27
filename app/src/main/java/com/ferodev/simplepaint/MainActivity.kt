@@ -417,9 +417,10 @@ while ( j <= ci  )  {
                 
         j=1   
         cin=cin - 1
-        kk=0            
+        kk=0    
+        cinn=0            
 while ( j <= cin )  {
-                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 0)
+                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 5)
                              
                                          {             
                                          kk=j
