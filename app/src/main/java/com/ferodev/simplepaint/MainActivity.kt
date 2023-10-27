@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
     private var jjj = 0  
     private var iii = 0
     private var k=0
+    private var kk=0
     private var old=0
    
     private var aaa = Array<String>(800){"0"} // text Array for result monitoring
@@ -414,11 +415,14 @@ while ( j <= ci  )  {
                                            j=j + 1 
                     }
                 
-        j=1    
-while ( j <= cin-1 )  {
-                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[j-1]) ) > 0)
+        j=1   
+        cin=cin - 1
+        kk=0            
+while ( j <= cin )  {
+                      if    (  Math.abs( Math.abs(canglen_[j]) - Math.abs(canglen_[kk]) ) > 10)
                              
                                          {             
+                                         kk=j
                                          crnnx_[cinn]= crnx_[j]; crnny_[cinn]= crny_[j]; 
                                          canglenn_[cinn]= canglen_[j]
                                              cinn=cinn+1
