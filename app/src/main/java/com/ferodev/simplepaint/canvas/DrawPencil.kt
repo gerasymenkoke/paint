@@ -157,7 +157,7 @@ class DrawPencil @JvmOverloads constructor(
         
           
              
-            if ( j<=799  ) 
+            if ( j<=7990  ) 
         {
                 
                     
@@ -174,11 +174,7 @@ class DrawPencil @JvmOverloads constructor(
                  // if (cangle==0.0f ) { cjj=1; cangle1=cangle-21 }
               
       
-    if   (Math.abs(cangle - cangle1) < 0.0f )
-            { j=j;  }
-                                   
-                else {     
-                    
+   
                  
                 
                   cangle_[ci] = cangle 
@@ -189,7 +185,7 @@ class DrawPencil @JvmOverloads constructor(
                  x1=x
                  y1=y  
                 cangle1 = cangle
-                      }
+                    
                  
                       
                       
