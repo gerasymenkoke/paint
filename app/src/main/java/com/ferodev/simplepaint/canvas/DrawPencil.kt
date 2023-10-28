@@ -52,7 +52,7 @@ class DrawPencil @JvmOverloads constructor(
     
  
     
-    private val TOUCH_TOLERANCE = 4f
+    private val TOUCH_TOLERANCE = 0f
 
     private var mX = 0f
     private var mY = 0f
