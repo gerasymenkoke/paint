@@ -447,9 +447,9 @@ while ( j <= cin )  {
        j=0;
        cinn=cinn - 1  
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString()  }
-    // aaa[j] =  "  [" + j.toString() + "]="  + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +canglenn_[j].toString()  
-
+if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]="  + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +canglenn_[j].toString()   }
+    // 
+ // aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString() 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
 
     //  aaacr[j] =  "[" + j.toString() + "]=" + dir_cr[j].toString() + "  "
