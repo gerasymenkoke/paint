@@ -173,8 +173,7 @@ class DrawPencil @JvmOverloads constructor(
                 cangle= (((rx/ry) * 10.0).roundToInt() / 10.0).toFloat() 
                  // if (cangle==0.0f ) { cjj=1; cangle1=cangle-21 }
               
-      
-   
+         
                  
                 
                   cangle_[ci] = cangle 
