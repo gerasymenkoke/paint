@@ -187,7 +187,7 @@ class DrawPencil @JvmOverloads constructor(
                  
                 
                   cangle_[ci] = cangle 
-                  canglepi_[ci] = cangle 
+                  canglepi_[ci] = canglepi 
                  crx_[ci] = ((rx * 10.0).roundToInt() / 10.0).toFloat() 
                  cry_[ci] = ((ry * 10.0).roundToInt() / 10.0).toFloat() 
                  ci=ci+1
