@@ -23,6 +23,7 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cangle_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.canglepi_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ci
 
 
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
+    
      // from poperednikiv
     var context=0
     var attrs=0
@@ -57,6 +59,7 @@ class MainActivity : AppCompatActivity() {
     private var i = 0
     private var jj = 0  
     private var jjj = 0  
+    
     private var iii = 0
     private var k=0
     private var kk=0
@@ -84,8 +87,9 @@ class MainActivity : AppCompatActivity() {
     private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
     private var canglen_ = Array<Float>(800){0.00f} 
+    private var canglenpi_ = Array<Float>(800){0.00f} 
     private var canglenn_ = Array<Float>(800){0.00f} 
-
+    private var canglennpi_ = Array<Float>(800){0.00f} 
     
     private var cin = 0
     private var cinn = 0
@@ -410,6 +414,7 @@ while ( j <= ci  )  {
                                       else   {             
                                          crnx_[cin]= crx_[j]; crny_[cin]= cry_[j]; 
                                          canglen_[cin]= cangle_[j]
+                                         canglenpi_[cin]= canglepi_[j] 
                                          cin=cin +1
                                          }
                                            j=j + 1 
@@ -426,6 +431,7 @@ while ( j <= cin )  {
                                          kk=j
                                          crnnx_[cinn]= crnx_[j]; crnny_[cinn]= crny_[j]; 
                                          canglenn_[cinn]= canglen_[j]
+                                         canglennpi_[cinn]= canglenpi_[j]    
                                              cinn=cinn+1
                                          }
                                  j=j+1
@@ -447,7 +453,7 @@ while ( j <= cin )  {
        j=0;
        cinn=cinn - 1  
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]="  + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +canglenn_[j].toString()   }
+if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]="  + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +canglenn_[j].toString() "/" +canglennpi_[j].toString()  }
     // 
  // aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString() 
 //  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
