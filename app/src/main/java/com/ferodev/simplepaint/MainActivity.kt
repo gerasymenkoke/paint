@@ -451,9 +451,9 @@ while ( j <= cin )  {
 // output as text current painted number in direction sequence
         
        j=0;
-       cinn=cinn - 2
+       cinn=cinn - 1
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" + canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
+if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" + canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
     // + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" 
     // + canglenn_[j].toString() + "/" + canglennpi_[j].toString() 
  // aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString() 
