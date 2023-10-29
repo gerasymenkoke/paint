@@ -159,7 +159,7 @@ class DrawPencil @JvmOverloads constructor(
         
           
              
-            if ( j<=7990 && ( x!=0 || y!=0)  ) 
+            if ( j<=7990 && ( x!=0.0f || y!=0.0f)  ) 
         {
                 
                     
