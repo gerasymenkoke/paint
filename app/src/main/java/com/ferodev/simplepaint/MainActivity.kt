@@ -408,6 +408,7 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 
+ /*                   
     j=1        
 while ( j <= ci  )  {
                                         if    (crx_[j] ==0.0f && cry_[j] ==0.00001f ) {j=j}
@@ -419,9 +420,13 @@ while ( j <= ci  )  {
                                          }
                                            j=j + 1 
                     }
-                
+        */
+                    
         j=1   
-        cin=cin - 1
+                    
+       // cin=cin - 1
+       cin=ci
+                    
         kk=0    
         cinn=0            
 while ( j <= cin )  {
@@ -429,9 +434,9 @@ while ( j <= cin )  {
                              
                                          {             
                                          kk=j
-                                         crnnx_[cinn]= crnx_[j]; crnny_[cinn]= crny_[j]; 
-                                         canglenn_[cinn]= canglen_[j]
-                                         canglennpi_[cinn]= canglenpi_[j]    
+                                         crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
+                                         canglenn_[cinn]= cangle_[j]
+                                         canglennpi_[cinn]= canglepi_[j]    
                                              cinn=cinn+1
                                          }
                                  j=j+1
