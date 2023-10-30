@@ -425,7 +425,8 @@ while ( j <= ci  )  {
         j=0
                     
        // cin=cin - 1
-       cin=ci
+        ci=ci-1 
+        cin=ci
                     
         kk=0    
         cinn=0            
@@ -457,8 +458,8 @@ while ( j <= cin )  {
         
        j=0;
        cinn=cinn - 1
-while (j >=0 && j<cinn) {
-if (j<cinn) { aaa[j] =  "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" + canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
+while (j >=0 && j<=cinn) {
+if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" + canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
     // + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" 
     // + canglenn_[j].toString() + "/" + canglennpi_[j].toString() 
  // aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString() 
