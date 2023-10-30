@@ -422,7 +422,7 @@ while ( j <= ci  )  {
                     }
         */
                     
-        j=1   
+        j=0
                     
        // cin=cin - 1
        cin=ci
@@ -430,7 +430,7 @@ while ( j <= ci  )  {
         kk=0    
         cinn=0            
 while ( j <= cin )  {
-                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 0)
+                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 0)
                              
                                          {             
                                          kk=j
