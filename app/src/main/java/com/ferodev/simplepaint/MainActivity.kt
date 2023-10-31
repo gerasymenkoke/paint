@@ -422,7 +422,7 @@ while ( j <= ci  )  {
                     }
         */
                     
-        j=1
+        j=0
                     
        // cin=cin - 1
         ci=ci-1 
