@@ -159,13 +159,16 @@ class DrawPencil @JvmOverloads constructor(
         
            
              
-            if   ( (j<=799) && ( x!=0.0f || y!=0.0f) && ( Math.abs(x-x1)>=5 && Math.abs(y-y1)>=5) )
+            if   ( (j<=799) && ( x!=0.0f || y!=0.0f) )
         {
                 
-                    
+                    if ( Math.abs(x-x1) < 5)  rx=5.0f
+                      else   rx=((((x)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                    if ( Math.abs(y-y1) < 5)  ry=5.0f
+                      else    ry=((((y)/1) * 10.0).roundToInt() / 10.0).toFloat() 
 
-                    rx=((((x)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-                    ry=((((y)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                //    rx=((((x)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                //    ry=((((y)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                                  
                 //  if (cjj ==1) { cangle1=cangle-21 }
                          
