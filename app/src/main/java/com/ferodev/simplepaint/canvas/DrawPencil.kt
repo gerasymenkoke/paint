@@ -159,7 +159,7 @@ class DrawPencil @JvmOverloads constructor(
         
            
              
-            if   ( ci>=1 && (j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > 5)  && (Math.abs(y-y1) > 5) )
+            if   ( ci==0 || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > 5)  && (Math.abs(y-y1) > 5) ))
         {
                 
                         rx=((((x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
@@ -173,14 +173,7 @@ class DrawPencil @JvmOverloads constructor(
                   canglepi=( ( (90 - atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
                  
 
-                  
-          
-                  
-              //     cangle= ( ( (atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-             //   cangle= (((rx/ry) * 10.0).roundToInt() / 10.0).toFloat() 
-                 // if (cangle==0.0f ) { cjj=1; cangle1=cangle-21 }
-              
-         
+                     
                  
                 
                   cangle_[ci] = cangle 
@@ -192,31 +185,14 @@ class DrawPencil @JvmOverloads constructor(
                  x1=x
                  y1=y  
                 
-                    
-                 
-                      
-                      
-                                   
+                            
                 
             
               j = j + 1
 
         }
                      
-         if (ci==0) {          rx=((((x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-                               ry=((((y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-                               if ( ry==0.0f)  { ry=0.00001f }
-                    
-                  cangle= ( ( (90 + atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-                  canglepi=( ( (90 - atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-
-                  cangle_[ci] = cangle 
-                  canglepi_[ci] = canglepi 
-
-                  ci=ci+1
-          
-         
-                    }
+        
 
                         
  
