@@ -431,7 +431,7 @@ while ( j <= ci  )  {
         kk=0    
         cinn=0            
 while ( j <= cin )  {
-                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 10)
+                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 10 || cinn==0)
                              
                                          {             
                                          kk=j
@@ -440,6 +440,11 @@ while ( j <= cin )  {
                                          canglennpi_[cinn]= canglepi_[j]    
                                              cinn=cinn+1
                                          }
+
+
+
+                                         
+                                         
                                  j=j+1
                       } 
 
