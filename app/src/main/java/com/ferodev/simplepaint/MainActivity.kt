@@ -422,16 +422,17 @@ while ( j <= ci  )  {
                     }
         */
                     
-        j=1
+      
                     
        // cin=cin - 1
         ci=ci-1 
         cin=ci
-                    
+      if (cin==0) j=0  
+         else j=1           
         kk=0    
         cinn=0            
-while ( j <= cin || cinn==0 )  {
-                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 10 || cinn==0)
+while ( j <= cin  )  {
+                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 10)
                              
                                          {             
                                          kk=j
