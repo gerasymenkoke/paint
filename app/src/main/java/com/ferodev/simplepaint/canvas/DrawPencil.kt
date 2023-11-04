@@ -163,8 +163,8 @@ class DrawPencil @JvmOverloads constructor(
             if   ( (ci<=1 && ( (x-x1)!=0.0f || (y-y1)!=0.0f)  ) || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx=((((x-x1.0f)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-                        ry=((((y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                        rx=( ( ( (x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                        ry=( ( ( (y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
 
                
                          
