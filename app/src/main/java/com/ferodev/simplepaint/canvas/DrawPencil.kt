@@ -156,7 +156,7 @@ class DrawPencil @JvmOverloads constructor(
                   
                  if(shift==1) { j=0; ci=0; shift=0 }
 
-                 res=((w+h)/2)*5/100.toFloat()   // in percents of average resolutions
+                 res=((w+h)/2)*1/100.toFloat()   // in percents of average resolutions
         
            
              
