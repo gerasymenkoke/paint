@@ -66,7 +66,8 @@ class DrawPencil @JvmOverloads constructor(
     private var x = 0f
     private var y = 0f
      private var rx1 = 1f
-     private var ry1 = 1f 
+     private var ry1 = 1f
+     private var res = 0f
      private var N = 1
      
     
@@ -155,11 +156,11 @@ class DrawPencil @JvmOverloads constructor(
                   
                  if(shift==1) { j=0; ci=0; shift=0 }
 
-        
+                 res=((w+h)/2)*5/100  // in percents of average resolutions
         
            
              
-            if   ( (ci<=1 && ( (x-x1)!=0.0f || (y-y1)!=0.0f)  ) || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > 5)  && (Math.abs(y-y1) > 5) ))
+            if   ( (ci<=1 && ( (x-x1)!=0.0f || (y-y1)!=0.0f)  ) || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
                         rx=((((x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
