@@ -439,7 +439,7 @@ while ( j <= ci  )  {
      resxy = (((w+h)/2)*4/100).toFloat()
                     
 while ( j <= cin  )  {
-if    ( cin==0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
+if    ( cin<=1 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
                              
                                          {   
                                           
