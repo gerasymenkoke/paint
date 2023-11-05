@@ -432,7 +432,8 @@ while ( j <= ci  )  {
         kk=0    
         cinn=0            
 while ( j <= cin  )  {
-                      if    (  Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) >= 10 || cin==0)
+                      if    ( cin==0 || 
+( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 )
                              
                                          {             
                                          kk=j
