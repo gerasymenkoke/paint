@@ -178,7 +178,7 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
-        resxy = (((w+h)/2)*2/100).toFloat()
+   
 
         
         binding.apply {
@@ -435,7 +435,9 @@ while ( j <= ci  )  {
       if (cin==0) j=0  
          else j=1           
         kk=0    
-        cinn=0            
+        cinn=0     
+     resxy = (((w+h)/2)*4/100).toFloat()
+                    
 while ( j <= cin  )  {
 if    ( cin==0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
                              
