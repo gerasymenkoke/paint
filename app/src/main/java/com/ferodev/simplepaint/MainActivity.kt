@@ -472,7 +472,7 @@ if    ( cin==0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 1
 // output as text current painted number in direction sequence
         
        j=0;
-       cinn=cinn - 1
+    if (cin > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
 if (j<=cinn) { aaa[j] =  "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" + canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
     // + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" 
