@@ -21,6 +21,9 @@ import com.ferodev.simplepaint.canvas.DrawPencil.Companion.rx
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ry
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crx_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cry_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.xcrx_
+import com.ferodev.simplepaint.canvas.DrawPencil.Companion.ycry_
+
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.crxdy_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.cangle_
 import com.ferodev.simplepaint.canvas.DrawPencil.Companion.canglepi_
