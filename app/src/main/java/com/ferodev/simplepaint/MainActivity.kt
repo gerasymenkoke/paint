@@ -441,7 +441,7 @@ if    ( cin==0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 1
                              
                                          {   
                                           
-                                         if ( Math.abs(xcrx_[j]-ycry_[j]) ) > res1
+                                         if ( Math.abs(xcrx_[j]-ycry_[j]) > res1 )
                                              {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
