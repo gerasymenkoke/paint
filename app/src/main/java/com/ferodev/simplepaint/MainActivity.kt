@@ -151,7 +151,7 @@ class MainActivity : AppCompatActivity() {
     private var repeat=0
     
     private var jdec = Array<Int>(60){0}
-    private var res1=0.0f
+    private var resxy=0.0f
     
        
          companion object {
@@ -178,7 +178,7 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
-        res1= (((w+h)/2)*2/100).toFloat()
+        resxy = (((w+h)/2)*2/100).toFloat()
 
         
         binding.apply {
