@@ -81,6 +81,9 @@ class DrawPencil @JvmOverloads constructor(
 
         var crx_ = Array<Float>(800){0.0f}
         var cry_ = Array<Float>(800){0.0f} 
+        var xcrx_= Array<Float>(800){0.0f} 
+        var ycry_= Array<Float>(800){0.0f} 
+        
         var crxdy_ = Array<Float>(800){1000.0f} 
         var cangle_ =Array<Float>(800){0.0f} 
         var canglepi_ =Array<Float>(800){0.0f}  
@@ -156,7 +159,7 @@ class DrawPencil @JvmOverloads constructor(
                   
                  if(shift==1) { j=0; ci=0; shift=0 }
 
-                 res=(((w+h)/2)*1/100).toFloat()   // in percents of average resolutions
+                 res=(((w+h)/2)*0.3/100).toFloat()   // in percents of average resolutions
         
            
              
@@ -165,7 +168,7 @@ class DrawPencil @JvmOverloads constructor(
                 
                         rx=( ( ( (x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
                         ry=( ( ( (y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-
+                  
                
                          
                   if ( ry==0.0f)  { ry=0.00001f }
@@ -181,6 +184,9 @@ class DrawPencil @JvmOverloads constructor(
                   canglepi_[ci] = canglepi 
                  crx_[ci] = ((rx * 10.0).roundToInt() / 10.0).toFloat() 
                  cry_[ci] = ((ry * 10.0).roundToInt() / 10.0).toFloat() 
+                 xcrx_[j] = x
+                 ycry_[j] = y
+                 
                  ci=ci+1
          
                  x1=x
