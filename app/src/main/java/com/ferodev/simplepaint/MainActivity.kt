@@ -148,6 +148,7 @@ class MainActivity : AppCompatActivity() {
     private var repeat=0
     
     private var jdec = Array<Int>(60){0}
+    private var res1=0.0f
     
        
          companion object {
@@ -173,7 +174,8 @@ class MainActivity : AppCompatActivity() {
  
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
-          
+
+        res1= (((w+h)/2)*2/100).toFloat()
 
         
         binding.apply {
@@ -434,17 +436,19 @@ while ( j <= ci  )  {
 while ( j <= cin  )  {
 if    ( cin==0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
                              
-                                         {             
+                                         {   
+                                          
+                                         if ( Math.abs(xcrx_[j]-ycry_[j]) ) > res1
+                                             {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
                                          canglenn_[cinn]= cangle_[j]
                                          canglennpi_[cinn]= canglepi_[j]    
                                              cinn=cinn+1
+                                      
+                                             }
                                          }
-
-
-
-                                         
+                                        
                                          
                                  j=j+1
                       } 
