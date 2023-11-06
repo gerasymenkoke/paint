@@ -413,23 +413,7 @@ j=0
 oldx = 0.0f; oldy = 0.0f;   
 oldxdy=1000.0f
 
- /*                   
-    j=1        
-while ( j <= ci  )  {
-                                        if    (crx_[j] ==0.0f && cry_[j] ==0.00001f ) {j=j}
-                                      else   {             
-                                         crnx_[cin]= crx_[j]; crny_[cin]= cry_[j]; 
-                                         canglen_[cin]= cangle_[j]
-                                         canglenpi_[cin]= canglepi_[j] 
-                                         cin=cin +1
-                                         }
-                                           j=j + 1 
-                    }
-        */
-                    
-      
-                    
-       // cin=cin - 1
+     
         ci=ci-1 
         cin=ci
       if (cin==0) j=0  
@@ -457,8 +441,11 @@ if    ( cin<=0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 2
                                  j=j+1
                       } 
 
-
-
+j=0
+if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
+                                         canglenn_[cinn]= cangle_[j]
+                                         canglennpi_[cinn]= canglepi_[j]    
+             }
 
 
 
