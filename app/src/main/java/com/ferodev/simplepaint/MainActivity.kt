@@ -439,11 +439,11 @@ while ( j <= ci  )  {
      resxy = (((w+h)/2)*4/100).toFloat()
                     
 while ( j <= cin  )  {
-if    ( cin<=1 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
+if    ( cin<=0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 10 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 10 ))
                              
                                          {   
                                           
-                                         if ( Math.abs(xcrx_[j]-xcrx_[kk]) > resxy || Math.abs(ycry_[j]-ycry_[kk]) > resxy )
+                                         if ( cin<=0 || Math.abs(xcrx_[j]-xcrx_[kk]) > resxy || Math.abs(ycry_[j]-ycry_[kk]) > resxy )
                                              {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
@@ -453,8 +453,7 @@ if    ( cin<=1 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 1
                                       
                                              }
                                          }
-                                        
-                                         
+                                                                            
                                  j=j+1
                       } 
 
