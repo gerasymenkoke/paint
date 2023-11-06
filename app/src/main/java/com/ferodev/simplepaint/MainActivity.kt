@@ -423,7 +423,7 @@ oldxdy=1000.0f
      resxy = (((w+h)/2)*4/100).toFloat()
                     
 while ( j <= cin  )  {
-if    ( cin<=0 || ( Math.abs( Math.abs(cangle_[j]) - Math.abs(cangle_[kk]) ) > 20 && Math.abs( Math.abs(cangle_[j]) - Math.abs(canglepi_[kk]) ) > 20 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(cangle_[kk]) ) > 20 && Math.abs( Math.abs(canglepi_[j]) - Math.abs(canglepi_[kk]) ) > 20 ))
+if    ( cin<=0 ||   ( Math.abs( (cangle_[j]) - (cangle_[kk]) ) > 20 && Math.abs( (cangle_[j]) - (canglepi_[kk]) ) > 20 && Math.abs( (canglepi_[j]) - (cangle_[kk]) ) > 20 && Math.abs( (canglepi_[j]) - (canglepi_[kk]) ) > 20 ))
                              
                                          {   
                                           
