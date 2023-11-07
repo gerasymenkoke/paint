@@ -441,7 +441,7 @@ if    ( cin<=0 ||   ( Math.abs( (cangle_[j]) - (cangle_[kk]) ) > 20 && Math.abs(
                                  j=j+1
                       } 
 
-j=0
+j=cin
 if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
                                          canglenn_[cinn]= cangle_[j]
                                          canglennpi_[cinn]= canglepi_[j]    
