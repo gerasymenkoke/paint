@@ -426,7 +426,7 @@ oldxdy=1000.0f
      resxy = (((w+h)/2)*4/100).toFloat()
                     
 while ( j <= cin  )  {
-if    ( cin<=0 ||   ( signx_[j] == signx_[kk] && signy_[j] == signy_[kk]  && (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 0)) || ( (signx_[j] != signx_[kk] || signy_[j] != signy_[kk] ) && (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 0) )  )
+if    ( cin<=0 ||  ( signx_[j]==2 && signy_[j]==2) ||  ( signx_[j] == signx_[kk] && signy_[j] == signy_[kk]  && (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 0)) || ( (signx_[j] != signx_[kk] || signy_[j] != signy_[kk] ) && (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 0) )  )
                              
                                          {   
                                           
