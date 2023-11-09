@@ -83,8 +83,8 @@ class DrawPencil @JvmOverloads constructor(
         var cry_ = Array<Float>(800){0.0f} 
         var xcrx_= Array<Float>(800){0.0f} 
         var ycry_= Array<Float>(800){0.0f} 
-        var signx_= Array<Float>(800){0.0f} 
-        var signy_= Array<Float>(800){0.0f} 
+        var signx_= Array<Float>(800){2.0f} 
+        var signy_= Array<Float>(800){2.0f} 
 
         
         
@@ -190,8 +190,10 @@ class DrawPencil @JvmOverloads constructor(
                  cry_[ci] = ((ry * 10.0).roundToInt() / 10.0).toFloat() 
                  xcrx_[j] = x
                  ycry_[j] = y
-                 if (rx>0) signx_[j] = 1.0f 
-                 if (ry>0) signy_[j] = 1.0f 
+                 if (rx>=0) signx_[j] = 1.0f 
+                    else  signx_[j] = 0.0f          
+                 if (ry>=0) signy_[j] = 1.0f 
+                    else  signy_[j] = 0.0f 
             
                  ci=ci+1
          
