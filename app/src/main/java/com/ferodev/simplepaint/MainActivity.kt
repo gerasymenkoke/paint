@@ -96,6 +96,8 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Float>(800){0.00f} 
     private var canglenn_ = Array<Float>(800){0.00f} 
     private var canglennpi_ = Array<Float>(800){0.00f} 
+    private var rcanglenn_ = Array<Float>(10){0.00f} 
+    
     
     private var cin = 0
     private var cinn = 0
@@ -315,9 +317,8 @@ class MainActivity : AppCompatActivity() {
 // +
       jj = 10                
 
-      rrx[10][0]=arrayOf<Float>(      1.0f,  0.23f,  0.21f,  -0.23f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
-      rry[10][0]=arrayOf<Float>(      1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
-      rangle[10][0]=arrayOf<Float>(   1.0f,  0.02f, -0.01f,  -0.75f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)  
+   
+      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f,  0.0f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)  
       
     
 
@@ -328,9 +329,7 @@ class MainActivity : AppCompatActivity() {
 // -
       jj = 11               
   
-       rrx[11][0]=arrayOf<Float>(   1.0f,  0.2f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f, 0.0f,0.0f)
-       rry[11][0]=arrayOf<Float>(   1.0f,  0.04f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f, 0.0f,0.0f)
-
+        rcanglenn_[11][0]=arrayOf<Float>(   174.0f,  0.0f,  0.0f,  0.0f, 0.0f,0.0f,0.0f,0.0f,0.0f,0.0f)
       
 
 
@@ -456,12 +455,6 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
                                          canglennpi_[cinn]= canglepi_[j]    
              }
 
-
-
-
-
-
-
               
 
 // output as text current painted number in direction sequence
@@ -496,10 +489,10 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
     
                 j=0
                
-                while (j >=0 && j<=9 && (crnx_[j]!=0.0f || crny_[j]!=0.0f) ) {  
+                while (j >=0 && j<=9 && (crnnx_[j]!=0.0f || crnny_[j]!=0.0f) ) {  
                   
-                    resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs ( crnx_[j]  - rrx[jj] [jjj] [j] ) + Math.abs ( crny_[j]  - rry[jj] [jjj] [j] )                                      
-                     resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
+                    resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )                                       
+                    resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
                            }
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
@@ -608,8 +601,8 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +
                     "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + " " + aaa[10] + " " + aaa[11] + " " + aaa[12] + " " + aaa[13] + " " + aaa[14] + " " + aaa[15] + " " + aaa[16] + " " + aaa[17] + " " + aaa[18] + " " + aaa[19] + " " + aaa[20] + " " + aaa[21] + " " + aaa[22] + " " + aaa[23] + 
-                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString()
-                //    "\n" +  "aresmin=" + aresmin  
+                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
+                     "\n" +  "aresmin=" + aresmin  
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
                    
 
