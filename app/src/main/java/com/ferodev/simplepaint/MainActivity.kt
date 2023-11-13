@@ -485,7 +485,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
     
                 j=0
                
-                while (j >=0 && j<=9 && (canglenn_[j]!=-0.1f || rcanglenn_[jj] [jjj] [j] !=-0.1f) {  
+                while (j >=0 && j<=9 && (canglenn_[j]!=-0.1f || rcanglenn_[jj] [jjj] [j] !=-0.1f) ) {  
                   
                  if (  Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >   Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
 
@@ -493,8 +493,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 
                     else { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )    }                        
                          
-
-                                   
+                      
                     
                      resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
