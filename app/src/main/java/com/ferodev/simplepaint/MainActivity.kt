@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Float>(800){0.00f} 
     private var canglenn_ = Array<Float>(800){0.00f} 
     private var canglennpi_ = Array<Float>(800){0.00f} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){10.0f} } }  
+    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){0.0f} } }  
     
     
     private var cin = 0
@@ -491,8 +491,16 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                
                 while (j >=0 && j<=9 && (crnnx_[j]!=0.0f || crnny_[j]!=0.0f) ) {  
                   
-                    resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )                                       
-                    resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
+                 if ( ( Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >  ( Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
+
+                       {   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] )  }
+
+                    else { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )    }                        
+                         
+
+                                   
+                    
+                     resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
                            }
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
