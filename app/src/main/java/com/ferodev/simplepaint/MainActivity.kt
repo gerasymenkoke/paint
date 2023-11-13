@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Float>(800){0.00f} 
     private var canglenn_ = Array<Float>(800){-0.1f} 
     private var canglennpi_ = Array<Float>(800){-0.1f} 
-    private var rcanglenn_ = Array(60) { Array(20){ Array<Float>(10){-0.1f} } }  
+    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){-0.1f} } }  
     
     
     private var cin = 0
