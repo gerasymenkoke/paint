@@ -491,7 +491,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
                
                 while (j >=0 && j<=9 && (crnnx_[j]!=0.0f || crnny_[j]!=0.0f) ) {  
                   
-                 if ( ( Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >  ( Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
+                 if (  Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >   Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
 
                        {   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] )  }
 
