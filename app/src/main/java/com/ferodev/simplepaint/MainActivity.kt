@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Float>(800){0.00f} 
     private var canglenn_ = Array<Float>(800){-0.1f} 
     private var canglennpi_ = Array<Float>(800){-0.1f} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){-0.1f} } }  
+    private var rcanglenn_ = Array(20) { Array(20){ Array<Float>(10){-0.1f} } }  
     
     
     private var cin = 0
@@ -318,14 +318,14 @@ class MainActivity : AppCompatActivity() {
       jj = 10                
 
    
-      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f)  
+      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, -0.1f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
       
       
 // Filling sample array 
 // -
       jj = 11               
   
-        rcanglenn_[11][0]=arrayOf<Float>( 174.0f)
+        rcanglenn_[11][0]=arrayOf<Float>( 174.0f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,)
       
 
 
