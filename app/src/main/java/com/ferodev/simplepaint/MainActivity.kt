@@ -325,7 +325,7 @@ class MainActivity : AppCompatActivity() {
 // -
       jj = 11               
   
-        rcanglenn_[11][0]=arrayOf<Float>( 174.0f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,)
+        rcanglenn_[11][0]=arrayOf<Float>( 174.0f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )
       
 
 
