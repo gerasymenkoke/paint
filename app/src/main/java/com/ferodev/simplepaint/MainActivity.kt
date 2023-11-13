@@ -422,7 +422,7 @@ oldxdy=1000.0f
          else j=1           
         kk=0    
         cinn=0     
-     resxy = (((w+h)/2)*4/100).toFloat()
+     resxy = (((w+h)/2)*2/100).toFloat()
                     
 while ( j <= cin  )  {
 if    ( cin<=0 ||  cinn==0 ||  
