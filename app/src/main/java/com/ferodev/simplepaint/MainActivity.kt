@@ -349,7 +349,7 @@ class MainActivity : AppCompatActivity() {
       jj = 13              
 
       rcanglenn_[13][0]=arrayOf<Float>(   44.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-      
+      rcanglenn_[13][1]=arrayOf<Float>(   51.0f, 167.0f, 118.0f, 144.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
   
 
 
@@ -616,10 +616,12 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
        // "  " + aresnum +  "  " + aresnum1 + "\n" +
                 //     "res=[" + res0 + "][" + res1 +  "]"   +  
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
-         textviewid.text =   "  " + aresnum +  "  " + aresnum1  +
-                    "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + " " + aaa[10] + " " + aaa[11] + " " + aaa[12] + " " + aaa[13] + " " + aaa[14] + " " + aaa[15] + " " + aaa[16] + " " + aaa[17] + " " + aaa[18] + " " + aaa[19] + " " + aaa[20] + " " + aaa[21] + " " + aaa[22] + " " + aaa[23] + 
-                     "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
-                     "\n" +  "aresmin=" + aresmin  
+         textviewid.text =    "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
+                              "\n" +  "aresmin=" + aresmin  
+                    
+                    //"  " + aresnum +  "  " + aresnum1  +
+                 //   "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + " " + aaa[10] + " " + aaa[11] + " " + aaa[12] + " " + aaa[13] + " " + aaa[14] + " " + aaa[15] + " " + aaa[16] + " " + aaa[17] + " " + aaa[18] + " " + aaa[19] + " " + aaa[20] + " " + aaa[21] + " " + aaa[22] + " " + aaa[23] + 
+                   
                     //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
                    
 
