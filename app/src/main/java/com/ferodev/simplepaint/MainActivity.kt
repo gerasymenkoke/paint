@@ -365,16 +365,7 @@ class MainActivity : AppCompatActivity() {
       xdyrr[15][0]=arrayOf<Float>(  1.745f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
       xdyrr[15][1]=arrayOf<Float>(  1.447f,  -0.224f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
 
-
-
-    */
-
-      
-      
-
-
-
-      
+    
       
       
       btnPencil.setOnClickListener {
