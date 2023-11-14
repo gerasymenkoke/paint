@@ -355,7 +355,7 @@ class MainActivity : AppCompatActivity() {
       jj = 14            
 
      rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
- 
+     rcanglenn_[14][1]=arrayOf<Float>(   9.0f,    159.0f,  27.0f, 175.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
       
       
 // Filling sample array 
@@ -439,7 +439,7 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
        j=0;
        if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/" + canglennpi_[j].toString()  }
+if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
     // "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +
     // + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" 
     // + canglenn_[j].toString() + "/" + canglennpi_[j].toString() 
