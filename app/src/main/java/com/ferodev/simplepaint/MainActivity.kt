@@ -320,12 +320,8 @@ class MainActivity : AppCompatActivity() {
    
       rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f )  
       
-      e array 
-// +
-      jj = 10                
+ 
 
-   
-      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f )  
       
       
 // Filling sample array 
