@@ -319,7 +319,7 @@ class MainActivity : AppCompatActivity() {
 
    
       rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-      
+      rcanglenn_[10][1]=arrayOf<Float>(   176.0f,  114.0f,  -0.1f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
  
 
       
@@ -330,9 +330,7 @@ class MainActivity : AppCompatActivity() {
   
         rcanglenn_[11][0]=arrayOf<Float>( 174.0f ,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f)
       
-
-
-       
+     
 
 
       
@@ -350,35 +348,13 @@ class MainActivity : AppCompatActivity() {
 
       rcanglenn_[13][0]=arrayOf<Float>(   44.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
       rcanglenn_[13][1]=arrayOf<Float>(   51.0f, 167.0f, 118.0f, 144.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-  
-
-
-     
-
-
-      
-
-
        
-
-
-
-
-  
-
-
- /*     
 
 // Filling sample array 
 // =
       jj = 14            
 
-      xdyrr[14][0]=arrayOf<Float>(  -8.153f,  6.229f, -2.17f,   2.869f, -6.353f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-      xdyrr[14][1]=arrayOf<Float>(  -9.307f,  3.091f, -2.251f, -6.968f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-      xdyrr[14][2]=arrayOf<Float>(   2.748f, -5.078f, -2.904f,  4.506f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-      xdyrr[14][3]=arrayOf<Float>( -10.148f, -1.546f,  4.577f, -6.626f, 2.58f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-      xdyrr[14][0]=arrayOf<Float>(  -2.203f,  4.465f,  0.0f,    0.0f,   0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
+     rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
  
       
       
