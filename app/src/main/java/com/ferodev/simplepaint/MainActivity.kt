@@ -346,7 +346,7 @@ class MainActivity : AppCompatActivity() {
 // /
       jj = 13              
 
-      rcanglenn_[13][0]=arrayOf<Float>(   44.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0fv, 360.0f, 360.0f, 360.0f )  
+      rcanglenn_[13][0]=arrayOf<Float>(   44.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
 
        
 
@@ -363,8 +363,7 @@ class MainActivity : AppCompatActivity() {
 // ,
       jj = 15            
 
-      xdyrr[15][0]=arrayOf<Float>(  1.745f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-      xdyrr[15][1]=arrayOf<Float>(  1.447f,  -0.224f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+    
 
     
       
