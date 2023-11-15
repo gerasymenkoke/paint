@@ -94,9 +94,9 @@ class MainActivity : AppCompatActivity() {
     
     private var canglen_ = Array<Float>(800){0.00f} 
     private var canglenpi_ = Array<Float>(800){0.00f} 
-    private var canglenn_ = Array<Float>(800){-0.1f} 
-    private var canglennpi_ = Array<Float>(800){-0.1f} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){-0.1f} } }  
+    private var canglenn_ = Array<Float>(800){360.0f} 
+    private var canglennpi_ = Array<Float>(800){360.0f} 
+    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(10){360.0f} } }  
     
     
     private var cin = 0
@@ -318,8 +318,8 @@ class MainActivity : AppCompatActivity() {
       jj = 10                
 
    
-      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-      rcanglenn_[10][1]=arrayOf<Float>(   176.0f,  114.0f,  -0.1f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
+      rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
+      rcanglenn_[10][1]=arrayOf<Float>(   176.0f,  114.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
  
 
       
@@ -328,7 +328,7 @@ class MainActivity : AppCompatActivity() {
 // -
       jj = 11               
   
-        rcanglenn_[11][0]=arrayOf<Float>( 174.0f ,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f)
+        rcanglenn_[11][0]=arrayOf<Float>( 174.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f)
       
      
 
@@ -337,7 +337,7 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array 
 // x
       jj = 12               
-  rcanglenn_[12][0]=arrayOf<Float>(   133.0f,  89.0f,  55.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
+  rcanglenn_[12][0]=arrayOf<Float>(   133.0f,  89.0f,  55.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
 
 
 
@@ -346,17 +346,17 @@ class MainActivity : AppCompatActivity() {
 // /
       jj = 13              
 
-      rcanglenn_[13][0]=arrayOf<Float>(   44.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-      rcanglenn_[13][1]=arrayOf<Float>(   51.0f, 167.0f, 118.0f, 144.0f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
+      rcanglenn_[13][0]=arrayOf<Float>(   44.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0fv, 360.0f, 360.0f, 360.0f )  
+
        
 
 // Filling sample array 
 // =
       jj = 14            
 
-     rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-     rcanglenn_[14][1]=arrayOf<Float>(   9.0f,    159.0f,  27.0f, 175.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )  
-     rcanglenn_[14][2]=arrayOf<Float>(   175.0f,   64.0f,  1.0f, -0.1f, -0.1f,-0.1f,-0.1f,-0.1f,-0.1f,-0.1f )   
+     rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
+     rcanglenn_[14][1]=arrayOf<Float>(   9.0f,    159.0f,  27.0f, 175.1f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
+     rcanglenn_[14][2]=arrayOf<Float>(   175.0f,   64.0f,  1.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
 
       
 // Filling sample array 
@@ -468,7 +468,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
     
                 j=0
                
-                while (j >=0 && j<=9 && (canglenn_[j]!=-0.1f || rcanglenn_[jj] [jjj] [j] !=-0.1f) ) {  
+                while (j >=0 && j<=9 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
                   
                  if (  Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >   Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
 
