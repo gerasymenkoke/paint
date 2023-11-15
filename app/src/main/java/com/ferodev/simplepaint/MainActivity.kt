@@ -357,7 +357,9 @@ class MainActivity : AppCompatActivity() {
      rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
      rcanglenn_[14][1]=arrayOf<Float>(   9.0f,    159.0f,  27.0f, 175.1f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
      rcanglenn_[14][2]=arrayOf<Float>(   175.0f,   64.0f,  1.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
+     rcanglenn_[14][3]=arrayOf<Float>(   8.0f,   49.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
 
+     
       
 // Filling sample array 
 // ,
