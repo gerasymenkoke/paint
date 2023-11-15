@@ -320,7 +320,7 @@ class MainActivity : AppCompatActivity() {
    
       rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
       rcanglenn_[10][1]=arrayOf<Float>(   176.0f,  114.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
- 
+      rcanglenn_[10][2]=arrayOf<Float>(   41.0f,   86.0f,   92.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )
 
       
       
@@ -588,7 +588,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
 // "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
             
-         textviewid.text =     minres.toString() + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
+         textviewid.text =   aresnum +  "  " + aresnum1    + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
                               "\n" +  "aresmin=" + aresmin  
                     
                     //"  " + aresnum +  "  " + aresnum1  +
