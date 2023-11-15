@@ -357,8 +357,10 @@ class MainActivity : AppCompatActivity() {
      rcanglenn_[14][0]=arrayOf<Float>(   175.0f,  129.0f,  177.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
      rcanglenn_[14][1]=arrayOf<Float>(   9.0f,    159.0f,  27.0f, 175.1f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
      rcanglenn_[14][2]=arrayOf<Float>(   175.0f,   64.0f,  1.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
-     rcanglenn_[14][3]=arrayOf<Float>(   8.0f,   49.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
-     rcanglenn_[14][4]=arrayOf<Float>(   85.0f,  164.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
+     rcanglenn_[14][3]=arrayOf<Float>(   8.0f,   49.0f,   360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )   
+     rcanglenn_[14][4]=arrayOf<Float>(   85.0f,  164.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
+     rcanglenn_[14][5]=arrayOf<Float>(   87.0f,  11.0f,   140.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
+
      
       
 // Filling sample array 
@@ -588,7 +590,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
 // "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
             
-         textviewid.text =  "aresmin=" + aresmin   + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
+         textviewid.text =   iresnum.toString() + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
                               "\n" +  "aresmin=" + aresmin  
                     
                     //"  " + aresnum +  "  " + aresnum1  +
