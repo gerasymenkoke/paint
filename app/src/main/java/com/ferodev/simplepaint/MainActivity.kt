@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
 // 2
       jj = 2                  
 
-
+ rcanglenn_[2][0]=arrayOf<Float>(   64.0f,  26.0f,  168.0f, 115.0f, 84.0f, 56.0f, 23.0f, 169.0f, 61.0f, 174.0f ) 
 
 
  
@@ -308,7 +308,7 @@ class MainActivity : AppCompatActivity() {
       rcanglenn_[10][0]=arrayOf<Float>(   179.0f,  138.0f,  100.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
       rcanglenn_[10][1]=arrayOf<Float>(   176.0f,  114.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )  
       rcanglenn_[10][2]=arrayOf<Float>(   41.0f,   86.0f,   92.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )
-
+      rcanglenn_[10][3]=arrayOf<Float>(   1.0f,    118.0f,  85.0f ,  96.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )
       
       
 // Filling sample array 
