@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
   
     private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
     private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(60){ Array<Int>(10){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
+    private var dir_rr = Array(20) { Array(60){ Array<Int>(20){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
     private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var oldx = 0.00f 
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
     private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
     private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
     private var rry =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
-    private var rangle =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
+    private var rangle =  Array(20) { Array(60){ Array<Float>(10){0.0f} } }  // 
     
     private var xdyrr =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
 
@@ -394,10 +394,10 @@ oldxdy=1000.0f
                     
 while ( j <= cin  )  {
 if    ( cin<=0 ||  cinn==0 ||  
-        ( signx_[j] == signx_[kk]  &&   signy_[j] == signy_[kk]  &&   (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 25) ) ||
-        ( signx_[j] != signx_[kk]  &&   signy_[j] != signy_[kk]  &&   (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 25) ) ||
-        ( signx_[j] != signx_[kk]  &&   signy_[j] == signy_[kk]  &&   ( (180 - Math.abs( (cangle_[j]) - (cangle_[kk]) )) >= 25) ) ||
-        ( signx_[j] == signx_[kk]  &&   signy_[j] != signy_[kk]  &&   ( (180 - Math.abs( (cangle_[j]) - (cangle_[kk]) )) >= 25) ) 
+        ( signx_[j] == signx_[kk]  &&   signy_[j] == signy_[kk]  &&   (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 35) ) ||
+        ( signx_[j] != signx_[kk]  &&   signy_[j] != signy_[kk]  &&   (Math.abs( (cangle_[j]) - (cangle_[kk]) ) >= 35) ) ||
+        ( signx_[j] != signx_[kk]  &&   signy_[j] == signy_[kk]  &&   ( (180 - Math.abs( (cangle_[j]) - (cangle_[kk]) )) >= 35) ) ||
+        ( signx_[j] == signx_[kk]  &&   signy_[j] != signy_[kk]  &&   ( (180 - Math.abs( (cangle_[j]) - (cangle_[kk]) )) >= 35) ) 
         
        )
                              
@@ -577,7 +577,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
 // "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
             
-         textviewid.text =     aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
+         textviewid.text =     aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] 
                               "\n" +  "aresmin=" + aresmin  
                     
                     //"  " + aresnum +  "  " + aresnum1  +
