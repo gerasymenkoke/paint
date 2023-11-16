@@ -189,16 +189,13 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
 
 
-    /*       
+
  
 // Filling sample array
 // 0
      jj = 0                  
 
-     xdyrr[0][0]=arrayOf<Float>(  -0.112f,  3.17f,  -0.133f,  5.191f,  -0.121f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
-
- 
+   
 
 
     
@@ -209,9 +206,7 @@ class MainActivity : AppCompatActivity() {
 // 1
       jj = 1                  
 
-     xdyrr[1][0]=arrayOf<Float>(  -1.107f,  -0.423f,  -0.133f,  5.191f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-     xdyrr[1][1]=arrayOf<Float>(  -1.102f,  -0.759f,   9.189f,  4.347f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
-
+   rcanglenn_[10][0]=arrayOf<Float>(   57.0f,  87.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    
    
 
@@ -223,8 +218,7 @@ class MainActivity : AppCompatActivity() {
 // 2
       jj = 2                  
 
-     xdyrr[2][0]=arrayOf<Float>(  -0.593f,  20.649f, -0.202f, 0.612f, -0.314f,  4.387f, 0.0f, 0.0f, 0.0f, 0.0f)
-     
+
 
 
  
@@ -238,7 +232,7 @@ class MainActivity : AppCompatActivity() {
 // 3
       jj = 3                  
 
-    xdyrr[3][0]=arrayOf<Float>(  -1.172f,  3.521f, -0.215f, 3.998f, -0.412f,  4.628f, 0.0f, 0.0f, 0.0f, 0.0f)
+  
 
   
 
@@ -250,21 +244,14 @@ class MainActivity : AppCompatActivity() {
 // 4
       jj = 4                  
   
- xdyrr[4][0]=arrayOf<Float>(  -0.452f,  2.78f, -2.276f, 0.796f, -0.581f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
- xdyrr[4][1]=arrayOf<Float>(  -0.452f,  0.846f, -2.686f, 0.628f, -0.796f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
- xdyrr[4][2]=arrayOf<Float>(  -0.325f,  0.855f, 1.304f,  0.0f,   0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
- xdyrr[4][3]=arrayOf<Float>(  -0.418f,  2.121f, 0.841f,  0.0f,   0.0f,  0.0f, 0.0f, 0.0f, 0.0f, 0.0f)
+
 
       
       
 // Filling sample array 
 // 5
       jj = 5    
-            
-   xdyrr[5][0]=arrayOf<Float>(  -0.311f,  -1.656f,  3.339f,  -0.576f,  3.518f,  -0.276f,  3.781f, -9.297f, 4.674f, 0.0f)
-   xdyrr[5][1]=arrayOf<Float>(  -0.159f,  -2.521f,  3.59f,   -0.238f,  2.08f,   -0.251f,  7.656f,  0.0f,   0.0f, 0.0f)
-   xdyrr[5][2]=arrayOf<Float>(  -0.266f,  -0.78f,  2.677f,  -0.354f,  3.389f,   -0.248f,  0.0f,   0.0f,    0.0f, 0.0f)
-     
+
       
 
 // Filling sample array 
@@ -310,7 +297,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-*/
+
 
             
  // Filling sampl// Filling sample array 
@@ -590,7 +577,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
 // "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
             
-         textviewid.text =   sresnum[0].toString() + "/" + resnum[0].toString()  + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
+         textviewid.text =    aresnum +  "  " + aresnum1  + ";;"  + aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] +
                               "\n" +  "aresmin=" + aresmin  
                     
                     //"  " + aresnum +  "  " + aresnum1  +
