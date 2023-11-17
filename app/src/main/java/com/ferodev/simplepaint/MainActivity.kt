@@ -252,12 +252,12 @@ class MainActivity : AppCompatActivity() {
 // 5
       jj = 5    
  rcanglenn_[5][0]=arrayOf<Float>(   76.0f, 10.0f,  149.0f, 120.0f, 84.0f, 55.0f, 20.0f, 168.0f, 78.0f, 4.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-      
+ rcanglenn_[5][1]=arrayOf<Float>(   66.0f,  40.0f,  7.0f, 151.0f, 120.0f, 85.0f, 51.0f,  14.0f,166.0f, 82.0f , 176.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )      
 
 // Filling sample array 
 // 6
       jj = 6                  
-  
+  rcanglenn_[6][0]=arrayOf<Float>(    17.0f,  42.0f,   73.0f,  96.0f,128.0f, 11.0f,  44.0f,  73.0f,  97.0f,  133.0f, 169.0f, 28.0f,  65.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
 
 
 
@@ -457,7 +457,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
     
                 j=0
                
-                while (j >=0 && j<=19 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
+                while (j >=0 && j<=15 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
                   
                  if (  Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >   Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
 
