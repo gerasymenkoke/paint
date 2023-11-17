@@ -196,7 +196,7 @@ class MainActivity : AppCompatActivity() {
      jj = 0                  
     rcanglenn_[0][0]=arrayOf<Float>(   79.0f,  48.0f,  174.0f, 133.0f, 99.0f, 87.0f, 61.0f, 175.0f, 139.0f, 108.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
     rcanglenn_[0][1]=arrayOf<Float>(    8.0f,  38.0f,   66.0f,  95.0f,124.0f,152.0f,  8.0f,  37.0f,  65.0f,  92.0f, 125.0f, 156.0f,  22.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-
+    rcanglenn_[0][2]=arrayOf<Float>(    54.0f, 81.0f,   96.0f,  130.0f, 10.0f, 43.0f,  68.0f,  92.0f,  121.0f,  151.0f, 4.0f, 50.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
 
     
 
@@ -268,7 +268,7 @@ class MainActivity : AppCompatActivity() {
 // 7
       jj = 7                  
   
-  
+   rcanglenn_[7][0]=arrayOf<Float>(   60.0f,  32.0f,  166.0f, 32.0f, 78.0f, 109.0f, 157.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
 
 
 
