@@ -452,7 +452,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
 
-           minres = 1000.00f 
+           minres = 100000.00f 
     while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
             {
     
