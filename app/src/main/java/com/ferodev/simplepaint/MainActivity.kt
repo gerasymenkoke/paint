@@ -354,8 +354,7 @@ class MainActivity : AppCompatActivity() {
 // ,
       jj = 15            
 
-    
-*/
+
     
       
       
