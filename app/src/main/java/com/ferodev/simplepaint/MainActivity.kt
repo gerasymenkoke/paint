@@ -447,7 +447,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
    jj=0
    minres = 1000.00f  
-while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
+while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
 
@@ -457,7 +457,7 @@ while (jj >=0 && jj<=19)  // index of symbols(numbers and operations)  0, 1 ..
     
                 j=0
                
-                while (j >=0 && j<=15 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
+                while (j >=0 && j<=19 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
                   
                  if (  Math.abs ( canglenn_[j]  - rcanglenn_[jj] [jjj] [j] )  >   Math.abs ( canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] ) )     
 
