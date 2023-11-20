@@ -494,15 +494,15 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
                
                 while (j >=0 && j<=19 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
                   
-if ( Math.abs(canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= Math.abs(canglennpi_[j] - rcanglenn_[jj] [jjj] [j]))
-      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j] 
+if ( Math.abs(canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= Math.abs(canglennpi_[j] - rcanglenn_[jj] [jjj] [j]) )
+      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
 else  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennpi_[j]  - rcanglenn_[jj] [jjj] [j] )                            
                          
                       
                     
                      resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
-                           }
+                                                                                                        }
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
                                            
            jjj=jjj+1
