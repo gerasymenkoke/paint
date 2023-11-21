@@ -219,7 +219,9 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[1][4]=arrayOf<Float>(   49.0f,  86.0f,   60.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[1][5]=arrayOf<Float>(   53.0f,  79.0f,  167.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[1][6]=arrayOf<Float>(   52.0f,  81.0f,   92.0f,  86.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
-     
+   rcanglenn_[1][7]=arrayOf<Float>(   55.0f,  87.0f,   93.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
+
+
      
 // Filling sample array 
 // 2
@@ -277,7 +279,7 @@ class MainActivity : AppCompatActivity() {
  rcanglenn_[5][7]=arrayOf<Float>(   72.0f,  47.0f,  169.0f, 130.0f, 102.0f, 81.0f,   51.0f, 173.0f, 146.0f,   70.0f,  13.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
  rcanglenn_[5][8]=arrayOf<Float>(   82.0f,  47.0f,   18.0f, 171.0f, 136.0f, 97.0f,   78.0f,  52.0f,  23.0f,  170.0f,  78.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )      
  rcanglenn_[5][9]=arrayOf<Float>(   75.0f,  47.0f,   16.0f, 167.0f, 142.0f,101.0f,   81.0f,  53.0f,  21.0f,  176.0f,  77.0f,   6.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )      
-
+ rcanglenn_[5][10]=arrayOf<Float>(  77.0f,  39.0f,   13.0f, 167.0f, 132.0f,105.0f,   86.0f,  56.0f,  19.0f,  174.0f, 147.0f,  79.0f,   5.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
 
 
 
@@ -307,7 +309,7 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[7][2]=arrayOf<Float>(   64.0f,   34.0f, 171.0f,   60.0f, 105.0f, 177.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    rcanglenn_[7][3]=arrayOf<Float>(  171.0f,   35.0f,  77.0f,  109.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    rcanglenn_[7][4]=arrayOf<Float>(   80.0f,  165.0f,  10.0f,   45.0f,  70.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
-      
+   rcanglenn_[7][5]=arrayOf<Float>(  178.0f,   61.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )    
 
     
 // Filling sample array 
@@ -341,7 +343,10 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[9][10]=arrayOf<Float>(    28.0f,  57.0f,   84.0f,  98.0f, 136.0f,  14.0f,   60.0f,  99.0f, 160.0f,   6.0f,  40.0f,  68.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
    rcanglenn_[9][11]=arrayOf<Float>(   123.0f, 151.0f,    5.0f,  39.0f,  69.0f,  93.0f,  124.0f, 152.0f,  12.0f,  66.0f, 101.0f, 148.0f,    6.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
    rcanglenn_[9][12]=arrayOf<Float>(     6.0f,  36.0f,   63.0f,  95.0f, 122.0f, 161.0f,   20.0f,  47.0f,  75.0f, 114.0f, 149.0f,   7.0f,   39.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
+   rcanglenn_[9][13]=arrayOf<Float>(   156.0f,   6.0f,   42.0f,  67.0f,  93.0f, 119.0f,  146.0f,   6.0f,  53.0f,  95.0f, 150.0f,   5.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
+ 
 
+   
             
  // Filling sampl// Filling sample array 
 // +
@@ -375,7 +380,7 @@ class MainActivity : AppCompatActivity() {
   rcanglenn_[12][2]=arrayOf<Float>(   123.0f,  85.0f,   49.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
   rcanglenn_[12][3]=arrayOf<Float>(   129.0f,  84.0f,   53.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
   rcanglenn_[12][4]=arrayOf<Float>(   139.0f,  93.0f,   56.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
-
+  rcanglenn_[12][5]=arrayOf<Float>(   130.0f,  85.0f,   58.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
   
       
 // Filling sample array 
@@ -544,7 +549,7 @@ else  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennpi_[j]  - rcan
                                                 if ( resnum[l]==12) { aresnum1 =   " x " } 
                                                 if ( resnum[l]==13) { aresnum1 =   " / " } 
                                                 if ( resnum[l]==14) { if (l==0) {aresnum1 =   "="}
-                                                                      if (l>0) {aresnum1 =   ""  } 
+                                                                      if (l>0)  {aresnum1 =   ""  } 
                                                                     }  
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
 
