@@ -508,7 +508,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
 
            minres = 100000.00f 
-    while (jjj >=0 && jjj<=59) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=59 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
     
                 j=0
