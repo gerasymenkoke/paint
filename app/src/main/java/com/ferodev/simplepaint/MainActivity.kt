@@ -483,7 +483,7 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
 // output as text current painted number in direction sequence
         
        j=0;
-       if (cinn > 0)  cinn=cinn - 1
+   if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
 if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
     // "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +
@@ -524,11 +524,14 @@ else  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennpi_[j]  - rcan
                      resmin[jj] [jjj] = ((resmin[jj] [jjj] * 100.0).roundToInt() / 100.0).toFloat() 
                     j=j+1
                                                                                                         }
+
+
+                
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
                                            
            jjj=jjj+1
              }  
- aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
+ aresmin = aresmin + "    [" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString() + "/" + j.toString()
             
  jj=jj+1
 } 
