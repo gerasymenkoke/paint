@@ -237,6 +237,7 @@ class MainActivity : AppCompatActivity() {
  rcanglenn_[2][7]=arrayOf<Float>(   52.0f,   22.0f,  141.0f, 112.0f,  85.0f, 60.0f, 26.0f, 135.0f,  79.0f,    9.0f,  161.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
  rcanglenn_[2][8]=arrayOf<Float>(   55.0f,   29.0f,  174.0f, 126.0f,  85.0f, 57.0f, 23.0f, 174.0f, 360.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
  rcanglenn_[2][9]=arrayOf<Float>(   76.0f,   48.0f,  167.0f, 120.0f,  86.0f, 60.0f, 28.0f, 174.0f,  36.0f,  175.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
+ rcanglenn_[2][10]=arrayOf<Float>(  82.0f,   39.0f,   14.0f, 167.0f, 112.0f, 82.0f, 52.0f,  15.0f,  80.0f,  174.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )     
 
             
       
@@ -252,7 +253,7 @@ class MainActivity : AppCompatActivity() {
   rcanglenn_[3][6]=arrayOf<Float>(   41.0f,  173.0f, 110.0f,  85.0f,  55.0f,   28.0f,  173.0f, 146.0f, 108.0f,  82.0f , 39.0f, 175.0f, 149.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
   rcanglenn_[3][7]=arrayOf<Float>(   10.0f,  158.0f, 100.0f,  83.0f,  58.0f,   31.0f,  172.0f, 137.0f, 110.0f,  85.0f , 36.0f,   9.0f, 163.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
   rcanglenn_[3][8]=arrayOf<Float>(   48.0f,   19.0f, 173.0f,  76.0f,  49.0f,   10.0f,  158.0f, 127.0f,  81.0f,  31.0f, 176.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-
+  rcanglenn_[3][9]=arrayOf<Float>(  178.0f,   60.0f,  30.0f, 178.0f, 142.0f,   38.0f,  360.0f, 360.0f, 360.0f, 360.0f ,360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
   
       
 // Filling sample array 
@@ -262,7 +263,7 @@ class MainActivity : AppCompatActivity() {
   rcanglenn_[4][0]=arrayOf<Float>(   65.0f,   2.0f,  122.0f, 79.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
   rcanglenn_[4][1]=arrayOf<Float>(   82.0f,  57.0f,   25.0f, 93.0f,  87.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
   rcanglenn_[4][2]=arrayOf<Float>(   78.0f, 127.0f,  170.0f, 78.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )     
-
+  rcanglenn_[4][3]=arrayOf<Float>(   73.0f, 156.0f,    9.0f,139.0f,  72.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
 
 
       
@@ -401,7 +402,7 @@ class MainActivity : AppCompatActivity() {
      rcanglenn_[14][3]=arrayOf<Float>(     8.0f,   49.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
      rcanglenn_[14][4]=arrayOf<Float>(    85.0f,  164.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
      rcanglenn_[14][5]=arrayOf<Float>(    87.0f,   11.0f,  140.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
-
+     rcanglenn_[14][6]=arrayOf<Float>(     1.0f,   50.0f,    1.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
      
       
 // Filling sample array 
@@ -410,8 +411,8 @@ class MainActivity : AppCompatActivity() {
      
      rcanglenn_[15][0]=arrayOf<Float>(   140.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
      rcanglenn_[15][1]=arrayOf<Float>(   103.0f,  87.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
-
-    
+     rcanglenn_[15][2]=arrayOf<Float>(   137.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
+     rcanglenn_[15][3]=arrayOf<Float>(    84.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
       
       
       btnPencil.setOnClickListener {
@@ -419,7 +420,7 @@ class MainActivity : AppCompatActivity() {
           
           
           // Untuk mengganti dari false menjadi true
-                isPencilIconClicked = !isPencilIconClicked
+                isPencilIconClicked = !isPencilIconClicked     
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
