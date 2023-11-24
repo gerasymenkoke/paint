@@ -518,8 +518,9 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
                   
 if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) 
       resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
-if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) 
-      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )
+if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
+   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j])   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )
+   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j])   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  - rcanglenn_[jj] [jjj] [j]   )
 
 
   
