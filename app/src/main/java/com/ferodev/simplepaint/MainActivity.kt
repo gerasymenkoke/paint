@@ -220,7 +220,7 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[1][5]=arrayOf<Float>(   53.0f,  79.0f,  167.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[1][6]=arrayOf<Float>(   52.0f,  81.0f,   92.0f,  86.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
    rcanglenn_[1][7]=arrayOf<Float>(   55.0f,  87.0f,   93.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
-
+   rcanglenn_[1][8]=arrayOf<Float>(   43.0f,  71.0f,  110.0f,  81.0f,   9.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
 
      
 // Filling sample array 
@@ -284,7 +284,7 @@ class MainActivity : AppCompatActivity() {
  rcanglenn_[5][10]=arrayOf<Float>(  77.0f,  39.0f,   13.0f, 167.0f, 132.0f,105.0f,   86.0f,  56.0f,  19.0f,  174.0f, 147.0f,  79.0f,   5.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
  rcanglenn_[5][11]=arrayOf<Float>(  73.0f,  29.0f,  167.0f, 138.0f, 111.0f, 84.0f,   55.0f,  16.0f, 166.0f,   72.0f,   2.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )     
  rcanglenn_[5][12]=arrayOf<Float>(  60.0f,  33.0f,  168.0f, 130.0f,  84.0f, 47.0f,   15.0f, 159.0f,  67.0f,   13.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-
+ rcanglenn_[5][13]=arrayOf<Float>(  84.0f, 140.0f,   24.0f, 173.0f, 120.0f, 82.0f,   50.0f,  17.0f, 157.0f,   81.0f, 174.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )      
  
  
 // Filling sample array 
@@ -311,7 +311,7 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[7][2]=arrayOf<Float>(   64.0f,   34.0f, 171.0f,   60.0f, 105.0f, 177.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    rcanglenn_[7][3]=arrayOf<Float>(  171.0f,   35.0f,  77.0f,  109.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    rcanglenn_[7][4]=arrayOf<Float>(   80.0f,  165.0f,  10.0f,   45.0f,  70.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
-   rcanglenn_[7][5]=arrayOf<Float>(  178.0f,   61.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )    
+ //  rcanglenn_[7][5]=arrayOf<Float>(  178.0f,   61.0f, 360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f )    
    rcanglenn_[7][6]=arrayOf<Float>(   76.0f,  169.0f,  47.0f,  105.0f,  46.0f,  71.0f, 110.0f,   5.0f, 360.0f, 360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f ) 
    
     
@@ -349,7 +349,7 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[9][13]=arrayOf<Float>(   156.0f,   6.0f,   42.0f,  67.0f,  93.0f, 119.0f,  146.0f,   6.0f,  53.0f,  95.0f, 150.0f,   5.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[9][14]=arrayOf<Float>(     4.0f,  32.0f,   61.0f,  93.0f, 126.0f, 157.0f,   14.0f,  50.0f,  96.0f, 158.0f,   7.0f,  33.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
    rcanglenn_[9][15]=arrayOf<Float>(   146.0f,   5.0f,   41.0f,  70.0f,  93.0f, 136.0f,  162.0f,  29.0f,  56.0f,  97.0f, 125.0f, 152.0f,    7.0f,  39.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-   
+   rcanglenn_[9][16]=arrayOf<Float>(   165.0f,  25.0f,   62.0f,  93.0f, 126.0f, 162.0f,    9.0f,  39.0f,  67.0f,  94.0f, 127.0f, 152.0f,    8.0f,  38.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
    
             
  // Filling sampl// Filling sample array 
@@ -515,7 +515,7 @@ if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 )
       resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
    if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )
-   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) )  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (    (canglenn_[j]-180)  + rcanglenn_[jj] [jjj] [j]   )
+   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) )  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   canglenn_[j]  )
       
                                                                }
   
