@@ -691,7 +691,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                     
                                  crx_ = Array<Float>(100){0.0f}
                                  cry_ = Array<Float>(100){0.0f} 
-                                 dir_cr =  Array<Int>(100){10} 
+                            //     dir_cr =  Array<Int>(100){10} 
        // dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
        // dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
         crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
