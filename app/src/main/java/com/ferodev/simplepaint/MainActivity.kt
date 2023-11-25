@@ -74,28 +74,28 @@ class MainActivity : AppCompatActivity() {
     private var aaa = Array<String>(800){"0"} // text Array for result monitoring
     private var aaacr = Array<String>(800){"0"} // text Array for result monitoring
   
-    private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
-    private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-    private var dir_rr = Array(20) { Array(60){ Array<Int>(20){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
-    private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+  //  private var dir_cr =  Array<Int>(800){10}  // array of directions current drawpencil (0,1,2,3)
+  //  private var dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
+  //  private var dir_rr = Array(20) { Array(60){ Array<Int>(20){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
+  //  private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
     private var oldx = 0.00f 
     private var oldy = 0.00f 
     private var oldxdy = 0.00f
-    private var crn_ = Array<Float>(800){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var crnx_ = Array<Float>(800){0.00f}  // array of of crx_[j]  after n_normalization
-    private var crny_ = Array<Float>(800){0.00f}  // array of of cry_[j] after n_normalization
+    private var crn_ = Array<Float>(100){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
+    private var crnx_ = Array<Float>(100){0.00f}  // array of of crx_[j]  after n_normalization
+    private var crny_ = Array<Float>(100){0.00f}  // array of of cry_[j] after n_normalization
 
-    private var crnnx_ = Array<Float>(800){0.00f}
-    private var crnny_ = Array<Float>(800){0.00f}
+    private var crnnx_ = Array<Float>(100){0.00f}
+    private var crnny_ = Array<Float>(100){0.00f}
     
     
-    private var crnxdy_ = Array<Float>(800){0.00f}  // array of of crxdy_[j] after n_normalizatio
+    private var crnxdy_ = Array<Float>(100){0.00f}  // array of of crxdy_[j] after n_normalizatio
     
-    private var canglen_ = Array<Float>(800){0.00f} 
-    private var canglenpi_ = Array<Float>(800){0.00f} 
-    private var canglenn_ = Array<Float>(800){360.0f} 
-    private var canglennpi_ = Array<Float>(800){360.0f} 
+    private var canglen_ = Array<Float>(100){0.00f} 
+    private var canglenpi_ = Array<Float>(100){0.00f} 
+    private var canglenn_ = Array<Float>(100){360.0f} 
+    private var canglennpi_ = Array<Float>(100){360.0f} 
     private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(20){360.0f} } }  
     
     
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
     private var xdyrr =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
 
    
-    private var dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+  
     private var  resmin =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     private var  resminx =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     private var  resminy =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
@@ -207,8 +207,6 @@ class MainActivity : AppCompatActivity() {
     rcanglenn_[0][10]=arrayOf<Float>(  13.0f,  49.0f,   77.0f,  95.0f, 121.0f, 150.0f, 12.0f,  56.0f,  83.0f,  92.0f, 120.0f, 150.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
     rcanglenn_[0][11]=arrayOf<Float>(  79.0f,  45.0f,  175.0f, 146.0f, 120.0f, 145.0f, 94.0f,  81.0f,  50.0f,  21.0f, 175.0f, 146.0f, 109.0f,  88.0f,  57.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
     rcanglenn_[0][12]=arrayOf<Float>(  76.0f,  45.0f,   13.0f, 166.0f, 133.0f, 103.0f, 86.0f,  54.0f,  26.0f, 159.0f, 123.0f,  87.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-   
-
     
  // Filling sample array
 // 1
@@ -222,7 +220,7 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[1][5]=arrayOf<Float>(   53.0f,  79.0f,  167.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[1][6]=arrayOf<Float>(   52.0f,  81.0f,   92.0f,  86.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )    
    rcanglenn_[1][7]=arrayOf<Float>(   55.0f,  87.0f,   93.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
-   rcanglenn_[1][8]=arrayOf<Float>(   43.0f,  70.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
+
 
      
 // Filling sample array 
@@ -350,7 +348,8 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[9][12]=arrayOf<Float>(     6.0f,  36.0f,   63.0f,  95.0f, 122.0f, 161.0f,   20.0f,  47.0f,  75.0f, 114.0f, 149.0f,   7.0f,   39.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
    rcanglenn_[9][13]=arrayOf<Float>(   156.0f,   6.0f,   42.0f,  67.0f,  93.0f, 119.0f,  146.0f,   6.0f,  53.0f,  95.0f, 150.0f,   5.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
    rcanglenn_[9][14]=arrayOf<Float>(     4.0f,  32.0f,   61.0f,  93.0f, 126.0f, 157.0f,   14.0f,  50.0f,  96.0f, 158.0f,   7.0f,  33.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
-   rcanglenn_[9][15]=arrayOf<Float>(   152.0f,  10.0f,   49.0f,  75.0f,  91.0f, 124.0f,  150.0f,  13.0f,  63.0f,  94.0f, 135.0f,   7.0f,   53.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
+   rcanglenn_[9][15]=arrayOf<Float>(   146.0f,   5.0f,   41.0f,  70.0f,  93.0f, 136.0f,  162.0f,  29.0f,  56.0f,  97.0f, 125.0f, 152.0f,    7.0f,  39.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
+   
    
             
  // Filling sampl// Filling sample array 
@@ -364,7 +363,7 @@ class MainActivity : AppCompatActivity() {
       rcanglenn_[10][3]=arrayOf<Float>(     1.0f,  118.0f,   85.0f ,  96.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )
       rcanglenn_[10][4]=arrayOf<Float>(     1.0f,  127.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )   
       rcanglenn_[10][5]=arrayOf<Float>(   172.0f,  143.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-     
+      rcanglenn_[10][6]=arrayOf<Float>(    47.0f,   87.0f,  360.0f , 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  )  
 
       
 // Filling sample array 
@@ -429,15 +428,7 @@ class MainActivity : AppCompatActivity() {
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
                     
-// sign of 4 directions level   (crx_[j] cry_[j]) to dir_crxy[0-3] = level 0-3 directions Int
-
-                     
-
-      
-    // normalize cr[j] - erase repeats and  ??? 10 inside
-
-
-                    
+                  
 i=0
 j=0
 oldx = 0.0f; oldy = 0.0f;   
@@ -698,14 +689,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
                     
-                                 crx_ = Array<Float>(800){0.0f}
-                                 cry_ = Array<Float>(800){0.0f} 
-                                 dir_cr =  Array<Int>(800){10} 
-        dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
-        dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+                                 crx_ = Array<Float>(100){0.0f}
+                                 cry_ = Array<Float>(100){0.0f} 
+                                 dir_cr =  Array<Int>(100){10} 
+       // dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
+       // dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
         crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
 
-        dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+       // dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
             resmin =  Array(60){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
             aresmin = " "
           iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
