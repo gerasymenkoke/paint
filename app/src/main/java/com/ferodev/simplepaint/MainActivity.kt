@@ -491,8 +491,8 @@ if    ( cin<=0 ||  cinn==0 ||
                                              {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
-                                         canglenn_[cinn]= cangle_[j]
-                                         canglennpi_[cinn]= canglepi_[j]    
+                                         canglenn_[cinn]= (( cangle_[j]  * 1.0).roundToInt() / 1.0).toFloat() 
+                                         canglennpi_[cinn]=(( canglepi_[j]   * 1.0).roundToInt() / 1.0).toFloat()   
                                              cinn=cinn+1
                                       
                                              }
@@ -503,8 +503,8 @@ if    ( cin<=0 ||  cinn==0 ||
 
 j=cin
 if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
-                                         canglenn_[cinn]= cangle_[j]
-                                         canglennpi_[cinn]= canglepi_[j]    
+                                         canglenn_[cinn]= (( cangle_[j]  * 1.0).roundToInt() / 1.0).toFloat() 
+                                         canglennpi_[cinn]=( ( canglepi_[j]  * 1.0).roundToInt() / 1.0).toFloat()     
              }
 
               
@@ -544,11 +544,18 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
                
                 while (j >=0 && j<=19 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
                   
-if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) 
+if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
       resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
+      resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()                                        
+                                                                 }
+
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
-   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )   resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )
-   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) )  resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   canglenn_[j]  )
+   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )  
+                                                       resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()   
+                                                     }
+   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   canglenn_[j]  )
+                                                       resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()
+                                                    }
       
                                                                }
   
