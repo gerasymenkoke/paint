@@ -457,7 +457,7 @@ if    ( cin<=0 ||  cinn==0 ||
                                              {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
-                                         canglenn_[cinn]= (( cangle_[j]  * 1.0).roundToInt() / 1.0).toFloat() 
+                                         canglenn_[cinn]=   (( cangle_[j] * signx_[j] * 1.0).roundToInt() / 1.0).toFloat() 
                                          canglennpi_[cinn]=(( canglepi_[j]   * 1.0).roundToInt() / 1.0).toFloat()   
                                              cinn=cinn+1
                                       
