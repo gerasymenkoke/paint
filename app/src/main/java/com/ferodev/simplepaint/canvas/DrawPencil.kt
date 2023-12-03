@@ -191,9 +191,9 @@ class DrawPencil @JvmOverloads constructor(
                  xcrx_[j] = x
                  ycry_[j] = y
                  if (rx>=0) signx_[j] = 1.0f 
-                    else  signx_[j] = 0.0f          
+                    else  signx_[j] = -1.0f          
                  if (ry>=0) signy_[j] = 1.0f 
-                    else  signy_[j] = 0.0f 
+                    else  signy_[j] = -1.0f 
             
                  ci=ci+1
          
