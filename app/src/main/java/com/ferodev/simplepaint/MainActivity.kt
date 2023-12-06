@@ -461,10 +461,10 @@ if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
                                                                  }
 
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
-   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + rcanglenn_[jj] [jjj] [j]   )  
+   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
                                                        resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()   
                                                      }
-   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   canglenn_[j]  )
+   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglenn_[j])  )
                                                        resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()
                                                     }
       
