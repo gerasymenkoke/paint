@@ -61,12 +61,12 @@ class DrawPencil @JvmOverloads constructor(
     private val colorList = mutableListOf<Int>()
     private var i = -1
     private var arr = Array<Float>(10){0.0F}  
-    private var x1 = 0f
-    private var y1 = 0f
+    private var x1 = 0
+    private var y1 = 0
     private var x = 0f
-    private var y = 0f
-     private var rx1 = 1f
-     private var ry1 = 1f
+    private var y = 0
+     private var rx1 = 1
+     private var ry1 = 1
      private var res = 0f
      private var N = 1
      
@@ -79,25 +79,25 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
-        var crx_ = Array<Float>(800){0.0f}
-        var cry_ = Array<Float>(800){0.0f} 
-        var xcrx_= Array<Float>(800){0.0f} 
-        var ycry_= Array<Float>(800){0.0f} 
-        var signx_= Array<Float>(800){2.0f} 
-        var signy_= Array<Float>(800){2.0f} 
+        var crx_ = Array<Int>(800){0.0}
+        var cry_ = Array<Int>(800){0.0} 
+        var xcrx_= Array<Int>(800){0.0} 
+        var ycry_= Array<Int>(800){0.0} 
+        var signx_= Array<Int>(800){2.0} 
+        var signy_= Array<Int>(800){2.0} 
 
         
         
         var crxdy_ = Array<Float>(800){1000.0f} 
-        var cangle_ =Array<Float>(800){0.0f} 
-        var canglepi_ =Array<Float>(800){0.0f}  
-        var cangle = 0.0f 
-        var canglepi = 0.0f 
-        var cangle1 = -1.0f
+        var cangle_ =Array<Int>(800){0.0} 
+        var canglepi_ =Array<Int>(800){0.0}  
+        var cangle = 0.0
+        var canglepi = 0.0 
+        var cangle1 = -1.0
         var ci = 0
         var jci = 0
-        var rx = 0.0f
-        var ry = 0.0f
+        var rx = 0.0
+        var ry = 0.0
         var cjj=0
 
       //  var shift = 0 // user's a new symbol is beging draw on the screen
@@ -170,15 +170,15 @@ class DrawPencil @JvmOverloads constructor(
             if   ( (ci==1 && ( (x-x1)!=0.0f || (y-y1)!=0.0f)  ) || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx=( ( ( (x-x1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
-                        ry=( ( ( (y-y1)/1) * 10.0).roundToInt() / 10.0).toFloat() 
+                        rx= ( ( (x-x1)/1) * 1.0).roundToInt()  
+                        ry= ( ( (y-y1)/1) * 1.0).roundToInt()  
                   
                
                          
                   if ( ry==0.0f)  { ry=0.00001f }
                     
-                  cangle= ( ( (90 + atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
-                  canglepi=( ( (90 - atan(rx/ry)*(180/PI)) * 10.0).roundToInt() / 10.0).toFloat() 
+                  cangle=  ( (90 + atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
+                  canglepi= ( (90 - atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
                  
 
                      
@@ -186,14 +186,14 @@ class DrawPencil @JvmOverloads constructor(
                 
                   cangle_[ci] = cangle 
                   canglepi_[ci] = canglepi 
-                 crx_[ci] = ((rx * 10.0).roundToInt() / 10.0).toFloat() 
-                 cry_[ci] = ((ry * 10.0).roundToInt() / 10.0).toFloat() 
+                 crx_[ci] = (rx * 1).roundToInt()  
+                 cry_[ci] = (ry * 1).roundToInt()  
                  xcrx_[j] = x
                  ycry_[j] = y
-                 if (rx>=0) signx_[j] = 1.0f 
-                    else  signx_[j] = -1.0f          
-                 if (ry>=0) signy_[j] = 1.0f 
-                    else  signy_[j] = -1.0f 
+                 if (rx>=0) signx_[j] = 1
+                    else  signx_[j] = -1          
+                 if (ry>=0) signy_[j] = 1
+                    else  signy_[j] = -1 
             
                  ci=ci+1
          
