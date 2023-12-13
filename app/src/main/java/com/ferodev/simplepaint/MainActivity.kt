@@ -79,42 +79,42 @@ class MainActivity : AppCompatActivity() {
   //  private var dir_rr = Array(20) { Array(60){ Array<Int>(20){10} } }  // array of directions for n_etalons(40) for every sample(10pcs: 0,1,...9,+..=)
   //  private var dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
     // crx_ , cry_ - import from drawpencil.kt as companion object
-    private var oldx = 0.00f 
-    private var oldy = 0.00f 
-    private var oldxdy = 0.00f
-    private var crn_ = Array<Float>(100){0.00f}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var crnx_ = Array<Float>(100){0.00f}  // array of of crx_[j]  after n_normalization
-    private var crny_ = Array<Float>(100){0.00f}  // array of of cry_[j] after n_normalization
+    private var oldx = 0
+    private var oldy = 0 
+    private var oldxdy = 0
+    private var crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalization
+    private var crnx_ = Array<Int>(100){0}  // array of of crx_[j]  after n_normalization
+    private var crny_ = Array<Int>(100){0}  // array of of cry_[j] after n_normalization
 
-    private var crnnx_ = Array<Float>(100){0.00f}
-    private var crnny_ = Array<Float>(100){0.00f}
+    private var crnnx_ = Array<Int>(100){0}
+    private var crnny_ = Array<Int>(100){0}
     
     
-    private var crnxdy_ = Array<Float>(100){0.00f}  // array of of crxdy_[j] after n_normalizatio
+    private var crnxdy_ = Array<Int>(100){0}  // array of of crxdy_[j] after n_normalizatio
     
-    private var canglen_ = Array<Float>(100){0.00f} 
-    private var canglenpi_ = Array<Float>(100){0.00f} 
-    private var canglenn_ = Array<Float>(100){360.0f} 
-    private var canglennpi_ = Array<Float>(100){360.0f} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Float>(20){360.0f} } }  
+    private var canglen_ = Array<Int>(100){0} 
+    private var canglenpi_ = Array<Int>(100){0} 
+    private var canglenn_ = Array<Int>(100){360} 
+    private var canglennpi_ = Array<Int>(100){360} 
+    private var rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
     
     private var cin = 0
     private var cinn = 0
     
     
-    private var rr =  Array(20) { Array(60){ Array<Float>(20){10.0f} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
-    private var rrx =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
-    private var rry =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
-    private var rangle =  Array(20) { Array(60){ Array<Float>(10){0.0f} } }  // 
+    private var rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
+    private var rrx =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
+    private var rry =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
+    private var rangle =  Array(20) { Array(60){ Array<Int>(10){0} } }  // 
     
-    private var xdyrr =  Array(20) { Array(60){ Array<Float>(20){0.0f} } }  // 
+    private var xdyrr =  Array(20) { Array(60){ Array<Int>(20){0} } }  // 
 
    
   
-    private var  resmin =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminx =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminy =  Array(20){ Array<Float>(60){0.00f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resmin =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminx =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminy =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     
     private var  aresmin = " "
     private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
     private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
-    private var minres = 100.00f // temporary variable  resmin[jj] [j] < minres
+    private var minres = 100 // temporary variable  resmin[jj] [j] < minres
    
     private var max=0   // res [jj] > max res temporary for max coincedence finding
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
@@ -134,10 +134,10 @@ class MainActivity : AppCompatActivity() {
     private var asresnum = " "  
  
      
-    private var iresnum = 0.0f  // result last operation
+    private var iresnum = 0 // result last operation
 
     
-    private var xiresnum = 0.0f  // result last operation x or /
+    private var xiresnum = 0  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
     private var aresnum1 = ""  
 
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
     private var repeat=0
     
     private var jdec = Array<Int>(60){0}
-    private var resxy=0.0f
+    private var resxy=0
     
        
          companion object {
@@ -194,24 +194,24 @@ class MainActivity : AppCompatActivity() {
 // Filling sample array
 // 0
      jj = 0                  
-    rcanglenn_[0][0]=arrayOf<Float>(   86.0f,  65.0f,  46.0f, 175.0f,  136.0f, 119.0f, 104.0f,  -87.0f,  -64.0f,  -39.0f, -19.0f, -173.0f, -144.0f, -127.0f, -107.0f,  86.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][1]=arrayOf<Float>(  -59.0f, -77.0f,  95.0f, 112.0f,  128.0f, 145.0f, 161.0f,    8.0f,   49.0f,   68.0f, -93.0f, -115.0f, -131.0f, -156.0f,   -2.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][2]=arrayOf<Float>(  -42.0f, -62.0f, -80.0f,  94.0f,  122.0f, 139.0f, 166.0f,   11.0f,   32.0f,   47.0f,  66.0f,   83.0f,  -92.0f, -120.0f, -141.0f,-172.0f, 360.0f, -14.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][3]=arrayOf<Float>(   64.0f,  45.0f,  21.0f, 173.0f,  145.0f, 129.0f, 108.0f,  -83.0f,  -67.0f,  -40.0f, -16.0f, -176.0f, -119.0f,   87.0f,   64.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][4]=arrayOf<Float>(   80.0f,  59.0f,  33.0f, 175.0f,  154.0f, 128.0f, 111.0f,  -88.0f,  -67.0f,  -50.0f, -19.0f, -175.0f, -134.0f, -115.0f,  -99.0f,  87.0f,  70.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][5]=arrayOf<Float>(   84.0f,  65.0f,  40.0f,  11.0f,  162.0f, 145.0f, 128.0f,  105.0f,  -85.0f,  -69.0f, -52.0f,  -36.0f, -166.0f, -116.0f,  -98.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][6]=arrayOf<Float>(   72.0f,  52.0f, 172.0f, 142.0f,  122.0f, 104.0f, -88.0f,  -73.0f,  -56.0f,  -32.0f,-174.0f, -135.0f, -115.0f,  -98.0f,   88.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][7]=arrayOf<Float>(   83.0f,  40.0f,  17.0f, 165.0f,  148.0f, 126.0f, 109.0f,  -84.0f,  -69.0f,  -45.0f,-170.0f, -130.0f, -107.0f,   89.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][8]=arrayOf<Float>(  176.0f, 123.0f, 101.0f, -87.0f,  -64.0f, -30.0f, -13.0f, -173.0f, -128.0f, -111.0f,  86.0f,  67.0f,    45.0f,   89.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][9]=arrayOf<Float>(   76.0f,  56.0f,  35.0f,  13.0f,  167.0f, 143.0f, 127.0f,  112.0f,   96.0f,  -87.0f, -72.0f, -50.0f,  -22.0f,  -173.0f, -156.0f,-135.0f,-106.0f,  85.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][10]=arrayOf<Float>(  77.0f,  50.0f, 171.0f, 140.0f,  121.0f, 104.0f, -82.0f,  -62.0f,  -34.0f, -174.0f,-124.0f, -101.0f,  360.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][11]=arrayOf<Float>(  85.0f,  43.0f,  27.0f, 175.0f,  154.0f, 122.0f, -88.0f,  -69.0f,  -40.0f, -172.0f,-147.0f, -111.0f,   84.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][12]=arrayOf<Float>( -63.0f,  92.0f, 110.0f, 135.0f,  155.0f,   5.0f,  35.0f,   65.0f,   83.0f,  -93.0f,-114.0f, -139.0f, -167.0f,   -7.0f,  -38.0f, -58.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][13]=arrayOf<Float>( -65.0f, -80.0f,  95.0f, 119.0f,  165.0f,   6.0f,  43.0f,   61.0f,   79.0f,  -98.0f,-127.0f, -146.0f, -166.0f,   -9.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][14]=arrayOf<Float>( -55.0f, -70.0f,  94.0f, 114.0f,  136.0f, 153.0f,  11.0f,   35.0f,   55.0f,   72.0f, -96.0f, -112.0f, -129.0f, -153.0f,  -14.0f, -38.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][15]=arrayOf<Float>(  53.0f,  31.0f,  15.0f, 176.0f,  150.0f, 125.0f, 100.0f,  -80.0f,  -60.0f,  -34.0f, -18.0f, -171.0f, -135.0f, -118.0f, -102.0f,  88.0f,  64.0f,  45.0f,  25.0f, 360.0f  ) 
-    rcanglenn_[0][16]=arrayOf<Float>(  80.0f,  63.0f,  43.0f,  13.0f,  173.0f, 135.0f, 118.0f,   98.0f,  -85.0f,  -69.0f, -44.0f,  -15.0f, -172.0f, -148.0f, -126.0f,-110.0f,  84.0f, 360.0f, 360.0f, 360.0f  ) 
-    rcanglenn_[0][17]=arrayOf<Float>( -57.0f, -76.0f,  96.0f, 114.0f,  132.0f,  16.0f,  59.0f,   76.0f,  -95.0f, -111.0f,-145.0f,  -13.0f,  -40.0f,  360.0f,  360.0f, 360.0f, 360.0f, 360.0f, 360.0f, 360.0f  ) 
+    rcanglenn_[0][0]=arrayOf<Float>(   86,  65,  46, 175,  136, 119, 104,  -87,  -64,  -39, -19, -173, -144, -127, -107,  86, 360, 360, 360, 360  ) 
+    rcanglenn_[0][1]=arrayOf<Float>(  -59, -77,  95, 112,  128, 145, 161,    8,   49,   68, -93, -115, -131, -156,   -2, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][2]=arrayOf<Float>(  -42, -62, -80,  94,  122, 139, 166,   11,   32,   47,  66,   83,  -92, -120, -141,-172, 360, 360, 360, 360  ) 
+    rcanglenn_[0][3]=arrayOf<Float>(   64,  45,  21, 173,  145, 129, 108,  -83,  -67,  -40, -16, -176, -119,   87,   64, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][4]=arrayOf<Float>(   80,  59,  33, 175,  154, 128, 111,  -88,  -67,  -50, -19, -175, -134, -115,  -99,  87,  70, 360, 360, 360  ) 
+    rcanglenn_[0][5]=arrayOf<Float>(   84,  65,  40,  11,  162, 145, 128,  105,  -85,  -69, -52,  -36, -166, -116,  -98, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][6]=arrayOf<Float>(   72,  52, 172, 142,  122, 104, -88,  -73,  -56,  -32,-174, -135, -115,  -98,   88, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][7]=arrayOf<Float>(   83,  40,  17, 165,  148, 126, 109,  -84,  -69,  -45,-170, -130, -107,   89,  360, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][8]=arrayOf<Float>(  176, 123, 101, -87,  -64, -30, -13, -173, -128, -111,  86,  67,    45,   89,  360, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][9]=arrayOf<Float>(   76,  56,  35,  13,  167, 143, 127,  112,   96,  -87, -72, -50,   -22, -173, -156,-135,-106,  85, 360, 360  ) 
+    rcanglenn_[0][10]=arrayOf<Float>(  77,  50, 171, 140,  121, 104, -82,  -62,  -34, -174,-124, -101,  360,  360,  360, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][11]=arrayOf<Float>(  85,  43,  27, 175,  154, 122, -88,  -69,  -40, -172,-147, -111,   84,  360,  360, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][12]=arrayOf<Float>( -63,  92, 110, 135,  155,   5,  35,   65,   83,  -93,-114, -139, -167,   -7,  -38, -58, 360, 360, 360, 360  ) 
+    rcanglenn_[0][13]=arrayOf<Float>( -65, -80,  95, 119,  165,   6,  43,   61,   79,  -98,-127, -146, -166,   -9,  360, 360, 360, 360, 360, 360  ) 
+    rcanglenn_[0][14]=arrayOf<Float>( -55, -70,  94, 114,  136, 153,  11,   35,   55,   72, -96, -112, -129, -153,  -14, -38, 360, 360, 360, 360  ) 
+    rcanglenn_[0][15]=arrayOf<Float>(  53,  31,  15, 176,  150, 125, 100,  -80,  -60,  -34, -18, -171, -135, -118, -102,  88,  64,  45,  25, 360  ) 
+    rcanglenn_[0][16]=arrayOf<Float>(  80,  63,  43,  13,  173, 135, 118,   98,  -85,  -69, -44,  -15, -172, -148, -126,-110,  84, 360, 360, 360  ) 
+    rcanglenn_[0][17]=arrayOf<Float>( -57, -76,  96, 114,  132,  16,  59,   76,  -95, -111,-145,  -13,  -40,  360,  360, 360, 360, 360, 360, 360  ) 
     
 
   
@@ -512,8 +512,8 @@ if    ( cin<=0 ||  cinn==0 ||
                                              {    
                                          kk=j
                                          crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
-                                         canglenn_[cinn]=   (( cangle_[j] * signx_[j] * 1.0).roundToInt() / 1.0).toFloat() 
-                                         canglennpi_[cinn]=(( canglepi_[j]   * 1.0).roundToInt() / 1.0).toFloat()   
+                                         canglenn_[cinn]=   ( cangle_[j] * signx_[j] * 1.0).roundToInt()  
+                                         canglennpi_[cinn]=( canglepi_[j]   * 1.0).roundToInt()    
                                              cinn=cinn+1
                                       
                                              }
@@ -524,8 +524,8 @@ if    ( cin<=0 ||  cinn==0 ||
 
 j=cin
 if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j]; 
-                                         canglenn_[cinn]= (( cangle_[j]  * 1.0).roundToInt() / 1.0).toFloat() 
-                                         canglennpi_[cinn]=( ( canglepi_[j]  * 1.0).roundToInt() / 1.0).toFloat()     
+                                         canglenn_[cinn]= ( cangle_[j]  * 1.0).roundToInt() 
+                                         canglennpi_[cinn]= ( canglepi_[j]  * 1.0).roundToInt() 
              }
 
               
@@ -552,31 +552,31 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
    jj=0
-   minres = 1000.00f  
+   minres = 1000
 while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
 
-           minres = 100000.00f 
-    while (jjj >=0 && jjj<=59 && rcanglenn_[jj] [jjj] [0] !=360.0f ) // quantity of variants for each/all numbers
+           minres = 100000
+    while (jjj >=0 && jjj<=59 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
     
                 j=0
                
-                while (j >=0 && j<=19 && (canglenn_[j]!=360.0f || rcanglenn_[jj] [jjj] [j] !=360.0f) ) {  
+                while (j >=0 && j<=19 && (canglenn_[j]!=360 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
 
-                    if ( canglenn_[j]!=360.0f && rcanglenn_[jj] [jjj] [j] !=360.0f ) {
+                    if ( canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360) {
 if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
       resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
-      resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()                                        
+      resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()                                     
                                                                  }
 
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
    if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
-                                                       resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()   
+                                                       resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()  
                                                      }
    if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglenn_[j])  )
-                                                       resmin[jj] [jjj] =  ( (resmin[jj] [jjj]  * 1.0).roundToInt() / 1.0).toFloat()
+                                                       resmin[jj] [jjj] =  (resmin[jj] [jjj]  * 1.0).roundToInt() 
                                                     }
       
                                                                }
@@ -647,45 +647,45 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                              
       if (l==0 &&  resnum[0] == 11)  {  xxsign=-1 }                              
       if(l>0) { if (resnum[l] >= 10 && ((resnum[l-1] <= 9) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
-      if( resnum[l] <= 9 && ff==0 )  { iresnum=xxsign*sresnum[l].toFloat(); xxsign=1 }              
+      if( resnum[l] <= 9 && ff==0 )  { iresnum=xxsign*sresnum[l]; xxsign=1 }              
          
 
    
        
                 
-      if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0.00f; xsign=1
-                                                  if (shift1==0) { iresnum= iresnum +  resnum[l].toFloat() } 
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum +  ( sresnum[l].toFloat() - sresnum[l-1].toFloat() )  } 
+      if(sign == 1  && resnum[l-1-shift1]==10 ) {   iresnum= iresnum + xiresnum; xiresnum=0; xsign=1
+                                                  if (shift1==0) { iresnum= iresnum +  resnum[l] } 
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum +  ( sresnum[l] - sresnum[l-1])  } 
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==11) {  iresnum= iresnum + xiresnum; xiresnum=0.00f; xsign=-1
-                                                  if (shift1==0) { iresnum= iresnum - sresnum[l].toFloat() } 
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l].toFloat() - sresnum[l-1].toFloat() ) } 
+      if(sign == 1  && resnum[l-1-shift1]==11) {  iresnum= iresnum + xiresnum; xiresnum=0; xsign=-1
+                                                  if (shift1==0) { iresnum= iresnum - sresnum[l] } 
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l] - sresnum[l-1] ) } 
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() * sresnum[l].toFloat();ffr=1 
-                                                     iresnum= iresnum - xsign * sresnum[l-2].toFloat()  
+      if(sign == 1  && resnum[l-1-shift1]==12) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2] * sresnum[l];ffr=1 
+                                                     iresnum= iresnum - xsign * sresnum[l-2]  
                                                                           } 
       
-                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l].toFloat() } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l].toFloat() / sresnum[l-1].toFloat() ) } 
+                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l] } }
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l] / sresnum[l-1] ) } 
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() / sresnum[l].toFloat() ; ffr=1 
-                                                      iresnum= iresnum - xsign * sresnum[l-2].toFloat()                 
+      if(sign == 1  && resnum[l-1-shift1]==13) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2] / sresnum[l] ; ffr=1 
+                                                      iresnum= iresnum - xsign * sresnum[l-2]             
                                                                           } 
          
-                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum / sresnum[l].toFloat() } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum /  sresnum[l].toFloat() * sresnum[l-1].toFloat()  }  
+                                                 else { if (shift1==0 && ffr==1) { xiresnum= xiresnum / sresnum[l] } }
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum /  sresnum[l] * sresnum[l-1]  }  
                                                   
                                                 } 
      
 
 
      
-      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
+      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0;  ffr=0; xsign=1;  l=l+1; repeat=0 }
   
            
 
@@ -750,21 +750,21 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
                     
-                                 crx_ = Array<Float>(100){0.0f}
-                                 cry_ = Array<Float>(100){0.0f} 
+                                 crx_ = Array<Int>(100){0}
+                                 cry_ = Array<Int>(100){0} 
                             //     dir_cr =  Array<Int>(100){10} 
        // dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
        // dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
-        crn_ = Array<Float>(20){0.0f}  // array of of crx_[j] + cry_[j] after n_normalization
+        crn_ = Array<Int>(20){0}  // array of of crx_[j] + cry_[j] after n_normalization
 
        // dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
-            resmin =  Array(60){ Array<Float>(10){10.0f} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+            resmin =  Array(60){ Array<Int>(10){10} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
             aresmin = " "
           iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
               res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
 
               min = 10 // temporary variable min = dir_res[jj][jjj] 
-           minres = 100.0f // temporary variable  resmin[jj] [j] < minres
+           minres = 100 // temporary variable  resmin[jj] [j] < minres
    
     max=0   // res [jj] > max res temporary for max coincedence finding
     res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
