@@ -98,6 +98,8 @@ class DrawPencil @JvmOverloads constructor(
         var jci = 0
         var rx = 0
         var ry = 0
+        var rxf = 0.0f
+        var ryf = 0.0f
         var cjj=0
 
       //  var shift = 0 // user's a new symbol is beging draw on the screen
@@ -176,7 +178,8 @@ class DrawPencil @JvmOverloads constructor(
                
                          
                   if ( ry==0)  {  
-                  cangle=  ( (90 + atan(rx.toFloat()/0.00001f)*(180/PI)) * 1.0).toInt()  
+                  rxf=atan(rx/0.00001f)*(180/PI)
+                  cangle=  ( (90 + atan(rx/0.00001f)*(180/PI)) * 1.0).toInt()  
                   canglepi= ( (90 - atan(rx/0.00001f)*(180/PI)) * 1.0).toInt()  
                                }
 
