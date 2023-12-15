@@ -172,8 +172,8 @@ class DrawPencil @JvmOverloads constructor(
             if   ( (ci==1 && ( (x-x1)!=0f || (y-y1)!=0f)  ) || ((j<=799) && ( x!=0f || y!=0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx= ( ( (x-x1)/1) * 1)  
-                        ry= ( ( (y-y1)/1) * 1)  
+                        rx= ( ( (x-x1)/1) * 1).toInt()  
+                        ry= ( ( (y-y1)/1) * 1).toInt()   
                   
                
                          
@@ -198,8 +198,8 @@ class DrawPencil @JvmOverloads constructor(
                   canglepi_[ci] = canglepi 
                  crx_[ci] = (rx * 1).toInt()    
                  cry_[ci] = (ry * 1).toInt()    
-                 xcrx_[j] = x
-                 ycry_[j] = y
+                 xcrx_[j] = x.toInt()  
+                 ycry_[j] = y.toInt()  
                  if (rx>=0) signx_[j] = 1
                     else  signx_[j] = -1          
                  if (ry>=0) signy_[j] = 1
