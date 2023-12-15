@@ -96,8 +96,8 @@ class DrawPencil @JvmOverloads constructor(
         var cangle1 = -1.0
         var ci = 0
         var jci = 0
-        var rx = 0.0
-        var ry = 0.0
+        var rx = 0
+        var ry = 0
         var cjj=0
 
       //  var shift = 0 // user's a new symbol is beging draw on the screen
@@ -163,7 +163,7 @@ class DrawPencil @JvmOverloads constructor(
                   
                  if(shift==1) { j=0; ci=0; shift=0 }
 
-                 res=(((w+h)/2)*0.3/100).toFloat()   // in percents of average resolutions
+                 res=(((w+h)/2)*0.3/100).toInt()   // in percents of average resolutions
         
            
              
