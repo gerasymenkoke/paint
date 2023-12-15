@@ -61,8 +61,8 @@ class DrawPencil @JvmOverloads constructor(
     private val colorList = mutableListOf<Int>()
     private var i = -1
     private var arr = Array<Float>(10){0.0F}  
-    private var x1 = 0
-    private var y1 = 0
+    private var x1 = 0f
+    private var y1 = 0f
     private var x = 0f
     private var y = 0f
      private var rx1 = 1
@@ -155,8 +155,8 @@ class DrawPencil @JvmOverloads constructor(
         
        
         
-         x = event1.x.toInt() 
-         y = event1.y.toInt()  
+         x = event1.x
+         y = event1.y  
         
         xxx = x.toString()       
         yyy = y.toString()    
@@ -169,7 +169,7 @@ class DrawPencil @JvmOverloads constructor(
         
            
              
-            if   ( (ci==1 && ( (x-x1)!=0 || (y-y1)!=0)  ) || ((j<=799) && ( x!=0 || y!=0) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
+            if   ( (ci==1 && ( (x-x1)!=0f || (y-y1)!=0f)  ) || ((j<=799) && ( x!=0f || y!=0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
                         rx= ( ( (x-x1)/1) * 1)  
