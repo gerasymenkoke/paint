@@ -153,8 +153,8 @@ class DrawPencil @JvmOverloads constructor(
         
        
         
-         x = event1.x 
-         y = event1.y 
+         x = event1.x.toInt() 
+         y = event1.y.toInt()  
         
         xxx = x.toString()       
         yyy = y.toString()    
@@ -167,19 +167,24 @@ class DrawPencil @JvmOverloads constructor(
         
            
              
-            if   ( (ci==1 && ( (x-x1)!=0.0f || (y-y1)!=0.0f)  ) || ((j<=799) && ( x!=0.0f || y!=0.0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
+            if   ( (ci==1 && ( (x-x1)!=0 || (y-y1)!=0)  ) || ((j<=799) && ( x!=0 || y!=0) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx= ( ( (x-x1)/1) * 1.0).roundToInt()  
-                        ry= ( ( (y-y1)/1) * 1.0).roundToInt()  
+                        rx= ( ( (x-x1)/1) * 1).roundToInt()  
+                        ry= ( ( (y-y1)/1) * 1).roundToInt()  
                   
                
                          
-                  if ( ry==0.0f)  { ry=0.00001f }
-                    
+                  if ( ry==0)  {  
+                  cangle=  ( (90 + atan(rx/0.00001f)*(180/PI)) * 1.0).roundToInt()  
+                  canglepi= ( (90 - atan(rx/0.00001f)*(180/PI)) * 1.0).roundToInt()  
+                               }
+
+                  
+                   else { 
                   cangle=  ( (90 + atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
                   canglepi= ( (90 - atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
-                 
+                        }
 
                      
                  
