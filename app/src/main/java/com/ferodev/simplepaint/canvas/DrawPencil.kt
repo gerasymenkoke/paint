@@ -63,8 +63,8 @@ class DrawPencil @JvmOverloads constructor(
     private var arr = Array<Float>(10){0.0F}  
     private var x1 = 0
     private var y1 = 0
-    private var x = 0
-    private var y = 0
+    private var x = 0f
+    private var y = 0f
      private var rx1 = 1
      private var ry1 = 1
      private var res = 0.0
