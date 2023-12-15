@@ -79,18 +79,18 @@ class DrawPencil @JvmOverloads constructor(
         var rxx = "1"
         var ryy = "1"
 
-        var crx_ = Array<Int>(800){0.0}
-        var cry_ = Array<Int>(800){0.0} 
-        var xcrx_= Array<Int>(800){0.0} 
-        var ycry_= Array<Int>(800){0.0} 
-        var signx_= Array<Int>(800){2.0} 
-        var signy_= Array<Int>(800){2.0} 
+        var crx_ = Array<Int>(800){0}
+        var cry_ = Array<Int>(800){0} 
+        var xcrx_= Array<Int>(800){0} 
+        var ycry_= Array<Int>(800){0} 
+        var signx_= Array<Int>(800){2} 
+        var signy_= Array<Int>(800){2} 
 
         
         
         var crxdy_ = Array<Float>(800){1000.0f} 
-        var cangle_ =Array<Int>(800){0.0} 
-        var canglepi_ =Array<Int>(800){0.0}  
+        var cangle_ =Array<Int>(800){0} 
+        var canglepi_ =Array<Int>(800){0}  
         var cangle = 0.0
         var canglepi = 0.0 
         var cangle1 = -1.0
