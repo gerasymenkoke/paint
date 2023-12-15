@@ -179,16 +179,16 @@ class DrawPencil @JvmOverloads constructor(
                          
                   if ( ry==0)  {  
                   
-                  rxf=(rx/0.00001f)*(180/PI).toFloat()
-                  cangle=    (90 + atan(rxf)).toInt()  
-                  canglepi=  (90 - atan(rxf)).toInt()  
+                  rxf=(rx/0.00001f).toFloat()
+                  cangle=    (90 + atan(rxf)*(180/PI)).toInt()  
+                  canglepi=  (90 - atan(rxf)*(180/PI)).toInt()  
                                }
 
                   
                    else { 
                   rxf=(rx/ry).toFloat()
                   cangle=   (90 + atan(rxf)*(180/PI)).toInt()  
-                  canglepi= (90 - atan(rxf)).toInt()  
+                  canglepi= (90 - atan(rxf)*(180/PI)).toInt()  
                         }
 
                      
