@@ -170,20 +170,20 @@ class DrawPencil @JvmOverloads constructor(
             if   ( (ci==1 && ( (x-x1)!=0 || (y-y1)!=0)  ) || ((j<=799) && ( x!=0 || y!=0) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx= ( ( (x-x1)/1) * 1).roundToInt()  
-                        ry= ( ( (y-y1)/1) * 1).roundToInt()  
+                        rx= ( ( (x-x1)/1) * 1)  
+                        ry= ( ( (y-y1)/1) * 1)  
                   
                
                          
                   if ( ry==0)  {  
-                  cangle=  ( (90 + atan(rx/0.00001f)*(180/PI)) * 1.0).roundToInt()  
-                  canglepi= ( (90 - atan(rx/0.00001f)*(180/PI)) * 1.0).roundToInt()  
+                  cangle=  ( (90 + atan(rx/0.00001f)*(180/PI)) * 1.0).toInt()  
+                  canglepi= ( (90 - atan(rx/0.00001f)*(180/PI)) * 1.0).toInt()  
                                }
 
                   
                    else { 
-                  cangle=  ( (90 + atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
-                  canglepi= ( (90 - atan(rx/ry)*(180/PI)) * 1.0).roundToInt()  
+                  cangle=  ( (90 + atan(rx/ry)*(180/PI)) * 1.0).toInt()  
+                  canglepi= ( (90 - atan(rx/ry)*(180/PI)) * 1.0).toInt()  
                         }
 
                      
@@ -191,8 +191,8 @@ class DrawPencil @JvmOverloads constructor(
                 
                   cangle_[ci] = cangle 
                   canglepi_[ci] = canglepi 
-                 crx_[ci] = (rx * 1).roundToInt()  
-                 cry_[ci] = (ry * 1).roundToInt()  
+                 crx_[ci] = (rx * 1).toInt()    
+                 cry_[ci] = (ry * 1).toInt()    
                  xcrx_[j] = x
                  ycry_[j] = y
                  if (rx>=0) signx_[j] = 1
