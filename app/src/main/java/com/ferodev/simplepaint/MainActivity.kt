@@ -755,143 +755,33 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
       // initial value initialization needed for all arrays to begin new symbol on next step
 
 
-  
-    var context=0
-    var attrs=0
-    var defStyleAttr=0
-    private var isPencilIconClicked = false
-    private var isArrowIconClicked = false
-    private var isRectangleIconClicked = false
-    private var isCircleIconClicked = false
-    private var isPaletteIconClicked = false
- 
-    private var btn = 1  // button ft
-    // counters and temporaries
-    private var j = 0
-    private var i = 0
-    private var jj = 0  
-    private var jjj = 0  
     
-    private var iii = 0
-    private var k=0
-    private var kk=0
-    private var old=0
    
-    private var aaa = Array<String>(800){"0"} // text Array for result monitoring
-    private var aaacr = Array<String>(800){"0"} // text Array for result monitoring
+   
+    canglen_ = Array<Int>(100){0} 
+    canglenpi_ = Array<Int>(100){0} 
+    canglenn_ = Array<Int>(100){360} 
+    canglennpi_ = Array<Int>(100){360} 
+    rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+    
+    rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
+    rrx =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
+    rry =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
+    rangle =  Array(20) { Array(60){ Array<Int>(10){0} } }  // 
+    xdyrr =  Array(20) { Array(60){ Array<Int>(20){0} } }  // 
  
-    private var oldx = 0
-    private var oldy = 0 
-    private var oldxdy = 0
-    private var crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalization
-    private var crnx_ = Array<Int>(100){0}  // array of of crx_[j]  after n_normalization
-    private var crny_ = Array<Int>(100){0}  // array of of cry_[j] after n_normalization
-
-    private var crnnx_ = Array<Int>(100){0}
-    private var crnny_ = Array<Int>(100){0}
+    resmin =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    resminx =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    resminy =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     
+    iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
     
-    private var crnxdy_ = Array<Int>(100){0}  // array of of crxdy_[j] after n_normalizatio
-    
-    private var canglen_ = Array<Int>(100){0} 
-    private var canglenpi_ = Array<Int>(100){0} 
-    private var canglenn_ = Array<Int>(100){360} 
-    private var canglennpi_ = Array<Int>(100){360} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
-    
-    
-    private var cin = 0
-    private var cinn = 0
-    
-    
-    private var rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
-    private var rrx =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
-    private var rry =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
-    private var rangle =  Array(20) { Array(60){ Array<Int>(10){0} } }  // 
-    
-    private var xdyrr =  Array(20) { Array(60){ Array<Int>(20){0} } }  // 
-
+    res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
   
-    private var  resmin =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminx =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminy =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    
-    private var  aresmin = " "
-    private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
-    
-    private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
-   
-    private var min = 10 // temporary variable min = dir_res[jj][jjj] 
-    private var minres = 100000 // temporary variable  resmin[jj] [j] < minres
-    private var minres0 = 100000 
-    private var max=0   // res [jj] > max res temporary for max coincedence finding
-    private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
-                         // in array with min difference(coincedence), res1 - number  
-    private var res00 = 0 
-    private var res1 = 0 // look up
-    private var l = 0 // counter for different res0 in resnum array
-    private var resnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
-    private var asresnum = " "  
- 
-     
-    private var iresnum = 0 // result last operation
 
     
-    private var xiresnum = 0  // result last operation x or /
-    private var aresnum = " "                 // result each cycle adding as String
-    private var aresnum1 = ""  
-
-    
-    private var dec10=1
-    private var valuedec=0
-    private var shift1=0
-    private var sign=0
-    private var f=0
-    private var ff=0
-    //Array<Float>(800){0.0f}
-    private var ffr=0
-    private var xsign=1
-    private var xxsign=1
-    private var dot=0
-    private var repeat=0
-    
-    private var jdec = Array<Int>(60){0}
-    private var resxy=0
-  
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
+         
 
 
                  
