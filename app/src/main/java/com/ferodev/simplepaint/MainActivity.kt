@@ -705,7 +705,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
 // "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
             
-         textviewid.text =   "resnum[l]=" + resnum[l].toString()  + "  " + aresnum +  "  " + aresnum1 + "\n" +  
+         textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +  
                              aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19] +     
                               "\n" +  "aresmin=" + aresmin              
 
@@ -756,27 +756,48 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
     
+   j = 0
+   i = 0
+    jj = 0  
+    jjj = 0  
+    iii = 0
+    k=0
+    old=0
+
+
+
+
+
+
+
+
+                    
+
+                    
+                                 crx_ = Array<Int>(100){0}
+                                 cry_ = Array<Int>(100){0} 
+                            //     dir_cr =  Array<Int>(100){10} 
+       // dir_crn =  Array<Int>(20){10}  // array of of directions current drawpencil after n_normalization: compressing -delete repeated 0,1,2,3 and 10 inside
+       // dir_res =  Array(20){ Array<Int>(60){0} }  // array quantity of  difference between directions: current(crn_) and each of etalons (rr)
+        crn_ = Array<Int>(20){0}  // array of of crx_[j] + cry_[j] after n_normalization
+
+       // dir_resmin =  Array(800){ Array<Int>(2){20} }  // array of index dir_rr  for each etalon with min difference(coincedence): couple - dir_resmin[0][0]=jj; dir_resmin[0][1]=jjj
+            resmin =  Array(60){ Array<Int>(10){10} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+            aresmin = " "
+          iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+              res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
+
+              min = 10 // temporary variable min = dir_res[jj][jjj] 
+           minres = 100 // temporary variable  resmin[jj] [j] < minres
+   
+    max=0   // res [jj] > max res temporary for max coincedence finding
+    res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
+                         // in array with min difference(coincedence), res1 - number  
+    res1 = 0 // look up
+
    
    
-    canglen_ = Array<Int>(100){0} 
-    canglenpi_ = Array<Int>(100){0} 
-    canglenn_ = Array<Int>(100){360} 
-    canglennpi_ = Array<Int>(100){360} 
-    rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
-    rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
-    rrx =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
-    rry =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
-    rangle =  Array(20) { Array(60){ Array<Int>(10){0} } }  // 
-    xdyrr =  Array(20) { Array(60){ Array<Int>(20){0} } }  // 
- 
-    resmin =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    resminx =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    resminy =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    
-    iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
-    
-    res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
   
 
