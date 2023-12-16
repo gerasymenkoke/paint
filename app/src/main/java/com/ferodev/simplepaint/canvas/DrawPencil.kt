@@ -96,8 +96,8 @@ class DrawPencil @JvmOverloads constructor(
         var cangle1 = -1
         var ci = 0
         var jci = 0
-        var rx = 0
-        var ry = 0
+        var rx = 0f
+        var ry = 0f
         var rxf = 0.0f
         var ryf = 0.0f
         var cjj=0
@@ -165,7 +165,7 @@ class DrawPencil @JvmOverloads constructor(
                   
                  if(shift==1) { j=0; ci=0; shift=0 }
 
-                 res=(((w+h)/2)*0.3/100) // in percents of average resolutions
+                 res=(((w+h)/2)*0.3/100).toFloat() // in percents of average resolutions
         
            
              
@@ -179,7 +179,7 @@ class DrawPencil @JvmOverloads constructor(
                          
                   if ( ry==0)  {  
                   
-                  rxf=(rx/0.00001f)*(180/PI)
+                  rxf=(rx/0.00001f)*(180/PI).toFloat
                   cangle=    (90 + atan(rxf)).toInt()  
                   canglepi=  (90 - atan(rxf)).toInt()  
                                }
