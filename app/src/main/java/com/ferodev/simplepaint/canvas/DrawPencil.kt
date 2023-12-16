@@ -65,9 +65,9 @@ class DrawPencil @JvmOverloads constructor(
     private var y1 = 0f
     private var x = 0f
     private var y = 0f
-     private var rx1 = 1
-     private var ry1 = 1
-     private var res = 0.0
+     private var rx1 = 1f
+     private var ry1 = 1f
+     private var res = 0.0f
      private var N = 1
      
     
@@ -93,7 +93,7 @@ class DrawPencil @JvmOverloads constructor(
         var canglepi_ =Array<Int>(800){0}  
         var cangle = 0
         var canglepi = 0 
-        var cangle1 = -1.0
+        var cangle1 = -1
         var ci = 0
         var jci = 0
         var rx = 0
@@ -172,21 +172,21 @@ class DrawPencil @JvmOverloads constructor(
             if   ( (ci==1 && ( (x-x1)!=0f || (y-y1)!=0f)  ) || ((j<=799) && ( x!=0f || y!=0f) && (Math.abs(x-x1) > res)  && (Math.abs(y-y1) > res) ))
         {
                 
-                        rx= ( ( (x-x1)/1) * 1).toInt()  
-                        ry= ( ( (y-y1)/1) * 1).toInt()   
+                        rx= ( ( (x-x1)/1) * 1) 
+                        ry= ( ( (y-y1)/1) * 1)  
                   
                
                          
                   if ( ry==0)  {  
                   
-                  rxf=(rx/0.00001f)*(180/PI).toFloat()
+                  rxf=(rx/0.00001f)*(180/PI)
                   cangle=    (90 + atan(rxf)).toInt()  
                   canglepi=  (90 - atan(rxf)).toInt()  
                                }
 
                   
                    else { 
-                  rxf=(rx/ry).toFloat()
+                  rxf=(rx/ry)
                   cangle=   (90 + atan(rxf)*(180/PI)).toInt()  
                   canglepi= (90 - atan(rxf)).toInt()  
                         }
