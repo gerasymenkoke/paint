@@ -608,7 +608,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
              }  
  aresmin = aresmin + "|[" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
 
-            if ( minres < minres0)    { res00=res0 }
+            if ( minres < minres0)    { res00=res0; minres0=minres }
  jj=jj    
     
 } 
