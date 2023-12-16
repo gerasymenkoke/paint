@@ -122,11 +122,12 @@ class MainActivity : AppCompatActivity() {
     private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
-    private var minres = 100 // temporary variable  resmin[jj] [j] < minres
-   
+    private var minres = 100000 // temporary variable  resmin[jj] [j] < minres
+    private var minres0 = 100000 
     private var max=0   // res [jj] > max res temporary for max coincedence finding
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
                          // in array with min difference(coincedence), res1 - number  
+    private var res00 = 0 
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var resnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
@@ -563,7 +564,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
    jj=0
-   minres = 1000
+   minres0 = 100000
 while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
@@ -601,13 +602,15 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
                 
-      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj   }   
+      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   
                                            
            jjj=jjj+1
              }  
  aresmin = aresmin + "|[" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
-            
- jj=jj+1
+
+            if ( minres < minres0)    { res00=res0 }
+ jj=jj    
+    
 } 
 
       
@@ -616,7 +619,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 // output  result as string with diferent length adding new symbols each cycle
 
-      resnum[l]=res0 
+      resnum[l]=res00 
      if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
      
