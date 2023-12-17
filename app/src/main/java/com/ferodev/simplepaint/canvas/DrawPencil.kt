@@ -246,8 +246,10 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     override fun onDraw(canvas: Canvas) {
-        
-     mPaint.setColor(Color.YELLOW);
+
+
+        mPaint = new Paint();
+    mPaint.setColor(Color.YELLOW);
     // стиль Заливка
     mPaint.setStyle(Paint.Style.FILL);
     canvas.drawPaint(mPaint);
