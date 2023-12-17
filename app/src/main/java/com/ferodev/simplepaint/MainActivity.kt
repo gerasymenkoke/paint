@@ -640,7 +640,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                 if ( resnum[l]==11) { aresnum1 =  "-" } 
                                                 if ( resnum[l]==12) { aresnum1 =   "x" } 
                                                 if ( resnum[l]==13) { aresnum1 =   "/" } 
-                                                if ( resnum[l]==14) { if (l==0) {aresnum1 =   "= "}
+                                                if ( resnum[l]==14) { if (l==0) {aresnum1 =   "="}
                                                                       if (l>0)  {aresnum1 =   ""  } 
                                                                     }  
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
@@ -711,7 +711,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
      
-      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "="  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0;  ffr=0; xsign=1;  l=l+1; repeat=0 }
+      if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0;  ffr=0; xsign=1;  l=l+1; repeat=0 }
   
            
 
