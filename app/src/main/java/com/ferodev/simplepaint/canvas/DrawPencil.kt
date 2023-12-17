@@ -45,7 +45,9 @@ class DrawPencil @JvmOverloads constructor(
 
     
     private var mPath = MyPath()
-   
+    private var mPaths = LinkedHashMap<MyPath, PaintOptions>()
+    private var mLastPaths = LinkedHashMap<MyPath, PaintOptions>()
+    private var mPaintOptions = PaintOptions()
   
        
   
