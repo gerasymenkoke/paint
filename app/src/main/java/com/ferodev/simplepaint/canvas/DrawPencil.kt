@@ -149,13 +149,21 @@ class DrawPencil @JvmOverloads constructor(
         }
     }
 
+
+     fun clearCanvas() {
+        mLastPaths = mPaths.clone() as LinkedHashMap<MyPath, PaintOptions>
+        mPath.reset()
+        mPaths.clear()
+        invalidate()
+    }
+    
     private fun touchUp() {
         path.lineTo(mX, mY)
     }
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
 
-         mPath.reset()
+        
           
         
          x = event1.x
