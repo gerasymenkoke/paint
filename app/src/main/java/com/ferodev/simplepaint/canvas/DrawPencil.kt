@@ -44,7 +44,7 @@ class DrawPencil @JvmOverloads constructor(
 )  :  View(context, attrs, defStyleAttr) {
 
     
-
+    private var mPath = MyPath()
    
   
        
@@ -154,7 +154,8 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
-        
+
+         mPath.reset()
           
         
          x = event1.x
