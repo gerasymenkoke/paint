@@ -44,7 +44,7 @@ class DrawPencil @JvmOverloads constructor(
 )  :  View(context, attrs, defStyleAttr) {
 
     
-  
+  Canvas.drawColor(Color.WHITE)
    
   
        
@@ -153,7 +153,7 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
         
-          Canvas.drawColor(Color.WHITE)
+          
         
          x = event1.x
          y = event1.y  
