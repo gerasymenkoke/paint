@@ -136,7 +136,7 @@ class DrawPencil @JvmOverloads constructor(
         path.moveTo(x, y)
         mX = x
         mY = y
-       Canvas.drawColor(Color.BLACK)
+   
     }
 
     private fun touchMove(x: Float, y: Float) {
