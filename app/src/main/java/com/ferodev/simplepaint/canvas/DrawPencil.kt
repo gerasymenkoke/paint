@@ -247,7 +247,7 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         
-        canvas.drawColor(0, Mode.CLEAR)
+        canvas.drawColor(Color.WHITE)
 
         
         for (p in dataPencil) {
