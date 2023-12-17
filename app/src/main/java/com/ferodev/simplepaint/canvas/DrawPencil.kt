@@ -246,6 +246,8 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     override fun onDraw(canvas: Canvas) {
+        
+        canvas.drawColor(0, PorterDuff.Mode.CLEAR)
         for (p in dataPencil) {
             paintBrush.color = p.color
            canvas.drawPath(p.path!!, paintBrush)
