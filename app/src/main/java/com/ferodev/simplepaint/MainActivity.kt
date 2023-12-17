@@ -629,14 +629,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res00 
-     if ( resnum[l]<=9 ) { aresnum =  aresnum + " " + aresnum1 + " " + resnum[l].toString(); aresnum1="" ; repeat=0 } 
+     if ( resnum[l]<=9 ) { aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
      
      if( resnum[l] >= 10 && resnum[l] <= 15 ) {                                                            
-                                                if ( resnum[l]==10) { aresnum1 =   " + " } 
-                                                if ( resnum[l]==11) { aresnum1 =  " - " } 
-                                                if ( resnum[l]==12) { aresnum1 =   " x " } 
-                                                if ( resnum[l]==13) { aresnum1 =   " / " } 
+                                                if ( resnum[l]==10) { aresnum1 =   "+" } 
+                                                if ( resnum[l]==11) { aresnum1 =  "-" } 
+                                                if ( resnum[l]==12) { aresnum1 =   "x" } 
+                                                if ( resnum[l]==13) { aresnum1 =   "/" } 
                                                 if ( resnum[l]==14) { if (l==0) {aresnum1 =   "="}
                                                                       if (l>0)  {aresnum1 =   ""  } 
                                                                     }  
@@ -733,7 +733,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                              
                      
             
-      // initial value initialization needed for all arrays to begin new symbol on next step
+      // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program body
 
            
     
