@@ -495,6 +495,17 @@ j=0
 oldx = 0; oldy = 0;   
 oldxdy=1000
 
+    crnnx_ = Array<Int>(100){0}
+    crnny_ = Array<Int>(100){0}
+       
+    crnxdy_ = Array<Int>(100){0}  // array of of crxdy_[j] after n_normalizatio
+    
+    canglen_ = Array<Int>(100){0} 
+    canglenpi_ = Array<Int>(100){0} 
+    canglenn_ = Array<Int>(100){360} 
+    canglennpi_ = Array<Int>(100){360} 
+    rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+                  
      
         ci=ci-1 
         cin=ci
@@ -556,8 +567,11 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
 
+   aresmin = " "
 
-
+  resmin =  Array(20){ Array<Int>(60){0}
+  
+                    
    jj=0
    minres0 = 100000
 while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
