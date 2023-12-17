@@ -741,10 +741,10 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
          isPencilIconClicked = !isPencilIconClicked
 
-
+                                     }
      
                 
-                }
+            
                 
                 
                 else {
