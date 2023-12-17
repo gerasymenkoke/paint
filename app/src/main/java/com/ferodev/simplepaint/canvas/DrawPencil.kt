@@ -136,6 +136,7 @@ class DrawPencil @JvmOverloads constructor(
         path.moveTo(x, y)
         mX = x
         mY = y
+       Canvas.drawColor(Color.BLACK)
     }
 
     private fun touchMove(x: Float, y: Float) {
@@ -249,7 +250,7 @@ class DrawPencil @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
 
  
-   canvas.drawColor(0)
+      
 
         
         for (p in dataPencil) {
@@ -262,7 +263,7 @@ class DrawPencil @JvmOverloads constructor(
     fun undo() {
         if (dataPencil.size != 0) {
             dataPencil.removeAt(dataPencil.size - 1)
-            invalidate()
+            invalidate()  
         }
     }
     
