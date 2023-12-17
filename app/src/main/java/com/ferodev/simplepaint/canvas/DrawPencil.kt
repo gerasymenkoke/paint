@@ -70,8 +70,11 @@ class DrawPencil @JvmOverloads constructor(
      private var res = 0.0f
      private var N = 1
 
-     private Paint mPaint;
-    
+     private Paint mPaint
+     mPaint = new Paint()
+    mPaint.setColor(Color.YELLOW)
+    // стиль Заливка
+    mPaint.setStyle(Paint.Style.FILL)
      
     
      companion object {
@@ -250,11 +253,7 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
 
-
-        mPaint = new Paint();
-    mPaint.setColor(Color.YELLOW);
-    // стиль Заливка
-    mPaint.setStyle(Paint.Style.FILL);
+ 
     canvas.drawPaint(mPaint);
 
         
