@@ -765,6 +765,28 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      kk=0
      old=0
 
+crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalization
+     crnx_ = Array<Int>(100){0}  // array of of crx_[j]  after n_normalization
+     crny_ = Array<Int>(100){0}  // array of of cry_[j] after n_normalization
+
+     crnnx_ = Array<Int>(100){0}
+     crnny_ = Array<Int>(100){0}
+    
+    
+     crnxdy_ = Array<Int>(100){0}  // array of of crxdy_[j] after n_normalizatio
+    
+     canglen_ = Array<Int>(100){0} 
+     canglenpi_ = Array<Int>(100){0} 
+     canglenn_ = Array<Int>(100){360} 
+     canglennpi_ = Array<Int>(100){360} 
+     rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+
+
+
+
+
+
+                    
                     
 /*     aaa = Array<String>(800){"0"} // text Array for result monitoring
      aaacr = Array<String>(800){"0"} // text Array for result monitoring
