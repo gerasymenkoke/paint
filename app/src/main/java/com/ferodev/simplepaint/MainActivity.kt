@@ -700,46 +700,13 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
      
                 
-       // "  " + aresnum +  "  " + aresnum1 + "\n" +
-                //     "res=[" + res0 + "][" + res1 +  "]"   +  
-            //     " dir_resmin=" + min + ",    [" + dir_resmin[0][0] + "]" + "[" + dir_resmin[0][1] + "]" + "/[" + dir_resmin[1][0] + "]" + "[" + dir_resmin[1][1] + "]" + "/[" + dir_resmin[2][0] + "]" + "[" + dir_resmin[2][1] + "]"    +  "/[" + dir_resmin[3][0] + "]" + "[" + dir_resmin[3][1] + "]" +  
-// "\n" + "  ci=" + ci.toString() + "  cin=" + cin.toString() +  "  cinn=" + cinn.toString() +
+     
             
          textviewid.text =   "  " + aresnum +  "  " + aresnum1 + "\n" +  
                              aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19] +     
                               "\n" +  "aresmin=" + aresmin              
-
-
-/* aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19] +     
-                              "\n" +  "aresmin=" + aresmin+ 
-                              */
-
-                    
-                    //"  " + aresnum +  "  " + aresnum1  +
-                 //   "\n" +  aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + " " + aaa[10] + " " + aaa[11] + " " + aaa[12] + " " + aaa[13] + " " + aaa[14] + " " + aaa[15] + " " + aaa[16] + " " + aaa[17] + " " + aaa[18] + " " + aaa[19] + " " + aaa[20] + " " + aaa[21] + " " + aaa[22] + " " + aaa[23] + 
-                   
-                    //"\n"  + "crx;y" + crx_[0] +  ";" +  cry_[0] + "__" + crx_[1] +  ";" +  cry_[1] + "__" + crx_[2] +  ";" +  cry_[2] + "__" +
-                   
-
-
-                    
-  /*               " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + " ff=" + ff + " ffr=" + ffr + " dot=" + dot +  " repeat=" + repeat +
-                "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + " " + resnum[6] + " " + resnum[7] + " " + sresnum[8] + " " + sresnum[9] +
-                "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] + " " + sresnum[6] + " " + sresnum[7] +  " " + sresnum[8] + " " + sresnum[9] 
-      */              
-                //     "\n" +  "iresmin=" + iresmin[0] + " " + iresmin[1] + " " + iresmin[2] + " " + iresmin[3] +
-                //     "\n" +  "aresmin=" + aresmin +
-                //     "\n" +  "minres=" + minres 
-                   //    "\n" + "sresnum[l-2]=" + sresnum[l-3] +  "  sresnum[l]=" + sresnum[l-1]    
-                    
-
-
-       
-
-
-                    
-                    //aaacr[0] + " " +aaacr[40] + " " + aaacr[80] + " " + aaacr[120] + " " + aaacr[160] + " " + aaacr[200] + " " + aaacr[240] + " " + aaacr[280] + " " + aaacr[320] + " " + aaacr[360]  +
-                      //  " " + aaacr[400] + " " + aaacr[440] + " " + aaacr[460] + " " + aaacr[500] + " " + aaacr[540] + " " + aaacr[580] + " " + aaacr[640] + " " + aaacr[680] + " " + aaacr[720] + " " + aaacr[760]      
+        
+                  
 
                     l=l+1
                     
@@ -753,7 +720,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                      
             
       // initial value initialization needed for all arrays to begin new symbol on next step
-
+/*
 
      j = 0
      i = 0
@@ -765,7 +732,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      kk=0
      old=0
 
-crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalization
+     crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalization
      crnx_ = Array<Int>(100){0}  // array of of crx_[j]  after n_normalization
      crny_ = Array<Int>(100){0}  // array of of cry_[j] after n_normalization
 
@@ -788,7 +755,7 @@ crn_ = Array<Int>(100){0}  // array of of crx_[j] + cry_[j] after n_normalizatio
 
                     
                     
-/*     aaa = Array<String>(800){"0"} // text Array for result monitoring
+    aaa = Array<String>(800){"0"} // text Array for result monitoring
      aaacr = Array<String>(800){"0"} // text Array for result monitoring
  
      oldx = 0
