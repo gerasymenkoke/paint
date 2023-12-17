@@ -153,7 +153,7 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onTouchEvent(event1: MotionEvent): Boolean {
         
-          canvas.drawColor(Color.WHITE)
+          Canvas.drawColor(Color.WHITE)
         
          x = event1.x
          y = event1.y  
