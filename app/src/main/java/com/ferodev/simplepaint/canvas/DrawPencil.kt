@@ -44,7 +44,7 @@ class DrawPencil @JvmOverloads constructor(
 )  :  View(context, attrs, defStyleAttr) {
 
     
-  Canvas.drawColor(Color.WHITE)
+
    
   
        
@@ -247,7 +247,10 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         
-     
+     mPaint.setColor(Color.YELLOW);
+    // стиль Заливка
+    mPaint.setStyle(Paint.Style.FILL);
+    canvas.drawPaint(mPaint);
 
         
         for (p in dataPencil) {
