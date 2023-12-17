@@ -1,4 +1,4 @@
-package com.divyanshu.draw.widget
+package com.ferodev.simplepaint.canvas
 
 import android.graphics.Path
 import java.io.Serializable
