@@ -69,6 +69,9 @@ class DrawPencil @JvmOverloads constructor(
      private var ry1 = 1f
      private var res = 0.0f
      private var N = 1
+
+     private Paint mPaint;
+    
      
     
      companion object {
