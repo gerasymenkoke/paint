@@ -755,7 +755,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
       // initial value initialization needed for all arrays to begin new symbol on next step
 
 
-j = 0
+     j = 0
      i = 0
      jj = 0  
      jjj = 0  
@@ -764,8 +764,9 @@ j = 0
      k=0
      kk=0
      old=0
-   
-     aaa = Array<String>(800){"0"} // text Array for result monitoring
+
+                    
+/*     aaa = Array<String>(800){"0"} // text Array for result monitoring
      aaacr = Array<String>(800){"0"} // text Array for result monitoring
  
      oldx = 0
@@ -848,7 +849,7 @@ j = 0
      jdec = Array<Int>(60){0}
      resxy=0
 
-
+*/
 
 
 
