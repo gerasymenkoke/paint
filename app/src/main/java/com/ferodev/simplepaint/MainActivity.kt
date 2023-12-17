@@ -491,6 +491,8 @@ class MainActivity : AppCompatActivity() {
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
+                    DrawPencil.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+                   //DrawPencil.drawColor(Color.WHITE)
                     
                   
 i=0
