@@ -569,7 +569,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
    aresmin = " "
 
-  resmin =  Array(20){ Array<Int>(60){0}
+  resmin =  Array(20){ Array<Int>(60){0} }
   
                     
    jj=0
