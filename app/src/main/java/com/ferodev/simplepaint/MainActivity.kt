@@ -504,7 +504,7 @@ oldxdy=1000
     canglenpi_ = Array<Int>(100){0} 
     canglenn_ = Array<Int>(100){360} 
     canglennpi_ = Array<Int>(100){360} 
-    rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+   
                   
      
         ci=ci-1 
