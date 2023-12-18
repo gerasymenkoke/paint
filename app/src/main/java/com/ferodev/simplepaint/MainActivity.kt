@@ -40,6 +40,8 @@ import kotlin.math.roundToInt
 import kotlin.math.sign
 import android.util.DisplayMetrics
 
+import com.ferodev.simplepaint.canvas.DrawPencil
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -491,7 +493,11 @@ class MainActivity : AppCompatActivity() {
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
-             
+
+
+                   drawPencil.clearCanvas()
+
+                    
                     
                     
 //                    drawPencil.drawColor(Color.TRANSPARENT, Mode.MULTIPLY);
