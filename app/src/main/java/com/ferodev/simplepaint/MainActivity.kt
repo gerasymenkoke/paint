@@ -155,6 +155,17 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(60){0}
     private var resxy=0
+
+    
+       private fun toggleDrawTools(view: View, showView: Boolean = true) {
+        if (showView){
+            view.animate().translationY((0).toPx)
+        }else{
+            view.animate().translationY((56).toPx)
+        }
+    }
+
+
     
        
          companion object {
@@ -491,13 +502,6 @@ class MainActivity : AppCompatActivity() {
 
 
    
-       private fun toggleDrawTools(view: View, showView: Boolean = true) {
-        if (showView){
-            view.animate().translationY((0).toPx)
-        }else{
-            view.animate().translationY((56).toPx)
-        }
-    }
 
 
    
