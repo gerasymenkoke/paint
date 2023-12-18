@@ -487,7 +487,18 @@ class MainActivity : AppCompatActivity() {
      rcanglenn_[15][2]=arrayOf<Int>(   108, -87,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
      rcanglenn_[15][3]=arrayOf<Int>(   -86, 360,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
      rcanglenn_[15][4]=arrayOf<Int>(   122, 106,  -87, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
+
+
+
    
+       private fun toggleDrawTools(view: View, showView: Boolean = true) {
+        if (showView){
+            view.animate().translationY((0).toPx)
+        }else{
+            view.animate().translationY((56).toPx)
+        }
+    }
+
 
    
       
@@ -500,15 +511,12 @@ class MainActivity : AppCompatActivity() {
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
-
-
                    drawPencil.clearCanvas()
                    toggleDrawTools(drawPencil,false)
+                                        
+                 
                     
-                    
-                    
-//                    drawPencil.drawColor(Color.TRANSPARENT, Mode.MULTIPLY);
-//           DrawPencil.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+
                      
                   
 i=0
