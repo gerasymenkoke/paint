@@ -158,6 +158,14 @@ class DrawPencil @JvmOverloads constructor(
         mPaths.clear()
         invalidate()
     }
+
+     fun toggleEraser() {
+        isEraserOn = !isEraserOn
+        mPaintOptions.isEraserOn = isEraserOn
+        invalidate()
+    }
+
+
     
     private fun touchUp() {
         path.lineTo(mX, mY)
