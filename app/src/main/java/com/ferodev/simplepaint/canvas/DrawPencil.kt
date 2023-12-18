@@ -71,7 +71,7 @@ class DrawPencil @JvmOverloads constructor(
      private var ry1 = 1f
      private var res = 0.0f
      private var N = 1
-
+     var isEraserOn = false
    
     
      companion object {
