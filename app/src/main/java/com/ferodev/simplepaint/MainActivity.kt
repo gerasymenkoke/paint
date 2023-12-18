@@ -42,6 +42,9 @@ import android.util.DisplayMetrics
 
 import com.ferodev.simplepaint.canvas.DrawPencil
 
+import android.content.res.Resources
+
+
 
 
 class MainActivity : AppCompatActivity() {
