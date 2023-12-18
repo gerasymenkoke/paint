@@ -503,7 +503,7 @@ class MainActivity : AppCompatActivity() {
 
 
                    drawPencil.clearCanvas()
-                   toggleDrawTools(draw_tools,false)
+                   toggleDrawTools(drawPencil,false)
                     
                     
                     
