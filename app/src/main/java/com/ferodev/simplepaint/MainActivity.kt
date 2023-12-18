@@ -157,7 +157,7 @@ class MainActivity : AppCompatActivity() {
     private var resxy=0
 
     private val Int.toPx: Float
-
+        get() = (this * Resources.getSystem().displayMetrics.density)
     
     
        private fun toggleDrawTools(view: View, showView: Boolean = true) {
