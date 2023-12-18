@@ -156,6 +156,9 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(60){0}
     private var resxy=0
 
+    private val Int.toPx: Float
+
+    
     
        private fun toggleDrawTools(view: View, showView: Boolean = true) {
         if (showView){
