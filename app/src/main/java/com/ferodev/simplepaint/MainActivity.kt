@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
     rcanglenn_[0][16]=arrayOf<Int>(  80,  63,  43,  13,  173, 135, 118,   98,  -85,  -69, -44,  -15, -172, -148, -126,-110,  84, 360, 360, 360  ) 
     rcanglenn_[0][17]=arrayOf<Int>( -57, -76,  96, 114,  132,  16,  59,   76,  -95, -111,-145,  -13,  -40,  360,  360, 360, 360, 360, 360, 360  ) 
     rcanglenn_[0][18]=arrayOf<Int>( -26, -43, -59, -75,   95, 110, 131,  161,    9,   30,  58,   75,  -93, -134, -168,  -9, 360, 360, 360, 360  ) 
-
+    rcanglenn_[0][19]=arrayOf<Int>( -59, -74,  94, 113,  131,   5,  46,   68,  -91, -146,  -7,  -31,  -56,  -75,  360, 360, 360, 360, 360, 360  ) 
 
 
 
@@ -234,8 +234,11 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[1][10]=arrayOf<Int>(  46,   65, -140, -74, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )
    rcanglenn_[1][11]=arrayOf<Int>(  42,   63,  -43, -79, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )
    rcanglenn_[1][12]=arrayOf<Int>(  51,   66,  -43, -70, -86,  91, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
+   rcanglenn_[1][13]=arrayOf<Int>(  43,   60,  -36, -74, 114, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
+   rcanglenn_[1][12]=arrayOf<Int>(  37,   55,  105, -83, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )
 
 
+   
    
      
 // Filling sample array 
@@ -445,8 +448,12 @@ class MainActivity : AppCompatActivity() {
   rcanglenn_[12][8]=arrayOf<Int>(    48,-179, 137,  122, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
   rcanglenn_[12][9]=arrayOf<Int>(   132, 115,  83,  -52, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
   rcanglenn_[12][10]=arrayOf<Int>(  129, -93, -53,  -70, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
+ 
 
 
+
+
+  
       
 // Filling sample array 
 // /
@@ -496,7 +503,7 @@ class MainActivity : AppCompatActivity() {
 
 
                    drawPencil.clearCanvas()
-
+                   toggleDrawTools(draw_tools,false)
                     
                     
                     
@@ -629,7 +636,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                            
            jjj=jjj+1
              }  
- aresmin = aresmin + "|[" + res0.toString() + "]" + "[" + res1.toString() + "]=" + minres.toString()
+ aresmin = aresmin + " [" + res0.toString() +  "," + res1.toString() + "]=" + minres.toString()
 
             if ( minres < minres0)    { res00=res0; minres0=minres }
  jj=jj + 1    
