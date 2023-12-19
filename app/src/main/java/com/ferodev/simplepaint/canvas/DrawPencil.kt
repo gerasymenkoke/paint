@@ -71,8 +71,9 @@ class DrawPencil @JvmOverloads constructor(
 
 
      private lateinit var extraCanvas: Canvas
+     private lateinit var extraBitmap: Bitmap
      private val backgroundColor = ResourcesCompat.getColor(resources, R.color.colorBackground, null)
-
+      
 
 
     
