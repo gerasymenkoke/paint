@@ -44,10 +44,6 @@ class DrawPencil @JvmOverloads constructor(
 )  :  View(context, attrs, defStyleAttr) {
 
     
-    private var mPath = MyPath()
-    private var mPaths = LinkedHashMap<MyPath, PaintOptions>()
-    private var mLastPaths = LinkedHashMap<MyPath, PaintOptions>()
-    private var mPaintOptions = PaintOptions()
   
        
   
@@ -152,18 +148,7 @@ class DrawPencil @JvmOverloads constructor(
     }
 
 
-     fun clearCanvas() {
-        mLastPaths = mPaths.clone() as LinkedHashMap<MyPath, PaintOptions>
-        mPath.reset()
-        mPaths.clear()
-        invalidate()
-    }
-
-     fun toggleEraser() {
-        isEraserOn = !isEraserOn
-        mPaintOptions.isEraserOn = isEraserOn
-        invalidate()
-    }
+     
 
 
     
