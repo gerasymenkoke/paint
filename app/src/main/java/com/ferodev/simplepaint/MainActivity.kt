@@ -159,17 +159,9 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(60){0}
     private var resxy=0
 
-    private val Int.toPx: Float
-        get() = (this * Resources.getSystem().displayMetrics.density)
+ 
     
-    
-       private fun toggleDrawTools(view: View, showView: Boolean = true) {
-        if (showView){
-            view.animate().translationY((0).toPx)
-        }else{
-            view.animate().translationY((56).toPx)
-        }
-    }
+     
 
 
     
@@ -521,9 +513,7 @@ class MainActivity : AppCompatActivity() {
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
 
-                   drawPencil.clearCanvas()
-                   toggleDrawTools(drawPencil,false)
-                                        
+                 
                  
                     
 
