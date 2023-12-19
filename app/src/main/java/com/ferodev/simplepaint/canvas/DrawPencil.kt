@@ -253,11 +253,7 @@ class DrawPencil @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
 
- 
-      
-
-        
-        for (p in dataPencil) {
+           for (p in dataPencil) {
             paintBrush.color = p.color
            canvas.drawPath(p.path!!, paintBrush)
             invalidate()
@@ -271,6 +267,15 @@ class DrawPencil @JvmOverloads constructor(
         }
     }
     
+
+fun clear() {
+        extraCanvas.drawColor(backgroundColor)
+        path.reset()
+        extraBitmap.eraseColor(backgroundColor)
+        invalidate()
+
+
+    }
        
 
 }
