@@ -75,9 +75,7 @@ class DrawPencil @JvmOverloads constructor(
      var isEraserOn = false
 
 
-     private lateinit var extraCanvas: Canvas
-     private lateinit var extraBitmap: Bitmap
-     private val backgroundColor = ResourcesCompat.getColor(resources, R.color.colorBackground, null)
+   
       
 
 
@@ -281,14 +279,7 @@ class DrawPencil @JvmOverloads constructor(
     }
     
 
-fun clear() {
-        extraCanvas.drawColor(backgroundColor)
-        path.reset()
-        extraBitmap.eraseColor(backgroundColor)
-        invalidate()
 
-
-    }
        
 
 }
