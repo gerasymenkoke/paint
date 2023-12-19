@@ -183,7 +183,7 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-
+       
         val displayMetrics = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(displayMetrics)
  
@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity() {
         h = displayMetrics.heightPixels
 
    
-
+              
         
         binding.apply {
 
