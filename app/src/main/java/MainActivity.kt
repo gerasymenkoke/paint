@@ -8,29 +8,29 @@ import android.view.View
 import android.view.MotionEvent
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import databinding.ActivityMainBinding
+import my.databinding.ActivityMainBinding
 import android.text.Editable
 import android.text.TextWatcher
 import android.database.ContentObserver 
-import canvas.DrawPencil.Companion.xxx
-import canvas.DrawPencil.Companion.yyy
-import canvas.DrawPencil.Companion.zzz
-import canvas.DrawPencil.Companion.rxx
-import canvas.DrawPencil.Companion.ryy
-import canvas.DrawPencil.Companion.rx
-import canvas.DrawPencil.Companion.ry
-import canvas.DrawPencil.Companion.crx_
-import canvas.DrawPencil.Companion.cry_
-import canvas.DrawPencil.Companion.xcrx_
-import canvas.DrawPencil.Companion.ycry_
-import canvas.DrawPencil.Companion.signx_
-import canvas.DrawPencil.Companion.signy_
+import my.canvas.DrawPencil.Companion.xxx
+import my.canvas.DrawPencil.Companion.yyy
+import my.canvas.DrawPencil.Companion.zzz
+import my.canvas.DrawPencil.Companion.rxx
+import my.canvas.DrawPencil.Companion.ryy
+import my.canvas.DrawPencil.Companion.rx
+import my.canvas.DrawPencil.Companion.ry
+import my.canvas.DrawPencil.Companion.crx_
+import my.canvas.DrawPencil.Companion.cry_
+import my.canvas.DrawPencil.Companion.xcrx_
+import my.canvas.DrawPencil.Companion.ycry_
+import my.canvas.DrawPencil.Companion.signx_
+import my.canvas.DrawPencil.Companion.signy_
 
 
-import canvas.DrawPencil.Companion.crxdy_
-import canvas.DrawPencil.Companion.cangle_
-import canvas.DrawPencil.Companion.canglepi_
-import canvas.DrawPencil.Companion.ci
+import my.canvas.DrawPencil.Companion.crxdy_
+import my.canvas.DrawPencil.Companion.cangle_
+import my.canvas.DrawPencil.Companion.canglepi_
+import my.canvas.DrawPencil.Companion.ci
 
 
 
@@ -40,9 +40,8 @@ import kotlin.math.roundToInt
 import kotlin.math.sign
 import android.util.DisplayMetrics
 
-import canvas.DrawPencil
+import my.canvas.DrawPencil
 
-import android.content.res.Resources
 
 
 
