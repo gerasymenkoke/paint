@@ -68,7 +68,14 @@ class DrawPencil @JvmOverloads constructor(
      private var res = 0.0f
      private var N = 1
      var isEraserOn = false
-   
+
+
+     private lateinit var extraCanvas: Canvas
+
+
+
+
+    
     
      companion object {
         var xxx = "99"
