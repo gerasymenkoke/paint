@@ -39,6 +39,10 @@ import kotlin.math.PI
 import androidx.core.content.res.ResourcesCompat
 
 
+import android.graphics.*
+import android.view.MotionEvent
+import android.view.ViewConfiguration
+
 
 
 class DrawPencil @JvmOverloads constructor(
