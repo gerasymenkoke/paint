@@ -1,4 +1,4 @@
-package .
+package my
 
 import android.graphics.Color
 import android.graphics.Paint
