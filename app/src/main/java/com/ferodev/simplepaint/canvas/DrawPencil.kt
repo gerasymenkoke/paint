@@ -40,7 +40,6 @@ import androidx.core.content.res.ResourcesCompat
 
 
 import android.graphics.*
-import android.view.MotionEvent
 import android.view.ViewConfiguration
 
 
