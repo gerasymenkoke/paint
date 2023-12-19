@@ -21,15 +21,15 @@ import android.graphics.Path
 
 
 
-import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
-import com.ferodev.simplepaint.MainActivity.Companion.path
-import com.ferodev.simplepaint.MainActivity.Companion.shift
-import com.ferodev.simplepaint.MainActivity.Companion.w
-import com.ferodev.simplepaint.MainActivity.Companion.h
+import MainActivity.Companion.currentBrush
+import MainActivity.Companion.path
+import MainActivity.Companion.shift
+import MainActivity.Companion.w
+import MainActivity.Companion.h
 
 
-import com.ferodev.simplepaint.cons.Pencil
-import com.ferodev.simplepaint.databinding.ActivityMainBinding
+import cons.Pencil
+import databinding.ActivityMainBinding
 
 import kotlin.math.roundToInt
 import kotlin.math.abs
