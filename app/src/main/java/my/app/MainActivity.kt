@@ -223,7 +223,7 @@ class MainActivity : AppCompatActivity() {
     rcanglenn_[0][20]=arrayOf<Int>( -73,  94, 117, 134,  151,   6,  52,   70,  -93, -114,-147, -173,  -11,  -32,  -53, 360, 360, 360, 360, 360  )
     rcanglenn_[0][21]=arrayOf<Int>( -46, -62, -84,  94,  114, 136,   8,   40,   55,   74, -92, -131, -162,   -6,  -25, 360, 360, 360, 360, 360  ) 
     rcanglenn_[0][22]=arrayOf<Int>( -41, -61, -80,  93,  108, 134, 156,    9,   39,   55,  78,  -98, -120, -136, -152, -13, -45, 360, 360, 360  ) 
-    
+    rcanglenn_[0][23]=arrayOf<Int>( -55, -70,  94, 111,    8,  44,  61,  -94, -120, -140,-168,   -6,  360,  360,  360, 360, 360, 360, 360, 360  )
 
 
 
@@ -772,7 +772,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
     
   
 
-         isPencilIconClicked = !isPencilIconClicked
+       //  isPencilIconClicked = !isPencilIconClicked
 
                                      }
      
