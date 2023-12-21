@@ -783,8 +783,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 else {
                    
                      //textviewid.text =   "shift=" + shift 
-                      btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                      btnPencil.setBackgroundResource(R.drawable.background_card)
+                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
 
                      }
             }
