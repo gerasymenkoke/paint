@@ -516,7 +516,7 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked     
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
-
+                
                  
                  
                     
@@ -757,14 +757,20 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
                     l=l+1
                     
-                    shift=1
-                    
+                    shift=shift+1
+
+                    if (shift==1) {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                      drawPencil.visibility = View.VISIBLE
-                             
-                     
+                                  }
+
+                     if (shift==2) {
+                         shift=0
+                         btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                         btnPencil.setBackgroundResource(R.drawable.background_card)
+                                  }
             
       // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program body
 
