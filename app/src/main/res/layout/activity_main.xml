@@ -83,7 +83,7 @@
         app:layout_constraintTop_toBottomOf="@+id/action"  >
 
 
-        <com.ferodev.simplepaint.canvas.DrawPencil
+        <my.app.canvas.DrawPencil
             android:id="@+id/draw_pencil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
