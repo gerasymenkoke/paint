@@ -768,8 +768,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
                      if (shift==2) {
                          shift=0
-                         btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                         btnPencil.setBackgroundResource(R.drawable.background_card)
+                     btnPencil.setBackgroundResource(R.color.white)
                                   }
             
       // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program body
