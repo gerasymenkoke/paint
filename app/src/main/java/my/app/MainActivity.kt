@@ -541,7 +541,7 @@ class MainActivity : AppCompatActivity() {
                    
                                   }
                 
-                    else (shift==0) {
+                    else  {
                         shift=1
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
