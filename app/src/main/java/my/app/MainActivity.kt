@@ -775,8 +775,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
                      if (ll==2) {
                          ll=0
-                      
-                         removeView(drawPencil)
+                   
+                         removeView(R.drawable.ic_selected_pencil)
                          
                       // btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                       // btnPencil.setBackgroundResource(R.drawable.background_card)
