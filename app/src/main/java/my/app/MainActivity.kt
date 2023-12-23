@@ -387,13 +387,7 @@ class MainActivity : AppCompatActivity() {
 
 
    
-    else {
-                   
-                     //textviewid.text =   "shift=" + shift 
-                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
 
-                     }
 // Filling sample array 
 // 8
       jj = 8                 
