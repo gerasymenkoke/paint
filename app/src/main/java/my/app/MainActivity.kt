@@ -533,7 +533,7 @@ class MainActivity : AppCompatActivity() {
           //      if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                  shift=shift+1
                     
-                     if (shift==2) {
+                     if (shift==1) {
                          shift=0
                    
                        
@@ -541,7 +541,8 @@ class MainActivity : AppCompatActivity() {
                    
                                   }
                 
-                    if (shift==1) {
+                    else (shift==0) {
+                        shift=1
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
