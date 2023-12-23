@@ -784,7 +784,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                          ll=0
                    
                        
-                        drawPencil.visibility = View.REMOVE
+                        drawPencil.visibility = View.INVISIBLE
                          
                       // btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                       // btnPencil.setBackgroundResource(R.drawable.background_card)
