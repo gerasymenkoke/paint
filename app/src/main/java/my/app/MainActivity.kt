@@ -43,7 +43,13 @@ import my.app.canvas.DrawPencil.Companion.signy_
 
 import my.app.canvas.DrawPencil.Companion.crxdy_
 import my.app.canvas.DrawPencil.Companion.cangle_
-import my.app.canvas.DrawPencil.Companion.canglepi_
+import my.app.canvas.DrawPencil.Companion.canglepi_ else {
+                   
+                     //textviewid.text =   "shift=" + shift 
+                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
+
+                     }
 import my.app.canvas.DrawPencil.Companion.ci
 
 
@@ -531,7 +537,24 @@ class MainActivity : AppCompatActivity() {
                 isPencilIconClicked = !isPencilIconClicked     
      
                 if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+                 shift=shift+1
+                    
+                     if (shift==2) {
+                         shift=0
+                   
+                       
+                        drawPencil.visibility = View.GONE
+                   
+                                  }
                 
+                    if (shift==1) {
+                    btnPencil.setImageResource(R.drawable.ic_selected_pencil)
+                    btnPencil.setBackgroundResource(R.drawable.background_cards)
+                  
+                    drawPencil.visibility = View.VISIBLE
+                                  
+
+            
                  
                  
                     
@@ -770,35 +793,12 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         
                   
 
-                    shift=shift+1
-                    
-                
-                    if (shift==1) {
-                    btnPencil.setImageResource(R.drawable.ic_selected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_cards)
-                  
-                    drawPencil.visibility = View.VISIBLE
-                                  }
-
-                     if (shift==2) {
-                         shift=0
                    
-                       
-                        drawPencil.visibility = View.GONE
-                         
-                      // btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                      // btnPencil.setBackgroundResource(R.drawable.background_card)
-                      // drawPencil.visibility = View.GONE  
-                                  }
-            
       // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program bodyimport android.view.View
-
-
-           
-    
-  
-
-       //  isPencilIconClicked = !isPencilIconClicked
+   
+      
+                                     }
+      
 
                                      }
      
@@ -806,13 +806,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
                 
                 
-                else {
-                   
-                     //textviewid.text =   "shift=" + shift 
-                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
-
-                     }
+                
             }
 
               
