@@ -777,14 +777,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
-                    drawPencil.visibility = View.GONE
+                    drawPencil.visibility = View.VISIBILITY
                                   }
 
                      if (shift==2) {
                          shift=0
                    
                        
-                        drawPencil.visibility = View.INVISIBLE
+                        drawPencil.visibility = View.GONE
                          
                       // btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                       // btnPencil.setBackgroundResource(R.drawable.background_card)
