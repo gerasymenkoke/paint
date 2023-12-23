@@ -387,7 +387,13 @@ class MainActivity : AppCompatActivity() {
 
 
    
-    
+    else {
+                   
+                     //textviewid.text =   "shift=" + shift 
+                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
+                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
+
+                     }
 // Filling sample array 
 // 8
       jj = 8                 
@@ -530,7 +536,7 @@ class MainActivity : AppCompatActivity() {
           // Untuk mengganti dari false menjadi true
                 isPencilIconClicked = !isPencilIconClicked     
      
-                if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
+          //      if (isPencilIconClicked) { // ini untuk mengecek apakah isPencilIconClicked sudah true valuenya
                  shift=shift+1
                     
                      if (shift==2) {
@@ -794,7 +800,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                      }
       
 
-                                     }
+                              //       }
      
                 
             
