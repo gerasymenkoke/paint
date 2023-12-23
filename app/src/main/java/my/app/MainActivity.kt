@@ -542,13 +542,13 @@ class MainActivity : AppCompatActivity() {
                                   }
                 
                     else  {
-                        shift=1
+                       
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                     drawPencil.visibility = View.VISIBLE
                                   
-
+                          shift=1
             
                  
                  
