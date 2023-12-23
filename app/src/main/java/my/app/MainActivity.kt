@@ -43,13 +43,7 @@ import my.app.canvas.DrawPencil.Companion.signy_
 
 import my.app.canvas.DrawPencil.Companion.crxdy_
 import my.app.canvas.DrawPencil.Companion.cangle_
-import my.app.canvas.DrawPencil.Companion.canglepi_ else {
-                   
-                     //textviewid.text =   "shift=" + shift 
-                    //  btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
-                   //   btnPencil.setBackgroundResource(R.drawable.background_card)
-
-                     }
+import my.app.canvas.DrawPencil.Companion.canglepi_ 
 import my.app.canvas.DrawPencil.Companion.ci
 
 
