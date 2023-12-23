@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity() {
     private var res00 = 0 
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
+    private var ll = 0
     private var resnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
     private var sresnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
     private var asresnum = " "  
@@ -755,18 +756,18 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         
                   
 
-                    l=l+1
+                    ll=ll+1
                     
                 
-                    if (l==1) {
+                    if (ll==1) {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                     drawPencil.visibility = View.VISIBLE
                                   }
 
-                     if (l==2) {
-                         l=0
+                     if (ll==2) {
+                         ll=0
                        btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                        btnPencil.setBackgroundResource(R.drawable.background_card)
                        drawPencil.visibility = View.GONE  
