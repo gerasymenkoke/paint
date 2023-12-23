@@ -772,14 +772,15 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                      if (ll==2) {
                          ll=0
                       
-                        drawPencil.removeAllViews()
+                         removeView(drawPencil)
                          
                       // btnPencil.setImageResource(R.drawable.ic_unselected_pencil)
                       // btnPencil.setBackgroundResource(R.drawable.background_card)
                       // drawPencil.visibility = View.GONE  
                                   }
             
-      // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program body
+      // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program bodyimport android.view.View
+import android.view.ViewGroup
 
            
     
