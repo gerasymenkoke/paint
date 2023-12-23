@@ -12,6 +12,22 @@ import android.view.LayoutInflater
 import android.widget.*
 
 
+import android.graphics.Bitmap
+import android.net.Uri
+import android.support.v7.app.AppCompatActivity
+
+import android.view.inputmethod.EditorInfo
+import android.webkit.WebChromeClient
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import android.widget.FrameLayout
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.browser_toolbar.*
+
+
+
+
+
 import android.view.MotionEvent
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
