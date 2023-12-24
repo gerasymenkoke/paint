@@ -184,6 +184,9 @@ class DrawPencil @JvmOverloads constructor(
                     // shift=0 
                               }
 
+else {
+
+                 
                  res=(((w+h)/2)*0.3/100).toFloat() // in percents of average resolutions
         
            
@@ -278,6 +281,8 @@ class DrawPencil @JvmOverloads constructor(
             dataPencil.removeAt(dataPencil.size - 1)
             invalidate()  
         }
+    }
+
     }
     
 
