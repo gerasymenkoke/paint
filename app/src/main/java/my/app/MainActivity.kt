@@ -175,7 +175,7 @@ class MainActivity : AppCompatActivity() {
     
     private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
     private const val DEFAULT_PAINT_COLOR = Color.BLACK
-    
+    private const val DEFAULT_BRUSH_SIZE = 8f
      
      var paintColor = DEFAULT_PAINT_COLOR
         set(value) {
