@@ -52,8 +52,8 @@ class DrawPencil @JvmOverloads constructor(
 
        
     
-    private const  DEFAULT_PAINT_COLOR = Color.BLACK
-    private const  DEFAULT_BRUSH_SIZE = 8f
+    private val DEFAULT_PAINT_COLOR = Color.BLACK
+    private val  DEFAULT_BRUSH_SIZE = 8f
 
     private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
     
