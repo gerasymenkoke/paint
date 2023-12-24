@@ -55,7 +55,7 @@ import kotlin.math.sign
 import android.util.DisplayMetrics
 
 import my.app.canvas.DrawPencil
-import my.app.canvas.SerializablePaint
+
 
 
 
@@ -172,30 +172,7 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(60){0}
     private var resxy=0
-    
-    private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
-    private const val DEFAULT_PAINT_COLOR = Color.BLACK
-    private const val DEFAULT_BRUSH_SIZE = 8f
-     
-     var paintColor = DEFAULT_PAINT_COLOR
-        set(value) {
-            field = value
-            invalidate()
-            drawPaint.color = value
-        }
-
-       var brushSize: Float = DEFAULT_BRUSH_SIZE
-        set(value) {
-            field = value
-            drawPaint.strokeWidth = value
-        }
-
-
-  var isErasing = false
-        set(value) {
-            field = value
-            drawPaint.isErasing = value
-        }
+ 
 
 
 
