@@ -545,7 +545,7 @@ class MainActivity : AppCompatActivity() {
                          
                          shift=0
 
-                       
+                          drawPencil = null
                        
                        // drawPencil.visibility = View.GONE
                    
