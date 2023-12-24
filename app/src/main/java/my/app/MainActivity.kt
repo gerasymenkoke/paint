@@ -534,10 +534,12 @@ class MainActivity : AppCompatActivity() {
              //    shift=shift+1
                     
                      if (shift==1) {
-                         cangle_ = Array<Int>(800){0} 
-                         canglepi_ = Array<Int>(800){0} 
-                         crx_ = Array<Int>(800){0}
-                         cry_ = Array<Int>(800){0}
+                     //    cangle_ = Array<Int>(800){0} 
+                     //    canglepi_ = Array<Int>(800){0} 
+                     //    crx_ = Array<Int>(800){0}
+                     //    cry_ = Array<Int>(800){0}
+
+
                          
                          shift=0
                    
