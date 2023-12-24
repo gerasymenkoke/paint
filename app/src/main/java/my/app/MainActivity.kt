@@ -551,7 +551,7 @@ class MainActivity : AppCompatActivity() {
                 
                        else {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
-                    btnPencil.setBackgroundResource(R.drawable.background_cards)
+               //     btnPencil.setBackgroundResource(R.drawable.background_cards)
                   
                     drawPencil.visibility = View.VISIBLE
                                   
