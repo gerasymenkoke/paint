@@ -172,7 +172,8 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(60){0}
     private var resxy=0
-
+    
+    private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
  
     
      
@@ -545,9 +546,10 @@ class MainActivity : AppCompatActivity() {
 
                          
                          shift=0
-                   
+
+                          drawPaint = SerializablePaint(paintColor, brushSize, isErasing)
                        
-                        drawPencil.visibility = View.GONE
+                       // drawPencil.visibility = View.GONE
                    
                                   }
                 
