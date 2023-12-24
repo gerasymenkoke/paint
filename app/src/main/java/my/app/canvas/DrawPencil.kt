@@ -71,7 +71,7 @@ class DrawPencil @JvmOverloads constructor(
         }
 
 
-  var isErasing = false
+  var isErasing = true
         set(value) {
             field = value
             drawPaint.isErasing = value
