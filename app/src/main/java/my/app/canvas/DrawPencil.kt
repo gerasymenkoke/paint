@@ -267,6 +267,8 @@ else {
         return true
     }
 
+    }
+    
     override fun onDraw(canvas: Canvas) {
 
            for (p in dataPencil) {
@@ -289,4 +291,4 @@ else {
 
        
 
-}
+
