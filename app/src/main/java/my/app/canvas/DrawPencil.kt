@@ -204,18 +204,14 @@ class DrawPencil @JvmOverloads constructor(
         yyy = y.toString()    
     
    
-              /*    
-                 if(shift==1) { j=0; ci=0; 
-                    // shift=0 
-                             cangle_ = Array<Int>(800){0} 
-                            canglepi_ = Array<Int>(800){0} 
-                            crx_ = Array<Int>(800){0}
-                            cry_ = Array<Int>(800){0}
-                                       
+                
+                 if(shift==1) { 
+                    
+                                  drawPaint = SerializablePaint(paintColor, brushSize, isErasing)        
                      
                               }
 
-*/
+
 
                  
                  res=(((w+h)/2)*0.3/100).toFloat() // in percents of average resolutions
