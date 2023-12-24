@@ -545,7 +545,7 @@ class MainActivity : AppCompatActivity() {
                          
                          shift=0
 
-                          drawPaint = SerializablePaint(paintColor, brushSize, isErasing)
+                       
                        
                        // drawPencil.visibility = View.GONE
                    
