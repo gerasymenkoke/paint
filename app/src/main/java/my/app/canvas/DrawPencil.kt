@@ -179,7 +179,7 @@ class DrawPencil @JvmOverloads constructor(
         yyy = y.toString()    
     
    
-                  
+              /*    
                  if(shift==1) { j=0; ci=0; 
                     // shift=0 
                              cangle_ = Array<Int>(800){0} 
@@ -190,7 +190,7 @@ class DrawPencil @JvmOverloads constructor(
                      
                               }
 
-
+*/
 
                  
                  res=(((w+h)/2)*0.3/100).toFloat() // in percents of average resolutions
