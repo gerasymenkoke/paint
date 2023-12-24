@@ -43,12 +43,37 @@ import android.graphics.*
 import android.view.ViewConfiguration
 
 
+import my.app.canvas.SerializablePaint
+
 
 class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 )  :  View(context, attrs, defStyleAttr) {
 
-    
+       
+    private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
+    private const val DEFAULT_PAINT_COLOR = Color.BLACK
+    private const val DEFAULT_BRUSH_SIZE = 8f
+     
+     var paintColor = DEFAULT_PAINT_COLOR
+        set(value) {
+            field = value
+            invalidate()
+            drawPaint.color = value
+        }
+
+       var brushSize: Float = DEFAULT_BRUSH_SIZE
+        set(value) {
+            field = value
+            drawPaint.strokeWidth = value
+        }
+
+
+  var isErasing = false
+        set(value) {
+            field = value
+            drawPaint.isErasing = value
+        }
   
        
   
