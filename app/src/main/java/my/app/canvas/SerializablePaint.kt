@@ -1,4 +1,4 @@
-package com.vojtkovszky.drawingview.data
+package my.app.canvas
 
 import java.io.Serializable
 
