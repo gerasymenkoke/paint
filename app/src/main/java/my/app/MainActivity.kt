@@ -174,11 +174,32 @@ class MainActivity : AppCompatActivity() {
     private var resxy=0
     
     private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
- 
+    private const val DEFAULT_PAINT_COLOR = Color.BLACK
     
      
+     var paintColor = DEFAULT_PAINT_COLOR
+        set(value) {
+            field = value
+            invalidate()
+            drawPaint.color = value
+        }
+
+       var brushSize: Float = DEFAULT_BRUSH_SIZE
+        set(value) {
+            field = value
+            drawPaint.strokeWidth = value
+        }
 
 
+  var isErasing = false
+        set(value) {
+            field = value
+            drawPaint.isErasing = value
+        }
+
+
+
+        
     
        
          companion object {
