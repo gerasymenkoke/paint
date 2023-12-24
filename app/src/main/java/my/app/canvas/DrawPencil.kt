@@ -51,10 +51,12 @@ class DrawPencil @JvmOverloads constructor(
 )  :  View(context, attrs, defStyleAttr) {
 
        
-    private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
+    
     private const val DEFAULT_PAINT_COLOR = Color.BLACK
     private const val DEFAULT_BRUSH_SIZE = 8f
-     
+
+    private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
+    
      var paintColor = DEFAULT_PAINT_COLOR
         set(value) {
             field = value
