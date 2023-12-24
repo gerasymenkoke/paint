@@ -54,7 +54,8 @@ class DrawPencil @JvmOverloads constructor(
     
     private val DEFAULT_PAINT_COLOR = Color.BLACK
     private val  DEFAULT_BRUSH_SIZE = 8f
-
+    private val DEFAULT_CANVAS_COLOR = Color.WHITE
+    
     private var drawPaint: SerializablePaint = SerializablePaint(DEFAULT_PAINT_COLOR, 30f, false)
     
      var paintColor = DEFAULT_PAINT_COLOR
@@ -77,7 +78,12 @@ class DrawPencil @JvmOverloads constructor(
             drawPaint.isErasing = value
         }
   
-       
+
+        var canvasColor = DEFAULT_CANVAS_COLOR
+        set(value) {
+            field = value
+            invalidate()
+        }
   
     
  
