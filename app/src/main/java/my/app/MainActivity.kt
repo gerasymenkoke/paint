@@ -545,7 +545,7 @@ class MainActivity : AppCompatActivity() {
                          
                          shift=0
 
-                          drawPencil.setContentView(R.layout.activity_main)
+                          drawPencil.setImageResource(R.drawable.background_card)
                        
                        // drawPencil.visibility = View.GONE
                    
