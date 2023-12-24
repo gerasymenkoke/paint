@@ -534,15 +534,19 @@ class MainActivity : AppCompatActivity() {
              //    shift=shift+1
                     
                      if (shift==1) {
-                         shift=2
+                         cangle_ = Array<Int>(800){0} 
+                         canglepi_ = Array<Int>(800){0} 
+                         crx_ = Array<Int>(800){0}
+                         cry_ = Array<Int>(800){0}
+                         
+                         shift=0
                    
                        
                         drawPencil.visibility = View.GONE
                    
                                   }
                 
-                    else  { if(shift==2) { shift=0 }
-
+                
                        else {
                     btnPencil.setImageResource(R.drawable.ic_selected_pencil)
                     btnPencil.setBackgroundResource(R.drawable.background_cards)
@@ -796,7 +800,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                      }
       
 
-                                    }
+                                    
      
                 
             
