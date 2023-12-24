@@ -264,10 +264,11 @@ else {
                 invalidate()
             }
         }
+}
         return true
     }
 
-    }
+    
     
     override fun onDraw(canvas: Canvas) {
 
