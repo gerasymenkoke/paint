@@ -88,9 +88,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="visible" 
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/ic_launcher_foreground" >
     
+ <ImageButton
+            android:id="@+id/draw_pencil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_launcher_foreground" />
 
+
+
+            
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
