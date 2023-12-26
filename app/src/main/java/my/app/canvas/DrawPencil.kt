@@ -172,6 +172,7 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     private fun touchStart(x: Float, y: Float) {
+        path.reset()
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
