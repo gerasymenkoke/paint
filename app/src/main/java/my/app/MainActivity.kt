@@ -545,7 +545,7 @@ class MainActivity : AppCompatActivity() {
                          
                          shift=0
 
-                          drawPencil.setForegroundResource(R.drawable.ic_launcher_foreground)
+                         // drawPencil.setForegroundResource(R.drawable.ic_launcher_foreground)
                          
                          // drawPencil.setImageResource(R.drawable.ic_launcher_foreground)
                          
