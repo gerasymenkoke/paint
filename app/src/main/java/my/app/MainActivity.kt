@@ -545,8 +545,12 @@ class MainActivity : AppCompatActivity() {
                          
                          shift=0
 
-                          drawPencil.setBackgroundResource(R.drawable.background_card)
-                          drawPencil.setImageResource(R.drawable.ic_launcher_foreground)
+                          drawPencil.setBackgroundResource(R.drawable.ic_launcher_foreground)
+                         
+                         // drawPencil.setImageResource(R.drawable.ic_launcher_foreground)
+                         
+                       //  drawPencil.setBackgroundResource(R.drawable.background_card)
+                         
                        // drawPencil.visibility = View.GONE
                    
                                   }
