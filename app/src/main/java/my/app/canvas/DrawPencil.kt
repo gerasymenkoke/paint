@@ -65,26 +65,7 @@ class DrawPencil @JvmOverloads constructor(
             drawPaint.color = value
         }
 
-       var brushSize: Float = DEFAULT_BRUSH_SIZE
-        set(value) {
-            field = value
-            drawPaint.strokeWidth = value
-        }
-
-
-  var isErasing = true
-        set(value) {
-            field = value
-            drawPaint.isErasing = value
-        }
-  
-
-        var canvasColor = DEFAULT_CANVAS_COLOR
-        set(value) {
-            field = value
-            invalidate()
-        }
-  
+    
     
  
     
@@ -172,7 +153,13 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     private fun touchStart(x: Float, y: Float) {
-      
+
+        
+                 if(shift==1) { 
+                    
+                                path.reset()
+                              } 
+        
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
@@ -216,7 +203,7 @@ class DrawPencil @JvmOverloads constructor(
                 
                  if(shift==1) { 
                     
-                                path.reset()
+                             //   path.reset()
                      //  drawPaint = SerializablePaint(paintColor, brushSize, isErasing)        
                      
                               }
