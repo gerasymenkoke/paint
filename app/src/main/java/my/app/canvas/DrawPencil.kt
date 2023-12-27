@@ -172,7 +172,7 @@ class DrawPencil @JvmOverloads constructor(
     }
 
     private fun touchStart(x: Float, y: Float) {
-        path.reset()
+      
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
@@ -216,7 +216,8 @@ class DrawPencil @JvmOverloads constructor(
                 
                  if(shift==1) { 
                     
-                                  drawPaint = SerializablePaint(paintColor, brushSize, isErasing)        
+                                path.reset()
+                     //  drawPaint = SerializablePaint(paintColor, brushSize, isErasing)        
                      
                               }
 
