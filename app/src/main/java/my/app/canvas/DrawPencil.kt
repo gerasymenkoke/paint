@@ -145,7 +145,7 @@ class DrawPencil @JvmOverloads constructor(
     
    private  fun touchStart(x: Float, y: Float) {
 
-        
+         if (shift==0) {
                
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
@@ -153,7 +153,7 @@ class DrawPencil @JvmOverloads constructor(
         path.moveTo(x, y)
         mX = x
         mY = y
-             
+                       }
    
     }
 
