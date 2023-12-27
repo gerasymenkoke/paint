@@ -183,7 +183,7 @@ class DrawPencil @JvmOverloads constructor(
         path.lineTo(mX, mY)
     }
 
-    override fun onTouchEvent(event1: MotionEvent): Boolean {
+     fun onTouchEvent(event1: MotionEvent): Boolean {
 
         
           
@@ -289,7 +289,7 @@ class DrawPencil @JvmOverloads constructor(
 
     
     
-    override fun onDraw(canvas: Canvas) {
+     fun onDraw(canvas: Canvas) {
 
            for (p in dataPencil) {
             paintBrush.color = p.color
