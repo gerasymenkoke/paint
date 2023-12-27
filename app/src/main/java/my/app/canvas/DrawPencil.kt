@@ -50,22 +50,10 @@ class DrawPencil @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 )  :  View(context, attrs, defStyleAttr) {
 
-    fun body() {
-       
-     if(shift==1) { 
-                    
-                                path.reset()
-                              } 
-        else {
+   
  
     
-     var paintColor = DEFAULT_PAINT_COLOR
-        set(value) {
-            field = value
-            invalidate()
-            drawPaint.color = value
-        }
-
+  
     
     
  
@@ -89,8 +77,16 @@ class DrawPencil @JvmOverloads constructor(
      private var N = 1
      var isEraserOn = false
 
-
-   
+ private val paintBrush = Paint().apply {
+        isAntiAlias = true
+        isDither = true
+        color = currentBrush
+        style = Paint.Style.STROKE
+        strokeJoin = Paint.Join.ROUND
+        strokeCap = Paint.Cap.ROUND
+        strokeWidth = 16f
+        alpha = 0xff
+                                      }
       
 
 
@@ -136,23 +132,24 @@ class DrawPencil @JvmOverloads constructor(
      
     
     
+     fun body() {
+       
+     if(shift==1) { 
+                    
+                                path.reset()
+                              } 
+        else {
     
+   
     
-    private val paintBrush = Paint().apply {
-        isAntiAlias = true
-        isDither = true
-        color = currentBrush
-        style = Paint.Style.STROKE
-        strokeJoin = Paint.Join.ROUND
-        strokeCap = Paint.Cap.ROUND
-        strokeWidth = 16f
-        alpha = 0xff
-    }
 
     fun updateColor(newColor: Int) {
         paintBrush.color = newColor
     }
 
+
+
+    
     private fun touchStart(x: Float, y: Float) {
 
         
@@ -312,6 +309,8 @@ class DrawPencil @JvmOverloads constructor(
     
 }
 
-}  
+}
+
+  
 
 
