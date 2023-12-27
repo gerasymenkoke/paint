@@ -132,13 +132,6 @@ class DrawPencil @JvmOverloads constructor(
      
     
     
-     fun body() {
-       
-     if(shift==1) { 
-                    
-                                path.reset()
-                              } 
-        else {
     
    
     
@@ -150,7 +143,7 @@ class DrawPencil @JvmOverloads constructor(
 
 
     
-    fun touchStart(x: Float, y: Float) {
+   private  fun touchStart(x: Float, y: Float) {
 
         
                
@@ -164,7 +157,7 @@ class DrawPencil @JvmOverloads constructor(
    
     }
 
-     fun touchMove(x: Float, y: Float) {
+  private     fun touchMove(x: Float, y: Float) {
         val dx = Math.abs(x - mX)
         val dy = Math.abs(y - mY)
         if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
@@ -179,13 +172,14 @@ class DrawPencil @JvmOverloads constructor(
 
 
     
-     fun touchUp() {
+  private     fun touchUp() {
         path.lineTo(mX, mY)
     }
 
-     fun onTouchEvent(event1: MotionEvent): Boolean {
+ override    fun onTouchEvent(event1: MotionEvent): Boolean {
 
-        
+         if (shift==1) {  path.reset() }
+
           
         
          x = event1.x
@@ -289,7 +283,7 @@ class DrawPencil @JvmOverloads constructor(
 
     
     
-     fun onDraw(canvas: Canvas) {
+  override   fun onDraw(canvas: Canvas) {
 
            for (p in dataPencil) {
             paintBrush.color = p.color
@@ -309,7 +303,7 @@ class DrawPencil @JvmOverloads constructor(
     
 }
 
-}
+
 
   
 
