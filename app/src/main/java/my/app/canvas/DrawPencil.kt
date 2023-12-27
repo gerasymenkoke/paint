@@ -132,7 +132,11 @@ class DrawPencil @JvmOverloads constructor(
         var j = 0
         var jj = 0             }
     
-    
+      if(shift==1) { 
+                    
+                                path.reset()
+                              } 
+        else {
     
     
     
@@ -155,18 +159,14 @@ class DrawPencil @JvmOverloads constructor(
     private fun touchStart(x: Float, y: Float) {
 
         
-                 if(shift==1) { 
-                    
-                                path.reset()
-                              } 
-        else {
+               
         val p = Pencil(currentBrush, path)
         dataPencil.add(p)
         colorList.add(currentBrush)
         path.moveTo(x, y)
         mX = x
         mY = y
-             }
+             
    
     }
 
@@ -315,6 +315,6 @@ class DrawPencil @JvmOverloads constructor(
     
 
 
-       
+}  
 
 
