@@ -183,7 +183,7 @@ class DrawPencil @JvmOverloads constructor(
 
  override    fun onTouchEvent(event1: MotionEvent): Boolean {
 
-         if (shift==1) {  shift=0; path.reset() }
+         if (shift==1) {  shift=0; ci=0; j=0; x1=0f; y1=0f;  path.reset() }
 
           
         
@@ -195,16 +195,7 @@ class DrawPencil @JvmOverloads constructor(
     
    
                 
-                 if(shift==1) { 
-                    
-                             //   path.reset()
-                     //  drawPaint = SerializablePaint(paintColor, brushSize, isErasing)        
-                     
-                              }
-
-
-
-                 
+                              
                  res=(((w+h)/2)*0.3/100).toFloat() // in percents of average resolutions
         
            
