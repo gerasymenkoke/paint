@@ -630,7 +630,7 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
               
 
 // output as text current painted number in direction sequence
-        
+        aaa = Array<String>(20){"0"}
        j=0;
    if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
