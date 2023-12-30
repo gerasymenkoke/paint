@@ -815,7 +815,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
      
       if(l>=1 && resnum[l]==14) { iresnum = iresnum + xiresnum; 
-                                  if (( iresnum - iresnum.toInt() )==0) { iresnum = iresnum.toInt() }
+                                  if ( ( iresnum - iresnum.toInt() )==0.0f ) { iresnum = iresnum.toInt() }
           aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum.toInt(); f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
   
            
