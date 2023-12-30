@@ -798,9 +798,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      
             
          textviewid.text =   "  " + aresnum +  aresnum1 + "\n" +  
-                             aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19] +     
-                             "\n" +  "iresnum=" + iresnum  + "   "  +  "aresnum1=" + aresnum1  + "   " + "l=" +  l.toString() +
-                           "\n" +  "aresmin=" + aresmin              
+                             aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19]     
+                    //         "\n" +  "iresnum=" + iresnum  + "   "  +  "aresnum1=" + aresnum1  + "   " + "l=" +  l.toString() +
+                    //      "\n" +  "aresmin=" + aresmin              
         
                   
 
