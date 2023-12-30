@@ -145,7 +145,7 @@ class MainActivity : AppCompatActivity() {
     private var l = 0 // counter for different res0 in resnum array
     private var ll = 0
     private var resnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Float>(60){30}  // result each cycle adding  as Int Array
     private var asresnum = " "  
  
      
