@@ -804,6 +804,10 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         
                   
 
+         l = l+1  // counter for next step
+
+
+                           
                    
       // initial value initialization needed for all arrays to begin new symbol on next step - shift to upper in program bodyimport android.view.View
    
