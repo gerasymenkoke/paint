@@ -144,8 +144,8 @@ class MainActivity : AppCompatActivity() {
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var ll = 0
-    private var resnum =   Array<Float>(60){30.0f}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Float>(60){30.0f}  // result each cycle adding  as Int Array
+    private var resnum =   Array<Int>(60){30}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Int>(60){30}  // result each cycle adding  as Int Array
     private var asresnum = " "  
  
      
@@ -734,7 +734,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 // output  result as string with diferent length adding new symbols each cycle
 
-      resnum[l]=res00 
+      resnum[l]=res00
      if ( resnum[l]<=9 ) { aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0 } 
    
      
@@ -749,7 +749,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                 if ( resnum[l]==15) { aresnum1 =  "," } 
 
                                                 
-                                                if (repeat ==1) { resnum[l-1] = resnum[l]; sresnum[l-1] = resnum[l-1];resnum[l]=30; sresnum[l] = 30; l=l-1  }     
+                                                if (repeat ==1) { resnum[l-1] = resnum[l]; sresnum[l-1] = resnum[l-1].;resnum[l]=30; sresnum[l] = 30; l=l-1  }     
                                                 if (repeat ==0) {sresnum[l] = resnum[l] ; dot=0; repeat=1 }
 
                                                 
