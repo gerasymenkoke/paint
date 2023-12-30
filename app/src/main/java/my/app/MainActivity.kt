@@ -149,10 +149,10 @@ class MainActivity : AppCompatActivity() {
     private var asresnum = " "  
  
      
-    private var iresnum = 0 // result last operation
+    private var iresnum = 0.0f // result last operation
 
     
-    private var xiresnum = 0  // result last operation x or /
+    private var xiresnum = 0.0f  // result last operation x or /
     private var aresnum = " "                 // result each cycle adding as String
     private var aresnum1 = ""  
 
