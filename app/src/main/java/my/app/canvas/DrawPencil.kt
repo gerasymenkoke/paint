@@ -183,7 +183,7 @@ class DrawPencil @JvmOverloads constructor(
 
  override    fun onTouchEvent(event1: MotionEvent): Boolean {
 
-         if (shift==1) {  shift=0; ci=0; j=0; x1=0f; y1=0f;  path.reset() }
+         if (shift==1) {  shift=0; ci=0; j=0; x1=0f; y1=0f; x=0f; y=0f;  path.reset() }
 
           
         
