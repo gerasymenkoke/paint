@@ -735,7 +735,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 // output  result as string with diferent length adding new symbols each cycle
 
       resnum[l]=res00.toFloat()
-     if ( resnum[l]<=9 ) { aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0 } 
+     if ( resnum[l]<=9 ) {       if ( (resnum[l] - resnum[l].toInt() ) > 0 ) {
+                              aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0
+                                                                         }
+                                 else { aresnum =  aresnum +  aresnum1 + (resnum[l].toInt()).toString(); aresnum1="" ; repeat=0 }
+                        } 
    
      
      if( resnum[l] >= 10 && resnum[l] <= 15 ) {                                                            
