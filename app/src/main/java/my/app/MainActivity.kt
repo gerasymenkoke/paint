@@ -819,7 +819,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                   aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum; f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
                                   
                                   else
-          {aresnum =  aresnum + "= "  + iresnum.toString()  ; sresnum[l+1]=resnum[l+1]; resnum[l+1]=iresnum.roundToInt(); f=1;   sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
+          {aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum; sresnum[l+1]=resnum[l+1];  f=1;   sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
 
                                  }
   
