@@ -794,7 +794,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                   ffr=0
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==12.0f) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() * sresnum[l].toFloat();ffr=1 
+      if(sign == 1  && resnum[l-1-shift1]==12.0f) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2] * sresnum[l] ; ffr=1 
                                                      iresnum= iresnum - xsign * sresnum[l-2]  
                                                                           } 
       
@@ -802,7 +802,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                   if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l] / sresnum[l-1] ) } 
                                                 }
       
-      if(sign == 1  && resnum[l-1-shift1]==13.0f) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2].toFloat() / sresnum[l].toFloat() ; ffr=1 
+      if(sign == 1  && resnum[l-1-shift1]==13.0f) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2] / sresnum[l] ; ffr=1 
                                                       iresnum= iresnum - xsign * sresnum[l-2]             
                                                                           } 
          
@@ -815,12 +815,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
      
       if(l>=1 && resnum[l]==14.0f) { iresnum = iresnum + xiresnum; 
-                                  if ( ( iresnum - iresnum.toInt() ) > 0.000000000000000001f ) {  
-                                  aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum; f=1;  sresnum[l+1]=resnum[l+1]; sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
-                                  
-                                  else
-          {aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum; sresnum[l+1]=resnum[l+1];  f=1;   sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 }
-
+                                 
+          aresnum =  aresnum + "= "  + iresnum.toString()  ; resnum[l+1]=iresnum; sresnum[l+1]=resnum[l+1];  f=1;   sign=0; xiresnum=0.0f;  ffr=0; xsign=1;  l=l+1; repeat=0 
                                  }
   
            
@@ -831,7 +827,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
          textviewid.text =   "  " + aresnum +  aresnum1 + "\n" +  
                              aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19]  +   
-                               "\n" +  "aresmin=" + aresmin  +  "   " +  "iresnum=" + iresnum          
+                               "\n" +  "aresmin=" + aresmin  +  "   " +  "iresnum=" + iresnum  + "  "   +  "xiresnum=" + xiresnum            
                             
 
          l = l+1  // counter for next step
