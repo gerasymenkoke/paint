@@ -750,7 +750,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                 if ( resnum[l]==14.0f) { if (l==0) {aresnum1 =   "="}
                                                                       if (l>0)  {aresnum1 =   ""  } 
                                                                     }  
-                                                if ( resnum[l]==15.0f) { aresnum1 =  "," } 
+                                                if ( resnum[l]==15.0f) { aresnum1 =  ",";  dot=1; l=l-1 } 
 
                                                 
                                                 if (repeat ==1) { resnum[l-1] = resnum[l]; sresnum[l-1] = resnum[l-1];resnum[l]=30.0f; sresnum[l] = 30.0f; l=l-1  }     
