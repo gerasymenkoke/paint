@@ -760,8 +760,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                 
                                               }
  
-            else {       if (resnum[l] == 15.0f) {   dot=1; l=l-1 }
-                
+            else {                      
                            if (resnum[l] <= 9) {
                            j=0; 
                           while ( j <= 1)        //    ..
