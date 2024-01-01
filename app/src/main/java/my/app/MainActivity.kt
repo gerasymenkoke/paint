@@ -676,7 +676,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
    aresmin = " "
 
   resmin =  Array(20){ Array<Int>(60){0} }
-  
+  res0=0; res00=0
                     
    jj=0
    minres0 = 100000
