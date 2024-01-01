@@ -738,7 +738,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      if ( resnum[l]<=9 ) {       if ( (resnum[l] - resnum[l].toInt() ) > 0 ) {
                               aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0
                                                                          }
-                                 else { aresnum =  aresnum +  aresnum1 + resnum[l].toString(); aresnum1="" ; repeat=0 }
+                                 else { aresnum =  aresnum +  aresnum1 + (resnum[l].toInt()).toString(); aresnum1="" ; repeat=0 }
                         } 
    
      
