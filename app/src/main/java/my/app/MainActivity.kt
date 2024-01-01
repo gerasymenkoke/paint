@@ -767,7 +767,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                               {                            
                             if(j==0) { sresnum[l] = resnum[l] }
                             if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==0)  { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift1=shift1+1 } 
-                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { sresnum[l] = sresnum[l-1] + sresnum[l]/10; shift1=shift1+1 } 
+                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { sresnum[l] = sresnum[l-1] + sresnum[l]/10; shift1=shift1+1 } // !!!here
                             j=j+1 
                               
                               } 
@@ -796,7 +796,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
       
       if(sign == 1  && resnum[l-1-shift1]==11.0f) {  iresnum= iresnum + xiresnum; xiresnum=0.0f; xsign=-1
                                                   if (shift1==0 && dot == 0) { iresnum= iresnum - resnum[l] } 
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l] - sresnum[l-1] ) +  0.00000005f } 
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { iresnum= iresnum - ( sresnum[l] - sresnum[l-1] )  } 
                                                   ffr=0
                                                 }
       
