@@ -759,7 +759,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                 
                                               }
  
-            else {      if (resnum[l] <= 9) {
+            else {       if (resnum[l] == 15.0f) {   dot=1; l=l-1 }
+                
+                           if (resnum[l] <= 9) {
                            j=0; 
                           while ( j <= 1)        //    ..
                               {                            
@@ -770,7 +772,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                               
                               } 
                                             }
-                   if (resnum[l] == 15.0f) {   dot=1; l=l-1 }
+                   // if (resnum[l] == 15.0f) {   dot=1; l=l-1 }
 
                  }                
                         
@@ -836,6 +838,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                              " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f + 
                 "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + 
                 "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] 
+                           
 
 
 
