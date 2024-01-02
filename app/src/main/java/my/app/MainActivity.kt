@@ -114,6 +114,9 @@ class MainActivity : AppCompatActivity() {
     
     private var cin = 0
     private var cinn = 0
+    private var dj = 0
+    private var dec = 0.0f
+
     
     
     private var rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
@@ -765,9 +768,13 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                            j=0; 
                           while ( j <= 1)        //    ..
                               {                            
-                     //       if(j==0 && dot==0) { sresnum[l] = resnum[l] }
-                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==0)  { sresnum[l] = sresnum[l-1]*10 + sresnum[l]; shift1=shift1+1 } 
-                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { sresnum[l] = sresnum[l-1] + sresnum[l]/10; shift1=shift1+1 } // !!!here
+                            if(j==0) { sresnum[l] = resnum[l] }
+                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==0)  { sresnum[l] = sresnum[l-1]*10 + resnum[l]; shift1=shift1+1 } 
+                            if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { 
+                                
+                                while ( dj <= shift1 ) { dec=dec/10; dj=dj+1 }
+                                dj=0
+                                sresnum[l] = sresnum[l-1] +  resnum[l]*dj; shift1=shift1+1 } 
                             j=j+1 
                               
                               } 
