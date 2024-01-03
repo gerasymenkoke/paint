@@ -792,7 +792,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                              
       if (l==0 &&  resnum[0] == 11.0f)  {  xxsign=-1 }                              
       if(l>0) { if (resnum[l] >= 10.0f && ((resnum[l-1] <= 9.0f) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
-      if( resnum[l] <= 9 && f==0 )  { iresnum=xxsign*sresnum[l]; xxsign=1 }              
+      if( resnum[l] <= 9 && ff==0 && f==0 )  { iresnum=xxsign*sresnum[l]; xxsign=1 }              
          
 
    
