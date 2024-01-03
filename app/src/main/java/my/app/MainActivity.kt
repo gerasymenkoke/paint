@@ -773,8 +773,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                             if( (j==1) && ((l-1) >= 0) && (resnum[l-1] <=9) && dot==1)  { 
                                 
                                 while ( dj <= shift1 ) { dec=dec/10; dj=dj+1 }
-                                dj=0; dec=1.0f
-                                sresnum[l] = sresnum[l-1] +  resnum[l]*dj; shift1=shift1+1 } 
+                               
+                                sresnum[l] = sresnum[l-1] +  resnum[l]*dec; shift1=shift1+1 
+                                 dj=0; dec=1.0f
+                            } 
+                               
                             j=j+1 
                               
                               } 
