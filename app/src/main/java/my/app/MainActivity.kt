@@ -817,7 +817,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                                           } 
       
                                                  else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l] } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= xiresnum *  (sresnum[l] / sresnum[l-1] ) } 
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= sresnum[l] * sresnum[l-shift1-2]  }
+          
+                                                                                   //  { xiresnum= xiresnum *  (sresnum[l] / sresnum[l-1] ) } 
                                                 }
       
       if(sign == 1  && resnum[l-1-shift1]==13.0f) { if (shift1==0 && ffr==0) { xiresnum= xsign * sresnum[l-2] / sresnum[l] ; ffr=1 
