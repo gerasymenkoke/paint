@@ -250,6 +250,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    
+
 
     
 
@@ -792,7 +794,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                              
       if (l==0 &&  resnum[0] == 11.0f)  {  xxsign=-1 }                              
       if(l>0) { if (resnum[l] >= 10.0f && ((resnum[l-1] <= 9.0f) || (f==1) ) ) { sign = 1; shift1=0 ; ff=1 } }
-      if( resnum[l] <= 9 && ff==0 && f==0 )  { iresnum=xxsign*sresnum[l]; xxsign=1 }              
+      if( resnum[l] <= 9 && ff==0)  { iresnum=xxsign*sresnum[l]; xxsign=1 }              
          
 
    
@@ -845,11 +847,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
          textviewid.text =   "  " + aresnum +  aresnum1 + "\n" +  
                              aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19]  +   
-                             " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f +  "dot=" + dot +
+                             "\n" + "aresmin=" + aresmin
+                           
+                           
+             /*              " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f +  "dot=" + dot +
                 "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + 
                 "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] 
                            
-
+              */
 
 
 
