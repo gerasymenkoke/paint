@@ -817,7 +817,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                                           } 
       
                                                  else { if (shift1==0 && ffr==1) { xiresnum= xiresnum * sresnum[l] } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= sresnum[l] * sresnum[l-shift1-2]  }
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum=   sresnum[l-shift1-2] * sresnum[l]  }
           
                                                                                    //  { xiresnum= xiresnum *  (sresnum[l] / sresnum[l-1] ) } 
                                                 }
@@ -827,7 +827,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                                                                           } 
          
                                                  else { if (shift1==0 && ffr==1) { xiresnum= xiresnum / sresnum[l] } }
-                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum= sresnum[l] / sresnum[l-shift1-2]  }  
+                                                  if (shift1 > 0 && resnum[l] <= 9 ) { xiresnum=  sresnum[l-shift1-2] / sresnum[l]  }  
                                                   
                                                 } 
      
