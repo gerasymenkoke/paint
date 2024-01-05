@@ -246,6 +246,7 @@ class MainActivity : AppCompatActivity() {
     rcanglenn_[0][26]=arrayOf<Int>( -75,  96, 112, 131,  170,  13,  30,   49,   66,   85, -92, -112, -130, -152,   -6, -38, -54, 360, 360, 360  ) 
     rcanglenn_[0][27]=arrayOf<Int>(  62,  41, 170, 121,  -85, -66, -50,  -19, -166, -118,-100,   87,   64,  360,  360, 360, 360, 360, 360, 360  )
 
+
     
 
 
@@ -849,9 +850,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
          textviewid.text =   "  " + aresnum +  aresnum1 + "\n" +  
                              aaa[0] + " " +aaa[1] + " " + aaa[2] + " " + aaa[3] + " " + aaa[4] + " " + aaa[5] + " " + aaa[6] + " " + aaa[7] + " " + aaa[8] + " " + aaa[9] + aaa[10] + aaa[11] + aaa[12] + aaa[13] + aaa[14] + aaa[15] + aaa[16] + aaa[17] + aaa[18] + aaa[19]  +   
-                             "\n" +  " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f +  "dot=" + dot +
-                "resnum=" + resnum[0] + " " + resnum[1] + " " + resnum[2] + " " + resnum[3] + " " + resnum[4] + " " + resnum[5] + 
-                "sresnum=" + sresnum[0] + " " + sresnum[1] + " " + sresnum[2] + " " + sresnum[3] + " " + sresnum[4] + " " + sresnum[5] 
+                             "\n" +  "aresmin=" + aresmin   
                            
                            
              /*              " iresnum=" + iresnum +  " xiresnum=" + xiresnum +   " shift1=" + shift1 +  " sign=" + sign + " l=" + l + " f=" + f +  "dot=" + dot +
