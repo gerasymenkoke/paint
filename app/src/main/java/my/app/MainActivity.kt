@@ -280,6 +280,7 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
+        init()
    
               
         
