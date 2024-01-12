@@ -188,7 +188,7 @@ class MainActivity : AppCompatActivity() {
         var h=0     
                           }
 
-  private  fun init() {
+  private  fun init09() {
 
 
     rcanglenn_[0][0]=arrayOf<Int>(   86,  65,  46, 175,  136, 119, 104,  -87,  -64,  -39, -19, -173, -144, -127, -107,  86, 360, 360, 360, 360  ) 
@@ -522,9 +522,14 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[9][22]=arrayOf<Int>(  52,  71,  -98,  -8, -34,  -56,   114,   164,    4,  360,  360, 360, 360, 360, 360,  360, 360, 360, 360, 360  ) 
    rcanglenn_[9][23]=arrayOf<Int>(  12,  37,   53,  75, -91, -114,   -14,   -42,  -62,  -82,  102, 118, 360, 360, 360,  360,360, 360, 360, 360  ) 
 
-
-
+    
+      
    
+    }
+
+
+
+ private  fun init1015()   {
             
  // Filling sampl// Filling sample array 
 // +
@@ -640,13 +645,10 @@ class MainActivity : AppCompatActivity() {
      rcanglenn_[15][6]=arrayOf<Int>(    99, -82,  -67, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
 
 
-    
-      
-   
-    }
 
 
-
+ }
+  
 
 
 
@@ -690,8 +692,8 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
-        init()
-   
+        init09()
+        init1015()
               
         
         binding.apply {
