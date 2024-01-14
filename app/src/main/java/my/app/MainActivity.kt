@@ -330,7 +330,7 @@ class MainActivity : AppCompatActivity() {
  rcanglenn_[2][37]=arrayOf<Int>(-123,   66,   37,  22, 172, 119,  99,  -87,  -71,  -55 ,-40, -20, -165,  75, 170, 149, 360, 360, 360, 360  )
  rcanglenn_[2][38]=arrayOf<Int>(  41,   20,  172, 141, 101, -82, -65,  -49, -170, -125 ,  7, 170,  136, 158,  14, 360, 360, 360, 360, 360  ) 
  rcanglenn_[2][39]=arrayOf<Int>(  29,  173,  115,  94, -83, -65, -42, -169,   73,    8, 168, 150,   40, 360, 360, 360, 360, 360, 360, 360  ) 
-
+ rcanglenn_[2][40]=arrayOf<Int>(  46,   25,    7, 164, 142, 121,  97,  -82,  -65,  -45,  -8, -52, -173,-118,  59,  42,  18, 176, 157,   7  ) 
 
 
 
@@ -769,7 +769,7 @@ class MainActivity : AppCompatActivity() {
 
        
         val displayMetrics = DisplayMetrics()
-      //  windowManager.defaultDisplay.getMetrics(displayMetrics)
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
  
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
