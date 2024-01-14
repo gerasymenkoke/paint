@@ -766,7 +766,7 @@ class MainActivity : AppCompatActivity() {
 
        
         val displayMetrics = DisplayMetrics()
-        windowManager.defaultDisplay.getMetrics(displayMetrics)
+      //  windowManager.defaultDisplay.getMetrics(displayMetrics)
  
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
