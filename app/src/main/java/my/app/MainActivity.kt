@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Int>(100){0} 
     private var canglenn_ = Array<Int>(100){360} 
     private var canglennpi_ = Array<Int>(100){360} 
-    private var rcanglenn_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+    private var rcanglenn_ = Array(20) { Array(100){ Array<Int>(20){360} } }  
  //     private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
     private var cin = 0
@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity() {
     private var dot=0
     private var repeat=0
     
-    private var jdec = Array<Int>(60){0}
+    private var jdec = Array<Int>(100){0}
     private var resxy=0
  
   
