@@ -119,23 +119,23 @@ class MainActivity : AppCompatActivity() {
 
     
     
-    private var rr =  Array(20) { Array(60){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
-    private var rrx =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
-    private var rry =  Array(20) { Array(60){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
-    private var rangle =  Array(20) { Array(60){ Array<Int>(10){0} } }  // 
+    private var rr =  Array(20) { Array(100){ Array<Int>(20){10} } }  //  array of value for n_etalons(30) for every sample(10pcs)c
+    private var rrx =  Array(20) { Array(100){ Array<Int>(20){0} } }  //  array of value for x n_etalons(30) for every sample(10pcs)
+    private var rry =  Array(20) { Array(100){ Array<Int>(20){0} } }  //  array of value for y n_etalons(30) for every sample(10pcs)
+    private var rangle =  Array(20) { Array(100){ Array<Int>(10){0} } }  // 
     
-    private var xdyrr =  Array(20) { Array(60){ Array<Int>(20){0} } }  // 
+    private var xdyrr =  Array(20) { Array(100){ Array<Int>(20){0} } }  // 
 
    
   
-    private var  resmin =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminx =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
-    private var  resminy =  Array(20){ Array<Int>(60){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resmin =  Array(20){ Array<Int>(100){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminx =  Array(20){ Array<Int>(100){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
+    private var  resminy =  Array(20){ Array<Int>(100){0} } // array of values for each etalon(10 pcs)  with min difference(coincedence)
     
     private var  aresmin = " "
-    private var iresmin =  Array<Int>(60){10}  // array of index for of values resmin array with min difference(coincedence) 
+    private var iresmin =  Array<Int>(100){10}  // array of index for of values resmin array with min difference(coincedence) 
     
-    private var res =    Array<Int>(60){0}  // array of  counters for  each etalon from iresmin array
+    private var res =    Array<Int>(100){0}  // array of  counters for  each etalon from iresmin array
    
     private var min = 10 // temporary variable min = dir_res[jj][jjj] 
     private var minres = 100000 // temporary variable  resmin[jj] [j] < minres
@@ -147,8 +147,8 @@ class MainActivity : AppCompatActivity() {
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var ll = 0
-    private var resnum =   Array<Float>(60){30.0f}  // result each cycle adding  as Int Array
-    private var sresnum =  Array<Float>(60){30.0f}  // result each cycle adding  as Int Array
+    private var resnum =   Array<Float>(100){30.0f}  // result each cycle adding  as Int Array
+    private var sresnum =  Array<Float>(100){30.0f}  // result each cycle adding  as Int Array
     private var asresnum = " "  
  
      
@@ -967,7 +967,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
    aresmin = " "
 
-  resmin =  Array(20){ Array<Int>(60){0} }
+  resmin =  Array(20){ Array<Int>(100){0} }
   res0=0; res00=0
                     
    jj=0
@@ -977,7 +977,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
 
            minres = 100000
-    while (jjj >=0 && jjj<=59 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=99 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
     
                 j=0
