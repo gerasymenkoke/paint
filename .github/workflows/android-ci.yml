@@ -31,7 +31,7 @@ jobs:
      
     
       - name: Gradle Wrapper Validation
-        uses: gradle/wrapper-validation-action@v4
+        uses: gradle/wrapper-validation-action@v
       
       - uses: actions/cache@v4
         with:
