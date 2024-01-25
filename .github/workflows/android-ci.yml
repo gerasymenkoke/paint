@@ -21,7 +21,7 @@ jobs:
       - name: Set Up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '16'
+          java-version: '20'
           distribution: 'adopt'
 
       - name: Change wrapper permissions
@@ -31,7 +31,7 @@ jobs:
      
     
       - name: Gradle Wrapper Validation
-        uses: gradle/wrapper-validation-action@v
+        uses: gradle/wrapper-validation-action@v1
       
       - uses: actions/cache@v4
         with:
