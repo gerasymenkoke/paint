@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Int>(100){0} 
     private var canglenn_ = Array<Int>(100){360} 
     private var canglennpi_ = Array<Int>(100){360} 
-    private var rcanglenn_ = Array(20) { Array(100){ Array<Int>(20){360} } }  
+    private var rcanglenn_ = Array(20) { Array(200){ Array<Int>(20){360} } }  
  //     private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
     private var cin = 0
@@ -288,7 +288,7 @@ class MainActivity : AppCompatActivity() {
     rcanglenn_[0][94]=arrayOf<Int>( -67,  93, 111, 133,  152,  15,  56,  -91, -107, -134,-161,  -11,  -56,  360,  360, 360, 360, 360, 360, 360  )
     rcanglenn_[0][95]=arrayOf<Int>( -11, -36, -56, -78,   95, 111, 137,  155,    4,   21,  36,   53,   70,  -93, -112,-132,-147,-171, 360, 360  )
     rcanglenn_[0][96]=arrayOf<Int>( -10, -32, -59,  92,  109, 128, 151,    3,   21,   45,  63,  -95, -112, -144,   -6, 360, 360, 360, 360, 360  ) 
-
+    rcanglenn_[0][97]=arrayOf<Int>( -18, -33, -49, -64,  -82,  98, 116,  138,  161,    7,  31,   46,   69,  -96, -111,-137,-161,  -9, -24, 360  )
 
 
     
@@ -1120,7 +1120,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
    aresmin = " "
 
-  resmin =  Array(20){ Array<Int>(100){0} }
+  resmin =  Array(20){ Array<Int>(200){0} }
   res0=0; res00=0
                     
    jj=0
@@ -1130,7 +1130,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
 
            minres = 100000
-    while (jjj >=0 && jjj<=99 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=199 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
     
                 j=0
