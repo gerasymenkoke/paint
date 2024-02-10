@@ -188,7 +188,7 @@ class MainActivity : AppCompatActivity() {
         var h=0     
                           }
 
-  private  fun init04() {
+  private  fun init0() {
 
 
     rcanglenn_[0][0]=arrayOf<Int>(   86,  65,  46, 175,  136, 119, 104,  -87,  -64,  -39, -19, -173, -144, -127, -107,  86, 360, 360, 360, 360  ) 
@@ -351,12 +351,18 @@ class MainActivity : AppCompatActivity() {
    rcanglenn_[0][157]=arrayOf<Int>(  16, 171, 150, 129, 109, -75,  -59,  -35,  -10, -156,-140, -106,   77,   61,   46, 360, 360, 360, 360, 360  ) 
    rcanglenn_[0][158]=arrayOf<Int>(  45,  25, 172, 112, -86, -66,  -48,  -26,   -6, -155,  85,   66,  360,  360,  360, 360, 360, 360, 360, 360  )
    rcanglenn_[0][159]=arrayOf<Int>(-171, -31, -63, -83,  97, 126,  152,    4,   30,   53,  73,  -92, -110, -126, -159,  -4, -57, 360, 360, 360  )
-    
+  
+  
+  
+  }
     
 
+
+ private  fun init14() {
+    
     // Filling sample array
 // 1
-      jj = 1                  
+                       
 
    rcanglenn_[1][0]=arrayOf<Int>(   61,  -78,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
    rcanglenn_[1][1]=arrayOf<Int>(   41,   61,  -84, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
@@ -1042,8 +1048,8 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
-        
-        init04()
+        init0()
+        init14()
         init59()
         init1015()
               
