@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
     private var canglenpi_ = Array<Int>(100){0} 
     private var canglenn_ = Array<Int>(100){360} 
     private var canglennpi_ = Array<Int>(100){360} 
-    private var rcanglenn_ = Array(20) { Array(200){ Array<Int>(20){360} } }  
+    private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
  //     private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
     private var cin = 0
@@ -1223,7 +1223,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
    aresmin = " "
 
-  resmin =  Array(20){ Array<Int>(200){0} }
+  resmin =  Array(20){ Array<Int>(300){0} }
   res0=0; res00=0
                     
    jj=0
@@ -1233,7 +1233,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
 
            minres = 100000
-    while (jjj >=0 && jjj<=199 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
+    while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
     
                 j=0
