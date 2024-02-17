@@ -83,6 +83,7 @@ class MainActivity : AppCompatActivity() {
     private var i = 0
     private var jj = 0  
     private var jjj = 0  
+    private var sh = 0  
     
     private var iii = 0
     private var k=0
@@ -108,6 +109,8 @@ class MainActivity : AppCompatActivity() {
     private var canglen_ = Array<Int>(100){0} 
     private var canglenpi_ = Array<Int>(100){0} 
     private var canglenn_ = Array<Int>(100){360} 
+    private var canglennsh_ = Array<Int>(20){0} 
+    
     private var canglennpi_ = Array<Int>(100){360} 
     private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
  //     private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
@@ -1215,7 +1218,7 @@ oldxdy=1000
     canglenpi_ = Array<Int>(100){0} 
     canglenn_ = Array<Int>(100){360} 
     canglennpi_ = Array<Int>(100){360} 
-   
+    canglennsh_=Array<Int>(20){0} 
                   
      
         ci=ci-1 
@@ -1292,22 +1295,36 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
            minres = 100000
     while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
             {
-    
-                j=0
-               
-                while (j >=0 && j<=19 && (canglenn_[j]!=360 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
 
-                    if ( canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360) {
-if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
-      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
+      // it has to be sequence loop-shifting (sh) for all 0-19 indexes
+                
+                
+               while (sh>=0 && sh<=19) {
+                                          j=0
+                                    while ( j >=0 && j<=19) {
+                                                   if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
+                                                   if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
+                                                   j=j+1
+                                                            }
+                   j=0
+                                      
+                                                          
+                
+                while (j >=0 && j<=19 && (canglennsh_[j]!=360 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
+
+                    if ( canglennsh_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360) {
+
+                        
+if ( Math.abs ( canglennsh_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
+      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennsh_[j]  - rcanglenn_[jj] [jjj] [j]   )
       resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()                                     
                                                                  }
 
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
-   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
+   if( (canglennsh_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglennsh_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
                                                        resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()  
                                                      }
-   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglenn_[j])  )
+   if( (canglennsh_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglennsh_[j])  )
                                                        resmin[jj] [jjj] =  (resmin[jj] [jjj]  * 1.0).roundToInt() 
                                                     }
       
@@ -1318,14 +1335,23 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                          
                                         
                     j=j+1
-                                                                                                        }
+                
+                
+                
+               }
 
-
+               }  //sh - loop-shifting
+               
                 
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   
                                            
            jjj=jjj+1
              }  
+
+
+
+
+            
  aresmin = aresmin + " [" + res0.toString() +  "," + res1.toString() + "]=" + minres.toString()
 
             if ( minres < minres0)    { res00=res0; minres0=minres }
