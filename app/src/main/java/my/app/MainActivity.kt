@@ -1340,6 +1340,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
                }
 
+                sh=sh+1
                }  //sh - loop-shifting
                
                 
