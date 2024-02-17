@@ -1340,8 +1340,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
                }
 
-                sh=sh+1
-               }  //sh - loop-shifting
+           //     sh=sh+1
+           //    }  //sh - loop-shifting
                
                 
       if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   
