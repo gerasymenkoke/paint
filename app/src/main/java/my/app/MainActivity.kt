@@ -1293,38 +1293,38 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
           jjj=0
 
            minres = 100000
-    while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
-            {
+      while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360 ) // quantity of variants for each/all numbers
+           {
 
       // it has to be sequence loop-shifting (sh) for all 0-19 indexes
                 
                 
-               while (sh>=0 && sh<=19) {
-                                          j=0
-                                    while ( j >=0 && j<=19) {
-                                                   if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
-                                                   if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
-                                                   j=j+1
-                                                            }
+         //      while (sh>=0 && sh<=19) {
+           //                               j=0
+             //                       while ( j >=0 && j<=19) {
+               //                                    if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
+                 //                                  if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
+                   //                                j=j+1
+                     //                                       }
                    j=0
                                       
                                                           
                 
-                while (j >=0 && j<=19 && (canglennsh_[j]!=360 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
+                while (j >=0 && j<=19 && (canglennsh_[j]!=0 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
 
-                    if ( canglennsh_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360) {
+                    if ( canglenn_[j]!=0 && rcanglenn_[jj] [jjj] [j] !=360) {
 
                         
-if ( Math.abs ( canglennsh_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
-      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglennsh_[j]  - rcanglenn_[jj] [jjj] [j]   )
+if ( Math.abs ( canglenn_[j] - rcanglenn_[jj] [jjj] [j]) <= 90 ) {
+      resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   canglenn_[j]  - rcanglenn_[jj] [jjj] [j]   )
       resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()                                     
                                                                  }
 
 if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
-   if( (canglennsh_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglennsh_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
+   if( (canglenn_[j] >= rcanglenn_[jj] [jjj] [j]) )  { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs (   (180-canglenn_[j])  + Math.abs(rcanglenn_[jj] [jjj] [j])   )  
                                                        resmin[jj] [jjj] =   (resmin[jj] [jjj]  * 1.0).roundToInt()  
                                                      }
-   if( (canglennsh_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglennsh_[j])  )
+   if( (canglenn_[j] <  rcanglenn_[jj] [jjj] [j]) ) { resmin[jj] [jjj] =  resmin[jj] [jjj] + Math.abs  (  (180-rcanglenn_[jj] [jjj] [j])  +   Math.abs(canglenn_[j])  )
                                                        resmin[jj] [jjj] =  (resmin[jj] [jjj]  * 1.0).roundToInt() 
                                                     }
       
