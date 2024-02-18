@@ -1310,7 +1310,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
                                       
                                                           
                 
-                while (j >=0 && j<=19 && (canglennsh_[j]!=0 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
+                while (j >=0 && j<=19 && (canglenn_[j]!=0 || rcanglenn_[jj] [jjj] [j] !=360) ) {  
 
                     if ( canglenn_[j]!=0 && rcanglenn_[jj] [jjj] [j] !=360) {
 
