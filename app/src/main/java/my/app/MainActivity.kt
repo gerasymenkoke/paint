@@ -1333,8 +1333,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
   
                                                                                        }
                     else  { 
-                    if ( canglenn_[j]==0 && rcanglenn_[jj] [jjj] [j] ==360)  j=19 //empty operation - both and symmetrically  0==360 end of circle 
-                        else resmin[jj] [jjj] =  resmin[jj] [jjj] + 3600 //  asymmetrically  0!==360
+                    if ( canglenn_[j]==0 && rcanglenn_[jj] [jjj] [j] ==360)  {j=19} //empty operation - both and symmetrically  0==360 end of circle 
+                        else {resmin[jj] [jjj] =  resmin[jj] [jjj] + 3600} //  asymmetrically  0==360
                           }
                          
                                         
