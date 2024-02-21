@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity() {
     private var jj = 0  
     private var jjj = 0  
     private var sh = 0  
+    private var sh = 0  
     
     private var iii = 0
     private var k=0
@@ -1288,6 +1289,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
                     
    jj=0
    minres0 = 100000
+                              
 while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
 {
           jjj=0
@@ -1296,23 +1298,24 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
       while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360) // quantity of variants for each/all numbers
            {
 
-      // it has to be sequence loop-shifting (sh) for all 0-19 indexes
+      // it has to be sequence loop-shifting (sh) for all 0,..,shh<=19 indexes for which (canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360)
                 
-                
-         //      while (sh>=0 && sh<=19) {
-           //                               j=0
-             //                       while ( j >=0 && j<=19) {
-               //                                    if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
-                 //                                  if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
-                   //                                j=j+1
-                     //                                       }
+                sh=0 
+               shh=19 // is changed inside while circle during first sh=0 loop 
+            while (sh>=0 && sh<=shh) {
+                                         j=0
+                                   while ( j >=0 && j<=19) {
+                                                if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
+                                                  if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
+                                                j=j+1
+                                                           }
                   
                
                j=0
                                                         
 
                
-                while (j >=0 && j<=19 ) {  
+                while (j >=0 && j<=shh ) {  
 
                     if ( canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360) {
 
@@ -1334,7 +1337,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
   
                                                                                        }
                     else  { 
-                    if ( canglenn_[j]==360 && rcanglenn_[jj] [jjj] [j] ==360)  {j=19} //empty operation - both and symmetrically  0==360 end of circle 
+                    if ( canglenn_[j]==360 && rcanglenn_[jj] [jjj] [j] ==360)  {shh=j; j=19} //empty operation - both and symmetrically  0==360 end of circle 
                         else {resmin[jj] [jjj] =  resmin[jj] [jjj] + 3600} //  asymmetrically  0==360
                           }
                          
@@ -1345,11 +1348,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
                }
 
-           //     sh=sh+1
-           //    }  //sh - loop-shifting
+
+    if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj]  ; res0=jj; res1=jjj;   }   // seek minres inside sh loop and  inside 0..299 variants
+                
+                   sh=sh+1
+               }  //sh - loop-shifting while circle
                
                 
-      if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   
+ //     if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   // seek minres inside 0..299 variants
                                            
            jjj=jjj+1
              }  
@@ -1360,7 +1366,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
  aresmin = aresmin + " [" + res0.toString() +  "," + res1.toString() + "]=" + minres.toString()
 
-            if ( minres < minres0)    { res00=res0; minres0=minres }
+            if ( minres < minres0)    { res00=res0; minres0=minres }  // seek minres0 inside 0..15 variants
  jj=jj + 1    
     
 } 
