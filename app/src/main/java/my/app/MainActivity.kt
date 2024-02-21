@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
     private var jj = 0  
     private var jjj = 0  
     private var sh = 0  
-    private var sh = 0  
+    private var shh = 0  
     
     private var iii = 0
     private var k=0
