@@ -85,6 +85,8 @@ class MainActivity : AppCompatActivity() {
     private var jjj = 0  
     private var sh = 0  
     private var shh = 0  
+    private var ccc = 0  
+
     
     private var iii = 0
     private var k=0
@@ -1299,17 +1301,33 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
            {
 
       // it has to be sequence loop-shifting (sh) for all 0,..,shh<=19 indexes for which (canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360)
-                
+                ccc=0
                 sh=0 
                shh=19 // is changed inside while circle during first sh=0 loop 
-            while (sh>=0 && sh<=shh) {
-                                         j=0
-                                   while ( j >=0 && j<=19) {
-                                                if ( (j+sh)<19) { canglennsh_[j]=canglenn_[j+sh] }
-                                                  if ( (j+sh)>19) { canglennsh_[j]=canglenn_[19-j] }
+            while (sh>=0 && sh<=shh && ccc<=1) {     // ccc - label of direct loop ccc=0 and reverse loop ccc=1
+                                        
+                                     if (ccc==0) {  j=0
+                                   while ( j >=0 && j<=shh) {
+                                                  if ( (j+sh)<=shh) { canglennsh_[j]=canglenn_[j+sh] }
+                                                  if ( (j+sh)>shh)  { canglennsh_[j]=canglenn_[shh-j] }
                                                 j=j+1
                                                            }
-                  
+                                                }
+
+                                     
+                                   if (ccc==1) {  j=0
+                                   while ( j >=0 && j<=shh) {
+                                                  if ( (j+sh)<=shh)  { canglennsh_[j+sh]=canglenn_[j] }
+                                                  if ( (j+sh)>shh)   { canglennsh_[shh-j]=canglenn_[j] }
+                                                j=j+1
+                                                                        }
+                                                  
+                                       
+                                                }
+                                     
+
+                                   if (sh==shh && ccc==0) { ccc=1; sh=0 }
+                                          
                
                j=0
                                                         
@@ -1337,7 +1355,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
   
                                                                                        }
                     else  { 
-                    if ( canglenn_[j]==360 && rcanglenn_[jj] [jjj] [j] ==360)  {shh=j; j=19} //empty operation - both and symmetrically  0==360 end of circle 
+                    if ( canglenn_[j]==360 && rcanglenn_[jj] [jjj] [j] ==360 && ccc==0)  {shh=j; j=19} //empty operation - both and symmetrically  0==360 end of circle 
                         else {resmin[jj] [jjj] =  resmin[jj] [jjj] + 3600} //  asymmetrically  0==360
                           }
                          
