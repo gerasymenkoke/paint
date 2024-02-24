@@ -1300,7 +1300,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // write to file
 
 
-  override fun onStart() {
+   fun onStart() {
         super.onStart()
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), REQUEST_PERMISSION)
@@ -1309,7 +1309,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
         }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+    fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         when (requestCode) {
             REQUEST_PERMISSION -> if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 write()
