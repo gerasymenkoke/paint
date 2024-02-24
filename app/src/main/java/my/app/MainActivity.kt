@@ -1299,7 +1299,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // write to file
 
-private fun createFileInInternalFolder() {
+ fun createFileInInternalFolder() {
     val internalFolderPath = this.filesDir.path + "/My_FOLDER"
     val fileName = File(internalFolderPath, "myFile.txt")
     if (!fileName.exists()) {
