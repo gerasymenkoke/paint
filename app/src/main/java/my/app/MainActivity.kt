@@ -1286,18 +1286,18 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // write to file
-String filename = "myfile";
+String filename = "myfile"
 // String[] numbers = new String[] {"1, 2, 3"};
-FileOutputStream outputStream;
+FileOutputStream outputStream
 
 try {
   outputStream = openFileOutput(filename, Context.MODE_APPEND);
   for (String s : aaa) {  
-      outputStream.write(s.getBytes());  
+      outputStream.write(s.getBytes()) 
   } 
-  outputStream.close();
+  outputStream.close()
 } catch (Exception e) {
-  e.printStackTrace();
+  e.printStackTrace()
 }
 
 
