@@ -1299,32 +1299,21 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // write to file
 
+val directory = File(context.filesDir, "savefiles")
+if (!directory.exists()) {
+    directory.mkdirs()
+}
 
-   fun onStart() {
-        super.onStart()
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), REQUEST_PERMISSION)
-        } else {
-            write()
-        }
-    }
+val fileName = SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault()).format(Date()) + ".json"
+val file = File(directory, fileName)
 
-    fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        when (requestCode) {
-            REQUEST_PERMISSION -> if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                write()
-            }
-        }
-    }
-
-    private fun write() {
-        val dir = "${Environment.getExternalStorageDirectory()}/$packageName"
-        File(dir).mkdirs()
-        val file = "%1\$tY%1\$tm%1\$td%1\$tH%1\$tM%1\$tS.log".format(Date())
-        File("$dir/$file").printWriter().use { 
-            it.println("text")
-        }
-    }
+try {
+    val outputStream = FileOutputStream(file)
+    outputStream.write(myJson.toString().toByteArray())
+    outputStream.close()
+} catch (e: IOException) {
+    Log.e("Exception", "File write failed: $e")
+}
 
 
 
