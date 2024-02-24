@@ -1299,23 +1299,15 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // write to file
 
-val directory = File(context.filesDir, "savefiles")
-if (!directory.exists()) {
-    directory.mkdirs()
+private fun createFileInInternalFolder() {
+    val internalFolderPath = this.filesDir.path + "/My_FOLDER"
+    val fileName = File(internalFolderPath, "myFile.txt")
+    if (!fileName.exists()) {
+        if(fileName.createNewFile()) {
+            Toast.makeText(this, "File Created", Toast.LENGTH_SHORT).show()
+        }
+    }
 }
-
-val fileName = SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault()).format(Date()) + ".json"
-val file = File(directory, fileName)
-
-try {
-    val outputStream = FileOutputStream(file)
-    outputStream.write(myJson.toString().toByteArray())
-    outputStream.close()
-} catch (e: IOException) {
-    Log.e("Exception", "File write failed: $e")
-}
-
-
 
 
 
