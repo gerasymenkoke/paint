@@ -1299,16 +1299,9 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // write to file
 
- fun createFileInInternalFolder() {
-    val internalFolderPath = this.filesDir.path + "/My_FOLDER"
-    val fileName = File(internalFolderPath, "myFile.txt")
-    if (!fileName.exists()) {
-        if(fileName.createNewFile()) {
-            Toast.makeText(this, "File Created", Toast.LENGTH_SHORT).show()
-        }
-    }
+File(applicationContext.filesDir, "test.txt").printWriter().use { out ->
+    out.println("${aaa}")
 }
-
 
 
 
