@@ -1297,7 +1297,11 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
-// write to file
+// crete and write to file
+
+
+val file = File(applicationContext.filesDir, "test.txt")
+
 
 File(applicationContext.filesDir, "test.txt").printWriter().use { out ->
     out.println("${aaa}")
