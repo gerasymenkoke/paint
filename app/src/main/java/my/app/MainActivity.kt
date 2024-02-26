@@ -1303,7 +1303,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-val file = File(applicationContext.filesDir, "test.txt")
+val file = File(applicationContext.filesDir, "/storage/emulated/0/Download/test.txt")
 
 
 File(applicationContext.filesDir, "test.txt").printWriter().use { out ->
