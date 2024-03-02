@@ -197,7 +197,7 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(100){0}
     private var resxy=0
- 
+    private val fileName = "my_note.txt"
   
        
          companion object {
@@ -1304,13 +1304,17 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-val file = File(applicationContext.filesDir, "/storage/emulated/0/Download/test.txt")
+ if (!fileExists()) {
+                try {
+                    val inputString = et_input_string.text.toString()
+                    writeFile(inputString)
+                } catch (e: IOException) {
+                    showError(e.message)
+                }
 
-
-File(applicationContext.filesDir, "test.txt").printWriter().use { out ->
-    out.println("${aaa}")
-}
-
+            } else {
+                displayText(fileName + " already exists!")
+            }
 
 
 
