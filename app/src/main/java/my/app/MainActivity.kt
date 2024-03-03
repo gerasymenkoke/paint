@@ -1310,18 +1310,15 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-               
-
-private void writeToFile(String data,Context context) {
-  try {
-    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("test.txt", Context.MODE_PRIVATE))
-    outputStreamWriter.write(data)
-    outputStreamWriter.close()
-  }
-  catch (IOException e) {
-    Log.e("Exception", "File write failed: " + e.toString());
-  } 
+File path = context.getFilesDir()               
+File file = new File(path, "test.txt")
+FileOutputStream stream = new FileOutputStream(file)
+try {
+    stream.write("text-to-write".getBytes())
+} finally {
+    stream.close()
 }
+
 
                            
                            
