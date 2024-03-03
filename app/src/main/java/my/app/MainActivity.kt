@@ -1312,9 +1312,10 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
 
-  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
-            return try{
-                context.openFileOutput("$fileName.jpeg", MODE_PRIVATE).use { stream ->
+//  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
+          //  return 
+                           try{
+                context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
                     if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
                         throw Exception("Couldn't open file")
                     }
@@ -1323,7 +1324,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
             }catch (e: Exception){
                 false
             }
-        }
+        
 
 
 
