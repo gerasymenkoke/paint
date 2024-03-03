@@ -1315,7 +1315,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 //  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
           //  return 
                            try{
-                context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
+                Context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
                     if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
                         throw Exception("Couldn't open file")
                     }
