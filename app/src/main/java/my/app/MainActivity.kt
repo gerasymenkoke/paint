@@ -1310,28 +1310,24 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
+               
 
+private void writeToFile(String data,Context context) {
+  try {
+    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("test.txt", Context.MODE_PRIVATE))
+    outputStreamWriter.write(data)
+    outputStreamWriter.close()
+  }
+  catch (IOException e) {
+    Log.e("Exception", "File write failed: " + e.toString());
+  } 
+}
 
-//  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
-          //  return 
-                       
-                           Context context = new Context()   
-
- // SwingDemo SwingDemo1 = new SwingDemo();
-   
-     //     SwingDemo1.SwingDemo();
-                            
                            
-                           try{
-                context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
-                    if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
-                        throw Exception("Couldn't open file")
-                    }
-                }
-        true
-            }catch (e: Exception){
-                false
-            }
+                           
+                           
+                  
+      
         
 
 
