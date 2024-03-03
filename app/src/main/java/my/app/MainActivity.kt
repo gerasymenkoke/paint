@@ -1317,8 +1317,12 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
                     if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
                         throw Exception("Couldn't open file")
                     }
-
-
+                }
+        true
+            }catch (e: Exception){
+                false
+            }
+        }
 
 
 
