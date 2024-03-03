@@ -1310,7 +1310,10 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-File path = context.getFilesDir()               
+// yourFile.writeText(textFromEditText)
+
+
+// File path = context.getFilesDir()               
 File file = new File(path, "test.txt")
 FileOutputStream stream = new FileOutputStream(file)
 try {
