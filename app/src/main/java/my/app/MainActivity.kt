@@ -1314,7 +1314,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 
 // File path = context.getFilesDir()               
-File file = new File(path, "test.txt")
+File file = new File("test.txt")
 FileOutputStream stream = new FileOutputStream(file)
 try {
     stream.write("text-to-write".getBytes())
