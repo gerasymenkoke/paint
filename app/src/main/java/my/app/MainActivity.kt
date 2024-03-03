@@ -1315,7 +1315,12 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 //  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
           //  return 
                        
-                           var context = Context()   
+                           Context context = new Context()   
+
+ // SwingDemo SwingDemo1 = new SwingDemo();
+   
+     //     SwingDemo1.SwingDemo();
+                            
                            
                            try{
                 context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
