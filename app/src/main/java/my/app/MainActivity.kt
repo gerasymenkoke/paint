@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     
      // from poperednikiv
-    var context=0
+   // var context=0
     var attrs=0
     var defStyleAttr=0
     private var isPencilIconClicked = false
@@ -204,7 +204,7 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(100){0}
     private var resxy=0
     private val fileName = "my_note.txt"
-  
+    private var context = Context()     
        
          companion object {
         var path = Path()
@@ -1315,7 +1315,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 //  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
           //  return 
                            try{
-                Context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
+                context.openFileOutput("text.txt", MODE_PRIVATE).use { stream ->
                     if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
                         throw Exception("Couldn't open file")
                     }
