@@ -35,7 +35,8 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.InputStreamReader
-import kotlinx.android.synthetic.main.activity_main.*
+import android.content.Context
+import android.content.Context.MODE_PRIVATE
 
 
 
