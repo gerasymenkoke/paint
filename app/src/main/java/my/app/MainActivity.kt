@@ -1309,18 +1309,14 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
- if (!fileExists()) {
-                try {
-                    val inputString = et_input_string.text.toString()
-                    writeFile(inputString)
-                } catch (e: IOException) {
-                    showError(e.message)
-                }
 
-            } else {
-                displayText(fileName + " already exists!")
-            }
 
+  fun savePhotoInInternalStorage(context: Context, fileName: String, bmp: Bitmap) : Boolean {
+            return try{
+                context.openFileOutput("$fileName.jpeg", MODE_PRIVATE).use { stream ->
+                    if(!bmp.compress(Bitmap.CompressFormat.JPEG,95,stream)){
+                        throw Exception("Couldn't open file")
+                    }
 
 
 
