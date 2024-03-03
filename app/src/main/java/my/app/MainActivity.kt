@@ -1310,18 +1310,12 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-// yourFile.writeText(textFromEditText)
+val path = context.getFilesDir()
+ val letDirectory = File(path, "TEST")
+letDirectory.mkdirs()  
 
-
-// File path = context.getFilesDir()               
-File file = new File("test.txt")
-FileOutputStream stream = new FileOutputStream(file)
-try {
-    stream.write("text-to-write".getBytes())
-} finally {
-    stream.close()
-}
-
+val file = File(letDirectory, "test.txt")
+file.appendText("test")
 
                            
                            
