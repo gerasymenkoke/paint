@@ -1310,8 +1310,10 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 // crete and write to file
 
 
-Context path = new context.getFilesDir()
- val letDirectory = File(path, "TEST")
+//Context path = new context.getFilesDir()
+ 
+val path = getContext().getFilesDir()                           
+val letDirectory = File(path, "TEST")
 letDirectory.mkdirs()  
 
 val file = File(letDirectory, "test.txt")
