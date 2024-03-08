@@ -1313,7 +1313,7 @@ if (j<=cinn) { data = aaa[j]   }
                 val fileOutputStream:FileOutputStream 
             try {  
                 fileOutputStream = FileOutputStream( myExternalFile)  
-                fileOutputStream.write(data.toByteArray())  
+                fileOutputStream.append(data.toByteArray())  
             } catch (e: FileNotFoundException){  
                 e.printStackTrace()  
             }catch (e: NumberFormatException){  
