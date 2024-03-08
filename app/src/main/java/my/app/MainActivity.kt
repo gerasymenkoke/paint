@@ -25,6 +25,7 @@ import android.content.pm.PackageManager
 //import android.support.v4.content.ContextCompat
 
 import java.io.* 
+import kotlin.io.*
 
 import java.io.BufferedReader
 import java.io.File
@@ -1289,31 +1290,43 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
 
 // output as text current painted number in direction sequence
         aaa = Array<String>(25){"0"}  // for 8 has to be make spare 25 instead 20 because 8 sometimes cinn > 20 
-       j=0;
+       j=0
    if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
 if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
-    // "  [" + j.toString() + "]=" + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" +
-    // + crnnx_[j].toString() + "," + crnny_[j].toString() + ";;" 
-    // + canglenn_[j].toString() + "/" + canglennpi_[j].toString() 
- // aaa[j] =  "  [" + j.toString() + "]="  +  canglenn_[j].toString() 
-//  aaacr[j] =  "[" + j.toString() + "]=" + "[" + crx_[j].toString() + "," + cry_[j].toString() + "] "  
-
-    //  aaacr[j] =  "[" + j.toString() + "]=" + dir_cr[j].toString() + "  "
-    
-                    j=j+1
+                  j=j+1
                      }
 
 
 
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // crete and write to file
+ val data:String = ""  
+
+                           
+val fileOutputStream:FileOutputStream  
+   // write  to external storage=sddisk
+var myExternalFile:File = File(getExternalFilesDir(""), "d")  
+ j=0
+       while (j >=0 && j<=cinn) {
+if (j<=cinn) { data = aaa[j]   }
+                 
+            try {  
+                fileOutputStream = FileOutputStream( myExternalFile)  
+                fileOutputStream.write(data.toByteArray())  
+            } catch (e: FileNotFoundException){  
+                e.printStackTrace()  
+            }catch (e: NumberFormatException){  
+                e.printStackTrace()  
+            }catch (e: IOException){  
+                e.printStackTrace()  
+            }catch (e: Exception){  
+                e.printStackTrace()  
+            } 
 
 
-val file:String = fileName.text.toString()  
-
-
-
+ j=j+1
+                     }
 
                            
                            
