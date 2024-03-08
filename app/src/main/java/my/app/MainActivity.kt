@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(100){0}
     private var resxy=0
     private var data:String = ""  
-    private var fileOutputStream:FileOutputStream  
+    
 
 
     
@@ -1310,7 +1310,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
  j=0
        while (j >=0 && j<=cinn) {
 if (j<=cinn) { data = aaa[j]   }
-                 
+                val fileOutputStream:FileOutputStream 
             try {  
                 fileOutputStream = FileOutputStream( myExternalFile)  
                 fileOutputStream.write(data.toByteArray())  
