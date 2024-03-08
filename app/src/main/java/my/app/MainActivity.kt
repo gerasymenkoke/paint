@@ -1314,8 +1314,8 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
  j=0
             val fileOutputStream:FileOutputStream 
             try {  
-                fileOutputStream = FileOutputStream( myExternalFile,  Context.MODE_APPEND )
-                fileOutputStream(data.toByteArray())  
+                fileOutputStream = FileOutputStream( myExternalFile,  true )
+                fileOutputStream.write(data.toByteArray())  
             } catch (e: FileNotFoundException){  
                 e.printStackTrace()  
             }catch (e: NumberFormatException){  
