@@ -1315,7 +1315,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
             val fileOutputStream:FileOutputStream 
             try {  
                 fileOutputStream = FileOutputStream( myExternalFile)  
-                fileOutputStream(data.toByteArray(),append)  
+                fileOutputStream(data.toByteArray(), true)  
             } catch (e: FileNotFoundException){  
                 e.printStackTrace()  
             }catch (e: NumberFormatException){  
