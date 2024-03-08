@@ -204,8 +204,11 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(100){0}
     private var resxy=0
-    private val fileName = "my_note.txt"
-      
+    private var data:String = ""  
+    private var fileOutputStream:FileOutputStream  
+
+
+    
        
          companion object {
         var path = Path()
@@ -1301,10 +1304,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
 
 // keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
 // crete and write to file
- val data:String = ""  
 
-                           
-val fileOutputStream:FileOutputStream  
    // write  to external storage=sddisk
 var myExternalFile:File = File(getExternalFilesDir(""), "d")  
  j=0
