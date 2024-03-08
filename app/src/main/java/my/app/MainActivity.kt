@@ -1292,11 +1292,15 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
               
 
 // output as text current painted number in direction sequence
+
         aaa = Array<String>(25){"0"}  // for 8 has to be make spare 25 instead 20 because 8 sometimes cinn > 20 
+        data = ""  // String of aaa Array for file.txt  saving
        j=0
    if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
+if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"
+               data = data + aaa[j]
+             }
                   j=j+1
                      }
 
@@ -1308,12 +1312,10 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"  }
    // write  to external storage=sddisk
 var myExternalFile:File = File(getExternalFilesDir(""), "d")  
  j=0
-       while (j >=0 && j<=cinn) {
-if (j<=cinn) { data = aaa[j]   }
-                val fileOutputStream:FileOutputStream 
+            val fileOutputStream:FileOutputStream 
             try {  
                 fileOutputStream = FileOutputStream( myExternalFile)  
-                fileOutputStream.append(data.toByteArray())  
+                fileOutputStream.write(data.toByteArray())  
             } catch (e: FileNotFoundException){  
                 e.printStackTrace()  
             }catch (e: NumberFormatException){  
@@ -1325,8 +1327,6 @@ if (j<=cinn) { data = aaa[j]   }
             } 
 
 
- j=j+1
-                     }
 
                            
                            
