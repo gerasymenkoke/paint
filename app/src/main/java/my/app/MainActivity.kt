@@ -1306,7 +1306,7 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"
 
 
 
-// keep in storage  canglenn_[j] j=0 to cinn  or aaa[j] as String  if result mismatch
+// keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button on screen
 // crete and write to file
 
    // write  to external storage=sddisk
@@ -1314,8 +1314,8 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
  j=0
             val fileOutputStream:FileOutputStream 
             try {  
-                fileOutputStream = FileOutputStream( myExternalFile,  true )
-                fileOutputStream.write(data.toByteArray())  
+                fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
+                fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing file or create new
             } catch (e: FileNotFoundException){  
                 e.printStackTrace()  
             }catch (e: NumberFormatException){  
