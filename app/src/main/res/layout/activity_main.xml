@@ -49,30 +49,21 @@
             android:background="@null"
             android:src="@drawable/ic_unselected_pencil" />
 
-      
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/background_card"
-        android:padding="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/action"
-        app:layout_constraintTop_toBottomOf="@+id/action">
-         <!--   android:visibility="invisible"  -->
+           <ImageButton
+            android:id="@+id/btn_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_pencil"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_line" />
 
         
-        <ImageButton
-            android:id="@+id/btn_save"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/color_palette_google_blue" />
+    </RelativeLayout>
 
    
-    </RelativeLayout>
+   
+  
 
 
 
