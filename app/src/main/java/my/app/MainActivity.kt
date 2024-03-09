@@ -1568,9 +1568,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 // crete and write to file
    
    // write  to external storage=sddisk
-var myExternalFile:File = File(getExternalFilesDir(""), "d")..
+var myExternalFile:File = File(getExternalFilesDir(""), "d")
  j=0
-            val fileOutputStream:FileOutputStream.
+            val fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
