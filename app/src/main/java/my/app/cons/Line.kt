@@ -1,4 +1,4 @@
-package com.ferodev.simplepaint.cons
+package my.app.cons
 
 data class Line(
     var startX: Float = 0f,
