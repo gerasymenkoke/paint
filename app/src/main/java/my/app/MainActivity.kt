@@ -1226,7 +1226,8 @@ class MainActivity : AppCompatActivity() {
                       btnPencil.setImageResource(R.drawable.ic_selected_pencil)
 
                     //  btnSave.setImageResource(R.drawable.ic_selected_pencil)
-                    btnSave.setImageResource(R.drawable.ic_selected_palette)
+                            colorPalate.visibility = View.VISIBLE
+                           btnSave.setImageResource(R.drawable.ic_selected_palette)
                    
 
                  
