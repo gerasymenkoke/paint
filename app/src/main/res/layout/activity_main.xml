@@ -53,18 +53,19 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/color_palate"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_card"
         android:padding="4dp"
-        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/action"
         app:layout_constraintTop_toBottomOf="@+id/action">
+         <!--   android:visibility="invisible"  -->
 
+        
         <ImageButton
-            android:id="@+id/btn_blue"
+            android:id="@+id/btn_save"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
