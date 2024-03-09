@@ -1306,88 +1306,6 @@ if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"
 
 
 
-// keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button on screen
-// crete and write to file
-
-   // write  to external storage=sddisk
-var myExternalFile:File = File(getExternalFilesDir(""), "d")  
- j=0
-            val fileOutputStream:FileOutputStream 
-            try {  
-                fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
-                fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing file or create new
-            } catch (e: FileNotFoundException){  
-                e.printStackTrace()  
-            }catch (e: NumberFormatException){  
-                e.printStackTrace()  
-            }catch (e: IOException){  
-                e.printStackTrace()  
-            }catch (e: Exception){  
-                e.printStackTrace()  
-            } 
-
-
-
-                           
-                           
-                           
-                  
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    aresmin = " "
 
   resmin =  Array(20){ Array<Int>(300){0} }
@@ -1641,11 +1559,37 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
                 
                 
+            } // end   btnPencil.setOnClickListener {
+
+
+        btnSave.setOnClickListener {
+
+                // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
+// crete and write to file
+   
+   // write  to external storage=sddisk
+var myExternalFile:File = File(getExternalFilesDir(""), "d")..
+ j=0
+            val fileOutputStream:FileOutputStream.
+            try {
+                fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
+                fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+            } catch (e: FileNotFoundException){
+                e.printStackTrace()
+            }catch (e: NumberFormatException){
+                e.printStackTrace()
+            }catch (e: IOException){
+                e.printStackTrace()
+            }catch (e: Exception){
+                e.printStackTrace()
             }
+        
+        }
+      
 
               
-        }
-        } 
+        }   // end binding.apply
+        }  // end onCreate
    
    
-}
+} // end MainActivity
