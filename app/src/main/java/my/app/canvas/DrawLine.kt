@@ -1,4 +1,4 @@
-package com.ferodev.simplepaint.canvas
+package my.app.canvas
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,9 +6,9 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
-import com.ferodev.simplepaint.MainActivity.Companion.colorList
-import com.ferodev.simplepaint.MainActivity.Companion.currentBrush
-import com.ferodev.simplepaint.cons.Line
+import my.app.MainActivity.Companion.colorList
+import my.app.MainActivity.Companion.currentBrush
+import my.app.cons.Line
 
 class DrawLine @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
