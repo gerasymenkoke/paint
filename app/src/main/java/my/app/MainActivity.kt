@@ -173,6 +173,8 @@ class MainActivity : AppCompatActivity() {
     private var res0 = 0 // res0 = dir_resmin[jj][0] ; res1 = dir_resmin[jj][1]  - temporary for max coincedence finding: res0, res1  - etalon number and index its variant in rr array 
                          // in array with min difference(coincedence), res1 - number  
     private var res00 = 0 
+    private var res11 = 0 
+    
     private var res1 = 0 // look up
     private var l = 0 // counter for different res0 in resnum array
     private var ll = 0
@@ -1428,7 +1430,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
  aresmin = aresmin + " [" + res0.toString() +  "," + res1.toString() + "]=" + minres.toString()
 
-            if ( minres < minres0)    { res00=res0; minres0=minres }  // seek minres0 inside 0..15 variants
+            if ( minres < minres0)    { res00=res0; res11=res1; minres0=minres }  // seek minres0 inside 0..15 variants
  jj=jj + 1    
     
 } 
@@ -1587,7 +1589,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         btnArrow.setOnClickListener {
 
                      btnArrow.setImageResource(R.drawable.ic_selected_line)
-
+                     data = " vs " + " [" + res00 + '," + res11 + "]" + "=" +minres0
 
             
                 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
