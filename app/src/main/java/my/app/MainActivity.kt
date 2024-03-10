@@ -1310,11 +1310,21 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
        j=0
    if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
-if (j<=cinn) { aaa[j] =   canglenn_[j].toString() + "/"
-               data = data + aaa[j]
-             }
+ aaa[j] =   canglenn_[j].toString() + "/"
+ data = data + aaa[j] // String of aaa Array for file.txt  saving
+             
                   j=j+1
-                     }
+                         }
+
+        j=0
+while (j >=cnn && j<=19) {
+data = data + "360/" // add "360/" as blank to String of aaa Array for file.txt  saving
+
+                  j=j+1
+                        }
+
+
+
 
 
 
