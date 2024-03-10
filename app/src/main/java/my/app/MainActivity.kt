@@ -1324,7 +1324,7 @@ data = data + "360/" // add "360/" as blank to String of aaa Array for file.txt 
 
                   j=j+1
                         }
-data = data + "\n"  // addd new line + blank line divider symbol for comfortable view
+data = data + "\n" + "\n"  // addd new line + blank line divider symbol for comfortable view
 
 
 
