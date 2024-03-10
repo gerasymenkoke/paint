@@ -1317,7 +1317,7 @@ while (j >=0 && j<=cinn) {
                          }
 
         j=0
-while (j >=cnn && j<=19) {
+while (j >=cinn && j<=19) {
 data = data + "360/" // add "360/" as blank to String of aaa Array for file.txt  saving
 
                   j=j+1
