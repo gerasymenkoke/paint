@@ -1230,7 +1230,7 @@ class MainActivity : AppCompatActivity() {
                     //  btnSave.setImageResource(R.drawable.ic_selected_pencil)
 
                            drawLine.visibility = View.VISIBLE
-                           btnArrow.setImageResource(R.drawable.ic_unselected_line)
+                   //      btnArrow.setImageResource(R.drawable.ic_unselected_line)
 
                    
 
@@ -1324,7 +1324,7 @@ data = data + "360/" // add "360/" as blank to String of aaa Array for file.txt 
 
                   j=j+1
                         }
-data = data + "\n" + "\n" // addd new line + blank line divider symbol for comfortable view
+data = data + "\n"  // addd new line + blank line divider symbol for comfortable view
 
 
 
@@ -1588,8 +1588,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
         btnArrow.setOnClickListener {
 
-                     btnArrow.setImageResource(R.drawable.ic_selected_line)
-    data = " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + data  // what we want vs got as min of aresmin array 
+                 //    btnArrow.setImageResource(R.drawable.ic_selected_line)
+    data = " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
             
                 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
