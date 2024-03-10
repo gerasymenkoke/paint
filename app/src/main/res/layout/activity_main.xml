@@ -68,7 +68,8 @@
 
             android:layout_toEndOf="@+id/btn_rectangle"
             android:background="@null"
-            android:text="Save" />
+            android:text="Save"
+            android:src="@drawable/ic_unselected_line"/>
 
 
                
