@@ -1228,7 +1228,7 @@ class MainActivity : AppCompatActivity() {
                     //  btnSave.setImageResource(R.drawable.ic_selected_pencil)
 
                            drawLine.visibility = View.VISIBLE
-                           btnArrow.setImageResource(R.drawable.ic_selected_line)
+                           btnArrow.setImageResource(R.drawable.ic_unselected_line)
 
                    
 
@@ -1586,6 +1586,10 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
         btnArrow.setOnClickListener {
 
+                     btnArrow.setImageResource(R.drawable.ic_selected_line)
+
+
+            
                 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
 // crete and write to file
    
