@@ -1589,7 +1589,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         btnArrow.setOnClickListener {
 
                      btnArrow.setImageResource(R.drawable.ic_selected_line)
-    data = " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString()  // what we want vs got as min of aresmin array 
+    data = " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + data  // what we want vs got as min of aresmin array 
 
             
                 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
