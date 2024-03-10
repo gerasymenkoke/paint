@@ -8,16 +8,10 @@
     <item>Shayam</item>
 </string-array>
 
-
-
-
-
-
-
-
-
-
-
     
      <string name="zzztext">zzz</string>
+
+    <string name="Save">Save</string>
+
+    
 </resources>
