@@ -28,6 +28,9 @@ class DrawLine @JvmOverloads constructor(
         paintBrush.color = newColor
     }
 
+
+/*
+    
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
@@ -71,4 +74,6 @@ class DrawLine @JvmOverloads constructor(
             invalidate()
         }
     }
+*/
+    
 }
