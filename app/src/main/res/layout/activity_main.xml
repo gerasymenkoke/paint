@@ -67,8 +67,8 @@
             android:layout_margin="10dp"
 
             android:layout_toEndOf="@+id/btn_rectangle"
-            android:background="@null"
-            android:text="@string/Save"
+            android:background="@drawable/ic_unselected_line"
+            android:text="Save"
             />
 
         <!-- android:src="@drawable/ic_unselected_line" -->
