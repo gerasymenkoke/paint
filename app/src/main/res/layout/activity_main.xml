@@ -55,12 +55,29 @@
             android:layout_height="40dp"
             android:layout_margin="10dp"
             android:layout_toEndOf="@+id/btn_pencil"
-            android:background="@null"
-           />
+            android:background="@null"     />
 
             
+          <Button  
+        android:id="@+id/btn_arrow"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignRight="@+id/btn_rectangle"  
+        android:layout_alignParentBottom="true"  
+        android:layout_alignStart="@+id/btn_rectangle"  
+        android:layout_marginBottom="53dp"  
+        android:layout_marginLeft="49dp"  
+        android:layout_marginStart="49dp"  
+        android:text="Save_Kostya" />  
+
         
-           <ImageButton
+          
+
+
+        
+        <!-- 
+        
+         <ImageButton
             android:id="@+id/btn_arrow"
             android:layout_width="80dp"
             android:layout_height="40dp"
@@ -70,8 +87,9 @@
             android:background="@drawable/ic_unselected_line"
             android:text="Save"
             />
-
-        <!-- android:src="@drawable/ic_unselected_line" -->
+        
+                
+        android:src="@drawable/ic_unselected_line" -->
                
            
 
