@@ -54,7 +54,7 @@
         android:layout_marginRight="33dp"  
         android:text="0" 
         app:layout_constraintEnd_toEndOf="@+id/btn_arrow"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_arrow"
         app:layout_constraintTop_toTopOf="@+id/btn_arrow"  />  
     
      
