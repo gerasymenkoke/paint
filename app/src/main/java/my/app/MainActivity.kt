@@ -1589,7 +1589,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         btnArrow.setOnClickListener {
 
       //      btnArrow.setImageResource(R.drawable.ic_selected_line)
-                      
+
+               btn0.visibility = View.VISIBLE
+
+
+            
     data = "..vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
             
