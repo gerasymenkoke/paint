@@ -1229,7 +1229,7 @@ class MainActivity : AppCompatActivity() {
 
                     //  btnSave.setImageResource(R.drawable.ic_selected_pencil)
 
-                           drawLine.visibility = View.VISIBLE
+                   //        drawLine.visibility = View.VISIBLE
                  //       btnArrow.setImageResource(R.drawable.ic_unselected_line)
 
                    
