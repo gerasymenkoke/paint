@@ -42,6 +42,30 @@
         app:layout_constraintTop_toTopOf="parent"/>      
       
 
+
+<Button  
+        android:id="@+id/btn_0"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignEnd="@+id/btn_arrow"  
+        android:layout_alignRight="@+id/btn_arrow"  
+        android:layout_alignTop="@+id/btn_arrow"  
+        android:layout_marginEnd="33dp"  
+        android:layout_marginRight="33dp"  
+        android:text="0" 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>  
+    
+     
+
+
+
+
+
+
+
+    
     <!--
        <Button  
         android:id="@+id/btn_0"  
