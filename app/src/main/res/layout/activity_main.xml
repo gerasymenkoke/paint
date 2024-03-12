@@ -52,6 +52,7 @@
         android:layout_marginEnd="33dp"  
         android:layout_marginRight="33dp"  
         android:text="0" 
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="@+id/btn_arrow"
         app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
          />  
