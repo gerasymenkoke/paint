@@ -36,11 +36,26 @@
         android:layout_marginBottom="53dp"  
         android:layout_marginLeft="49dp"  
         android:layout_marginStart="49dp"  
-        android:text="Save_Kostya" 
+        android:text="Save" 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>      
       
+      
+       <Button  
+        android:id="@+id/btn_0"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignRight="@+id/btn_arrow"  
+        android:layout_alignParentBottom="true"  
+        android:layout_alignStart="@+id/btn_arrow"  
+        android:layout_marginBottom="53dp"  
+        android:layout_marginLeft="49dp"  
+        android:layout_marginStart="49dp"  
+        android:text="0" 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>    
       
      
 
