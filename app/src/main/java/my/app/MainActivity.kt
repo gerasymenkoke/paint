@@ -1586,11 +1586,16 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             } // end   btnPencil.setOnClickListener {
 
 
-        btnArrow.setOnClickListener {
+      btnArrow.setOnClickListener {
 
-      //      btnArrow.setImageResource(R.drawable.ic_selected_line)
+           btn0.visibility = View.VISIBLE
+                                  }
 
-               btn0.visibility = View.VISIBLE
+
+      
+        btn0.setOnClickListener {
+
+           btn0.visibility = View.GONE
 
 
             
