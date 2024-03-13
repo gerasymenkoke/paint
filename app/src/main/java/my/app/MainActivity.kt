@@ -1604,8 +1604,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
 
-        btn1.setOnClickListener {  btn1.visibility = View.GONE;  btn_numbers_hide = 0 }
-        btn2.setOnClickListener {  btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
+        btn1.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
+        btn2.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
 
 
 
@@ -1613,7 +1613,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
       
         btn0.setOnClickListener {
 
-           btn0.visibility = View.GONE;  btn_numbers_hide = 0
+           btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0
             
     data = "..vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
