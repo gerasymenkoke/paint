@@ -1608,13 +1608,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
 
-        btn1.setOnClickListener { btn_action(1) }
-       
 
-            
- 
-      
-// functions
+        // functions
 
  fun btn_action(number: Int) {
 
@@ -1653,6 +1648,17 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
         btn_numbers_hide = 0
     }
 
+
+
+
+      
+
+        btn1.setOnClickListener { btn_action(1) }
+       
+
+            
+ 
+      
 
 
       
