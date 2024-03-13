@@ -207,7 +207,7 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(100){0}
     private var resxy=0
     private var data:String = ""  
-    private btn_numbers_hide = 0
+    private var btn_numbers_hide = 0
 
 
     
@@ -1587,12 +1587,12 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             
             
             
-            btnPencil.setOnClickListener {
+          
 
 
       btnArrow.setOnClickListener {
 
-         if (btn_numbers_hide == 0} { btn0.visibility = View.VISIBLE;  btn_numbers_hide = 1 }  
+         if (btn_numbers_hide == 0) { btn0.visibility = View.VISIBLE;  btn_numbers_hide = 1 }  
           else   { btn0.visibility = View.GONE; btn_numbers_hide = 0 }
                                  }
 
