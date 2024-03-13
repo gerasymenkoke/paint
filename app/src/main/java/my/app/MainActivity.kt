@@ -207,7 +207,7 @@ class MainActivity : AppCompatActivity() {
     private var jdec = Array<Int>(100){0}
     private var resxy=0
     private var data:String = ""  
-    
+    private btn_numbers_hide = 0
 
 
     
@@ -1583,21 +1583,24 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
                 
                 
-            } // end   btnPencil.setOnClickListener {
+            } // end   
+            
+            
+            
+            btnPencil.setOnClickListener {
 
 
       btnArrow.setOnClickListener {
 
-           btn0.visibility = View.VISIBLE
-                                  }
+         if (btn_numbers_hide == 0} { btn0.visibility = View.VISIBLE;  btn_numbers_hide = 1 }  
+          else   { btn0.visibility = View.GONE; btn_numbers_hide = 0 }
+                                 }
 
 
       
         btn0.setOnClickListener {
 
-           btn0.visibility = View.GONE
-
-
+           btn0.visibility = View.GONE;  btn_numbers_hide = 0
             
     data = "..vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
