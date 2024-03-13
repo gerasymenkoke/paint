@@ -1603,7 +1603,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                    btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
               
                   btn_numbers_hide = 0 }
-                                 }
+
+          data = number  + " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
+                               
+      
+      }
 
 
 
@@ -1611,13 +1615,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
         // functions
 
- fun btn_action(number: Int) {
+ fun btn_action(number: String) {
 
-           
-    data = number  + " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
-
+  var data1 = number + data         
             
-                // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
+// keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
 // crete and write to file
    
    // write  to external storage=sddisk
@@ -1626,7 +1628,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
             val fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
-                fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+                fileOutputStream.write(data1.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
             }catch (e: NumberFormatException){
