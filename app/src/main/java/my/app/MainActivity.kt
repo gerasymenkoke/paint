@@ -1604,8 +1604,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
               
                   btn_numbers_hide = 0 }
 
-          data =  " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
-                               
+                                      
       
       }
 
@@ -1617,8 +1616,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
  fun btn_action(number: String) {
 
-  var data1 = number + data         
-            
+   data =  number + " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
+
+    
 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
 // crete and write to file
    
@@ -1639,10 +1639,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
                 e.printStackTrace()
             }
         
-        
-
-
-     
+   
   btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
@@ -1655,13 +1652,29 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
 
       
 
+        btn0.setOnClickListener { btn_action("0") }
         btn1.setOnClickListener { btn_action("1") }
-       
-
-            
- 
+        btn2.setOnClickListener { btn_action("2") } 
       
+        btn3.setOnClickListener { btn_action("3") }     
+        btn4.setOnClickListener { btn_action("4") }
+        btn5.setOnClickListener { btn_action("5") }
+        btn6.setOnClickListener { btn_action("6") } 
+ 
+        btn7.setOnClickListener { btn_action("7") } 
+        btn8.setOnClickListener { btn_action("8") }
+        btn9.setOnClickListener { btn_action("9") }
+ 
+        btn10.setOnClickListener { btn_action("10") } 
+        btn11.setOnClickListener { btn_action("11") } 
+        btn12.setOnClickListener { btn_action("12") }
+        btn13.setOnClickListener { btn_action("13") }
 
+        btn14.setOnClickListener { btn_action("14") } 
+        btn15.setOnClickListener { btn_action("15") } 
+        btn16.setOnClickListener { btn_action("16") }
+        btn17.setOnClickListener { btn_action("17") }
+       
 
       
               
