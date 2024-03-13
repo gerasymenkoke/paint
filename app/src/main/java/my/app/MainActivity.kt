@@ -1592,10 +1592,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
       btnArrow.setOnClickListener {
 
-         if (btn_numbers_hide == 0) { btn0.visibility = View.VISIBLE;   btn1.visibility = View.VISIBLE;  btn2.visibility = View.VISIBLE
-             
+         if (btn_numbers_hide == 0) { btn0.visibility = View.VISIBLE;   btn1.visibility = View.VISIBLE;  btn2.visibility = View.VISIBLE;  btn3.visibility = View.VISIBLE;  btn4.visibility = View.VISIBLE;
+                                       btn5.visibility = View.VISIBLE;  btn6.visibility = View.VISIBLE;  btn7.visibility = View.VISIBLE;  btn8.visibility = View.VISIBLE;
                                       btn_numbers_hide = 1 }  
-          else   { btn0.visibility = View.GONE; btn1.visibility = View.GONE; btn2.visibility = View.GONE;
+          else   { btn0.visibility = View.GONE; btn1.visibility = View.GONE; btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
               
               
                   btn_numbers_hide = 0 }
@@ -1604,16 +1605,47 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
 
-        btn1.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
-        btn2.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
+        btn1.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+        btn2.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+        btn3.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+        btn4.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+
+        btn5.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+        btn6.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+        btn7.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+        btn8.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; btn_numbers_hide = 0 }
+
+       
 
 
 
+
+
+        
+
+        
 
       
         btn0.setOnClickListener {
 
-           btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE;  btn_numbers_hide = 0
+           btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;  btn_numbers_hide = 0
+
+            
             
     data = "..vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
