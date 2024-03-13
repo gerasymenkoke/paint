@@ -136,7 +136,7 @@
         android:text="6" 
         android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/btn_7"
-        app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_9"
          />  
 
 <Button  
@@ -149,7 +149,7 @@
         android:text="7" 
         android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/btn_8"
-        app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_10"
          />  
 
 
