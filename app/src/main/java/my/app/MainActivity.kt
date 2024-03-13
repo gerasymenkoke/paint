@@ -1628,7 +1628,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
             val fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
-                fileOutputStream.write(data1.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+                fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
             }catch (e: NumberFormatException){
