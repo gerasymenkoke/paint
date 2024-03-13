@@ -1592,9 +1592,22 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
       btnArrow.setOnClickListener {
 
-         if (btn_numbers_hide == 0) { btn0.visibility = View.VISIBLE;  btn_numbers_hide = 1 }  
-          else   { btn0.visibility = View.GONE; btn_numbers_hide = 0 }
+         if (btn_numbers_hide == 0) { btn0.visibility = View.VISIBLE;   btn1.visibility = View.VISIBLE;  btn2.visibility = View.VISIBLE
+             
+                                      btn_numbers_hide = 1 }  
+          else   { btn0.visibility = View.GONE; btn1.visibility = View.GONE; btn2.visibility = View.GONE;
+              
+              
+                  btn_numbers_hide = 0 }
                                  }
+
+
+
+
+        btn1.setOnClickListener {  btn1.visibility = View.GONE;  btn_numbers_hide = 0 }
+        btn2.setOnClickListener {  btn2.visibility = View.GONE;  btn_numbers_hide = 0 }
+
+
 
 
       
