@@ -1604,7 +1604,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
               
                   btn_numbers_hide = 0 }
 
-          data = number  + " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
+          data =  " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
                                
       
       }
@@ -1655,7 +1655,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
 
       
 
-        btn1.setOnClickListener { btn_action(1) }
+        btn1.setOnClickListener { btn_action("1") }
        
 
             
