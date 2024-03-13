@@ -1608,130 +1608,18 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
 
-     if( btn1.setOnClickListener || btn2.setOnClickListener ) {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-        btn2.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
+        btn1.setOnClickListener { btn_action(1) }
+       
 
-        btn3.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-                   
-        
-        btn4.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-
-
-        btn5.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-
-        btn6.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-
-        btn7.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
-                   btn_numbers_hide = 0 }
-
-        btn8.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-         btn9.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 } 
-
-          btn10.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-           btn11.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-            btn12.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-             btn13.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-               btn14.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }
-
-                btn15.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 } 
-
-               btn16.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }  
-               
-               btn17.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-                   btn_numbers_hide = 0 }  
-
-
-
-        
-
-        
-
+            
+ 
       
-        btn0.setOnClickListener {
+// functions
 
-          
-                   btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
-                   btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
-                   btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
-                   btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
-            
-            
-            btn_numbers_hide = 0
+ fun btn_action(number: Int) {
 
-            
-            
-    data = "..vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
+           
+    data = number  + " vs " + " [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + data  // what we want vs got as min of aresmin array 
 
             
                 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
@@ -1754,9 +1642,20 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
                 e.printStackTrace()
             }
         
-        }
-      
+        
 
+
+     
+  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+  btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE;
+  btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
+  btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE; 
+        btn_numbers_hide = 0
+    }
+
+
+
+      
               
         }   // end binding.apply
         }  // end onCreate
