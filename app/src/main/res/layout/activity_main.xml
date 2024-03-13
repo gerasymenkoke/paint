@@ -53,7 +53,7 @@
         android:layout_marginRight="33dp"  
         android:text="0" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_1"
         app:layout_constraintBottom_toTopOf="@+id/btn_3"
          />  
     
@@ -70,7 +70,7 @@
         android:layout_marginRight="33dp"  
         android:text="1" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
         app:layout_constraintBottom_toTopOf="@+id/btn_4"  />  
 
 
@@ -86,7 +86,7 @@
         android:layout_marginRight="33dp"  
         android:text="2" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintStart_toStartOf="@+id/btn_arrow"
         app:layout_constraintBottom_toTopOf="@+id/btn_5"
          />  
 
@@ -102,7 +102,7 @@
         android:layout_marginRight="33dp"  
         android:text="3" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_4"
         app:layout_constraintBottom_toTopOf="@+id/btn_6"
          />  
 
@@ -118,7 +118,7 @@
         android:layout_marginRight="33dp"  
         android:text="4" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_5"
         app:layout_constraintBottom_toTopOf="@+id/btn_7"
          />  
 
@@ -134,15 +134,55 @@
         android:layout_marginRight="33dp"  
         android:text="5" 
         android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@+id/btn_arrow"
+        app:layout_constraintStart_toStartOf="@+id/btn_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_8"
+         />  
+
+<Button  
+        android:id="@+id/btn_6"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+     
+
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="33dp"  
+        android:layout_marginRight="33dp"  
+        android:text="6" 
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btn_7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
+         />  
+
+<Button  
+        android:id="@+id/btn_7"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+     
+
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="33dp"  
+        android:layout_marginRight="33dp"  
+        android:text="7" 
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btn_8"
         app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
          />  
 
 
+<Button  
+        android:id="@+id/btn_8"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+     
 
-
-
-
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="33dp"  
+        android:layout_marginRight="33dp"  
+        android:text="8" 
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/btn_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/btn_arrow"
+         />  
 
     
 
