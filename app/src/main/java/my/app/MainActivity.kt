@@ -1608,7 +1608,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
 
-        btn1.setOnClickListener {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
+        btn1.setOnClickListener || btn2.setOnClickListener  {  btn0.visibility = View.GONE;btn1.visibility = View.GONE;btn2.visibility = View.GONE; btn3.visibility = View.GONE; btn4.visibility = View.GONE; 
                    btn5.visibility = View.GONE; btn6.visibility = View.GONE; btn7.visibility = View.GONE; btn8.visibility = View.GONE; 
                    btn9.visibility = View.GONE; btn10.visibility = View.GONE; btn11.visibility = View.GONE; btn12.visibility = View.GONE; btn13.visibility = View.GONE; 
                    btn14.visibility = View.GONE; btn15.visibility = View.GONE; btn16.visibility = View.GONE; btn17.visibility = View.GONE;
