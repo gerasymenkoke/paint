@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
     private var repeat=0
     
     private var jdec = Array<Int>(100){0}
-    private var lastindex_rcanglenn = Array<Int>(15){0} 
+    private var lastindex_rcanglenn = Array<Int>(17){0} 
     private var resxy=0
     private var data:String = ""  
     private var btn_numbers_hide = 0
@@ -1423,7 +1423,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 
  //     if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   // seek minres inside 0..299 variants
 
-                lastindex_rcanglenn[jj] = jjj // count of index quantity for each of 15 numbers: rcanglenn[x, y] ,  i.e. it's y                          
+                lastindex_rcanglenn[jj] = jjj // count of index quantity for each of 15 variants: rcanglenn[x, y] ,  i.e. it's y                          
            jjj=jjj+1
              }  
 
@@ -1620,7 +1620,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
  fun btn_action(number: String) {
 
    data =  number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() +
-     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00] + "]" + " =arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
+     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00].toString() + "]" + " =arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
 
      lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
     
