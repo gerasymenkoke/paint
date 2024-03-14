@@ -1325,7 +1325,7 @@ if(j<19) {data = data + "360," } // add "360/" as blank to String of aaa Array f
 if(j==19) {data = data + "360" }
                   j=j+1
                         }
-data = data + "\n"  // addd new line + blank line divider symbol for comfortable view
+
 
 
 
@@ -1618,9 +1618,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         // functions
 
  fun btn_action(number: String) {
-
+   lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
    data =  number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() +
-     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00].toString() + "]" + " =arrayOf<Int>(" + data + ")" +  "\n" // what we want vs got as min of aresmin array 
+     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00].toString() + "]" + " =arrayOf<Int>(" + data + ")" +  "\n" + "\n" // what we want vs got as min of aresmin array 
 
      lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
     
