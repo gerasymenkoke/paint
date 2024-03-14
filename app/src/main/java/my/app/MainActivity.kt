@@ -205,6 +205,7 @@ class MainActivity : AppCompatActivity() {
     private var repeat=0
     
     private var jdec = Array<Int>(100){0}
+    private var lastindex_rcanglenn = Array<Int>(15){0} 
     private var resxy=0
     private var data:String = ""  
     private var btn_numbers_hide = 0
@@ -1312,7 +1313,7 @@ if (cinn==0) {   crnnx_[cinn]= crx_[j]; crnny_[cinn]= cry_[j];
        j=0
    if (cinn > 0)  cinn=cinn - 1
 while (j >=0 && j<=cinn) {
- aaa[j] =   canglenn_[j].toString() + "/"
+ aaa[j] =   canglenn_[j].toString() + ","
  data = data + aaa[j] // String of aaa Array for file.txt  saving
              
                   j=j+1
@@ -1320,8 +1321,8 @@ while (j >=0 && j<=cinn) {
 
         j=cinn+1
 while (j >=cinn && j<=19) {
-data = data + "360/" // add "360/" as blank to String of aaa Array for file.txt  saving
-
+if(j<19) {data = data + "360," } // add "360/" as blank to String of aaa Array for file.txt  saving
+if(j==19) {data = data + "360" }
                   j=j+1
                         }
 data = data + "\n" + "\n"  // addd new line + blank line divider symbol for comfortable view
@@ -1346,6 +1347,7 @@ while (jj >=0 && jj<=15)  // index of symbols(numbers and operations)  0, 1 ..
       while (jjj >=0 && jjj<=299 && rcanglenn_[jj] [jjj] [0] !=360) // quantity of variants for each/all numbers
            {
 
+               
       // it has to be sequence loop-shifting (sh) for all 0,..,shh<=19 indexes for which (canglenn_[j]!=360 && rcanglenn_[jj] [jjj] [j] !=360)
                 ccc=0
                 sh=0 
@@ -1420,7 +1422,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                
                 
  //     if  (resmin[jj] [jjj]  < minres) {    minres = resmin[jj] [jjj] ; res0=jj; res1=jjj;   }   // seek minres inside 0..299 variants
-                                           
+
+                lastindex_rcanglenn[jj] = jjj // count of index quantity for each of 15 numbers: rcanglenn[x, y] ,  i.e. it's y                          
            jjj=jjj+1
              }  
 
@@ -1617,8 +1620,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
  fun btn_action(number: String) {
 
    data =  number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() +
-     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + "XXX" + "]=arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
+     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00] + "]" + " =arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
 
+     lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
     
 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
 // crete and write to file
