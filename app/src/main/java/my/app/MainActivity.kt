@@ -1616,8 +1616,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
  fun btn_action(number: String) {
 
-   data =  number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + "\n" + 
-     "rcanglenn_[" +  res00.toString()  + "][" + res11.toString() + ]=arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
+   data =  number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() +
+     "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + "XXX" + "]=arrayOf<Int>(" + data + ")" // what we want vs got as min of aresmin array 
 
     
 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
