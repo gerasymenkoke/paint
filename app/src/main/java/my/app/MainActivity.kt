@@ -68,8 +68,12 @@ import my.app.canvas.DrawPencil.Companion.crxdy_
 import my.app.canvas.DrawPencil.Companion.cangle_
 import my.app.canvas.DrawPencil.Companion.canglepi_ 
 import my.app.canvas.DrawPencil.Companion.ci
-import my.app.canvas.Data_File.Companion.rcanglenn_
 
+import my.app.canvas.Data_File.Companion.rcanglenn_
+import my.app.canvas.Data_File.Companion.init0
+import my.app.canvas.Data_File.Companion.init14
+import my.app.canvas.Data_File.Companion.init59
+import my.app.canvas.Data_File.Companion.init1015
 
 
 import kotlin.math.abs
@@ -239,11 +243,22 @@ class MainActivity : AppCompatActivity() {
         w = displayMetrics.widthPixels
         h = displayMetrics.heightPixels
 
-              
+
+
+         
+
+
+
+        
         
         binding.apply {
 
 
+
+       init0()
+       init14()
+       init59()
+       init1015()
 
  
    
