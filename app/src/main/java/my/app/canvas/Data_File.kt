@@ -63,7 +63,7 @@ class Data_File @JvmOverloads constructor(
     
      companion object {
        
-  
+  private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
         
        
          
