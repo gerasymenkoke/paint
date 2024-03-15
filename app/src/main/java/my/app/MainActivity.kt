@@ -68,7 +68,7 @@ import my.app.canvas.DrawPencil.Companion.crxdy_
 import my.app.canvas.DrawPencil.Companion.cangle_
 import my.app.canvas.DrawPencil.Companion.canglepi_ 
 import my.app.canvas.DrawPencil.Companion.ci
-
+import my.app.canvas.Data_File.Companion.rcanglenn_
 
 
 
@@ -138,8 +138,8 @@ class MainActivity : AppCompatActivity() {
     private var canglennsh_ = Array<Int>(20){0} 
     
     private var canglennpi_ = Array<Int>(100){360} 
-    private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
- //     private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
+//    private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
+    private var rcanglenn0_ = Array(20) { Array(60){ Array<Int>(20){360} } }  
     
     private var cin = 0
     private var cinn = 0
