@@ -210,6 +210,7 @@ class MainActivity : AppCompatActivity() {
     private var data:String = ""  
     private var btn_numbers_hide = 0
 
+   
 
     
        
@@ -674,8 +675,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
         // functions
 
- fun btn_action(number: String) {
-   lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
+ fun btn_action(number: String,  number00:Int) {
+   lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] +1 
    data =  "//" + number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() +
      "\n" +  "rcanglenn_[" +  res00.toString()  + "][" + lastindex_rcanglenn[res00].toString() + "]" + " =arrayOf<Int>(" + data + ")" +  "\n" + "\n" // what we want vs got as min of aresmin array 
 
@@ -714,28 +715,28 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
 
       
 
-        btn0.setOnClickListener { btn_action("0") }
-        btn1.setOnClickListener { btn_action("1") }
-        btn2.setOnClickListener { btn_action("2") } 
+        btn0.setOnClickListener { btn_action("0", 0) }
+        btn1.setOnClickListener { btn_action("1", 1) }
+        btn2.setOnClickListener { btn_action("2", 2) } 
       
-        btn3.setOnClickListener { btn_action("3") }     
-        btn4.setOnClickListener { btn_action("4") }
-        btn5.setOnClickListener { btn_action("5") }
-        btn6.setOnClickListener { btn_action("6") } 
+        btn3.setOnClickListener { btn_action("3", 3) }     
+        btn4.setOnClickListener { btn_action("4", 4) }
+        btn5.setOnClickListener { btn_action("5", 5) }
+        btn6.setOnClickListener { btn_action("6", 6) } 
  
-        btn7.setOnClickListener { btn_action("7") } 
-        btn8.setOnClickListener { btn_action("8") }
-        btn9.setOnClickListener { btn_action("9") }
+        btn7.setOnClickListener { btn_action("7", 7) } 
+        btn8.setOnClickListener { btn_action("8", 8) }
+        btn9.setOnClickListener { btn_action("9", 9) }
  
-        btn10.setOnClickListener { btn_action("10") } 
-        btn11.setOnClickListener { btn_action("11") } 
-        btn12.setOnClickListener { btn_action("12") }
-        btn13.setOnClickListener { btn_action("13") }
+        btn10.setOnClickListener { btn_action("10", 10) } 
+        btn11.setOnClickListener { btn_action("11", 11) } 
+        btn12.setOnClickListener { btn_action("12", 12) }
+        btn13.setOnClickListener { btn_action("13", 13) }
 
-        btn14.setOnClickListener { btn_action("14") } 
-        btn15.setOnClickListener { btn_action("15") } 
-        btn16.setOnClickListener { btn_action("16") }
-        btn17.setOnClickListener { btn_action("17") }
+        btn14.setOnClickListener { btn_action("14", 14) } 
+        btn15.setOnClickListener { btn_action("15", 15) } 
+        btn16.setOnClickListener { btn_action("16", 16) }
+        btn17.setOnClickListener { btn_action("17", 17) }
        
 
       
