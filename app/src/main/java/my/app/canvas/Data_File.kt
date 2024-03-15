@@ -64,11 +64,17 @@ class Data_File @JvmOverloads constructor(
      companion object {
        
   private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
-        
-       
+             
          
                 }
-    
+
+
+
+       // init0()
+       // init14()
+       // init59()
+       // init1015()
+
      
 
  private  fun init0() {
@@ -986,11 +992,7 @@ class Data_File @JvmOverloads constructor(
 
 
 
-        init0()
-        init14()
-        init59()
-        init1015()
-
+      
 
 
 
