@@ -63,7 +63,7 @@ class Data_File @JvmOverloads constructor(
     
      companion object {
        
-  private var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
+  var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
              
          
                 }
@@ -397,7 +397,7 @@ class Data_File @JvmOverloads constructor(
      
 // Filling sample array 
 // 2
-      jj = 2                  
+                   
 
  rcanglenn_[2][0]=arrayOf<Int>(   81,   41,  167, 128, 111, -86, -68,  -47, -23, -170 ,  35, 173, 147, 360, 360, 360, 360, 360, 360, 360  ) 
  rcanglenn_[2][1]=arrayOf<Int>(   73,   30,   15, 170, 127, 102, -84,  -69, -51,  -26 ,-140,  74, 175, 155, 360, 360, 360, 360, 360, 360  ) 
@@ -468,7 +468,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // 3
-      jj = 3                   
+                  
   rcanglenn_[3][0]=arrayOf<Int>(   63,  32, 172, 113,  -84,  -59, -43, 175, 145, 111, -85, -33,  -13, -177, 360, 360, 360, 360, 360, 360  ) 
   rcanglenn_[3][1]=arrayOf<Int>(   33, 175, 105, -79,  -63,  -46, -30, 177, 137, 122, -83, -46,  -30,  -14,-177, 360, 360, 360, 360, 360  ) 
   rcanglenn_[3][2]=arrayOf<Int>(   57,  24, 173, 121,  103,  -85, -66, -51, -24,   6, 164, 144,  103,  -84, -63, -47, -18,-177, 360, 360  ) 
@@ -510,7 +510,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // 4
-      jj = 4                  
+                 
   
   rcanglenn_[4][0]=arrayOf<Int>(  -74,   -59,   4, -101, -85, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
   rcanglenn_[4][1]=arrayOf<Int>(  -72,   -56, 178,   76, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  ) 
@@ -553,7 +553,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // 5
-      jj = 5    
+        
  rcanglenn_[5][0]=arrayOf<Int>(   -73,  19,   35,  13, 167,  134,  115, -79, -60,  -42, -23, -172, -157,  76,  12, 360, 360, 360, 360, 360  ) 
  rcanglenn_[5][1]=arrayOf<Int>(   -84, -69,   34,  15, 173,  120,  101, -87, -56,  -22,-174, -146,   80,   6, 360, 360, 360, 360, 360, 360  ) 
  rcanglenn_[5][2]=arrayOf<Int>(   -74,  16,  173, 137, 114,  -86,  -52, -32,  -7, -163,  78,    8,  360, 360, 360, 360, 360, 360, 360, 360  ) 
@@ -613,7 +613,7 @@ class Data_File @JvmOverloads constructor(
  
 // Filling sample array 
 // 6
-      jj = 6                  
+                      
   rcanglenn_[6][0]=arrayOf<Int>(   -28, -47,  -63, -78,  95,  115, 132,  149,  171,   10,  47,  79,  -94, -127,  -155,  -6,  -40, -57, 360, 360  ) 
   rcanglenn_[6][1]=arrayOf<Int>(    -5, -35,  -50, -69, -85,   95, 119,  153,  171,   12,  38,  59,   79,  -97,  -121,-155,   -5, -48, -76, 360  ) 
   rcanglenn_[6][2]=arrayOf<Int>(    -4, -20,  -41, -61, -80,   96, 118,  139,  156,    8,  43,  61,   80,  -96,  -140,-159,  -10, -30, -47, -66  ) 
@@ -698,7 +698,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // 7
-      jj = 7                  
+                       
   
    rcanglenn_[7][0]=arrayOf<Int>(   83,   60,  167,   148,  169,   7,  64, -79, -108, 178 , 360, 360, 360, 360, 360, 360, 360, 360, 360, 360 ) 
    rcanglenn_[7][1]=arrayOf<Int>(   51,  169,  144,    15,   58,  80,-101, 178,  360, 360 , 360, 360, 360, 360, 360, 360, 360, 360, 360, 360 )
@@ -763,7 +763,7 @@ class Data_File @JvmOverloads constructor(
    
 // Filling sample array 
 // 8
-      jj = 8                 
+                      
   
     rcanglenn_[8][0]=arrayOf<Int>(  -139,  83,  44,  26,  176,  -80, -54, -72,   95,  151, 169,  33,  62,  -99,  -128,  -145, -130, 360, 360, 360  )    
     rcanglenn_[8][1]=arrayOf<Int>(  -151,-135,-112,  80,   41,   23, 176, 136,  -81,  -60, -82, 103, 118,  148,   169,     7,   48,  80, -94,-119  )    
@@ -800,7 +800,7 @@ class Data_File @JvmOverloads constructor(
 
 // Filling sample array 
 // 9
-      jj = 9                 
+                      
   
    rcanglenn_[9][0]=arrayOf<Int>(  10,  27,   44,  61,  79,  -94,  -117,  -137, -163,  -12,  -36, -52, -79,  99, 117,  133,   7,  45, 360, 360  ) 
    rcanglenn_[9][1]=arrayOf<Int>( 161,  13,   53,  74, -92, -116,  -165,   -13,  -32,  -53,  -83,  95, 132, 149,  11,   31,  47, 360, 360, 360  ) 
@@ -853,7 +853,7 @@ class Data_File @JvmOverloads constructor(
             
  // Filling sampl// Filling sample array 
 // +
-      jj = 10                
+                      
 
    
       rcanglenn_[10][0]=arrayOf<Int>(   1,  -127,   -83,  92, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
@@ -895,7 +895,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // -
-      jj = 11               
+                     
   
         rcanglenn_[11][0]=arrayOf<Int>( 180 , 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )
         rcanglenn_[11][1]=arrayOf<Int>(   5 , 168, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )
@@ -905,7 +905,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // x
-      jj = 12               
+                    
   rcanglenn_[12][0]=arrayOf<Int>(   141, 126,  89,  -40, -55, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
   rcanglenn_[12][1]=arrayOf<Int>(   142,  86, -47,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
   rcanglenn_[12][2]=arrayOf<Int>(    43, -13, 126,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
@@ -939,7 +939,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // /
-      jj = 13              
+                   
 
       rcanglenn_[13][0]=arrayOf<Int>(   45, 360, 360, 360, 360, 360, 360, 360, 360, 360 , 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
       rcanglenn_[13][1]=arrayOf<Int>(  -45, 360, 360, 360, 360, 360, 360, 360, 360, 360 , 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
@@ -955,7 +955,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // =
-      jj = 14            
+                 
 
      rcanglenn_[14][0]=arrayOf<Int>(   1,  -27,   2, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
      rcanglenn_[14][1]=arrayOf<Int>( 169,    4, -27,   2, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
@@ -973,7 +973,7 @@ class Data_File @JvmOverloads constructor(
       
 // Filling sample array 
 // ,
-      jj = 15            
+                 
      
      rcanglenn_[15][0]=arrayOf<Int>(   140, 360,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
      rcanglenn_[15][1]=arrayOf<Int>(   100, 360,  360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360, 360  )  
