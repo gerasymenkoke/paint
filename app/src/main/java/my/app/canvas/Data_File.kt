@@ -63,21 +63,18 @@ class Data_File @JvmOverloads constructor(
     
      companion object {
        
-  var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} } }  
-             
-         
-                }
+  var rcanglenn_ = Array(20) { Array(300){ Array<Int>(20){360} }  }
 
 
 
-       init0()
-       init14()
-       init59()
-       init1015()
+   //    init0()
+   //    init14()
+   //    init59()
+   //    init1015()
 
      
 
- private  fun init0() {
+ fun init0() {
 
 
     rcanglenn_[0][0]=arrayOf<Int>(   86,  65,  46, 175,  136, 119, 104,  -87,  -64,  -39, -19, -173, -144, -127, -107,  86, 360, 360, 360, 360  ) 
@@ -341,7 +338,7 @@ class Data_File @JvmOverloads constructor(
     
 
 
- private  fun init14() {
+ fun init14() {
     
     // Filling sample array
 // 1
@@ -548,7 +545,7 @@ class Data_File @JvmOverloads constructor(
   }
 
 
-   private  fun init59() {
+    fun init59() {
   
       
 // Filling sample array 
@@ -849,7 +846,7 @@ class Data_File @JvmOverloads constructor(
 
 
 
- private  fun init1015()   {
+ fun init1015()   {
             
  // Filling sampl// Filling sample array 
 // +
