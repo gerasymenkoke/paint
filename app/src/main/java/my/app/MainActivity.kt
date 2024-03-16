@@ -695,7 +695,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
  fun btn_action(number: String,  number00:Int) {
 
-     var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+     var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
      var current = LocalDateTime.now().format(formatter)
      
      lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] +1 
