@@ -213,6 +213,7 @@ class MainActivity : AppCompatActivity() {
     
     private var jdec = Array<Int>(100){0}
     private var lastindex_rcanglenn = Array<Int>(17){0} 
+    private var shift_lastindex_rcanglenn = Array<Int>(17){0} 
     private var resxy=0
     private var data:String = ""  
     private var btn_numbers_hide = 0
@@ -697,8 +698,10 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
      var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
      var current = LocalDateTime.now().format(formatter)
+
+     shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
+     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] +  shift_lastindex_rcanglenn[number00]
      
-     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] +1 
    data =  "//" + number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + 
      "   " + current.toString() +   
      "\n" +  "rcanglenn_[" +  number00.toString()  + "][" + lastindex_rcanglenn[number00].toString() + "]" + "=arrayOf<Int>(" + data + ")" +  "\n" + "\n" // what we want vs got as min of aresmin array 
