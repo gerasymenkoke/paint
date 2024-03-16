@@ -704,7 +704,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
 
              //   val filename = fileName.text.toString()  
-                if(filename.toString()!="" && filename.toString().trim()!=""){  
+               //   if(filename.toString()!="" && filename.toString().trim()!=""){  
                    // var fileInputStream: FileInputStream? = null  
                    var fileInputStream = openFileInput(mylastindexFile)  
                    var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)  
@@ -716,10 +716,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                    }  
                    //Displaying data on EditText  
 
-                     lastindex_rcanglenn[number00] =  stringBuilder
-                    
+                  
+     
+                    if ( stringBuilder != "" ) {
                     //fileData.setText(stringBuilder.toString()).toString()  
-               }else{  
+                         lastindex_rcanglenn[number00] =  stringBuilder.toInt()
+               }
+     
+                 else{  
                  
                     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
                     
