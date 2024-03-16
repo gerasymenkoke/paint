@@ -705,7 +705,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
              //   val filename = fileName.text.toString()  
                //   if(filename.toString()!="" && filename.toString().trim()!=""){  
-                   // var fileInputStream: FileInputStream? = null  
+                   var fileInputStream: FileInputStream? = null  
                    var fileInputStream = openFileInput(mylastindexFile)  
                    var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)  
                    val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)  
