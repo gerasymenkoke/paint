@@ -696,18 +696,17 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
  fun btn_action(number: String,  number00:Int) {
 
-     var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
-     var current = LocalDateTime.now().format(formatter)
+  
 
   //   shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
 
 
-                var mylastindex_0:File = File(getExternalFilesDir(""), "d0")
+                var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
 
-                val filename = fileName.text.toString()  
+             //   val filename = fileName.text.toString()  
                 if(filename.toString()!="" && filename.toString().trim()!=""){  
                    // var fileInputStream: FileInputStream? = null  
-                   var fileInputStream = openFileInput(filename)  
+                   var fileInputStream = openFileInput(mylastindexFile)  
                    var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)  
                    val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)  
                    val stringBuilder: StringBuilder = StringBuilder()  
@@ -716,22 +715,42 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                        stringBuilder.append(text)  
                    }  
                    //Displaying data on EditText  
-                   fileData.setText(stringBuilder.toString()).toString()  
+
+                     lastindex_rcanglenn[number00] =  stringBuilder
+                    
+                    //fileData.setText(stringBuilder.toString()).toString()  
                }else{  
-                   Toast.makeText(applicationContext,"file name cannot be blank",Toast.LENGTH_LONG).show()  
+                 
+                    lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
+                    
+                    var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
+ 
+            val fileOutputStream:FileOutputStream
+            try {
+                fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
+                fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+            } catch (e: FileNotFoundException){
+                e.printStackTrace()
+            }catch (e: NumberFormatException){
+                e.printStackTrace()
+            }catch (e: IOException){
+                e.printStackTrace()
+            }catch (e: Exception){
+                e.printStackTrace()
+            }
+                    
+                    //Toast.makeText(applicationContext,"file name cannot be blank",Toast.LENGTH_LONG).show()  
                }  
          
 
 
-
-
   
+ 
+  
+//     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
 
-  
-
-  
-  
-     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
+     var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
+     var current = LocalDateTime.now().format(formatter)
      
    data =  "//" + number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + 
      "   " + current.toString() +   
@@ -744,7 +763,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
    
    // write  to external storage=sddisk
 var myExternalFile:File = File(getExternalFilesDir(""), "d")
- j=0
+ 
             val fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
