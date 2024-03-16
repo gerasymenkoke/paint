@@ -216,6 +216,7 @@ class MainActivity : AppCompatActivity() {
     private var shift_lastindex_rcanglenn = Array<Int>(17){0} 
     private var resxy=0
     private var data:String = ""  
+    private var data_read:String = ""  
     private var btn_numbers_hide = 0
 
    
@@ -703,24 +704,25 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
                 var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
 
-             //   val filename = fileName.text.toString()  
-               //   if(filename.toString()!="" && filename.toString().trim()!=""){  
-                   var fileInputStream: FileInputStream? = null  
-                   var fileInputStream = openFileInput(mylastindexFile)  
-                   var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)  
-                   val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)  
-                   val stringBuilder: StringBuilder = StringBuilder()  
-                   var text: String? = null  
-                   while ({ text = bufferedReader.readLine(); text }() != null) {  
-                       stringBuilder.append(text)  
-                   }  
-                   //Displaying data on EditText  
+              val fileOutputStream:FileOutputStream
+            try {
+                fileInputStream = FileInputStream( mylastindexFile )  // "true"  appends data to existing file or create new
+                fileOutputStream.write(data_read.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+            } catch (e: FileNotFoundException){
+                e.printStackTrace()
+            }catch (e: NumberFormatException){
+                e.printStackTrace()
+            }catch (e: IOException){
+                e.printStackTrace()
+            }catch (e: Exception){
+                e.printStackTrace()
+            }
 
                   
      
-                    if ( stringBuilder != "" ) {
+                    if ( data_read != "" ) {
                     //fileData.setText(stringBuilder.toString()).toString()  
-                         lastindex_rcanglenn[number00] =  stringBuilder.toInt()
+                         lastindex_rcanglenn[number00] =  data_read.toInt()
                }
      
                  else{  
