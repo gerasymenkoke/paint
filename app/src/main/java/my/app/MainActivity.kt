@@ -699,8 +699,39 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
      var current = LocalDateTime.now().format(formatter)
 
-     shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
-     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] +  shift_lastindex_rcanglenn[number00]
+  //   shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
+
+
+                var mylastindex_0:File = File(getExternalFilesDir(""), "d0")
+
+                val filename = fileName.text.toString()  
+                if(filename.toString()!="" && filename.toString().trim()!=""){  
+                   // var fileInputStream: FileInputStream? = null  
+                   var fileInputStream = openFileInput(filename)  
+                   var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)  
+                   val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)  
+                   val stringBuilder: StringBuilder = StringBuilder()  
+                   var text: String? = null  
+                   while ({ text = bufferedReader.readLine(); text }() != null) {  
+                       stringBuilder.append(text)  
+                   }  
+                   //Displaying data on EditText  
+                   fileData.setText(stringBuilder.toString()).toString()  
+               }else{  
+                   Toast.makeText(applicationContext,"file name cannot be blank",Toast.LENGTH_LONG).show()  
+               }  
+         
+
+
+
+
+  
+
+  
+
+  
+  
+     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
      
    data =  "//" + number + " vs " + res00.toString() +  "  [" + res00.toString() + "," + res11.toString() + "]" + "=" + minres0.toString() + 
      "   " + current.toString() +   
