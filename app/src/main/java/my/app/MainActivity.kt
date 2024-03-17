@@ -699,8 +699,6 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
   
 
-  //   shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
-
                  // create name of file, where   lastindex_rcanglenn[number00] as a String type  has to be stored  
                 var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString()) 
      
@@ -738,13 +736,12 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                  
                     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1  }
                     
-         //    var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
- 
+        
             var fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
-                fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())                    // without "true" (without second parameter) - rewrite existing f
-        //          fileOutputStream.write(data_read.toString().toByteArray())   
+                fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())    // without "true" (without second parameter) - rewrite existing f
+       
             
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
@@ -757,15 +754,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             }
                     
                     //Toast.makeText(applicationContext,"file name cannot be blank",Toast.LENGTH_LONG).show()  
-                
-         
-
-
-  
- 
-  
-//     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
-
+             
      var formatter = DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy")
      var current = LocalDateTime.now().format(formatter)
      
@@ -808,28 +797,24 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
 
       
 
-        btn0.setOnClickListener { btn_action(number00.toString(), number00) }
-  //      btn1.setOnClickListener { btn_action("1", 1) }
- //       btn2.setOnClickListener { btn_action("2", 2) } 
-      
- //        btn3.setOnClickListener { btn_action("3", 3) }     
-//         btn4.setOnClickListener { btn_action("4", 4) }
-//         btn5.setOnClickListener { btn_action("5", 5) }
-//         btn6.setOnClickListener { btn_action("6", 6) } 
- 
-//         btn7.setOnClickListener { btn_action("7", 7) }  
-//         btn8.setOnClickListener { btn_action("8", 8) }
-//         btn9.setOnClickListener { btn_action("9", 9) }
- 
-//         btn10.setOnClickListener { btn_action("10", 10) } 
-//         btn11.setOnClickListener { btn_action("11", 11) } 
-//         btn12.setOnClickListener { btn_action("12", 12) }
-//         btn13.setOnClickListener { btn_action("13", 13) }
-
-  //       btn14.setOnClickListener { btn_action("14", 14) } 
-  //       btn15.setOnClickListener { btn_action("15", 15) } 
-  //       btn16.setOnClickListener { btn_action("16", 16) }
-  //       btn17.setOnClickListener { btn_action("17", 17) }
+        btn0.setOnClickListener { btn_action("0", 0) }
+        btn1.setOnClickListener { btn_action("1", 1) }
+        btn2.setOnClickListener { btn_action("2", 2) } 
+        btn3.setOnClickListener { btn_action("3", 3) }     
+        btn4.setOnClickListener { btn_action("4", 4) }
+        btn5.setOnClickListener { btn_action("5", 5) }
+        btn6.setOnClickListener { btn_action("6", 6) } 
+        btn7.setOnClickListener { btn_action("7", 7) }  
+        btn8.setOnClickListener { btn_action("8", 8) }
+        btn9.setOnClickListener { btn_action("9", 9) }
+        btn10.setOnClickListener { btn_action("10", 10) } 
+        btn11.setOnClickListener { btn_action("11", 11) } 
+        btn12.setOnClickListener { btn_action("12", 12) }
+        btn13.setOnClickListener { btn_action("13", 13) }
+        btn14.setOnClickListener { btn_action("14", 14) } 
+        btn15.setOnClickListener { btn_action("15", 15) } 
+        btn16.setOnClickListener { btn_action("16", 16) }
+        btn17.setOnClickListener { btn_action("17", 17) }
        
 
       
