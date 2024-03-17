@@ -705,7 +705,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
      
-              val fileInputStream:FileInputStream
+              var fileInputStream:FileInputStream
             try {
      
                 fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
@@ -770,7 +770,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
    // write  to external storage=sddisk
 var myExternalFile:File = File(getExternalFilesDir(""), "d")
  
-     //      val fileOutputStream:FileOutputStream
+   
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
