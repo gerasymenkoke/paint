@@ -705,10 +705,13 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                 var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString()) 
      
 
+
+     
               val fileInputStream:FileInputStream
             try {
+     
                 fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
-                fileInputStream.read(data_read.toByteArray())                   
+                fileInputStream.readBytes(data_read)                   
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
             }catch (e: NumberFormatException){
@@ -735,8 +738,8 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             val fileOutputStream:FileOutputStream
             try {
                 fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
-       //         fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())                    // without "true" (without second parameter) - rewrite existing f
-                  fileOutputStream.write(data_read.toString().toByteArray())   
+                fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+        //          fileOutputStream.write(data_read.toString().toByteArray())   
             
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
