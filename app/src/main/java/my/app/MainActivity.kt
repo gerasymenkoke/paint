@@ -701,13 +701,14 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
   //   shift_lastindex_rcanglenn[number00] = shift_lastindex_rcanglenn[number00] + 1 
 
-
-                var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
+                 // create name of file, where   lastindex_rcanglenn[number00] as a String type  has to be stored  
+                var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString()) 
+     
 
               val fileInputStream:FileInputStream
             try {
-                fileInputStream = FileInputStream( mylastindexFile )  // "true"  appends data to existing file or create new
-                fileInputStream.read(data_read.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+                fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file
+                fileInputStream.read(data_read.toByteArray())                   
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
             }catch (e: NumberFormatException){
@@ -720,12 +721,12 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
                   
      
-                    if ( data_read != "" ) {
-                    //fileData.setText(stringBuilder.toString()).toString()  
-                         lastindex_rcanglenn[number00] =  data_read.toInt()
+                    if ( data_read != "" ) {     // if "d+number00" file  exist and not empty 
+                    
+                         lastindex_rcanglenn[number00] =  data_read.toInt() + 1
                }
      
-                 else{  
+                 else{  // if "d+number00" file  does not exist or  empty 
                  
                     lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
                     
@@ -762,7 +763,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      "   " + current.toString() +   
      "\n" +  "rcanglenn_[" +  number00.toString()  + "][" + lastindex_rcanglenn[number00].toString() + "]" + "=arrayOf<Int>(" + data + ")" +  "\n" + "\n" // what we want vs got as min of aresmin array 
 
-    // lastindex_rcanglenn[res00] = lastindex_rcanglenn[res00] +1 
+
     
 // keep in storage  data which contains  aaa[j] as String  if result mismatch by hand command via button save on touchscreen
 // crete and write to file
