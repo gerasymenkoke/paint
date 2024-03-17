@@ -734,11 +734,11 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
                          lastindex_rcanglenn[number00] =  data_read.toInt() + 1
                }
      
-                 else{  // if "d+number00" file  does not exist or  empty 
+                 else  {  // if "d+number00" file  does not exist or  empty 
                  
-                    lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1
+                    lastindex_rcanglenn[number00] = lastindex_rcanglenn[number00] + 1  }
                     
-                    var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
+             var mylastindexFile:File = File(getExternalFilesDir(""), "d" + number00.toString())
  
             val fileOutputStream:FileOutputStream
             try {
@@ -757,7 +757,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             }
                     
                     //Toast.makeText(applicationContext,"file name cannot be blank",Toast.LENGTH_LONG).show()  
-               }  
+                
          
 
 
