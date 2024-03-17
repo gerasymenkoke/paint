@@ -712,11 +712,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      
                 fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
                
-                var int size = 4 
-                  data_read  = file.inputStream().use {
-        it.readBytes(size).toString(Charset.forName("UTF-8"))
+                 data_read = fileInputStream.ByteArray(4).toString(Charsets.UTF_8)
                 
-          //      data_read = fileInputStream.readBytes(4).toString(Charsets.UTF_8)
+                //      data_read = fileInputStream.readBytes(4).toString(Charsets.UTF_8)
                 
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
