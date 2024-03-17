@@ -736,7 +736,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             try {
                 fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
        //         fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())                    // without "true" (without second parameter) - rewrite existing f
-                  fileOutputStream.write(data_read.toByteArray())   
+                  fileOutputStream.write(data_read.toString().toByteArray())   
             
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
