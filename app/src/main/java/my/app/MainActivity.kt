@@ -808,28 +808,28 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
 
       
 
-        btn0.setOnClickListener { btn_action("0", 0) }
-        btn1.setOnClickListener { btn_action("1", 1) }
-        btn2.setOnClickListener { btn_action("2", 2) } 
+        btn0.setOnClickListener { btn_action(number00.toString(), number00) }
+  //      btn1.setOnClickListener { btn_action("1", 1) }
+ //       btn2.setOnClickListener { btn_action("2", 2) } 
       
-        btn3.setOnClickListener { btn_action("3", 3) }     
-        btn4.setOnClickListener { btn_action("4", 4) }
-        btn5.setOnClickListener { btn_action("5", 5) }
-        btn6.setOnClickListener { btn_action("6", 6) } 
+ //        btn3.setOnClickListener { btn_action("3", 3) }     
+//         btn4.setOnClickListener { btn_action("4", 4) }
+//         btn5.setOnClickListener { btn_action("5", 5) }
+//         btn6.setOnClickListener { btn_action("6", 6) } 
  
-        btn7.setOnClickListener { btn_action("7", 7) } 
-        btn8.setOnClickListener { btn_action("8", 8) }
-        btn9.setOnClickListener { btn_action("9", 9) }
+//         btn7.setOnClickListener { btn_action("7", 7) }  
+//         btn8.setOnClickListener { btn_action("8", 8) }
+//         btn9.setOnClickListener { btn_action("9", 9) }
  
-        btn10.setOnClickListener { btn_action("10", 10) } 
-        btn11.setOnClickListener { btn_action("11", 11) } 
-        btn12.setOnClickListener { btn_action("12", 12) }
-        btn13.setOnClickListener { btn_action("13", 13) }
+//         btn10.setOnClickListener { btn_action("10", 10) } 
+//         btn11.setOnClickListener { btn_action("11", 11) } 
+//         btn12.setOnClickListener { btn_action("12", 12) }
+//         btn13.setOnClickListener { btn_action("13", 13) }
 
-        btn14.setOnClickListener { btn_action("14", 14) } 
-        btn15.setOnClickListener { btn_action("15", 15) } 
-        btn16.setOnClickListener { btn_action("16", 16) }
-        btn17.setOnClickListener { btn_action("17", 17) }
+  //       btn14.setOnClickListener { btn_action("14", 14) } 
+  //       btn15.setOnClickListener { btn_action("15", 15) } 
+  //       btn16.setOnClickListener { btn_action("16", 16) }
+  //       btn17.setOnClickListener { btn_action("17", 17) }
        
 
       
