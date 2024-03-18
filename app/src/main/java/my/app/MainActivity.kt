@@ -705,10 +705,10 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
      
-              var fileInputStream:FileInputStream
+         //     var fileInputStream:FileInputStream
             try {
      
-                fileInputStream = new FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
+             FileInputStream   fileInputStream = new FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
                
                      
                 data_read = fileInputStream.readBytes().toString(Charsets.UTF_8)
