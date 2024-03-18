@@ -743,7 +743,9 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
             try {
                 fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())    // without "true" (without second parameter) - rewrite existing f
-       
+
+                  fileOutputStream.flush()
+                  fileOutputStream.close()
             
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
@@ -776,6 +778,11 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
             try {
                 fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
+
+                  fileOutputStream.flush()
+                  fileOutputStream.close()
+
+                
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
             }catch (e: NumberFormatException){
