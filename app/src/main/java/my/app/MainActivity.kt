@@ -708,7 +708,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
               var fileInputStream:FileInputStream
             try {
      
-                fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
+                fileInputStream = new FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
                
                      
                 data_read = fileInputStream.readBytes().toString(Charsets.UTF_8)
@@ -739,7 +739,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
         
             var fileOutputStream:FileOutputStream
             try {
-                fileOutputStream = FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
+                fileOutputStream = new FileOutputStream(mylastindexFile )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(lastindex_rcanglenn[number00].toString().toByteArray())    // without "true" (without second parameter) - rewrite existing f
        
             
@@ -772,7 +772,7 @@ var myExternalFile:File = File(getExternalFilesDir(""), "d")
  
    
             try {
-                fileOutputStream = FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
+                fileOutputStream = new FileOutputStream( myExternalFile,  true )  // "true"  appends data to existing file or create new
                 fileOutputStream.write(data.toByteArray())                    // without "true" (without second parameter) - rewrite existing f
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
