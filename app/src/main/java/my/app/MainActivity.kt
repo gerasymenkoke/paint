@@ -74,8 +74,15 @@ import my.app.canvas.DrawPencil.Companion.ci
 
 import my.app.canvas.Data_File.Companion.rcanglenn_
 import my.app.canvas.Data_File.Companion.init0
-import my.app.canvas.Data_File.Companion.init14
-import my.app.canvas.Data_File.Companion.init59
+import my.app.canvas.Data_File.Companion.init1
+import my.app.canvas.Data_File.Companion.init2
+import my.app.canvas.Data_File.Companion.init3
+import my.app.canvas.Data_File.Companion.init4
+import my.app.canvas.Data_File.Companion.init5
+import my.app.canvas.Data_File.Companion.init6
+import my.app.canvas.Data_File.Companion.init7
+import my.app.canvas.Data_File.Companion.init8
+import my.app.canvas.Data_File.Companion.init9
 import my.app.canvas.Data_File.Companion.init1015
 
 
@@ -261,8 +268,16 @@ class MainActivity : AppCompatActivity() {
 
 
        init0()
-       init14()
-       init59()
+       init1()
+       init2()
+       init3()
+       init4()
+       init5()
+       init6()
+       init7()
+       init8()
+       init9()
+       
        init1015()
 
  
