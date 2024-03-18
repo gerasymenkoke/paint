@@ -705,15 +705,17 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
 
 
      
-         //     var fileInputStream:FileInputStream
+            var fileInputStream:FileInputStream
             try {
      
-             FileInputStream   fileInputStream = new FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
+              fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
                
                      
                 data_read = fileInputStream.readBytes().toString(Charsets.UTF_8)
 
-                
+               // fileOut.flush()
+               // fileOut.close()
+                fileInputStream.close()
                 
             } catch (e: FileNotFoundException){
                 e.printStackTrace()
