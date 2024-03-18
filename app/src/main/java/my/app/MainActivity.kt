@@ -710,6 +710,7 @@ if ( Math.abs (canglenn_[j] - rcanglenn_[jj] [jjj] [j]) > 90 ) {
      
               fileInputStream = FileInputStream( mylastindexFile )  // read from "d+number00" file to data-read as String
                
+                data_read = ""
                      
                 data_read = fileInputStream.readBytes().toString(Charsets.UTF_8)
 
