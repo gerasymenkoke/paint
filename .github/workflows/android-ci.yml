@@ -78,8 +78,8 @@ jobs:
         
         
              PROJ="/home/runner/work/paint/paint"
-             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/31.0.0/zipalign"
-             APKSIGNER="/usr/local/lib/android/sdk/build-tools/31.0.0/apksigner" 
+             ZIPALIGN="/usr/local/lib/android/sdk/build-tools/34.0.0/zipalign"
+             APKSIGNER="/usr/local/lib/android/sdk/build-tools/34.0.0/apksigner" 
              echo "Signing  APK...."
              cd /home/runner/work/paint/paint/
              
